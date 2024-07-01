@@ -1,27 +1,26 @@
 import React from 'react';
-import { GlobalStyle, HeaderBox } from '../../assets/styles/header.styled';
+import { HeaderBox, HeaderBottomBox } from '../../assets/styles/header.styled';
 import NavBox from './NavBox';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Header = ({ data }) => {
+const Header = ({ img }) => {
   return (
     <>
       <HeaderBox>
         <div id="header">
           <Link to={'/'}>
-            <img src={data && data.logoImg} alt="" />
+            <img src={img && img.logoImg} alt="" />
           </Link>
           <span>
             <ul>
-              <GlobalStyle>
-                <NavBox data={'ABOUT US'} />
-                <NavBox data={'BUSSINESS'} />
-                <NavBox data={'PORTFOLIO'} />
-              </GlobalStyle>
+              <NavBox title={'ABOUT US'} link={'/about'} />
+              <NavBox title={'BUSSINESS'} link={'business'} />
+              <NavBox title={'PORTFOLIO'} link={'portfolio'} />
             </ul>
           </span>
         </div>
       </HeaderBox>
+      <HeaderBottomBox />
     </>
   );
 };

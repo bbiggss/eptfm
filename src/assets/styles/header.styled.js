@@ -1,11 +1,20 @@
 import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
+import { headerBg } from '../images';
 
 export const HeaderBox = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
+  background-image: url(${headerBg});
+  background-size: cover;
+
+  @font-face {
+    font-family: 'Roboto-Medium';
+    font-weight: normal;
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+  }
+  font-family: 'Roboto-Medium', sans-serif;
 
   & #header {
     width: 80%;
@@ -24,7 +33,7 @@ export const HeaderBox = styled.div`
     list-style: none;
   }
   & #header ul li {
-    margin-right: 10px;
+    margin-right: 50px;
   }
   & #header span {
     position: absolute;
@@ -40,14 +49,18 @@ export const HeaderBox = styled.div`
   @media (max-width: 768px) {
     /* 태블릿과 모바일 */
     width: 100%;
-    background-color: lightblue;
+    /* background-color: lightblue; */
+
+    & #header ul li {
+      margin-right: 10px;
+    }
   }
 
   @media (max-width: 480px) {
     /* 모바일 */
     width: 100%;
     height: 70px;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
   }
 
   & #title {
@@ -55,13 +68,6 @@ export const HeaderBox = styled.div`
   }
 `;
 
-export const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'GowunDodum-Regular';
-    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
-  }
-
-  body {
-    font-family: 'GowunDodum-Regular', sans-serif;
-  }
+export const HeaderBottomBox = styled.div`
+  height: calc(100vh - 100px);
 `;
