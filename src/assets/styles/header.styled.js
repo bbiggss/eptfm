@@ -1,20 +1,14 @@
 import styled from 'styled-components';
-import { headerBg } from '../images';
+// import { headerBg } from '../images';
 
 export const HeaderBox = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
-  background-image: url(${headerBg});
-  background-size: cover;
+  /* background-size: cover; */
 
-  @font-face {
-    font-family: 'Roboto-Medium';
-    font-weight: normal;
-    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
-  }
-  font-family: 'Roboto-Medium', sans-serif;
+  font-family: 'Roboto-Medium';
 
   & #header {
     width: 80%;
@@ -22,10 +16,11 @@ export const HeaderBox = styled.div`
     position: fixed;
     display: flex;
     align-items: center;
+    z-index: 10;
   }
 
   & #header img {
-    width: 200px;
+    width: 120px;
   }
 
   & #header ul {

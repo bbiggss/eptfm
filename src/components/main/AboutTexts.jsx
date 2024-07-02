@@ -1,16 +1,24 @@
 import React from 'react';
-import { AboutTextsTag } from '../../assets/styles/main.styled';
+import { AboutTextsBox } from '../../assets/styles/main.styled';
 
 const AboutTexts = (data) => {
+  const renderTextWithLineBreaks = (text) => {
+    return text.split('\n').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ));
+  };
   return (
-    <AboutTextsTag>
+    <AboutTextsBox>
       <img src={data && data.img} alt="" />
       <div>
         <h1>{data && data.textsTitle}</h1>
         <h2>{data && data.textsSubTitle}</h2>
-        <p>{data && data.textsContents}</p>
+        <p>{renderTextWithLineBreaks(data && data.textsContents)}</p>
       </div>
-    </AboutTextsTag>
+    </AboutTextsBox>
   );
 };
 

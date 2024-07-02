@@ -1,9 +1,25 @@
 video {
   height: 100vh;
+  /* width: 100%; */
 }
 #mainVideo {
   z-index: -1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+/* 영어 */
+/* font-family: 'Roboto-Medium'; */
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: normal;
+  src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+/* 한글 */
+/* font-family: 'NanumSquareB'; */
+@font-face {
+  font-family: 'NanumSquareB';
+  font-weight: normal;
+  src: url('./assets/fonts/NanumSquareB.otf') format('opentype');
 }

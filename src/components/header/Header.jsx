@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderBox, HeaderBottomBox } from '../../assets/styles/header.styled';
 import NavBox from './NavBox';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = ({ img }) => {
   return (
@@ -13,7 +13,7 @@ const Header = ({ img }) => {
           </Link>
           <span>
             <ul>
-              <NavBox title={'ABOUT US'} link={'/about'} />
+              <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
               <NavBox title={'PORTFOLIO'} link={'portfolio'} />
             </ul>

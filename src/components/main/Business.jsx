@@ -1,5 +1,5 @@
 import React from 'react';
-import { BusinessTag } from '../../assets/styles/main.styled';
+import { BusinessBox } from '../../assets/styles/main.styled';
 import BusinessItems from './BusinessItems';
 
 const Business = ({ data }) => {
@@ -7,7 +7,7 @@ const Business = ({ data }) => {
   const businessImg2 = data.businessImg2;
   const businessImg3 = data.businessImg3;
   return (
-    <BusinessTag>
+    <BusinessBox>
       <div id="container">
         <h1>BUSINESS</h1>
         <div id="contentsWrap">
@@ -18,7 +18,7 @@ const Business = ({ data }) => {
           </ul>
         </div>
       </div>
-    </BusinessTag>
+    </BusinessBox>
   );
 };
 

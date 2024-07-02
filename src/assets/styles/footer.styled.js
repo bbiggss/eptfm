@@ -9,11 +9,6 @@ export const FooterBox = styled.div`
   padding: 50px 0px;
   color: #767676;
 
-  @font-face {
-    font-family: 'NanumSquareB';
-    font-weight: normal;
-    src: url('../fonts/NanumSquareB.otf') format('opentype');
-  }
   font-family: 'NanumSquareB';
 
   & #container {

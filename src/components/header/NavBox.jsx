@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavBox = ({ title, link }) => {
-  const nav = useNavigate();
+  // const nav = useNavigate();
   return (
     <>
       <li>

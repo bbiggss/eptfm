@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+// import { Link } from 'react-router-dom';
 import { MainBox } from '../../assets/styles/main.styled';
 import About from './About';
 import Business from './Business';
+import Portfolio from './Portfolio';
 
 const Main = ({ data }) => {
   const aboutImgs = {
@@ -16,13 +17,19 @@ const Main = ({ data }) => {
     businessImg2: data.businessImg2,
     businessImg3: data.businessImg3,
   };
+
+  const portfolioImgs = {
+    portfolioImg1: data.portfolioImg1,
+    portfolioImg2: data.portfolioImg2,
+    portfolioImg3: data.portfolioImg3,
+    portfolioBg2: data.portfolioBg2,
+  };
+
   return (
     <MainBox>
       <About data={aboutImgs} />
       <Business data={businessImgs} />
-
-      {/* <img src={data && data.testImg3} alt="" /> */}
-      {/* <Link to={'/page1'}>page1 이동</Link> */}
+      <Portfolio data={portfolioImgs} />
     </MainBox>
   );
 };

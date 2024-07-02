@@ -1,11 +1,11 @@
 import React from 'react';
-import { AboutImgTag } from '../../assets/styles/main.styled';
+import { AboutImgBox } from '../../assets/styles/main.styled';
 
 const AboutImg = (data) => {
   return (
-    <AboutImgTag>
+    <AboutImgBox>
       <img src={data && data.img} alt="" />
-    </AboutImgTag>
+    </AboutImgBox>
   );
 };
 

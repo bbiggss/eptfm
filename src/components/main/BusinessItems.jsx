@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BusinessItems = (data) => {
-  console.log(data);
   return (
     <li>
       <p>{data && data.text}</p>

@@ -1,14 +1,17 @@
 import styled from 'styled-components';
-import { businessBg } from '../images';
+import { businessBg, portfolioBg, portfolioBg2 } from '../images';
 
 export const MainBox = styled.div`
   width: 100%;
 `;
 
-export const AboutComponent = styled.div`
+export const AboutBox = styled.div`
+  margin: 100px 0;
   & .aboutTitle {
     display: flex;
     justify-content: center;
+    font-family: 'Roboto-Medium';
+    /* margin-top: 100px; */
   }
   h1 {
     width: 80%;
@@ -20,7 +23,7 @@ export const AboutComponent = styled.div`
   }
 `;
 
-export const AboutImgTag = styled.div`
+export const AboutImgBox = styled.div`
   width: 50%;
   /* height: 100px; */
 
@@ -31,7 +34,7 @@ export const AboutImgTag = styled.div`
     /* width: 500px; */
   }
 `;
-export const AboutTextsTag = styled.div`
+export const AboutTextsBox = styled.div`
   width: 50%;
   /* background-color: beige; */
   display: flex;
@@ -42,6 +45,12 @@ export const AboutTextsTag = styled.div`
     font-size: 120px;
     color: #48c2c5;
     margin: 0px;
+    font-family: 'Roboto-Medium';
+  }
+
+  & h2,
+  p {
+    font-family: 'NanumSquareB';
   }
 
   & h2 {
@@ -70,17 +79,21 @@ export const AboutTextsTag = styled.div`
 `;
 
 // Business 컴포넌트
-export const BusinessTag = styled.div`
+export const BusinessBox = styled.div`
   background-image: url(${businessBg});
   background-size: cover;
+  font-family: 'Roboto-Medium';
 
   & #container {
-    padding: 100px;
+    padding: 100px 0;
   }
 
   & h1 {
     text-align: center;
     color: white;
+    font-size: 70px;
+    margin: 0;
+    margin-bottom: 50px;
   }
 
   & #contentsWrap {
@@ -99,6 +112,9 @@ export const BusinessTag = styled.div`
     margin: 0;
     padding: 0;
   }
+  & li:nth-child(2) {
+    margin: 0 20px;
+  }
 
   & li img {
     height: 399px;
@@ -113,5 +129,86 @@ export const BusinessTag = styled.div`
     font-size: 30px;
     margin: 0;
     padding: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+`;
+
+// portfolio 컴포넌트
+export const PortfolioBox = styled.div`
+  display: flex;
+  justify-content: center;
+  background-image: url(${portfolioBg});
+  background-size: 100% 100%;
+
+  /* 영어폰트 */
+  & #portfolioTexts h1,
+  .pfFieldTag,
+  .englishFont {
+    font-family: 'Roboto-Medium';
+  }
+  /* 한글폰트 */
+  & h2,
+  #portfolioText2,
+  #portfolioText1 {
+    font-family: 'NanumSquareB';
+  }
+
+  & #container {
+    padding: 100px 0;
+    display: flex;
+    width: 100%;
+  }
+  & #portfolioTexts {
+    width: 40%;
+    padding-left: 10%;
+  }
+  & #portfolioTexts h1 {
+    font-size: 100px;
+    margin-bottom: 0;
+  }
+  & #portfolioText1 {
+    font-size: 30px;
+  }
+  & #portfolioText2 {
+    color: #858585;
+    margin-bottom: 50px;
+  }
+
+  & .pfFieldTag {
+    margin-bottom: 10px;
+    display: block;
+    width: 200px;
+    border: 1px solid #858585;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px 0;
+    color: #858585;
+  }
+  & a {
+    display: block;
+    width: 200px;
+    text-decoration: none;
+  }
+
+  & #portfolioImgs {
+    width: 60%;
+    display: flex;
+    background-image: url(${portfolioBg2});
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  & .pfImgLeftBox {
+    width: 50%;
+    /* background-color: yellow; */
+  }
+  & .pfImgLeftBox img {
+    width: 500px;
+  }
+  & .pfImgRightBox {
+    width: 50%;
+    overflow: hidden;
+  }
+  #abc {
+    /* background-color: yellow; */
   }
 `;
