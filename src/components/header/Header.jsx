@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderBox, HeaderBottomBox } from '../../assets/styles/header.styled';
+import { HeaderBox } from '../../assets/styles/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
 
@@ -20,7 +20,6 @@ const Header = ({ img }) => {
           </span>
         </div>
       </HeaderBox>
-      <HeaderBottomBox />
     </>
   );
 };

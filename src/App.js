@@ -22,10 +22,11 @@ import {
   bottomLogoImg,
 } from './assets/images';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
+import Video from './components/main/Video';
 
 function App() {
   let headerLogoImg = { logoImg };
@@ -44,20 +45,18 @@ function App() {
     portfolioBg2,
   };
 
+  const location = useLocation();
+  console.log(111, location.pathname);
   return (
     <div className="App">
-      <div id="mainVideo">
-        <video
-          src={`${process.env.PUBLIC_URL}/assets/videos/01_INTRO 001_2.mp4`}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="video"
-        ></video>
-      </div>
+      {/* 메인일때 */}
+
+      {location.pathname === '/' ? <Video /> : ''}
 
       <Header img={headerLogoImg} />
+
+      {location.pathname === '/' ? <div id="HeaderBottomBox"></div> : ''}
+
       <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
         {/* <Route path="/page1" element={<Page1 />} /> */}

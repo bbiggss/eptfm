@@ -63,6 +63,6 @@ export const HeaderBox = styled.div`
   }
 `;
 
-export const HeaderBottomBox = styled.div`
-  height: calc(100vh - 100px);
-`;
+// export const HeaderBottomBox = styled.div`
+//   height: calc(100vh - 100px);
+// `;
