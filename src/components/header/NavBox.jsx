@@ -6,7 +6,8 @@ const NavBox = ({ title, link }) => {
   return (
     <>
       <li>
-        <Link to={link}>{title}</Link>
+        <a href={`#${link}`}>{title}</a>
+        {/* <Link to={link}>{title}</Link> */}
       </li>
     </>
   );

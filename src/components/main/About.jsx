@@ -8,7 +8,7 @@ const About = ({ data }) => {
   const aboutImg2 = data.aboutImg2;
   const aboutImg3 = data.aboutImg3;
   return (
-    <AboutBox>
+    <AboutBox id="about">
       <div className="aboutTitle">
         <h1>ABOUT US</h1>
       </div>

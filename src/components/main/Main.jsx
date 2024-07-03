@@ -16,6 +16,9 @@ const Main = ({ data }) => {
     businessImg1: data.businessImg1,
     businessImg2: data.businessImg2,
     businessImg3: data.businessImg3,
+    businessHoverImg1: data.businessHoverImg1,
+    businessHoverImg2: data.businessHoverImg2,
+    businessHoverImg3: data.businessHoverImg3,
   };
 
   const portfolioImgs = {

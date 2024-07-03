@@ -20,6 +20,10 @@ export const AboutBox = styled.div`
   & .aboutContents {
     display: flex;
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0px; // 마지막 요소에만 적용할 스타일
+    }
   }
 `;
 
@@ -107,6 +111,15 @@ export const BusinessBox = styled.div`
     padding: 0;
   }
 
+  & #contentsWrap #businessHoverImg {
+    position: absolute;
+    display: none;
+  }
+
+  & #contentsWrap ul li:hover {
+    /* background-color: yellow; */
+  }
+
   & li {
     position: relative;
     margin: 0;
@@ -120,7 +133,7 @@ export const BusinessBox = styled.div`
     height: 399px;
   }
 
-  & li p {
+  & li .noHoverBox p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,6 +143,30 @@ export const BusinessBox = styled.div`
     margin: 0;
     padding: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  & .hoverBox {
+    display: none;
+
+    & div {
+      position: absolute;
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    & p:first-child {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    & p:last-child {
+      color: white;
+      font-size: 15px;
+      text-align: center;
+    }
   }
 `;
 

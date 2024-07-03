@@ -7,6 +7,9 @@ import businessBg from './bussiness_bg.png';
 import businessImg1 from './bussiness_img1.png';
 import businessImg2 from './bussiness_img2.png';
 import businessImg3 from './bussiness_img3.png';
+import businessHoverImg1 from './bussiness_img1_over.png';
+import businessHoverImg2 from './bussiness_img2_over.png';
+import businessHoverImg3 from './bussiness_img3_over.png';
 import portfolioImg1 from './portfolio_img1.png';
 import portfolioImg2 from './portfolio_img2.png';
 import portfolioImg3 from './portfolio_img3.png';
@@ -26,6 +29,9 @@ export {
   businessImg1,
   businessImg2,
   businessImg3,
+  businessHoverImg1,
+  businessHoverImg2,
+  businessHoverImg3,
   // portfolio
   portfolioImg1,
   portfolioImg2,

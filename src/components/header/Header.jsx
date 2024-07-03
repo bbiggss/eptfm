@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = ({ img }) => {
   return (
     <>
-      <HeaderBox>
+      <HeaderBox id="header">
         <div id="header">
           <Link to={'/'}>
             <img src={img && img.logoImg} alt="" />

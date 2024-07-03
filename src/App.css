@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #mainVideo {
   z-index: -1;
   position: absolute;

@@ -5,7 +5,7 @@ import PfFieldButton from './PfFieldButton';
 
 const Portfolio = ({ data }) => {
   return (
-    <PortfolioBox>
+    <PortfolioBox id="portfolio">
       <div id="container">
         <div id="portfolioTexts">
           <h1>PORTFOLIO</h1>
