@@ -11,7 +11,6 @@ const BusinessItems = (data) => {
   };
   return (
     <li>
-      {/* <div id="businessHoverImg"></div> */}
       <div className="noHoverBox">
         <p>{data && data.text}</p>
         <img src={data && data.img} alt="" />

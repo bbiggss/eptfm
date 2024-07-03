@@ -111,15 +111,6 @@ export const BusinessBox = styled.div`
     padding: 0;
   }
 
-  & #contentsWrap #businessHoverImg {
-    position: absolute;
-    display: none;
-  }
-
-  & #contentsWrap ul li:hover {
-    /* background-color: yellow; */
-  }
-
   & li {
     position: relative;
     margin: 0;
@@ -143,6 +134,18 @@ export const BusinessBox = styled.div`
     margin: 0;
     padding: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  & .noHoverBox {
+    display: block;
+  }
+
+  & li:hover .noHoverBox {
+    display: none;
+  }
+
+  & li:hover .hoverBox {
+    display: block;
   }
 
   & .hoverBox {
@@ -208,6 +211,7 @@ export const PortfolioBox = styled.div`
   }
   & #portfolioText2 {
     color: #858585;
+    font-size: 20px;
     margin-bottom: 50px;
   }
 
@@ -231,19 +235,27 @@ export const PortfolioBox = styled.div`
     width: 60%;
     display: flex;
     background-image: url(${portfolioBg2});
-    background-size: 50%;
+    background-size: 56%;
     background-repeat: no-repeat;
   }
   & .pfImgLeftBox {
     width: 50%;
-    /* background-color: yellow; */
   }
   & .pfImgLeftBox img {
+    position: relative;
+    top: 5%;
+    left: 9%;
     width: 500px;
   }
   & .pfImgRightBox {
     width: 50%;
     overflow: hidden;
+    & img:first-child {
+      height: 462px;
+    }
+    & img:last-child {
+      width: 450px;
+    }
   }
   #abc {
     /* background-color: yellow; */

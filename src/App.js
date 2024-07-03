@@ -30,6 +30,7 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
 import Video from './components/main/Video';
+import VrAr from './components/main/vrAr/VrAr';
 
 function App() {
   let headerLogoImg = { logoImg };
@@ -65,7 +66,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
-        {/* <Route path="/page1" element={<Page1 />} /> */}
+        <Route path="/vrAr" element={<VrAr />} />
       </Routes>
       <Footer img={footerLogoImg} />
     </div>
