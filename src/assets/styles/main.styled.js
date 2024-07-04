@@ -163,12 +163,14 @@ export const BusinessBox = styled.div`
       color: white;
       font-size: 30px;
       text-align: center;
+      font-family: 'Roboto-Medium';
     }
 
     & p:last-child {
       color: white;
       font-size: 15px;
       text-align: center;
+      font-family: 'NanumSquareB';
     }
   }
 `;
