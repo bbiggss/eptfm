@@ -12,11 +12,11 @@ const AboutTexts = (data) => {
   };
   return (
     <AboutTextsBox>
-      <img src={data && data.img} alt="" />
-      <div>
-        <h1>{data && data.textsTitle}</h1>
-        <h2>{data && data.textsSubTitle}</h2>
-        <p>{renderTextWithLineBreaks(data && data.textsContents)}</p>
+      {data.img && <img src={data && data.img} alt="" />}
+      <div id="textsBoxContainer">
+        <p className="textsTitle">{data && data.textsTitle}</p>
+        <p className="textsSubTitle">{data && data.textsSubTitle}</p>
+        <p className="textsContents">{renderTextWithLineBreaks(data && data.textsContents)}</p>
       </div>
     </AboutTextsBox>
   );

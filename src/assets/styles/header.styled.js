@@ -2,43 +2,44 @@ import styled from 'styled-components';
 
 export const HeaderBox = styled.div`
   width: 100%;
-  height: 100px;
   display: flex;
-  justify-content: center;
-  /* background-size: cover; */
-
+  position: fixed;
   font-family: 'Roboto-Medium';
+  justify-content: center;
+  z-index: 1;
 
-  & #header {
+  & #headerContainer {
+    position: relative;
     width: 1556px;
-    height: 100px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    z-index: 10;
+    /* background-color: yellowgreen; */
+    margin: 42px 0px;
   }
 
-  & #header img {
+  & img {
     width: 122px;
     height: 18px;
   }
 
-  & #header ul {
+  & ul {
     display: flex;
     list-style: none;
+    margin: 0;
   }
-  & #header ul li {
+  & ul li {
     margin-right: 92px;
   }
-  & #header span {
+  & ul li:last-child {
+    margin-right: 0;
+  }
+  & span {
     position: absolute;
     right: 0;
   }
 
-  & #header ul a {
+  /* 헤더 nav 텍스트 */
+  & ul li a {
     text-decoration: none;
     color: #292929;
-    font-weight: bold;
     font-size: 18px;
     letter-spacing: 0px;
   }
@@ -59,12 +60,4 @@ export const HeaderBox = styled.div`
     height: 70px;
     /* background-color: lightgreen; */
   }
-
-  & #title {
-    color: green;
-  }
 `;
-
-// export const HeaderBottomBox = styled.div`
-//   height: calc(100vh - 100px);
-// `;

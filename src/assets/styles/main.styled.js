@@ -6,18 +6,23 @@ export const MainBox = styled.div`
 `;
 
 export const AboutBox = styled.div`
-  margin: 100px 0;
   & .aboutTitle {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 400px;
     font-family: 'Roboto-Medium';
-    /* margin-top: 100px; */
-  }
-  h1 {
-    width: 80%;
-    font-size: 50px;
+
+    & p {
+      margin: 0;
+      font-size: 100px;
+      letter-spacing: 0;
+      color: #191919;
+      padding-top: 200px;
+      padding-left: 182px;
+    }
   }
   & .aboutContents {
+    width: 100%;
+    height: 1000px;
     display: flex;
     margin-bottom: 50px;
 
@@ -29,57 +34,58 @@ export const AboutBox = styled.div`
 
 export const AboutImgBox = styled.div`
   width: 50%;
-  /* height: 100px; */
-
   & img {
     width: 100%;
-  }
-  & div p {
-    /* width: 500px; */
+    /* width: 960px; */
+    /* height: 1000px; */
   }
 `;
 export const AboutTextsBox = styled.div`
   width: 50%;
   /* background-color: beige; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  & h1 {
-    font-size: 120px;
-    color: #48c2c5;
-    margin: 0px;
-    font-family: 'Roboto-Medium';
-  }
-
-  & h2,
-  p {
-    font-family: 'NanumSquareB';
-  }
-
-  & h2 {
-    font-size: 40px;
-    color: #48c2c5;
-    margin-top: 0px;
-  }
 
   & img {
-    width: 200px;
+    width: 247px;
+    height: 286px;
     position: absolute;
-    margin-top: -599px;
-    margin-left: 225px;
+    right: 0;
+    margin-right: 186px;
+    margin-top: -35px;
+  }
+  & #textsBoxContainer {
+    margin-top: 260px;
+    margin-left: 106px;
+    /* background-color: aqua; */
+
+    & .textsTitle {
+      font-size: 180px;
+      letter-spacing: 0px;
+      color: #48c2c5;
+      margin: 0px;
+      font-family: 'Roboto-Medium';
+    }
+    & .textsSubTitle {
+      font-family: 'NanumSquareEB';
+      font-size: 70px;
+      color: #48c2c5;
+      letter-spacing: -4px;
+      margin: 0;
+    }
+    & .textsContents {
+      font-family: 'NanumSquareB';
+      color: #767676;
+      font-size: 36px;
+      margin: 0;
+      margin-top: 74px;
+    }
   }
 
-  & div {
-    /* width: 80%; */
-    width: 478px;
-  }
-  & p {
+  /* & p {
     width: 420px;
     color: #767676;
     font-size: 20px;
     font-weight: bold;
-  }
+  } */
 `;
 
 // Business 컴포넌트
