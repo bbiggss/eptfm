@@ -17,9 +17,9 @@ const Portfolio = ({ data }) => {
             학습의 한계를 뛰어넘다.
           </div>
           <div>
-            <PfFieldButton title={'VR/AR'} link={'vrAr'} />
-            <PfFieldButton title={'E-learning'} link={'eLearning'} />
-            <PfFieldButton title={'R&D'} link={'rNd'} />
+            <PfFieldButton title={'VR/AR'} link={'portfolioList/VrAr'} />
+            <PfFieldButton title={'E-learning'} link={'portfolioList/eLearning'} />
+            <PfFieldButton title={'R&D'} link={'portfolioList/rNd'} />
           </div>
         </div>
         <div id="portfolioImgs">

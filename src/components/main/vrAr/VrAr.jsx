@@ -1,7 +1,14 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const VrAr = () => {
-  return <div>VrAr</div>;
+  const { id } = useParams();
+  console.log(id);
+  return (
+    <>
+      <div>VrAr</div>
+    </>
+  );
 };
 
 export default VrAr;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { headerBg } from '../images';
 
 export const HeaderBox = styled.div`
   width: 100%;
@@ -11,7 +10,7 @@ export const HeaderBox = styled.div`
   font-family: 'Roboto-Medium';
 
   & #header {
-    width: 80%;
+    width: 1556px;
     height: 100px;
     position: fixed;
     display: flex;
@@ -20,7 +19,8 @@ export const HeaderBox = styled.div`
   }
 
   & #header img {
-    width: 120px;
+    width: 122px;
+    height: 18px;
   }
 
   & #header ul {
@@ -28,7 +28,7 @@ export const HeaderBox = styled.div`
     list-style: none;
   }
   & #header ul li {
-    margin-right: 50px;
+    margin-right: 92px;
   }
   & #header span {
     position: absolute;
@@ -37,8 +37,10 @@ export const HeaderBox = styled.div`
 
   & #header ul a {
     text-decoration: none;
-    color: black;
+    color: #292929;
     font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0px;
   }
 
   @media (max-width: 768px) {

@@ -10,9 +10,19 @@ html {
 }
 #videoBox {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
   position: absolute;
+  background-color: #dedede;
+}
+#center {
+  display: flex;
+  justify-content: center;
+}
+#videoBox #topBox {
+  width: 100%;
+  height: 42px;
+}
+#videoBox video {
+  width: 1556px;
 }
 
 #HeaderBottomBox {
@@ -33,4 +43,11 @@ html {
   font-family: 'NanumSquareB';
   font-weight: normal;
   src: url('./assets/fonts/NanumSquareB.otf') format('opentype');
+}
+
+/* font-family: 'NanumSquareEB'; */
+@font-face {
+  font-family: 'NanumSquareEB';
+  font-weight: normal;
+  src: url('./assets/fonts/NanumSquareEB.otf') format('opentype');
 }

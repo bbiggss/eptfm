@@ -30,7 +30,11 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/footer/Footer';
 import Video from './components/main/Video';
+import PortfolioList from './components/main/PortfolioList';
+
 import VrAr from './components/main/vrAr/VrAr';
+import ELearning from './components/main/eLearning/ELearning';
+import Rnd from './components/main/rNd/Rnd';
 
 function App() {
   let headerLogoImg = { logoImg };
@@ -66,7 +70,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
-        <Route path="/vrAr" element={<VrAr />} />
+        <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
+        <Route path="/portfolioList/eLearning" element={<PortfolioList />} />
+        <Route path="/portfolioList/rNd" element={<PortfolioList />} />
+        <Route path="/VrAr/:id" element={<VrAr />} />
+        <Route path="/eLearning/:id" element={<ELearning />} />
+        <Route path="/rNd/:id" element={<Rnd />} />
       </Routes>
       <Footer img={footerLogoImg} />
     </div>
