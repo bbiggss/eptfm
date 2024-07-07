@@ -30,9 +30,11 @@ const Main = ({ data }) => {
 
   return (
     <MainBox>
-      <About data={aboutImgs} />
-      <Business data={businessImgs} />
-      <Portfolio data={portfolioImgs} />
+      <div id="mainContainer">
+        <About data={aboutImgs} />
+        <Business data={businessImgs} />
+        <Portfolio data={portfolioImgs} />
+      </div>
     </MainBox>
   );
 };

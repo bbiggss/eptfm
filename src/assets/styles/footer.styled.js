@@ -12,7 +12,7 @@ export const FooterBox = styled.div`
   font-family: 'NanumSquareB';
 
   & #container {
-    width: 80%;
+    width: 1556px;
     /* background-color: beige; */
     display: flex;
   }

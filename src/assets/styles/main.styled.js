@@ -3,6 +3,11 @@ import { businessBg, portfolioBg, portfolioBg2 } from '../images';
 
 export const MainBox = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: center;
+  & #mainContainer{
+    width: 1920px;
+  }
 `;
 
 export const AboutBox = styled.div`
@@ -41,6 +46,7 @@ export const AboutImgBox = styled.div`
   }
 `;
 export const AboutTextsBox = styled.div`
+position: relative;
   width: 50%;
   /* background-color: beige; */
 
