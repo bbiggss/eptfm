@@ -5,7 +5,7 @@ export const MainBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  & #mainContainer{
+  & #mainContainer {
     width: 1920px;
   }
 `;
@@ -28,8 +28,9 @@ export const AboutBox = styled.div`
   & .aboutContents {
     width: 100%;
     height: 1000px;
+    max-height: 1080px;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
     &:last-child {
       margin-bottom: 0px; // 마지막 요소에만 적용할 스타일
@@ -41,13 +42,15 @@ export const AboutImgBox = styled.div`
   width: 50%;
   & img {
     width: 100%;
+    max-width: 960px;
     /* width: 960px; */
     /* height: 1000px; */
   }
 `;
 export const AboutTextsBox = styled.div`
-position: relative;
+  position: relative;
   width: 50%;
+  max-width: 960px;
   /* background-color: beige; */
 
   & img {
@@ -55,7 +58,8 @@ position: relative;
     height: 286px;
     position: absolute;
     right: 0;
-    margin-right: 186px;
+    /* margin-right: 186px; */
+    margin-right: 213px;
     margin-top: -35px;
   }
   & #textsBoxContainer {
@@ -99,22 +103,30 @@ export const BusinessBox = styled.div`
   background-image: url(${businessBg});
   background-size: cover;
   font-family: 'Roboto-Medium';
+  height: 1180px;
+  margin-top: 240px;
 
   & #container {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    & #businessTitleBox {
+      width: 100%;
+      height: 380px;
+    }
   }
 
-  & h1 {
+  & #businessTitle {
+    font-family: 'Roboto-Regular';
     text-align: center;
-    color: white;
-    font-size: 70px;
+    color: #ffffff;
+    font-size: 100px;
     margin: 0;
-    margin-bottom: 50px;
+    padding-top: 200px;
   }
 
   & #contentsWrap {
     display: flex;
     justify-content: center;
+    max-height: 600px;
   }
   & #contentsWrap ul {
     display: flex;
@@ -129,11 +141,12 @@ export const BusinessBox = styled.div`
     padding: 0;
   }
   & li:nth-child(2) {
-    margin: 0 20px;
+    margin: 0 28px;
   }
 
   & li img {
-    height: 399px;
+    width: 500px;
+    height: 600px;
   }
 
   & li .noHoverBox p {
@@ -172,10 +185,12 @@ export const BusinessBox = styled.div`
     }
 
     & p:first-child {
-      color: white;
-      font-size: 30px;
+      color: #ffffff;
+      font-size: 42px;
       text-align: center;
       font-family: 'Roboto-Medium';
+      box-shadow: 0 4px 6px rgba(19, 31, 47, 0.6);
+      mix-blend-mode: multiply;
     }
 
     & p:last-child {

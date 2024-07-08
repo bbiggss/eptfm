@@ -42,21 +42,23 @@ html {
 /* font-family: 'Roboto-Medium'; */
 @font-face {
   font-family: 'Roboto-Medium';
-  font-weight: normal;
   src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+/* font-family: 'Roboto-Regular'; */
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 /* 한글 */
 /* font-family: 'NanumSquareB'; */
 @font-face {
   font-family: 'NanumSquareB';
-  font-weight: normal;
   src: url('./assets/fonts/NanumSquareB.otf') format('opentype');
 }
 
 /* font-family: 'NanumSquareEB'; */
 @font-face {
   font-family: 'NanumSquareEB';
-  font-weight: normal;
   src: url('./assets/fonts/NanumSquareEB.otf') format('opentype');
 }

@@ -15,7 +15,9 @@ const Business = ({ data }) => {
   return (
     <BusinessBox id="business">
       <div id="container">
-        <h1>BUSINESS</h1>
+        <div id="businessTitleBox">
+          <p id="businessTitle">BUSINESS</p>
+        </div>
         <div id="contentsWrap">
           <ul>
             <BusinessItems
