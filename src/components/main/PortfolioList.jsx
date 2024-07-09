@@ -51,7 +51,7 @@ const PortfolioList = (data) => {
       ];
       updatePortfolioItems(portfolioItems2);
     } else if (location.pathname.split('/')[2] === 'eLearning') {
-      updateListTitle('E-learning');
+      updateListTitle('e-Learning');
       const portfolioItems2 = [
         {
           pfItemImg: testImg,

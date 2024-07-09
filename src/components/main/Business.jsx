@@ -31,7 +31,7 @@ const Business = ({ data }) => {
             <BusinessItems
               img={businessImg2}
               hoverImg={businessHoverImg2}
-              text={'E-learning'}
+              text={'e-Learning'}
               hoverText={
                 '가상현실(VR)과 증강현실(AR)을 통해\n 교육의 경계를 허물고, 몰입감 있는\n 학습 경험을 제공합니다.'
               }

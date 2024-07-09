@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { HeaderBox } from '../../assets/styles/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ img }) => {
   const [headerClass, setHeaderClass] = useState('transparent');
@@ -23,7 +25,16 @@ const Header = ({ img }) => {
   }, []);
   return (
     <>
-      <HeaderBox id="header" className={headerClass}>
+      <div className="w-full bg-orange-300 border-2 border-zinc-500">
+        <div className="sm:my-[20px] lg:my-[42px] bg-lime-300">
+          <Link to={'/'}>
+            <img src={img && img.logoImg} alt="" className="w-[122px] h-[18px]" />
+          </Link>
+          <span>{/* <FontAwesomeIcon icon={faBars} /> */}</span>
+        </div>
+      </div>
+
+      {/* <HeaderBox id="header" className={headerClass}>
         <div id="headerContainer">
           <Link to={'/'}>
             <img src={img && img.logoImg} alt="" />
@@ -36,7 +47,7 @@ const Header = ({ img }) => {
             </ul>
           </span>
         </div>
-      </HeaderBox>
+      </HeaderBox> */}
     </>
   );
 };

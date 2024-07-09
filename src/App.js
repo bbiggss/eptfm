@@ -62,13 +62,12 @@ function App() {
     <div className="App">
       {/* 메인일때 */}
 
-      {location.pathname === '/' ? <Video /> : ''}
-
       <Header img={headerLogoImg} />
+      {/* {location.pathname === '/' ? <Video /> : ''} */}
 
       {location.pathname === '/' ? <div id="HeaderBottomBox"></div> : ''}
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
         <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
         <Route path="/portfolioList/eLearning" element={<PortfolioList />} />
@@ -76,7 +75,7 @@ function App() {
         <Route path="/VrAr/:id" element={<VrAr />} />
         <Route path="/eLearning/:id" element={<ELearning />} />
         <Route path="/rNd/:id" element={<Rnd />} />
-      </Routes>
+      </Routes> */}
       <Footer img={footerLogoImg} />
     </div>
   );

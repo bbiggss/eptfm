@@ -18,7 +18,7 @@ const Portfolio = ({ data }) => {
           </div>
           <div>
             <PfFieldButton title={'VR/AR'} link={'portfolioList/VrAr'} />
-            <PfFieldButton title={'E-learning'} link={'portfolioList/eLearning'} />
+            <PfFieldButton title={'e-Learning'} link={'portfolioList/eLearning'} />
             <PfFieldButton title={'R&D'} link={'portfolioList/rNd'} />
           </div>
         </div>
