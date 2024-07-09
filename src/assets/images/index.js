@@ -15,6 +15,7 @@ import portfolioImg2 from './portfolio_img2.png';
 import portfolioImg3 from './portfolio_img3.png';
 import portfolioBg from './portfolio_bg.png';
 import portfolioBg2 from './portfolio_bg2.png';
+import portfolioBg3 from './portfolio_bg3.png';
 import testImg from './02.jpg';
 
 export {
@@ -39,6 +40,7 @@ export {
   portfolioImg3,
   portfolioBg,
   portfolioBg2,
+  portfolioBg3,
   // 푸터
   bottomLogoImg,
   testImg,

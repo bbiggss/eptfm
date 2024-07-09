@@ -8,7 +8,7 @@ const Portfolio = ({ data }) => {
     <PortfolioBox id="portfolio">
       <div id="container">
         <div id="portfolioTexts">
-          <h1>PORTFOLIO</h1>
+          <p id="portfolioTitle">PORTFOLIO</p>
           <p id="portfolioText1">
             미래의 학습을 <b>설계하다</b>
           </p>

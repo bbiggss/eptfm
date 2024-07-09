@@ -1,7 +1,7 @@
 import React from 'react';
-import { AboutTextsBox } from '../../assets/styles/main.styled';
+import { AboutDescriptionBox1 } from '../../assets/styles/main.styled';
 
-const AboutTexts = (data) => {
+const AboutDescription1 = (data) => {
   const renderTextWithLineBreaks = (text) => {
     return text.split('\n').map((line, index) => (
       <React.Fragment key={index}>
@@ -11,15 +11,15 @@ const AboutTexts = (data) => {
     ));
   };
   return (
-    <AboutTextsBox>
+    <AboutDescriptionBox1>
       {data.img && <img src={data && data.img} alt="" />}
       <div id="textsBoxContainer">
         <p className="textsTitle">{data && data.textsTitle}</p>
         <p className="textsSubTitle">{data && data.textsSubTitle}</p>
         <p className="textsContents">{renderTextWithLineBreaks(data && data.textsContents)}</p>
       </div>
-    </AboutTextsBox>
+    </AboutDescriptionBox1>
   );
 };
 
-export default AboutTexts;
+export default AboutDescription1;

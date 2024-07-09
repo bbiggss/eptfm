@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutImg from './AboutImg';
-import AboutTexts from './AboutTexts';
+import AboutDescription1 from './AboutDescription1';
+import AboutDescription2 from './AboutDescription2';
 import { AboutBox } from '../../assets/styles/main.styled';
 
 const About = ({ data }) => {
@@ -14,7 +15,7 @@ const About = ({ data }) => {
       </div>
       <div className="aboutContents">
         <AboutImg img={aboutImg1} />
-        <AboutTexts
+        <AboutDescription1
           img={aboutImg2}
           textsTitle={'VISION'}
           textsSubTitle={'무한한 가능성을 열다'}
@@ -22,7 +23,7 @@ const About = ({ data }) => {
         />
       </div>
       <div className="aboutContents">
-        <AboutTexts
+        <AboutDescription2
           textsTitle={'VALUE'}
           textsSubTitle={'혁신 · 협력 · 소통'}
           textsContents={`새로운 교육 기술 트렌드를 연구하고 적용하고,\n 성과와 필요에 맞춘 맞춤형 피드백 제공합니다.\n 열린 소통을 통해 협력적인 업무 환경 조성하여\n 시공간을 뛰어넘은 소통 학습을 체험할 수\n 있습니다.`}
