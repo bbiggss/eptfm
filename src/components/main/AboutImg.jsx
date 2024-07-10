@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutImgBox } from '../../assets/styles/main.styled';
+import { AboutImgBox } from '../../assets/styles/main/about.styled';
 
 const AboutImg = (data) => {
   return (

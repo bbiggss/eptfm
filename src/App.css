@@ -1,41 +1,11 @@
 html {
   scroll-behavior: smooth;
-  /* width: 1903px; */
 }
 
-.colored {
-  background-color: white;
-}
-
-#mainVideo {
-  z-index: -1;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#videoBox {
+#testTag {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-  /* background-color: #dedede; */
-}
-#center {
-  display: flex;
-  justify-content: center;
-}
-#videoBox video {
-  /* width: 1556px; */
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  /* height: 100%; */
-  /* height: 100vh; */
-  /* overflow: hidden; */
-}
-
-#HeaderBottomBox {
-  height: 100vh;
+  height: 100px;
+  background-color: black;
 }
 
 /* 영어 */

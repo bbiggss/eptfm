@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { HeaderBox } from '../../assets/styles/header.styled';
+import { HeaderBox, HeaderPlaceholder } from '../../assets/styles/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ img }) => {
   const [headerClass, setHeaderClass] = useState('transparent');
@@ -25,21 +23,13 @@ const Header = ({ img }) => {
   }, []);
   return (
     <>
-      <div className="w-full bg-orange-300 border-2 border-zinc-500">
-        <div className="sm:my-[20px] lg:my-[42px] bg-lime-300">
-          <Link to={'/'}>
-            <img src={img && img.logoImg} alt="" className="w-[122px] h-[18px]" />
-          </Link>
-          <span>{/* <FontAwesomeIcon icon={faBars} /> */}</span>
-        </div>
-      </div>
-
-      {/* <HeaderBox id="header" className={headerClass}>
+      <HeaderBox id="header" className={headerClass}>
         <div id="headerContainer">
           <Link to={'/'}>
-            <img src={img && img.logoImg} alt="" />
+            <img id="logoImg" src={img && img.logoImg} alt="" />
           </Link>
           <span>
+            <img id="dropDownImg" src={img && img.dropDown} alt="" />
             <ul>
               <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
@@ -47,7 +37,8 @@ const Header = ({ img }) => {
             </ul>
           </span>
         </div>
-      </HeaderBox> */}
+      </HeaderBox>
+      <HeaderPlaceholder />
     </>
   );
 };

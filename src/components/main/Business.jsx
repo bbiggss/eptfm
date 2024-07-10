@@ -1,6 +1,6 @@
 import React from 'react';
-import { BusinessBox } from '../../assets/styles/main.styled';
 import BusinessItems from './BusinessItems';
+import { BusinessBox } from '../../assets/styles/main/business.styled';
 
 const Business = ({ data }) => {
   const businessImg1 = data.businessImg1;

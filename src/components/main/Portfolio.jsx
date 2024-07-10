@@ -1,6 +1,5 @@
 import React from 'react';
-import { PortfolioBox } from '../../assets/styles/main.styled';
-
+import { PortfolioBox } from '../../assets/styles/main/portfolio.styled';
 import PfFieldButton from './PfFieldButton';
 
 const Portfolio = ({ data }) => {
@@ -10,13 +9,13 @@ const Portfolio = ({ data }) => {
         <div id="portfolioTexts">
           <p id="portfolioTitle">PORTFOLIO</p>
           <p id="portfolioText1">
-            미래의 학습을 <b>설계하다</b>
+            미래의 학습을 <span>설계하다</span>
           </p>
           <div id="portfolioText2">
             최첨단 교육 공학 <span className="englishFont">SOLUTION</span>으로 <br />
             학습의 한계를 뛰어넘다.
           </div>
-          <div>
+          <div id="portfolioLink">
             <PfFieldButton title={'VR/AR'} link={'portfolioList/VrAr'} />
             <PfFieldButton title={'e-Learning'} link={'portfolioList/eLearning'} />
             <PfFieldButton title={'R&D'} link={'portfolioList/rNd'} />

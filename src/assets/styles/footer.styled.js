@@ -2,31 +2,70 @@ import styled from 'styled-components';
 
 export const FooterBox = styled.div`
   width: 100%;
-  background-color: #f0f2f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0px;
   color: #767676;
-
   font-family: 'NanumSquareB';
+  background-color: #f0f2f4;
 
-  & #container {
-    width: 1556px;
-    /* background-color: beige; */
-    display: flex;
+  #inquiry span {
+    display: none;
   }
-  & #container #info {
-    /* background-color: li; */
+
+  @media (min-width: 1025px) {
+    #container {
+      padding: 80px 182px;
+      & #infoInquiry {
+        display: flex;
+        position: relative;
+      }
+      & #inquiry {
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: right;
+      }
+      & img {
+        width: 150px;
+        margin-bottom: 20px;
+      }
+    }
   }
-  & #container #inquiry {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    text-align: right;
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px;
+    #container {
+      padding: 32px;
+    }
+    #footerImg {
+      width: 63px;
+      height: 9px;
+    }
+    #inquiry div:first-child {
+      display: inline;
+    }
+    #inquiry span {
+      display: inline;
+    }
+    #inquiry div:last-child {
+      display: inline;
+    }
   }
-  & img {
-    width: 150px;
-    margin-bottom: 20px;
+  @media (max-width: 767px) {
+    font-size: 9px;
+    #container {
+      padding: 32px;
+    }
+    #footerImg {
+      width: 63px;
+      height: 9px;
+    }
+    #inquiry div:first-child {
+      display: inline;
+    }
+    #inquiry span {
+      display: inline;
+    }
+    #inquiry div:last-child {
+      display: inline;
+    }
   }
 `;

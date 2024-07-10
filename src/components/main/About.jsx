@@ -1,8 +1,8 @@
 import React from 'react';
+import { AboutBox } from '../../assets/styles/main/about.styled';
 import AboutImg from './AboutImg';
 import AboutDescription1 from './AboutDescription1';
 import AboutDescription2 from './AboutDescription2';
-import { AboutBox } from '../../assets/styles/main.styled';
 
 const About = ({ data }) => {
   const aboutImg1 = data.aboutImg1;

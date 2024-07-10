@@ -3,6 +3,7 @@ import './App.css';
 import {
   // 헤더
   logoImg,
+  dropDown,
   // 메인
   // about
   aboutImg1,
@@ -37,7 +38,7 @@ import ELearning from './components/main/eLearning/ELearning';
 import Rnd from './components/main/rNd/Rnd';
 
 function App() {
-  let headerLogoImg = { logoImg };
+  let headerLogoImg = { logoImg, dropDown };
   let footerLogoImg = { bottomLogoImg };
   let mainImgs = {
     aboutImg1,
@@ -63,19 +64,17 @@ function App() {
       {/* 메인일때 */}
 
       <Header img={headerLogoImg} />
-      {/* {location.pathname === '/' ? <Video /> : ''} */}
+      {location.pathname === '/' ? <Video /> : ''}
 
-      {location.pathname === '/' ? <div id="HeaderBottomBox"></div> : ''}
-
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
-        <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
+        {/* <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
         <Route path="/portfolioList/eLearning" element={<PortfolioList />} />
         <Route path="/portfolioList/rNd" element={<PortfolioList />} />
         <Route path="/VrAr/:id" element={<VrAr />} />
         <Route path="/eLearning/:id" element={<ELearning />} />
-        <Route path="/rNd/:id" element={<Rnd />} />
-      </Routes> */}
+        <Route path="/rNd/:id" element={<Rnd />} /> */}
+      </Routes>
       <Footer img={footerLogoImg} />
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutDescriptionBox2 } from '../../assets/styles/main.styled';
+import { AboutDescriptionBox2 } from '../../assets/styles/main/about.styled';
 
 const AboutDescription2 = (data) => {
   const renderTextWithLineBreaks = (text) => {

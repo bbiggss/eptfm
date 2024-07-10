@@ -17,10 +17,12 @@ import portfolioBg from './portfolio_bg.png';
 import portfolioBg2 from './portfolio_bg2.png';
 import portfolioBg3 from './portfolio_bg3.png';
 import testImg from './02.jpg';
+import dropDown from './dropdown.png';
 
 export {
   // 헤더
   logoImg,
+  dropDown,
   // 메인
   // about
   aboutImg1,

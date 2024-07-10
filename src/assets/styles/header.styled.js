@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const HeaderPlaceholder = styled.div`
+  @media (max-width: 767px) {
+    height: 83px;
+  }
+`;
+
 export const HeaderBox = styled.div`
   width: 100%;
   display: flex;
@@ -7,57 +13,117 @@ export const HeaderBox = styled.div`
   font-family: 'Roboto-Medium';
   justify-content: center;
   z-index: 1;
+  /* background-color: yellowgreen; */
 
-  & #headerContainer {
-    position: relative;
-    width: 1556px;
-    /* background-color: yellowgreen; */
-    margin: 42px 0px;
+  &.colored {
+    background-color: white;
   }
 
-  & img {
-    width: 122px;
-    height: 18px;
+  #headerContainer {
+    /* background-color: yellow; */
   }
 
-  & ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-  }
-  & ul li {
-    margin-right: 92px;
-  }
-  & ul li:last-child {
-    margin-right: 0;
-  }
-  & span {
-    position: absolute;
-    right: 0;
-  }
+  /* 데스크탑 */
+  @media (min-width: 1025px) {
+    #headerContainer {
+      position: relative;
+      width: 1556px;
+      margin: 42px 0px;
+    }
+    #logoImg {
+      width: 122px;
+      height: 18px;
+    }
+    #dropDownImg {
+      display: none;
+    }
 
-  /* 헤더 nav 텍스트 */
-  & ul li a {
-    text-decoration: none;
-    color: #292929;
-    font-size: 18px;
-    letter-spacing: 0px;
-  }
+    & ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+    }
+    & ul li {
+      margin-right: 92px;
 
-  @media (max-width: 768px) {
-    /* 태블릿과 모바일 */
-    width: 100%;
-    background-color: lightblue;
-
-    & #header ul li {
-      margin-right: 10px;
+      /* 헤더 nav 텍스트 */
+      & a {
+        text-decoration: none;
+        color: #292929;
+        font-size: 18px;
+        letter-spacing: 0px;
+      }
+    }
+    & ul li:last-child {
+      margin-right: 0;
+    }
+    & span {
+      position: absolute;
+      right: 0;
     }
   }
 
-  @media (max-width: 640px) {
-    /* 모바일 */
-    width: 100%;
-    height: 70px;
-    background-color: lightgreen;
+  /* 태블릿 (768px ~ 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    #headerContainer {
+      position: relative;
+      width: 780px;
+      margin: 38px 0px;
+    }
+    #logoImg {
+      width: 122px;
+      height: 18px;
+    }
+    #dropDownImg {
+      display: none;
+    }
+
+    & ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+    }
+    & ul li {
+      margin-right: 92px;
+
+      /* 헤더 nav 텍스트 */
+      & a {
+        text-decoration: none;
+        color: #292929;
+        font-size: 18px;
+        letter-spacing: 0px;
+      }
+    }
+    & ul li:last-child {
+      margin-right: 0;
+    }
+    & span {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  /* 모바일 (0 ~ 767px) */
+  @media (max-width: 767px) {
+    background-color: white;
+    #headerContainer {
+      position: relative;
+      width: 100%;
+      margin: 32px;
+
+      #logoImg {
+        width: 78px;
+        height: 10.99px;
+      }
+      #dropDownImg {
+        position: absolute;
+        right: 0;
+        width: 24px;
+        height: 24px;
+      }
+      ul {
+        display: none;
+      }
+    }
   }
 `;
