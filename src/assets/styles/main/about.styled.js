@@ -137,10 +137,15 @@ export const AboutDescriptionBox1 = styled.div`
       margin-right: 213px;
       margin-top: -35px;
     }
-    & #textsBoxContainer {
+    & .textsBoxContainer {
       margin-top: 260px;
       margin-left: 106px;
       /* background-color: aqua; */
+
+      &.marginLeft182{
+        /* background-color: yellowgreen; */
+        margin-left: 182px;
+      }
 
       & .textsTitle {
         font-size: 180px;
@@ -169,7 +174,7 @@ export const AboutDescriptionBox1 = styled.div`
     img {
       display: none;
     }
-    #textsBoxContainer {
+    .textsBoxContainer {
       padding-left: 68px;
       padding-top: 42px;
       padding-bottom: 42px;
@@ -211,7 +216,7 @@ export const AboutDescriptionBox1 = styled.div`
     img {
       display: none;
     }
-    #textsBoxContainer {
+    .textsBoxContainer {
       padding-left: 32px;
       padding-top: 24px;
       padding-bottom: 24px;
