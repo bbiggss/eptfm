@@ -1,12 +1,22 @@
 import styled from 'styled-components';
 
 export const AboutBox = styled.div`
+  .textsTitle,
+  .aboutTitle {
+    font-family: 'Roboto-Medium';
+  }
+  .textsSubTitle {
+    font-family: 'NanumSquareEB';
+  }
+  .textsContents {
+    font-family: 'NanumSquareB';
+  }
+
   @media (min-width: 1025px) {
     .aboutTitle {
       width: 100%;
       height: 400px;
-      background-color: yellow;
-      font-family: 'Roboto-Medium';
+      /* background-color: yellow; */
 
       p {
         margin: 0;
@@ -30,34 +40,52 @@ export const AboutBox = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
     .aboutTitle {
       width: 100%;
-      height: 100px;
-      background-color: yellow;
-      font-family: 'Roboto-Medium';
+      /* background-color: yellow; */
 
       p {
         margin: 0;
-        font-size: 20px;
-        line-height: 24.2px;
         color: #191919;
-        padding-top: 50px;
-        padding-left: 32px;
+        padding-top: 64px;
+        padding-left: 68px;
+        padding-bottom: 24px;
+
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.73px;
+        text-align: left;
       }
+    }
+    .aboutContents {
+      width: 100%;
+      /* background-color: blueviolet; */
+      display: flex;
+      flex-direction: column;
+    }
+    .textsTitle {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 43.57px;
+      letter-spacing: 0.05em;
+      text-align: left;
+      color: #48c2c5;
+      margin: 0;
     }
   }
   @media (max-width: 767px) {
     .aboutTitle {
       width: 100%;
-      height: 100px;
       /* background-color: yellow; */
-      font-family: 'Roboto-Medium';
 
       p {
         margin: 0;
+        color: #191919;
+        padding-top: 42px;
+        padding-left: 32px;
+        padding-bottom: 8px;
+
+        font-weight: 700;
         font-size: 20px;
         line-height: 24.2px;
-        color: #191919;
-        padding-top: 50px;
-        padding-left: 32px;
       }
     }
     .aboutContents {
@@ -81,6 +109,10 @@ export const AboutImgBox = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    order: 1;
+    img {
+      width: 100%;
+    }
   }
   @media (max-width: 767px) {
     order: 1;
@@ -112,20 +144,17 @@ export const AboutDescriptionBox1 = styled.div`
 
       & .textsTitle {
         font-size: 180px;
-        letter-spacing: 0px;
         color: #48c2c5;
-        margin: 0px;
-        font-family: 'Roboto-Medium';
+        margin: 0;
       }
+
       & .textsSubTitle {
-        font-family: 'NanumSquareEB';
         font-size: 70px;
         color: #48c2c5;
         letter-spacing: -4px;
         margin: 0;
       }
       & .textsContents {
-        font-family: 'NanumSquareB';
         color: #767676;
         font-size: 36px;
         margin: 0;
@@ -134,6 +163,46 @@ export const AboutDescriptionBox1 = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    order: 2;
+    width: 100%;
+    /* background-color: red; */
+    img {
+      display: none;
+    }
+    #textsBoxContainer {
+      padding-left: 68px;
+      padding-top: 42px;
+      padding-bottom: 42px;
+
+      .textsTitle {
+        color: #48c2c5;
+        margin: 0;
+
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.09px;
+        letter-spacing: 0.05em;
+        text-align: left;
+      }
+      .textsSubTitle {
+        color: #48c2c5;
+        margin: 0;
+        margin-bottom: 16px;
+
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.73px;
+        text-align: left;
+      }
+      .textsContents {
+        margin: 0;
+
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.05px;
+        text-align: left;
+      }
+    }
   }
   @media (max-width: 767px) {
     order: 2;
@@ -144,100 +213,35 @@ export const AboutDescriptionBox1 = styled.div`
     }
     #textsBoxContainer {
       padding-left: 32px;
-      & .textsTitle {
-        color: #48c2c5;
+      padding-top: 24px;
+      padding-bottom: 24px;
+
+      .textsTitle {
         font-size: 36px;
+        font-weight: 700;
         line-height: 43.57px;
-        letter-spacing: 5%;
-        margin: 0;
-      }
-      & .textsSubTitle {
+        letter-spacing: 0.05em;
+        text-align: left;
         color: #48c2c5;
-        font-size: 16px;
-        line-height: 19.36px;
         margin: 0;
       }
-      & .textsContents {
+      .textsSubTitle {
+        color: #48c2c5;
+        margin: 0;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        text-align: left;
+
+        margin-bottom: 8px;
+      }
+      .textsContents {
         margin: 0;
         font-size: 12px;
+        font-weight: 500;
         line-height: 14.52px;
-      }
-    }
-  }
-`;
-
-export const AboutDescriptionBox2 = styled.div`
-  @media (min-width: 1025px) {
-    position: relative;
-    width: 50%;
-    max-width: 960px;
-    /* background-color: yellow; */
-
-    & img {
-      width: 247px;
-      height: 286px;
-      position: absolute;
-      right: 0;
-      /* margin-right: 186px; */
-      margin-right: 213px;
-      margin-top: -35px;
-    }
-    & #textsBoxContainer {
-      margin-top: 206px;
-      margin-left: 182px;
-      /* background-color: aqua; */
-
-      & .textsTitle {
-        font-size: 180px;
-        letter-spacing: 0px;
-        color: #48c2c5;
-        margin: 0px;
-        font-family: 'Roboto-Medium';
-      }
-      & .textsSubTitle {
-        font-family: 'NanumSquareEB';
-        font-size: 70px;
-        color: #48c2c5;
-        letter-spacing: -4px;
-        margin: 0;
-      }
-      & .textsContents {
-        font-family: 'NanumSquareB';
-        color: #767676;
-        font-size: 36px;
-        margin: 0;
-        margin-top: 74px;
-      }
-    }
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-  }
-  @media (max-width: 767px) {
-    order: 2;
-    width: 100%;
-    /* background-color: red; */
-    img {
-      display: none;
-    }
-    #textsBoxContainer {
-      padding-left: 32px;
-      & .textsTitle {
-        color: #48c2c5;
-        font-size: 36px;
-        line-height: 43.57px;
-        letter-spacing: 5%;
-        margin: 0;
-      }
-      & .textsSubTitle {
-        color: #48c2c5;
-        font-size: 16px;
-        line-height: 19.36px;
-        margin: 0;
-      }
-      & .textsContents {
-        margin: 0;
-        font-size: 12px;
-        line-height: 14.52px;
+        text-align: left;
       }
     }
   }

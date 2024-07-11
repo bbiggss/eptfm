@@ -15,6 +15,7 @@ const BusinessItems = (data) => {
         <p>{data && data.text}</p>
         <img src={data && data.img} alt="" />
       </div>
+
       <div className="hoverBox">
         <img src={data && data.hoverImg} alt="" />
         <div>

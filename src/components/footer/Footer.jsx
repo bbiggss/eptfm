@@ -20,9 +20,9 @@ const Footer = ({ img }) => {
             </div>
           </div>
           <div id="inquiry">
-            <div>문의 : zeusee26@gmail.com</div>
+            <div>대표메일 : goldkims@gmail.com</div>
             <span>&nbsp;|&nbsp;</span>
-            <div>프로젝트 문의 : goldkims@gmail.com</div>
+            <div>협업 문의 : zeusee26@gmail.com</div>
           </div>
         </div>
 

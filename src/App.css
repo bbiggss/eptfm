@@ -21,6 +21,12 @@ html {
 }
 
 /* 한글 */
+/* font-family: 'NanumSquareR'; */
+@font-face {
+  font-family: 'NanumSquareR';
+  src: url('./assets/fonts/NanumSquareR.otf') format('opentype');
+}
+
 /* font-family: 'NanumSquareB'; */
 @font-face {
   font-family: 'NanumSquareB';
