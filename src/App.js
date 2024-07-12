@@ -68,9 +68,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main data={mainImgs} />} />
-        {/* <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
+        {/* <Route path="/portfolioList/VrAr" element={<PortfolioList />} /> */}
         <Route path="/portfolioList/eLearning" element={<PortfolioList />} />
-        <Route path="/portfolioList/rNd" element={<PortfolioList />} />
+        {/* <Route path="/portfolioList/rNd" element={<PortfolioList />} />
         <Route path="/VrAr/:id" element={<VrAr />} />
         <Route path="/eLearning/:id" element={<ELearning />} />
         <Route path="/rNd/:id" element={<Rnd />} /> */}

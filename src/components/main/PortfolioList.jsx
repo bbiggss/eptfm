@@ -1,30 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
 
-import { testImg } from '../../assets/images';
+import { testImg, listButton, backButton } from '../../assets/images';
 
 const PortfolioList = (data) => {
   const location = useLocation();
   const [listTitle, updateListTitle] = useState('');
   const [portfolioItems, updatePortfolioItems] = useState({});
+  const nav = useNavigate();
 
   // 리덕스에서 불러오던지 하기
   // const portfolioItems = [
   //   {
   //     pfItemImg: testImg,
-  //     pfItemBigTitle: 'KERIS',
+  //     pfItemBigTitle: '한국교육학술정보원',
   //     pfItemSmallTitle: 'AR | 갯벌은 어떤 곳일까?',
   //   },
   //   {
   //     pfItemImg: testImg,
-  //     pfItemBigTitle: 'KERIS',
+  //     pfItemBigTitle: '한국교육학술정보원',
   //     pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
   //   },
   //   {
   //     pfItemImg: testImg,
-  //     pfItemBigTitle: 'KERIS',
+  //     pfItemBigTitle: '한국교육학술정보원',
   //     pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
   //   },
   // ];
@@ -35,17 +36,17 @@ const PortfolioList = (data) => {
       const portfolioItems2 = [
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 갯벌은 어떤 곳일까?',
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 나의 호흡 기관은 어떻게 생겼을까',
         },
       ];
@@ -60,7 +61,7 @@ const PortfolioList = (data) => {
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교사가 이끄는 교실혁명',
         },
         {
@@ -70,7 +71,7 @@ const PortfolioList = (data) => {
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '정보공시 입력 지침 안내와 시스템매뉴얼',
         },
         {
@@ -80,7 +81,7 @@ const PortfolioList = (data) => {
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '사이버어울림',
         },
       ];
@@ -95,7 +96,7 @@ const PortfolioList = (data) => {
         },
         {
           pfItemImg: testImg,
-          pfItemBigTitle: 'KERIS',
+          pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교실혁명 강의교안',
         },
       ];
@@ -103,14 +104,16 @@ const PortfolioList = (data) => {
     }
   }, [location.pathname]);
 
-  // useEffect(() => {
-  //   console.log(123, portfolioItems);
-  // }, [portfolioItems]);
+  const listBtn = () => {
+    alert('1');
+  };
 
   return (
     <PortfolioListBox>
-      <h1>PORTFOLIO</h1>
-      <p id="fieldTitle">{listTitle}</p>
+      <div className="topTitleBox">
+        <p class="pageTitle robotoMedium">PORTFOLIO</p>
+        <p class="fieldTitle RobotoLight">{listTitle}</p>
+      </div>
 
       <ul>
         {Array.isArray(portfolioItems) &&
@@ -128,6 +131,12 @@ const PortfolioList = (data) => {
             // </li>
           ))}
       </ul>
+
+      <div className="btnBox">
+        <img onClick={listBtn} src={listButton} alt="" />
+        <br />
+        <img onClick={() => nav(-1)} src={backButton} alt="" />
+      </div>
     </PortfolioListBox>
   );
 };

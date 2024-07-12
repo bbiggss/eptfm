@@ -13,8 +13,8 @@ const PortfolioLists = ({ data, index }) => {
           <img src={data.pfItemImg} alt="" />
         </div>
         <div>
-          <p>{data.pfItemBigTitle}</p>
-          <p>{data.pfItemSmallTitle}</p>
+          <p className="NanumSquareEB">{data.pfItemBigTitle}</p>
+          <p className="NanumSquareEB">{data.pfItemSmallTitle}</p>
         </div>
       </Link>
     </li>

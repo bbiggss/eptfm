@@ -18,6 +18,8 @@ import portfolioBg2 from './portfolio_bg2.png';
 import portfolioBg3 from './portfolio_bg3.png';
 import testImg from './02.jpg';
 import dropDown from './dropdown.png';
+import listButton from './btn_p_list.png';
+import backButton from './btn_p_back.png';
 
 export {
   // 헤더
@@ -43,6 +45,10 @@ export {
   portfolioBg,
   portfolioBg2,
   portfolioBg3,
+
+  // portfolio페이지
+  listButton,
+  backButton,
   // 푸터
   bottomLogoImg,
   testImg,

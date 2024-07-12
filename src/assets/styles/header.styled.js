@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const HeaderPlaceholder = styled.div`
+  @media (min-width: 1025px) {
+    height: 102px;
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 147px;
   }
@@ -10,13 +13,16 @@ export const HeaderPlaceholder = styled.div`
 `;
 
 export const HeaderBox = styled.div`
-  width: 100%;
-  display: flex;
-  position: fixed;
   font-family: 'Roboto-Medium';
-  justify-content: center;
-  z-index: 1;
   /* background-color: yellowgreen; */
+
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
 
   &.colored {
     background-color: white;
@@ -28,10 +34,12 @@ export const HeaderBox = styled.div`
 
   /* 데스크탑 */
   @media (min-width: 1025px) {
+    max-width: 1920px;
+    height: 102px;
     #headerContainer {
       position: relative;
-      width: 1556px;
-      margin: 42px 0px;
+      margin: auto;
+      width: 80%;
     }
     #logoImg {
       width: 122px;
