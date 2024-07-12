@@ -22,6 +22,20 @@ export const FooterBox = styled.div`
       & #infoInquiry {
         display: flex;
         position: relative;
+        margin-bottom: 36px;
+
+        #info {
+          #footerImg {
+            width: 133px;
+            height: 18px;
+            margin-bottom: 36px;
+          }
+          span {
+            font-size: 20px;
+            letter-spacing: -0.02em; // 자간
+            line-height: 36px; // 줄간
+          }
+        }
       }
       & #inquiry {
         margin-left: auto;
@@ -29,10 +43,13 @@ export const FooterBox = styled.div`
         right: 0;
         bottom: 0;
         text-align: right;
+        font-size: 20px;
+        letter-spacing: -0.02em; // 자간
+        line-height: 36px; // 줄간
       }
-      & img {
-        width: 150px;
-        margin-bottom: 20px;
+
+      #copyright {
+        font-size: 18px;
       }
     }
   }
@@ -40,6 +57,9 @@ export const FooterBox = styled.div`
     font-size: 20px;
     #container {
       padding: 32px;
+    }
+    #infoInquiry {
+      margin-bottom: 31.77px;
     }
     #footerImg {
       width: 63px;
@@ -59,6 +79,9 @@ export const FooterBox = styled.div`
     font-size: 9px;
     #container {
       padding: 32px;
+    }
+    #infoInquiry {
+      margin-bottom: 12px;
     }
     #footerImg {
       width: 63px;

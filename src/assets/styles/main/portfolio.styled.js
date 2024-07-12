@@ -21,7 +21,7 @@ export const PortfolioBox = styled.div`
   }
   /* 한글폰트 */
   #portfolioText1,
-  #portfolioText2_pc,
+  #pc_portfolioText2,
   #portfolioText2 {
     font-family: 'NanumSquareR';
   }
@@ -32,13 +32,14 @@ export const PortfolioBox = styled.div`
 
     #container {
       width: 100%;
+      height: 1700px;
 
       #portfolioTexts {
         padding-left: 182px;
         padding-top: 306px;
         & #portfolioTitle {
           margin: 0;
-          padding-top: 42px;
+          /* padding-top: 42px; */
 
           font-family: 'Roboto-Medium';
           font-size: 100px;
@@ -120,7 +121,7 @@ export const PortfolioBox = styled.div`
               top: -469px;
             }
             img:nth-of-type(2) {
-              width: 527px;
+              width: 487px;
               position: relative;
               right: -200px;
               top: -469px;
@@ -160,7 +161,7 @@ export const PortfolioBox = styled.div`
           margin-bottom: 16px;
         }
 
-        & #portfolioText2_pc {
+        & #pc_portfolioText2 {
           display: none;
         }
 
@@ -259,7 +260,7 @@ export const PortfolioBox = styled.div`
           text-align: left;
         }
 
-        & #portfolioText2_pc {
+        & #pc_portfolioText2 {
           display: none;
         }
 

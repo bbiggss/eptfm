@@ -65,11 +65,12 @@ export const BusinessBox = styled.div`
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: white;
-      font-size: 30px;
+      color: #ffffff;
+      font-size: 42px;
       margin: 0;
       padding: 0;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+      filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
     }
 
     & .noHoverBox {
@@ -89,10 +90,14 @@ export const BusinessBox = styled.div`
 
       & div {
         position: absolute;
-        width: 300px;
+        width: 500px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        p {
+          margin: 0;
+        }
       }
 
       & p:first-child {
@@ -101,11 +106,12 @@ export const BusinessBox = styled.div`
         text-align: center;
         font-family: 'Roboto-Medium';
         filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
+        margin-bottom: 60px;
       }
 
       & p:last-child {
         color: white;
-        font-size: 17px;
+        font-size: 26px;
         text-align: center;
         font-family: 'NanumSquareB';
         filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
