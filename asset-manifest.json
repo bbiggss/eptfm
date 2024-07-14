@@ -1,37 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fc71c19.css",
-    "main.js": "/static/js/main.2bbafae9.js",
+    "main.css": "/static/css/main.c4057342.css",
+    "main.js": "/static/js/main.045fa504.js",
     "static/js/453.3e5480ee.chunk.js": "/static/js/453.3e5480ee.chunk.js",
-    "static/media/02.jpg": "/static/media/02.892ba76b2b09707a8764.jpg",
-    "static/media/about_img1.png": "/static/media/about_img1.0a9b9d8c22f8bc29c3a6.png",
     "static/media/NanumSquareEB.otf": "/static/media/NanumSquareEB.d3d3b0d79a1d36dcf618.otf",
     "static/media/NanumSquareB.otf": "/static/media/NanumSquareB.ced830f4e9698609ab9e.otf",
     "static/media/NanumSquareR.otf": "/static/media/NanumSquareR.ae1f789430671e7470e0.otf",
-    "static/media/portfolio_img2.png": "/static/media/portfolio_img2.23e644950d1a91bd4b96.png",
-    "static/media/portfolio_img1.png": "/static/media/portfolio_img1.11edfd984dfd4788abb6.png",
-    "static/media/portfolio_img3.png": "/static/media/portfolio_img3.e3f742df94ae10bc2b92.png",
-    "static/media/about_img3.png": "/static/media/about_img3.f300016640a2ed5ab8a7.png",
-    "static/media/bussiness_img3.png": "/static/media/bussiness_img3.01b079bbb97b7281f8ca.png",
-    "static/media/bussiness_bg.png": "/static/media/bussiness_bg.a45cb5a0d08852185127.png",
-    "static/media/bussiness_img1.png": "/static/media/bussiness_img1.c2bbc1a6a29c74a1fec9.png",
     "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
-    "static/media/bussiness_img2.png": "/static/media/bussiness_img2.4b681a2dfa81d62aff9a.png",
-    "static/media/portfolio_bg3.png": "/static/media/portfolio_bg3.dc7e0a3233aad0ace211.png",
-    "static/media/portfolio_bg2.png": "/static/media/portfolio_bg2.ea2d79331508292dd587.png",
-    "static/media/portfolio_bg.png": "/static/media/portfolio_bg.1c2e2bd39f31c6ed3778.png",
-    "static/media/bussiness_img3_over.png": "/static/media/bussiness_img3_over.c4631700b31423d36d54.png",
-    "static/media/about_img2.png": "/static/media/about_img2.20fe0fcb35a4d7a9cfc7.png",
-    "static/media/bussiness_img1_over.png": "/static/media/bussiness_img1_over.0b7974076c7655b51357.png",
-    "static/media/bussiness_img2_over.png": "/static/media/bussiness_img2_over.0342b192486da3c57727.png",
+    "static/media/Roboto-Light.ttf": "/static/media/Roboto-Light.333da16a3f3cc391d087.ttf",
     "index.html": "/index.html",
-    "main.6fc71c19.css.map": "/static/css/main.6fc71c19.css.map",
-    "main.2bbafae9.js.map": "/static/js/main.2bbafae9.js.map",
+    "main.c4057342.css.map": "/static/css/main.c4057342.css.map",
+    "main.045fa504.js.map": "/static/js/main.045fa504.js.map",
     "453.3e5480ee.chunk.js.map": "/static/js/453.3e5480ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fc71c19.css",
-    "static/js/main.2bbafae9.js"
+    "static/css/main.c4057342.css",
+    "static/js/main.045fa504.js"
   ]
 }
