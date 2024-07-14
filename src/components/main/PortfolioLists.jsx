@@ -10,7 +10,7 @@ const PortfolioLists = ({ data, index }) => {
     <li>
       <Link to={`/${location.pathname.split('/')[2]}/${index + 1}`}>
         <div>
-          <img src={data.pfItemImg} alt="" />
+          <img src={`${data.pfItemImg}`} alt="" />
         </div>
         <div>
           <p className="NanumSquareEB">{data.pfItemBigTitle}</p>

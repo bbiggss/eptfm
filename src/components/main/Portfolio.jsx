@@ -32,12 +32,12 @@ const Portfolio = ({ data }) => {
           </div>
           <div id="portfolioImgs">
             <div className="pfImgLeftBox">
-              <img src={data.portfolioImg1} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio_img1.png`} alt="" />
             </div>
             <div className="pfImgRightBox">
-              <img src={data.portfolioImg2} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio_img2.png`} alt="" />
               <br />
-              <img src={data.portfolioImg3} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio_img3.png`} alt="" />
             </div>
           </div>
         </div>

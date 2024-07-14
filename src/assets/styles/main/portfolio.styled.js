@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { portfolioBg2, portfolioBg3 } from '../../images';
+// import { portfolioBg2, portfolioBg3 } from '../../images';
 const pc_pfFieldWidth = '380px';
 const pfFieldMobileWidth = '98.6px';
 const tablet_pfFieldWidth = '224px';
@@ -7,7 +7,7 @@ const tablet_pfFieldWidth = '224px';
 const tablet_PaddingLeft = '68px';
 
 export const PortfolioBox = styled.div`
-  background-image: url(${portfolioBg3});
+  background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio_bg3.png);
   background-repeat: no-repeat;
 
   .englishFont,

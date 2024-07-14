@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
 
-import { testImg, listButton, backButton } from '../../assets/images';
+// import { testImg, listButton, backButton } from '../../assets/images';
 
 const PortfolioList = (data) => {
   const location = useLocation();
@@ -35,17 +35,17 @@ const PortfolioList = (data) => {
       updateListTitle('VR/AR');
       const portfolioItems2 = [
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg}`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 갯벌은 어떤 곳일까?',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg}`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg}`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 나의 호흡 기관은 어떻게 생겼을까',
         },
@@ -55,32 +55,32 @@ const PortfolioList = (data) => {
       updateListTitle('e-Learning');
       const portfolioItems2 = [
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '농식품공무원교육원',
           pfItemSmallTitle: '저수지·댐 안전관리 및 재해예방',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교사가 이끄는 교실혁명',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '화학물질안전원',
           pfItemSmallTitle: '취급자 안전교육',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '정보공시 입력 지침 안내와 시스템매뉴얼',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '화학물질안전원',
           pfItemSmallTitle: '화학사고의 안전지대는 바로 사전교육',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '사이버어울림',
         },
@@ -90,12 +90,12 @@ const PortfolioList = (data) => {
       updateListTitle('R&D');
       const portfolioItems2 = [
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '환경산업기술원',
           pfItemSmallTitle: '환경표지인증',
         },
         {
-          pfItemImg: testImg,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/02.jpg`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교실혁명 강의교안',
         },
@@ -111,8 +111,8 @@ const PortfolioList = (data) => {
   return (
     <PortfolioListBox>
       <div className="topTitleBox">
-        <p class="pageTitle robotoMedium">PORTFOLIO</p>
-        <p class="fieldTitle RobotoLight">{listTitle}</p>
+        <p className="pageTitle robotoMedium">PORTFOLIO</p>
+        <p className="fieldTitle RobotoLight">{listTitle}</p>
       </div>
 
       <ul>
@@ -122,7 +122,7 @@ const PortfolioList = (data) => {
 
             // <li key={index}>
             //   <div>
-            //     <img src={testImg} alt="" />
+            //     <img src={`${process.env.PUBLIC_URL}/assets/images/02.jpg}`} alt="" />
             //   </div>
             //   <div>
             //     <p>{item.pfItemBigTitle}</p>
@@ -133,9 +133,17 @@ const PortfolioList = (data) => {
       </ul>
 
       <div className="btnBox">
-        <img onClick={listBtn} src={listButton} alt="" />
+        <img
+          onClick={listBtn}
+          src={`${process.env.PUBLIC_URL}/assets/images/btn_p_list.png`}
+          alt=""
+        />
         <br />
-        <img onClick={() => nav(-1)} src={backButton} alt="" />
+        <img
+          onClick={() => nav(-1)}
+          src={`${process.env.PUBLIC_URL}/assets/images/btn_p_back.png`}
+          alt=""
+        />
       </div>
     </PortfolioListBox>
   );

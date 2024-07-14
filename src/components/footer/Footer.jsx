@@ -1,13 +1,17 @@
 import React from 'react';
 import { FooterBox } from '../../assets/styles/footer.styled';
 
-const Footer = ({ img }) => {
+const Footer = () => {
   return (
     <FooterBox>
       <div id="container">
         <div id="infoInquiry">
           <div id="info">
-            <img id="footerImg" src={img && img.bottomLogoImg} alt="" />
+            <img
+              id="footerImg"
+              src={`${process.env.PUBLIC_URL}/assets/images/bottom_logo.png`}
+              alt=""
+            />
             <div>
               <span>Tel: 02. 6949. 5622</span>
               <span> | </span>

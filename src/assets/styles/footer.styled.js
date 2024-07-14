@@ -4,6 +4,7 @@ export const FooterBox = styled.div`
   width: 100%;
   color: #767676;
   font-family: 'NanumSquareB';
+  background-color: #f0f2f4;
 
   display: flex;
   justify-content: center;
@@ -15,7 +16,6 @@ export const FooterBox = styled.div`
   @media (min-width: 1025px) {
     /* display: flex; */
     #container {
-      background-color: #f0f2f4;
       width: 1920px;
       box-sizing: border-box;
       padding: 80px 182px;

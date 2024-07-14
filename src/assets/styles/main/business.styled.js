@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { businessBg } from '../../images';
+// import { businessBg } from '../../images';
 
 export const BusinessBox = styled.div`
   font-family: 'Roboto-Medium';
-  background-image: url(${businessBg});
+  background-image: url(${process.env.PUBLIC_URL}/assets/images/bussiness_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 
   margin-top: 18px;
 
@@ -14,7 +14,7 @@ export const BusinessBox = styled.div`
   }
 
   @media (min-width: 1025px) {
-    background-size: cover;
+    /* background-size: cover; */
     height: 1180px;
     margin-top: 240px;
 

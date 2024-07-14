@@ -34,7 +34,12 @@ export const HeaderBox = styled.div`
 
   /* 데스크탑 */
   @media (min-width: 1025px) {
-    max-width: 1920px;
+    /* max-width: 1920px; */
+
+    .transparent{
+      background-color: transparent;
+    }
+
     height: 102px;
     #headerContainer {
       position: relative;
