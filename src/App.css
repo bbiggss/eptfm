@@ -1,8 +1,11 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 * {
   margin: 0;
+}
+.displayNone {
+  display: none;
 }
 
 /* 영어 */

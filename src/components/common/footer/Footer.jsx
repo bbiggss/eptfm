@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterBox } from '../../assets/styles/footer.styled';
+import { FooterBox } from '../../../assets/styles/footer.styled';
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
           </div>
           <div id="inquiry">
-            <div>대표메일 : eplatform@naver.com</div>
+            <div>대표 메일 : eplatform@naver.com</div>
             <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
             <div>협업 문의 : goldkims@gmail.com</div>
           </div>

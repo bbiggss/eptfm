@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
+const headerHeight = '100px';
+
 export const HeaderPlaceholder = styled.div`
   @media (min-width: 1025px) {
-    height: 102px;
+    height: ${headerHeight};
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     height: 147px;
@@ -34,16 +36,15 @@ export const HeaderBox = styled.div`
 
   /* 데스크탑 */
   @media (min-width: 1025px) {
-    /* max-width: 1920px; */
-
-    .transparent{
+    height: ${headerHeight};
+    .transparent {
       background-color: transparent;
     }
 
-    height: 102px;
     #headerContainer {
       position: relative;
       margin: auto;
+      max-width: 1920px;
       width: 80%;
     }
     #logoImg {
@@ -68,6 +69,7 @@ export const HeaderBox = styled.div`
         color: #292929;
         font-size: 18px;
         letter-spacing: 0px;
+        scroll-behavior: smooth;
       }
     }
     & ul li:last-child {

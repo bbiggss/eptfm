@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+
 // import {
 //   // 헤더
 //   logoImg,
@@ -27,9 +28,9 @@ import './App.css';
 // } from './assets/images';
 
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/header/Header';
+import Header from './components/common/header/Header';
 import Main from './components/main/Main';
-import Footer from './components/footer/Footer';
+import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
 import PortfolioList from './components/main/PortfolioList';
 
@@ -37,6 +38,10 @@ import VrAr from './components/main/vrAr/VrAr';
 import ELearning from './components/main/eLearning/ELearning';
 import Rnd from './components/main/rNd/Rnd';
 import { HeaderPlaceholder } from './assets/styles/header.styled';
+import Breadcrumb from './components/common/breadcrumb/Breadcrumb';
+import Contact from './components/contactUs/Contact';
+import { useState } from 'react';
+import InquiryModal from './components/contactUs/InquiryModal';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -59,26 +64,41 @@ function App() {
   // };
 
   const location = useLocation();
-  console.log(111, location.pathname);
-
   const isSmallScreen = window.matchMedia('(max-width: 1024px)').matches;
+  const [modalStatus, setModalStatus] = useState(false);
+
   return (
     <div className="App">
+      {/* 모달 */}
+
+      {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
+
       {/* 메인일때 */}
       <Header />
 
-      {isSmallScreen ? <HeaderPlaceholder /> : '' }
-      {location.pathname === '/' ? '' : <HeaderPlaceholder />}
+      {isSmallScreen ? <HeaderPlaceholder /> : ''}
+      {location.pathname === '/' ? (
+        ''
+      ) : (
+        <>
+          <HeaderPlaceholder />
+          <Breadcrumb />
+        </>
+      )}
       {location.pathname === '/' ? <Video /> : ''}
 
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/portfolioList/VrAr" element={<PortfolioList />} />
-        <Route path="/portfolioList/eLearning" element={<PortfolioList />} />
-        {/* <Route path="/portfolioList/rNd" element={<PortfolioList />} />
-        <Route path="/VrAr/:id" element={<VrAr />} />
-        <Route path="/eLearning/:id" element={<ELearning />} />
-        <Route path="/rNd/:id" element={<Rnd />} /> */}
+        <Route path="/portfolio/VrAr" element={<PortfolioList />} />
+        <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
+        <Route path="/portfolio/R&d" element={<PortfolioList />} />
+        <Route path="/portfolio/VrAr/:id" element={<VrAr />} />
+        <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
+        <Route path="/portfolio/R&d/:id" element={<Rnd />} />
+        <Route
+          path="/contactUs"
+          element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
+        />
       </Routes>
       <Footer />
     </div>

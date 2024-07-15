@@ -14,11 +14,13 @@ export const FooterBox = styled.div`
   }
 
   @media (min-width: 1025px) {
+    height: 360px;
     /* display: flex; */
     #container {
-      width: 1920px;
-      box-sizing: border-box;
-      padding: 80px 182px;
+      max-width: 1920px;
+      width: 80%;
+      /* box-sizing: border-box; */
+      padding: 80px 0;
       & #infoInquiry {
         display: flex;
         position: relative;

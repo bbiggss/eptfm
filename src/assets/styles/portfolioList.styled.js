@@ -8,7 +8,7 @@ export const PortfolioListBox = styled.div`
     /* background-color: yellow; */
 
     .topTitleBox {
-      height: 388px; // 490 - 헤더(102) = 388
+      height: 390px; // 490 - 헤더(100) = 390
       .pageTitle,
       .fieldTitle {
         text-align: center;
@@ -19,15 +19,15 @@ export const PortfolioListBox = styled.div`
         letter-spacing: 0;
         color: #191919;
 
-        padding-top: 78px;
-        padding-bottom: 28px;
+        padding-top: 80px;
+        padding-bottom: 20px;
       }
 
       .fieldTitle {
         font-size: 46px;
         letter-spacing: 0;
         color: #292929;
-        padding-bottom: ;
+        /* padding-bottom: ; */
       }
     }
 
@@ -85,6 +85,7 @@ export const PortfolioListBox = styled.div`
       position: fixed;
       right: 72px;
       bottom: 0;
+      /* background-color: yellow; */
       img {
         cursor: pointer;
         border-radius: 50%;
@@ -93,6 +94,10 @@ export const PortfolioListBox = styled.div`
         margin-top: 24px;
         margin-bottom: 60px;
       }
+    }
+
+    .btnBoxBottomPosition {
+      bottom: 360px;
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {

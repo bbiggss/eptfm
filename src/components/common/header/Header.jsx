@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HeaderBox } from '../../assets/styles/header.styled';
+import { HeaderBox } from '../../../assets/styles/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
 
@@ -39,6 +39,7 @@ const Header = () => {
               <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
               <NavBox title={'PORTFOLIO'} link={'portfolio'} />
+              <NavBox title={'CONTACT US'} link={'contactUs'} />
             </ul>
           </span>
         </div>
