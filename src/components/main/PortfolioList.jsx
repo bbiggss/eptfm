@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { PortfolioListBox } from '../../assets/styles/portfolioList.styled';
+import { useLocation } from 'react-router-dom';
+import { PortfolioListBox } from '../../assets/styles/main/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
 import BtnBox from '../common/button/BtnBox';
 

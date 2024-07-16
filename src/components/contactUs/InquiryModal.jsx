@@ -3,13 +3,24 @@ import { ContactUsModalBox } from '../../assets/styles/contactUs/contactUsModal.
 
 const InquiryModal = ({ setModalStatus }) => {
   let [inputCount, setInputCount] = useState(0);
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [inquiryContent, setInquiryContent] = useState('');
 
   const onInputHandler = (e) => {
     setInputCount(e.target.value.length);
+    setInquiryContent(e.target.value);
   };
 
+  // const handleChange = (e) => {
+  //   console.log('e: ', e.target.value);
+  //   // setName(e.target.value);
+  // };
+
   const inquiryClick = () => {
-    alert('클릭됨');
+    console.log(name, phoneNumber, email, inquiryContent);
+    // alert(name, phoneNumber, email, inquiryContent);
   };
   return (
     <ContactUsModalBox>
@@ -27,19 +38,31 @@ const InquiryModal = ({ setModalStatus }) => {
             <p>
               <span className="dot">·</span>&nbsp;이름/업체명
             </p>
-            <input type="text" placeholder="이름/업체명을 입력해주세요." />
+            <input
+              type="text"
+              placeholder="이름/업체명을 입력해주세요."
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="inquiryInfos NanumSquareB">
             <p>
               <span className="dot">·</span>&nbsp;연락처
             </p>
-            <input type="text" placeholder="번호를 입력해주세요. ( ‘-’없이 입력 )" />
+            <input
+              type="text"
+              placeholder="번호를 입력해주세요. ( ‘-’없이 입력 )"
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
           </div>
           <div className="inquiryInfos NanumSquareB">
             <p>
               <span className="dot">·</span>&nbsp;이메일
             </p>
-            <input type="text" placeholder="이메일을 입력해주세요." />
+            <input
+              type="text"
+              placeholder="이메일을 입력해주세요."
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <div className="inquiryInfos inquiryContent NanumSquareB">
             <p>

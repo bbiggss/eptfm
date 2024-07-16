@@ -37,7 +37,7 @@ import PortfolioList from './components/main/PortfolioList';
 import VrAr from './components/main/vrAr/VrAr';
 import ELearning from './components/main/eLearning/ELearning';
 import Rnd from './components/main/rNd/Rnd';
-import { HeaderPlaceholder } from './assets/styles/header.styled';
+import { HeaderPlaceholder } from './assets/styles/common/header.styled';
 import Breadcrumb from './components/common/breadcrumb/Breadcrumb';
 import Contact from './components/contactUs/Contact';
 import { useState } from 'react';

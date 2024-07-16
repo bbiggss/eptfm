@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HeaderBox } from '../../../assets/styles/header.styled';
+import { HeaderBox } from '../../../assets/styles/common/header.styled';
 import NavBox from './NavBox';
 import { Link, useLocation } from 'react-router-dom';
 
