@@ -42,6 +42,7 @@ import Breadcrumb from './components/common/breadcrumb/Breadcrumb';
 import Contact from './components/contactUs/Contact';
 import { useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
+import ScrollToTop from './components/common/ScrollTop';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -69,6 +70,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       {/* 모달 */}
 
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}

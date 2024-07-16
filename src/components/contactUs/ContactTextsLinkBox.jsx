@@ -3,6 +3,7 @@ import React from 'react';
 const ContactTextsLinkBox = (data) => {
   const btnClick = () => {
     if (data.clickOption === 'mail') {
+      // 모달 on
       data.setModalStatus(true);
     } else {
       alert('지도');

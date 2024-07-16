@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
-import ScrollToTop from '../common/ScrollTop';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
 
@@ -146,7 +145,6 @@ const PortfolioList = (data) => {
 
   return (
     <>
-      <ScrollToTop />
       <PortfolioListBox>
         <div className="topTitleBox">
           <p className="pageTitle robotoMedium">PORTFOLIO</p>
