@@ -37,7 +37,7 @@ const Header = () => {
           <span>
             <img
               id="dropDownImg"
-              src={`${process.env.PUBLIC_URL}/assets/images/dropDown.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/dropdown.png`}
               alt=""
             />
             <ul>
