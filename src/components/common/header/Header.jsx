@@ -38,7 +38,7 @@ const Header = () => {
             <ul>
               <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
-              <NavBox title={'PORTFOLIO'} link={'portfolio'} />
+              <NavBox title={'PORTFOLIO'} link={'portfolio/VrAr'} />
               <NavBox title={'CONTACT US'} link={'contactUs'} />
             </ul>
           </span>

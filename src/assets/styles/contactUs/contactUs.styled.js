@@ -15,6 +15,33 @@ export const ContactUsBox = styled.div`
       font-size: 26px;
       color: #767676;
     }
+
+    .transportation {
+      /* background-color: yellow; */
+      display: flex;
+      margin-top: 31px;
+      margin-bottom: 202px;
+
+      .subway,
+      .bus {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        letter-spacing: -2%;
+        line-height: auto;
+        p {
+          color: #767676;
+          margin-left: 10px;
+        }
+        span {
+          color: #292929;
+        }
+      }
+
+      .subway {
+        margin-right: 120px;
+      }
+    }
   }
 
   hr {
@@ -51,10 +78,12 @@ export const ContactUsBox = styled.div`
         align-items: center;
         justify-content: center;
         border-radius: 50px;
+        border: 1px solid #767676;
         width: 380px;
         height: 90px;
         color: #767676;
         cursor: pointer;
+        background-color: white;
         p {
           width: 240px;
           height: 30px;

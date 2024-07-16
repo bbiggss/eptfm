@@ -6,7 +6,7 @@ const ContactTextsLinkBox = (data) => {
       // 모달 on
       data.setModalStatus(true);
     } else {
-      alert('지도');
+      window.open('https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh', '_blank');
     }
   };
   return (

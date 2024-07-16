@@ -43,6 +43,30 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           popupText={'지도 보기'}
           clickOption={'map'}
         />
+
+        <div>
+          <a
+            href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/map.png`} alt="" />
+          </a>
+        </div>
+        <div className="transportation NanumSquareB">
+          <div className="subway">
+            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`} alt="" />
+            <p>
+              <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역
+            </p>
+          </div>
+          <div className="bus">
+            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} alt="" />
+            <p>
+              <span>버스</span> : 영등포 02, 영등포 05, 7612번
+            </p>
+          </div>
+        </div>
       </div>
     </ContactUsBox>
   );
