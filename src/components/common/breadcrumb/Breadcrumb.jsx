@@ -5,8 +5,8 @@ import { useLocation } from 'react-router-dom';
 
 const Breadcrumb = () => {
   const location = useLocation();
-  console.log(111, location.pathname);
-  console.log(location.pathname.split('/'));
+  // console.log(111, location.pathname);
+  // console.log(location.pathname.split('/'));
 
   let mainCategory = location.pathname.split('/')[1];
   let subCategory = location.pathname.split('/')[2];
@@ -21,7 +21,7 @@ const Breadcrumb = () => {
   }
   const contentTitle = location.pathname.split('/')[3];
 
-  console.log(mainCategory, subCategory, contentTitle);
+  // console.log(mainCategory, subCategory, contentTitle);
   return (
     <BreadcrumbBox className="robotoMedium">
       <ul>

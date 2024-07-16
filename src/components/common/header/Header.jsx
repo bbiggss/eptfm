@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { HeaderBox } from '../../../assets/styles/header.styled';
 import NavBox from './NavBox';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [headerClass, setHeaderClass] = useState('transparent');
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setHeaderClass('colored');
+      if (location.pathname === '/') {
+        if (window.scrollY > 50) {
+          setHeaderClass('colored');
+        } else {
+          setHeaderClass('transparent');
+        }
       } else {
-        setHeaderClass('transparent');
+        setHeaderClass('colored');
       }
     };
 
@@ -20,7 +25,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [location]);
   return (
     <>
       <HeaderBox id="header" className={headerClass}>
