@@ -80,25 +80,6 @@ export const PortfolioListBox = styled.div`
         }
       }
     }
-
-    .btnBox {
-      position: fixed;
-      right: 72px;
-      bottom: 0;
-      /* background-color: yellow; */
-      img {
-        cursor: pointer;
-        border-radius: 50%;
-      }
-      img:last-child {
-        margin-top: 24px;
-        margin-bottom: 60px;
-      }
-    }
-
-    .btnBoxBottomPosition {
-      bottom: 360px;
-    }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
   }

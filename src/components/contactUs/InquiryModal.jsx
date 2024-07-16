@@ -25,25 +25,25 @@ const InquiryModal = ({ setModalStatus }) => {
           <hr />
           <div className="inquiryInfos NanumSquareB">
             <p>
-              <span className="dot">· </span>이름/업체명
+              <span className="dot">·</span>&nbsp;이름/업체명
             </p>
             <input type="text" placeholder="이름/업체명을 입력해주세요." />
           </div>
           <div className="inquiryInfos NanumSquareB">
             <p>
-              <span className="dot">· </span>연락처
+              <span className="dot">·</span>&nbsp;연락처
             </p>
             <input type="text" placeholder="번호를 입력해주세요. ( ‘-’없이 입력 )" />
           </div>
           <div className="inquiryInfos NanumSquareB">
             <p>
-              <span className="dot">· </span>이메일
+              <span className="dot">·</span>&nbsp;이메일
             </p>
             <input type="text" placeholder="이메일을 입력해주세요." />
           </div>
           <div className="inquiryInfos inquiryContent NanumSquareB">
             <p>
-              <span className="dot">· </span>문의내용
+              <span className="dot">·</span>&nbsp;문의내용
             </p>
             <textarea
               name=""

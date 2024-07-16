@@ -24,7 +24,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         <ul>
           <li>
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/image 12.png`} alt="" />
-            <p className="NanumSquareB">E-Learning 솔루션 개발</p>
+            <p className="NanumSquareB">e-Learning 콘텐츠 개발</p>
           </li>
           <li>
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/image 15.png`} alt="" />

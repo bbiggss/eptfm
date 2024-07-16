@@ -43,6 +43,7 @@ import Contact from './components/contactUs/Contact';
 import { useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/ScrollTop';
+import BlankPage from './components/common/blankPage/BlankPage';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -79,6 +80,7 @@ function App() {
       <Header />
 
       {isSmallScreen ? <HeaderPlaceholder /> : ''}
+      {location.pathname === '/' ? <Video /> : ''}
       {location.pathname === '/' ? (
         ''
       ) : (
@@ -87,7 +89,6 @@ function App() {
           <Breadcrumb />
         </>
       )}
-      {location.pathname === '/' ? <Video /> : ''}
 
       <Routes>
         <Route path="/" element={<Main />} />
@@ -101,6 +102,8 @@ function App() {
           path="/contactUs"
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
         />
+
+        <Route path="*" element={<BlankPage />} />
       </Routes>
       <Footer />
     </div>

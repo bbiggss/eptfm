@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
+import BtnBox from '../common/button/BtnBox';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
 
@@ -9,10 +10,6 @@ const PortfolioList = (data) => {
   const location = useLocation();
   const [listTitle, updateListTitle] = useState('');
   const [portfolioItems, updatePortfolioItems] = useState({});
-  const [pageBottom, setPageBottom] = useState('');
-  // const [topBtnView, setTopBtnView] = useState('displayNone');
-  const [topBtnView, setTopBtnView] = useState('');
-  const nav = useNavigate();
 
   // 리덕스에서 불러오던지 하기
   // const portfolioItems = [
@@ -111,80 +108,31 @@ const PortfolioList = (data) => {
       updatePortfolioItems(portfolioItems2);
     }
   }, [location.pathname]);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollTop = window.scrollY;
-  //     const windowHeight = window.innerHeight;
-  //     const docHeight = document.documentElement.scrollHeight;
-
-  //     if (scrollTop + windowHeight >= docHeight) {
-  //       setPageBottom('btnBoxBottomPosition');
-  //     } else {
-  //       setPageBottom('');
-  //     }
-
-  //     if (scrollTop > 500) {
-  //       setTopBtnView('');
-  //     } else {
-  //       setTopBtnView('displayNone');
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Cleanup function to remove the event listener when the component unmounts
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  const listBtn = () => {
-    alert('1');
-  };
-
   return (
-    <>
-      <PortfolioListBox>
-        <div className="topTitleBox">
-          <p className="pageTitle robotoMedium">PORTFOLIO</p>
-          <p className="fieldTitle RobotoLight">{listTitle}</p>
-        </div>
+    <PortfolioListBox>
+      <div className="topTitleBox">
+        <p className="pageTitle robotoMedium">PORTFOLIO</p>
+        <p className="fieldTitle RobotoLight">{listTitle}</p>
+      </div>
 
-        <ul>
-          {Array.isArray(portfolioItems) &&
-            portfolioItems.map((item, index) => (
-              <PortfolioLists data={item} key={index} index={index} />
+      <ul>
+        {Array.isArray(portfolioItems) &&
+          portfolioItems.map((item, index) => (
+            <PortfolioLists data={item} key={index} index={index} />
 
-              // <li key={index}>
-              //   <div>
-              //     <img src={`${process.env.PUBLIC_URL}/assets/images/02.jpg}`} alt="" />
-              //   </div>
-              //   <div>
-              //     <p>{item.pfItemBigTitle}</p>
-              //     <p>{item.pfItemSmallTitle}</p>
-              //   </div>
-              // </li>
-            ))}
-        </ul>
-
-        <div className={`btnBox ${pageBottom}`}>
-          <img
-            className={topBtnView}
-            // onClick={() => nav(-1)}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            src={`${process.env.PUBLIC_URL}/assets/images/btn_up.png`}
-            alt=""
-          />
-          <br />
-          <img
-            onClick={listBtn}
-            src={`${process.env.PUBLIC_URL}/assets/images/btn_p_list.png`}
-            alt=""
-          />
-        </div>
-      </PortfolioListBox>
-    </>
+            // <li key={index}>
+            //   <div>
+            //     <img src={`${process.env.PUBLIC_URL}/assets/images/02.jpg}`} alt="" />
+            //   </div>
+            //   <div>
+            //     <p>{item.pfItemBigTitle}</p>
+            //     <p>{item.pfItemSmallTitle}</p>
+            //   </div>
+            // </li>
+          ))}
+      </ul>
+      <BtnBox />
+    </PortfolioListBox>
   );
 };
 

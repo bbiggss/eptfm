@@ -81,7 +81,7 @@ export const PortfolioBox = styled.div`
             display: block;
             width: ${pc_pfFieldWidth};
             border: 1px solid #767676;
-            border-radius: 25px;
+            border-radius: 45px;
             text-align: center;
             color: #767676;
 

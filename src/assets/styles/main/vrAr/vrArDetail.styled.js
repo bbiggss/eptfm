@@ -67,22 +67,8 @@ export const VrArDetailBox = styled.div`
     }
   }
 
-  .btnBox {
-    position: fixed;
-    right: 72px;
-    bottom: 0;
-    /* background-color: yellow; */
-    img {
-      cursor: pointer;
-      border-radius: 50%;
-    }
-    img:last-child {
-      margin-top: 24px;
-      margin-bottom: 60px;
-    }
-  }
   /* 공통컴포넌트 */
-  .common {
+  .projectContainer {
     display: flex;
     text-align: left;
     padding-bottom: 160px;
@@ -99,7 +85,7 @@ export const VrArDetailBox = styled.div`
       color: #767676;
       font-size: 24px;
 
-      &.paddingLeft {
+      &.positionRight {
         justify-content: flex-end;
       }
     }

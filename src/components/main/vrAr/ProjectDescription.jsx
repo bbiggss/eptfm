@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 const ProjectDescription = (data) => {
   console.log('data: ', data.textPosition);
-  const [paddingLeft, setPaddingLeft] = useState('');
+  const [positionRight, setPositionRight] = useState('');
 
   useEffect(() => {
     if (data.textPosition === 'right') {
-      setPaddingLeft('paddingLeft');
+      setPositionRight('positionRight');
     }
   }, [data.textPosition]);
 
@@ -19,7 +19,7 @@ const ProjectDescription = (data) => {
     ));
   };
   return (
-    <div className={`texts NanumSquareB ${paddingLeft}`}>
+    <div className={`texts NanumSquareB ${positionRight}`}>
       {data && renderTextWithLineBreaks(data.text)}
     </div>
   );
