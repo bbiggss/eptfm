@@ -37,8 +37,8 @@ const VrAr = () => {
           <div>
             <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
             <p className="NanumSquareB">
-              옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시 자연의 아름다움을 다시
-              꽃피우세요!
+              옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
+              <br /> 자연의 아름다움을 다시 꽃피우세요!
             </p>
           </div>
           <img
@@ -52,6 +52,7 @@ const VrAr = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/미션! 생태계를 복원하라/2.png`}
           />
           <ProjectDescription
+            textPosition={'right'}
             text={`이 프로젝트는 생태계 평형의 의미를 이해하고, 인간의\n 개입이 얼마나 큰 영향을 미치는지 생생하게 보여준답니\n다.  생태계 복원이 얼마나 어렵고, 동시에 얼마나 보람찬\n 일인지 깨닫을 수 있어요.\n미국 옐로스톤 국립공원에서 늑대의 귀환을 통해 생태계\n 복원의 중요성을 배워보세요!`}
           />
         </div>
@@ -68,6 +69,7 @@ const VrAr = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/미션! 생태계를 복원하라/4.png`}
           />
           <ProjectDescription
+            textPosition={'right'}
             text={`기존 생태계에서 생물이 멸종하여 평형이 깨진 상황을\n체험해보세요. 늑대가 사라진 후 황폐화 된 국립 공원\n생태계에 다시 늑대를 풀어놓고, 시간이 지나며 점차 \n회복되는 과정을 관찰할 수 있어요. \n‘늑대는 영웅이 될 수 있다!’ 라는 사실을 직접 체험해 \n볼 수 있답니다!`}
           />
         </div>
@@ -84,6 +86,7 @@ const VrAr = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/미션! 생태계를 복원하라/6.png`}
           />
           <ProjectDescription
+            textPosition={'right'}
             text={`‘미션! 생태계를 복원하라’ 콘텐츠를 복습할 수 있는\n 퀴즈를 제공하고 있어요. 옐로스톤 국립 공원에서 \n생태계 평형이 회복된 과정을 ‘빈칸 채우기’ 활동을 \n통해 학습 내용을 되짚어 볼 수 있어요.`}
           />
         </div>

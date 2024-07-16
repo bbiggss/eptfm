@@ -93,12 +93,15 @@ export const VrArDetailBox = styled.div`
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: center;
       line-height: 38px;
       letter-spacing: -2%;
 
       color: #767676;
       font-size: 24px;
+
+      &.paddingLeft {
+        justify-content: flex-end;
+      }
     }
   }
 `;

@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ProjectDescription = (data) => {
+  console.log('data: ', data.textPosition);
+  const [paddingLeft, setPaddingLeft] = useState('');
+
+  useEffect(() => {
+    if (data.textPosition === 'right') {
+      setPaddingLeft('paddingLeft');
+    }
+  }, [data.textPosition]);
+
   const renderTextWithLineBreaks = (text) => {
     return text.split('\n').map((line, index) => (
       <React.Fragment key={index}>
@@ -9,7 +18,11 @@ const ProjectDescription = (data) => {
       </React.Fragment>
     ));
   };
-  return <div className="texts NanumSquareB">{data && renderTextWithLineBreaks(data.text)}</div>;
+  return (
+    <div className={`texts NanumSquareB ${paddingLeft}`}>
+      {data && renderTextWithLineBreaks(data.text)}
+    </div>
+  );
 };
 
 export default ProjectDescription;
