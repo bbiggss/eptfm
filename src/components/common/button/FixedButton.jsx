@@ -16,28 +16,15 @@ const BtnBox = styled.div`
       margin-bottom: 60px;
     }
   }
-
-  .btnBoxBottomPosition {
-    bottom: 360px;
-  }
 `;
 
 const FixedButton = () => {
-  const [pageBottom, setPageBottom] = useState('');
   const [topBtnView, setTopBtnView] = useState('');
   //   const nav = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const docHeight = document.documentElement.scrollHeight;
-
-      if (scrollTop + windowHeight >= docHeight) {
-        setPageBottom('btnBoxBottomPosition');
-      } else {
-        setPageBottom('');
-      }
 
       if (scrollTop > 500) {
         setTopBtnView('');
@@ -59,7 +46,7 @@ const FixedButton = () => {
   };
   return (
     <BtnBox>
-      <div className={`btnBox ${pageBottom}`}>
+      <div className={`btnBox`}>
         <img
           className={topBtnView}
           // onClick={() => nav(-1)}

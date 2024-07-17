@@ -8,6 +8,27 @@ html {
   display: none;
 }
 
+.fullScreen {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.largeScreen {
+  max-width: 1556px;
+  width: 100%;
+  margin: 0 auto;
+}
+.mediumScreen {
+  max-width: 1399px;
+  width: 100%;
+  margin: 0 auto;
+}
+.smallScreen {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* 영어 */
 @font-face {
   font-family: 'Roboto-Medium';
@@ -33,6 +54,10 @@ html {
 
 /* 한글 */
 @font-face {
+  font-family: 'NanumSquareL';
+  src: url('./assets/fonts/NanumSquareL.otf') format('opentype');
+}
+@font-face {
   font-family: 'NanumSquareR';
   src: url('./assets/fonts/NanumSquareR.otf') format('opentype');
 }
@@ -43,6 +68,9 @@ html {
 @font-face {
   font-family: 'NanumSquareEB';
   src: url('./assets/fonts/NanumSquareEB.otf') format('opentype');
+}
+.NanumSquareL {
+  font-family: 'NanumSquareL';
 }
 .NanumSquareR {
   font-family: 'NanumSquareR';

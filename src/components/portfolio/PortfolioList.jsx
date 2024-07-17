@@ -45,14 +45,24 @@ const PortfolioList = (data) => {
           pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img3.png`,
-          pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'AR | 나의 호흡 기관은 어떻게 생겼을까',
-        },
-        {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img4.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR | 지구의 공전과 계절의 변화',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img5.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'AR I 옛 사람들의 통신수단, 봉수제도와 파발제도',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img6.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 우리 땅, 독도 탐험하기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img7.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 과학수사요원이 되어 범인을 찾아라!',
         },
       ];
       updatePortfolioItems(portfolioItems2);

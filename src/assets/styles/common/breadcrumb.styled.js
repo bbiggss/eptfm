@@ -7,8 +7,8 @@ export const BreadcrumbBox = styled.div`
   margin: auto;
   max-width: 1920px;
   width: 80%;
-  margin-top: 73px;
-  margin-bottom: 73px;
+  padding-top: 88px;
+  padding-bottom: 73px;
 
   ul {
     display: flex;

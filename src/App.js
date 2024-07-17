@@ -45,6 +45,9 @@ import BlankPage from './components/common/blankPage/BlankPage';
 
 import VrAr from './components/portfolio/vrAr/02/VrAr';
 import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
+import BongsuPaval from './components/portfolio/vrAr/05/BongsuPaval';
+import ExploreDokdo from './components/portfolio/vrAr/06/ExploreDokdo';
+import ForensicScientist from './components/portfolio/vrAr/07/ForensicScientist';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -87,7 +90,7 @@ function App() {
       ) : (
         <>
           <HeaderPlaceholder />
-          <Breadcrumb />
+          {/* <Breadcrumb /> */}
         </>
       )}
 
@@ -102,6 +105,16 @@ function App() {
           path="/portfolio/VrAr/AR | 지구의 공전과 계절의 변화"
           element={<EarthRotationChangingSeasons />}
         />
+        <Route
+          path="/portfolio/VrAr/AR I 옛 사람들의 통신수단, 봉수제도와 파발제도"
+          element={<BongsuPaval />}
+        />
+        <Route path="/portfolio/VrAr/VR I 우리 땅, 독도 탐험하기" element={<ExploreDokdo />} />
+        <Route
+          path="/portfolio/VrAr/vR I 과학수사요원이 되어 범인을 찾아라!"
+          element={<ForensicScientist />}
+        />
+
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
         <Route path="/portfolio/R&d/:id" element={<Rnd />} />
         <Route

@@ -131,5 +131,8 @@ export const EarthRotationChangingSeasonsBox = styled.div`
         justify-content: flex-end;
       }
     }
+    &:last-child {
+      padding-bottom: 200px;
+    }
   }
 `;

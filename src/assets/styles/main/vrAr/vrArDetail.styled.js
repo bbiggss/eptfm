@@ -72,6 +72,9 @@ export const VrArDetailBox = styled.div`
     display: flex;
     text-align: left;
     padding-bottom: 160px;
+    &:last-child {
+      padding-bottom: 200px;
+    }
     .img {
       width: 50%;
     }
