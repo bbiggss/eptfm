@@ -11,7 +11,7 @@ export const EarthRotationChangingSeasonsBox = styled.div`
     max-width: 1920px;
     width: 100%;
     height: auto;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
 
