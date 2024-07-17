@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { VrArDetailBox } from '../../../assets/styles/main/vrAr/vrArDetail.styled';
+import { VrArDetailBox } from '../../../../assets/styles/main/vrAr/vrArDetail.styled';
 import ProjectDescription from './ProjectDescription';
 import ProjectImg from './ProjectImg';
-import BtnBox from '../../common/button/BtnBox';
+import FixedButton from '../../../common/button/FixedButton';
 
 const VrAr = () => {
   const { id } = useParams();
@@ -95,7 +95,7 @@ const VrAr = () => {
           />
         </div>
       </div>
-      <BtnBox />
+      <FixedButton />
     </VrArDetailBox>
   );
 };

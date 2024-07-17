@@ -32,11 +32,9 @@ import Header from './components/common/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
-import PortfolioList from './components/main/PortfolioList';
-
-import VrAr from './components/main/vrAr/VrAr';
-import ELearning from './components/main/eLearning/ELearning';
-import Rnd from './components/main/rNd/Rnd';
+import PortfolioList from './components/portfolio/PortfolioList';
+import ELearning from './components/portfolio/eLearning/ELearning';
+import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderPlaceholder } from './assets/styles/common/header.styled';
 import Breadcrumb from './components/common/breadcrumb/Breadcrumb';
 import Contact from './components/contactUs/Contact';
@@ -44,6 +42,9 @@ import { useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
+
+import VrAr from './components/portfolio/vrAr/02/VrAr';
+import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -95,7 +96,12 @@ function App() {
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
         <Route path="/portfolio/R&d" element={<PortfolioList />} />
-        <Route path="/portfolio/VrAr/:id" element={<VrAr />} />
+        {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
+        <Route path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라" element={<VrAr />} />
+        <Route
+          path="/portfolio/VrAr/AR | 지구의 공전과 계절의 변화"
+          element={<EarthRotationChangingSeasons />}
+        />
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
         <Route path="/portfolio/R&d/:id" element={<Rnd />} />
         <Route

@@ -1,5 +1,17 @@
 import React from 'react';
-import { MainVideo } from '../../assets/styles/mainVideo.styled';
+import styled from 'styled-components';
+
+const MainVideo = styled.div`
+  video {
+    width: 100%;
+  }
+  @media (min-width: 1025px) {
+    video {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+`;
 
 const Video = () => {
   return (

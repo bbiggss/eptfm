@@ -49,7 +49,7 @@ const Breadcrumb = () => {
         ) : (
           <>
             <li>{'>'}</li>
-            <li>{contentTitle}</li>
+            <li>{decodeURIComponent(contentTitle)}</li>
           </>
         )}
       </ul>

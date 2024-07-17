@@ -19,6 +19,7 @@ const InquiryModal = ({ setModalStatus }) => {
   // };
 
   const inquiryClick = () => {
+    alert('메일');
     console.log(name, phoneNumber, email, inquiryContent);
     // alert(name, phoneNumber, email, inquiryContent);
   };

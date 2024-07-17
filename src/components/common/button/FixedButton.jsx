@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const BtnBox = () => {
+const BtnBox = styled.div`
+  .btnBox {
+    position: fixed;
+    right: 72px;
+    bottom: 0;
+    /* background-color: yellow; */
+    img {
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    img:last-child {
+      margin-top: 24px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .btnBoxBottomPosition {
+    bottom: 360px;
+  }
+`;
+
+const FixedButton = () => {
   const [pageBottom, setPageBottom] = useState('');
   const [topBtnView, setTopBtnView] = useState('');
   //   const nav = useNavigate();
-
-  const BtnBox = styled.div`
-    .btnBox {
-      position: fixed;
-      right: 72px;
-      bottom: 0;
-      /* background-color: yellow; */
-      img {
-        cursor: pointer;
-        border-radius: 50%;
-      }
-      img:last-child {
-        margin-top: 24px;
-        margin-bottom: 60px;
-      }
-    }
-
-    .btnBoxBottomPosition {
-      bottom: 360px;
-    }
-  `;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -78,4 +78,4 @@ const BtnBox = () => {
   );
 };
 
-export default BtnBox;
+export default FixedButton;

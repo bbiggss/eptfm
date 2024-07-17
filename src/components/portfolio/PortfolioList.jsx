@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/main/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
-import BtnBox from '../common/button/BtnBox';
+import FixedButton from '../common/button/FixedButton';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
 
@@ -131,7 +131,7 @@ const PortfolioList = (data) => {
             // </li>
           ))}
       </ul>
-      <BtnBox />
+      <FixedButton />
     </PortfolioListBox>
   );
 };
