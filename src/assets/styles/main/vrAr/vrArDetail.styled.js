@@ -12,26 +12,6 @@ export const VrArDetailBox = styled.div`
     margin: auto;
     text-align: center;
 
-    .portfolioTitle {
-      display: inline-block;
-      /* background-color: aqua; */
-      /* border: 1px solid black; */
-      margin-top: 73px;
-      margin-bottom: 80px;
-
-      p:first-child {
-        text-align: left;
-        margin-bottom: 24px;
-
-        color: #999999;
-        font-size: 22px;
-      }
-      p:last-child {
-        font-size: 64px;
-        color: #48c2c5;
-      }
-    }
-
     .mainImg {
       display: flex;
       justify-content: center;
@@ -65,31 +45,30 @@ export const VrArDetailBox = styled.div`
         margin-top: 152px;
       }
     }
-  }
 
-  /* 공통컴포넌트 */
-  .projectContainer {
-    display: flex;
-    text-align: left;
-    padding-bottom: 160px;
-    &:last-child {
-      padding-bottom: 200px;
-    }
-    .img {
-      width: 50%;
-    }
-    .texts {
-      width: 50%;
+    .projectContainer {
       display: flex;
-      align-items: center;
-      line-height: 38px;
-      letter-spacing: -2%;
+      text-align: left;
+      padding-bottom: 160px;
+      &:last-child {
+        padding-bottom: 200px;
+      }
+      .img {
+        width: 50%;
+      }
+      .texts {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        line-height: 38px;
+        letter-spacing: -2%;
 
-      color: #767676;
-      font-size: 24px;
+        color: #767676;
+        font-size: 24px;
 
-      &.positionRight {
-        justify-content: flex-end;
+        &.positionRight {
+          justify-content: flex-end;
+        }
       }
     }
   }

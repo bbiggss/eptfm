@@ -43,7 +43,15 @@ const Header = () => {
             <ul>
               <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
-              <NavBox title={'PORTFOLIO'} link={'portfolio/VrAr'} />
+              <li className="dropdown">
+                PORTFOLIO
+                <div className="dropdown-content robotoRegular">
+                  <Link to={'portfolio/VrAr'}>VR/AR</Link>
+                  <Link to={'portfolio/e-Learning'}>e-Learning</Link>
+                  <Link to={'portfolio/R&d'}>R&D</Link>
+                </div>
+              </li>
+              {/* <NavBox title={'PORTFOLIO'} link={'portfolio/VrAr'} /> */}
               <NavBox title={'CONTACT US'} link={'contactUs'} />
             </ul>
           </span>

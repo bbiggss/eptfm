@@ -1,0 +1,130 @@
+import React from 'react';
+import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
+import PortfolioTitle from '../../common/PortfolioTitle';
+import FixedButton from '../../../common/button/FixedButton';
+import PortfolioIntroduction from '../../common/PortfolioIntroduction';
+import styled from 'styled-components';
+import TextCenter from '../../common/TextCenter';
+import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import ProjectImg from '../../common/ProjectImg';
+
+const TyphoonEvacuationBox = styled.div`
+  .mainImgTexts {
+    position: relative;
+    margin-top: 80px;
+    .mainTexts {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 118px;
+      text-align: center;
+    }
+  }
+  .topText {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+`;
+
+const TyphoonEvacuation = () => {
+  return (
+    <TyphoonEvacuationBox>
+      <Breadcrumb />
+      <div className="textCenter">
+        <PortfolioTitle
+          organization={'한국교육학술정보원'}
+          field={'VR'}
+          title={'태풍 대피요령 알아보기'}
+        />
+      </div>
+      <div className="fullScreen">
+        <div className="mainImgTexts">
+          <div className="mainTexts">
+            <PortfolioIntroduction
+              title={'태풍을 대비하는 생존 가이드!'}
+              description={
+                '태풍의 강도에 따른 도시 피해를 간접 체험하고, 대피 요령을 학습해보세요.\n자연재해 발생 시 안전하게 피해를 최소화하는 방법을 배울 수 있습니다.'
+              }
+            />
+          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/main.png`}
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="topText">
+        <TextCenter
+          text={
+            "'태풍 대피요령 알아보기'를 개발하면서, 우리 팀은 가상의 태풍 속에서 우산을 펴고 다녔죠.\n여러분도 가상 태풍을 체험하며, 안전한 대피 요령을 익혀보세요!"
+          }
+        />
+      </div>
+      <div className="smallScreen">
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/1.png`}
+          />
+          <TextCenter
+            text={
+              '“태풍 대피요령 알아보기” 콘텐츠 제작을 하며 우리는 태풍의 강도와\n그에 따른 피해 상황을 생생하게 재현하려고 많은 노력을 쏟아 부었어요.\n가상의 태풍 상황 속에서 실제 대피 요령을 배우며, 안전한 대피 방법을 체험할 수 있도록 구성했답니다!'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/2.png`}
+          />
+          <TextCenter
+            text={
+              '태풍 ‘제비’는 세찬 바람을 동반하여 나무를 흔들기 시작했어요.\n바람이 휘몰아치는 ‘어빙’은 물건들을 이리저리 날릴 만큼 위험한 태풍이었죠.'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/3.png`}
+          />
+          <TextCenter
+            text={
+              '곤파스는 정말 강력한 태풍이었어요. 너무 강력해서 전봇대가 쓰러질 정도였어요.\n매미는 그야말로 초강력! 도시 전체가 휘청거렸죠.'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/4.png`}
+          />
+          <TextCenter
+            text={
+              '학습자는 캐릭터를 직접 움직여서 태풍의 강도별 피해를 관찰 할 수 있고,\n피해를 최소화 하기 위해 다양한 미션을 해결해볼 수 있어요.'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/5.png`}
+          />
+          <TextCenter
+            text={
+              '자전거나 입간판 처럼 날아갈 수 있는 물건을 단단히 묶어 고정하고\n쓰러진 전봇대, 전깃줄 등 감전의 위험이 있는 사물들 만지지 않기\n그리고 낙하물이 있는 아래로 걷지 않기 등 외부 대피 방안에 대해 자연스럽게 학습할 수 있어요.'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/6.png`}
+          />
+          <TextCenter
+            text={
+              '모든 퀘스트를 완료하면, 행정안전부의 태풍대피요령에 대해서도 학습할 수 있어요.\n안전하게 대피하는 법을 익히며, 자연의 힘을 체험해보는 모험을 시작해보세요!'
+            }
+          />
+        </WidthOneContent>
+      </div>
+      <FixedButton />
+    </TyphoonEvacuationBox>
+  );
+};
+
+export default TyphoonEvacuation;

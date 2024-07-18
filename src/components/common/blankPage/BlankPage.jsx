@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Breadcrumb from '../breadcrumb/Breadcrumb';
 
 const BlankPageBox = styled.div`
   div {
@@ -13,9 +14,12 @@ const BlankPageBox = styled.div`
 `;
 const BlankPage = () => {
   return (
-    <BlankPageBox>
-      <div>페이지를 찾을수 없습니다.</div>
-    </BlankPageBox>
+    <>
+      <Breadcrumb />
+      <BlankPageBox>
+        <div>페이지를 찾을수 없습니다.</div>
+      </BlankPageBox>
+    </>
   );
 };
 

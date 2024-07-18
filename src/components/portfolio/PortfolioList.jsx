@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { PortfolioListBox } from '../../assets/styles/main/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
 import FixedButton from '../common/button/FixedButton';
+import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
 
@@ -64,6 +65,51 @@ const PortfolioList = (data) => {
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'VR I 과학수사요원이 되어 범인을 찾아라!',
         },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img8.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 세계의 환경 수도 프라이부르크 구경하기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img9.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 태풍 대피요령 알아보기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img10.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img11.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 직접 만드는 민주적인 선거! 시장 출마하기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img12.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 바닷속 생물 채집과 수온, 염분 탐사',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img13.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 열팽창 활용하여 바이메탈 만들기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img14.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 별의 색과 밝기를 이용한 별의 특성 알아보기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img15.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 나도 할 수 있다, 민사 재판',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img16.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 나만의 살기 좋은 도시 만들기',
+        },
       ];
       updatePortfolioItems(portfolioItems2);
     } else if (location.pathname.split('/')[2] === 'e-Learning') {
@@ -119,30 +165,33 @@ const PortfolioList = (data) => {
     }
   }, [location.pathname]);
   return (
-    <PortfolioListBox>
-      <div className="topTitleBox">
-        <p className="pageTitle robotoMedium">PORTFOLIO</p>
-        <p className="fieldTitle RobotoLight">{listTitle}</p>
-      </div>
+    <>
+      <Breadcrumb />
+      <PortfolioListBox>
+        <div className="topTitleBox">
+          <p className="pageTitle robotoMedium">PORTFOLIO</p>
+          <p className="fieldTitle RobotoLight">{listTitle}</p>
+        </div>
 
-      <ul>
-        {Array.isArray(portfolioItems) &&
-          portfolioItems.map((item, index) => (
-            <PortfolioLists data={item} key={index} index={index} />
+        <ul>
+          {Array.isArray(portfolioItems) &&
+            portfolioItems.map((item, index) => (
+              <PortfolioLists data={item} key={index} index={index} />
 
-            // <li key={index}>
-            //   <div>
-            //     <img src={`${process.env.PUBLIC_URL}/assets/images/02.jpg}`} alt="" />
-            //   </div>
-            //   <div>
-            //     <p>{item.pfItemBigTitle}</p>
-            //     <p>{item.pfItemSmallTitle}</p>
-            //   </div>
-            // </li>
-          ))}
-      </ul>
-      <FixedButton />
-    </PortfolioListBox>
+              // <li key={index}>
+              //   <div>
+              //     <img src={`${process.env.PUBLIC_URL}/assets/images/02.jpg}`} alt="" />
+              //   </div>
+              //   <div>
+              //     <p>{item.pfItemBigTitle}</p>
+              //     <p>{item.pfItemSmallTitle}</p>
+              //   </div>
+              // </li>
+            ))}
+        </ul>
+        <FixedButton />
+      </PortfolioListBox>
+    </>
   );
 };
 

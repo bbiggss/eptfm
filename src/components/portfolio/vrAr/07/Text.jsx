@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TextCenterBox = styled.p`
-  text-align: center;
   color: #767676;
   font-size: 24px;
   font-family: 'NanumSquareB';
@@ -18,8 +17,8 @@ const renderTextWithLineBreaks = (text) => {
   ));
 };
 
-const TextCenter = (data) => {
+const Text = (data) => {
   return <TextCenterBox>{renderTextWithLineBreaks(data.text)}</TextCenterBox>;
 };
 
-export default TextCenter;
+export default Text;

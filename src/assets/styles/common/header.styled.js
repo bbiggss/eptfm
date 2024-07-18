@@ -72,6 +72,34 @@ export const HeaderBox = styled.div`
         scroll-behavior: smooth;
       }
     }
+    .dropdown {
+      .dropdown-content {
+        background-color: white;
+        display: none;
+        position: absolute;
+        width: 200px;
+        padding: 10px 0;
+        border-top: 2px solid #4ac2c5;
+        border: 1px solid rgba(10, 15, 54, 0.08); /* Border color with 8% opacity */
+        box-shadow: 0 0 20px rgba(10, 15, 54, 0.08); /* Blur radius 20px with 8% opacity */
+        a {
+          width: 100%;
+          height: 54px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #767676;
+          font-size: 16px;
+          &:hover {
+            color: #191919;
+            text-decoration: underline;
+          }
+        }
+      }
+      &:hover .dropdown-content {
+        display: block;
+      }
+    }
     & ul li:last-child {
       margin-right: 0;
     }

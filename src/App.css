@@ -8,6 +8,7 @@ html {
   display: none;
 }
 
+/* width screen 1920/1556/1399/1260 */
 .fullScreen {
   max-width: 1920px;
   width: 100%;
@@ -27,6 +28,24 @@ html {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
+}
+
+/* 텍스트 정렬 */
+.textCenter {
+  text-align: center;
+}
+.paddingTop160 {
+  padding-top: 160px;
+}
+.paddingBottom160 {
+  padding-bottom: 160px;
+}
+.paddingTopBottom160 {
+  padding: 160px 0;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 /* 영어 */

@@ -36,18 +36,26 @@ import PortfolioList from './components/portfolio/PortfolioList';
 import ELearning from './components/portfolio/eLearning/ELearning';
 import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderPlaceholder } from './assets/styles/common/header.styled';
-import Breadcrumb from './components/common/breadcrumb/Breadcrumb';
 import Contact from './components/contactUs/Contact';
 import { useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
 
-import VrAr from './components/portfolio/vrAr/02/VrAr';
+import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
 import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
 import BongsuPaval from './components/portfolio/vrAr/05/BongsuPaval';
 import ExploreDokdo from './components/portfolio/vrAr/06/ExploreDokdo';
 import ForensicScientist from './components/portfolio/vrAr/07/ForensicScientist';
+import ExploreFreiburg from './components/portfolio/vrAr/08/ExploreFreiburg';
+import TyphoonEvacuation from './components/portfolio/vrAr/09/TyphoonEvacuation';
+import FrenchClimateLifestyle from './components/portfolio/vrAr/10/FrenchClimateLifestyle';
+import Mayor from './components/portfolio/vrAr/11/Mayor';
+import WaterTemperatureSalinityExploration from './components/portfolio/vrAr/12/WaterTemperatureSalinityExploration';
+import Bimetal from './components/portfolio/vrAr/13/Bimetal';
+import StarsCharacteristics from './components/portfolio/vrAr/14/StarsCharacteristics';
+import CivilTrial from './components/portfolio/vrAr/15/CivilTrial';
+import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -90,7 +98,6 @@ function App() {
       ) : (
         <>
           <HeaderPlaceholder />
-          {/* <Breadcrumb /> */}
         </>
       )}
 
@@ -99,8 +106,13 @@ function App() {
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
         <Route path="/portfolio/R&d" element={<PortfolioList />} />
+
+        {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
-        <Route path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라" element={<VrAr />} />
+        <Route
+          path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라"
+          element={<EcosystemRestoration />}
+        />
         <Route
           path="/portfolio/VrAr/AR | 지구의 공전과 계절의 변화"
           element={<EarthRotationChangingSeasons />}
@@ -111,8 +123,35 @@ function App() {
         />
         <Route path="/portfolio/VrAr/VR I 우리 땅, 독도 탐험하기" element={<ExploreDokdo />} />
         <Route
-          path="/portfolio/VrAr/vR I 과학수사요원이 되어 범인을 찾아라!"
+          path="/portfolio/VrAr/VR I 과학수사요원이 되어 범인을 찾아라!"
           element={<ForensicScientist />}
+        />
+        <Route
+          path="/portfolio/VrAr/VR I 세계의 환경 수도 프라이부르크 구경하기"
+          element={<ExploreFreiburg />}
+        />
+        <Route path="/portfolio/VrAr/VR I 태풍 대피요령 알아보기" element={<TyphoonEvacuation />} />
+        <Route
+          path="/portfolio/VrAr/VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활"
+          element={<FrenchClimateLifestyle />}
+        />
+        <Route
+          path="/portfolio/VrAr/VR I 직접 만드는 민주적인 선거! 시장 출마하기"
+          element={<Mayor />}
+        />
+        <Route
+          path="/portfolio/VrAr/VR I 바닷속 생물 채집과 수온, 염분 탐사"
+          element={<WaterTemperatureSalinityExploration />}
+        />
+        <Route path="/portfolio/VrAr/VR I 열팽창 활용하여 바이메탈 만들기" element={<Bimetal />} />
+        <Route
+          path="/portfolio/VrAr/VR I 별의 색과 밝기를 이용한 별의 특성 알아보기"
+          element={<StarsCharacteristics />}
+        />
+        <Route path="/portfolio/VrAr/VR I 나도 할 수 있다, 민사 재판" element={<CivilTrial />} />
+        <Route
+          path="/portfolio/VrAr/VR I 나만의 살기 좋은 도시 만들기"
+          element={<BuildingGreatCity />}
         />
 
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
