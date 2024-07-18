@@ -93,22 +93,27 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img13.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 열팽창 활용하여 바이메탈 만들기',
+          pfItemSmallTitle: 'AR I 열팽창 활용하여 바이메탈 만들기',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img14.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 별의 색과 밝기를 이용한 별의 특성 알아보기',
+          pfItemSmallTitle: 'AR I 별의 색과 밝기를 이용한 별의 특성 알아보기',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img15.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 나도 할 수 있다, 민사 재판',
+          pfItemSmallTitle: 'AR I 나도 할 수 있다, 민사 재판',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img16.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 나만의 살기 좋은 도시 만들기',
+          pfItemSmallTitle: 'AR I 나만의 살기 좋은 도시 만들기',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img17.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자',
         },
       ];
       updatePortfolioItems(portfolioItems2);

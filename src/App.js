@@ -42,6 +42,7 @@ import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
 
+import MudFlat from './components/portfolio/vrAr/01/MudFlat';
 import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
 import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
 import BongsuPaval from './components/portfolio/vrAr/05/BongsuPaval';
@@ -56,6 +57,7 @@ import Bimetal from './components/portfolio/vrAr/13/Bimetal';
 import StarsCharacteristics from './components/portfolio/vrAr/14/StarsCharacteristics';
 import CivilTrial from './components/portfolio/vrAr/15/CivilTrial';
 import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity';
+import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -110,6 +112,10 @@ function App() {
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
         <Route
+          path="/portfolio/VrAr/AR | 갯벌은 어떤 곳일까?"
+          element={<MudFlat />}
+        />
+        <Route
           path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라"
           element={<EcosystemRestoration />}
         />
@@ -143,15 +149,19 @@ function App() {
           path="/portfolio/VrAr/VR I 바닷속 생물 채집과 수온, 염분 탐사"
           element={<WaterTemperatureSalinityExploration />}
         />
-        <Route path="/portfolio/VrAr/VR I 열팽창 활용하여 바이메탈 만들기" element={<Bimetal />} />
+        <Route path="/portfolio/VrAr/AR I 열팽창 활용하여 바이메탈 만들기" element={<Bimetal />} />
         <Route
-          path="/portfolio/VrAr/VR I 별의 색과 밝기를 이용한 별의 특성 알아보기"
+          path="/portfolio/VrAr/AR I 별의 색과 밝기를 이용한 별의 특성 알아보기"
           element={<StarsCharacteristics />}
         />
-        <Route path="/portfolio/VrAr/VR I 나도 할 수 있다, 민사 재판" element={<CivilTrial />} />
+        <Route path="/portfolio/VrAr/AR I 나도 할 수 있다, 민사 재판" element={<CivilTrial />} />
         <Route
-          path="/portfolio/VrAr/VR I 나만의 살기 좋은 도시 만들기"
+          path="/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기"
           element={<BuildingGreatCity />}
+        />
+        <Route
+          path="/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자"
+          element={<BoneJointMuscle />}
         />
 
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
