@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
+import styled from 'styled-components';
 
 const renderTextWithLineBreaks = (text) => {
   return text.split('\n').map((line, index) => (
@@ -13,10 +14,11 @@ const renderTextWithLineBreaks = (text) => {
 };
 const TestBox = styled.div``;
 
-const Test = () => {
+const Bimetal = () => {
   return (
-    <TestBox>
+    <BimetalBox>
       <Breadcrumb />
+      <FixedButton />
 
       <div className="textCenter">
         <PortfolioTitle
@@ -25,9 +27,13 @@ const Test = () => {
           title={'우리 땅, 독도 탐험하기'}
         />
       </div>
-      <FixedButton />
-    </TestBox>
+
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}
+        alt=""
+      />
+    </BimetalBox>
   );
 };
 
-export default Test;
+export default Bimetal;

@@ -29,6 +29,12 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 
 /* 텍스트 정렬 */
 .textCenter {
@@ -42,6 +48,21 @@ html {
 }
 .paddingTopBottom160 {
   padding: 160px 0;
+}
+.marginTop100 {
+  margin-top: 100px;
+}
+.marginTop80 {
+  margin-top: 80px;
+}
+.marginBottom100 {
+  margin-bottom: 100px;
+}
+.marginBottom111 {
+  margin-bottom: 111px;
+}
+.paddingTop100 {
+  padding-top: 100px;
 }
 
 .hidden {

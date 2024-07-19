@@ -115,6 +115,16 @@ const PortfolioList = (data) => {
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자',
         },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img18.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'AR I 지도를 볼 줄 아는, 나는 지도박사',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img19.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: 'VR I 나만의 생존가방 준비하기',
+        },
       ];
       updatePortfolioItems(portfolioItems2);
     } else if (location.pathname.split('/')[2] === 'e-Learning') {

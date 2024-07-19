@@ -58,6 +58,8 @@ import StarsCharacteristics from './components/portfolio/vrAr/14/StarsCharacteri
 import CivilTrial from './components/portfolio/vrAr/15/CivilTrial';
 import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity';
 import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
+import MapExpert from './components/portfolio/vrAr/18/MapExpert';
+import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -111,10 +113,7 @@ function App() {
 
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
-        <Route
-          path="/portfolio/VrAr/AR | 갯벌은 어떤 곳일까?"
-          element={<MudFlat />}
-        />
+        <Route path="/portfolio/VrAr/AR | 갯벌은 어떤 곳일까?" element={<MudFlat />} />
         <Route
           path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라"
           element={<EcosystemRestoration />}
@@ -163,6 +162,11 @@ function App() {
           path="/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자"
           element={<BoneJointMuscle />}
         />
+        <Route
+          path="/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사"
+          element={<MapExpert />}
+        />
+        <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
 
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
         <Route path="/portfolio/R&d/:id" element={<Rnd />} />
