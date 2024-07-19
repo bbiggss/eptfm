@@ -109,7 +109,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
-        <Route path="/portfolio/R&d" element={<PortfolioList />} />
+        <Route path="/portfolio/R&D" element={<PortfolioList />} />
 
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
@@ -169,7 +169,7 @@ function App() {
         <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
 
         <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
-        <Route path="/portfolio/R&d/:id" element={<Rnd />} />
+        <Route path="/portfolio/R&D/:id" element={<Rnd />} />
         <Route
           path="/contactUs"
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}

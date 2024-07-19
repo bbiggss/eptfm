@@ -15,7 +15,12 @@ const Breadcrumb = () => {
     mainCategory = 'PORTFOLIO';
   } else if (mainCategory === 'contactUs') {
     mainCategory = 'CONTACT US';
+  } else if (mainCategory === 'business') {
+    mainCategory = 'BUSINESS';
+  } else if (mainCategory === 'about') {
+    mainCategory = 'ABOUT';
   }
+
   if (subCategory === 'VrAr') {
     subCategory = 'VR/AR';
   }

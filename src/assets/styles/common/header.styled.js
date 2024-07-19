@@ -82,6 +82,8 @@ export const HeaderBox = styled.div`
         border-top: 2px solid #4ac2c5;
         border: 1px solid rgba(10, 15, 54, 0.08); /* Border color with 8% opacity */
         box-shadow: 0 0 20px rgba(10, 15, 54, 0.08); /* Blur radius 20px with 8% opacity */
+        background-color: yellow;
+        margin-top: 42px;
         a {
           width: 100%;
           height: 54px;
@@ -96,7 +98,8 @@ export const HeaderBox = styled.div`
           }
         }
       }
-      &:hover .dropdown-content {
+      /* &:hover .dropdown-content { */
+      .dropdown-content {
         display: block;
       }
     }

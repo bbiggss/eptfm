@@ -48,10 +48,11 @@ const Header = () => {
                 <div className="dropdown-content robotoRegular">
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>
                   <Link to={'portfolio/e-Learning'}>e-Learning</Link>
-                  <Link to={'portfolio/R&d'}>R&D</Link>
+                  <Link to={'portfolio/R&D'}>R&D</Link>
                 </div>
               </li>
               {/* <NavBox title={'PORTFOLIO'} link={'portfolio/VrAr'} /> */}
+              <NavBox title={'CONTACT US'} link={'contactUs'} />
               <NavBox title={'CONTACT US'} link={'contactUs'} />
             </ul>
           </span>
