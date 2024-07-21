@@ -4,42 +4,29 @@ import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
-import { ProjectContainer } from '../../../../assets/styles/main/vrAr/common/projectContainer.styled';
+import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
 import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
+
+import PortfolioTitle from '../../common/PortfolioTitle';
 
 const MudFlatBox = styled.div`
   .subTexts {
     font-size: 24px;
   }
-  .topImgTitle {
-    max-width: 1920px;
-    width: 100%;
-    height: auto;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
+  .portfolioTitle {
+    position: absolute;
+    margin-top: 425px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    img {
-      width: 100%;
+    .orgainzation {
+      color: #ffffff;
+      font-family: 'NanumSquareEB';
     }
-
-    .portfolioTitle {
-      /* background-color: aqua; */
-      text-align: center;
-      margin-top: 425px;
-      position: absolute;
-
-      p:first-child {
-        margin-bottom: 24px;
-
-        color: #ffffff;
-        font-size: 22px;
-      }
-      p:last-child {
-        font-size: 64px;
-        color: #ffffff;
-      }
+    .fieldTitle {
+      color: #ffffff;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
     }
   }
 
@@ -112,18 +99,17 @@ const MudFlat = () => {
       <Breadcrumb />
 
       <div className="fullScreen">
-        <div className="topImgTitle">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/main1.png`}
-            alt=""
+        <div className="portfolioTitle">
+          <PortfolioTitle
+            organization={'한국교육학술정보원'}
+            field={'AR'}
+            title={'갯벌은 어떤 곳일까?'}
           />
-          <div className="portfolioTitle">
-            <p className="NanumSquareB">한국교육학술정보원</p>
-            <p className="NanumSquareEB">
-              AR <span className="NanumSquareR">I</span> 갯벌은 어떤 곳일까?
-            </p>
-          </div>
         </div>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/main1.png`}
+          alt=""
+        />
       </div>
 
       <div className="smallScreen">
@@ -160,7 +146,7 @@ const MudFlat = () => {
       </div>
 
       <div className="smallScreen">
-        <ProjectContainer>
+        <WidthImg1Texts1>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/1.png`}
           />
@@ -168,16 +154,16 @@ const MudFlat = () => {
             textPosition={'right'}
             text={`갯벌 생물 채집을 위해 학습자는 캐릭터를 \n직접 움직이며 물이 들어오고 나가는 과정을 \n직관적으로 체험하며 자연스럽게 배울 수 있어요.`}
           />
-        </ProjectContainer>
-        <ProjectContainer>
+        </WidthImg1Texts1>
+        <WidthImg1Texts1>
           <ProjectDescription
             text={`갯벌이 탄소를 흡수하고 환경을 정화하는 역할을 \n수행함을 확인하고, 다양한 갯벌 생태계를 \nAR을 통해 체험할 수 있어요.`}
           />
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/2.png`}
           />
-        </ProjectContainer>
-        <ProjectContainer>
+        </WidthImg1Texts1>
+        <WidthImg1Texts1>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/3.png`}
           />
@@ -185,7 +171,7 @@ const MudFlat = () => {
             textPosition={'right'}
             text={`갯벌 생물 채집 시 꼭 지켜야할 안전을 고려한 \n선택을 통해 지정한 시간 안에 수집한 생물을 \n수집책에 저장하는 게임도 진행할 수 있답니다!`}
           />
-        </ProjectContainer>
+        </WidthImg1Texts1>
       </div>
 
       <div className="textCenter">

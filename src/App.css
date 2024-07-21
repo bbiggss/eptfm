@@ -1,11 +1,14 @@
-html {
-  /* scroll-behavior: smooth; */
-}
 * {
   margin: 0;
+  padding: 0;
 }
 .displayNone {
   display: none;
+}
+
+.justifyContentCenter{
+  display: flex;
+  justify-content: center;
 }
 
 /* width screen 1920/1556/1399/1260 */
@@ -40,6 +43,7 @@ html {
 .textCenter {
   text-align: center;
 }
+
 .paddingTop160 {
   padding-top: 160px;
 }

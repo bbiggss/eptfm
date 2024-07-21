@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CustomTextBox = styled.p`
+const CustomTextBox = styled.div`
   .customText {
     color: #767676;
     font-size: 24px;

@@ -73,17 +73,23 @@ export const HeaderBox = styled.div`
       }
     }
     .dropdown {
+      position: relative;
+      p{
+        font-size: 18px;
+        padding-top: 0;
+        padding-bottom: 39px;
+      }
       .dropdown-content {
         background-color: white;
         display: none;
         position: absolute;
         width: 200px;
         padding: 10px 0;
-        border-top: 2px solid #4ac2c5;
         border: 1px solid rgba(10, 15, 54, 0.08); /* Border color with 8% opacity */
+        border-top: 2px solid #4ac2c5;
         box-shadow: 0 0 20px rgba(10, 15, 54, 0.08); /* Blur radius 20px with 8% opacity */
-        background-color: yellow;
-        margin-top: 42px;
+        left: 50%;
+        transform: translateX(-50%);
         a {
           width: 100%;
           height: 54px;
@@ -98,8 +104,7 @@ export const HeaderBox = styled.div`
           }
         }
       }
-      /* &:hover .dropdown-content { */
-      .dropdown-content {
+      &:hover .dropdown-content {
         display: block;
       }
     }

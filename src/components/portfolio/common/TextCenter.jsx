@@ -16,10 +16,16 @@ const TextCenterBox = styled.p`
   font-family: 'NanumSquareB';
   line-height: 38px;
   letter-spacing: -2px;
+
+  &.textLeft {
+    text-align: left;
+  }
 `;
 
 const TextCenter = (data) => {
-  return <TextCenterBox>{renderTextWithLineBreaks(data.text)}</TextCenterBox>;
+  return (
+    <TextCenterBox className={data.className}>{renderTextWithLineBreaks(data.text)}</TextCenterBox>
+  );
 };
 
 export default TextCenter;

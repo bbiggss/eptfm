@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
@@ -42,13 +42,11 @@ const WaterTemperatureSalinityExploration = () => {
   return (
     <WaterTemperatureSalinityExplorationBox>
       <Breadcrumb />
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'바닷속 생물 채집과 수온, 염분 탐사'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'바닷속 생물 채집과 수온, 염분 탐사'}
+      />
       <div className="fullScreen mainImg">
         <div className="mediumScreen medium">
           <div className="rectangular">

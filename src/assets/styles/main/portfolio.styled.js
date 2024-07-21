@@ -7,7 +7,7 @@ const tablet_pfFieldWidth = '224px';
 const tablet_PaddingLeft = '68px';
 
 export const PortfolioBox = styled.div`
-  background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio_bg3.png);
+  background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg3.png);
   background-repeat: no-repeat;
 
   .englishFont,

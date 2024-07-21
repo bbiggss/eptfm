@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const ProjectContainer = styled.div`
+export const WidthImg1Texts1 = styled.div`
   display: flex;
   text-align: left;
   padding-bottom: 160px;
   .texts {
-    max-width: 550px;
+    /* max-width: 550px; */
     width: 50%;
     display: flex;
     align-items: center;

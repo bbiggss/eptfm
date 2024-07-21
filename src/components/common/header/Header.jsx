@@ -1,58 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { HeaderBox } from '../../../assets/styles/common/header.styled';
 import NavBox from './NavBox';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-  const [headerClass, setHeaderClass] = useState('transparent');
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (location.pathname === '/') {
-        if (window.scrollY > 50) {
-          setHeaderClass('colored');
-        } else {
-          setHeaderClass('transparent');
-        }
-      } else {
-        setHeaderClass('colored');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [location]);
+const Header = (data) => {
   return (
     <>
-      <HeaderBox id="header" className={headerClass}>
+      <HeaderBox id="header" className={data.headerClass}>
         <div id="headerContainer">
           <Link to={'/'}>
             {/* <img id="logoImg" src={img && img.logoImg} alt="" /> */}
-            <img id="logoImg" src={`${process.env.PUBLIC_URL}/assets/images/logo.png`} alt="" />
+            <img
+              id="logoImg"
+              src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`}
+              alt=""
+            />
           </Link>
           <span>
             <img
               id="dropDownImg"
-              src={`${process.env.PUBLIC_URL}/assets/images/dropdown.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/common/dropdown.png`}
               alt=""
             />
             <ul>
               <NavBox title={'ABOUT US'} link={'about'} />
               <NavBox title={'BUSSINESS'} link={'business'} />
               <li className="dropdown">
-                PORTFOLIO
+                <p>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>
                   <Link to={'portfolio/e-Learning'}>e-Learning</Link>
                   <Link to={'portfolio/R&D'}>R&D</Link>
                 </div>
               </li>
-              {/* <NavBox title={'PORTFOLIO'} link={'portfolio/VrAr'} /> */}
-              <NavBox title={'CONTACT US'} link={'contactUs'} />
               <NavBox title={'CONTACT US'} link={'contactUs'} />
             </ul>
           </span>

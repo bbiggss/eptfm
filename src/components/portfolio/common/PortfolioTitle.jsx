@@ -2,19 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioTitleBox = styled.div`
-  display: inline-block;
-  /* background-color: aqua; */
-  /* border: 1px solid black; */
-  /* margin-bottom: 80px; */
+  margin-bottom: 80px;
 
-  p:first-child {
-    text-align: left;
+  .orgainzation {
     margin-bottom: 24px;
 
-    color: #999999;
     font-size: 22px;
+    color: #999999;
+    line-height: auto;
+    letter-spacing: -2px;
   }
-  p:last-child {
+  .fieldTitle {
     font-size: 64px;
     color: #48c2c5;
     line-height: auto;
@@ -25,10 +23,14 @@ const PortfolioTitleBox = styled.div`
 const PortfolioTitle = (data) => {
   return (
     <PortfolioTitleBox>
-      <p className="NanumSquareB">{data.organization}</p>
-      <p className="NanumSquareEB">
-        {data.field} <span className="NanumSquareR">I</span> {data.title}
-      </p>
+      <div className="justifyContentCenter">
+        <div>
+          <p className="orgainzation NanumSquareB">{data.organization}</p>
+          <p className="fieldTitle NanumSquareEB">
+            {data.field} <span className="divide NanumSquareR">I</span> {data.title}
+          </p>
+        </div>
+      </div>
     </PortfolioTitleBox>
   );
 };

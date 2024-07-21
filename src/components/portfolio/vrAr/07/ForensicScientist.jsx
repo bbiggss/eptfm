@@ -4,7 +4,6 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
-import Text from './Text';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
@@ -50,6 +49,7 @@ const ForensicScientistBox = styled.div`
     margin-top: 200px;
     margin-bottom: 200px;
     margin-left: 800px;
+    text-align: left;
   }
   .detailedDescription {
     position: relative;
@@ -70,7 +70,8 @@ const ForensicScientistBox = styled.div`
       top: -209px;
     }
 
-    .img {
+    .projectImg {
+      background-color: red;
       margin-bottom: 60px;
     }
   }
@@ -81,13 +82,11 @@ const ForensicScientist = () => {
     <>
       <Breadcrumb />
       <ForensicScientistBox>
-        <div className="textCenter">
-          <PortfolioTitle
-            organization={'한국교육학술정보원'}
-            field={'VR'}
-            title={'과학수사요원이 되어 범인을 찾아라!'}
-          />
-        </div>
+        <PortfolioTitle
+          organization={'한국교육학술정보원'}
+          field={'VR'}
+          title={'과학수사요원이 되어 범인을 찾아라!'}
+        />
         <div className="box1">
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/main.png`}
@@ -116,7 +115,8 @@ const ForensicScientist = () => {
           </div>
         </div>
         <div className="margin200">
-          <Text
+          <TextCenter
+            className="textLeft"
             text={
               "'과학수사요원이 되어 범인을 찾아라!' 콘텐츠를 제작하면서, \n우리 팀은 CSI 요원이 된 듯한 기분이었어요. \n잉크를 분리하는 크로마토그래피 실험 중에는 누가 내 커피를 \n훔쳐 마셨는지까지 알아낼 뻔 했어요."
             }

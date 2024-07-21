@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 
 const FrenchClimateLifestyleBox = styled.div`
@@ -54,14 +54,11 @@ const FrenchClimateLifestyle = () => {
   return (
     <FrenchClimateLifestyleBox>
       <Breadcrumb />
-      <FixedButton />
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'모네의 작품으로 알아보는 프랑스 기후와 주민생활'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'모네의 작품으로 알아보는 프랑스 기후와 주민생활'}
+      />
       <div className="fullScreen">
         <div className="mainContainer">
           <img
@@ -227,6 +224,7 @@ const FrenchClimateLifestyle = () => {
           }
         />
       </WidthOneContent>
+      <FixedButton />
     </FrenchClimateLifestyleBox>
   );
 };

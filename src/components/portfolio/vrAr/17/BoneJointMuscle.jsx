@@ -3,10 +3,11 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
-import ImgTexts from '../08/ImgTexts';
+import ZigZagImgTexts from '../../common/ZigZagImgTexts';
+import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
 
 const BoneJointMuscleBox = styled.div`
   .fff6df {
@@ -41,15 +42,12 @@ const BoneJointMuscle = () => {
   return (
     <BoneJointMuscleBox>
       <Breadcrumb />
-      <FixedButton />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'AR'}
-          title={'뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'AR'}
+        title={'뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
+      />
       <div className="fullScreen marginBottom200 hidden">
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/main.png`}
@@ -99,34 +97,32 @@ const BoneJointMuscle = () => {
       </WidthOneContent>
 
       <div className="fullScreen fff6df">
-        <div className="smallScreen">
-          <div className="common paddingTop160">
-            <div className="left">
-              <ImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_1.png`}
-                text={'관절을 구성하는 연골, 인대, 활액 등의\n구조에 대해 학습할 수 있어요.'}
-              />
-              <ImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_2.png`}
-                text={'관절의 건강을 유지하고\n관절 질환을 예방하는 방법을 학습해요.'}
-              />
-            </div>
-            <div className="right">
-              <ImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_3.png`}
-                text={
-                  'AR을 통해 관절의 단면을 시각적으로 확인하고\n각 구성 요소의 역할을 배울 수도 있답니다!'
-                }
-              />
-              <ImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_4.png`}
-                text={
-                  'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을 배워볼까요?'
-                }
-              />
-            </div>
+        <Zigzag className="paddingTop160">
+          <div className="left">
+            <ZigZagImgTexts
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_1.png`}
+              text={'관절을 구성하는 연골, 인대, 활액 등의\n구조에 대해 학습할 수 있어요.'}
+            />
+            <ZigZagImgTexts
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_2.png`}
+              text={'관절의 건강을 유지하고\n관절 질환을 예방하는 방법을 학습해요.'}
+            />
           </div>
-        </div>
+          <div className="right">
+            <ZigZagImgTexts
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_3.png`}
+              text={
+                'AR을 통해 관절의 단면을 시각적으로 확인하고\n각 구성 요소의 역할을 배울 수도 있답니다!'
+              }
+            />
+            <ZigZagImgTexts
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_4.png`}
+              text={
+                'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을 배워볼까요?'
+              }
+            />
+          </div>
+        </Zigzag>
       </div>
 
       <WidthOneContent>
@@ -159,6 +155,7 @@ const BoneJointMuscle = () => {
           }
         />
       </WidthOneContent>
+      <FixedButton />
     </BoneJointMuscleBox>
   );
 };

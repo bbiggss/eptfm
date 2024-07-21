@@ -9,7 +9,7 @@ const Footer = () => {
           <div id="info">
             <img
               id="footerImg"
-              src={`${process.env.PUBLIC_URL}/assets/images/bottom_logo.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/common/bottom_logo.png`}
               alt=""
             />
             <div>

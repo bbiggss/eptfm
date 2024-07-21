@@ -5,7 +5,7 @@ import FixedButton from '../../../common/button/FixedButton';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 
 const TyphoonEvacuationBox = styled.div`
@@ -30,13 +30,11 @@ const TyphoonEvacuation = () => {
   return (
     <TyphoonEvacuationBox>
       <Breadcrumb />
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'태풍 대피요령 알아보기'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'태풍 대피요령 알아보기'}
+      />
       <div className="fullScreen">
         <div className="mainImgTexts">
           <div className="mainTexts">

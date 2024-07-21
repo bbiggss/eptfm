@@ -51,13 +51,13 @@ const FixedButton = () => {
           className={topBtnView}
           // onClick={() => nav(-1)}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          src={`${process.env.PUBLIC_URL}/assets/images/btn_up.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
           alt=""
         />
         <br />
         <img
           onClick={listBtn}
-          src={`${process.env.PUBLIC_URL}/assets/images/btn_p_list.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/common/btn_p_list.png`}
           alt=""
         />
       </div>

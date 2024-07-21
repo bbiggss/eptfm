@@ -1,14 +1,14 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-// import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import PortfolioTitle from '../../common/PortfolioTitle';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
 import styled from 'styled-components';
-import ImgTexts from './ImgTexts';
+import ZigZagImgTexts from '../../common/ZigZagImgTexts';
 import ProjectImg from '../../common/ProjectImg';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
+import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
 
 const ExploreFreiburgBox = styled.div`
   .textCenter {
@@ -24,32 +24,14 @@ const ExploreFreiburgBox = styled.div`
       margin-bottom: 160px;
     }
   }
-  .common {
-    display: flex;
-    /* background-color: yellow; */
-    text-align: center;
-    padding-bottom: 200px;
-    .left + .right {
-      margin-left: 60px;
-    }
-    .right {
-      position: relative;
-      margin-top: 130px;
-      .sideImg1 {
-        top: -453px;
-        right: -173px;
-        position: absolute;
-      }
-    }
-  }
-  .fff6df {
-    background-color: #fff6df;
-  }
   .topText {
     color: #292929;
     font-size: 28px;
     padding-top: 160px;
     padding-bottom: 100px;
+  }
+  .fff6df {
+    background-color: #fff6df;
   }
 `;
 
@@ -57,12 +39,12 @@ const ExploreFreiburg = () => {
   return (
     <ExploreFreiburgBox>
       <Breadcrumb />
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'세계의 환경 수도 프라이부르크 구경하기'}
+      />
       <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'세계의 환경 수도 프라이부르크 구경하기'}
-        />
         <img
           className="mainImg1"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/main1.png`}
@@ -91,42 +73,41 @@ const ExploreFreiburg = () => {
           <p className="topText NanumSquareB">
             이제 여러분도 집에서 친환경 도시를 탐험하며, 녹색 미래를 경험해보세요!
           </p>
-          <div className="smallScreen">
-            <div className="common">
-              <div className="left">
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_1.png`}
-                  text={
-                    'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를 재현했어요!'
-                  }
-                />
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_3.png`}
-                  text={
-                    '학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔 부분이에요.'
-                  }
-                />
-              </div>
-              <div className="right">
-                <img
-                  className="sideImg1"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side1.png`}
-                  alt=""
-                />
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_2.png`}
-                  text={'여러차례의 테스트를 통해\n사용자 경험을 최적화 했답니다!'}
-                />
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_4.png`}
-                  text={
-                    '이러한 노력을 통해 학습자는 재미있고\n유익하게 지속 가능한 도시의 모델을 배울 수 있어요.\n프라이부르크의 숨은 매력을 발견해보세요!'
-                  }
-                />
-              </div>
+          <Zigzag>
+            <div className="left">
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_1.png`}
+                text={
+                  'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를 재현했어요!'
+                }
+              />
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_3.png`}
+                text={
+                  '학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔 부분이에요.'
+                }
+              />
             </div>
-          </div>
+            <div className="right">
+              <img
+                className="sideImg1"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side1.png`}
+                alt=""
+              />
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_2.png`}
+                text={'여러차례의 테스트를 통해\n사용자 경험을 최적화 했답니다!'}
+              />
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_4.png`}
+                text={
+                  '이러한 노력을 통해 학습자는 재미있고\n유익하게 지속 가능한 도시의 모델을 배울 수 있어요.\n프라이부르크의 숨은 매력을 발견해보세요!'
+                }
+              />
+            </div>
+          </Zigzag>
         </div>
+
         <div className="fullScreen">
           <WidthOneContent className="paddingTop160">
             <img
@@ -206,32 +187,30 @@ const ExploreFreiburg = () => {
         </div>
 
         <div className="fullScreen fff6df">
-          <div className="smallScreen">
-            <div className="common paddingTop160">
-              <div className="left">
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_5.png`}
-                  text={
-                    '프라이부르크 콘텐츠에 등장하는 귀여운 솔라의\n미션을 해결하면서 마을을 돌아다닐 수 있어요.'
-                  }
-                />
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_7.png`}
-                  text={'검은 숲의 비밀을 찾아서\n미션을 해결하고, 검은 숲을 탐험해보세요.'}
-                />
-              </div>
-              <div className="right">
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_6.png`}
-                  text={'빵집에서 프레첼을 구매해서\n숨어있는 퀘스트를 해결해보세요!'}
-                />
-                <ImgTexts
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_8.png`}
-                  text={'편리한 퀘스트 확인 창으로\n학습자들의 편의성도 도모했답니다!'}
-                />
-              </div>
+          <Zigzag className="paddingTop160">
+            <div className="left">
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_5.png`}
+                text={
+                  '프라이부르크 콘텐츠에 등장하는 귀여운 솔라의\n미션을 해결하면서 마을을 돌아다닐 수 있어요.'
+                }
+              />
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_7.png`}
+                text={'검은 숲의 비밀을 찾아서\n미션을 해결하고, 검은 숲을 탐험해보세요.'}
+              />
             </div>
-          </div>
+            <div className="right">
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_6.png`}
+                text={'빵집에서 프레첼을 구매해서\n숨어있는 퀘스트를 해결해보세요!'}
+              />
+              <ZigZagImgTexts
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_8.png`}
+                text={'편리한 퀘스트 확인 창으로\n학습자들의 편의성도 도모했답니다!'}
+              />
+            </div>
+          </Zigzag>
         </div>
       </div>
       <FixedButton />

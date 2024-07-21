@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import CustomText from '../../common/CustomText';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
@@ -34,13 +34,11 @@ const CivilTrial = () => {
     <CivilTrialBox>
       <Breadcrumb />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'AR'}
-          title={'나도 할 수 있다, 민사 재판'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'AR'}
+        title={'나도 할 수 있다, 민사 재판'}
+      />
 
       <div className="fullScreen">
         <div className="mainContainer">

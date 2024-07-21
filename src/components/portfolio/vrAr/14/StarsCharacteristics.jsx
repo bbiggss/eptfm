@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
@@ -20,13 +20,11 @@ const StarsCharacteristics = () => {
     <StarsCharacteristicsBox>
       <Breadcrumb />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'AR'}
-          title={'별의 색과 밝기를 이용한 별의 특성 알아보기'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'AR'}
+        title={'별의 색과 밝기를 이용한 별의 특성 알아보기'}
+      />
 
       <div className="fullScreen marginTop80 marginBottom111">
         <div className="mediumScreen relative">

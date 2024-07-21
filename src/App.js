@@ -37,9 +37,9 @@ import ELearning from './components/portfolio/eLearning/ELearning';
 import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderPlaceholder } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
-import ScrollToTop from './components/common/ScrollTop';
+import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
 
 import MudFlat from './components/portfolio/vrAr/01/MudFlat';
@@ -85,6 +85,31 @@ function App() {
   const isSmallScreen = window.matchMedia('(max-width: 1024px)').matches;
   const [modalStatus, setModalStatus] = useState(false);
 
+  const [headerClass, setHeaderClass] = useState('transparent');
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setHeaderClass('transparent');
+    }
+    const handleScroll = () => {
+      if (location.pathname === '/') {
+        if (window.scrollY > 50) {
+          setHeaderClass('colored');
+        } else {
+          setHeaderClass('transparent');
+        }
+      } else {
+        setHeaderClass('colored');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [location]);
+
   return (
     <div className="App">
       <ScrollToTop />
@@ -93,7 +118,7 @@ function App() {
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
 
       {/* 메인일때 */}
-      <Header />
+      <Header headerClass={headerClass} />
 
       {isSmallScreen ? <HeaderPlaceholder /> : ''}
       {location.pathname === '/' ? <Video /> : ''}

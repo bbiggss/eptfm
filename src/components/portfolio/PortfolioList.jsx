@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { PortfolioListBox } from '../../assets/styles/main/portfolioList.styled';
+import { PortfolioListBox } from '../../assets/styles/portfolio/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
 import FixedButton from '../common/button/FixedButton';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';

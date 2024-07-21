@@ -33,7 +33,7 @@ export const WidthOneContent = styled.div`
     top: 101px;
   }
 
-  .img {
+  .projectImg {
     margin-bottom: 60px;
   }
 `;

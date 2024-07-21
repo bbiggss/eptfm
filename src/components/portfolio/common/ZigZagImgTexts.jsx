@@ -1,7 +1,7 @@
 import React from 'react';
-import TextCenter from '../../common/TextCenter';
+import TextCenter from './TextCenter';
 import styled from 'styled-components';
-const ImgTextsBox = styled.div`
+const ZigZagImgTextsBox = styled.div`
   margin-bottom: 160px;
   &:last-child {
     margin-bottom: 0px;
@@ -11,14 +11,14 @@ const ImgTextsBox = styled.div`
   }
 `;
 
-const ImgTexts = (data) => {
+const ZigZagImgTexts = (data) => {
   return (
-    <ImgTextsBox>
+    <ZigZagImgTextsBox>
       <img src={data.src} alt="" />
 
       <TextCenter text={data.text} />
-    </ImgTextsBox>
+    </ZigZagImgTextsBox>
   );
 };
 
-export default ImgTexts;
+export default ZigZagImgTexts;

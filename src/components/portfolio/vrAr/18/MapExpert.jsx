@@ -3,7 +3,7 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
@@ -13,15 +13,12 @@ const MapExpert = () => {
   return (
     <MapExpertBox>
       <Breadcrumb />
-      <FixedButton />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'AR'}
-          title={'지도를 볼 줄 아는, 나는 지도박사'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'AR'}
+        title={'지도를 볼 줄 아는, 나는 지도박사'}
+      />
 
       <div className="fullScreen marginTop80 hidden">
         <img
@@ -113,6 +110,7 @@ const MapExpert = () => {
           }
         />
       </WidthOneContent>
+      <FixedButton />
     </MapExpertBox>
   );
 };

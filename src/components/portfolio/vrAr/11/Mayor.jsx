@@ -4,10 +4,10 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
-import { ProjectContainer } from '../../../../assets/styles/main/vrAr/common/projectContainer.styled';
+import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
 import ProjectDescription from '../../common/ProjectDescription';
 
 const MayorBox = styled.div`
@@ -78,13 +78,11 @@ const Mayor = () => {
     <MayorBox>
       <Breadcrumb />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'직접 만드는 민주적인 선거! 시장 출마하기'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'직접 만드는 민주적인 선거! 시장 출마하기'}
+      />
       <div className="smallScreen">
         <div className="mainContainer">
           <div className="mainTexts">
@@ -195,7 +193,7 @@ const Mayor = () => {
 
       <div className="fullScreen AC9EFF">
         <div className="smallScreen">
-          <ProjectContainer>
+          <WidthImg1Texts1>
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_1.png`}
             />
@@ -203,16 +201,16 @@ const Mayor = () => {
               textPosition={'right'}
               text={`잠깐! 잘 생각하고 선택해야해요!\n학습자들의 선택에 따라서\n유권자 박탈 여부도 결정된답니다.`}
             />
-          </ProjectContainer>
-          <ProjectContainer>
+          </WidthImg1Texts1>
+          <WidthImg1Texts1>
             <ProjectDescription
               text={`학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며 자신의 공약을\n어필해보세요!`}
             />
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_2.png`}
             />
-          </ProjectContainer>
-          <ProjectContainer>
+          </WidthImg1Texts1>
+          <WidthImg1Texts1>
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_3.png`}
             />
@@ -220,15 +218,15 @@ const Mayor = () => {
               textPosition={'right'}
               text={`거리로 나가서 지지자들과 함께\n현란한 선거운동도 할 수 있답니다! \n나의 공약을 외치며 유권자들의 마음을\n사로잡아보세요.`}
             />
-          </ProjectContainer>
-          <ProjectContainer>
+          </WidthImg1Texts1>
+          <WidthImg1Texts1>
             <ProjectDescription
               text={`간혹 엉뚱한 선거 운동을 선택하게 되면\n지지율이 떨어질 수 있으니 유의해야해요!\n어떤 선거 운동이 지지율 상승에 도움이 될지\n많은 고민을 해야한답니다!`}
             />
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_4.png`}
             />
-          </ProjectContainer>
+          </WidthImg1Texts1>
         </div>
       </div>
 

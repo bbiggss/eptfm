@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
-import { WidthOneContent } from '../../../../assets/styles/main/vrAr/common/widthOneContent.styled';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 
 const SurvivalBagBox = styled.div`
@@ -33,13 +33,11 @@ const SurvivalBag = () => {
     <SurvivalBagBox>
       <Breadcrumb />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'나만의 생존가방 준비하기'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'나만의 생존가방 준비하기'}
+      />
 
       <div className="fullScreen marginTop80 relative hidden">
         <p className="mainTitle NanumSquareEB">지진 발생! 올바른 대피 방법은 무엇일까?</p>
