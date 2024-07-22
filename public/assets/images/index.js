@@ -16,7 +16,6 @@ import portfolioImg3 from './portfolio_img3.png';
 import portfolioBg from './portfolio_bg.png';
 import portfolioBg2 from './portfolio_bg2.png';
 import portfolioBg3 from './portfolio_bg3.png';
-import testImg from './02.jpg';
 import dropDown from './dropdown.png';
 import listButton from './btn_p_list.png';
 import backButton from './btn_p_back.png';
@@ -51,5 +50,4 @@ export {
   backButton,
   // 푸터
   bottomLogoImg,
-  testImg,
 };

@@ -4,9 +4,9 @@ export const WidthOneContent = styled.div`
   position: relative;
   text-align: center;
   margin-bottom: 160px;
-  &:last-child {
+  /* &:last-child {
     margin-bottom: 200px;
-  }
+  } */
   .left {
     position: absolute;
     left: 0;

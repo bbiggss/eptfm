@@ -4,15 +4,20 @@ import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
-import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
-import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
 
 import PortfolioTitle from '../../common/PortfolioTitle';
+import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
+import CustomText from '../../common/CustomText';
 
 const MudFlatBox = styled.div`
+  .mainImg {
+    width: 100%;
+    margin-bottom: 160px;
+  }
   .subTexts {
     font-size: 24px;
+    margin-top: 60px;
   }
   .portfolioTitle {
     position: absolute;
@@ -32,6 +37,7 @@ const MudFlatBox = styled.div`
 
   .mainContainer {
     display: flex;
+    text-align: center;
 
     .mainTexts {
       display: flex;
@@ -39,11 +45,12 @@ const MudFlatBox = styled.div`
       margin-left: 67px;
     }
   }
-  .F6FBFD {
-    background-color: #f6fbfd;
+  .watchContainer {
     padding: 100px 0;
-    margin-bottom: 130px;
-    img {
+
+    margin-top: 160px;
+    margin-bottom: 160px;
+    .textCenter img {
       margin: 80px 0;
     }
     .title {
@@ -55,41 +62,29 @@ const MudFlatBox = styled.div`
       text-align: center;
     }
   }
+  .gridContainer {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-bottom: 160px;
+    ul {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 400px);
+      gap: 0px 30px;
 
-  .customText {
-    color: #000000;
-    font-size: 50px;
-    line-height: 40px;
-    letter-spacing: -2%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    text-align: center;
-    padding-bottom: 88px;
-  }
-
-  .manCharacter {
-    text-align: center;
-    max-width: 1260px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 638px;
-    img {
-      margin-left: 243px;
+      li {
+        list-style: none;
+        padding-bottom: 60px;
+      }
     }
-
-    p {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-
-      color: #000000;
-      font-size: 26px;
-      line-height: 40px;
-      letter-spacing: -2%;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    .customText {
+      color: #191919;
       text-align: center;
     }
+  }
+
+  .lastChild {
+    margin-bottom: 200px;
   }
 `;
 
@@ -107,15 +102,16 @@ const MudFlat = () => {
           />
         </div>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/main1.png`}
+          className="mainImg"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
           alt=""
         />
       </div>
 
       <div className="smallScreen">
-        <div className="mainContainer paddingTop160">
+        <div className="mainContainer">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/woman.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/woman.png`}
             alt=""
           />
           <div className="mainTexts">
@@ -129,13 +125,26 @@ const MudFlat = () => {
         </div>
       </div>
 
-      <div className="fullScreen F6FBFD">
+      <div className="fullScreen watchContainer EDFAFF">
         <p className="title NanumSquareEB">시계형 조작부</p>
         <div className="textCenter">
-          <img
-            className=""
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/group1.png`}
-            alt=""
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png`}
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/02_mulsigye.png`}
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/03_mulsigye.png`}
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/04_mulsigye.png`}
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/05_mulsigye.png`}
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/06_mulsigye.png`}
           />
         </div>
         <TextCenter
@@ -146,57 +155,126 @@ const MudFlat = () => {
       </div>
 
       <div className="smallScreen">
-        <WidthImg1Texts1>
+        <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`}
           />
-          <ProjectDescription
-            textPosition={'right'}
-            text={`갯벌 생물 채집을 위해 학습자는 캐릭터를 \n직접 움직이며 물이 들어오고 나가는 과정을 \n직관적으로 체험하며 자연스럽게 배울 수 있어요.`}
+          <TextCenter
+            text={
+              '우리팀은 학습자들이 ‘갯벌은 어떤 곳일까?’ 콘텐츠를 통해\n밀물과 썰물의 변화, 갯벌의 생태계, 환경 정화 기능 등 갯벌의 다양한 측면을\n자연스럽게 학습할 수 있도록 하기 위해 많은 노력을 기울였어요.'
+            }
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
-          <ProjectDescription
-            text={`갯벌이 탄소를 흡수하고 환경을 정화하는 역할을 \n수행함을 확인하고, 다양한 갯벌 생태계를 \nAR을 통해 체험할 수 있어요.`}
-          />
+        </WidthOneContent>
+        <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+          <TextCenter
+            text={
+              '뿐만 아니라, 갯벌 체험에서 꼭 주의해야 할 사항들도\n학습자들이 기억할 수 있도록 안전 유의 사항의 내용을 넣었죠.'
+            }
+          />
+        </WidthOneContent>
+        <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_3.png`}
           />
-          <ProjectDescription
-            textPosition={'right'}
-            text={`갯벌 생물 채집 시 꼭 지켜야할 안전을 고려한 \n선택을 통해 지정한 시간 안에 수집한 생물을 \n수집책에 저장하는 게임도 진행할 수 있답니다!`}
+          <TextCenter
+            text={
+              '학습자들은 캐릭터를 직접 움직이며 갯벌에 서식하는 다양한 생물들을 채집할 수 있어요.\n자연과의 공생! 갯벌에 사는 다양한 생물 친구들을 만나볼까요?'
+            }
           />
-        </WidthImg1Texts1>
+        </WidthOneContent>
       </div>
 
-      <div className="textCenter">
-        <p className="customText NanumSquareEB">다양한 생물 NPC들을 만나보세요!</p>
-        <img
-          className=""
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/group2.png`}
-          alt=""
+      <div className="fullScreen gridContainer EDFAFF">
+        <ul>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_reed.png`}
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/02_cockle.png`}
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/03_octopus.png`}
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/04_SandBubblerCrabs.png`}
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/05_SuaedaJaponica.png`}
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/06_HoodedCrane.png`}
+              alt=""
+            />
+          </li>
+        </ul>
+        <CustomText
+          text={
+            '엽낭게, 농게, 칠게, 꼬막, 짱둥어, 검은머리갈매기, 염생식물 등\n다양한 생물을 AR을 통해 실감 나게 관찰해보세요!'
+          }
         />
       </div>
 
-      <div className="manCharacter">
-        <p className="customText2 NanumSquareEB">
-          갯벌의 생태적 중요성을 자연스럽게 배우고,
-          <br />
-          갯벌 환경을 체험하며 환경 보존의 필요성을 느낄 수 있어요.
-          <br />
-          갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!
-        </p>
-        <img
-          className=""
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MudFlat/man.png`}
-          alt=""
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_4.png`}
         />
-      </div>
+        <TextCenter
+          text={
+            '갯벌에 빠지거나, 시간 내에 안전 지대로 돌아가지 못하면 \n발생하는 위험 이벤트들을 경험해보세요!\n안전이 최고! 갯벌에서의 위험상황 대비 방법을 학습할 수 있답니다.'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_5.png`}
+        />
+        <TextCenter
+          text={
+            '천연기념물의 흑두루미와 검은머리갈배기의 울음소리도 들어보세요!\n꺄륵 꺄륵 하며 우는 소리를 들으면 진짜 갯벌에 와있는 기분이 들어요.'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`}
+        />
+        <TextCenter
+          text={
+            '갯벌 생물 도감을 통해 갯벌이 생물들에게 중요한 역할을 한다는 사실을 배울 수 있어요.\n갯벌의 환경 정화 기능과 그 중요성을 같이 이해해볼까요?'
+          }
+        />
+      </WidthOneContent>
+
+      <WidthOneContent className="lastChild">
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`}
+        />
+        <TextCenter
+          text={
+            '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
+          }
+        />
+      </WidthOneContent>
+
       <FixedButton />
     </MudFlatBox>
   );

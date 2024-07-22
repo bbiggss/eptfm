@@ -2,19 +2,29 @@
   margin: 0;
   padding: 0;
 }
+.hidden {
+  overflow: hidden;
+}
 .displayNone {
   display: none;
 }
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
 
-.justifyContentCenter{
+.justifyContentCenter {
   display: flex;
   justify-content: center;
 }
 
 /* width screen 1920/1556/1399/1260 */
 .fullScreen {
-  max-width: 1920px;
   width: 100%;
+  max-width: 1920px;
+  /* overflow: hidden; */
   margin: 0 auto;
 }
 .largeScreen {
@@ -32,45 +42,50 @@
   width: 100%;
   margin: 0 auto;
 }
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
 
 /* 텍스트 정렬 */
 .textCenter {
   text-align: center;
 }
 
-.paddingTop160 {
-  padding-top: 160px;
-}
-.paddingBottom160 {
-  padding-bottom: 160px;
-}
 .paddingTopBottom160 {
   padding: 160px 0;
+}
+
+.marginTop80 {
+  margin-top: 80px;
 }
 .marginTop100 {
   margin-top: 100px;
 }
-.marginTop80 {
-  margin-top: 80px;
+.paddingTop100 {
+  padding-top: 100px;
 }
+.paddingTop160 {
+  padding-top: 160px;
+}
+
 .marginBottom100 {
   margin-bottom: 100px;
 }
 .marginBottom111 {
   margin-bottom: 111px;
 }
-.paddingTop100 {
-  padding-top: 100px;
+.paddingBottom160 {
+  padding-bottom: 160px;
+}
+.TextColor191919 {
+  color: #191919;
 }
 
-.hidden {
-  overflow: hidden;
+/* COLOR */
+.EDFAFF {
+  background-color: #edfaff;
+  background-color: rgba(237, 250, 255, 0.8);
+}
+
+.test {
+  background-color: gold;
 }
 
 /* 영어 */
