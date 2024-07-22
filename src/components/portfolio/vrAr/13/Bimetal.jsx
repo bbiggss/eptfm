@@ -18,6 +18,10 @@ const BimetalBox = styled.div`
       transform: translateX(-50%);
       margin-top: 158px;
       text-align: center;
+
+      .subTexts {
+        color: #000000;
+      }
     }
   }
 `;

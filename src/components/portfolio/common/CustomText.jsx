@@ -2,13 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CustomTextBox = styled.div`
-  .customText {
-    color: #767676;
-    font-size: 24px;
-    font-family: 'NanumSquareB';
-    line-height: 38px;
-    letter-spacing: -2px;
-  }
+  color: #767676;
+  font-size: 24px;
+  font-family: 'NanumSquareB';
+  line-height: 38px;
+  letter-spacing: -2px;
 `;
 
 const renderTextWithLineBreaks = (text) => {
@@ -22,9 +20,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const CustomText = (data) => {
   return (
-    <CustomTextBox>
-      <div className="customText">{renderTextWithLineBreaks(data.text)}</div>
-    </CustomTextBox>
+    <CustomTextBox className="customText">{renderTextWithLineBreaks(data.text)}</CustomTextBox>
   );
 };
 

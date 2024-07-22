@@ -18,6 +18,12 @@ const TyphoonEvacuationBox = styled.div`
       transform: translateX(-50%);
       margin-top: 118px;
       text-align: center;
+      .subTexts {
+        color: #191919;
+      }
+    }
+    img {
+      width: 100%;
     }
   }
   .topText {

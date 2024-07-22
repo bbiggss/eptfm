@@ -9,10 +9,9 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
 const WaterTemperatureSalinityExplorationBox = styled.div`
-  .mainImg {
+  .mainImgContainer {
     margin-top: 80px;
     margin-bottom: 89px;
-
     .medium {
       position: relative;
     }
@@ -47,7 +46,7 @@ const WaterTemperatureSalinityExploration = () => {
         field={'VR'}
         title={'바닷속 생물 채집과 수온, 염분 탐사'}
       />
-      <div className="fullScreen mainImg">
+      <div className="mainImgContainer">
         <div className="mediumScreen medium">
           <div className="rectangular">
             <div className="mainTexts">
@@ -61,6 +60,7 @@ const WaterTemperatureSalinityExploration = () => {
           </div>
         </div>
         <img
+          className="fullScreen"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/main.png`}
           alt=""
         />
@@ -136,7 +136,7 @@ const WaterTemperatureSalinityExploration = () => {
             }
           />
         </WidthOneContent>
-        <WidthOneContent>
+        <WidthOneContent className="lastChild">
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/8.png`}
           />
@@ -147,12 +147,11 @@ const WaterTemperatureSalinityExploration = () => {
           />
         </WidthOneContent>
       </div>
-      <div className="fullScreen">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/bottom.png`}
-          alt=""
-        />
-      </div>
+      <img
+        className="fullScreen"
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/bottom.png`}
+        alt=""
+      />
       <FixedButton />
     </WaterTemperatureSalinityExplorationBox>
   );

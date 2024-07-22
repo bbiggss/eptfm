@@ -5,6 +5,8 @@ import { useLocation } from 'react-router-dom';
 
 const Breadcrumb = () => {
   const location = useLocation();
+  let contentTitleEnglish = '';
+  let contentTitleKorean = '';
   // console.log(111, location.pathname);
   // console.log(location.pathname.split('/'));
 
@@ -24,7 +26,13 @@ const Breadcrumb = () => {
   if (subCategory === 'VrAr') {
     subCategory = 'VR/AR';
   }
-  const contentTitle = location.pathname.split('/')[3];
+  const contentTitle = decodeURIComponent(location.pathname.split('/')[3]);
+  if (contentTitle.includes('|')) {
+    contentTitleEnglish = contentTitle.split('|')[0];
+    contentTitleKorean = contentTitle.split('|')[1];
+  }
+  //만약 | 가 있으면 | 를 기준으로 두개로 나눠서 왼쪽은  a폰트, 오른쪽은 b폰트
+  // 한글
 
   // console.log(mainCategory, subCategory, contentTitle);
   return (
@@ -49,12 +57,23 @@ const Breadcrumb = () => {
           </>
         )}
 
-        {contentTitle === undefined ? (
+        {contentTitle === undefined || contentTitle === 'undefined' ? (
           ''
         ) : (
           <>
             <li>{'>'}</li>
-            <li>{decodeURIComponent(contentTitle)}</li>
+
+            <li className="NanumSquareB">
+              {contentTitle.includes('|') ? (
+                <>
+                  {contentTitleEnglish}
+                  <span className="NanumSquareR">|</span>
+                  {contentTitleKorean}
+                </>
+              ) : (
+                <>{contentTitle}</>
+              )}
+            </li>
           </>
         )}
       </ul>

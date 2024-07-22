@@ -25,9 +25,7 @@ const BuildingGreatCityBox = styled.div`
 
   .customTag {
     background-color: #73f3ec;
-    border: 1px solid transparent;
     padding-top: 160px;
-    /* padding-bottom: 160px; */
     margin-bottom: 160px;
   }
 `;
@@ -55,6 +53,7 @@ const BuildingGreatCity = () => {
           </div>
         </div>
         <img
+          className="fullScreen"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/main.png`}
           alt=""
         />
@@ -150,7 +149,7 @@ const BuildingGreatCity = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/7.png`}
           />
         </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        <WidthImg1Texts1 className="lastChild">
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/8.png`}
           />

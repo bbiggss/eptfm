@@ -71,7 +71,7 @@ const ForensicScientistBox = styled.div`
     }
 
     .projectImg {
-      background-color: red;
+      /* background-color: red; */
       margin-bottom: 60px;
     }
   }

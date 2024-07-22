@@ -82,10 +82,6 @@ const MudFlatBox = styled.div`
       text-align: center;
     }
   }
-
-  .lastChild {
-    margin-bottom: 200px;
-  }
 `;
 
 const MudFlat = () => {

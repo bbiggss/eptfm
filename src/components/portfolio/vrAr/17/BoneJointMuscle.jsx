@@ -8,15 +8,40 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import ZigZagImgTexts from '../../common/ZigZagImgTexts';
 import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
+import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 
 const BoneJointMuscleBox = styled.div`
   .fff6df {
     background-color: #fff6df;
     margin-bottom: 160px;
   }
-  .marginBottom200 {
-    margin-top: 80px;
+  .mainContainer {
+    position: relative;
     margin-bottom: 200px;
+    padding-top: 158px;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .rectangle {
+      position: relative;
+      background-color: rgba(234, 181, 102, 0.9);
+      width: 950px;
+      height: 680px;
+
+      .PortfolioIntroduction {
+        position: absolute;
+        margin-top: 187px;
+        margin-left: 330px;
+        .title,
+        .subTexts {
+          color: #ffffff;
+        }
+      }
+    }
   }
   .common {
     display: flex;
@@ -48,16 +73,24 @@ const BoneJointMuscle = () => {
         field={'AR'}
         title={'뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
       />
-      <div className="fullScreen marginBottom200 hidden">
+      <div className="fullScreen mainContainer">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/main.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/main1.png`}
           alt=""
         />
+        <div className="rectangle">
+          <PortfolioIntroduction
+            title={'관절의 움직임을 따라 춤추는\n뼈의 하모니를 경험해보세요!'}
+            description={
+              "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
+            }
+          />
+        </div>
       </div>
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_1.png`}
         />
         <TextCenter
           text={
@@ -67,7 +100,7 @@ const BoneJointMuscle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_2.png`}
         />
         <TextCenter
           text={
@@ -77,7 +110,7 @@ const BoneJointMuscle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_3.png`}
         />
         <TextCenter
           text={
@@ -87,7 +120,7 @@ const BoneJointMuscle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_4.png`}
         />
         <TextCenter
           text={
@@ -100,23 +133,23 @@ const BoneJointMuscle = () => {
         <Zigzag className="paddingTop160">
           <div className="left">
             <ZigZagImgTexts
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_1.png`}
               text={'관절을 구성하는 연골, 인대, 활액 등의\n구조에 대해 학습할 수 있어요.'}
             />
             <ZigZagImgTexts
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_2.png`}
               text={'관절의 건강을 유지하고\n관절 질환을 예방하는 방법을 학습해요.'}
             />
           </div>
           <div className="right">
             <ZigZagImgTexts
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_3.png`}
               text={
                 'AR을 통해 관절의 단면을 시각적으로 확인하고\n각 구성 요소의 역할을 배울 수도 있답니다!'
               }
             />
             <ZigZagImgTexts
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group2_4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_4.png`}
               text={
                 'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을 배워볼까요?'
               }
@@ -127,7 +160,7 @@ const BoneJointMuscle = () => {
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_5.png`}
         />
         <TextCenter
           text={
@@ -137,7 +170,7 @@ const BoneJointMuscle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_6.png`}
         />
         <TextCenter
           text={
@@ -145,9 +178,9 @@ const BoneJointMuscle = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BoneJointMuscle/group1_7.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_7.png`}
         />
         <TextCenter
           text={

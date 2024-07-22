@@ -132,7 +132,7 @@ const CivilTrial = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/8.png`}
         />

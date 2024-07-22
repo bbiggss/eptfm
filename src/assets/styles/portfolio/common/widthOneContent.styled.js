@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const WidthOneContent = styled.div`
   position: relative;
   text-align: center;
-  margin-bottom: 160px;
-  /* &:last-child {
-    margin-bottom: 200px;
-  } */
+  padding-bottom: 160px;
+  &.lastChild {
+    padding-bottom: 200px;
+  }
   .left {
     position: absolute;
     left: 0;
@@ -34,6 +34,6 @@ export const WidthOneContent = styled.div`
   }
 
   .projectImg {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 `;

@@ -6,8 +6,19 @@ import styled from 'styled-components';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import CustomText from '../../common/CustomText';
 
-const MapExpertBox = styled.div``;
+const MapExpertBox = styled.div`
+  .heroSection {
+    .customText {
+      /* position: absolute; */
+    }
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+`;
 
 const MapExpert = () => {
   return (
@@ -20,9 +31,10 @@ const MapExpert = () => {
         title={'지도를 볼 줄 아는, 나는 지도박사'}
       />
 
-      <div className="fullScreen marginTop80 hidden">
+      <div className="fullScreen heroSection">
+        <CustomText text={'지도를 자로 잴 수 있다고? \n놀라운 축척의 세계'} />
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/main.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/main1.png`}
           alt=""
         />
       </div>
@@ -37,14 +49,14 @@ const MapExpert = () => {
 
       <div className="textCenter paddingBottom160">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/main2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/main2.png`}
           alt=""
         />
       </div>
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/1.png`}
         />
         <TextCenter
           text={
@@ -54,7 +66,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/2.png`}
         />
         <TextCenter
           text={
@@ -64,7 +76,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/3.png`}
         />
         <TextCenter
           text={
@@ -74,7 +86,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/4.png`}
         />
         <TextCenter
           text={'지도의 방위를 이해하고, 나침반을 사용해 방위를 찾는 법을 체험해 볼 수 있어요.'}
@@ -82,7 +94,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/5.png`}
         />
         <TextCenter
           text={
@@ -92,7 +104,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/6.png`}
         />
         <TextCenter
           text={
@@ -102,7 +114,7 @@ const MapExpert = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/MapExpert/7.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/7.png`}
         />
         <TextCenter
           text={

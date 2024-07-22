@@ -214,7 +214,7 @@ const FrenchClimateLifestyle = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_10.png`}
         />

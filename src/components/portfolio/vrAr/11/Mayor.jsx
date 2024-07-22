@@ -250,7 +250,7 @@ const Mayor = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_7.png`}
         />

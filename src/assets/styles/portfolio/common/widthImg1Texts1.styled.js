@@ -19,7 +19,7 @@ export const WidthImg1Texts1 = styled.div`
       justify-content: flex-end;
     }
   }
-  &:last-child {
+  &.lastChild {
     padding-bottom: 200px;
   }
 `;

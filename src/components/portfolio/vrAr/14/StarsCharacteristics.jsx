@@ -114,7 +114,7 @@ const StarsCharacteristics = () => {
             }
           />
         </WidthOneContent>
-        <WidthOneContent>
+        <WidthOneContent className="lastChild">
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/8.png`}
           />
