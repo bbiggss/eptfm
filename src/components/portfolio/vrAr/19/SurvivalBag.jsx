@@ -49,11 +49,13 @@ const SurvivalBag = () => {
     <SurvivalBagBox>
       <Breadcrumb />
 
-      <PortfolioTitle
-        organization={'한국교육학술정보원'}
-        field={'VR'}
-        title={'나만의 생존가방 준비하기'}
-      />
+      <div className="justifyContentCenter">
+        <PortfolioTitle
+          organization={'한국교육학술정보원'}
+          field={'VR'}
+          title={'나만의 생존가방 준비하기'}
+        />
+      </div>
 
       <div className="fullScreen marginTop80 relative hidden">
         <p className="mainTitle NanumSquareEB">지진 발생! 올바른 대피 방법은 무엇일까?</p>
@@ -154,7 +156,7 @@ const SurvivalBag = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/8.png`}
         />

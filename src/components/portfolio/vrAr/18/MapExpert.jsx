@@ -10,11 +10,18 @@ import CustomText from '../../common/CustomText';
 
 const MapExpertBox = styled.div`
   .heroSection {
+    position: relative;
     .customText {
-      /* position: absolute; */
+      position: absolute;
+      margin-left: 330px;
+      margin-top: 118px;
+
+      color: #292929;
+      font-size: 40px;
+      line-height: 56px;
+      font-family: 'NanumSquareEB';
     }
     img {
-      position: relative;
       width: 100%;
     }
   }
@@ -25,11 +32,13 @@ const MapExpert = () => {
     <MapExpertBox>
       <Breadcrumb />
 
-      <PortfolioTitle
-        organization={'한국교육학술정보원'}
-        field={'AR'}
-        title={'지도를 볼 줄 아는, 나는 지도박사'}
-      />
+      <div className="justifyContentCenter">
+        <PortfolioTitle
+          organization={'한국교육학술정보원'}
+          field={'AR'}
+          title={'지도를 볼 줄 아는, 나는 지도박사'}
+        />
+      </div>
 
       <div className="fullScreen heroSection">
         <CustomText text={'지도를 자로 잴 수 있다고? \n놀라운 축척의 세계'} />
@@ -112,7 +121,7 @@ const MapExpert = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="lastChild">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/7.png`}
         />

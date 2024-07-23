@@ -18,7 +18,6 @@ const Bimetal = () => {
   return (
     <BimetalBox>
       <Breadcrumb />
-      <FixedButton />
 
       <div className="textCenter">
         <PortfolioTitle
@@ -32,6 +31,8 @@ const Bimetal = () => {
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}
         alt=""
       />
+
+      <FixedButton />
     </BimetalBox>
   );
 };

@@ -11,6 +11,12 @@ import ProjectDescription from '../../common/ProjectDescription';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 
 const BuildingGreatCityBox = styled.div`
+  .satellite {
+    position: absolute;
+    right: 0;
+    top: -24px;
+    margin-right: 170px;
+  }
   .mainTexts {
     position: absolute;
     margin-top: 168px;
@@ -41,8 +47,8 @@ const BuildingGreatCity = () => {
         title={'나만의 살기 좋은 도시 만들기'}
       />
 
-      <div className="fullScreen">
-        <div className="mediumScreen relative">
+      <div className="fullScreen relative">
+        <div className="mediumScreen">
           <div className="mainTexts">
             <PortfolioIntroduction
               title={'꿈의 도시를 영차 영차 설계!'}
@@ -53,8 +59,13 @@ const BuildingGreatCity = () => {
           </div>
         </div>
         <img
+          className="satellite"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/main2.png`}
+          alt=""
+        />
+        <img
           className="fullScreen"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/main.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/main1.png`}
           alt=""
         />
       </div>
@@ -69,7 +80,7 @@ const BuildingGreatCity = () => {
       <div className="smallScreen">
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/1.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -81,12 +92,12 @@ const BuildingGreatCity = () => {
             text={`도시 설계의 시작, 도시 계획의 첫걸음!\n살기 좋은 도시의 조건은 무엇일까요?`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/2.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/3.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -98,12 +109,12 @@ const BuildingGreatCity = () => {
             text={`다양한 주거 지역을 설계할 수 있어요.\n고층 아파트, 단독 주택 등 주거지를 \n학습자 마음대로 배치할 수 있죠!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/4.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/5.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -114,7 +125,7 @@ const BuildingGreatCity = () => {
       <div className="fullScreen customTag">
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/group1_1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/group1_1.png`}
           />
           <TextCenter
             text={
@@ -124,7 +135,7 @@ const BuildingGreatCity = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/group1_2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/group1_2.png`}
           />
           <TextCenter
             text={'AR로 미래를 내다보는 도시 설계!\n혁신과 발전, 그 끝없는 가능성을 설계해볼까요?'}
@@ -134,7 +145,7 @@ const BuildingGreatCity = () => {
       <div className="smallScreen">
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/6.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -146,12 +157,12 @@ const BuildingGreatCity = () => {
             text={`다양한 인프라와 주거, 상업, 산업 지역의\n중요성을 이해하고, 지속 가능한 발전과 \n친환경 도시 설계의 필요성을 학습해요.`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/7.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1 className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BuildingGreatCity/8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/8.png`}
           />
           <ProjectDescription
             textPosition={'right'}

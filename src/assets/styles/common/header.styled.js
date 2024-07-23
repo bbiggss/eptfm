@@ -18,6 +18,10 @@ export const HeaderBox = styled.div`
   font-family: 'Roboto-Medium';
   /* background-color: yellowgreen; */
 
+  .active {
+    color: #4ac2c5;
+  }
+
   width: 100%;
   position: fixed;
   left: 50%;
@@ -70,14 +74,21 @@ export const HeaderBox = styled.div`
         font-size: 18px;
         letter-spacing: 0px;
         scroll-behavior: smooth;
+
+        &:hover {
+          color: #4ac2c5;
+        }
       }
     }
     .dropdown {
       position: relative;
-      p{
+      p {
         font-size: 18px;
         padding-top: 0;
         padding-bottom: 39px;
+        &:hover {
+          color: #4ac2c5;
+        }
       }
       .dropdown-content {
         background-color: white;

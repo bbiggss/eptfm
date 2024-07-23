@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioTitleBox = styled.div`
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 
   .orgainzation {
     margin-bottom: 24px;
@@ -20,16 +20,30 @@ const PortfolioTitleBox = styled.div`
   }
 `;
 
+const renderTextWithLineBreaks = (text) => {
+  return text.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+};
+
 const PortfolioTitle = (data) => {
   return (
-    <PortfolioTitleBox>
-      <div className="justifyContentCenter">
-        <div>
-          <p className="orgainzation NanumSquareB">{data.organization}</p>
-          <p className="fieldTitle NanumSquareEB">
-            {data.field} <span className="divide NanumSquareR">I</span> {data.title}
-          </p>
-        </div>
+    <PortfolioTitleBox className="PortfolioTitleBox">
+      <div>
+        <p className="orgainzation NanumSquareB">{data.organization}</p>
+        <p className="fieldTitle NanumSquareEB">
+          {data.field ? (
+            <>
+              {data.field} <span className="divide NanumSquareR">I</span>
+            </>
+          ) : (
+            ''
+          )}{' '}
+          {renderTextWithLineBreaks(data.title)}
+        </p>
       </div>
     </PortfolioTitleBox>
   );

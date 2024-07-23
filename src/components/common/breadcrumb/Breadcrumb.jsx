@@ -36,7 +36,7 @@ const Breadcrumb = () => {
 
   // console.log(mainCategory, subCategory, contentTitle);
   return (
-    <BreadcrumbBox className="robotoMedium">
+    <BreadcrumbBox className="BreadcrumbBox robotoMedium">
       <ul>
         <li>
           <Link to={'/'}>HOME</Link>

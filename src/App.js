@@ -33,7 +33,6 @@ import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
 import PortfolioList from './components/portfolio/PortfolioList';
-import ELearning from './components/portfolio/eLearning/ELearning';
 import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderPlaceholder } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
@@ -60,6 +59,8 @@ import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity'
 import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
 import MapExpert from './components/portfolio/vrAr/18/MapExpert';
 import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
+
+import InformationDisclosure from './components/portfolio/eLearning/05/InformationDisclosure';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -193,7 +194,14 @@ function App() {
         />
         <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
 
-        <Route path="/portfolio/e-Learning/:id" element={<ELearning />} />
+        {/* e-Learning */}
+        {/* <Route path="/portfolio/e-Learning/:id" element={<ELearning />} /> */}
+        <Route
+          path="/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼"
+          element={<InformationDisclosure />}
+        />
+
+        {/* R&D */}
         <Route path="/portfolio/R&D/:id" element={<Rnd />} />
         <Route
           path="/contactUs"
