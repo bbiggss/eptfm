@@ -9,6 +9,39 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
 const StarsCharacteristicsBox = styled.div`
+  .heroContainer {
+    position: relative;
+    width: 100%;
+    height: 908px;
+    img {
+      position: absolute;
+    }
+    img:nth-of-type(1) {
+      margin-left: 192px;
+      margin-top: 46px;
+    }
+    img:nth-of-type(2) {
+      bottom: 0;
+      margin-bottom: 140px;
+    }
+    img:nth-of-type(3) {
+      margin-top: 50px;
+      margin-left: 182px;
+    }
+    img:nth-of-type(4) {
+      right: 0;
+      bottom: 0;
+      margin-right: 106px;
+    }
+    .rocket {
+      right: 0;
+      margin-right: 280px;
+    }
+    .astronaut {
+      margin-top: 308px;
+      margin-left: 600px;
+    }
+  }
   .mainTexts {
     position: absolute;
     right: 0;
@@ -21,32 +54,57 @@ const StarsCharacteristics = () => {
       <Breadcrumb />
 
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'AR'}
         title={'별의 색과 밝기를 이용한 별의 특성 알아보기'}
       />
 
-      <div className="fullScreen marginTop80 marginBottom111">
+      <div className="fullScreen marginBottom111">
         <div className="mediumScreen relative">
           <div className="mainTexts">
             <PortfolioIntroduction
-              title={'물고기와 함께 떠나는 바다 탐험! '}
+              title={'별빛을 따라 떠나는 우주 여행! '}
               description={
-                '동해, 홍해, 북극해의 수온과 염분을 직접 측정하고,\n다양한 해양 생물을 채집해보세요.\n과학적 발견의 즐거움을 만끽하며 바다의 비밀을 \n파헤쳐보세요!'
+                '별의 색과 밝기를 관찰하고, 스펙트럼을 통해 \n별의 표면 온도와 나이, 질량 등을 학습하세요. \n밤하늘의 수수께끼를 풀며 우주의 신비를 \n탐험해보세요!'
               }
             />
           </div>
         </div>
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/main1.png`}
-          alt=""
-        />
+        <div className="heroContainer">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/01_Ellipse.png`}
+            alt=""
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/02_Ellipse.png`}
+            alt=""
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/03_Ellipse.png`}
+            alt=""
+          />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/04_Ellipse.png`}
+            alt=""
+          />
+          <img
+            className="rocket"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/rocket.png`}
+            alt=""
+          />
+          <img
+            className="astronaut"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/astronaut.png`}
+            alt=""
+          />
+        </div>
       </div>
 
       <div className="smallScreen">
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/1.png`}
           />
           <TextCenter
             text={
@@ -56,7 +114,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/2.png`}
           />
           <TextCenter
             text={
@@ -66,7 +124,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/3.png`}
           />
           <TextCenter
             text={
@@ -76,7 +134,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/4.png`}
           />
           <TextCenter
             text={
@@ -86,7 +144,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/5.png`}
           />
           <TextCenter
             text={
@@ -96,7 +154,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/6.png`}
           />
           <TextCenter
             text={
@@ -106,7 +164,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/7.png`}
           />
           <TextCenter
             text={
@@ -116,7 +174,7 @@ const StarsCharacteristics = () => {
         </WidthOneContent>
         <WidthOneContent className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/StarsCharacteristics/8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/8.png`}
           />
           <TextCenter
             text={

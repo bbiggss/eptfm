@@ -40,6 +40,7 @@ const ExploreFreiburg = () => {
     <ExploreFreiburgBox>
       <Breadcrumb />
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'VR'}
         title={'세계의 환경 수도 프라이부르크 구경하기'}
@@ -47,7 +48,7 @@ const ExploreFreiburg = () => {
       <div className="textCenter">
         <img
           className="mainImg1"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/main1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/main1.png`}
           alt=""
         />
         <PortfolioIntroduction
@@ -58,7 +59,7 @@ const ExploreFreiburg = () => {
         />
         <img
           className="mainImg2"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/main2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/main2.png`}
           alt=""
         />
         <div className="marginBottom160">
@@ -76,13 +77,13 @@ const ExploreFreiburg = () => {
           <Zigzag>
             <div className="left">
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_1.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_1.png`}
                 text={
                   'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를 재현했어요!'
                 }
               />
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_3.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_3.png`}
                 text={
                   '학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔 부분이에요.'
                 }
@@ -91,15 +92,15 @@ const ExploreFreiburg = () => {
             <div className="right">
               <img
                 className="sideImg1"
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side1.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side1.png`}
                 alt=""
               />
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_2.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_2.png`}
                 text={'여러차례의 테스트를 통해\n사용자 경험을 최적화 했답니다!'}
               />
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_4.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_4.png`}
                 text={
                   '이러한 노력을 통해 학습자는 재미있고\n유익하게 지속 가능한 도시의 모델을 배울 수 있어요.\n프라이부르크의 숨은 매력을 발견해보세요!'
                 }
@@ -112,11 +113,11 @@ const ExploreFreiburg = () => {
           <WidthOneContent className="paddingTop160">
             <img
               className="left2"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side2.png`}
               alt=""
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_1.png`}
             />
             <TextCenter
               text={
@@ -126,7 +127,7 @@ const ExploreFreiburg = () => {
           </WidthOneContent>
           <WidthOneContent>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_2.png`}
             />
             <TextCenter
               text={
@@ -137,11 +138,11 @@ const ExploreFreiburg = () => {
           <WidthOneContent>
             <img
               className="right2"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side3.png`}
               alt=""
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_3.png`}
             />
             <TextCenter
               text={
@@ -151,7 +152,7 @@ const ExploreFreiburg = () => {
           </WidthOneContent>
           <WidthOneContent>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_4.png`}
             />
             <TextCenter
               text={
@@ -162,11 +163,11 @@ const ExploreFreiburg = () => {
           <WidthOneContent>
             <img
               className="left3"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/side4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side4.png`}
               alt=""
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_5.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_5.png`}
             />
             <TextCenter
               text={
@@ -176,7 +177,7 @@ const ExploreFreiburg = () => {
           </WidthOneContent>
           <WidthOneContent>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group2_6.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_6.png`}
             />
             <TextCenter
               text={
@@ -190,23 +191,23 @@ const ExploreFreiburg = () => {
           <Zigzag className="paddingTop160">
             <div className="left">
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_5.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_5.png`}
                 text={
                   '프라이부르크 콘텐츠에 등장하는 귀여운 솔라의\n미션을 해결하면서 마을을 돌아다닐 수 있어요.'
                 }
               />
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_7.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_7.png`}
                 text={'검은 숲의 비밀을 찾아서\n미션을 해결하고, 검은 숲을 탐험해보세요.'}
               />
             </div>
             <div className="right">
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_6.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_6.png`}
                 text={'빵집에서 프레첼을 구매해서\n숨어있는 퀘스트를 해결해보세요!'}
               />
               <ZigZagImgTexts
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreFreiburg/group1_8.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_8.png`}
                 text={'편리한 퀘스트 확인 창으로\n학습자들의 편의성도 도모했답니다!'}
               />
             </div>

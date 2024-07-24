@@ -11,7 +11,6 @@ import ProjectImg from '../../common/ProjectImg';
 const BimetalBox = styled.div`
   .mainImgTexts {
     position: relative;
-    margin-top: 80px;
     .mainTexts {
       position: absolute;
       left: 50%;
@@ -32,6 +31,7 @@ const Bimetal = () => {
       <Breadcrumb />
 
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'AR'}
         title={'열팽창 활용하여 바이메탈 만들기'}
@@ -47,7 +47,7 @@ const Bimetal = () => {
             />
           </div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/main1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/main1.png`}
             alt=""
           />
         </div>
@@ -55,7 +55,7 @@ const Bimetal = () => {
       <div className="smallScreen paddingTop100">
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/1.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -67,12 +67,12 @@ const Bimetal = () => {
             text={`열팽창의 원리와 각 금속별로 열팽창\n 정도가 다름을 실험을 통해 학습하고,\n 이를 활용하여 구조물의 재료를 \n선택하거나 바이메탈을 만드는 \n과정을 체험할 수 있어요.`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/2.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/3.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -84,12 +84,12 @@ const Bimetal = () => {
             text={`텅스텐, 철, 구리 중에서 올바른 \n건축자제를 선택하지 않으면\n건물이 와장창 무너질 수 있으니 \n조심해야 해요!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/4.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/5.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -101,12 +101,12 @@ const Bimetal = () => {
             text={`온도 감지 역할을 하는 바이메탈의\n원리를 잘 이해하고 직접 구성할 수 \n있어요. 빵이 타지 않게 조심하세요!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/6.png`}
           />
         </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        <WidthImg1Texts1 className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Bimetal/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/7.png`}
           />
           <ProjectDescription
             textPosition={'right'}

@@ -24,7 +24,9 @@ const TextCenterBox = styled.p`
 
 const TextCenter = (data) => {
   return (
-    <TextCenterBox className={data.className}>{renderTextWithLineBreaks(data.text)}</TextCenterBox>
+    <TextCenterBox className={`textCenter ${data.className}`}>
+      {renderTextWithLineBreaks(data.text)}
+    </TextCenterBox>
   );
 };
 

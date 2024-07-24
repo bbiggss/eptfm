@@ -14,38 +14,63 @@ export const EcosystemRestorationBox = styled.div`
   /* background-color: beige; */
   margin: auto;
 
-  .container {
-    width: 1260px;
-    /* background-color: yellow; */
-    margin: auto;
-    /* text-align: center; */
+  .animationBox {
+    display: flex;
+    /* background-color: aqua; */
+    margin-bottom: 44px;
+    position: relative;
 
-    .animationBox {
-      display: flex;
-      /* background-color: aqua; */
-      margin-bottom: 66px;
-      position: relative;
-
-      img:first-child {
+    .left {
+      position: absolute;
+      left: -123px;
+      top: -80px;
+      .cloud {
         position: absolute;
-        left: -123px;
-        top: -80px;
+        top: 177px;
+        right: 0;
       }
-      div {
-        text-align: left;
-        p:first-child {
-          color: #292929;
-          font-size: 40px;
-          margin-top: 320px;
-          margin-bottom: 59px;
-        }
-        p:last-child {
-          color: #767676;
-          font-size: 26px;
-        }
+    }
+    .introduction {
+      text-align: left;
+      width: 586px;
+      p:first-child {
+        color: #292929;
+        font-size: 40px;
+        margin-top: 320px;
+        margin-bottom: 59px;
       }
-      img:last-child {
-        margin-top: 152px;
+      p:last-child {
+        color: #767676;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: -2px;
+      }
+    }
+    .right {
+      margin-left: 47px;
+      margin-top: 152px;
+      width: 621px;
+      height: 421px;
+      img {
+        position: absolute;
+      }
+      .wolf {
+        margin-left: 170px;
+      }
+      .fox {
+        bottom: 0;
+      }
+      .beaver {
+        margin-left: 379px;
+        margin-top: 224px;
+      }
+      .tree1 {
+        margin-left: 92px;
+        margin-top: 100px;
+      }
+      .tree2 {
+        right: 0;
+        margin-top: 143px;
       }
     }
   }
@@ -59,41 +84,70 @@ const EcosystemRestoration = () => {
     <>
       <Breadcrumb />
       <EcosystemRestorationBox>
-        <div className="container">
+        <div className="smallScreen">
           <PortfolioTitle
+            className="centeredContentWithMarginBottom"
             organization={'한국교육학술정보원'}
             field={'AR'}
             title={'미션! 생태계를 복원하라'}
           />
 
-          <div className="justifyContentCenter">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/1.png`}
-              alt=""
-            />
-          </div>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/1.png`}
+            alt=""
+          />
 
           <div className="animationBox">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/eagle.png`}
-              alt=""
-            />
-            <div>
+            <div className="left">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_eagle.png`}
+                alt=""
+              />
+              <img
+                className="cloud"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_cloud.png`}
+                alt=""
+              />
+            </div>
+            <div className="introduction">
               <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
               <p className="NanumSquareB">
                 옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
                 <br /> 자연의 아름다움을 다시 꽃피우세요!
               </p>
             </div>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/animals.png`}
-              alt=""
-            />
+            <div className="right">
+              <img
+                className="wolf"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_wolf.png`}
+                alt=""
+              />
+              <img
+                className="fox"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_fox.png`}
+                alt=""
+              />
+              <img
+                className="beaver"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_beaver.png`}
+                alt=""
+              />
+              <img
+                className="tree1"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree1.png`}
+                alt=""
+              />
+              <img
+                className="tree2"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree2.png`}
+                alt=""
+              />
+            </div>
           </div>
 
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/2.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -105,12 +159,12 @@ const EcosystemRestoration = () => {
               text={`책상 위에 펼쳐진 옐로스톤 국립공원과 호주 생태계를\n 증강현실(AR)로 만날 수 있어요. 다양한 생물을 풀어놓고,\n토끼 수를 조절하며 생태계 평형을 회복시켜 보세요.\n자연을 사랑하는 우리, 오늘은 가상 현실로도 그 사랑을\n실천해 보아요!`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/3.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/4.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -119,27 +173,27 @@ const EcosystemRestoration = () => {
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectDescription
-              text={`‘EcosystemRestoration’ 콘텐츠를 개발하면서 우리팀은\n실제 옐로스톤 프로젝트의 방대한 데이터를 분석하고 \n적용하는 데 많은 노력을 기울였어요. \n제작 과정은 도전적이었지만, 이를 통해 진정성 있는 교육\n 콘텐츠를 제공할 수 있게 되었죠. 열정과 헌신이 담긴 AR\n 교육 콘텐츠를 통해 자연의 복잡함과 아름다움을 이해해\n보세요.`}
+              text={`‘미션! 생태계를 복원하라’ 콘텐츠를 개발하면서 우리팀은\n실제 옐로스톤 프로젝트의 방대한 데이터를 분석하고 \n적용하는 데 많은 노력을 기울였어요. \n제작 과정은 도전적이었지만, 이를 통해 진정성 있는 교육\n 콘텐츠를 제공할 수 있게 되었죠. 열정과 헌신이 담긴 AR\n 교육 콘텐츠를 통해 자연의 복잡함과 아름다움을 이해해\n보세요.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/5.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/5.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/6.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/6.png`}
             />
             <ProjectDescription
               textPosition={'right'}
-              text={`‘EcosystemRestoration’ 콘텐츠를 복습할 수 있는\n 퀴즈를 제공하고 있어요. 옐로스톤 국립 공원에서 \n생태계 평형이 회복된 과정을 ‘빈칸 채우기’ 활동을 \n통해 학습 내용을 되짚어 볼 수 있어요.`}
+              text={`‘미션! 생태계를 복원하라’ 콘텐츠를 복습할 수 있는\n 퀴즈를 제공하고 있어요. 옐로스톤 국립 공원에서 \n생태계 평형이 회복된 과정을 ‘빈칸 채우기’ 활동을 \n통해 학습 내용을 되짚어 볼 수 있어요.`}
             />
           </WidthImg1Texts1>
-          <WidthImg1Texts1>
+          <WidthImg1Texts1 className="lastChild">
             <ProjectDescription
               text={`생태계 평행에 영향을 주는 자연적인 요인과 인위적인 \n요인을 분류하는 퀴즈로 자연 환경 파괴, 산업 발달에 따른\n 오염, 과도한 사냥 등으로 생물 다양성이 감소되어 환경 \n변화가 생태계의 평형에 영향을 주게 된다는 결론을 통해\n 더 깊이 있는 이해를 도모해요. `}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EcosystemRestoration/7.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/7.png`}
             />
           </WidthImg1Texts1>
         </div>

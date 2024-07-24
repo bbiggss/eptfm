@@ -60,6 +60,9 @@ import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
 import MapExpert from './components/portfolio/vrAr/18/MapExpert';
 import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
 
+import ReservoirDam from './components/portfolio/eLearning/01/ReservoirDam';
+import ClassroomRevolution from './components/portfolio/eLearning/02/ClassroomRevolution';
+
 import InformationDisclosure from './components/portfolio/eLearning/05/InformationDisclosure';
 
 function App() {
@@ -195,7 +198,14 @@ function App() {
         <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
 
         {/* e-Learning */}
-        {/* <Route path="/portfolio/e-Learning/:id" element={<ELearning />} /> */}
+        <Route
+          path="/portfolio/e-Learning/저수지·댐 안전관리 및 재해예방"
+          element={<ReservoirDam />}
+        />
+        <Route
+          path="/portfolio/e-Learning/교사가 이끄는 교실혁명"
+          element={<ClassroomRevolution />}
+        />
         <Route
           path="/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼"
           element={<InformationDisclosure />}

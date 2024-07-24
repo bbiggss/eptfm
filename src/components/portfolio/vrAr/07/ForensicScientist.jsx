@@ -68,6 +68,18 @@ const ForensicScientistBox = styled.div`
       position: absolute;
       right: 0;
       top: -209px;
+
+      .foot {
+        img {
+          display: block;
+
+          &:last-child {
+            position: absolute;
+            right: 0;
+            top: 409px;
+          }
+        }
+      }
     }
 
     .projectImg {
@@ -83,13 +95,14 @@ const ForensicScientist = () => {
       <Breadcrumb />
       <ForensicScientistBox>
         <PortfolioTitle
+          className="centeredContentWithMarginBottom"
           organization={'한국교육학술정보원'}
           field={'VR'}
           title={'과학수사요원이 되어 범인을 찾아라!'}
         />
         <div className="box1">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/main.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main.png`}
             alt=""
           />
         </div>
@@ -97,7 +110,7 @@ const ForensicScientist = () => {
         <div className="mainBackgroundImg">
           <img
             className="backgroundImg"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/main2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main2.png`}
             alt=""
           />
           <div className="mainTexts">
@@ -109,7 +122,7 @@ const ForensicScientist = () => {
             />
             <img
               className="powder"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/main3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main3.png`}
               alt=""
             />
           </div>
@@ -125,16 +138,16 @@ const ForensicScientist = () => {
         <div className="detailedDescription">
           <img
             className="left"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/side1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side1.png`}
             alt=""
           />
           <img
             className="right"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/side2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side2.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/1.png`}
           />
           <TextCenter
             text={
@@ -144,7 +157,7 @@ const ForensicScientist = () => {
         </div>
         <div className="detailedDescription">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/2.png`}
           />
           <TextCenter
             text={
@@ -155,11 +168,11 @@ const ForensicScientist = () => {
         <div className="detailedDescription">
           <img
             className="left"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/side3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side3.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/3.png`}
           />
           <TextCenter
             text={
@@ -169,7 +182,7 @@ const ForensicScientist = () => {
         </div>
         <div className="detailedDescription">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/4.png`}
           />
           <TextCenter
             text={
@@ -178,13 +191,20 @@ const ForensicScientist = () => {
           />
         </div>
         <div className="detailedDescription">
-          <img
-            className="right"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/side4.png`}
-            alt=""
-          />
+          <div className="right">
+            <div className="foot">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/foot1.png`}
+                alt=""
+              />
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/foot2.png`}
+                alt=""
+              />
+            </div>
+          </div>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/5.png`}
           />
           <TextCenter
             text={
@@ -194,7 +214,7 @@ const ForensicScientist = () => {
         </div>
         <div className="detailedDescription">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/6.png`}
           />
           <TextCenter
             text={
@@ -205,11 +225,11 @@ const ForensicScientist = () => {
         <div className="detailedDescription">
           <img
             className="left"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/side5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side5.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/7.png`}
           />
           <TextCenter
             text={
@@ -219,7 +239,7 @@ const ForensicScientist = () => {
         </div>
         <div className="detailedDescription">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ForensicScientist/8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/8.png`}
           />
           <TextCenter
             text={

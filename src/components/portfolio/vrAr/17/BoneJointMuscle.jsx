@@ -11,6 +11,11 @@ import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 
 const BoneJointMuscleBox = styled.div`
+  .PortfolioTitleBox {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
   .fff6df {
     background-color: #fff6df;
     margin-bottom: 160px;

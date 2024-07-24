@@ -4,6 +4,12 @@ export const WidthOneContent = styled.div`
   position: relative;
   text-align: center;
   padding-bottom: 160px;
+  &.paddingBottom190 {
+    padding-bottom: 190px;
+  }
+  &.firstChild {
+    padding-top: 160px;
+  }
   &.lastChild {
     padding-bottom: 200px;
   }

@@ -132,14 +132,14 @@ const EarthRotationChangingSeasons = () => {
         <div className="container">
           <div className="mainImg">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/backgroundImg.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/backgroundImg.png`}
               alt=""
             />
           </div>
 
           <div className="mainDescription">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/2.png`}
               alt=""
             />
             <div className="mainDescriptionTextBox">
@@ -156,7 +156,7 @@ const EarthRotationChangingSeasons = () => {
 
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/3.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -168,12 +168,12 @@ const EarthRotationChangingSeasons = () => {
               text={`자전축이 23.5도 기울어진 채 태양을 중심으로\n 공전하는 지구를 책상 위에 증강하여 관찰할 수\n 있어요. 지구의 공전 궤도를 따라 공전하는\n 모습과 자전축이 지구의 공전궤도면에 대해\n 기울어져 있는 이유를 생생하게 배울 수 있어요!`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/4.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/5.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/5.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -185,12 +185,12 @@ const EarthRotationChangingSeasons = () => {
               text={`자전축이 기울어진 덕분에 ‘봄, 여름, 가을, 겨울’\n의 태양 남중 고도가 달라지는 모습을 학습할 수\n있어요. 각 계절의 태양 위치와 낮 동안의 태양의 \n움직임을 관찰하고, 춘분, 하지, 추분, 동지의 \n낮의 길이와 기온 변화를 확인 할 수 있어요.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/6.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/6.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/7.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/7.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -202,12 +202,12 @@ const EarthRotationChangingSeasons = () => {
               text={`적도 지방에 위치한 우간다의 수도 캄팔라는 춘분\n날에 태양이 거의 머리 위 정점에 오르는 모습을\n 볼 수 있어요. 증강된 지표면 위에서 캄팔라의 \n춘분날 태양의 움직임을 살펴보고, 적도 지방의\n 계절 변화와 낮의 길이를 학습할 수 있어요.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/8.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/8.png`}
             />
           </WidthImg1Texts1>
-          <WidthImg1Texts1>
+          <WidthImg1Texts1 className="lastChild">
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/EarthRotationChangingSeasonsBox/9.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/9.png`}
             />
             <ProjectDescription
               textPosition={'right'}

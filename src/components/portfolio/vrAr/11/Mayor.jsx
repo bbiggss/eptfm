@@ -79,6 +79,7 @@ const Mayor = () => {
       <Breadcrumb />
 
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'VR'}
         title={'직접 만드는 민주적인 선거! 시장 출마하기'}
@@ -94,7 +95,7 @@ const Mayor = () => {
             />
           </div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/main1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/main1.png`}
             alt=""
           />
         </div>
@@ -102,7 +103,7 @@ const Mayor = () => {
       <div className="fullScreen">
         <div className="introduction">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/main2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/main2.png`}
             alt=""
           />
           <div className="subTexts NanumSquareB">
@@ -121,28 +122,28 @@ const Mayor = () => {
         <ul className="fourElement">
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
               alt=""
             />
             <p>거리  유세하기</p>
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
               alt=""
             />
             <p>거리  유세하기</p>
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
               alt=""
             />
             <p>거리  유세하기</p>
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
               alt=""
             />
             <p>거리  유세하기</p>
@@ -152,7 +153,7 @@ const Mayor = () => {
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_1.png`}
         />
         <TextCenter
           text={
@@ -162,7 +163,7 @@ const Mayor = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_2.png`}
         />
         <TextCenter
           text={
@@ -172,7 +173,7 @@ const Mayor = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_3.png`}
         />
         <TextCenter
           text={
@@ -182,7 +183,7 @@ const Mayor = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_4.png`}
         />
         <TextCenter
           text={
@@ -195,7 +196,7 @@ const Mayor = () => {
         <div className="smallScreen">
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_1.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -207,12 +208,12 @@ const Mayor = () => {
               text={`학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며 자신의 공약을\n어필해보세요!`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_2.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_3.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -224,7 +225,7 @@ const Mayor = () => {
               text={`간혹 엉뚱한 선거 운동을 선택하게 되면\n지지율이 떨어질 수 있으니 유의해야해요!\n어떤 선거 운동이 지지율 상승에 도움이 될지\n많은 고민을 해야한답니다!`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group3_4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_4.png`}
             />
           </WidthImg1Texts1>
         </div>
@@ -232,7 +233,7 @@ const Mayor = () => {
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_5.png`}
         />
         <TextCenter
           text={
@@ -242,7 +243,7 @@ const Mayor = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_6.png`}
         />
         <TextCenter
           text={
@@ -252,7 +253,7 @@ const Mayor = () => {
       </WidthOneContent>
       <WidthOneContent className="lastChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/Mayor/group2_7.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_7.png`}
         />
         <TextCenter
           text={

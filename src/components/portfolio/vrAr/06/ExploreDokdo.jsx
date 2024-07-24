@@ -15,6 +15,7 @@ const ExploreDokdoBox = styled.div`
     overflow: hidden;
     img:first-child {
       position: absolute;
+      width: 100%;
     }
     img:last-child {
       position: absolute;
@@ -34,6 +35,7 @@ const ExploreDokdo = () => {
       <Breadcrumb />
       <ExploreDokdoBox>
         <PortfolioTitle
+          className="justifyContentCenter"
           organization={'한국교육학술정보원'}
           field={'VR'}
           title={'우리 땅, 독도 탐험하기'}
@@ -41,11 +43,11 @@ const ExploreDokdo = () => {
         <div className="fullScreen">
           <div className="mainImg">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/main.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main.png`}
               alt=""
             />
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/main2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main2.png`}
               alt=""
             />
           </div>
@@ -61,7 +63,7 @@ const ExploreDokdo = () => {
           </div>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/1.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -73,12 +75,12 @@ const ExploreDokdo = () => {
               text={`이 콘텐츠를 개발하면서 우리 팀은 독도의 \n아름다움을 최대한 생생하게 전달하기 위해 \n많은 노력을 기울였어요. 팀원들은 드론 조종 \n전문가가 되기 위해 수많은 시뮬레이션을 \n돌리며, 실제 독도의 데이터를 기반으로 3D \n모델링을 정교하게 작업했답니다.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/2.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/2.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/3.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/3.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -90,12 +92,12 @@ const ExploreDokdo = () => {
               text={`독도의 경관을 체험하며 독도의 자연적 \n아름다움을 느끼고, 이 아름다움이 단지 관광 \n자원으로서가 아니라 소중한 국토로서의 \n가치를 지닌다는 것을 이해할 수 있어요.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/4.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/4.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/5.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/5.png`}
             />
             <ProjectDescription
               textPosition={'right'}
@@ -107,24 +109,24 @@ const ExploreDokdo = () => {
               text={`독도의 해양 싱태계와 육상 생태계를 탐험하면\n서, 자연환경을 보존하는 것이 왜 중요한지를\n 깨달을 수 있어요. 독도의 다양한 생물종과 \n그들의 생태적 역할을 이해함으로써 생태계의\n 균형을 유지하는 중요성 또한 배울 수 있어요.`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/6.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/6.png`}
             />
           </WidthImg1Texts1>
           <WidthImg1Texts1>
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/7.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/7.png`}
             />
             <ProjectDescription
               textPosition={'right'}
               text={`독도의 지리적 위치가 경제적으로 어떤 이점을\n 가지고 있는지, 어업이나 해양 자원 탐사에서 \n어떤 중요성을 지니는지에 대해 알 수 있어요.`}
             />
           </WidthImg1Texts1>
-          <WidthImg1Texts1>
+          <WidthImg1Texts1 className="lastChild">
             <ProjectDescription
               text={`드론을 조종하여 3D로 정밀하게 모델링된 독\n도를 자유롭게 탐험하며 살펴보세요!\n“독도를 이렇게 생생하게 느끼다니, 마치 독도\n로 휴가를 다녀온 기분이에요!” 라는 말을\n 할 수 있게 된답니다!`}
             />
             <ProjectImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/ExploreDokdo/8.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/8.png`}
             />
           </WidthImg1Texts1>
         </div>

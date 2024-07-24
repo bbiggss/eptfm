@@ -11,6 +11,11 @@ import ProjectDescription from '../../common/ProjectDescription';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 
 const BuildingGreatCityBox = styled.div`
+  .PortfolioTitleBox {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
   .satellite {
     position: absolute;
     right: 0;
@@ -27,6 +32,9 @@ const BuildingGreatCityBox = styled.div`
     .subTexts {
       color: white;
     }
+  }
+  .paddingTopBottom160 {
+    padding: 160px 0;
   }
 
   .customTag {
@@ -69,13 +77,12 @@ const BuildingGreatCity = () => {
           alt=""
         />
       </div>
-      <div className="paddingTopBottom160">
-        <TextCenter
-          text={
-            '이 프로젝트는 저희 팀이 여러 도시를 탐방하며, 각 도시의 매력을 분석하고 적용한 결과물이에요. \n도시에 대한 깊은 이해를 바탕으로, 여러분도 자신만의 도시를 설계해보세요.\n도시를 설계하는 과정에서 느끼는 즐거움과 도전의 기쁨을 함께 경험해보세요!'
-          }
-        />
-      </div>
+      <TextCenter
+        className="paddingTopBottom160"
+        text={
+          '이 프로젝트는 저희 팀이 여러 도시를 탐방하며, 각 도시의 매력을 분석하고 적용한 결과물이에요. \n도시에 대한 깊은 이해를 바탕으로, 여러분도 자신만의 도시를 설계해보세요.\n도시를 설계하는 과정에서 느끼는 즐거움과 도전의 기쁨을 함께 경험해보세요!'
+        }
+      />
 
       <div className="smallScreen">
         <WidthImg1Texts1>
@@ -174,7 +181,5 @@ const BuildingGreatCity = () => {
     </BuildingGreatCityBox>
   );
 };
-
-// C:\Users\eplatform\Desktop\eptfm\public\assets\images\portfolio\VrAr\detail\BuildingGreatCity
 
 export default BuildingGreatCity;

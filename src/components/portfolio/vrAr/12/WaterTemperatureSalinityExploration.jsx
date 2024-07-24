@@ -10,7 +10,6 @@ import TextCenter from '../../common/TextCenter';
 
 const WaterTemperatureSalinityExplorationBox = styled.div`
   .mainImgContainer {
-    margin-top: 80px;
     margin-bottom: 89px;
     .medium {
       position: relative;
@@ -35,6 +34,9 @@ const WaterTemperatureSalinityExplorationBox = styled.div`
   .subTexts {
     color: white;
   }
+  .fullScreen img {
+    width: 100%;
+  }
 `;
 
 const WaterTemperatureSalinityExploration = () => {
@@ -42,11 +44,12 @@ const WaterTemperatureSalinityExploration = () => {
     <WaterTemperatureSalinityExplorationBox>
       <Breadcrumb />
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'VR'}
         title={'바닷속 생물 채집과 수온, 염분 탐사'}
       />
-      <div className="mainImgContainer">
+      <div className="fullScreen mainImgContainer">
         <div className="mediumScreen medium">
           <div className="rectangular">
             <div className="mainTexts">
@@ -60,15 +63,14 @@ const WaterTemperatureSalinityExploration = () => {
           </div>
         </div>
         <img
-          className="fullScreen"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/main.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/main.png`}
           alt=""
         />
       </div>
       <div className="smallScreen">
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/1.png`}
           />
           <TextCenter
             text={
@@ -78,7 +80,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/2.png`}
           />
           <TextCenter
             text={
@@ -88,7 +90,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/3.png`}
           />
           <TextCenter
             text={
@@ -98,7 +100,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/4.png`}
           />
           <TextCenter
             text={
@@ -108,7 +110,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/5.png`}
           />
           <TextCenter
             text={
@@ -118,7 +120,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/6.png`}
           />
           <TextCenter
             text={
@@ -128,7 +130,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/7.png`}
           />
           <TextCenter
             text={
@@ -138,7 +140,7 @@ const WaterTemperatureSalinityExploration = () => {
         </WidthOneContent>
         <WidthOneContent className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/8.png`}
           />
           <TextCenter
             text={
@@ -147,11 +149,12 @@ const WaterTemperatureSalinityExploration = () => {
           />
         </WidthOneContent>
       </div>
-      <img
-        className="fullScreen"
-        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/WaterTemperatureSalinityExploration/bottom.png`}
-        alt=""
-      />
+      <div className="fullScreen">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/bottom.png`}
+          alt=""
+        />
+      </div>
       <FixedButton />
     </WaterTemperatureSalinityExplorationBox>
   );

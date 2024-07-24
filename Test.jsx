@@ -19,13 +19,12 @@ const Bimetal = () => {
     <BimetalBox>
       <Breadcrumb />
 
-      <div className="textCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'우리 땅, 독도 탐험하기'}
-        />
-      </div>
+      <PortfolioTitle
+        className="centeredContentWithMarginBottom"
+        organization={'한국교육학술정보원'}
+        // field={'VR'}
+        title={'교사가 이끄는 교실혁명'}
+      />
 
       <img
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}

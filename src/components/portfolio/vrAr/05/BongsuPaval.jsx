@@ -96,7 +96,7 @@ const BongsuPaval = () => {
         <div className="topImgTitle">
           <div className="mainImg">
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/main.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/main.png`}
               alt=""
             />
           </div>
@@ -112,7 +112,7 @@ const BongsuPaval = () => {
             <div className="imgTexts">
               <div className="left">
                 <img
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/left.png`}
+                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/left.png`}
                   alt=""
                 />
               </div>
@@ -127,7 +127,7 @@ const BongsuPaval = () => {
                   </div>
                   <div>
                     <img
-                      src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/right.png`}
+                      src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`}
                       alt=""
                     />
                   </div>
@@ -148,25 +148,25 @@ const BongsuPaval = () => {
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/1.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/1.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/2.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/2.png`}
               />
             </div>
             <TextCenter
               text={
-                "'옛 사람들의 통신수단, 봉수제도와 파발제도' 콘텐츠를 개발하며,\n 우리 팀은 작은 불씨를 꺼트리지 않으려고 애쓰는 옛 사람들의 심정을 느꼈답니다."
+                '통신 수단이 부족했던 옛날, 봉수대는 멀리서도 알아볼 수 있는 불이나 연기를 이용해 긴급한 소식을 전했어요.\n낮에는 가축의 똥을 태워 연기로, 밤에는 나뭇가지를 태워 불로 상황을 전달했죠.'
               }
             />
           </div>
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/3.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/3.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/4.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/4.png`}
               />
             </div>
             <TextCenter
@@ -178,10 +178,10 @@ const BongsuPaval = () => {
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/5.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/5.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/6.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/6.png`}
               />
             </div>
             <TextCenter
@@ -193,10 +193,10 @@ const BongsuPaval = () => {
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/7.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/7.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/8.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/8.png`}
               />
             </div>
             <TextCenter
@@ -208,10 +208,10 @@ const BongsuPaval = () => {
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/9.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/9.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/10.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/10.png`}
               />
             </div>
             <TextCenter
@@ -223,10 +223,10 @@ const BongsuPaval = () => {
           <div className="projectDescriptions">
             <div className="doubleImgWrapper">
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/11.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/11.png`}
               />
               <ProjectImg
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/BongsuPaval/12.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/12.png`}
               />
             </div>
             <TextCenter

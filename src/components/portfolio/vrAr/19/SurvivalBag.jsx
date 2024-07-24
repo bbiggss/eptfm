@@ -8,6 +8,11 @@ import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widt
 import ProjectImg from '../../common/ProjectImg';
 
 const SurvivalBagBox = styled.div`
+  .PortfolioTitleBox {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
   .mainTitle {
     position: absolute;
     color: #ffffff;
@@ -18,6 +23,9 @@ const SurvivalBagBox = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+  .mainImg {
+    width: 100%;
   }
   .absolute img {
     z-index: -1;
@@ -49,15 +57,13 @@ const SurvivalBag = () => {
     <SurvivalBagBox>
       <Breadcrumb />
 
-      <div className="justifyContentCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'나만의 생존가방 준비하기'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'VR'}
+        title={'나만의 생존가방 준비하기'}
+      />
 
-      <div className="fullScreen marginTop80 relative hidden">
+      <div className="fullScreen relative">
         <p className="mainTitle NanumSquareEB">지진 발생! 올바른 대피 방법은 무엇일까?</p>
         <img
           className="mainImg"
@@ -66,12 +72,10 @@ const SurvivalBag = () => {
         />
       </div>
       <div className="fullScreen backImgContainer">
-        <div className="backImg hidden">
-          <ProjectImg
-            className
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/backImg.png`}
-          />
-        </div>
+        <ProjectImg
+          className="backImg"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/backImg.png`}
+        />
 
         <WidthOneContent className="paddingTop98">
           <ProjectImg

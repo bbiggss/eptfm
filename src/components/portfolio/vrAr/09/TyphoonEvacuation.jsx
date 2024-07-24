@@ -11,7 +11,6 @@ import ProjectImg from '../../common/ProjectImg';
 const TyphoonEvacuationBox = styled.div`
   .mainImgTexts {
     position: relative;
-    margin-top: 80px;
     .mainTexts {
       position: absolute;
       left: 50%;
@@ -37,6 +36,7 @@ const TyphoonEvacuation = () => {
     <TyphoonEvacuationBox>
       <Breadcrumb />
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'VR'}
         title={'태풍 대피요령 알아보기'}
@@ -52,7 +52,7 @@ const TyphoonEvacuation = () => {
             />
           </div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/main.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/main.png`}
             alt=""
           />
         </div>
@@ -67,7 +67,7 @@ const TyphoonEvacuation = () => {
       <div className="smallScreen">
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/1.png`}
           />
           <TextCenter
             text={
@@ -77,7 +77,7 @@ const TyphoonEvacuation = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/2.png`}
           />
           <TextCenter
             text={
@@ -87,7 +87,7 @@ const TyphoonEvacuation = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/3.png`}
           />
           <TextCenter
             text={
@@ -97,7 +97,7 @@ const TyphoonEvacuation = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/4.png`}
           />
           <TextCenter
             text={
@@ -107,7 +107,7 @@ const TyphoonEvacuation = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/5.png`}
           />
           <TextCenter
             text={
@@ -115,9 +115,9 @@ const TyphoonEvacuation = () => {
             }
           />
         </WidthOneContent>
-        <WidthOneContent>
+        <WidthOneContent className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/TyphoonEvacuation/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/6.png`}
           />
           <TextCenter
             text={

@@ -10,7 +10,6 @@ import ProjectImg from '../../common/ProjectImg';
 const FrenchClimateLifestyleBox = styled.div`
   .mainContainer {
     display: flex;
-    margin-top: 80px;
     .mainImg {
       width: 50%;
     }
@@ -55,6 +54,7 @@ const FrenchClimateLifestyle = () => {
     <FrenchClimateLifestyleBox>
       <Breadcrumb />
       <PortfolioTitle
+        className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         field={'VR'}
         title={'모네의 작품으로 알아보는 프랑스 기후와 주민생활'}
@@ -63,7 +63,7 @@ const FrenchClimateLifestyle = () => {
         <div className="mainContainer">
           <img
             className="mainImg"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/main1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/main1.png`}
             alt=""
           />
           <div className="mainTextsMonet">
@@ -88,12 +88,12 @@ const FrenchClimateLifestyle = () => {
             <div className="monet">
               <img
                 className="mainImg"
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/main2.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/main2.png`}
                 alt=""
               />
               <img
                 className="mainImg"
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/main3.png`}
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/main3.png`}
                 alt=""
               />
             </div>
@@ -111,14 +111,14 @@ const FrenchClimateLifestyle = () => {
 
       <div className="fullScreen paddingBottom160 hidden">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group1_1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group1_1.png`}
           alt=""
         />
       </div>
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_1.png`}
         />
         <TextCenter
           text={
@@ -128,7 +128,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_2.png`}
         />
         <TextCenter
           text={
@@ -138,7 +138,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_3.png`}
         />
         <TextCenter
           text={
@@ -148,7 +148,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_4.png`}
         />
         <TextCenter
           text={
@@ -158,7 +158,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_5.png`}
         />
         <TextCenter
           text={
@@ -169,14 +169,14 @@ const FrenchClimateLifestyle = () => {
 
       <div className="fullScreen paddingBottom160 hidden">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group1_2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group1_2.png`}
           alt=""
         />
       </div>
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_6.png`}
         />
         <TextCenter
           text={
@@ -186,7 +186,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_7.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_7.png`}
         />
         <TextCenter
           text={
@@ -196,7 +196,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_8.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_8.png`}
         />
         <TextCenter
           text={
@@ -206,7 +206,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_9.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_9.png`}
         />
         <TextCenter
           text={
@@ -216,7 +216,7 @@ const FrenchClimateLifestyle = () => {
       </WidthOneContent>
       <WidthOneContent className="lastChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/FrenchClimateLifestyle/group2_10.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_10.png`}
         />
         <TextCenter
           text={

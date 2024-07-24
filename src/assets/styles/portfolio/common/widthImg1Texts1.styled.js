@@ -19,7 +19,21 @@ export const WidthImg1Texts1 = styled.div`
       justify-content: flex-end;
     }
   }
+  .projectImg {
+  }
+  &.firstChild {
+    padding-top: 200px;
+  }
   &.lastChild {
     padding-bottom: 200px;
+  }
+  @media (min-width: 1025px) {
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .projectImg {
+      width: 50%;
+    }
+  }
+  @media (max-width: 767px) {
   }
 `;

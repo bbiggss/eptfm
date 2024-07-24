@@ -82,6 +82,10 @@ const MudFlatBox = styled.div`
       text-align: center;
     }
   }
+
+  .lastChild .projectImg {
+    padding-bottom: 36px;
+  }
 `;
 
 const MudFlat = () => {
@@ -249,7 +253,7 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent>
+      <WidthOneContent className="paddingBottom190">
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`}
         />

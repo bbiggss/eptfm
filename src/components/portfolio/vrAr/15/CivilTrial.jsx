@@ -7,13 +7,34 @@ import CustomText from '../../common/CustomText';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 
 const CivilTrialBox = styled.div`
+  .PortfolioTitleBox {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
   .mainContainer {
     display: flex;
     justify-content: right;
-    margin-top: 80px;
+    position: relative;
     margin-bottom: 160px;
+    height: 800px;
+
+    .mainTexts {
+      position: absolute;
+      width: 780px;
+      height: -webkit-fill-available;
+      background-color: rgba(34, 20, 14, 0.7);
+      .PortfolioIntroduction {
+        margin-left: 130px;
+        margin-top: 227px;
+        p {
+          color: #ffffff;
+        }
+      }
+    }
   }
   .container2 {
     display: flex;
@@ -42,14 +63,22 @@ const CivilTrial = () => {
 
       <div className="fullScreen">
         <div className="mainContainer">
+          <div className="mainTexts">
+            <PortfolioIntroduction
+              title={'법정 드라마의 주인공이 \n되어 재판을 체험하자!'}
+              description={
+                '원고 소송대리인이나 검사로서 재판에\n참여하고, 증인을 신문하며 승소를\n 위한 전략을 세워보세요.\n 법정을 무대로 펼쳐지는 드라마틱한 \n재판의 세계로 뛰어들어보세요!'
+              }
+            />
+          </div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/main.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/main1.png`}
             alt=""
           />
         </div>
         <div className="container2">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/introduction.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/introduction.png`}
             alt=""
           />
           <div className="alignCenter">
@@ -64,7 +93,7 @@ const CivilTrial = () => {
 
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/1.png`}
         />
         <TextCenter
           text={
@@ -74,7 +103,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/2.png`}
         />
         <TextCenter
           text={
@@ -84,7 +113,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/3.png`}
         />
         <TextCenter
           text={
@@ -94,7 +123,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/4.png`}
         />
         <TextCenter
           text={
@@ -104,7 +133,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/5.png`}
         />
         <TextCenter
           text={
@@ -114,7 +143,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/6.png`}
         />
         <TextCenter
           text={
@@ -124,7 +153,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/7.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/7.png`}
         />
         <TextCenter
           text={
@@ -134,7 +163,7 @@ const CivilTrial = () => {
       </WidthOneContent>
       <WidthOneContent className="lastChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/CivilTrial/8.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/8.png`}
         />
         <TextCenter
           text={

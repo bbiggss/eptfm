@@ -9,6 +9,11 @@ import TextCenter from '../../common/TextCenter';
 import CustomText from '../../common/CustomText';
 
 const MapExpertBox = styled.div`
+  .PortfolioTitleBox {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
   .heroSection {
     position: relative;
     .customText {
@@ -32,13 +37,11 @@ const MapExpert = () => {
     <MapExpertBox>
       <Breadcrumb />
 
-      <div className="justifyContentCenter">
-        <PortfolioTitle
-          organization={'한국교육학술정보원'}
-          field={'AR'}
-          title={'지도를 볼 줄 아는, 나는 지도박사'}
-        />
-      </div>
+      <PortfolioTitle
+        organization={'한국교육학술정보원'}
+        field={'AR'}
+        title={'지도를 볼 줄 아는, 나는 지도박사'}
+      />
 
       <div className="fullScreen heroSection">
         <CustomText text={'지도를 자로 잴 수 있다고? \n놀라운 축척의 세계'} />

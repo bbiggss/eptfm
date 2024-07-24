@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioTitleBox = styled.div`
-  /* margin-bottom: 80px; */
-
   .orgainzation {
     margin-bottom: 24px;
 
@@ -18,6 +16,17 @@ const PortfolioTitleBox = styled.div`
     line-height: auto;
     letter-spacing: -2px;
   }
+
+  &.centeredContentWithMarginBottom {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &.justifyContentCenter {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const renderTextWithLineBreaks = (text) => {
@@ -31,7 +40,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const PortfolioTitle = (data) => {
   return (
-    <PortfolioTitleBox className="PortfolioTitleBox">
+    <PortfolioTitleBox className={`PortfolioTitleBox ${data.className}`}>
       <div>
         <p className="orgainzation NanumSquareB">{data.organization}</p>
         <p className="fieldTitle NanumSquareEB">

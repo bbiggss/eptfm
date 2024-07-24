@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PortfolioIntroductionBox = styled.div`
-  /* margin-left: 79px; */
-  /* background-color: aqua; */
-
   .title {
     color: #292929;
     font-size: 40px;
@@ -17,6 +14,7 @@ const PortfolioIntroductionBox = styled.div`
     font-size: 26px;
     line-height: 40px;
     letter-spacing: -2px;
+    white-space: nowrap;
   }
 `;
 
