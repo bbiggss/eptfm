@@ -87,59 +87,51 @@ function App() {
   // };
 
   const location = useLocation();
-  const isSmallScreen = window.matchMedia('(max-width: 1024px)').matches;
 
-  console.log(isSmallScreen);
   const [modalStatus, setModalStatus] = useState(false);
+  const [isDesktopScreen, setIsDesktopScreen] = useState(
+    window.matchMedia('(min-width: 1025px)').matches
+  );
 
-  // const [headerClass, setHeaderClass] = useState('transparent');
+  const [headerClass, setHeaderClass] = useState('transparent');
 
-  // useEffect(() => {
-  //   if (location.pathname === '/') {
-  //     setHeaderClass('transparent');
-  //   }
-  //   const handleScroll = () => {
-  //     if (location.pathname === '/') {
-  //       if (window.scrollY > 50) {
-  //         setHeaderClass('colored');
-  //       } else {
-  //         setHeaderClass('transparent');
-  //       }
-  //     } else {
-  //       setHeaderClass('colored');
-  //     }
-  //   };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHeaderClass('colored');
+      } else {
+        setHeaderClass('transparent');
+      }
+    };
+    const handleResize = () => {
+      setIsDesktopScreen(window.matchMedia('(min-width: 1025px)').matches);
+    };
+    window.addEventListener('resize', handleResize);
 
-  //   window.addEventListener('scroll', handleScroll);
+    if (location.pathname === '/') {
+      setHeaderClass('');
+      window.addEventListener('scroll', handleScroll);
+    } else {
+      setHeaderClass('colored');
+    }
 
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, [location]);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [location]);
 
   return (
     <div className="App">
       <ScrollToTop />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
-      {/* 메인일때 */}
-      {/* <Header headerClass={headerClass} /> */}
 
-      {/* 1024이하가 아니거나(PC모드거나) & 메인화면일때 */}
-      {isSmallScreen === false && location.pathname === '/' ? '' : <HeaderSpacer />}
-      <Header />
+      {/* PC해상도&홈화면일때 */}
+      {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
+      <Header headerClass={headerClass} />
 
       {location.pathname === '/' ? <Video /> : ''}
-
-      {/* {isSmallScreen === true && location.pathname === '/' ? <HeaderSpacer /> : ''} */}
-
-      {/* {location.pathname === '/' ? (
-        ''
-      ) : (
-        <>
-          <HeaderSpacer />
-        </>
-      )} */}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />

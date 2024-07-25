@@ -30,8 +30,13 @@ export const HeaderBox = styled.div`
   display: flex;
   align-items: center;
 
+  &.transparent {
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+
   &.colored {
     background-color: white;
+    transition: background-color 0.5s ease, transform 0.5s ease;
   }
 
   #headerContainer {
