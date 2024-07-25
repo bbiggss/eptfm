@@ -17,7 +17,7 @@ const ReservoirDamBox = styled.div`
       width: 100%;
     }
 
-    .PortfolioIntroduction {
+    .PortfolioIntroductionBox {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -38,7 +38,7 @@ const ReservoirDamBox = styled.div`
 
   @media (min-width: 1025px) {
     .heroArea {
-      .PortfolioIntroduction {
+      .PortfolioIntroductionBox {
         margin-top: 112px;
       }
 
@@ -55,7 +55,7 @@ const ReservoirDamBox = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    .PortfolioIntroduction {
+    .PortfolioIntroductionBox {
       margin-top: 50px;
       .title {
         font-size: 30px;
@@ -68,7 +68,7 @@ const ReservoirDamBox = styled.div`
     }
   }
   @media (max-width: 767px) {
-    .PortfolioIntroduction {
+    .PortfolioIntroductionBox {
       margin-top: 20px;
       .title {
         font-size: 20px;
@@ -206,7 +206,7 @@ const ReservoirDam = () => {
           />
           <ProjectDescription
             textPosition={'right'}
-            text={`저수지 댐의 구조를 설명할 때는 각 구성 요소를 \n\시각적으로 보여주는 다이어그램 및 이미지를 제공하여\n\학습자가 쉽게 구조를 파악할 수 있게 해요.`}
+            text={`저수지 댐의 구조를 설명할 때는 각 구성 요소를 \n시각적으로 보여주는 다이어그램 및 이미지를 제공하여\n학습자가 쉽게 구조를 파악할 수 있게 해요.`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1 className="lastChild">

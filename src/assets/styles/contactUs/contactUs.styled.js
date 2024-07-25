@@ -1,46 +1,52 @@
 import styled from 'styled-components';
 
 export const ContactUsBox = styled.div`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-
-  #contactUsBoxContainer {
-    .title {
-      font-size: 100px;
-      color: #191919;
-      margin-bottom: 42px;
+  overflow: hidden;
+  .ellipseArea {
+    position: relative;
+    z-index: -1;
+    .ellipse1 {
+      position: absolute;
     }
-    .subTitle {
-      font-size: 26px;
-      color: #767676;
+    .ellipse2 {
+      position: absolute;
+      right: 0;
     }
+  }
+  .title {
+    font-size: 100px;
+    color: #191919;
+    margin-bottom: 42px;
+  }
+  .subTitle {
+    font-size: 26px;
+    color: #767676;
+  }
 
-    .transportation {
-      /* background-color: yellow; */
+  .transportation {
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 202px;
+
+    .subway,
+    .bus {
       display: flex;
-      margin-top: 31px;
-      margin-bottom: 202px;
-
-      .subway,
-      .bus {
-        display: flex;
-        align-items: center;
-        font-size: 22px;
-        letter-spacing: -2%;
-        line-height: auto;
-        p {
-          color: #767676;
-          margin-left: 10px;
-        }
-        span {
-          color: #292929;
-        }
+      align-items: center;
+      font-size: 22px;
+      letter-spacing: -2%;
+      line-height: auto;
+      p {
+        color: #767676;
+        margin-left: 10px;
       }
-
-      .subway {
-        margin-right: 120px;
+      span {
+        color: #292929;
       }
+    }
+
+    .subway {
+      margin-right: 120px;
     }
   }
 
@@ -93,7 +99,7 @@ export const ContactUsBox = styled.div`
     }
   }
 
-  ul {
+  .inquiryImg {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, auto);

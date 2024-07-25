@@ -33,7 +33,7 @@ const InformationDisclosureBox = styled.div`
       }
     }
 
-    .PortfolioIntroduction {
+    .PortfolioIntroductionBox {
       margin-top: 100px;
       text-align: center;
     }

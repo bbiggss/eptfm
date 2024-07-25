@@ -120,6 +120,7 @@ export const BusinessBox = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    background-size: cover;
     .noHoverBox {
       display: none;
     }

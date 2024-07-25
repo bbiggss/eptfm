@@ -29,7 +29,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const PortfolioIntroduction = (data) => {
   return (
-    <PortfolioIntroductionBox className="PortfolioIntroduction">
+    <PortfolioIntroductionBox className="PortfolioIntroductionBox">
       <p className="title NanumSquareEB">{renderTextWithLineBreaks(data.title)}</p>
       <div className="subTexts NanumSquareB">
         <p>{renderTextWithLineBreaks(data.description)}</p>

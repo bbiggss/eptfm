@@ -27,7 +27,7 @@ const CivilTrialBox = styled.div`
       width: 780px;
       height: -webkit-fill-available;
       background-color: rgba(34, 20, 14, 0.7);
-      .PortfolioIntroduction {
+      .PortfolioIntroductionBox {
         margin-left: 130px;
         margin-top: 227px;
         p {

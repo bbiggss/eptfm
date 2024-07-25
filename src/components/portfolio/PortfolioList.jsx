@@ -141,14 +141,14 @@ const PortfolioList = (data) => {
           pfItemSmallTitle: '교사가 이끄는 교실혁명',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img3.png`,
-          pfItemBigTitle: '화학물질안전원',
-          pfItemSmallTitle: '취급자 안전교육',
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img6.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: '사이버어울림',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img4.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img_.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '정보공시 입력 지침 안내와 시스템매뉴얼',
+          pfItemSmallTitle: '사이버어울림',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img5.png`,
@@ -156,9 +156,24 @@ const PortfolioList = (data) => {
           pfItemSmallTitle: '정보공시 입력 지침안내와 시스템 메뉴얼',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img6.png`,
-          pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '사이버어울림',
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img3.png`,
+          pfItemBigTitle: '화학물질안전원',
+          pfItemSmallTitle: '화학물질안전에 대하여',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img8.png`,
+          pfItemBigTitle: '동북아역사재단',
+          pfItemSmallTitle: '동아시아 원격연수',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img7.png`,
+          pfItemBigTitle: '아동권리보장원',
+          pfItemSmallTitle: '위탁모를 위한 양육 길잡이',
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img4.png`,
+          pfItemBigTitle: '테스트',
+          pfItemSmallTitle: '테스트',
         },
       ];
       updatePortfolioItems(portfolioItems2);

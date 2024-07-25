@@ -7,7 +7,7 @@ const Header = (data) => {
   const [activeLink, setActiveLink] = useState('');
   return (
     <>
-      <HeaderBox id="header" className={data.headerClass}>
+      <HeaderBox id="header" className={`robotoMedium ${data.headerClass}`}>
         <div id="headerContainer">
           <Link to={'/'} onClick={() => setActiveLink('')}>
             {/* <img id="logoImg" src={img && img.logoImg} alt="" /> */}

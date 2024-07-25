@@ -34,7 +34,7 @@ import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
 import PortfolioList from './components/portfolio/PortfolioList';
 import Rnd from './components/portfolio/rNd/Rnd';
-import { HeaderPlaceholder } from './assets/styles/common/header.styled';
+import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
 import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
@@ -62,8 +62,9 @@ import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
 
 import ReservoirDam from './components/portfolio/eLearning/01/ReservoirDam';
 import ClassroomRevolution from './components/portfolio/eLearning/02/ClassroomRevolution';
-
+import CyberSocializing from './components/portfolio/eLearning/04/CyberSocializing';
 import InformationDisclosure from './components/portfolio/eLearning/05/InformationDisclosure';
+import ChemicalSafety from './components/portfolio/eLearning/06/ChemicalSafety';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -87,53 +88,58 @@ function App() {
 
   const location = useLocation();
   const isSmallScreen = window.matchMedia('(max-width: 1024px)').matches;
+
+  console.log(isSmallScreen);
   const [modalStatus, setModalStatus] = useState(false);
 
-  const [headerClass, setHeaderClass] = useState('transparent');
+  // const [headerClass, setHeaderClass] = useState('transparent');
 
-  useEffect(() => {
-    if (location.pathname === '/') {
-      setHeaderClass('transparent');
-    }
-    const handleScroll = () => {
-      if (location.pathname === '/') {
-        if (window.scrollY > 50) {
-          setHeaderClass('colored');
-        } else {
-          setHeaderClass('transparent');
-        }
-      } else {
-        setHeaderClass('colored');
-      }
-    };
+  // useEffect(() => {
+  //   if (location.pathname === '/') {
+  //     setHeaderClass('transparent');
+  //   }
+  //   const handleScroll = () => {
+  //     if (location.pathname === '/') {
+  //       if (window.scrollY > 50) {
+  //         setHeaderClass('colored');
+  //       } else {
+  //         setHeaderClass('transparent');
+  //       }
+  //     } else {
+  //       setHeaderClass('colored');
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [location]);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [location]);
 
   return (
     <div className="App">
       <ScrollToTop />
       {/* 모달 */}
-
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
-
       {/* 메인일때 */}
-      <Header headerClass={headerClass} />
+      {/* <Header headerClass={headerClass} /> */}
 
-      {isSmallScreen ? <HeaderPlaceholder /> : ''}
+      {/* 1024이하가 아니거나(PC모드거나) & 메인화면일때 */}
+      {isSmallScreen === false && location.pathname === '/' ? '' : <HeaderSpacer />}
+      <Header />
+
       {location.pathname === '/' ? <Video /> : ''}
-      {location.pathname === '/' ? (
+
+      {/* {isSmallScreen === true && location.pathname === '/' ? <HeaderSpacer /> : ''} */}
+
+      {/* {location.pathname === '/' ? (
         ''
       ) : (
         <>
-          <HeaderPlaceholder />
+          <HeaderSpacer />
         </>
-      )}
-
+      )} */}
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
@@ -206,10 +212,12 @@ function App() {
           path="/portfolio/e-Learning/교사가 이끄는 교실혁명"
           element={<ClassroomRevolution />}
         />
+        <Route path="/portfolio/e-Learning/사이버어울림" element={<CyberSocializing />} />
         <Route
           path="/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼"
           element={<InformationDisclosure />}
         />
+        <Route path="/portfolio/e-Learning/화학물질안전에 대하여" element={<ChemicalSafety />} />
 
         {/* R&D */}
         <Route path="/portfolio/R&D/:id" element={<Rnd />} />

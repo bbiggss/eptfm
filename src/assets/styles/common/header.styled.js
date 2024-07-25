@@ -1,23 +1,23 @@
 import styled from 'styled-components';
 
-const headerHeight = '100px';
+const headerHeightDesktop = '100px';
+const headerHeightTablet = '147px';
+const headerHeightMobile = '83px';
 
-export const HeaderPlaceholder = styled.div`
+export const HeaderSpacer = styled.div`
   @media (min-width: 1025px) {
-    height: ${headerHeight};
+    height: ${headerHeightDesktop};
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    height: 147px;
+    height: ${headerHeightTablet};
   }
   @media (max-width: 767px) {
-    height: 83px;
+    height: ${headerHeightMobile};
   }
 `;
 
 export const HeaderBox = styled.div`
-  font-family: 'Roboto-Medium';
-  /* background-color: yellowgreen; */
-
+  top: 0;
   .active {
     color: #4ac2c5;
   }
@@ -40,7 +40,8 @@ export const HeaderBox = styled.div`
 
   /* 데스크탑 */
   @media (min-width: 1025px) {
-    height: ${headerHeight};
+    height: ${headerHeightDesktop};
+    /* background-color: white; */
     .transparent {
       background-color: transparent;
     }

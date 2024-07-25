@@ -37,7 +37,7 @@ const BoneJointMuscleBox = styled.div`
       width: 950px;
       height: 680px;
 
-      .PortfolioIntroduction {
+      .PortfolioIntroductionBox {
         position: absolute;
         margin-top: 187px;
         margin-left: 330px;

@@ -1,35 +1,35 @@
 import styled from 'styled-components';
 const portfolioImgWidth = '480px';
 export const PortfolioListBox = styled.div`
+  .topTitleBox {
+    height: 390px; // 490 - 헤더(100) = 390
+    .pageTitle,
+    .fieldTitle {
+      text-align: center;
+    }
+
+    .pageTitle {
+      font-size: 100px;
+      letter-spacing: 0;
+      color: #191919;
+
+      padding-top: 80px;
+      padding-bottom: 20px;
+    }
+
+    .fieldTitle {
+      font-size: 46px;
+      letter-spacing: 0;
+      color: #292929;
+      /* padding-bottom: ; */
+    }
+  }
+
   @media (min-width: 1025px) {
     max-width: 1920px;
     width: 100%;
     margin: auto;
     /* background-color: yellow; */
-
-    .topTitleBox {
-      height: 390px; // 490 - 헤더(100) = 390
-      .pageTitle,
-      .fieldTitle {
-        text-align: center;
-      }
-
-      .pageTitle {
-        font-size: 100px;
-        letter-spacing: 0;
-        color: #191919;
-
-        padding-top: 80px;
-        padding-bottom: 20px;
-      }
-
-      .fieldTitle {
-        font-size: 46px;
-        letter-spacing: 0;
-        color: #292929;
-        /* padding-bottom: ; */
-      }
-    }
 
     ul {
       display: grid;
