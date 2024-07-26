@@ -18,7 +18,7 @@ const Video = () => {
     <>
       <MainVideo>
         <video
-          src={`${process.env.PUBLIC_URL}/assets/videos/01_INTRO 001_2.mp4`}
+          src={`${process.env.PUBLIC_URL}/assets/videos/IntroClip.mp4`}
           autoPlay
           muted
           loop

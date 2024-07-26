@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 
 // import {
@@ -40,7 +39,8 @@ import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
-
+import Loading from './components/common/loading/Loading';
+// Vr/Ar
 import MudFlat from './components/portfolio/vrAr/01/MudFlat';
 import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
 import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
@@ -59,12 +59,14 @@ import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity'
 import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
 import MapExpert from './components/portfolio/vrAr/18/MapExpert';
 import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
-
+// e-Learning
 import ReservoirDam from './components/portfolio/eLearning/01/ReservoirDam';
 import ClassroomRevolution from './components/portfolio/eLearning/02/ClassroomRevolution';
 import CyberSocializing from './components/portfolio/eLearning/04/CyberSocializing';
 import InformationDisclosure from './components/portfolio/eLearning/05/InformationDisclosure';
 import ChemicalSafety from './components/portfolio/eLearning/06/ChemicalSafety';
+import EastAsia from './components/portfolio/eLearning/07/EastAsia';
+import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
 
 function App() {
   // let headerLogoImg = { logoImg, dropDown };
@@ -94,8 +96,25 @@ function App() {
   );
 
   const [headerClass, setHeaderClass] = useState('transparent');
+  const [isLoading, setIsLoading] = useState(true);
+  // let initialPageName = location.pathname.split('/')[1];
+  const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
+    setIsLoading(true);
+    const pageName = location.pathname.split('/');
+    if (pageName[1] === '') {
+      setActiveLink('');
+    } else if (pageName[1] === 'about') {
+      setActiveLink('about');
+    } else if (pageName[1] === 'business') {
+      setActiveLink('business');
+    } else if (pageName[1] === 'portfolio') {
+      setActiveLink('portfolio');
+    } else if (pageName[1] === 'contactUs') {
+      setActiveLink('contactUs');
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setHeaderClass('colored');
@@ -107,29 +126,36 @@ function App() {
       setIsDesktopScreen(window.matchMedia('(min-width: 1025px)').matches);
     };
     window.addEventListener('resize', handleResize);
-
     if (location.pathname === '/') {
       setHeaderClass('');
       window.addEventListener('scroll', handleScroll);
     } else {
       setHeaderClass('colored');
     }
-
+    // 로딩 완료 후 로딩 상태를 비활성화합니다.
+    const handleLoad = () => {
+      setIsLoading(false);
+    };
+    // const timer = setTimeout(handleLoad, 500);
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
+      // clearTimeout(timer); // clean-up function
     };
   }, [location]);
 
   return (
     <div className="App">
+      {/* {isLoading ? <Loading /> : <></>} */}
+
       <ScrollToTop />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
 
       {/* PC해상도&홈화면일때 */}
       {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
-      <Header headerClass={headerClass} />
+      <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
+      {/* <Header headerClass={headerClass} /> */}
 
       {location.pathname === '/' ? <Video /> : ''}
       <Routes>
@@ -210,6 +236,11 @@ function App() {
           element={<InformationDisclosure />}
         />
         <Route path="/portfolio/e-Learning/화학물질안전에 대하여" element={<ChemicalSafety />} />
+        <Route path="/portfolio/e-Learning/동아시아 원격연수" element={<EastAsia />} />
+        <Route
+          path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이"
+          element={<ParentingGuide />}
+        />
 
         {/* R&D */}
         <Route path="/portfolio/R&D/:id" element={<Rnd />} />

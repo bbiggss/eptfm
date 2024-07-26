@@ -4,12 +4,12 @@ import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
 
 const Header = (data) => {
-  const [activeLink, setActiveLink] = useState('');
+  // console.log('issue: ', data);
   return (
     <>
       <HeaderBox id="header" className={`robotoMedium ${data.headerClass}`}>
         <div id="headerContainer">
-          <Link to={'/'} onClick={() => setActiveLink('')}>
+          <Link to={'/'}>
             {/* <img id="logoImg" src={img && img.logoImg} alt="" /> */}
             <img
               id="logoImg"
@@ -24,38 +24,17 @@ const Header = (data) => {
               alt=""
             />
             <ul>
-              <NavBox
-                title={'ABOUT US'}
-                link={'about'}
-                activeLink={activeLink}
-                setActiveLink={setActiveLink}
-              />
-              <NavBox
-                title={'BUSSINESS'}
-                link={'business'}
-                activeLink={activeLink}
-                setActiveLink={setActiveLink}
-              />
+              <NavBox title={'ABOUT US'} link={'about'} activeLink={data.activeLink} />
+              <NavBox title={'BUSSINESS'} link={'business'} activeLink={data.activeLink} />
               <li className={`dropdown`}>
-                <p className={activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
+                <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
-                  <Link onClick={() => setActiveLink('portfolio')} to={'portfolio/VrAr'}>
-                    VR/AR
-                  </Link>
-                  <Link onClick={() => setActiveLink('portfolio')} to={'portfolio/e-Learning'}>
-                    e-Learning
-                  </Link>
-                  <Link onClick={() => setActiveLink('portfolio')} to={'portfolio/R&D'}>
-                    R&D
-                  </Link>
+                  <Link to={'portfolio/VrAr'}>VR/AR</Link>
+                  <Link to={'portfolio/e-Learning'}>e-Learning</Link>
+                  <Link to={'portfolio/R&D'}>R&D</Link>
                 </div>
               </li>
-              <NavBox
-                title={'CONTACT US'}
-                link={'contactUs'}
-                activeLink={activeLink}
-                setActiveLink={setActiveLink}
-              />
+              <NavBox title={'CONTACT US'} link={'contactUs'} activeLink={data.activeLink} />
             </ul>
           </span>
         </div>
