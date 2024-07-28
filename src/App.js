@@ -1,31 +1,5 @@
 import './App.css';
 
-// import {
-//   // 헤더
-//   logoImg,
-//   dropDown,
-//   // 메인
-//   // about
-//   aboutImg1,
-//   aboutImg2,
-//   aboutImg3,
-//   // business
-//   businessImg1,
-//   businessImg2,
-//   businessImg3,
-//   businessHoverImg1,
-//   businessHoverImg2,
-//   businessHoverImg3,
-//   // portfolio
-//   portfolioImg1,
-//   portfolioImg2,
-//   portfolioImg3,
-//   portfolioBg,
-//   portfolioBg2,
-//   // 푸터
-//   bottomLogoImg,
-// } from './assets/images';
-
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/common/header/Header';
 import Main from './components/main/Main';
@@ -69,25 +43,6 @@ import EastAsia from './components/portfolio/eLearning/07/EastAsia';
 import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
 
 function App() {
-  // let headerLogoImg = { logoImg, dropDown };
-  // let footerLogoImg = { bottomLogoImg };
-  // let mainImgs = {
-  //   aboutImg1,
-  //   aboutImg2,
-  //   aboutImg3,
-  //   businessImg1,
-  //   businessImg2,
-  //   businessImg3,
-  //   businessHoverImg1,
-  //   businessHoverImg2,
-  //   businessHoverImg3,
-  //   portfolioImg1,
-  //   portfolioImg2,
-  //   portfolioImg3,
-  //   portfolioBg,
-  //   portfolioBg2,
-  // };
-
   const location = useLocation();
 
   const [modalStatus, setModalStatus] = useState(false);
