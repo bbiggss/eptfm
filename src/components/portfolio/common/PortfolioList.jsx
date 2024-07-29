@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { PortfolioListBox } from '../../assets/styles/portfolio/portfolioList.styled';
+import { PortfolioListBox } from '../../../assets/styles/portfolio/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
-import FixedButton from '../common/button/FixedButton';
-import Breadcrumb from '../common/breadcrumb/Breadcrumb';
+import FixedButton from '../../common/button/FixedButton';
+import Breadcrumb from '../../common/breadcrumb/Breadcrumb';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
 
@@ -131,42 +131,42 @@ const PortfolioList = (data) => {
       updateListTitle('e-Learning');
       const portfolioItems2 = [
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img1.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img1.png`,
           pfItemBigTitle: '농식품공무원교육원',
           pfItemSmallTitle: '저수지·댐 안전관리 및 재해예방',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img2.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img2.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교사가 이끄는 교실혁명',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img3.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img3.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '사이버어울림',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img4.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img4.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '사이버어울림',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img5.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img5.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '정보공시 입력 지침안내와 시스템 메뉴얼',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img6.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img6.png`,
           pfItemBigTitle: '화학물질안전원',
           pfItemSmallTitle: '화학물질안전에 대하여',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img7.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img7.png`,
           pfItemBigTitle: '동북아역사재단',
           pfItemSmallTitle: '동아시아 원격연수',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/list2_img8.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img8.png`,
           pfItemBigTitle: '아동권리보장원',
           pfItemSmallTitle: '위탁모를 위한 양육 길잡이',
         },

@@ -8,6 +8,7 @@ import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widt
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
+import ImageTextBlock from '../../common/ImageTextBlock';
 
 const EastAsiaBox = styled.div`
   .BreadcrumbBox {
@@ -65,6 +66,28 @@ const EastAsiaBox = styled.div`
   .figure_04,
   .figure_05 {
     position: absolute;
+    z-index: -1;
+  }
+
+  .figure_01 {
+    left: 0;
+    top: -343px;
+  }
+  .figure_02 {
+    right: 0;
+    top: 0;
+  }
+  .figure_03 {
+    left: 0;
+    bottom: -96px;
+  }
+  .figure_04 {
+    right: 0;
+    bottom: -125px;
+  }
+  .figure_05 {
+    bottom: -158px;
+    left: 96px;
   }
 `;
 
@@ -94,89 +117,125 @@ const EastAsia = () => {
         }
       />
 
-      <WidthOneContent className="firstChild">
-        <img
-          className="figure_01"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_01.png`}
-          alt=""
-        />
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/1.png`}
-        />
-        <TextCenter
-          className="customText"
-          text={
-            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-          }
-        />
-      </WidthOneContent>
-      <WidthOneContent>
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/2.png`}
-        />
-        <TextCenter
-          className="customText"
-          text={
-            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-          }
-        />
-      </WidthOneContent>
-      <WidthOneContent>
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/3.png`}
-        />
-        <TextCenter
-          className="customText"
-          text={
-            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-          }
-        />
-      </WidthOneContent>
+      <div className="fullScreen">
+        <ImageTextBlock style={{ marginTop: '160px' }}>
+          <img
+            className="figure_01"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_01.png`}
+            alt=""
+          />
+          <img
+            className="figure_02"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_02.png`}
+            alt=""
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/1.png`}
+          />
+          <TextCenter
+            className="customText"
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </ImageTextBlock>
+        <ImageTextBlock>
+          <img
+            className="figure_03"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_03.png`}
+            alt=""
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/2.png`}
+          />
+          <TextCenter
+            className="customText"
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </ImageTextBlock>
+        <ImageTextBlock>
+          <img
+            className="figure_04"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_04.png`}
+            alt=""
+          />
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/3.png`}
+          />
+          <TextCenter
+            className="customText"
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </ImageTextBlock>
 
-      <EqualWidthTwoImages
-        src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/1.png`}
-        src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/2.png`}
-        // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
-      />
-      <TextCenter
-        className="customText customText2"
-        text={
-          '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-        }
-      />
-      <EqualWidthTwoImages
-        src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/3.png`}
-        src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/4.png`}
-        // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
-      />
-      <TextCenter
-        className="customText customText2"
-        text={
-          '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-        }
-      />
-      <EqualWidthTwoImages
-        src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/5.png`}
-        src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/6.png`}
-        // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
-      />
-      <TextCenter
-        className="customText customText2"
-        text={
-          '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
-        }
-      />
-
-      <WidthOneContent className="lastChild">
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/4.png`}
+        <EqualWidthTwoImages
+          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/1.png`}
+          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/2.png`}
+          // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
         />
         <TextCenter
+          className="customText customText2"
           text={
             '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
           }
         />
-      </WidthOneContent>
+
+        <div className="fullScreen relative">
+          <img
+            className="figure_05"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_05.png`}
+            alt=""
+          />
+          <EqualWidthTwoImages
+            src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/3.png`}
+            src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/4.png`}
+            // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
+          />
+          <TextCenter
+            className="customText customText2"
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </div>
+        <EqualWidthTwoImages
+          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/5.png`}
+          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/6.png`}
+          // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
+        />
+        <TextCenter
+          className="customText customText2"
+          text={
+            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+          }
+        />
+
+        <ImageTextBlock style={{ marginBottom: '200px' }}>
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/4.png`}
+          />
+          <TextCenter
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </ImageTextBlock>
+
+        {/* <WidthOneContent className="lastChild">
+          <ProjectImg
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/4.png`}
+          />
+          <TextCenter
+            text={
+              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            }
+          />
+        </WidthOneContent> */}
+      </div>
 
       <FixedButton />
     </EastAsiaBox>

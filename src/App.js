@@ -5,7 +5,7 @@ import Header from './components/common/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
-import PortfolioList from './components/portfolio/PortfolioList';
+import PortfolioList from './components/portfolio/common/PortfolioList';
 import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';

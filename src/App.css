@@ -54,6 +54,9 @@
 }
 
 /* 텍스트 정렬 */
+.centerAlignment {
+  text-align: center;
+}
 .textCenter {
   text-align: center;
 }
