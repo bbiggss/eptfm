@@ -3,6 +3,9 @@
   padding: 0;
 }
 @media (min-width: 1025px) {
+  .heroArea img {
+    width: 100%;
+  }
   .smallScreen {
     max-width: 1260px;
     width: 100%;

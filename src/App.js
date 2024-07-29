@@ -36,7 +36,8 @@ import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
 // e-Learning
 import ReservoirDam from './components/portfolio/eLearning/01/ReservoirDam';
 import ClassroomRevolution from './components/portfolio/eLearning/02/ClassroomRevolution';
-import CyberSocializing from './components/portfolio/eLearning/04/CyberSocializing';
+import CyberSocializingOne from './components/portfolio/eLearning/03/CyberSocializingOne';
+import CyberSocializingTwo from './components/portfolio/eLearning/04/CyberSocializingTwo';
 import InformationDisclosure from './components/portfolio/eLearning/05/InformationDisclosure';
 import ChemicalSafety from './components/portfolio/eLearning/06/ChemicalSafety';
 import EastAsia from './components/portfolio/eLearning/07/EastAsia';
@@ -185,7 +186,14 @@ function App() {
           path="/portfolio/e-Learning/교사가 이끄는 교실혁명"
           element={<ClassroomRevolution />}
         />
-        <Route path="/portfolio/e-Learning/사이버어울림" element={<CyberSocializing />} />
+        <Route
+          path="/portfolio/e-Learning/사이버어울림(기술·가정, 진로와 직업, 한문)"
+          element={<CyberSocializingOne />}
+        />
+        <Route
+          path="/portfolio/e-Learning/사이버어울림(영어, 체육)"
+          element={<CyberSocializingTwo />}
+        />
         <Route
           path="/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼"
           element={<InformationDisclosure />}

@@ -17,11 +17,11 @@ export const HeaderSpacer = styled.div`
 `;
 
 export const HeaderBox = styled.div`
-  top: 0;
   .active {
     color: #4ac2c5;
   }
 
+  top: 0;
   width: 100%;
   position: fixed;
   left: 50%;
@@ -36,6 +36,7 @@ export const HeaderBox = styled.div`
 
   &.colored {
     background-color: white;
+    opacity: 90%;
     transition: background-color 0.5s ease, transform 0.5s ease;
   }
 

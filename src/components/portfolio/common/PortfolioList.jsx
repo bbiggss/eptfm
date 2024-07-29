@@ -63,12 +63,12 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img7.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 과학수사요원이 되어 범인을 찾아라!',
+          pfItemSmallTitle: 'VR I 과학수사요원이 되어 범인을\n 찾아라!',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img8.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 세계의 환경 수도 프라이부르크 구경하기',
+          pfItemSmallTitle: 'VR I 세계의 환경 수도 프라이부르크\n 구경하기',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img9.png`,
@@ -88,7 +88,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img12.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'VR I 바닷속 생물 채집과 수온, 염분 탐사',
+          pfItemSmallTitle: 'VR I 바닷속 생물 채집과 수온, 염분\n 탐사',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img13.png`,
@@ -98,7 +98,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img14.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'AR I 별의 색과 밝기를 이용한 별의 특성 알아보기',
+          pfItemSmallTitle: 'AR I 별의 색과 밝기를 이용한 별의\n 특성 알아보기',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/list1_img15.png`,
@@ -143,17 +143,17 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img3.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '사이버어울림',
+          pfItemSmallTitle: '사이버어울림(기술·가정, 진로와 직업, 한문)',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img4.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '사이버어울림',
+          pfItemSmallTitle: '사이버어울림(영어, 체육)',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img5.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '정보공시 입력 지침안내와 시스템 메뉴얼',
+          pfItemSmallTitle: '정보공시 입력 지침안내와 시스템\n 메뉴얼',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img6.png`,
