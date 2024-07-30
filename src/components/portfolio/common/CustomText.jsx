@@ -20,7 +20,9 @@ const renderTextWithLineBreaks = (text) => {
 
 const CustomText = (data) => {
   return (
-    <CustomTextBox className="customText">{renderTextWithLineBreaks(data.text)}</CustomTextBox>
+    <CustomTextBox style={data && data.style} className="customText">
+      {renderTextWithLineBreaks(data.text)}
+    </CustomTextBox>
   );
 };
 

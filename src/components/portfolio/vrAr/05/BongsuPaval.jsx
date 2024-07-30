@@ -3,7 +3,7 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import TextCenter from '../../common/TextCenter';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import ProjectImg from '../../common/ProjectImg';
 
 const BongsuPavalBox = styled.div`

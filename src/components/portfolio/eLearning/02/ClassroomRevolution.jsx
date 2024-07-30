@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -100,12 +100,12 @@ const ClassroomRevolution = () => {
       <div className="fullScreen heroArea">
         <img
           className="ellipse1"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/ellipse1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/ellipse1.png`}
           alt=""
         />
         <img
           className="ellipse2"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/ellipse2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/ellipse2.png`}
           alt=""
         />
 
@@ -126,13 +126,13 @@ const ClassroomRevolution = () => {
 
         <img
           className="hero1"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/hero1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/hero1.png`}
           alt=""
         />
 
         <img
           className="hero2"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/hero2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/hero2.png`}
           alt=""
         />
       </div>
@@ -145,10 +145,10 @@ const ClassroomRevolution = () => {
         />
         <div className="smallScreen doubleImgWrapper">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group1/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group1/1.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group1/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group1/2.png`}
           />
         </div>
         <TextCenter
@@ -161,7 +161,7 @@ const ClassroomRevolution = () => {
 
       <WidthOneContent className="firstChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/1.png`}
         />
         <TextCenter
           text={
@@ -171,7 +171,7 @@ const ClassroomRevolution = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/2.png`}
         />
         <TextCenter
           text={
@@ -181,7 +181,7 @@ const ClassroomRevolution = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/3.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/3.png`}
         />
         <TextCenter
           text={
@@ -191,7 +191,7 @@ const ClassroomRevolution = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/4.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/4.png`}
         />
         <TextCenter
           text={
@@ -201,7 +201,7 @@ const ClassroomRevolution = () => {
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/5.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/5.png`}
         />
         <TextCenter
           text={
@@ -211,7 +211,7 @@ const ClassroomRevolution = () => {
       </WidthOneContent>
       <WidthOneContent className="lastChild">
         <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/group2/6.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/6.png`}
         />
         <TextCenter
           text={

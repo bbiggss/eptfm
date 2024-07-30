@@ -6,7 +6,6 @@ import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
 import Video from './components/main/Video';
 import PortfolioList from './components/portfolio/common/PortfolioList';
-import Rnd from './components/portfolio/rNd/Rnd';
 import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
 import { useEffect, useState } from 'react';
@@ -18,6 +17,7 @@ import Loading from './components/common/loading/Loading';
 import MudFlat from './components/portfolio/vrAr/01/MudFlat';
 import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
 import EarthRotationChangingSeasons from './components/portfolio/vrAr/03/EarthRotationChangingSeasons';
+import Contour from './components/portfolio/vrAr/04/Contour';
 import BongsuPaval from './components/portfolio/vrAr/05/BongsuPaval';
 import ExploreDokdo from './components/portfolio/vrAr/06/ExploreDokdo';
 import ForensicScientist from './components/portfolio/vrAr/07/ForensicScientist';
@@ -33,6 +33,7 @@ import BuildingGreatCity from './components/portfolio/vrAr/16/BuildingGreatCity'
 import BoneJointMuscle from './components/portfolio/vrAr/17/BoneJointMuscle';
 import MapExpert from './components/portfolio/vrAr/18/MapExpert';
 import SurvivalBag from './components/portfolio/vrAr/19/SurvivalBag';
+import KoreanWar from './components/portfolio/vrAr/20/KoreanWar';
 // e-Learning
 import ReservoirDam from './components/portfolio/eLearning/01/ReservoirDam';
 import ClassroomRevolution from './components/portfolio/eLearning/02/ClassroomRevolution';
@@ -131,6 +132,7 @@ function App() {
           path="/portfolio/VrAr/AR | 지구의 공전과 계절의 변화"
           element={<EarthRotationChangingSeasons />}
         />
+        <Route path="/portfolio/VrAr/AR I 땅의 높낮이를 나타내는 등고선" element={<Contour />} />
         <Route
           path="/portfolio/VrAr/AR I 옛 사람들의 통신수단, 봉수제도와 파발제도"
           element={<BongsuPaval />}
@@ -176,6 +178,10 @@ function App() {
           element={<MapExpert />}
         />
         <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
+        <Route
+          path="/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁"
+          element={<KoreanWar />}
+        />
 
         {/* e-Learning */}
         <Route
@@ -206,7 +212,7 @@ function App() {
         />
 
         {/* R&D */}
-        <Route path="/portfolio/R&D/:id" element={<Rnd />} />
+        {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
         <Route
           path="/contactUs"
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}

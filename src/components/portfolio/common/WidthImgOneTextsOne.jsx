@@ -1,6 +1,8 @@
+import React from 'react';
 import styled from 'styled-components';
 
-export const WidthImg1Texts1 = styled.div`
+const StyledWidthImgOneTextsOne = styled.div`
+  position: relative;
   display: flex;
   text-align: left;
   padding-bottom: 160px;
@@ -37,3 +39,9 @@ export const WidthImg1Texts1 = styled.div`
   @media (max-width: 767px) {
   }
 `;
+
+const WidthImgOneTextsOne = ({ children, style }) => {
+  return <StyledWidthImgOneTextsOne style={style}>{children}</StyledWidthImgOneTextsOne>;
+};
+
+export default WidthImgOneTextsOne;

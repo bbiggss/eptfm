@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -9,9 +9,6 @@ import ImageTextBlock from '../../common/ImageTextBlock';
 import TextCenter from '../../common/TextCenter';
 
 const StyledParentingGuide = styled.div`
-  .BreadcrumbBox {
-    padding-bottom: 63px;
-  }
   .PortfolioTitleBox {
     position: absolute;
     left: 50%;
@@ -42,7 +39,7 @@ const StyledParentingGuide = styled.div`
 const ParentingGuide = () => {
   return (
     <StyledParentingGuide>
-      <Breadcrumb />
+      <Breadcrumb style={{ paddingBottom: '63px' }} />
 
       <div className="fullScreen heroArea">
         <PortfolioTitle

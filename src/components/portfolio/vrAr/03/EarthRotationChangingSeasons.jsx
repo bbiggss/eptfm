@@ -5,7 +5,7 @@ import ProjectDescription from '../../common/ProjectDescription';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
 import styled from 'styled-components';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 
 const EarthRotationChangingSeasonsBox = styled.div`
   max-width: 1920px;

@@ -1,10 +1,3 @@
-import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
-import FixedButton from '../../../common/button/FixedButton';
-import styled from 'styled-components';
-
-const TestBox = styled.div``;
-
 const renderTextWithLineBreaks = (text) => {
   return text.split('\n').map((line, index) => (
     <React.Fragment key={index}>
@@ -13,6 +6,13 @@ const renderTextWithLineBreaks = (text) => {
     </React.Fragment>
   ));
 };
+
+import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
+import PortfolioTitle from '../../common/PortfolioTitle';
+import FixedButton from '../../../common/button/FixedButton';
+import styled from 'styled-components';
+
+const TestBox = styled.div``;
 
 const Bimetal = () => {
   return (
@@ -79,3 +79,24 @@ export default Bimetal;
 {
   /* <ImageTextBlock style={{ marginBottom: '200px' }}></ImageTextBlock> */
 }
+import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
+import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
+import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
+<PortfolioTitleWrap
+  style={{
+    position: 'absolute',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    marginTop: '180px',
+  }}
+>
+  <PortfolioOrganization
+    style={{ color: '#292929', fontFamily: 'NanumSquareB' }}
+    organization={'한국교육학술정보원'}
+  />
+  <PortfolioFieldTitle
+    style={{ color: '#292929', whiteSpace: 'nowrap' }}
+    field={'VR'}
+    title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
+  />
+</PortfolioTitleWrap>;

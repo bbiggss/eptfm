@@ -1,28 +1,20 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
+import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
+import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 
 const ForensicScientistBox = styled.div`
   max-width: 1920px;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
   .textCenter {
     margin-bottom: 80px;
-  }
-  .box1 {
-    position: relative;
-    width: 100%;
-    height: 618px;
-    img {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
   .mainBackgroundImg {
     position: relative;
@@ -30,6 +22,7 @@ const ForensicScientistBox = styled.div`
     .backgroundImg {
       position: absolute;
       width: 100%;
+      z-index: -1;
     }
     .mainTexts {
       /* display: flex;
@@ -92,20 +85,31 @@ const ForensicScientistBox = styled.div`
 const ForensicScientist = () => {
   return (
     <>
-      <Breadcrumb />
       <ForensicScientistBox>
-        <PortfolioTitle
-          className="centeredContentWithMarginBottom"
-          organization={'한국교육학술정보원'}
-          field={'VR'}
-          title={'과학수사요원이 되어 범인을 찾아라!'}
-        />
-        <div className="box1">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main.png`}
-            alt=""
+        <Breadcrumb style={{ position: 'absolute' }} font={{ color: '#FFFFFF' }} />
+        <PortfolioTitleWrap
+          style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            marginTop: '180px',
+          }}
+        >
+          <PortfolioOrganization
+            style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }}
+            organization={'한국교육학술정보원'}
           />
-        </div>
+          <PortfolioFieldTitle
+            style={{ color: '#FFFFFF', whiteSpace: 'nowrap' }}
+            field={'VR'}
+            title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
+          />
+        </PortfolioTitleWrap>
+        <img
+          className="heroImg"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/hero.png`}
+          alt=""
+        />
 
         <div className="mainBackgroundImg">
           <img

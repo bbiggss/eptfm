@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -101,12 +101,12 @@ const ReservoirDam = () => {
           }
         />
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/hero.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/hero.png`}
           alt=""
         />
         <div className="background">
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/background.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/background.png`}
             alt=""
           />
         </div>
@@ -118,12 +118,12 @@ const ReservoirDam = () => {
             text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/1.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/2.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -135,12 +135,12 @@ const ReservoirDam = () => {
             text={`저수지·댐의 구조와 기능에 대한 기본적인 이해를\n바탕으로, 수자원 관리와 재해 예방의 중요성을\n인식할 수 있어요. `}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/3.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/4.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -152,7 +152,7 @@ const ReservoirDam = () => {
       <div className="fullScreen background90ebff">
         <WidthOneContent className="firstChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group2/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group2/1.png`}
           />
           <TextCenter
             text={
@@ -162,7 +162,7 @@ const ReservoirDam = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group2/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group2/2.png`}
           />
           <TextCenter
             text={
@@ -172,7 +172,7 @@ const ReservoirDam = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group2/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group2/3.png`}
           />
           <TextCenter
             text={
@@ -185,7 +185,7 @@ const ReservoirDam = () => {
       <div className="smallScreen">
         <WidthImg1Texts1 className="firstChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/5.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -197,12 +197,12 @@ const ReservoirDam = () => {
             text={`다양한 내용을 인포그래픽화하기 위해 전문가들의\n많은 피드백을 반영하여 최적의 학습 경험을 제공할 수\n있도록 노력한답니다!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/6.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/7.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -214,7 +214,7 @@ const ReservoirDam = () => {
             text={`다양한 학습 내용의 구성을 통해 지루함을 방지해요!\n저수지 댐의 구조와 기능부터 안전 관리와 재해 \n예방까지, 인터랙티브한 e-Learning으로 배워보세요!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/8.png`}
           />
         </WidthImg1Texts1>
       </div>

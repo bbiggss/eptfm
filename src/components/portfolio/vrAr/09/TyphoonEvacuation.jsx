@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import styled from 'styled-components';

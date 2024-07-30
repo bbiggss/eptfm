@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -11,10 +11,6 @@ import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
 import ImageTextBlock from '../../common/ImageTextBlock';
 
 const EastAsiaBox = styled.div`
-  .BreadcrumbBox {
-    padding-bottom: 58px;
-  }
-
   .heroArea {
     img {
       width: 100%;
@@ -94,7 +90,7 @@ const EastAsiaBox = styled.div`
 const EastAsia = () => {
   return (
     <EastAsiaBox>
-      <Breadcrumb />
+      <Breadcrumb style={{ paddingBottom: '58px' }} />
 
       <div className="fullScreen heroArea">
         <PortfolioTitle
@@ -105,7 +101,7 @@ const EastAsia = () => {
         />
 
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/hero.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/hero.png`}
           alt=""
         />
       </div>
@@ -121,16 +117,16 @@ const EastAsia = () => {
         <ImageTextBlock style={{ marginTop: '160px' }}>
           <img
             className="figure_01"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_01.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_01.png`}
             alt=""
           />
           <img
             className="figure_02"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_02.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_02.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/1.png`}
           />
           <TextCenter
             className="customText"
@@ -142,11 +138,11 @@ const EastAsia = () => {
         <ImageTextBlock>
           <img
             className="figure_03"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_03.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_03.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/2.png`}
           />
           <TextCenter
             className="customText"
@@ -158,11 +154,11 @@ const EastAsia = () => {
         <ImageTextBlock>
           <img
             className="figure_04"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_04.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_04.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/3.png`}
           />
           <TextCenter
             className="customText"
@@ -173,8 +169,8 @@ const EastAsia = () => {
         </ImageTextBlock>
 
         <EqualWidthTwoImages
-          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/1.png`}
-          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/2.png`}
+          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/1.png`}
+          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/2.png`}
           // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
         />
         <TextCenter
@@ -187,12 +183,12 @@ const EastAsia = () => {
         <div className="fullScreen relative">
           <img
             className="figure_05"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/side/figure_05.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_05.png`}
             alt=""
           />
           <EqualWidthTwoImages
-            src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/3.png`}
-            src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/4.png`}
+            src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/3.png`}
+            src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/4.png`}
             // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
           />
           <TextCenter
@@ -203,8 +199,8 @@ const EastAsia = () => {
           />
         </div>
         <EqualWidthTwoImages
-          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/5.png`}
-          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group2/6.png`}
+          src1={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/5.png`}
+          src2={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/6.png`}
           // text="이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다."
         />
         <TextCenter
@@ -216,7 +212,7 @@ const EastAsia = () => {
 
         <ImageTextBlock style={{ marginBottom: '200px' }}>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/4.png`}
           />
           <TextCenter
             text={
@@ -227,7 +223,7 @@ const EastAsia = () => {
 
         {/* <WidthOneContent className="lastChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07/group1/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/4.png`}
           />
           <TextCenter
             text={

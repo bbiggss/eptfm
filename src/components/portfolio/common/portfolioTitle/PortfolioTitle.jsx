@@ -40,7 +40,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const PortfolioTitle = (data) => {
   return (
-    <PortfolioTitleBox className={`PortfolioTitleBox ${data.className}`}>
+    <PortfolioTitleBox style={data.style} className={`PortfolioTitleBox ${data.className}`}>
       <div>
         <p className="orgainzation NanumSquareB">{data.organization}</p>
         <p className="fieldTitle NanumSquareEB">

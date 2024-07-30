@@ -17,18 +17,19 @@ export const HeaderSpacer = styled.div`
 `;
 
 export const HeaderBox = styled.div`
-  .active {
-    color: #4ac2c5;
-  }
-
   top: 0;
   width: 100%;
+  max-width: 1920px;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   display: flex;
   align-items: center;
+
+  .active {
+    color: #4ac2c5;
+  }
 
   &.transparent {
     transition: background-color 0.5s ease, transform 0.5s ease;
@@ -169,6 +170,7 @@ export const HeaderBox = styled.div`
   @media (max-width: 767px) {
     background-color: white;
     #headerContainer {
+      /* background-color: yellow; */
       position: relative;
       width: 100%;
       margin: 32px;

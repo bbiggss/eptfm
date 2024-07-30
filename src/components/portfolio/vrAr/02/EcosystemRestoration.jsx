@@ -4,7 +4,7 @@ import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
 import FixedButton from '../../../common/button/FixedButton';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
 import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
 

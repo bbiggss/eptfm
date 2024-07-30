@@ -1,9 +1,46 @@
 import React from 'react';
-import { BreadcrumbBox } from '../../../assets/styles/common/breadcrumb.styled';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import styled from 'styled-components';
 
-const Breadcrumb = () => {
+const StyledBreadcrumbBox = styled.div`
+  font-family: 'Roboto-Medium';
+  position: relative;
+
+  ul {
+    display: flex;
+    list-style: none;
+    max-width: 1920px;
+    width: max-content;
+    /* background-color: blue; */
+    li {
+      margin-right: 13px;
+      color: #767676;
+      height: 18.75px;
+
+      a {
+        text-decoration: none;
+        color: #767676;
+      }
+    }
+  }
+
+  @media (min-width: 1025px) {
+    ul {
+      margin-left: 192px;
+    }
+    margin-top: 88px;
+    margin-bottom: 73px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+    display: none;
+    background-color: aqua;
+  }
+`;
+
+const Breadcrumb = ({ style, font }) => {
   const location = useLocation();
   let contentTitleEnglish = '';
   let contentTitleKorean = '';
@@ -36,47 +73,54 @@ const Breadcrumb = () => {
 
   // console.log(mainCategory, subCategory, contentTitle);
   return (
-    <BreadcrumbBox className="BreadcrumbBox robotoMedium">
-      <ul>
-        <li>
-          <Link to={'/'}>HOME</Link>
-        </li>
-        <li>{'>'}</li>
-        <li>{mainCategory}</li>
+    <StyledBreadcrumbBox style={style}>
+      <div className="fullScreen">
+        <ul>
+          <li>
+            <Link to={'/'} style={font}>
+              HOME
+            </Link>
+          </li>
+          <li style={font}>{'>'}</li>
+          <li style={font}>{mainCategory}</li>
 
-        {subCategory === undefined ? (
-          ''
-        ) : (
-          <>
-            <li>{'>'}</li>
-            <li>
-              <Link to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}>
-                {subCategory}
-              </Link>
-            </li>
-          </>
-        )}
+          {subCategory === undefined ? (
+            ''
+          ) : (
+            <>
+              <li style={font}>{'>'}</li>
+              <li>
+                <Link
+                  style={font}
+                  to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}
+                >
+                  {subCategory}
+                </Link>
+              </li>
+            </>
+          )}
 
-        {contentTitle === undefined || contentTitle === 'undefined' ? (
-          ''
-        ) : (
-          <>
-            <li>{'>'}</li>
+          {contentTitle === undefined || contentTitle === 'undefined' ? (
+            ''
+          ) : (
+            <>
+              <li style={font}>{'>'}</li>
 
-            <li className="NanumSquareB">
-              {contentTitle.includes('|') ? (
-                <>
-                  {contentTitleEnglish}
-                  <span className="NanumSquareR">|</span>
-                  {contentTitleKorean}
-                </>
-              ) : (
-                <>{contentTitle}</>
-              )}
-            </li>
-          </>
-        )}
-      </ul>
+              <li className="NanumSquareB" style={font}>
+                {contentTitle.includes('|') ? (
+                  <>
+                    {contentTitleEnglish}
+                    <span className="NanumSquareR">|</span>
+                    {contentTitleKorean}
+                  </>
+                ) : (
+                  <>{contentTitle}</>
+                )}
+              </li>
+            </>
+          )}
+        </ul>
+      </div>
 
       {/* <ol class="breadcrumb breadcrumb-style2 mb-0">
         <li class="breadcrumb-item">
@@ -87,7 +131,7 @@ const Breadcrumb = () => {
         </li>
         <li class="breadcrumb-item active">{{ subTitle }}</li>
       </ol> */}
-    </BreadcrumbBox>
+    </StyledBreadcrumbBox>
   );
 };
 

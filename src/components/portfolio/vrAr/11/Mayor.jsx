@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';

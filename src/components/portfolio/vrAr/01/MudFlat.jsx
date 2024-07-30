@@ -6,85 +6,191 @@ import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
 import ProjectImg from '../../common/ProjectImg';
 
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import CustomText from '../../common/CustomText';
 
 const MudFlatBox = styled.div`
-  .mainImg {
-    width: 100%;
-    margin-bottom: 160px;
-  }
-  .subTexts {
-    font-size: 24px;
-    margin-top: 60px;
-  }
-  .portfolioTitle {
-    position: absolute;
-    margin-top: 425px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    .orgainzation {
-      color: #ffffff;
-      font-family: 'NanumSquareEB';
+  @media (min-width: 1025px) {
+    .mainImg {
+      width: 100%;
+      margin-bottom: 160px;
     }
-    .fieldTitle {
-      color: #ffffff;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    .subTexts {
+      font-size: 24px;
+      margin-top: 60px;
     }
-  }
+    .portfolioTitle {
+      position: absolute;
+      margin-top: 425px;
+      left: 50%;
+      transform: translateX(-50%);
 
-  .mainContainer {
-    display: flex;
-    text-align: center;
-
-    .mainTexts {
-      display: flex;
-      align-items: center;
-      margin-left: 67px;
-    }
-  }
-  .watchContainer {
-    padding: 100px 0;
-
-    margin-top: 160px;
-    margin-bottom: 160px;
-    .textCenter img {
-      margin: 80px 0;
-    }
-    .title {
-      color: #000000;
-      font-size: 50px;
-      line-height: auto;
-      letter-spacing: -2%;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-      text-align: center;
-    }
-  }
-  .gridContainer {
-    padding-top: 160px;
-    padding-bottom: 160px;
-    margin-bottom: 160px;
-    ul {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(3, 400px);
-      gap: 0px 30px;
-
-      li {
-        list-style: none;
-        padding-bottom: 60px;
+      .orgainzation {
+        color: #ffffff;
+        font-family: 'NanumSquareEB';
+      }
+      .fieldTitle {
+        color: #ffffff;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
       }
     }
-    .customText {
-      color: #191919;
+
+    .mainContainer {
+      display: flex;
       text-align: center;
+
+      .mainTexts {
+        display: flex;
+        align-items: center;
+        margin-left: 67px;
+      }
+    }
+    .watchContainer {
+      padding: 100px 0;
+
+      margin-top: 160px;
+      margin-bottom: 160px;
+      .textCenter img {
+        margin: 80px 0;
+      }
+      .title {
+        color: #000000;
+        font-size: 50px;
+        line-height: auto;
+        letter-spacing: -2%;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        text-align: center;
+      }
+    }
+    .gridContainer {
+      padding-top: 160px;
+      padding-bottom: 160px;
+      margin-bottom: 160px;
+      ul {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 400px);
+        gap: 0px 30px;
+
+        li {
+          list-style: none;
+          padding-bottom: 60px;
+        }
+      }
+      .customText {
+        color: #191919;
+        text-align: center;
+      }
+    }
+
+    .lastChild .projectImg {
+      padding-bottom: 36px;
     }
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+    .mainImg {
+      height: 350px;
+      margin-bottom: 55px;
+      position: relative;
+      right: 247px;
+      z-index: -1;
+    }
+    .subTexts {
+      font-size: 24px;
+      margin-top: 60px;
+    }
+    .portfolioTitle {
+      position: absolute;
+      margin-top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
 
-  .lastChild .projectImg {
-    padding-bottom: 36px;
+      .orgainzation {
+        color: #ffffff;
+        font-size: 12px;
+        margin-bottom: 11px;
+        font-family: 'NanumSquareEB';
+      }
+      .fieldTitle {
+        color: #ffffff;
+        font-size: 25px;
+        white-space: nowrap;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+      }
+    }
+
+    .mainContainer {
+      /* display: flex; */
+      text-align: center;
+
+      .woman {
+        width: 130px;
+      }
+
+      .mainTexts {
+        margin-top: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        .title {
+          font-size: 22px;
+        }
+        .subTexts {
+          font-size: 15px;
+          line-height: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+    .watchContainer {
+      padding: 100px 0;
+
+      margin-top: 160px;
+      margin-bottom: 160px;
+      .textCenter img {
+        margin: 80px 0;
+      }
+      .title {
+        color: #000000;
+        font-size: 50px;
+        line-height: auto;
+        letter-spacing: -2%;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        text-align: center;
+      }
+    }
+    .gridContainer {
+      padding-top: 160px;
+      padding-bottom: 160px;
+      margin-bottom: 160px;
+      ul {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 400px);
+        gap: 0px 30px;
+
+        li {
+          list-style: none;
+          padding-bottom: 60px;
+        }
+      }
+      .customText {
+        color: #191919;
+        text-align: center;
+      }
+    }
+
+    .lastChild .projectImg {
+      padding-bottom: 36px;
+    }
+
+    max-width: 767px;
+    overflow: hidden;
   }
 `;
 
@@ -111,6 +217,7 @@ const MudFlat = () => {
       <div className="smallScreen">
         <div className="mainContainer">
           <img
+            className="woman"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/woman.png`}
             alt=""
           />

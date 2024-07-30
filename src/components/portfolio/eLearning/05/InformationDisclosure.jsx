@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import ProjectImg from '../../common/ProjectImg';
@@ -11,10 +11,6 @@ import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widt
 import ProjectDescription from '../../common/ProjectDescription';
 
 const InformationDisclosureBox = styled.div`
-  .BreadcrumbBox {
-    padding-bottom: 31px;
-  }
-
   .area1 {
     .backImg {
       position: absolute;
@@ -49,12 +45,12 @@ const InformationDisclosureBox = styled.div`
 const InformationDisclosure = () => {
   return (
     <InformationDisclosureBox>
-      <Breadcrumb />
+      <Breadcrumb style={{ paddingBottom: '31px' }} />
 
       <div className="largeScreen area1">
         <ProjectImg
           className="backImg"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/main2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/main2.png`}
         />
         <PortfolioTitle
           organization={'한국교육학술정보원'}
@@ -63,7 +59,7 @@ const InformationDisclosure = () => {
         />
         <ProjectImg
           className="mainImg"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/main1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/main1.png`}
         />
 
         <PortfolioIntroduction
@@ -77,7 +73,7 @@ const InformationDisclosure = () => {
       <div className="smallScreen area2">
         <WidthOneContent className="WidthOneContent">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group1_1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group1_1.png`}
           />
           <TextCenter
             text={
@@ -88,7 +84,7 @@ const InformationDisclosure = () => {
 
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_1.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -100,12 +96,12 @@ const InformationDisclosure = () => {
             text={`학교의 조직 구조, 교직원 현황,  학급 편성,\n주요 교육 활동 등 학교 운영에 관한\n정보를 공개한답니다!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_2.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_3.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -117,12 +113,12 @@ const InformationDisclosure = () => {
             text={`뿐만 아니라 학교의 전반적인 운영 상황,\n교육 성과, 학생의 학업 성취도 등을\n투명하게 공개하고, 이를 통해 교육의\n질을 높이는 데 목적을 두고 있음을\n뚜렷하게 확인할 수 있답니다!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_4.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_5.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -134,12 +130,12 @@ const InformationDisclosure = () => {
             text={`다양한 학생 지원 프로그램의 효과를\n분석하고, 이를 통해 학생 복지 향상 방안을\n모색할 수 있어요.`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_6.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_6.png`}
           />
         </WidthImg1Texts1>
         <WidthImg1Texts1>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_7.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_7.png`}
           />
           <ProjectDescription
             textPosition={'right'}
@@ -151,7 +147,7 @@ const InformationDisclosure = () => {
             text={`다양한 학생 지원 프로그램의 효과를\n분석하고, 이를 통해 학생 복지 향상 방안을\n모색할 수 있어요!`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05/group2_8.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_8.png`}
           />
         </WidthImg1Texts1>
       </div>

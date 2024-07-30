@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -13,10 +13,10 @@ const BimetalBox = styled.div`
     position: relative;
     .mainTexts {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 158px;
-      text-align: center;
+      right: 0;
+      margin-top: 142px;
+      margin-right: 330px;
+      text-align: right;
 
       .subTexts {
         color: #000000;

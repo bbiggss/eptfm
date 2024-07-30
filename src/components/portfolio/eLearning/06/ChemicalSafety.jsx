@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
+import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -9,9 +9,6 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 
 const ChemicalSafetyBox = styled.div`
-  .BreadcrumbBox {
-    padding-bottom: 47px;
-  }
   .heroArea {
     position: relative;
     img {
@@ -100,7 +97,8 @@ const ChemicalSafetyBox = styled.div`
 const ChemicalSafety = () => {
   return (
     <ChemicalSafetyBox>
-      <Breadcrumb />
+      <Breadcrumb style={{ paddingBottom: '47px' }} />
+
       <div className="fullScreen heroArea">
         <PortfolioTitle
           className="centeredContentWithMarginBottom"
@@ -116,7 +114,7 @@ const ChemicalSafety = () => {
           }
         />
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/hero.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/hero.png`}
           alt=""
         />
       </div>
@@ -124,7 +122,7 @@ const ChemicalSafety = () => {
       <div className="fullScreen">
         <WidthOneContent className="firstChild">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group1/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/1.png`}
           />
           <TextCenter
             text={
@@ -134,7 +132,7 @@ const ChemicalSafety = () => {
         </WidthOneContent>
         <WidthOneContent>
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group1/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/2.png`}
           />
           <TextCenter
             text={
@@ -145,11 +143,11 @@ const ChemicalSafety = () => {
         <WidthOneContent className="relative">
           <img
             className="side1"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/side/side1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side1.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group1/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/3.png`}
           />
           <TextCenter
             text={
@@ -162,34 +160,34 @@ const ChemicalSafety = () => {
       <div className="fullScreen group2Area">
         <div className="nationFlag">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/korea.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/korea.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/nepal.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/nepal.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/vietnam.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/vietnam.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/indonesia.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/indonesia.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/cambodia.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/cambodia.png`}
           />
         </div>
 
         <div className="smallScreen grid">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/1.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/2.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/3.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/3.png`}
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group2/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/4.png`}
           />
         </div>
         <TextCenter
@@ -203,7 +201,7 @@ const ChemicalSafety = () => {
       <div className="fullScreen">
         <WidthOneContent className="firstChild2">
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group1/4.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/4.png`}
           />
           <TextCenter
             text={
@@ -214,11 +212,11 @@ const ChemicalSafety = () => {
         <WidthOneContent className="lastChild">
           <img
             className="side2"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/side/side2.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side2.png`}
             alt=""
           />
           <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/group1/5.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/5.png`}
           />
           <TextCenter
             text={
@@ -228,7 +226,7 @@ const ChemicalSafety = () => {
         </WidthOneContent>
         <ProjectImg
           className="footer"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06/footer.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/footer.png`}
         />
       </div>
 
