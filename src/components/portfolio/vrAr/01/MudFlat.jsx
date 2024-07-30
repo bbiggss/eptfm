@@ -51,7 +51,7 @@ const MudFlatBox = styled.div`
 
       margin-top: 160px;
       margin-bottom: 160px;
-      .textCenter img {
+      .centerAlignment img {
         margin: 80px 0;
       }
       .title {
@@ -83,10 +83,6 @@ const MudFlatBox = styled.div`
         text-align: center;
       }
     }
-
-    .lastChild .projectImg {
-      padding-bottom: 36px;
-    }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
   }
@@ -97,10 +93,6 @@ const MudFlatBox = styled.div`
       position: relative;
       right: 247px;
       z-index: -1;
-    }
-    .subTexts {
-      font-size: 24px;
-      margin-top: 60px;
     }
     .portfolioTitle {
       position: absolute;
@@ -123,7 +115,6 @@ const MudFlatBox = styled.div`
     }
 
     .mainContainer {
-      /* display: flex; */
       text-align: center;
 
       .woman {
@@ -152,7 +143,7 @@ const MudFlatBox = styled.div`
 
       margin-top: 160px;
       margin-bottom: 160px;
-      .textCenter img {
+      .centerAlignment img {
         margin: 80px 0;
       }
       .title {
@@ -185,10 +176,6 @@ const MudFlatBox = styled.div`
       }
     }
 
-    .lastChild .projectImg {
-      padding-bottom: 36px;
-    }
-
     max-width: 767px;
     overflow: hidden;
   }
@@ -198,7 +185,6 @@ const MudFlat = () => {
   return (
     <MudFlatBox>
       <Breadcrumb />
-
       <div className="fullScreen">
         <div className="portfolioTitle">
           <PortfolioTitle
@@ -213,7 +199,6 @@ const MudFlat = () => {
           alt=""
         />
       </div>
-
       <div className="smallScreen">
         <div className="mainContainer">
           <img
@@ -231,10 +216,9 @@ const MudFlat = () => {
           </div>
         </div>
       </div>
-
       <div className="fullScreen watchContainer EDFAFF">
         <p className="title NanumSquareEB">시계형 조작부</p>
-        <div className="textCenter">
+        <div className="centerAlignment">
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png`}
           />
@@ -260,40 +244,36 @@ const MudFlat = () => {
           }
         />
       </div>
-
-      <div className="smallScreen">
-        <WidthOneContent>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`}
-          />
-          <TextCenter
-            text={
-              '우리팀은 학습자들이 ‘갯벌은 어떤 곳일까?’ 콘텐츠를 통해\n밀물과 썰물의 변화, 갯벌의 생태계, 환경 정화 기능 등 갯벌의 다양한 측면을\n자연스럽게 학습할 수 있도록 하기 위해 많은 노력을 기울였어요.'
-            }
-          />
-        </WidthOneContent>
-        <WidthOneContent>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`}
-          />
-          <TextCenter
-            text={
-              '뿐만 아니라, 갯벌 체험에서 꼭 주의해야 할 사항들도\n학습자들이 기억할 수 있도록 안전 유의 사항의 내용을 넣었죠.'
-            }
-          />
-        </WidthOneContent>
-        <WidthOneContent>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_3.png`}
-          />
-          <TextCenter
-            text={
-              '학습자들은 캐릭터를 직접 움직이며 갯벌에 서식하는 다양한 생물들을 채집할 수 있어요.\n자연과의 공생! 갯벌에 사는 다양한 생물 친구들을 만나볼까요?'
-            }
-          />
-        </WidthOneContent>
-      </div>
-
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`}
+        />
+        <TextCenter
+          text={
+            '우리팀은 학습자들이 ‘갯벌은 어떤 곳일까?’ 콘텐츠를 통해\n밀물과 썰물의 변화, 갯벌의 생태계, 환경 정화 기능 등 갯벌의 다양한 측면을\n자연스럽게 학습할 수 있도록 하기 위해 많은 노력을 기울였어요.'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`}
+        />
+        <TextCenter
+          text={
+            '뿐만 아니라, 갯벌 체험에서 꼭 주의해야 할 사항들도\n학습자들이 기억할 수 있도록 안전 유의 사항의 내용을 넣었죠.'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        <ProjectImg
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_3.png`}
+        />
+        <TextCenter
+          text={
+            '학습자들은 캐릭터를 직접 움직이며 갯벌에 서식하는 다양한 생물들을 채집할 수 있어요.\n자연과의 공생! 갯벌에 사는 다양한 생물 친구들을 만나볼까요?'
+          }
+        />
+      </WidthOneContent>
       <div className="fullScreen gridContainer EDFAFF">
         <ul>
           <li>
@@ -339,7 +319,6 @@ const MudFlat = () => {
           }
         />
       </div>
-
       <WidthOneContent>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_4.png`}
@@ -360,7 +339,7 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent className="paddingBottom190">
+      <WidthOneContent style={{ paddingBottom: '190px' }}>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`}
         />
@@ -370,8 +349,7 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-
-      <WidthOneContent className="lastChild">
+      <WidthOneContent style={{ paddingBottom: '200px' }}>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`}
         />
@@ -381,7 +359,6 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-
       <FixedButton />
     </MudFlatBox>
   );
