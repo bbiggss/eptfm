@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const WidthOneContent = styled.div`
   position: relative;
+  text-align: center;
 
   @media (min-width: 1025px) {
     padding-bottom: ${(props) => {
@@ -18,6 +19,10 @@ export const WidthOneContent = styled.div`
       if (props.$customPaddingBottom) return '116px';
       return '100px';
     }};
+
+    .projectImg {
+      width: 100%;
+    }
   }
 
   &.firstChild {
@@ -54,6 +59,5 @@ export const WidthOneContent = styled.div`
 
   .projectImg {
     padding-bottom: 60px;
-    width: 100%;
   }
 `;
