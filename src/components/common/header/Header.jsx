@@ -10,7 +10,6 @@ const Header = (data) => {
       <HeaderBox id="header" className={`robotoMedium ${data.headerClass}`}>
         <div id="headerContainer">
           <Link to={'/'}>
-            {/* <img id="logoImg" src={img && img.logoImg} alt="" /> */}
             <img
               id="logoImg"
               src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`}
@@ -24,8 +23,10 @@ const Header = (data) => {
               alt=""
             />
             <ul>
-              <NavBox title={'ABOUT US'} link={'about'} activeLink={data.activeLink} />
-              <NavBox title={'BUSSINESS'} link={'business'} activeLink={data.activeLink} />
+              {/* <NavBox title={'ABOUT US'} link={'about'} activeLink={data.activeLink} />
+              <NavBox title={'BUSINESS'} link={'business'} activeLink={data.activeLink} /> */}
+              <NavBox title={'ABOUT US'} link={'/#about'} />
+              <NavBox title={'BUSINESS'} link={'/#business'} />
               <li className={`dropdown`}>
                 <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">

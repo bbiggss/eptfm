@@ -102,7 +102,7 @@ const ForensicScientist = () => {
           <PortfolioFieldTitle
             style={{ color: '#FFFFFF', whiteSpace: 'nowrap' }}
             field={'VR'}
-            title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
+            title={'과학수사요원이 되어 범인을 찾아라!'}
           />
         </PortfolioTitleWrap>
         <img

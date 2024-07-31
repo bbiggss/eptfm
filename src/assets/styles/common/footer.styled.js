@@ -1,102 +1,90 @@
 import styled from 'styled-components';
 
 export const FooterBox = styled.div`
-  width: 100%;
-  color: #767676;
-  font-family: 'NanumSquareB';
+  margin: 0 auto;
   background-color: #f0f2f4;
-
-  display: flex;
-  justify-content: center;
-
-  #inquiry span {
-    display: none;
-  }
+  font-family: 'NanumSquareB';
+  color: #767676;
 
   @media (min-width: 1025px) {
     height: 360px;
-    /* display: flex; */
-    #container {
-      max-width: 1920px;
-      width: 80%;
-      /* box-sizing: border-box; */
-      padding: 80px 0;
-      & #infoInquiry {
-        display: flex;
-        position: relative;
-        margin-bottom: 36px;
+    max-width: 1920px;
 
-        #info {
-          #footerImg {
-            width: 133px;
-            height: 18px;
-            margin-bottom: 36px;
-          }
-          span {
-            font-size: 20px;
-            letter-spacing: -0.02em; // 자간
-            line-height: 36px; // 줄간
-          }
-        }
-      }
-      & #inquiry {
-        margin-left: auto;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        text-align: right;
+    .footerContainer {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+    }
+    #footerImg {
+      width: 133px;
+      height: 18px;
+      margin-top: 80px;
+      margin-bottom: 36px;
+    }
+    #info {
+      span {
         font-size: 20px;
         letter-spacing: -0.02em; // 자간
         line-height: 36px; // 줄간
       }
-
-      #copyright {
-        font-size: 18px;
+      .address {
+        margin-bottom: 36px;
+      }
+    }
+    .copyright {
+      font-size: 20px;
+    }
+    .socialMediaLink {
+      display: inline;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 60px;
+      img:first-child {
+        margin-right: 18px;
       }
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 20px;
-    #container {
-      padding: 32px;
-    }
-    #infoInquiry {
-      margin-bottom: 31.77px;
-    }
-    #footerImg {
-      width: 63px;
-      height: 9px;
-    }
-    #inquiry div:first-child {
-      display: inline;
-    }
-    #inquiry span {
-      display: inline;
-    }
-    #inquiry div:last-child {
-      display: inline;
-    }
   }
   @media (max-width: 767px) {
-    font-size: 9px;
-    #container {
-      padding: 32px;
+    height: 135px;
+    font-size: 8px;
+
+    .footerContainer {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+
+      #footerImg {
+        width: 67px;
+        height: 9px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+      }
+
+      #info {
+        .customSpan {
+          display: table-column;
+        }
+        .address {
+          margin-bottom: 12px;
+        }
+      }
     }
-    #infoInquiry {
-      margin-bottom: 12px;
-    }
-    #footerImg {
-      width: 63px;
-      height: 9px;
-    }
-    #inquiry div:first-child {
+    .socialMediaLink {
       display: inline;
-    }
-    #inquiry span {
-      display: inline;
-    }
-    #inquiry div:last-child {
-      display: inline;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 30px;
+
+      img {
+        width: 28px;
+      }
+      img:first-child {
+        margin-right: 10px;
+      }
     }
   }
 `;

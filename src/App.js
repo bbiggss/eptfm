@@ -62,6 +62,13 @@ function App() {
     const pageName = location.pathname.split('/');
     if (pageName[1] === '') {
       setActiveLink('');
+      if (location.hash === '#about') {
+        document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+      } else if (location.hash === '#business') {
+        document.querySelector('#business').scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo(0, 0);
+      }
     } else if (pageName[1] === 'about') {
       setActiveLink('about');
     } else if (pageName[1] === 'business') {

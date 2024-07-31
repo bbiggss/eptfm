@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const BusinessBox = styled.div`
   font-family: 'Roboto-Medium';
-  background-image: url(${process.env.PUBLIC_URL}/assets/images/main/bussiness_bg.png);
+  background-image: url(${process.env.PUBLIC_URL}/assets/images/main/business_bg.png);
   background-repeat: no-repeat;
   /* background-size: cover; */
 

@@ -25,14 +25,17 @@ const BtnBox = styled.div`
   }
   @media (max-width: 767px) {
     img {
-      width: 32.27px;
+      width: 35px;
     }
     .btnBox {
       right: 14.73px;
 
+      img:first-child {
+        margin-bottom: 165px;
+      }
+
       img:last-child {
-        margin-top: 10.47px;
-        margin-bottom: 14.73px;
+        display: none;
       }
     }
   }
@@ -45,11 +48,23 @@ const FixedButton = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-      if (scrollTop > 500) {
-        setTopBtnView('');
+      if (window.innerWidth <= 767) {
+        // 모바일 환경일 때
+        if (scrollTop + windowHeight >= documentHeight) {
+          setTopBtnView('');
+        } else {
+          setTopBtnView('displayNone');
+        }
       } else {
-        setTopBtnView('displayNone');
+        // PC 환경일 때
+        if (scrollTop > 500) {
+          setTopBtnView('');
+        } else {
+          setTopBtnView('displayNone');
+        }
       }
     };
 

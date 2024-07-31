@@ -3,10 +3,7 @@ import { AboutBox } from '../../assets/styles/main/about.styled';
 import AboutImg from './AboutImg';
 import AboutDescription from './AboutDescription1';
 
-const About = ({}) => {
-  // const aboutImg1 = data.aboutImg1;
-  // const aboutImg2 = data.aboutImg2;
-  // const aboutImg3 = data.aboutImg3;
+const About = () => {
   return (
     <AboutBox id="about">
       <div className="aboutTitle">

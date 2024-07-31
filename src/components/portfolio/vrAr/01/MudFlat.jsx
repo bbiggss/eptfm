@@ -402,12 +402,6 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent> */}
-      <br />
-      <a href="https://brunch.co.kr/@uxdaysseoul/62">브레드크럼6가지 중요한 측면</a>
-      <br />
-      <a href="https://blog.logrocket.com/ux-design/designing-mobile-breadcrumbs/">
-        Designing mobile breadcrumbs for smaller screens
-      </a>
 
       <FixedButton />
     </MudFlatBox>
