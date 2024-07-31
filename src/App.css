@@ -61,6 +61,11 @@
   text-align: center;
 }
 
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
 .paddingTopBottom160 {
   padding: 160px 0;
 }

@@ -2,8 +2,24 @@ import styled from 'styled-components';
 
 export const WidthOneContent = styled.div`
   position: relative;
-  text-align: center;
-  padding-bottom: 160px;
+
+  @media (min-width: 1025px) {
+    padding-bottom: ${(props) => {
+      if (props.$last) return '200px';
+      if (props.$customPaddingBottom) return '190px';
+      return '160px';
+    }};
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+    padding-bottom: ${(props) => {
+      if (props.$last) return '112px';
+      if (props.$customPaddingBottom) return '116px';
+      return '100px';
+    }};
+  }
+
   &.firstChild {
     padding-top: 160px;
   }
@@ -38,5 +54,6 @@ export const WidthOneContent = styled.div`
 
   .projectImg {
     padding-bottom: 60px;
+    width: 100%;
   }
 `;

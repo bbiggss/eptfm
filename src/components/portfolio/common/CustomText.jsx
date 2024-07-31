@@ -3,10 +3,18 @@ import styled from 'styled-components';
 
 const CustomTextBox = styled.div`
   color: #767676;
-  font-size: 24px;
+
   font-family: 'NanumSquareB';
   line-height: 38px;
   letter-spacing: -2px;
+
+  @media (min-width: 1025px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+  }
 `;
 
 const renderTextWithLineBreaks = (text) => {

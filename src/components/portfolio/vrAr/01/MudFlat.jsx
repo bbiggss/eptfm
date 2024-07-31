@@ -9,6 +9,7 @@ import ProjectImg from '../../common/ProjectImg';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import CustomText from '../../common/CustomText';
+import CustomTextBox from '../../common/CustomTextBox';
 
 const MudFlatBox = styled.div`
   @media (min-width: 1025px) {
@@ -51,7 +52,7 @@ const MudFlatBox = styled.div`
 
       margin-top: 160px;
       margin-bottom: 160px;
-      .centerAlignment img {
+      .watchImgBundle img {
         margin: 80px 0;
       }
       .title {
@@ -139,35 +140,48 @@ const MudFlatBox = styled.div`
       }
     }
     .watchContainer {
-      padding: 100px 0;
+      margin-top: 69px;
+      margin-bottom: 91px;
 
-      margin-top: 160px;
-      margin-bottom: 160px;
-      .centerAlignment img {
-        margin: 80px 0;
+      padding: 21px 0;
+
+      .watchImgBundle {
+        margin-top: 25.34px;
+        margin-bottom: 34px;
+        text-align: center;
+        img {
+          width: 105.32px;
+        }
       }
       .title {
         color: #000000;
-        font-size: 50px;
+        font-size: 20px;
         line-height: auto;
         letter-spacing: -2%;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         text-align: center;
       }
+
+      .textCenter {
+        font-size: 15px;
+      }
     }
     .gridContainer {
-      padding-top: 160px;
+      padding-top: 16px;
       padding-bottom: 160px;
       margin-bottom: 160px;
       ul {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(3, 400px);
-        gap: 0px 30px;
+        grid-template-columns: repeat(3, 100px);
+        gap: 0px 7.5px;
 
         li {
           list-style: none;
           padding-bottom: 60px;
+          img {
+            width: 100px;
+          }
         }
       }
       .customText {
@@ -218,7 +232,7 @@ const MudFlat = () => {
       </div>
       <div className="fullScreen watchContainer EDFAFF">
         <p className="title NanumSquareEB">시계형 조작부</p>
-        <div className="centerAlignment">
+        <div className="watchImgBundle">
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png`}
           />
@@ -238,31 +252,55 @@ const MudFlat = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/06_mulsigye.png`}
           />
         </div>
-        <TextCenter
+        <div className="flexCenter">
+          <CustomTextBox
+            $center
+            text={
+              '시계형 조작부를 통해 바다 모형의 밀물과 썰물을 변화시켜\n시간이 흐름에 따라 바다와 갯벌 환경이 변화하는 모습을 이해할 수 있어요.'
+            }
+          />
+          {/* <TextCenter
           text={
             '시계형 조작부를 통해 바다 모형의 밀물과 썰물을 변화시켜\n시간이 흐름에 따라 바다와 갯벌 환경이 변화하는 모습을 이해할 수 있어요.'
           }
-        />
+        /> */}
+        </div>
       </div>
       <WidthOneContent>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`}
         />
-        <TextCenter
+        <div className="flexCenter">
+          <CustomTextBox
+            $center
+            text={
+              '우리팀은 학습자들이 ‘갯벌은 어떤 곳일까?’ 콘텐츠를 통해\n밀물과 썰물의 변화, 갯벌의 생태계, 환경 정화 기능 등 갯벌의 다양한 측면을\n자연스럽게 학습할 수 있도록 하기 위해 많은 노력을 기울였어요.'
+            }
+          />
+        </div>
+        {/* <TextCenter
           text={
             '우리팀은 학습자들이 ‘갯벌은 어떤 곳일까?’ 콘텐츠를 통해\n밀물과 썰물의 변화, 갯벌의 생태계, 환경 정화 기능 등 갯벌의 다양한 측면을\n자연스럽게 학습할 수 있도록 하기 위해 많은 노력을 기울였어요.'
           }
-        />
+        /> */}
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`}
         />
-        <TextCenter
+        <div className="flexCenter">
+          <CustomTextBox
+            $center
+            text={
+              '뿐만 아니라, 갯벌 체험에서 꼭 주의해야 할 사항들도\n학습자들이 기억할 수 있도록 안전 유의 사항의 내용을 넣었죠.'
+            }
+          />
+        </div>
+        {/* <TextCenter
           text={
             '뿐만 아니라, 갯벌 체험에서 꼭 주의해야 할 사항들도\n학습자들이 기억할 수 있도록 안전 유의 사항의 내용을 넣었죠.'
           }
-        />
+        /> */}
       </WidthOneContent>
       <WidthOneContent>
         <ProjectImg
@@ -339,7 +377,7 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent style={{ paddingBottom: '190px' }}>
+      <WidthOneContent $customPaddingBottom>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`}
         />
@@ -349,7 +387,12 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
-      <WidthOneContent style={{ paddingBottom: '200px' }}>
+
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`}
+        alt=""
+      />
+      {/* <WidthOneContent $last>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`}
         />
@@ -358,7 +401,14 @@ const MudFlat = () => {
             '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
           }
         />
-      </WidthOneContent>
+      </WidthOneContent> */}
+      <br />
+      <a href="https://brunch.co.kr/@uxdaysseoul/62">브레드크럼6가지 중요한 측면</a>
+      <br />
+      <a href="https://blog.logrocket.com/ux-design/designing-mobile-breadcrumbs/">
+        Designing mobile breadcrumbs for smaller screens
+      </a>
+
       <FixedButton />
     </MudFlatBox>
   );

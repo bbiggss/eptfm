@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const headerHeightDesktop = '100px';
 const headerHeightTablet = '147px';
-const headerHeightMobile = '83px';
+const headerHeightMobile = '60px';
 
 export const HeaderSpacer = styled.div`
   @media (min-width: 1025px) {
@@ -138,6 +138,7 @@ export const HeaderBox = styled.div`
 
   /* 태블릿 (768px ~ 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {
+    height: ${headerHeightTablet};
     background-color: white;
     #headerContainer {
       position: relative;
@@ -169,11 +170,13 @@ export const HeaderBox = styled.div`
   /* 모바일 (0 ~ 767px) */
   @media (max-width: 767px) {
     background-color: white;
+    height: ${headerHeightMobile};
     #headerContainer {
       /* background-color: yellow; */
-      position: relative;
+      /* position: relative; */
       width: 100%;
-      margin: 32px;
+
+      margin-left: 30px;
 
       #logoImg {
         width: 82px;
@@ -182,8 +185,11 @@ export const HeaderBox = styled.div`
       #dropDownImg {
         position: absolute;
         right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         width: 24px;
         height: 24px;
+        margin-right: 30px;
       }
       ul {
         display: none;
