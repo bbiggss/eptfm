@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PortfolioListBox } from '../../../assets/styles/portfolio/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
-import FixedButton from '../../common/button/FixedButton';
 import Breadcrumb from '../../common/breadcrumb/Breadcrumb';
 
 // import { testImg, listButton, backButton } from '../../assets/images';
@@ -215,7 +214,6 @@ const PortfolioList = (data) => {
               <PortfolioLists data={item} key={index} index={index} />
             ))}
         </ul>
-        <FixedButton />
       </PortfolioListBox>
     </>
   );

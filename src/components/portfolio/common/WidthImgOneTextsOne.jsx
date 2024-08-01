@@ -5,7 +5,11 @@ const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
   display: flex;
   text-align: left;
-  padding-bottom: 160px;
+  padding-bottom: ${(props) => {
+    if (props.$last) return '200px';
+    return '160px';
+  }};
+
   .texts {
     /* max-width: 550px; */
     width: 50%;
@@ -20,8 +24,6 @@ const StyledWidthImgOneTextsOne = styled.div`
     &.positionRight {
       justify-content: flex-end;
     }
-  }
-  .projectImg {
   }
   &.firstChild {
     padding-top: 200px;
@@ -40,8 +42,12 @@ const StyledWidthImgOneTextsOne = styled.div`
   }
 `;
 
-const WidthImgOneTextsOne = ({ children, style }) => {
-  return <StyledWidthImgOneTextsOne style={style}>{children}</StyledWidthImgOneTextsOne>;
+const WidthImgOneTextsOne = ({ children, style, $last }) => {
+  return (
+    <StyledWidthImgOneTextsOne style={style} $last={$last}>
+      {children}
+    </StyledWidthImgOneTextsOne>
+  );
 };
 
 export default WidthImgOneTextsOne;

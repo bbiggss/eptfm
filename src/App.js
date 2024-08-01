@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
-import Loading from './components/common/loading/Loading';
+// import Loading from './components/common/loading/Loading';
 // Vr/Ar
 import MudFlat from './components/portfolio/vrAr/01/MudFlat';
 import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
@@ -43,22 +43,26 @@ import InformationDisclosure from './components/portfolio/eLearning/05/Informati
 import ChemicalSafety from './components/portfolio/eLearning/06/ChemicalSafety';
 import EastAsia from './components/portfolio/eLearning/07/EastAsia';
 import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
+import FixedButton from './components/common/button/FixedButton';
+import PortfolioListModal from './components/common/modal/portfolioList/PortfolioListModal';
 
 function App() {
   const location = useLocation();
 
   const [modalStatus, setModalStatus] = useState(false);
+  const [portfolioListModalStatus, setPortfolioListModalStatus] = useState(false);
+
   const [isDesktopScreen, setIsDesktopScreen] = useState(
     window.matchMedia('(min-width: 1025px)').matches
   );
 
   const [headerClass, setHeaderClass] = useState('transparent');
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
   // let initialPageName = location.pathname.split('/')[1];
   const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
-    setIsLoading(true);
+    // setIsLoading(true);
     const pageName = location.pathname.split('/');
     if (pageName[1] === '') {
       setActiveLink('');
@@ -97,9 +101,9 @@ function App() {
       setHeaderClass('colored');
     }
     // 로딩 완료 후 로딩 상태를 비활성화합니다.
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
+    // const handleLoad = () => {
+    //   setIsLoading(false);
+    // };
     // const timer = setTimeout(handleLoad, 500);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -115,6 +119,9 @@ function App() {
       <ScrollToTop />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
+      {portfolioListModalStatus && (
+        <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />
+      )}
 
       {/* PC해상도&홈화면일때 */}
       {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
@@ -224,9 +231,23 @@ function App() {
           path="/contactUs"
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
         />
+        <Route
+          path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이"
+          element={<ParentingGuide />}
+        />
 
         <Route path="*" element={<BlankPage />} />
       </Routes>
+      {location.pathname === '/' ? (
+        ''
+      ) : (
+        <>
+          <FixedButton
+            portfolioListModalStatus={portfolioListModalStatus}
+            setPortfolioListModalStatus={setPortfolioListModalStatus}
+          />
+        </>
+      )}
       <Footer />
     </div>
   );

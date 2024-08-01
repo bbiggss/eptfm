@@ -1,28 +1,34 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
+import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
+import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 
 const WaterTemperatureSalinityExplorationBox = styled.div`
   .mainImgContainer {
-    margin-bottom: 89px;
-    .medium {
-      position: relative;
-    }
+    margin-bottom: 200px;
     .rectangular {
       position: absolute;
       right: 0;
-      width: 660px;
-      height: 580px;
-      background-color: rgba(15, 52, 79, 0.8);
+      bottom: -19px;
+      margin-right: 259px;
+      /* background-color: rgba(15, 52, 79, 0.8); */
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .PortfolioIntroductionBox {
+        .title,
+        .subTexts {
+          color: #1e4f91;
+        }
+      }
     }
   }
   .right {
@@ -42,25 +48,34 @@ const WaterTemperatureSalinityExplorationBox = styled.div`
 const WaterTemperatureSalinityExploration = () => {
   return (
     <WaterTemperatureSalinityExplorationBox>
-      <Breadcrumb />
-      <PortfolioTitle
-        className="centeredContentWithMarginBottom"
-        organization={'한국교육학술정보원'}
-        field={'VR'}
-        title={'바닷속 생물 채집과 수온, 염분 탐사'}
-      />
-      <div className="fullScreen mainImgContainer">
-        <div className="mediumScreen medium">
-          <div className="rectangular">
-            <div className="mainTexts">
-              <PortfolioIntroduction
-                title={'물고기와 함께 떠나는 바다 탐험! '}
-                description={
-                  '동해, 홍해, 북극해의 수온과 염분을 직접 측정하고,\n다양한 해양 생물을 채집해보세요.\n과학적 발견의 즐거움을 만끽하며 바다의 비밀을 \n파헤쳐보세요!'
-                }
-              />
-            </div>
-          </div>
+      <div className="fullScreen mainImgContainer relative">
+        <Breadcrumb font={{ color: '#FFFFFF' }} style={{ position: 'absolute' }} />
+
+        <PortfolioTitleWrap
+          style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            marginTop: '180px',
+          }}
+        >
+          <PortfolioOrganization
+            style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }}
+            organization={'한국교육학술정보원'}
+          />
+          <PortfolioFieldTitle
+            style={{ color: '#44EFF3', whiteSpace: 'nowrap' }}
+            field={'VR'}
+            title={'바닷속 생물 채집과 수온, 염분 탐사'}
+          />
+        </PortfolioTitleWrap>
+        <div className="rectangular">
+          <PortfolioIntroduction
+            title={'물고기와 함께 떠나는 바다 탐험! '}
+            description={
+              '동해, 홍해, 북극해의 수온과 염분을 직접 측정하고,\n다양한 해양 생물을 채집해보세요.\n과학적 발견의 즐거움을 만끽하며 바다의 비밀을 \n파헤쳐보세요!'
+            }
+          />
         </div>
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/main.png`}

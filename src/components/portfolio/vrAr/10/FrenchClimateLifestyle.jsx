@@ -47,6 +47,22 @@ const FrenchClimateLifestyleBox = styled.div`
       }
     }
   }
+
+  .group1_Wrapper {
+    margin-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+    .group1_2_img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .TextWrapper {
+    padding: 160px 0;
+  }
 `;
 
 const FrenchClimateLifestyle = () => {
@@ -100,8 +116,7 @@ const FrenchClimateLifestyle = () => {
           </div>
         </div>
       </div>
-
-      <div className="paddingTopBottom160">
+      <div className="TextWrapper">
         <TextCenter
           text={
             "'모네의 작품으로 알아보는 프랑스 기후와 주민생활'을 만들면서, 우리 팀은 모네의 화폭 속으로 여행을 떠났습니다.\n아, 그림 속 풍경을 보다가 커피를 엎지르는 일도 있었죠. 여러분도 모네의 작품을 통해 프랑스의 기후를 즐겨보세요!"
@@ -109,13 +124,18 @@ const FrenchClimateLifestyle = () => {
         />
       </div>
 
-      <div className="fullScreen paddingBottom160 hidden">
+      <div className="group1_Wrapper fullScreen">
         <img
+          className="group1_2_img"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group1_2.png`}
+          alt=""
+        />
+        <img
+          className="group1_1_img"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group1_1.png`}
           alt=""
         />
       </div>
-
       <WidthOneContent>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_1.png`}
@@ -166,14 +186,6 @@ const FrenchClimateLifestyle = () => {
           }
         />
       </WidthOneContent>
-
-      <div className="fullScreen paddingBottom160 hidden">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group1_2.png`}
-          alt=""
-        />
-      </div>
-
       <WidthOneContent>
         <ProjectImg
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/group2_6.png`}

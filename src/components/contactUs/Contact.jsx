@@ -2,7 +2,6 @@ import React from 'react';
 import { ContactUsBox } from '../../assets/styles/contactUs/contactUs.styled';
 import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
-import FixedButton from '../common/button/FixedButton';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
   return (
@@ -83,7 +82,6 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           </div>
         </div>
       </div>
-      <FixedButton />
     </ContactUsBox>
   );
 };

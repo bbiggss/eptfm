@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
 const BtnBox = styled.div`
@@ -41,14 +42,20 @@ const BtnBox = styled.div`
   }
 `;
 
-const FixedButton = () => {
+const FixedButton = ({ portfolioListModalStatus, setPortfolioListModalStatus }) => {
   const [topBtnView, setTopBtnView] = useState('');
   //   const nav = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    setTopBtnView('displayNone');
+  }, [location]);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
+
       const documentHeight = document.documentElement.scrollHeight;
 
       if (window.innerWidth <= 767) {
@@ -77,8 +84,9 @@ const FixedButton = () => {
   }, []);
 
   const listBtn = () => {
-    alert('리스트팝업');
+    setPortfolioListModalStatus(true);
   };
+
   return (
     <BtnBox>
       <div className={`btnBox`}>
