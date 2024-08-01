@@ -186,12 +186,12 @@ const PortfolioList = (data) => {
       updateListTitle('R&D');
       const portfolioItems2 = [
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&d/list3_img1.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img1.png`,
           pfItemBigTitle: '환경산업기술원',
           pfItemSmallTitle: '환경표지인증',
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&d/list3_img2.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img2.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교실혁명 강의교안',
         },

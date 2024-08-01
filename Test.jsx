@@ -20,12 +20,24 @@ const Bimetal = () => {
       <BimetalBox>
         <Breadcrumb />
 
-        <PortfolioTitle
-          className="centeredContentWithMarginBottom"
-          organization={'한국교육학술정보원'}
-          // field={'VR'}
-          title={'교사가 이끄는 교실혁명'}
-        />
+        <PortfolioTitleWrap
+          style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            marginTop: '180px',
+          }}
+        >
+          <PortfolioOrganization
+            style={{ color: '#292929', fontFamily: 'NanumSquareB' }}
+            organization={'한국교육학술정보원'}
+          />
+          <PortfolioFieldTitle
+            style={{ color: '#292929', whiteSpace: 'nowrap' }}
+            field={'VR'}
+            title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
+          />
+        </PortfolioTitleWrap>
 
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}

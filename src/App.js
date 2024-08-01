@@ -12,7 +12,10 @@ import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
+import FixedButton from './components/common/button/FixedButton';
+import PortfolioListModal from './components/common/modal/portfolioList/PortfolioListModal';
 // import Loading from './components/common/loading/Loading';
+
 // Vr/Ar
 import MudFlat from './components/portfolio/vrAr/01/MudFlat';
 import EcosystemRestoration from './components/portfolio/vrAr/02/EcosystemRestoration';
@@ -43,8 +46,9 @@ import InformationDisclosure from './components/portfolio/eLearning/05/Informati
 import ChemicalSafety from './components/portfolio/eLearning/06/ChemicalSafety';
 import EastAsia from './components/portfolio/eLearning/07/EastAsia';
 import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
-import FixedButton from './components/common/button/FixedButton';
-import PortfolioListModal from './components/common/modal/portfolioList/PortfolioListModal';
+// R&D
+import EnvironmentalLabelingCertification from './components/portfolio/RnD/01/EnvironmentalLabelingCertification';
+import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/ClassroomRevolutionLessonPlans';
 
 function App() {
   const location = useLocation();
@@ -228,12 +232,17 @@ function App() {
         {/* R&D */}
         {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
         <Route
-          path="/contactUs"
-          element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
+          path="/portfolio/R&D/환경표지인증"
+          element={<EnvironmentalLabelingCertification />}
         />
         <Route
-          path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이"
-          element={<ParentingGuide />}
+          path="/portfolio/R&D/교실혁명 강의교안"
+          element={<ClassroomRevolutionLessonPlans />}
+        />
+
+        <Route
+          path="/contactUs"
+          element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
         />
 
         <Route path="*" element={<BlankPage />} />
