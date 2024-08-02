@@ -246,8 +246,8 @@ function App() {
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
         />
 
-        {/* <Route path="*" element={<BlankPage />} /> */}
-        <Route path="*" element={<YouTubePlayer />} />
+        <Route path="*" element={<BlankPage />} />
+        {/* <Route path="*" element={<YouTubePlayer />} /> */}
       </Routes>
       {location.pathname === '/' ? (
         ''
