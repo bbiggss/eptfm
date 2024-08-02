@@ -121,7 +121,7 @@ const CyberSocializingOne = () => {
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <ProjectDescription
-            text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
+            text={`이 콘텐츠는 진로와 직업 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방 하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`}
           />
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/4.png`}
@@ -138,12 +138,12 @@ const CyberSocializingOne = () => {
           />
           <ProjectDescription
             textPosition={'right'}
-            text={`콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`}
+            text={`학생들이 자신의 미래를 계획하고,\n적극적으로 진로를 탐색할 수 있는 계기를\n제공해요.`}
           />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <ProjectDescription
-            text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
+            text={`학생들이 스스로를 이해하고, 다양한 직업\n세계를 탐색할 수 있고 미래를 준비하는데\n실질적인 도움을 받을 수 있어요.`}
           />
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/6.png`}
@@ -155,7 +155,7 @@ const CyberSocializingOne = () => {
           />
           <ProjectDescription
             textPosition={'right'}
-            text={`콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`}
+            text={`이 콘텐츠는 한문 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방 하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`}
           />
           <img
             className="circle3"
@@ -165,7 +165,7 @@ const CyberSocializingOne = () => {
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <ProjectDescription
-            text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
+            text={`한문 교과와 연계된 부분에서는 전통적인 도\n덕과 윤리적 가치에 배울 수 있어요.`}
           />
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/8.png`}
@@ -182,7 +182,7 @@ const CyberSocializingOne = () => {
           />
           <ProjectDescription
             textPosition={'right'}
-            text={`콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`}
+            text={`고사성어, 명언, 역사적 일화 등을 통해 배운\n 전통적 가치를 현대 온라인 윤리와 연계하여\n 학습할 수 있어요.`}
           />
         </WidthImgOneTextsOne>
       </div>

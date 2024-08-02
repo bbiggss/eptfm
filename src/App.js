@@ -49,6 +49,7 @@ import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
 // R&D
 import EnvironmentalLabelingCertification from './components/portfolio/RnD/01/EnvironmentalLabelingCertification';
 import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/ClassroomRevolutionLessonPlans';
+import YouTubePlayer from './YouTubePlayer';
 
 function App() {
   const location = useLocation();
@@ -245,7 +246,8 @@ function App() {
           element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
         />
 
-        <Route path="*" element={<BlankPage />} />
+        {/* <Route path="*" element={<BlankPage />} /> */}
+        <Route path="*" element={<YouTubePlayer />} />
       </Routes>
       {location.pathname === '/' ? (
         ''

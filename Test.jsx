@@ -8,8 +8,6 @@ const renderTextWithLineBreaks = (text) => {
 };
 
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitle from '../../common/PortfolioTitle';
-import FixedButton from '../../../common/button/FixedButton';
 import styled from 'styled-components';
 
 const TestBox = styled.div``;

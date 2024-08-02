@@ -85,6 +85,10 @@ const EastAsiaBox = styled.div`
     bottom: -158px;
     left: 96px;
   }
+
+  .projectImg {
+    margin-bottom: 60px;
+  }
 `;
 
 const EastAsia = () => {
@@ -107,9 +111,9 @@ const EastAsia = () => {
       </div>
 
       <PortfolioIntroduction
-        title={'AI 디지털교과서의 새로운 시대가 열립니다!'}
+        title={'과거로의 여행에서 배운 역사, 동아시아의 문화를 살펴봐요!'}
         description={
-          '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+          '한국, 중국, 일본의 역사를 통해 동아시아 지역의 문화와\n상호작용을 탐구하여 깊이 있는 역사적 이해를 도모해볼까요?'
         }
       />
 
@@ -131,7 +135,7 @@ const EastAsia = () => {
           <TextCenter
             className="customText"
             text={
-              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+              '학습자는 동아시아 원격연수를 통해 동아시아 지역의 역사적 흐름과 \n상호작용을 이해할 수 있어요. '
             }
           />
         </ImageTextBlock>
@@ -147,7 +151,7 @@ const EastAsia = () => {
           <TextCenter
             className="customText"
             text={
-              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+              '동아시아의 나라들이 어떻게 상호 영향을 주고받으며 발전해왔는지 탐구해볼까요?\n동아시아의 고대 문명 부터 현대에 이르기까지의 주요 사건과 문화적 교류\n그리고 경제적 변화 등을 포괄적으로 확인해보세요!'
             }
           />
         </ImageTextBlock>
@@ -163,7 +167,7 @@ const EastAsia = () => {
           <TextCenter
             className="customText"
             text={
-              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+              '각국의 초기 역사와 문명 형성, 주요 왕조와 그들의 업적, 문화와 사상\n그리고 제국주의와 서양 열강의 진출, 동아시아 각국의 근대화 과정을 살펴볼 수 있어요.'
             }
           />
         </ImageTextBlock>
@@ -176,7 +180,7 @@ const EastAsia = () => {
         <TextCenter
           className="customText customText2"
           text={
-            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            '동아시아의 주요 역사적 사건과 인물을 다룬 강의와 애니메이션을 통해\n시청각적으로 학습할 수 있어요.'
           }
         />
 
@@ -194,7 +198,7 @@ const EastAsia = () => {
           <TextCenter
             className="customText customText2"
             text={
-              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+              '고대 문헌, 지도, 유물 사진 등 다양한 디지털 자료를 활용하여\n구체적인 역사적 사실과 맥락을 시각적으로 이해할 수 있답니다!'
             }
           />
         </div>
@@ -206,7 +210,7 @@ const EastAsia = () => {
         <TextCenter
           className="customText customText2"
           text={
-            '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+            '각 테마별로 퀴즈와 과제를 통해 학습 내용을 복습하고\n학습자 스스로의 이해도를 점검할 수 있어요.'
           }
         />
 
@@ -216,7 +220,7 @@ const EastAsia = () => {
           />
           <TextCenter
             text={
-              '이 콘텐츠는 AI 디지털교과서의 도입과 사용 방법을 설명하며,\n교사가 학생들에게 제공할 수 있는 혁신적인 학습 경험을 탐구합니다.'
+              '‘동아시아 원격연수’ 콘텐츠를 통해 동아시아의 역사를 깊이 이해하고\n현재와 미래의 동아시아 관계를 고찰하는 능력을 함양해보아요!'
             }
           />
         </ImageTextBlock>

@@ -260,12 +260,12 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
             <Item
               name={'친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+              link={'/portfolio/R&D/환경표지인증'}
             />
             <Item
               name={'교실혁명 강의교안'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+              link={'/portfolio/R&D/교실혁명 강의교안'}
             />
           </ul>
         </div>
