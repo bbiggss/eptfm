@@ -25,8 +25,12 @@ const Footer = () => {
         <div className="copyright">ⓒ EPLATFORM ALL RIGHTS RESERVED.</div>
 
         <div className="socialMediaLink">
-          <img src={`${process.env.PUBLIC_URL}/assets/images/common/youtube.png`} alt="" />
-          <img src={`${process.env.PUBLIC_URL}/assets/images/common/insta.png`} alt="" />
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            <img src={`${process.env.PUBLIC_URL}/assets/images/common/youtube.png`} alt="YouTube" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <img src={`${process.env.PUBLIC_URL}/assets/images/common/insta.png`} alt="" />
+          </a>
         </div>
       </div>
     </FooterBox>
