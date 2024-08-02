@@ -2,49 +2,33 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-const BtnBox = styled.div`
-  .btnBox {
-    position: fixed;
-    bottom: 0;
-    img {
-      cursor: pointer;
-      border-radius: 50%;
-    }
+const StyledUpButton = styled.div`
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  img {
+    cursor: pointer;
+    border-radius: 100%;
   }
 
   @media (min-width: 1025px) {
-    .btnBox {
-      right: 72px;
-
-      img:last-child {
-        margin-top: 24px;
-        margin-bottom: 60px;
-      }
-    }
+    margin-right: 80px;
+    margin-bottom: 60px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
   }
   @media (max-width: 767px) {
+    margin-right: 29.73px;
+    margin-bottom: 165px;
+
     img {
-      width: 35px;
-    }
-    .btnBox {
-      right: 14.73px;
-
-      img:first-child {
-        margin-bottom: 165px;
-      }
-
-      img:last-child {
-        display: none;
-      }
+      width: 32px;
     }
   }
 `;
 
-const FixedButton = ({ portfolioListModalStatus, setPortfolioListModalStatus }) => {
+const UpButton = () => {
   const [topBtnView, setTopBtnView] = useState('');
-  //   const nav = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
@@ -83,29 +67,17 @@ const FixedButton = ({ portfolioListModalStatus, setPortfolioListModalStatus }) 
     };
   }, []);
 
-  const listBtn = () => {
-    setPortfolioListModalStatus(true);
-  };
-
   return (
-    <BtnBox>
-      <div className={`btnBox`}>
-        <img
-          className={topBtnView}
-          // onClick={() => nav(-1)}
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
-          alt=""
-        />
-        <br />
-        <img
-          onClick={listBtn}
-          src={`${process.env.PUBLIC_URL}/assets/images/common/btn_p_list.png`}
-          alt=""
-        />
-      </div>
-    </BtnBox>
+    <StyledUpButton>
+      <img
+        className={topBtnView}
+        // onClick={() => nav(-1)}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
+        alt=""
+      />
+    </StyledUpButton>
   );
 };
 
-export default FixedButton;
+export default UpButton;

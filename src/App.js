@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
-import FixedButton from './components/common/button/FixedButton';
+import UpButton from './components/common/button/UpButton';
 import PortfolioListModal from './components/common/modal/portfolioList/PortfolioListModal';
 // import Loading from './components/common/loading/Loading';
 
@@ -49,6 +49,8 @@ import ParentingGuide from './components/portfolio/eLearning/08/ParentingGuide';
 // R&D
 import EnvironmentalLabelingCertification from './components/portfolio/RnD/01/EnvironmentalLabelingCertification';
 import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/ClassroomRevolutionLessonPlans';
+
+import PortfolioListButton from './components/common/button/PortfolioListButton';
 
 function App() {
   const location = useLocation();
@@ -119,19 +121,16 @@ function App() {
   return (
     <div className="App">
       {/* {isLoading ? <Loading /> : <></>} */}
-
       <ScrollToTop />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
       {portfolioListModalStatus && (
         <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />
       )}
-
       {/* PC해상도&홈화면일때 */}
       {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
       <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
       {/* <Header headerClass={headerClass} /> */}
-
       {location.pathname === '/' ? <Video /> : ''}
       <Routes>
         <Route path="/" element={<Main />} />
@@ -247,16 +246,15 @@ function App() {
 
         <Route path="*" element={<BlankPage />} />
       </Routes>
-      {location.pathname === '/' ? (
-        ''
-      ) : (
-        <>
-          <FixedButton
-            portfolioListModalStatus={portfolioListModalStatus}
-            setPortfolioListModalStatus={setPortfolioListModalStatus}
-          />
-        </>
+
+      {activeLink === 'portfolio' && (
+        <PortfolioListButton
+          portfolioListModalStatus={portfolioListModalStatus}
+          setPortfolioListModalStatus={setPortfolioListModalStatus}
+        />
       )}
+
+      <UpButton />
       <Footer />
     </div>
   );

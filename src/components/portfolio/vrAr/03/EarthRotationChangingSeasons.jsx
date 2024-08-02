@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectImg from '../../common/ProjectImg';
-import FixedButton from '../../../common/button/FixedButton';
+import FixedButton from '../../../common/button/UpButton';
 import ProjectDescription from '../../common/ProjectDescription';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';

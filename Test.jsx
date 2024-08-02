@@ -110,3 +110,10 @@ import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganiza
     title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
   />
 </PortfolioTitleWrap>;
+WidthOneContent;
+ProjectImg;
+TextCenter;
+
+ProjectContainer;
+ProjectImg;
+ProjectDescription;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterBox } from '../../../assets/styles/common/footer.styled';
+import SocialMediaLink from './SocialMediaLink';
 
 const Footer = () => {
   return (
@@ -24,13 +25,15 @@ const Footer = () => {
         </div>
         <div className="copyright">ⓒ EPLATFORM ALL RIGHTS RESERVED.</div>
 
-        <div className="socialMediaLink">
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/common/youtube.png`} alt="YouTube" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/common/insta.png`} alt="" />
-          </a>
+        <div className="socialMediaLinkWrapper">
+          <SocialMediaLink
+            href={'https://www.youtube.com/'}
+            src={`${process.env.PUBLIC_URL}/assets/images/common/youtube.png`}
+          />
+          <SocialMediaLink
+            href={'https://www.instagram.com/'}
+            src={`${process.env.PUBLIC_URL}/assets/images/common/insta.png`}
+          />
         </div>
       </div>
     </FooterBox>

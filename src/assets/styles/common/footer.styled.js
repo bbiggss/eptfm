@@ -34,18 +34,51 @@ export const FooterBox = styled.div`
     .copyright {
       font-size: 20px;
     }
-    .socialMediaLink {
-      display: inline;
+    .socialMediaLinkWrapper {
+      a:first-child {
+        margin-right: 18px;
+      }
       position: absolute;
       right: 0;
       top: 0;
       margin-top: 60px;
-      img:first-child {
-        margin-right: 18px;
-      }
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    background-color: yellow;
+    .footerContainer {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+    }
+    #footerImg {
+      width: 133px;
+      height: 18px;
+      margin-top: 80px;
+      margin-bottom: 36px;
+    }
+    #info {
+      span {
+        font-size: 20px;
+        letter-spacing: -0.02em; // 자간
+        line-height: 36px; // 줄간
+      }
+      .address {
+        margin-bottom: 36px;
+      }
+    }
+    .copyright {
+      font-size: 20px;
+    }
+    .socialMediaLinkWrapper {
+      a:first-child {
+        margin-right: 18px;
+      }
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 60px;
+    }
   }
   @media (max-width: 767px) {
     height: 135px;
@@ -72,7 +105,7 @@ export const FooterBox = styled.div`
         }
       }
     }
-    .socialMediaLink {
+    .socialMediaLinkWrapper {
       display: inline;
       position: absolute;
       right: 0;
