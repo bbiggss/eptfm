@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HeaderBox } from '../../../assets/styles/common/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';

@@ -4,7 +4,7 @@ import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
-import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
+// import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
