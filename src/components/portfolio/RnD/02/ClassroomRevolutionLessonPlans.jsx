@@ -66,6 +66,11 @@ const StyledClassroomRevolutionLessonPlans = styled.div`
       top: -50px;
     }
   }
+
+  .twoImgWrapper img {
+    border: 1px solid #ededed;
+    border-radius: 30px;
+  }
 `;
 
 const ClassroomRevolutionLessonPlans = () => {

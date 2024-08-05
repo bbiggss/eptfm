@@ -45,23 +45,6 @@ const Bimetal = () => {
         <FixedButton />
       </BimetalBox>
       {/* 사이드 이미지, 텍스트 WidthImg1Texts1 ProjectImg ProjectDescription */}
-      <WidthImg1Texts1>
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/2.png`}
-        />
-        <ProjectDescription
-          textPosition={'right'}
-          text={`콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`}
-        />
-      </WidthImg1Texts1>
-      <WidthImg1Texts1 className="firstChild">
-        <ProjectDescription
-          text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
-        />
-        <ProjectImg
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01/group1/1.png`}
-        />
-      </WidthImg1Texts1>
       WidthOneContent ProjectImg TextCenter
       <WidthOneContent className="firstChild">
         <ProjectImg

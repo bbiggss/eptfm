@@ -34,7 +34,7 @@ const StyledCyberSocializingOne = styled.div`
     top: 229px;
   }
   .circle2 {
-    right: -275px;
+    right: -305px;
     top: -100px;
   }
   .yellowWordBalloon {
@@ -42,7 +42,8 @@ const StyledCyberSocializingOne = styled.div`
     top: 178px;
   }
   .circle3 {
-    right: 0;
+    right: -330px;
+    top: -160px;
   }
   .heart {
     left: -330px;
@@ -83,7 +84,7 @@ const CyberSocializingOne = () => {
           }
         />
 
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <img
             className="circle1"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/circle1.png`}
@@ -97,7 +98,7 @@ const CyberSocializingOne = () => {
             text={`이 콘텐츠는 기술·가정 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`자신의 가치와 소중함, 그리고 \n긍정적인 자아존중감을 자세히 이해하고\n그 중요성을 인식할 수 있어요.`}
           />
@@ -105,7 +106,7 @@ const CyberSocializingOne = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/2.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/3.png`}
           />
@@ -119,7 +120,7 @@ const CyberSocializingOne = () => {
             alt=""
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`이 콘텐츠는 진로와 직업 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방 하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`}
           />
@@ -127,7 +128,7 @@ const CyberSocializingOne = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/4.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <img
             className="yellowWordBalloon"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/yellowWordBalloon.png`}
@@ -141,7 +142,7 @@ const CyberSocializingOne = () => {
             text={`학생들이 자신의 미래를 계획하고,\n적극적으로 진로를 탐색할 수 있는 계기를\n제공해요.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`학생들이 스스로를 이해하고, 다양한 직업\n세계를 탐색할 수 있고 미래를 준비하는데\n실질적인 도움을 받을 수 있어요.`}
           />
@@ -149,7 +150,7 @@ const CyberSocializingOne = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/6.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/7.png`}
           />
@@ -163,7 +164,7 @@ const CyberSocializingOne = () => {
             alt=""
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`한문 교과와 연계된 부분에서는 전통적인 도\n덕과 윤리적 가치에 배울 수 있어요.`}
           />
@@ -171,7 +172,7 @@ const CyberSocializingOne = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/8.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne style={{ paddingBottom: '200px' }}>
+        <WidthImgOneTextsOne pcPaddingBottom="200px">
           <img
             className="heart"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/heart.png`}

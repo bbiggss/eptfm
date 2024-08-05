@@ -40,11 +40,13 @@ const StyledEnvironmentalLabelingCertification = styled.div`
   .customLeftTemp {
     position: relative;
     left: -78px;
+    padding-bottom: 160px;
   }
   .customRight,
   .customLeft {
     padding-bottom: 160px;
-    width: 1344px;
+    /* width: 1344px; */
+    width: auto;
     height: 763px;
   }
   .customLeft {
@@ -57,6 +59,9 @@ const StyledEnvironmentalLabelingCertification = styled.div`
   }
 
   .threeImgs {
+    img {
+      border: 1px solid #ededed;
+    }
     img:nth-child(2) {
       /* margin: 10px; */
       margin-left: 48px;

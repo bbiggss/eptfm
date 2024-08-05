@@ -5,6 +5,10 @@ export const WidthOneContent = styled.div`
   text-align: center;
 
   @media (min-width: 1025px) {
+    padding-top: ${(props) => {
+      if (props.$first) return '160px';
+      return '0px';
+    }};
     padding-bottom: ${(props) => {
       if (props.$last) return '200px';
       if (props.$customPaddingBottom) return '190px';

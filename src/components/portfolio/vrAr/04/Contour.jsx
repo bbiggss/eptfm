@@ -85,7 +85,7 @@ const Contour = () => {
       </div>
 
       <div className="smallScreen">
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/1.png`}
           />
@@ -94,7 +94,7 @@ const Contour = () => {
             text={`우리팀은 실제 산의 등고선을 정밀하게 반영하기\n 위해 다양한 지형 데이터를 분석했어요.\n지형 데이터를 다루다 보니, 우리팀도\n산 전문가가 다 되었답니다!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`학습자는 평면 지도에 선을 긋는 간단한 \n작업으로 등고선의 개념을 배울 수 있어요.\n등고선의 신비한 세계를 같이 시작해볼까요?`}
           />
@@ -102,7 +102,7 @@ const Contour = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/2.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/3.png`}
           />
@@ -111,7 +111,7 @@ const Contour = () => {
             text={`평면 지도로 등고선의 개념을 익힌 후,\n증강현실(AR) 기술을 활용하여 등고선을\n자세히 살펴볼 수 있어요!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <ProjectDescription
             text={`학습자는 높이에 맞춰 등고선 색을 넣어 지형의\n 높낮이를 직관적으로 이해할 수 있어요.\n낮으면 낮을 수록 어떤 색을 칠해야 할까요?`}
           />
@@ -119,7 +119,7 @@ const Contour = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/4.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/5.png`}
           />
@@ -128,7 +128,7 @@ const Contour = () => {
             text={`버튼 하나로 눈앞에 펼쳐지는 그래프!\n실제 산의 모습을 반영한 그래프와 함께\n학습자는 등고선이 지형을 어떻게 나타내는지\n명확하게 이해할 수 있어요.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne $last>
+        <WidthImgOneTextsOne pcPaddingBottom="200px">
           <ProjectDescription
             text={`마지막으로, 재미있는 문제 풀이 시간!\n계곡과 능선, 고점과 저점, 완만함과 가파름을\n분별하는 여섯가지 문제를 통해 학습을\n복습하고 확인할 수 있어요!`}
           />

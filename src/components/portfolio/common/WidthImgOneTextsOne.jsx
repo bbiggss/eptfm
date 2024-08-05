@@ -5,13 +5,8 @@ const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
   display: flex;
   text-align: left;
-  padding-bottom: ${(props) => {
-    if (props.$last) return '200px';
-    return '160px';
-  }};
 
   .texts {
-    /* max-width: 550px; */
     width: 50%;
     display: flex;
     align-items: center;
@@ -25,26 +20,42 @@ const StyledWidthImgOneTextsOne = styled.div`
       justify-content: flex-end;
     }
   }
-  &.firstChild {
-    padding-top: 200px;
-  }
-  &.lastChild {
-    padding-bottom: 200px;
-  }
   @media (min-width: 1025px) {
+    padding-top: ${(props) => props.$pcPaddingTop};
+    padding-bottom: ${(props) => props.$pcPaddingBottom};
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    padding-top: ${(props) => props.$tabletPaddingTop};
+
     .projectImg {
       width: 50%;
     }
   }
   @media (max-width: 767px) {
+    padding-top: ${(props) => props.$mobilePaddingTop};
   }
 `;
 
-const WidthImgOneTextsOne = ({ children, style, $last }) => {
+const WidthImgOneTextsOne = ({
+  children,
+  style,
+  pcPaddingTop,
+  tabletPaddingTop,
+  mobilePaddingTop,
+  pcPaddingBottom,
+  tabletPaddingBottom,
+  mobilePaddingBottom,
+}) => {
   return (
-    <StyledWidthImgOneTextsOne style={style} $last={$last}>
+    <StyledWidthImgOneTextsOne
+      style={style}
+      $pcPaddingTop={pcPaddingTop}
+      $tabletPaddingTop={tabletPaddingTop}
+      $mobilePaddingTop={mobilePaddingTop}
+      $pcPaddingBottom={pcPaddingBottom}
+      $tabletPaddingBottom={tabletPaddingBottom}
+      $mobilePaddingBottom={mobilePaddingBottom}
+    >
       {children}
     </StyledWidthImgOneTextsOne>
   );

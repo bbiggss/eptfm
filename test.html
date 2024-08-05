@@ -1,181 +1,38 @@
-import styled from 'styled-components';
-
-// Styled component 정의
-export const WidthOneContent = styled.div`
-  position: relative;
-  text-align: center;
-  
-  // 기본 padding-bottom 값
-  padding-bottom: ${(props) => props.paddingBottom || '160px'};
-  
-  // last prop이 true일 경우 모바일, 태블릿, PC 해상도에 따라 다르게 스타일을 적용
-  ${(props) =>
-    props.last &&
-    `
-    @media (max-width: 480px) {
-      padding-bottom: ${props.mobilePaddingBottom || '50px'};
-    }
-    @media (min-width: 481px) and (max-width: 768px) {
-      padding-bottom: ${props.tabletPaddingBottom || '100px'};
-    }
-    @media (min-width: 769px) {
-      padding-bottom: ${props.pcPaddingBottom || '200px'};
-    }
-  `}
-
-  // 기본 클래스 스타일
-  .left {
-    position: absolute;
-    left: 0;
-    bottom: 510px;
-  }
-
-  .left2 {
-    position: absolute;
-    left: 79px;
-    bottom: -135px;
-  }
-
-  .left3 {
-    position: absolute;
-    left: 79px;
-    bottom: 88px;
-  }
-
-  .right {
-    position: absolute;
-    right: 0;
-    top: -209px;
-  }
-
-  .right2 {
-    position: absolute;
-    right: 0;
-    top: 101px;
-  }
-
-  .projectImg {
-    padding-bottom: 60px;
-  }
-`;
-
-// 사용 예
-const App = () => (
-  <div>
-    {/* 기본 padding-bottom 값 적용 */}
-    <WidthOneContent>
-      <div className="projectImg">Content</div>
-    </WidthOneContent>
-
-    {/* last prop이 true일 경우 모바일, 태블릿, PC 해상도에 따라 다른 padding-bottom 값 적용 */}
-    <WidthOneContent
-      last
-      mobilePaddingBottom="30px"
-      tabletPaddingBottom="80px"
-      pcPaddingBottom="150px"
-    >
-      <div className="projectImg">Content with last prop</div>
-    </WidthOneContent>
-  </div>
-);
-
-export default App;
------------------
-
-import styled from 'styled-components';
-import { css } from 'styled-components';
-
-// Styled component 정의
-const paddingStyles = (props) => {
-  if (props.last) {
-    return css`
-      @media (max-width: 480px) {
-        padding-bottom: ${props.mobilePaddingBottom || '50px'};
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image with Border Overlay</title>
+    <style>
+      .image-container {
+        position: relative;
+        display: inline-block;
       }
-      @media (min-width: 481px) and (max-width: 768px) {
-        padding-bottom: ${props.tabletPaddingBottom || '100px'};
+      .image-container img {
+        display: block;
+        width: 300px;
+        height: 300px;
       }
-      @media (min-width: 769px) {
-        padding-bottom: ${props.pcPaddingBottom || '200px'};
+      .border-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 10px solid black; /* 원하는 border 두께와 색상 설정 */
+        pointer-events: none; /* 클릭 이벤트가 이미지에 전달되도록 설정 */
+        box-sizing: border-box; /* 보더를 요소 크기에 포함 */
       }
-    `;
-  }
-  return css`
-    padding-bottom: ${props.paddingBottom || '160px'};
-  `;
-};
-
-export const WidthOneContent = styled.div`
-  position: relative;
-  text-align: center;
-  ${paddingStyles}
-  
-  .left {
-    position: absolute;
-    left: 0;
-    bottom: 510px;
-  }
-
-  .left2 {
-    position: absolute;
-    left: 79px;
-    bottom: -135px;
-  }
-
-  .left3 {
-    position: absolute;
-    left: 79px;
-    bottom: 88px;
-  }
-
-  .right {
-    position: absolute;
-    right: 0;
-    top: -209px;
-  }
-
-  .right2 {
-    position: absolute;
-    right: 0;
-    top: 101px;
-  }
-
-  .projectImg {
-    padding-bottom: 60px;
-  }
-`;
-
-// 사용 예
-const App = () => (
-  <div>
-    {/* 기본 padding-bottom 값 적용 */}
-    <WidthOneContent>
-      <div className="projectImg">Content</div>
-    </WidthOneContent>
-
-    {/* last prop이 true일 경우 모바일, 태블릿, PC 해상도에 따라 다른 padding-bottom 값 적용 */}
-    <WidthOneContent
-      last
-      mobilePaddingBottom="30px"
-      tabletPaddingBottom="80px"
-      pcPaddingBottom="150px"
-    >
-      <div className="projectImg">Content with last prop</div>
-    </WidthOneContent>
-  </div>
-);
-
-export default App;
-
-<!-- 
-vr/ar 01
-    .lastChild .projectImg {
-      padding-bottom: 36px;
-      background-color: black;
-    }
-
-    .subTexts {
-      font-size: 24px;
-      margin-top: 60px;
-    }
--->
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="./public/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/hero.png"
+        alt="Example Image"
+      />
+      <div class="border-overlay"></div>
+    </div>
+  </body>
+</html>
