@@ -13,7 +13,7 @@ const Footer = () => {
         />
         <div id="info">
           <div className="telFaxMail">
-            <span className="number">Tel: 02. 6949. 5622</span>
+            <span className="number">Tel : 02. 6949. 5622</span>
             <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
             <span className="number">Fax : 02. 6949. 5623</span>
             <span className="customSpan">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>

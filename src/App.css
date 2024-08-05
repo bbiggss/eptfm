@@ -115,6 +115,10 @@
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 영어 */
 @font-face {
   font-family: 'Roboto-Medium';

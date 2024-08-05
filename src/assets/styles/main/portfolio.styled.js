@@ -17,6 +17,7 @@ export const PortfolioBox = styled.div`
 
   /* 영어폰트 */
   .pfFieldTag {
+    position: relative;
     font-family: 'Roboto-Medium';
   }
   /* 한글폰트 */
@@ -63,7 +64,7 @@ export const PortfolioBox = styled.div`
 
         & #pc_portfolioText2 {
           font-family: 'NanumSquareR';
-          font-size: 40px;
+          font-size: 35px;
         }
       }
 
@@ -86,10 +87,18 @@ export const PortfolioBox = styled.div`
             color: #767676;
 
             font-size: 26px;
+
+            .arrow {
+              position: absolute;
+              right: 40px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
           }
           .pfFieldTag:hover {
             background-color: #48c2c5;
             color: #ffffff;
+            border: 1px solid #48c2c5;
           }
           a {
             display: block;

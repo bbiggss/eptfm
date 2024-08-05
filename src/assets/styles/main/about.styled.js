@@ -142,7 +142,7 @@ export const AboutDescriptionBox1 = styled.div`
       margin-left: 106px;
       /* background-color: aqua; */
 
-      &.marginLeft182{
+      &.marginLeft182 {
         /* background-color: yellowgreen; */
         margin-left: 182px;
       }
@@ -164,6 +164,7 @@ export const AboutDescriptionBox1 = styled.div`
         font-size: 36px;
         margin: 0;
         margin-top: 74px;
+        line-height: 50px;
       }
     }
   }

@@ -36,8 +36,9 @@ export const HeaderBox = styled.div`
   }
 
   &.colored {
-    background-color: white;
-    opacity: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    backdrop-filter: blur(5px);
     transition: background-color 0.5s ease, transform 0.5s ease;
   }
 
@@ -119,6 +120,7 @@ export const HeaderBox = styled.div`
           font-size: 16px;
           &:hover {
             color: #191919;
+            font-weight: bold;
             text-decoration: underline;
           }
         }
