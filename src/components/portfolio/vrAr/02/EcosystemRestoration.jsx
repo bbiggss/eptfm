@@ -1,7 +1,6 @@
 import React from 'react';
 import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
-import FixedButton from '../../../common/button/UpButton';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -193,7 +192,6 @@ const EcosystemRestoration = () => {
             />
           </WidthImgOneTextsOne>
         </div>
-        <FixedButton />
       </EcosystemRestorationBox>
     </>
   );

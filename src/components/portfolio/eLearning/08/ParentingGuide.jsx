@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import Img from '../../common/Img';
@@ -156,8 +155,6 @@ const ParentingGuide = () => {
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group2/2.png`}
         />
       </div>
-
-      <FixedButton />
     </StyledParentingGuide>
   );
 };

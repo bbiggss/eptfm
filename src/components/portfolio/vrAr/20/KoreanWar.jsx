@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
@@ -186,8 +185,6 @@ const KoreanWar = () => {
           }
         />
       </WidthOneContent>
-
-      <FixedButton />
     </StyledKoreanWar>
   );
 };

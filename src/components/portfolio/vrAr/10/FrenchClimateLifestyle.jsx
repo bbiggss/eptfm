@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -236,7 +235,6 @@ const FrenchClimateLifestyle = () => {
           }
         />
       </WidthOneContent>
-      <FixedButton />
     </FrenchClimateLifestyleBox>
   );
 };

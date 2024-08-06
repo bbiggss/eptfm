@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import TextCenter from '../../common/TextCenter';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import ProjectImg from '../../common/ProjectImg';
@@ -237,7 +236,6 @@ const BongsuPaval = () => {
           </div>
         </div>
       </BongsuPavalBox>
-      <FixedButton />
     </>
   );
 };

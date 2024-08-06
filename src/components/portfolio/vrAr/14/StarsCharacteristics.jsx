@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -183,8 +182,6 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
       </div>
-
-      <FixedButton />
     </StarsCharacteristicsBox>
   );
 };

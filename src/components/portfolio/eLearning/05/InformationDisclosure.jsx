@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import ProjectImg from '../../common/ProjectImg';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -151,8 +150,6 @@ const InformationDisclosure = () => {
           />
         </WidthImgOneTextsOne>
       </div>
-
-      <FixedButton />
     </InformationDisclosureBox>
   );
 };

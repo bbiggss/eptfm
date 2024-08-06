@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
@@ -393,7 +392,6 @@ const MudFlat = () => {
           />
         </WidthOneContent>
       </div>
-      <FixedButton />
     </MudFlatBox>
   );
 };

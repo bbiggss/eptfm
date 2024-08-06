@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import FixedButton from '../../../common/button/UpButton';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
@@ -214,7 +213,6 @@ const ExploreFreiburg = () => {
           </Zigzag>
         </div>
       </div>
-      <FixedButton />
     </ExploreFreiburgBox>
   );
 };

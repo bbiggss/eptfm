@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import FixedButton from '../../../common/button/UpButton';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
@@ -129,7 +128,6 @@ const TyphoonEvacuation = () => {
           />
         </WidthOneContent>
       </div>
-      <FixedButton />
     </TyphoonEvacuationBox>
   );
 };

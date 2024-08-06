@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import FixedButton from '../../../common/button/UpButton';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -169,7 +168,6 @@ const WaterTemperatureSalinityExploration = () => {
       <CustomWrapImg
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/bottom.png`}
       />
-      <FixedButton />
     </WaterTemperatureSalinityExplorationBox>
   );
 };
