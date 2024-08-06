@@ -70,15 +70,17 @@ const StyledPortfolioListModal = styled.div`
         font-family: 'NanumSquareB';
         font-size: 18px;
         letter-spacing: -0.02em;
-        height: 30px;
+        height: 25px;
+        /* border: 1px solid white; */
         list-style: none;
 
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
         .move {
           display: none;
           position: absolute;
           right: 0;
+          top: -6px;
         }
       }
       .item:hover {
@@ -119,17 +121,17 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
             <Item
               name={'AR I 갯벌은 어떤 곳일까?'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/AR | 갯벌은 어떤 곳일까?'}
+              link={'/portfolio/VrAr/AR I 갯벌은 어떤 곳일까?'}
             />
             <Item
               name={'AR I 미션! 생태계를 복원하라'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/AR | 미션! 생태계를 복원하라'}
+              link={'/portfolio/VrAr/AR I 미션! 생태계를 복원하라'}
             />
             <Item
-              name={'AR | 지구의 공전과 계절의 변화'}
+              name={'AR I 지구의 공전과 계절의 변화'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/AR | 지구의 공전과 계절의 변화'}
+              link={'/portfolio/VrAr/AR I 지구의 공전과 계절의 변화'}
             />
             <Item
               name={'AR I 땅의 높낮이를 나타내는 등고선'}
@@ -218,7 +220,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
             />
-            <Category category={'e-Learning'} style={{ marginTop: '142px' }} />
+            <Category category={'e-Learning'} style={{ marginTop: '76px' }} />
             <Item
               name={'저수지·댐 안전관리 및 재해예방'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
@@ -240,9 +242,14 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/e-Learning/사이버어울림(영어, 체육)'}
             />
             <Item
-              name={'정보공시 입력 지침안내와 시스템 메뉴얼'}
+              name={'정보공시 입력 지침 안내와 시스템매뉴얼'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼'}
+            />
+            <Item
+              name={'화학물질안전에 대하여'}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/e-Learning/화학물질안전에 대하여'}
             />
             <Item
               name={'처음 만나는 동아시아사'}

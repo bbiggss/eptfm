@@ -9,7 +9,7 @@ const PortfolioIntroductionBox = styled.div`
     letter-spacing: -2px;
   }
   .subTexts {
-    margin-top: 34px;
+    /* margin-top: 34px; */
     color: #767676;
     font-size: 26px;
     line-height: 40px;

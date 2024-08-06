@@ -11,25 +11,6 @@ const PortfolioList = (data) => {
   const [listTitle, updateListTitle] = useState('');
   const [portfolioItems, updatePortfolioItems] = useState({});
 
-  // 리덕스에서 불러오던지 하기
-  // const portfolioItems = [
-  //   {
-  //     pfItemImg: testImg,
-  //     pfItemBigTitle: '한국교육학술정보원',
-  //     pfItemSmallTitle: 'AR | 갯벌은 어떤 곳일까?',
-  //   },
-  //   {
-  //     pfItemImg: testImg,
-  //     pfItemBigTitle: '한국교육학술정보원',
-  //     pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
-  //   },
-  //   {
-  //     pfItemImg: testImg,
-  //     pfItemBigTitle: '한국교육학술정보원',
-  //     pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
-  //   },
-  // ];
-
   useEffect(() => {
     if (location.pathname.split('/')[2] === 'VrAr') {
       updateListTitle('VR/AR');
@@ -37,17 +18,17 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img1.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'AR | 갯벌은 어떤 곳일까?',
+          pfItemSmallTitle: 'AR I 갯벌은 어떤 곳일까?',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img2.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'AR | 미션! 생태계를 복원하라',
+          pfItemSmallTitle: 'AR I 미션! 생태계를 복원하라',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img3.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: 'AR | 지구의 공전과 계절의 변화',
+          pfItemSmallTitle: 'AR I 지구의 공전과 계절의 변화',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img4.png`,

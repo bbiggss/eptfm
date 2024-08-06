@@ -63,9 +63,13 @@ const Breadcrumb = ({ style, font }) => {
     subCategory = 'VR/AR';
   }
   const contentTitle = decodeURIComponent(location.pathname.split('/')[3]);
-  if (contentTitle.includes('|')) {
-    contentTitleEnglish = contentTitle.split('|')[0];
-    contentTitleKorean = contentTitle.split('|')[1];
+  if (contentTitle.includes('I')) {
+    contentTitleEnglish = contentTitle.split('I')[0];
+    contentTitleKorean = contentTitle.split('I')[1];
+
+    if (contentTitleKorean === ' 갯벌은 어떤 곳일까') {
+      contentTitleKorean += '?';
+    }
   }
   //만약 | 가 있으면 | 를 기준으로 두개로 나눠서 왼쪽은  a폰트, 오른쪽은 b폰트
   // 한글
@@ -106,7 +110,7 @@ const Breadcrumb = ({ style, font }) => {
               <li style={font}>{'>'}</li>
 
               <li className="NanumSquareB" style={font}>
-                {contentTitle.includes('|') ? (
+                {contentTitle.includes('I') ? (
                   <>
                     {contentTitleEnglish}
                     <span className="NanumSquareR">|</span>

@@ -140,13 +140,13 @@ function App() {
 
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
-        <Route path="/portfolio/VrAr/AR | 갯벌은 어떤 곳일까?" element={<MudFlat />} />
+        <Route path="/portfolio/VrAr/AR I 갯벌은 어떤 곳일까?" element={<MudFlat />} />
         <Route
-          path="/portfolio/VrAr/AR | 미션! 생태계를 복원하라"
+          path="/portfolio/VrAr/AR I 미션! 생태계를 복원하라"
           element={<EcosystemRestoration />}
         />
         <Route
-          path="/portfolio/VrAr/AR | 지구의 공전과 계절의 변화"
+          path="/portfolio/VrAr/AR I 지구의 공전과 계절의 변화"
           element={<EarthRotationChangingSeasons />}
         />
         <Route path="/portfolio/VrAr/AR I 땅의 높낮이를 나타내는 등고선" element={<Contour />} />

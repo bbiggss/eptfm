@@ -3,6 +3,11 @@
   padding: 0;
 }
 @media (min-width: 1025px) {
+  .fullScreen {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+  }
   .smallScreen {
     max-width: 1260px;
     width: 100%;
@@ -18,6 +23,11 @@
   }
 }
 @media (max-width: 767px) {
+  .fullScreen {
+    /* max-width: 375px; */
+    margin: 0 auto;
+    width: 100%;
+  }
   .smallScreen {
     max-width: 100%;
     margin: 0 16px;
@@ -37,11 +47,6 @@
 }
 
 /* width screen 1920/1556/1399/1260 */
-.fullScreen {
-  max-width: 1920px;
-  margin: 0 auto;
-  width: 100%;
-}
 .largeScreen {
   max-width: 1556px;
   width: 100%;

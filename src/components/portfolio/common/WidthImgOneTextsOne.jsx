@@ -15,9 +15,10 @@ const StyledWidthImgOneTextsOne = styled.div`
 
     color: #767676;
     font-size: 24px;
+    white-space: nowrap;
 
     &.positionRight {
-      justify-content: flex-end;
+      margin-left: 100px;
     }
   }
   @media (min-width: 1025px) {

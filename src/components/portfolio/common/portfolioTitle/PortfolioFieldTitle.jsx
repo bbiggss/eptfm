@@ -12,9 +12,17 @@ const renderTextWithLineBreaks = (text) => {
 
 const StyledPortfolioFieldTitle = styled.p`
   font-family: 'NanumSquareEB';
-  font-size: 64px;
   line-height: auto;
   letter-spacing: -2px;
+
+  @media (min-width: 1025px) {
+    font-size: 64px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
 `;
 
 const PortfolioFieldTitle = (data) => {

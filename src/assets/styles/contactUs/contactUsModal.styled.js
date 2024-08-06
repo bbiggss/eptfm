@@ -118,4 +118,9 @@ export const ContactUsModalBox = styled.div`
       }
     }
   }
+  input,
+  textarea {
+    font-size: 18px;
+    font-family: 'NanumSquareB';
+  }
 `;
