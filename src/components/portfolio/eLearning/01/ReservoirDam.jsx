@@ -122,7 +122,7 @@ const ReservoirDam = () => {
       </div>
 
       <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingTop="200px" pcPaddingBottom="160px">
+        <WidthImgOneTextsOne pcPaddingTop="200px">
           <ProjectDescription
             text={`우리 팀은 저수지·댐 안전관리 및 재해예방 \ne-Learning 컨텐츠를 개발하면서 다양한 저수지·댐 \n전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`}
           />
@@ -130,7 +130,7 @@ const ReservoirDam = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/1.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/2.png`}
           />
@@ -139,7 +139,7 @@ const ReservoirDam = () => {
             text={`콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`저수지·댐의 구조와 기능에 대한 기본적인 이해를\n바탕으로, 수자원 관리와 재해 예방의 중요성을\n인식할 수 있어요.`}
           />
@@ -147,7 +147,7 @@ const ReservoirDam = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/3.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/4.png`}
           />
@@ -192,7 +192,7 @@ const ReservoirDam = () => {
       </div>
 
       <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingTop="160px" pcPaddingBottom="160px">
+        <WidthImgOneTextsOne pcPaddingTop="160px">
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/5.png`}
           />
@@ -201,7 +201,7 @@ const ReservoirDam = () => {
             text={`적절한 이미지와 한눈에 보이는 텍스트 구성으로\n학습자의 이해를 최선으로 고려하여 화면 디자인을 \n구성해요.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`다양한 내용을 인포그래픽화하기 위해 전문가들의\n많은 피드백을 반영하여 최적의 학습 경험을 제공할 수\n있도록 노력한답니다!`}
           />
@@ -209,7 +209,7 @@ const ReservoirDam = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/6.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/7.png`}
           />

@@ -30,6 +30,9 @@ const CivilTrialBox = styled.div`
       .PortfolioIntroductionBox {
         margin-left: 130px;
         margin-top: 227px;
+        .title {
+          line-height: 56px;
+        }
         p {
           color: #ffffff;
         }

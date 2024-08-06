@@ -6,7 +6,7 @@ const CustomTextBox = styled.div`
 
   font-family: 'NanumSquareB';
   line-height: 38px;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
     font-size: 24px;

@@ -45,6 +45,9 @@ const BoneJointMuscleBox = styled.div`
         .subTexts {
           color: #ffffff;
         }
+        .title {
+          line-height: 56px;
+        }
       }
     }
   }
@@ -138,22 +141,26 @@ const BoneJointMuscle = () => {
         <Zigzag className="paddingTop160">
           <div className="left">
             <ZigZagImgTexts
+              style={{ color: '#040404' }}
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_1.png`}
               text={'관절을 구성하는 연골, 인대, 활액 등의\n구조에 대해 학습할 수 있어요.'}
             />
             <ZigZagImgTexts
+              style={{ color: '#040404' }}
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_2.png`}
               text={'관절의 건강을 유지하고\n관절 질환을 예방하는 방법을 학습해요.'}
             />
           </div>
           <div className="right">
             <ZigZagImgTexts
+              style={{ color: '#040404' }}
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_3.png`}
               text={
                 'AR을 통해 관절의 단면을 시각적으로 확인하고\n각 구성 요소의 역할을 배울 수도 있답니다!'
               }
             />
             <ZigZagImgTexts
+              style={{ color: '#040404' }}
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_4.png`}
               text={
                 'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을 배워볼까요?'

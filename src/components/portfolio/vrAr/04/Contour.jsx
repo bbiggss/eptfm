@@ -8,6 +8,7 @@ import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import ProjectDescription from '../../common/ProjectDescription';
 import Img from '../../common/Img';
+import CustomWrapImg from '../../common/CustomWrapImg';
 
 const StyledContour = styled.div`
   .heroArea video {
@@ -23,9 +24,6 @@ const StyledContour = styled.div`
   .backImg {
     position: absolute;
     margin-top: 917px;
-    width: 100%;
-  }
-  .contourMap {
     width: 100%;
   }
 `;
@@ -64,7 +62,7 @@ const Contour = () => {
 
       <div className="introductionArea">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/1.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourModel.png`}
           alt=""
         />
         <PortfolioIntroduction
@@ -76,7 +74,7 @@ const Contour = () => {
         />
       </div>
 
-      <div className="fullScreen">
+      <div className="fullScreen relative">
         <img
           className="backImg"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/back.png`}
@@ -85,7 +83,7 @@ const Contour = () => {
       </div>
 
       <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/1.png`}
           />
@@ -94,7 +92,7 @@ const Contour = () => {
             text={`우리팀은 실제 산의 등고선을 정밀하게 반영하기\n 위해 다양한 지형 데이터를 분석했어요.\n지형 데이터를 다루다 보니, 우리팀도\n산 전문가가 다 되었답니다!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`학습자는 평면 지도에 선을 긋는 간단한 \n작업으로 등고선의 개념을 배울 수 있어요.\n등고선의 신비한 세계를 같이 시작해볼까요?`}
           />
@@ -102,7 +100,7 @@ const Contour = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/2.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/3.png`}
           />
@@ -111,7 +109,7 @@ const Contour = () => {
             text={`평면 지도로 등고선의 개념을 익힌 후,\n증강현실(AR) 기술을 활용하여 등고선을\n자세히 살펴볼 수 있어요!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`학습자는 높이에 맞춰 등고선 색을 넣어 지형의\n 높낮이를 직관적으로 이해할 수 있어요.\n낮으면 낮을 수록 어떤 색을 칠해야 할까요?`}
           />
@@ -119,7 +117,7 @@ const Contour = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/4.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <Img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/5.png`}
           />
@@ -137,13 +135,10 @@ const Contour = () => {
           />
         </WidthImgOneTextsOne>
       </div>
-      <div className="fullScreen">
-        <img
-          className="contourMap"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png`}
-          alt=""
-        />
-      </div>
+
+      <CustomWrapImg
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png`}
+      />
     </StyledContour>
   );
 };

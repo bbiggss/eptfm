@@ -53,7 +53,7 @@ const Bimetal = () => {
         </div>
       </div>
       <div className="smallScreen paddingTop100">
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/1.png`}
           />
@@ -62,7 +62,7 @@ const Bimetal = () => {
             text={`열팽창의 원리를 적용한 이 프로젝트는 저희팀의\n 실험실에서 뜨거운 열정으로 탄생했어요. \n다양한 금속을 테스트하는 과정에서 \n약간의 '불꽃놀이'도 경험했지만, \n그 덕분에 더 재미있는 콘텐츠가 완성되었답니다.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`열팽창의 원리와 각 금속별로 열팽창\n 정도가 다름을 실험을 통해 학습하고,\n 이를 활용하여 구조물의 재료를 \n선택하거나 바이메탈을 만드는 \n과정을 체험할 수 있어요.`}
           />
@@ -70,7 +70,7 @@ const Bimetal = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/2.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/3.png`}
           />
@@ -79,7 +79,7 @@ const Bimetal = () => {
             text={`AR(증강현실) 기술을 활용하여\n열팽창을 고려한 건축물의 안정성을\n학습할 수 있어요.`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`텅스텐, 철, 구리 중에서 올바른 \n건축자제를 선택하지 않으면\n건물이 와장창 무너질 수 있으니 \n조심해야 해요!`}
           />
@@ -87,7 +87,7 @@ const Bimetal = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/4.png`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/5.png`}
           />
@@ -96,7 +96,7 @@ const Bimetal = () => {
             text={`실생활에서 자주 찾아볼 수 있는\n토스터기에도 바이메탈의 원리가\n적용되었다는 사실 알고 있었나요?`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="160px">
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`온도 감지 역할을 하는 바이메탈의\n원리를 잘 이해하고 직접 구성할 수 \n있어요. 빵이 타지 않게 조심하세요!`}
           />

@@ -9,6 +9,7 @@ import TextCenter from '../../common/TextCenter';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
+import CustomWrapImg from '../../common/CustomWrapImg';
 
 const WaterTemperatureSalinityExplorationBox = styled.div`
   .mainImgContainer {
@@ -164,12 +165,10 @@ const WaterTemperatureSalinityExploration = () => {
           />
         </WidthOneContent>
       </div>
-      <div className="fullScreen">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/bottom.png`}
-          alt=""
-        />
-      </div>
+
+      <CustomWrapImg
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/bottom.png`}
+      />
       <FixedButton />
     </WaterTemperatureSalinityExplorationBox>
   );

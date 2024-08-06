@@ -18,7 +18,7 @@ const ProjectDescription = (data) => {
     ));
   };
   return (
-    <div className={`texts NanumSquareB ${positionRight}`}>
+    <div style={data.style} className={`texts NanumSquareB ${positionRight}`}>
       {data && renderTextWithLineBreaks(data.text)}
     </div>
   );

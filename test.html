@@ -3,36 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image with Border Overlay</title>
+    <title>Document</title>
     <style>
-      .image-container {
-        position: relative;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .fullScreen {
+        max-width: 1920px;
+        margin: 0 auto;
+        width: 100%;
+        background-color: yellow;
         display: inline-block;
       }
-      .image-container img {
-        display: block;
-        width: 300px;
-        height: 300px;
-      }
-      .border-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
+      .contourMap {
         width: 100%;
-        height: 100%;
-        border: 10px solid black; /* 원하는 border 두께와 색상 설정 */
-        pointer-events: none; /* 클릭 이벤트가 이미지에 전달되도록 설정 */
-        box-sizing: border-box; /* 보더를 요소 크기에 포함 */
+        display: block;
+      }
+      .wrap {
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="image-container">
-      <img
-        src="./public/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/hero.png"
-        alt="Example Image"
-      />
-      <div class="border-overlay"></div>
+    <div class="wrap">
+      <div class="fullScreen">
+        <img
+          class="contourMap"
+          src="./public/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png"
+          alt=""
+        />
+      </div>
     </div>
   </body>
 </html>

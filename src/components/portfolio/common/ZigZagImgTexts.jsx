@@ -1,6 +1,6 @@
 import React from 'react';
-import TextCenter from './TextCenter';
 import styled from 'styled-components';
+import CustomText from './CustomText';
 const ZigZagImgTextsBox = styled.div`
   margin-bottom: 160px;
   &:last-child {
@@ -16,7 +16,7 @@ const ZigZagImgTexts = (data) => {
     <ZigZagImgTextsBox>
       <img src={data.src} alt="" />
 
-      <TextCenter text={data.text} />
+      <CustomText style={data.style} text={data.text} />
     </ZigZagImgTextsBox>
   );
 };

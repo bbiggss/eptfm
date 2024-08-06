@@ -70,6 +70,17 @@ const MayorBox = styled.div`
         margin-bottom: 24px;
       }
     }
+    p {
+      font-family: 'NanumSquareB';
+      color: #767676;
+      letter-spacing: -0.02em;
+      line-height: 38px;
+      font-size: 24px;
+    }
+  }
+  .ellipse1 {
+    position: absolute;
+    right: 0;
   }
 `;
 
@@ -77,6 +88,13 @@ const Mayor = () => {
   return (
     <MayorBox>
       <Breadcrumb />
+      <div className="fullScreen relative">
+        <img
+          className="ellipse1"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/Ellipse1.png`}
+          alt=""
+        />
+      </div>
 
       <PortfolioTitle
         className="centeredContentWithMarginBottom"
@@ -129,24 +147,24 @@ const Mayor = () => {
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_2.png`}
               alt=""
             />
-            <p>거리  유세하기</p>
+            <p>명함 배부하기</p>
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_3.png`}
               alt=""
             />
-            <p>거리  유세하기</p>
+            <p>공개 연설하기</p>
           </li>
           <li>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_1.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group1_4.png`}
               alt=""
             />
-            <p>거리  유세하기</p>
+            <p>선거 현수막 제작</p>
           </li>
         </ul>
       </div>
@@ -194,34 +212,38 @@ const Mayor = () => {
 
       <div className="fullScreen AC9EFF">
         <div className="smallScreen">
-          <WidthImgOneTextsOne pcPaddingTop="160px" pcPaddingBottom="160px">
+          <WidthImgOneTextsOne pcPaddingTop="160px">
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_1.png`}
             />
             <ProjectDescription
+              style={{ color: '#292929' }}
               textPosition={'right'}
               text={`잠깐! 잘 생각하고 선택해야해요!\n학습자들의 선택에 따라서\n유권자 박탈 여부도 결정된답니다.`}
             />
           </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne pcPaddingBottom="160px">
+          <WidthImgOneTextsOne>
             <ProjectDescription
+              style={{ color: '#292929' }}
               text={`학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며 자신의 공약을\n어필해보세요!`}
             />
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_2.png`}
             />
           </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne pcPaddingBottom="160px">
+          <WidthImgOneTextsOne>
             <ProjectImg
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_3.png`}
             />
             <ProjectDescription
+              style={{ color: '#292929' }}
               textPosition={'right'}
               text={`거리로 나가서 지지자들과 함께\n현란한 선거운동도 할 수 있답니다! \n나의 공약을 외치며 유권자들의 마음을\n사로잡아보세요.`}
             />
           </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne pcPaddingBottom="160px">
+          <WidthImgOneTextsOne>
             <ProjectDescription
+              style={{ color: '#292929' }}
               text={`간혹 엉뚱한 선거 운동을 선택하게 되면\n지지율이 떨어질 수 있으니 유의해야해요!\n어떤 선거 운동이 지지율 상승에 도움이 될지\n많은 고민을 해야한답니다!`}
             />
             <ProjectImg

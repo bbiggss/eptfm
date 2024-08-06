@@ -28,7 +28,7 @@ const StyledKoreanWar = styled.div`
   }
   .introudctionImg1 {
     left: 100px;
-    top: 0;
+    top: 160px;
   }
   .introudctionImg2 {
     left: 320px;

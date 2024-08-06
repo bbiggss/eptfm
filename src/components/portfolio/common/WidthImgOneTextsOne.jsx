@@ -11,7 +11,7 @@ const StyledWidthImgOneTextsOne = styled.div`
     display: flex;
     align-items: center;
     line-height: 38px;
-    letter-spacing: -2%;
+    letter-spacing: -0.02em;
 
     color: #767676;
     font-size: 24px;
@@ -23,7 +23,11 @@ const StyledWidthImgOneTextsOne = styled.div`
   }
   @media (min-width: 1025px) {
     padding-top: ${(props) => props.$pcPaddingTop};
-    padding-bottom: ${(props) => props.$pcPaddingBottom};
+
+    padding-bottom: ${(props) => {
+      if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
+      return '160px';
+    }};
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     padding-top: ${(props) => props.$tabletPaddingTop};

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
+import CustomText from '../../common/CustomText';
 
 const SurvivalBagBox = styled.div`
   .PortfolioTitleBox {
@@ -39,16 +40,6 @@ const SurvivalBagBox = styled.div`
       width: 100%;
       position: absolute;
     }
-
-    .paddingTop98 {
-      padding-top: 98.38px;
-      .projectImg {
-        margin-bottom: 128px;
-      }
-      .fontSize26 {
-        font-size: 26px;
-      }
-    }
   }
 `;
 
@@ -77,12 +68,12 @@ const SurvivalBag = () => {
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/backImg.png`}
         />
 
-        <WidthOneContent className="paddingTop98">
+        <WidthOneContent style={{ paddingTop: '160px' }}>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/Vector.png`}
           />
-          <TextCenter
-            className="fontSize26"
+          <CustomText
+            style={{ fontSize: '26px' }}
             text={
               "'나만의 생존가방 준비하기' 콘텐츠는 현실적인 재난 상황을 체험하면서 생존에 필요한 지식과 기술을\n학습할 수 있도록 설계되었어요. 지진 대피 요령을 학습하고 생존가방을 꾸리는 과정을 체험해서\n진짜 재난 상황에서도 당황하지 않고 대처할 수 있답니다!"
             }

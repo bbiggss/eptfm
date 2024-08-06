@@ -110,7 +110,7 @@ const ExploreFreiburg = () => {
         </div>
 
         <div className="fullScreen">
-          <WidthOneContent className="paddingTop160">
+          <WidthOneContent $first>
             <img
               className="left2"
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side2.png`}

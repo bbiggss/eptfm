@@ -7,8 +7,8 @@ import ProjectImg from '../../common/ProjectImg';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import TextCenter from '../../common/TextCenter';
-import { WidthImg1Texts1 } from '../../../../assets/styles/portfolio/common/widthImg1Texts1.styled';
 import ProjectDescription from '../../common/ProjectDescription';
+import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 
 const InformationDisclosureBox = styled.div`
   .area1 {
@@ -82,7 +82,7 @@ const InformationDisclosure = () => {
           />
         </WidthOneContent>
 
-        <WidthImg1Texts1>
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_1.png`}
           />
@@ -90,16 +90,16 @@ const InformationDisclosure = () => {
             textPosition={'right'}
             text={`우리 팀은 인터랙티브 모듈을 통해\n학습자가 정보공시의 사례화 효과를\n 시각적으로 학습할 수 있도록 콘텐츠를\n제작하려 많은 노력을 기울였어요.`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`학교의 조직 구조, 교직원 현황,  학급 편성,\n주요 교육 활동 등 학교 운영에 관한\n정보를 공개한답니다!`}
           />
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_2.png`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_3.png`}
           />
@@ -107,16 +107,16 @@ const InformationDisclosure = () => {
             textPosition={'right'}
             text={`가상의 학교 운영 데이터를 분석하고,\n이를 바탕으로 학교 운영의 투명성을\n확인하는 활동을 진행할 수 있어요.`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`뿐만 아니라 학교의 전반적인 운영 상황,\n교육 성과, 학생의 학업 성취도 등을\n투명하게 공개하고, 이를 통해 교육의\n질을 높이는 데 목적을 두고 있음을\n뚜렷하게 확인할 수 있답니다!`}
           />
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_4.png`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_5.png`}
           />
@@ -124,16 +124,16 @@ const InformationDisclosure = () => {
             textPosition={'right'}
             text={`뿐만 아니라 학교의 전반적인 운영 상황,\n교육 성과, 학생의 학업 성취도 등을\n투명하게 공개하고, 이를 통해 교육의\n질을 높이는 데 목적을 두고 있음을\n뚜렷하게 확인할 수 있답니다!`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectDescription
             text={`다양한 학생 지원 프로그램의 효과를\n분석하고, 이를 통해 학생 복지 향상 방안을\n모색할 수 있어요.`}
           />
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_6.png`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1>
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_7.png`}
           />
@@ -141,15 +141,15 @@ const InformationDisclosure = () => {
             textPosition={'right'}
             text={`학부모와 지역사회의 참여와 협력의\n중요성에 대해도 알 수 있어요.`}
           />
-        </WidthImg1Texts1>
-        <WidthImg1Texts1 className="lastChild">
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne pcPaddingBottom="200px">
           <ProjectDescription
             text={`다양한 학생 지원 프로그램의 효과를\n분석하고, 이를 통해 학생 복지 향상 방안을\n모색할 수 있어요!`}
           />
           <ProjectImg
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_8.png`}
           />
-        </WidthImg1Texts1>
+        </WidthImgOneTextsOne>
       </div>
 
       <FixedButton />

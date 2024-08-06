@@ -48,7 +48,7 @@ const Bimetal = () => {
 
         <FixedButton />
       </BimetalBox>
-      {/* 사이드 이미지, 텍스트 WidthImg1Texts1 ProjectImg ProjectDescription */}
+      {/* 사이드 이미지, 텍스트  ProjectImg ProjectDescription */}
       WidthOneContent ProjectImg TextCenter
       <WidthOneContent className="firstChild">
         <ProjectImg
