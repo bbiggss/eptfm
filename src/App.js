@@ -1,14 +1,13 @@
 import './App.css';
-
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Header from './components/common/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
-import Video from './components/main/Video';
+import Video from './components/main/HomeVideo';
 import PortfolioList from './components/portfolio/common/PortfolioList';
 import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
 import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
@@ -51,6 +50,23 @@ import EnvironmentalLabelingCertification from './components/portfolio/RnD/01/En
 import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/ClassroomRevolutionLessonPlans';
 
 import PortfolioListButton from './components/common/button/PortfolioListButton';
+
+const RemoveRedirectedParam = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.has('redirected')) {
+      params.delete('redirected');
+      const newSearch = params.toString();
+      const newPath = `${location.pathname}${newSearch ? `?${newSearch}` : ''}`;
+      navigate(newPath, { replace: true });
+    }
+  }, [location, navigate]);
+
+  return null;
+};
 
 function App() {
   const location = useLocation();
@@ -132,6 +148,7 @@ function App() {
       <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
       {/* <Header headerClass={headerClass} /> */}
       {location.pathname === '/' ? <Video /> : ''}
+      <RemoveRedirectedParam />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />

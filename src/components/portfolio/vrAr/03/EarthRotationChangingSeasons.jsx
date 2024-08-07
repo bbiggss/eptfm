@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ProjectImg from '../../common/ProjectImg';
 import ProjectDescription from '../../common/ProjectDescription';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
@@ -14,11 +14,15 @@ const StyledEarthRotationChangingSeasons = styled.div`
   overflow: hidden; // 추후 삭제 예정
 
   .portfolioTitle {
+    z-index: 1;
     position: absolute;
     margin-top: 380px;
 
     left: 50%;
     transform: translateX(-50%);
+
+    transition: opacity 2s ease-in-out;
+    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
 
     .orgainzation {
       text-align: center;
@@ -33,7 +37,6 @@ const StyledEarthRotationChangingSeasons = styled.div`
 
   .container {
     width: 1260px;
-    /* background-color: yellow; */
     margin: auto;
 
     .mainImg {
@@ -118,19 +121,38 @@ const StyledEarthRotationChangingSeasons = styled.div`
       width: 100px;
     }
   }
+
+  .heroVideo {
+    height: 1080px;
+
+    background-color: #f0f0f0; /* 이미지 로드 전 배경색 */
+    transition: opacity 1s ease-in-out;
+    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
+  }
 `;
 
 const EarthRotationChangingSeasons = () => {
-  const [isHeroLoaded, setIsHeroLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const videoRef = useRef(null);
+
   useEffect(() => {
-    setTimeout(() => {
-      setIsHeroLoaded(true);
-    }, 5000);
+    const video = videoRef.current;
+    if (video) {
+      const handleLoadedData = () => {
+        setIsLoaded(true);
+      };
+      video.addEventListener('loadeddata', handleLoadedData);
+
+      return () => {
+        video.removeEventListener('loadeddata', handleLoadedData);
+      };
+    }
   }, []);
+
   return (
     <>
       <Breadcrumb />
-      <StyledEarthRotationChangingSeasons>
+      <StyledEarthRotationChangingSeasons $isLoaded={isLoaded}>
         <div className="fullScreen">
           <div className="portfolioTitle">
             <PortfolioTitle
@@ -140,19 +162,14 @@ const EarthRotationChangingSeasons = () => {
             />
           </div>
           <video
+            className="heroVideo"
+            ref={videoRef}
             src={`${process.env.PUBLIC_URL}/assets/videos/EarthRevolution.mp4`}
             autoPlay
             muted
             loop
             playsInline
-            className="mainVideo"
           ></video>
-          <div className="loadingWrap">
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/common/logo_line(original).png`}
-              alt=""
-            />
-          </div>
         </div>
         <div className="container">
           <div className="mainImg">
@@ -242,13 +259,6 @@ const EarthRotationChangingSeasons = () => {
           </WidthImgOneTextsOne>
         </div>
       </StyledEarthRotationChangingSeasons>
-
-      {/* <div className="loadingWrap">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/common/logo_line(original).png`}
-          alt=""
-        />
-      </div> */}
     </>
   );
 };

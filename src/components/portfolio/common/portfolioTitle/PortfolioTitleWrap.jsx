@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledPortfolioTitleWrap = styled.div`
+  opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
+  transition: opacity 2s ease-in-out;
   @media (min-width: 1025px) {
     margin-top: ${(props) => props.$pcMarginTop};
   }
@@ -12,12 +14,13 @@ const StyledPortfolioTitleWrap = styled.div`
   }
 `;
 
-const PortfolioTitleWrap = ({ style, children, pcMarginTop, mobileMarginTop }) => {
+const PortfolioTitleWrap = ({ style, children, pcMarginTop, mobileMarginTop, $isLoaded }) => {
   return (
     <StyledPortfolioTitleWrap
       $pcMarginTop={pcMarginTop}
       $mobileMarginTop={mobileMarginTop}
       style={style}
+      $isLoaded={$isLoaded}
     >
       <div>{children}</div>
     </StyledPortfolioTitleWrap>

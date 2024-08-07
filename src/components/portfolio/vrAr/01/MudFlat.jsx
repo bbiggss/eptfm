@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -15,6 +15,7 @@ const MudFlatBox = styled.div`
   @media (min-width: 1025px) {
     .mainImg {
       width: 100%;
+      height: auto;
       margin-bottom: 160px;
     }
     .subTexts {
@@ -26,6 +27,7 @@ const MudFlatBox = styled.div`
       margin-top: 425px;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 1;
 
       .orgainzation {
         color: #ffffff;
@@ -189,21 +191,43 @@ const MudFlatBox = styled.div`
     /* max-width: 767px; */
     /* overflow: hidden; */
   }
+
+  .mainImg {
+    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
+    transition: opacity 1s ease-in-out;
+  }
 `;
 
 const MudFlat = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img) {
+      const handleLoad = () => {
+        setIsLoaded(true);
+      };
+      img.addEventListener('load', handleLoad);
+
+      return () => {
+        img.removeEventListener('load', handleLoad);
+      };
+    }
+  }, []);
+
   return (
-    <MudFlatBox>
+    <MudFlatBox $isLoaded={isLoaded}>
       <Breadcrumb />
       <div className="fullScreen">
         <div className="portfolioTitle">
           <PortfolioTitleWrap
+            $isLoaded={isLoaded}
             style={{
               position: 'absolute',
               left: '50%',
               transform: 'translateX(-50%)',
             }}
-            pcMarginTop="180px"
             mobileMarginTop="130px"
           >
             <PortfolioOrganization
@@ -225,6 +249,7 @@ const MudFlat = () => {
         </div>
         <img
           className="mainImg"
+          ref={imgRef}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
           alt=""
         />
