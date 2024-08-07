@@ -31,7 +31,7 @@ const CyberSocializingBox = styled.div`
   .book {
     position: absolute;
     left: -337px;
-    bottom: -280px;
+    bottom: -135px;
   }
 
   .cloud {
@@ -46,10 +46,10 @@ const CyberSocializingBox = styled.div`
     top: -273px;
     z-index: -1;
   }
-  .cloudSun {
+  .cloudPaperPlane {
     position: absolute;
     left: -330px;
-    top: -332px;
+    top: -241px;
     z-index: -1;
   }
 `;
@@ -57,13 +57,13 @@ const CyberSocializingBox = styled.div`
 const CyberSocializingTwo = () => {
   return (
     <CyberSocializingBox>
-      <Breadcrumb style={{ paddingBottom: '112px' }} />
+      <Breadcrumb />
 
       <PortfolioTitle
         className="centeredContentWithMarginBottom"
         organization={'한국교육학술정보원'}
         // field={'VR'}
-        title={'사이버어울림'}
+        title={'사이버어울림(영어, 체육)'}
       />
 
       <div className="fullScreen heroArea">
@@ -158,8 +158,8 @@ const CyberSocializingTwo = () => {
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne pcPaddingBottom="200px">
           <img
-            className="cloudSun"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/cloudSun.png`}
+            className="cloudPaperPlane"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/cloudPaperPlane.png`}
             alt=""
           />
           <ProjectDescription

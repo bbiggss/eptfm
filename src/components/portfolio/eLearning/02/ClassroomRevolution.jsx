@@ -6,6 +6,10 @@ import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import TextCenter from '../../common/TextCenter';
 import ProjectImg from '../../common/ProjectImg';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
+import Img from '../../common/Img';
+// PortfolioTitleWrap
+// PortfolioOrganization
+// PortfolioFieldTitle
 
 const ClassroomRevolutionBox = styled.div`
   .heroArea {
@@ -20,7 +24,6 @@ const ClassroomRevolutionBox = styled.div`
     }
     .ellipse2 {
       right: 0;
-      bottom: -167%;
     }
 
     .ellipseContainer {
@@ -108,9 +111,29 @@ const ClassroomRevolution = () => {
           alt=""
         />
 
-        <Breadcrumb />
+        <Breadcrumb style={{ position: 'absolute' }} />
+
+        {/* <PortfolioTitleWrap
+          style={{
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            marginTop: '180px',
+          }}
+        >
+          <PortfolioOrganization
+            style={{ color: '#292929', fontFamily: 'NanumSquareB' }}
+            organization={'한국교육학술정보원'}
+          />
+          <PortfolioFieldTitle
+            style={{ color: '#292929', whiteSpace: 'nowrap' }}
+            field={'VR'}
+            title={'이중섭 작품을 통해 알아보는 6·25 전쟁'}
+          />
+        </PortfolioTitleWrap> */}
 
         <PortfolioTitle
+          style={{ paddingTop: '180px' }}
           className="centeredContentWithMarginBottom"
           organization={'한국교육학술정보원'}
           title={'교사가 이끄는 교실혁명'}
@@ -159,7 +182,9 @@ const ClassroomRevolution = () => {
       </div>
 
       <WidthOneContent className="firstChild">
-        <ProjectImg
+        <Img
+          $whiteImgBackgroundBorder
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/1.png`}
         />
         <TextCenter
@@ -169,7 +194,9 @@ const ClassroomRevolution = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <ProjectImg
+        <Img
+          $whiteImgBackgroundBorder
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/2.png`}
         />
         <TextCenter
@@ -179,7 +206,9 @@ const ClassroomRevolution = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <ProjectImg
+        <Img
+          $whiteImgBackgroundBorder
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/3.png`}
         />
         <TextCenter
@@ -189,7 +218,9 @@ const ClassroomRevolution = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <ProjectImg
+        <Img
+          $whiteImgBackgroundBorder
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/4.png`}
         />
         <TextCenter
@@ -199,7 +230,9 @@ const ClassroomRevolution = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <ProjectImg
+        <Img
+          $whiteImgBackgroundBorder
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/5.png`}
         />
         <TextCenter
@@ -209,7 +242,8 @@ const ClassroomRevolution = () => {
         />
       </WidthOneContent>
       <WidthOneContent className="lastChild">
-        <ProjectImg
+        <Img
+          style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/6.png`}
         />
         <TextCenter

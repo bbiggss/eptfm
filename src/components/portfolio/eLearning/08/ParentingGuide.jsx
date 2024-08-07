@@ -29,6 +29,9 @@ const StyledParentingGuide = styled.div`
   .PortfolioIntroductionBox {
     margin-bottom: 200px;
 
+    .title {
+      line-height: 56px;
+    }
     .subTexts {
       color: #4f4f4f;
     }
@@ -38,7 +41,7 @@ const StyledParentingGuide = styled.div`
 const ParentingGuide = () => {
   return (
     <StyledParentingGuide>
-      <Breadcrumb style={{ paddingBottom: '63px' }} />
+      <Breadcrumb />
 
       <div className="fullScreen heroArea">
         <PortfolioTitle
@@ -76,6 +79,7 @@ const ParentingGuide = () => {
 
       <ImageTextBlock>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/1.png`}
         />
@@ -87,6 +91,7 @@ const ParentingGuide = () => {
       </ImageTextBlock>
       <ImageTextBlock>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/2.png`}
         />
@@ -98,6 +103,7 @@ const ParentingGuide = () => {
       </ImageTextBlock>
       <ImageTextBlock>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/3.png`}
         />
@@ -117,6 +123,7 @@ const ParentingGuide = () => {
 
       <ImageTextBlock>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/4.png`}
         />
@@ -128,6 +135,7 @@ const ParentingGuide = () => {
       </ImageTextBlock>
       <ImageTextBlock>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/5.png`}
         />
@@ -139,6 +147,7 @@ const ParentingGuide = () => {
       </ImageTextBlock>
       <ImageTextBlock style={{ marginBottom: '200px' }}>
         <Img
+          $whiteImgBackgroundBorder
           style={{ marginBottom: '60px' }}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/6.png`}
         />

@@ -218,11 +218,11 @@ function App() {
           element={<CyberSocializingTwo />}
         />
         <Route
-          path="/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼"
+          path="/portfolio/e-Learning/정보공시 입력 지침 안내와 시스템매뉴얼"
           element={<InformationDisclosure />}
         />
         <Route path="/portfolio/e-Learning/화학물질안전에 대하여" element={<ChemicalSafety />} />
-        <Route path="/portfolio/e-Learning/동아시아 원격연수" element={<EastAsia />} />
+        <Route path="/portfolio/e-Learning/처음 만나는 동아시아사" element={<EastAsia />} />
         <Route
           path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이"
           element={<ParentingGuide />}

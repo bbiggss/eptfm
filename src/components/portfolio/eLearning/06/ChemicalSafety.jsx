@@ -6,6 +6,7 @@ import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import CustomWrapImg from '../../common/CustomWrapImg';
 
 const ChemicalSafetyBox = styled.div`
   .heroArea {
@@ -18,7 +19,7 @@ const ChemicalSafetyBox = styled.div`
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      margin-top: 230px;
+      margin-top: 180px;
     }
     .PortfolioIntroductionBox {
       text-align: center;
@@ -33,6 +34,9 @@ const ChemicalSafetyBox = styled.div`
       .title,
       .subTexts {
         color: #ffffff;
+      }
+      .title {
+        line-height: 56px;
       }
     }
   }
@@ -87,18 +91,13 @@ const ChemicalSafetyBox = styled.div`
   .firstChild2 {
     padding-top: 160px;
   }
-
-  .footer {
-    width: 100%;
-  }
 `;
 
 const ChemicalSafety = () => {
   return (
     <ChemicalSafetyBox>
-      <Breadcrumb style={{ paddingBottom: '47px' }} />
-
       <div className="fullScreen heroArea">
+        <Breadcrumb style={{ position: 'absolute' }} />
         <PortfolioTitle
           className="centeredContentWithMarginBottom"
           organization={'화학물질안전원'}
@@ -223,11 +222,11 @@ const ChemicalSafety = () => {
             }
           />
         </WidthOneContent>
-        <ProjectImg
-          className="footer"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/footer.png`}
-        />
       </div>
+
+      <CustomWrapImg
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/footer.png`}
+      />
     </ChemicalSafetyBox>
   );
 };

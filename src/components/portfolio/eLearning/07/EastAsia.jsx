@@ -66,11 +66,11 @@ const EastAsiaBox = styled.div`
 
   .figure_01 {
     left: 0;
-    top: -343px;
+    top: -520px;
   }
   .figure_02 {
     right: 0;
-    top: 0;
+    top: -217px;
   }
   .figure_03 {
     left: 0;
@@ -93,14 +93,14 @@ const EastAsiaBox = styled.div`
 const EastAsia = () => {
   return (
     <EastAsiaBox>
-      <Breadcrumb style={{ paddingBottom: '58px' }} />
+      <Breadcrumb />
 
       <div className="fullScreen heroArea">
         <PortfolioTitle
           className="centeredContentWithMarginBottom"
           organization={'동북아역사재단'}
           // field={'VR'}
-          title={'동아시아 원격연수'}
+          title={'처음 만나는 동아시아사'}
         />
 
         <img

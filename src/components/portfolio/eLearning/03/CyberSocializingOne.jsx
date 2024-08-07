@@ -48,17 +48,23 @@ const StyledCyberSocializingOne = styled.div`
     left: -330px;
     top: -310px;
   }
+
+  .PortfolioIntroductionBox {
+    .title {
+      line-height: 56px;
+    }
+  }
 `;
 
 const CyberSocializingOne = () => {
   return (
     <StyledCyberSocializingOne>
-      <Breadcrumb style={{ paddingBottom: '104px' }} />
+      <Breadcrumb />
 
       <PortfolioTitle
         style={{ marginBottom: '47px', display: 'flex', justifyContent: 'center' }}
         organization={'한국교육학술정보원'}
-        title={'사이버어울림'}
+        title={'사이버어울림(기술·가정, 진로와 직업, 한문)'}
       />
 
       <div className="fullScreen heroArea">
@@ -79,7 +85,7 @@ const CyberSocializingOne = () => {
           style={{ marginTop: '213px', marginBottom: '200px' }}
           title={'기술·가정, 진로와 직업, 한문과 교과 연계,\n사이좋게 지내요!'}
           description={
-            '사이버 폭력 예방을 위해 영어와 체육 교과와 \n연계해 학습해보아요!\n긍정적인 언어 사용, 안전한 사이버 만들기!'
+            '사이버 폭력 예방을 위해 영어와 체육 교과와 연계해 학습해보아요!\n긍정적인 언어 사용, 안전한 사이버 만들기!'
           }
         />
 

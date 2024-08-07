@@ -54,7 +54,7 @@ const InformationDisclosure = () => {
         <PortfolioTitle
           organization={'한국교육학술정보원'}
           field={''}
-          title={'정보공시 입력 지침안내와\n 시스템 메뉴얼'}
+          title={'정보공시 입력 지침 안내와\n 시스템매뉴얼'}
         />
         <ProjectImg
           className="mainImg"

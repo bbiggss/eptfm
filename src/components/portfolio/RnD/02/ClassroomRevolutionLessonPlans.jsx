@@ -37,7 +37,7 @@ const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .rightSpan {
       right: 0;
-      margin-right: 377px;
+      margin-right: 370px;
     }
     .robotImg1 {
       position: absolute;
@@ -62,7 +62,7 @@ const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .robot2 {
       position: absolute;
-      right: -10px;
+      right: -39px;
       top: -50px;
     }
   }

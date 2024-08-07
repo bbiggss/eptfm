@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ProjectImg from '../../common/ProjectImg';
 import ProjectDescription from '../../common/ProjectDescription';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
@@ -104,15 +104,28 @@ const StyledEarthRotationChangingSeasons = styled.div`
       }
     }
   }
+
+  .loadingWrap {
+    width: 100%;
+    height: calc(100vh - 460px);
+    position: relative;
+    background-color: white;
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+    }
+  }
 `;
 
 const EarthRotationChangingSeasons = () => {
   const [isHeroLoaded, setIsHeroLoaded] = useState(false);
   useEffect(() => {
-    const video = document.createElement('video');
-    video.src = `${process.env.PUBLIC_URL}/assets/videos/EarthRevolution.mp4`;
-    video.onloadeddata = () => setIsHeroLoaded(true);
-    video.load();
+    setTimeout(() => {
+      setIsHeroLoaded(true);
+    }, 5000);
   }, []);
   return (
     <>
@@ -120,11 +133,13 @@ const EarthRotationChangingSeasons = () => {
       <StyledEarthRotationChangingSeasons>
         <div className="fullScreen">
           <div className="portfolioTitle">
-            <PortfolioTitle
-              organization={'한국교육학술정보원'}
-              field={'AR'}
-              title={'지구의 공전과 계절의 변화'}
-            />
+            {isHeroLoaded && (
+              <PortfolioTitle
+                organization={'한국교육학술정보원'}
+                field={'AR'}
+                title={'지구의 공전과 계절의 변화'}
+              />
+            )}
           </div>
           {isHeroLoaded ? (
             <video
@@ -136,10 +151,14 @@ const EarthRotationChangingSeasons = () => {
               className="mainVideo"
             ></video>
           ) : (
-            ''
+            <div className="loadingWrap">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/common/logo_line(original).png`}
+                alt=""
+              />
+            </div>
           )}
         </div>
-
         {isHeroLoaded && (
           <div className="container">
             <div className="mainImg">
@@ -153,6 +172,7 @@ const EarthRotationChangingSeasons = () => {
               <img
                 src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/03_EarthRotationChangingSeasons/2.png`}
                 alt=""
+                loading="lazy"
               />
               <div className="mainDescriptionTextBox">
                 <p className="title NanumSquareEB">
@@ -231,6 +251,13 @@ const EarthRotationChangingSeasons = () => {
           </div>
         )}
       </StyledEarthRotationChangingSeasons>
+
+      {/* <div className="loadingWrap">
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/common/logo_line(original).png`}
+          alt=""
+        />
+      </div> */}
     </>
   );
 };

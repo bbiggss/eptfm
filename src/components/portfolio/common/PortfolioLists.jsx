@@ -24,7 +24,7 @@ const PortfolioLists = ({ data, index }) => {
           <img src={`${data.pfItemImg}`} alt="" />
         </div>
         <div>
-          <p className="NanumSquareEB">{data.pfItemBigTitle}</p>
+          <p className="NanumSquareB">{data.pfItemBigTitle}</p>
           <p className="NanumSquareEB">{renderTextWithLineBreaks(data.pfItemSmallTitle)}</p>
         </div>
       </Link>

@@ -14,7 +14,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         />
         <img
           className="ellipse2"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02/ellipse2.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse2.png`}
           alt=""
         />
       </div>

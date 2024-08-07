@@ -144,7 +144,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img5.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '정보공시 입력 지침안내와 시스템\n 메뉴얼',
+          pfItemSmallTitle: '정보공시 입력 지침 안내와 시스템매뉴얼',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img6.png`,
@@ -154,7 +154,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img7.png`,
           pfItemBigTitle: '동북아역사재단',
-          pfItemSmallTitle: '동아시아 원격연수',
+          pfItemSmallTitle: '처음 만나는 동아시아사',
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img8.png`,

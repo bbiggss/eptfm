@@ -220,7 +220,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
             />
-            <Category category={'e-Learning'} style={{ marginTop: '76px' }} />
+            <Category category={'e-Learning'} style={{ marginTop: '82px' }} />
             <Item
               name={'저수지·댐 안전관리 및 재해예방'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
@@ -244,7 +244,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
             <Item
               name={'정보공시 입력 지침 안내와 시스템매뉴얼'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/e-Learning/정보공시 입력 지침안내와 시스템 메뉴얼'}
+              link={'/portfolio/e-Learning/정보공시 입력 지침 안내와 시스템매뉴얼'}
             />
             <Item
               name={'화학물질안전에 대하여'}
@@ -254,7 +254,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
             <Item
               name={'처음 만나는 동아시아사'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/e-Learning/동아시아 원격연수'}
+              link={'/portfolio/e-Learning/처음 만나는 동아시아사'}
             />
             <Item
               name={'위탁모를 위한 양육 길잡이'}
