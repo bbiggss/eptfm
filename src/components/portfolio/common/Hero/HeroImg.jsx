@@ -3,20 +3,19 @@ import styled from 'styled-components';
 
 const StyledHeroImg = styled.img`
   width: 100%;
-  height: auto;
 
   opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 1s ease-in-out;
 
   @media (min-width: 1025px) {
-    max-height: ${(props) => props.$pcHeight};
+    height: ${(props) => props.$pcHeight};
     margin-bottom: 160px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    max-height: ${(props) => props.$tabletHeight};
+    height: ${(props) => props.$tabletHeight};
   }
   @media (max-width: 767px) {
-    max-height: ${(props) => props.$mobileHeight};
+    height: ${(props) => props.$mobileHeight};
   }
 `;
 

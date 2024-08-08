@@ -51,23 +51,6 @@ import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/Classr
 
 import PortfolioListButton from './components/common/button/PortfolioListButton';
 
-const RemoveRedirectedParam = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  React.useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    if (params.has('redirected')) {
-      params.delete('redirected');
-      const newSearch = params.toString();
-      const newPath = `${location.pathname}${newSearch ? `?${newSearch}` : ''}`;
-      navigate(newPath, { replace: true });
-    }
-  }, [location, navigate]);
-
-  return null;
-};
-
 function App() {
   const location = useLocation();
 
@@ -148,7 +131,6 @@ function App() {
       <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
       {/* <Header headerClass={headerClass} /> */}
       {location.pathname === '/' ? <Video /> : ''}
-      <RemoveRedirectedParam />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
