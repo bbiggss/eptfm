@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 // import { portfolioBg2, portfolioBg3 } from '../../images';
 const pc_pfFieldWidth = '380px';
-const pfFieldMobileWidth = '98.6px';
 const tablet_pfFieldWidth = '224px';
+const pfFieldMobileWidth = '315px';
 
 const tablet_PaddingLeft = '68px';
 
@@ -244,28 +244,28 @@ export const PortfolioBox = styled.div`
 
     #container {
       width: 100%;
+      overflow: hidden;
 
       #portfolioTexts {
-        padding-left: 32px;
+        position: relative;
+        padding-left: 30px;
         & #portfolioTitle {
-          margin: 0;
-          padding-top: 42px;
           font-family: 'Roboto-Medium';
+          padding-top: 80px;
           color: #191919;
-
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 24.2px;
+          font-size: 36px;
+          font-weight: 500;
           text-align: left;
+
+          margin-bottom: 30px;
         }
 
         & #portfolioText1 {
-          margin: 0;
-          margin-bottom: 8px;
+          color: #292929;
+          margin-bottom: 10px;
 
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 14.52px;
+          font-size: 20px;
+          font-weight: 400;
           text-align: left;
         }
 
@@ -274,9 +274,8 @@ export const PortfolioBox = styled.div`
         }
 
         & #portfolioText2 {
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 14.52px;
+          font-size: 16px;
+          font-weight: 400;
           text-align: left;
         }
       }
@@ -284,23 +283,24 @@ export const PortfolioBox = styled.div`
       #portfolioLinkImg {
         display: flex;
         justify-content: space-between;
-        margin-top: 42px;
+        margin-top: 60px;
+        margin-bottom: 134px;
+        /* 150-16 */
         #portfolioLink {
-          padding-left: 32px;
+          padding-left: 30px;
           .pfFieldTag {
-            height: 28px;
-            line-height: 28px;
+            height: 60px;
+            line-height: 60px;
 
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             display: block;
             width: ${pfFieldMobileWidth};
             border: 1px solid #767676;
-            border-radius: 25px;
+            border-radius: 999px;
             text-align: center;
-            color: #858585;
 
-            font-size: 12px;
-            font-weight: 600;
+            color: #767676;
+            font-size: 18px;
           }
           a {
             display: block;
@@ -310,35 +310,28 @@ export const PortfolioBox = styled.div`
         }
 
         #portfolioImgs {
-          /* background-color: yellow; */
-          display: flex;
+          background-color: yellow;
           position: relative;
-          padding-top: 26px;
-          .pfImgLeftBox {
-            margin-top: 15px;
-            img {
-              width: 113px;
-              height: 123px;
-            }
+          .pfImgLeftBox img {
+            top: -217px;
+            right: -53px;
+            position: absolute;
+            width: 178px;
+            height: 187px;
           }
           .pfImgRightBox {
-            margin-bottom: 76px;
-            overflow: hidden;
-            img:nth-of-type(1) {
-              width: 97px;
-              height: 85px;
-              position: relative;
-              right: -5px;
-            }
-            img:nth-of-type(2) {
-              width: 84px;
-              height: 112px;
-              position: relative;
-              right: -5px;
-            }
+            display: none;
           }
         }
       }
+    }
+
+    .arrow {
+      width: 6px;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 `;

@@ -20,8 +20,8 @@ const Portfolio = ({ data }) => {
 
           {/* mobile, tablet */}
           <div id="portfolioText2">
-            최첨단 교육 공학 <span className="englishFont">SOLUTION</span>으로 학습의 한계를
-            뛰어넘다.
+            최첨단 교육 공학 <span className="englishFont">SOLUTION</span>으로
+            <br /> 학습의 한계를 뛰어넘다.
           </div>
         </div>
         <div id="portfolioLinkImg">

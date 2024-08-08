@@ -77,15 +77,13 @@ export const AboutBox = styled.div`
       /* background-color: yellow; */
 
       p {
-        margin: 0;
         color: #191919;
-        padding-top: 80px;
         padding-left: 30px;
+        padding-top: 80px;
         padding-bottom: 40px;
 
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24.2px;
+        font-size: 36px;
+        font-weight: 500;
       }
     }
     .aboutContents {
@@ -224,33 +222,27 @@ export const AboutDescriptionBox1 = styled.div`
     .textsBoxContainer {
       padding-left: 32px;
       padding-top: 24px;
-      padding-bottom: 24px;
+      padding-bottom: 80px;
 
       .textsTitle {
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 43.57px;
-        letter-spacing: 0.05em;
+        font-size: 40px;
         text-align: left;
         color: #48c2c5;
-        margin: 0;
       }
       .textsSubTitle {
         color: #48c2c5;
-        margin: 0;
 
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 19.36px;
+        font-size: 20px;
         text-align: left;
-
-        margin-bottom: 8px;
+        /* letter-spacing: -0.02em; ???????????? */
+        margin-top: 4px;
+        margin-bottom: 20px;
       }
       .textsContents {
-        margin: 0;
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 14.52px;
+        color: #767676;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
         text-align: left;
       }
     }

@@ -81,8 +81,7 @@ export const FooterBox = styled.div`
     }
   }
   @media (max-width: 767px) {
-    height: 135px;
-    font-size: 8px;
+    height: 153px;
 
     .footerContainer {
       position: relative;
@@ -93,30 +92,43 @@ export const FooterBox = styled.div`
         width: 67px;
         height: 9px;
         margin-top: 30px;
-        margin-bottom: 8px;
+        margin-bottom: 18px;
       }
 
       #info {
+        .telFaxMail {
+          font-size: 10px;
+
+          .mail {
+            display: block;
+            margin-top: 3px;
+          }
+        }
         .customSpan {
           display: table-column;
         }
         .address {
+          font-size: 10px;
+          margin-top: 3px;
           margin-bottom: 12px;
         }
       }
-    }
-    .socialMediaLinkWrapper {
-      display: inline;
-      position: absolute;
-      right: 0;
-      top: 0;
-      margin-top: 30px;
-
-      img {
-        width: 28px;
+      .copyright {
+        font-size: 9px;
       }
-      img:first-child {
-        margin-right: 10px;
+      .socialMediaLinkWrapper {
+        display: inline;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 20px;
+
+        img {
+          width: 28px;
+        }
+        img:first-child {
+          margin-right: 10px;
+        }
       }
     }
   }

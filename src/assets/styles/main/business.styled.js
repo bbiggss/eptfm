@@ -202,23 +202,21 @@ export const BusinessBox = styled.div`
     }
   }
   @media (max-width: 767px) {
+    background-size: cover;
     .noHoverBox {
       display: none;
     }
     width: 100%;
     #container {
-      padding-bottom: 63px;
       & #businessTitleBox {
         & #businessTitle {
-          color: #fff6f6;
-          margin: 0;
-          padding-left: 32px;
-          padding-top: 42px;
-          padding-bottom: 32px;
+          padding-left: 30px;
+          padding-top: 80px;
+          padding-bottom: 40px;
 
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 24.2px;
+          color: #fff6f6;
+          font-size: 36px;
+          font-weight: 500;
           text-align: left;
         }
       }
@@ -233,14 +231,14 @@ export const BusinessBox = styled.div`
       }
       & #contentsWrap ul li {
         overflow: hidden;
-        width: 275px;
-        height: 235px;
+        /* width: 315px;
+        height: 315px; */
         position: relative;
 
         .hoverBox {
           & img {
-            width: 275px;
-            height: 235px;
+            width: 315px;
+            height: 315px;
           }
           & div {
             position: absolute;
@@ -249,32 +247,35 @@ export const BusinessBox = styled.div`
             left: 50%;
             transform: translate(-50%, -50%);
           }
+          p {
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            text-align: center;
+            line-height: 24px;
+            /* filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6)); */
+          }
 
           & p:first-child {
-            color: #ffffff;
-            font-family: 'Roboto-Medium';
-            filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
+            font-family: 'NanumSquareEB';
 
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 19.36px;
-            text-align: center;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 10px;
           }
 
           & p:last-child {
-            color: white;
             font-family: 'NanumSquareB';
-            filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
 
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 16.94px;
-            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
           }
         }
       }
       & #contentsWrap ul li:nth-child(2) {
-        margin: 32px 0;
+        margin: 24px 0;
+      }
+      & #contentsWrap ul li:nth-child(3) {
+        margin-bottom: 80px;
       }
     }
   }
