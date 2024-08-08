@@ -27,11 +27,11 @@ const Footer = () => {
 
         <div className="socialMediaLinkWrapper">
           <SocialMediaLink
-            href={'https://www.youtube.com/'}
+            href={'https://www.youtube.com/@eplatform'}
             src={`${process.env.PUBLIC_URL}/assets/images/common/youtube.png`}
           />
           <SocialMediaLink
-            href={'https://www.instagram.com/'}
+            href={'https://www.instagram.com/e_platform0225/'}
             src={`${process.env.PUBLIC_URL}/assets/images/common/insta.png`}
           />
         </div>

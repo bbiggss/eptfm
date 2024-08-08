@@ -35,15 +35,11 @@ export const HeaderBox = styled.div`
     transition: background-color 0.5s ease, transform 0.5s ease;
   }
 
-  &.colored {
-    background-color: rgba(255, 255, 255, 0.9);
-
-    backdrop-filter: blur(5px);
-    transition: background-color 0.5s ease, transform 0.5s ease;
-  }
-
   #headerContainer {
     /* background-color: yellow; */
+  }
+  ul {
+    list-style: none;
   }
 
   /* 데스크탑 */
@@ -70,7 +66,6 @@ export const HeaderBox = styled.div`
 
     & ul {
       display: flex;
-      list-style: none;
       margin: 0;
     }
     & ul li {
@@ -136,6 +131,12 @@ export const HeaderBox = styled.div`
       position: absolute;
       right: 0;
     }
+    &.colored {
+      background-color: rgba(255, 255, 255, 0.9);
+
+      backdrop-filter: blur(5px);
+      transition: background-color 0.5s ease, transform 0.5s ease;
+    }
   }
 
   /* 태블릿 (768px ~ 1024px) */
@@ -183,18 +184,27 @@ export const HeaderBox = styled.div`
       #logoImg {
         width: 82px;
         height: 11px;
+        position: relative;
+        z-index: 10;
       }
-      #dropDownImg {
+      #dropDownImg,
+      #xBtn {
         position: absolute;
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        width: 18px;
-        height: 14px;
         margin-right: 30px;
       }
+      #dropDownImg {
+        width: 18px;
+        height: 14px;
+      }
+
       ul {
         display: none;
+        /* z-index: -1; */
+        /* position: relative; */
+        /* top: 100px; */
       }
     }
   }

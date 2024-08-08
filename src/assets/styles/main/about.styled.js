@@ -79,9 +79,9 @@ export const AboutBox = styled.div`
       p {
         margin: 0;
         color: #191919;
-        padding-top: 42px;
-        padding-left: 32px;
-        padding-bottom: 8px;
+        padding-top: 80px;
+        padding-left: 30px;
+        padding-bottom: 40px;
 
         font-weight: 700;
         font-size: 20px;
@@ -93,6 +93,10 @@ export const AboutBox = styled.div`
       /* background-color: blueviolet; */
       display: flex;
       flex-direction: column;
+      text-align: center;
+      img {
+        width: 315px;
+      }
     }
   }
 `;

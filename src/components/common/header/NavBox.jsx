@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBox = ({ title, link, activeLink }) => {
+const NavBox = ({ title, link, activeLink, setShowDropDown }) => {
   // console.log(activeLink);
+  const clickTest = () => {
+    if (setShowDropDown !== undefined) {
+      setShowDropDown(false);
+    }
+  };
 
   return (
     <>
       <li>
-        <Link className={activeLink === link ? 'active' : ''} to={link}>
+        <Link onClick={() => clickTest()} className={activeLink === link ? 'active' : ''} to={link}>
           {title}
         </Link>
       </li>
