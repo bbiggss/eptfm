@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -9,6 +9,7 @@ import ProjectDescription from '../../common/ProjectDescription';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import CustomText from '../../common/CustomText';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const BuildingGreatCityBox = styled.div`
   .PortfolioTitleBox {
@@ -17,12 +18,14 @@ const BuildingGreatCityBox = styled.div`
     justify-content: center;
   }
   .satellite {
+    z-index: 1;
     position: absolute;
     right: 0;
     top: -24px;
     margin-right: 170px;
   }
   .mainTexts {
+    z-index: 1;
     position: absolute;
     margin-top: 168px;
 
@@ -45,6 +48,7 @@ const BuildingGreatCityBox = styled.div`
 `;
 
 const BuildingGreatCity = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <BuildingGreatCityBox>
       <Breadcrumb />
@@ -71,10 +75,13 @@ const BuildingGreatCity = () => {
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/main2.png`}
           alt=""
         />
-        <img
-          className="fullScreen"
+        <HeroImg
+          pcHeight={'900px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/16_BuildingGreatCity/main1.png`}
-          alt=""
         />
       </div>
       <TextCenter

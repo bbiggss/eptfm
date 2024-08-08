@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -9,11 +9,13 @@ import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import CustomWrapImg from '../../common/CustomWrapImg';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const WaterTemperatureSalinityExplorationBox = styled.div`
   .mainImgContainer {
     margin-bottom: 200px;
     .rectangular {
+      z-index: 1;
       position: absolute;
       right: 0;
       bottom: -19px;
@@ -46,12 +48,14 @@ const WaterTemperatureSalinityExplorationBox = styled.div`
 `;
 
 const WaterTemperatureSalinityExploration = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <WaterTemperatureSalinityExplorationBox>
       <div className="fullScreen mainImgContainer relative">
         <Breadcrumb font={{ color: '#FFFFFF' }} style={{ position: 'absolute' }} />
 
         <PortfolioTitleWrap
+          $isLoaded={isLoaded}
           style={{
             position: 'absolute',
             left: '50%',
@@ -77,9 +81,13 @@ const WaterTemperatureSalinityExploration = () => {
             }
           />
         </div>
-        <img
+        <HeroImg
+          pcHeight={'1420px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/12_WaterTemperatureSalinityExploration/main.png`}
-          alt=""
         />
       </div>
       <div className="smallScreen">

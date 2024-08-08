@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      .fullScreen {
-        max-width: 1920px;
-        margin: 0 auto;
-        width: 100%;
-        background-color: yellow;
-        display: inline-block;
-      }
       .contourMap {
-        width: 100%;
-        display: block;
+        /* height: 230px; */
+        aspect-ratio: 1502 / 344;
       }
-      .wrap {
-        display: flex;
-        justify-content: center;
+      video {
+        aspect-ratio: 1920 / 1080;
+      }
+      .contourMap,
+      video {
+        width: 100%;
+      }
+      .abc {
+        width: 100%;
+        height: 100px;
+        background-color: yellow;
       }
     </style>
   </head>
   <body>
-    <div class="wrap">
-      <div class="fullScreen">
-        <img
-          class="contourMap"
-          src="./public/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png"
-          alt=""
-        />
-      </div>
-    </div>
+    <img
+      class="contourMap"
+      src="./public/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png"
+      alt=""
+      loading="lazy"
+    />
+    <video src="./public/assets/videos/IntroClip.mp4"></video>
+    <div class="abc"></div>
+    <video src="./public/assets/videos/IntroClip.mp4"></video>
   </body>
 </html>

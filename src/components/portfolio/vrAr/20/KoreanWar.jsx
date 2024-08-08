@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 
@@ -9,6 +9,7 @@ import CustomText from '../../common/CustomText';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const StyledKoreanWar = styled.div`
   .heroImg {
@@ -40,12 +41,14 @@ const StyledKoreanWar = styled.div`
 `;
 
 const KoreanWar = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <StyledKoreanWar>
       <div className="fullScreen heroArea relative">
-        <Breadcrumb style={{ position: 'absolute' }} />
+        <Breadcrumb style={{ position: 'absolute', zIndex: '1' }} />
 
         <PortfolioTitleWrap
+          $isLoaded={isLoaded}
           style={{
             position: 'absolute',
             left: '50%',
@@ -74,17 +77,26 @@ const KoreanWar = () => {
             color: '#292929',
             fontSize: '28px',
             lineHeight: '42px',
+            zIndex: '1',
           }}
           text={
             '이중섭의 그림 속에서 625의 전쟁의 슬픔과 희망을 탐험하세요.\n전쟁의 역사를 예술로 배워보는 시간!'
           }
         />
 
-        <img
+        <HeroImg
+          pcHeight={'1504px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/hero.png`}
+        />
+        {/* <img
           className="heroImg"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/hero.png`}
           alt=""
-        />
+        /> */}
       </div>
 
       <div className="introductionArea fullScreen relative">

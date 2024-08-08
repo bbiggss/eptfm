@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -7,6 +7,7 @@ import TextCenter from '../../common/TextCenter';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const ForensicScientistBox = styled.div`
   max-width: 1920px;
@@ -82,11 +83,13 @@ const ForensicScientistBox = styled.div`
 `;
 
 const ForensicScientist = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <>
       <ForensicScientistBox>
         <Breadcrumb style={{ position: 'absolute' }} font={{ color: '#FFFFFF' }} />
         <PortfolioTitleWrap
+          $isLoaded={isLoaded}
           style={{
             position: 'absolute',
             left: '50%',
@@ -104,10 +107,13 @@ const ForensicScientist = () => {
             title={'과학수사요원이 되어 범인을 찾아라!'}
           />
         </PortfolioTitleWrap>
-        <img
-          className="heroImg"
+        <HeroImg
+          pcHeight={'1400px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/hero.png`}
-          alt=""
         />
 
         <div className="mainBackgroundImg">

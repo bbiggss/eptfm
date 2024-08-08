@@ -4,12 +4,12 @@ import styled from 'styled-components';
 const StyledHeroImg = styled.img`
   width: 100%;
 
-  opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
-  transition: opacity 1s ease-in-out;
+  /* opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
+  transition: opacity 1s ease-in-out; */
 
   @media (min-width: 1025px) {
     height: ${(props) => props.$pcHeight};
-    margin-bottom: 160px;
+    /* margin-bottom: 160px; */
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     height: ${(props) => props.$tabletHeight};
@@ -21,19 +21,19 @@ const StyledHeroImg = styled.img`
 
 const HeroImg = (data) => {
   const imgRef = useRef(null);
-  useEffect(() => {
-    const img = imgRef.current;
-    if (img) {
-      const handleLoad = () => {
-        data.setIsLoaded(true);
-      };
-      img.addEventListener('load', handleLoad);
+  // useEffect(() => {
+  //   const img = imgRef.current;
+  //   if (img) {
+  //     const handleLoad = () => {
+  //       data.setIsLoaded(true);
+  //     };
+  //     img.addEventListener('load', handleLoad);
 
-      return () => {
-        img.removeEventListener('load', handleLoad);
-      };
-    }
-  }, [data]);
+  //     return () => {
+  //       img.removeEventListener('load', handleLoad);
+  //     };
+  //   }
+  // }, [data]);
 
   return (
     <StyledHeroImg

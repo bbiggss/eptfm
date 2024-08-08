@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const StyledPortfolioTitleWrap = styled.div`
   z-index: 1;
-  opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
-  transition: opacity 2s ease-in-out;
+  /* opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
+  transition: opacity 2s ease-in-out; */
   @media (min-width: 1025px) {
     margin-top: ${(props) => props.$pcMarginTop};
   }

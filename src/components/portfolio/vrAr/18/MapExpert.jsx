@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -6,6 +6,7 @@ import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widt
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import CustomText from '../../common/CustomText';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const MapExpertBox = styled.div`
   .PortfolioTitleBox {
@@ -16,6 +17,7 @@ const MapExpertBox = styled.div`
   .heroSection {
     position: relative;
     .customText {
+      z-index: 1;
       position: absolute;
       margin-left: 330px;
       margin-top: 118px;
@@ -32,6 +34,7 @@ const MapExpertBox = styled.div`
 `;
 
 const MapExpert = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <MapExpertBox>
       <Breadcrumb />
@@ -44,10 +47,18 @@ const MapExpert = () => {
 
       <div className="fullScreen heroSection">
         <CustomText text={'지도를 자로 잴 수 있다고? \n놀라운 축척의 세계'} />
-        <img
+        <HeroImg
+          pcHeight={'840px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/main1.png`}
+        />
+        {/* <img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/main1.png`}
           alt=""
-        />
+        /> */}
       </div>
 
       <div className="paddingTop160 marginBottom100">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -6,11 +6,13 @@ import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const BimetalBox = styled.div`
   .mainImgTexts {
     position: relative;
     .mainTexts {
+      z-index: 1;
       position: absolute;
       right: 0;
       margin-top: 142px;
@@ -25,6 +27,7 @@ const BimetalBox = styled.div`
 `;
 
 const Bimetal = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <BimetalBox>
       <Breadcrumb />
@@ -45,10 +48,18 @@ const Bimetal = () => {
               }
             />
           </div>
-          <img
+          <HeroImg
+            pcHeight={'980px'}
+            tabletHeight={''}
+            mobileHeight={''}
+            isLoaded={isLoaded}
+            setIsLoaded={setIsLoaded}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/main1.png`}
+          />
+          {/* <img
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/main1.png`}
             alt=""
-          />
+          /> */}
         </div>
       </div>
       <div className="smallScreen paddingTop100">

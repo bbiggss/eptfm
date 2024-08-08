@@ -17,7 +17,8 @@ const HomeVideo = () => {
   return (
     <StyledHomeVideo>
       <video
-        src={`https://www.dropbox.com/scl/fi/higgz0izzkd3ah8swuyh1/Showreel_20240726.mp4?rlkey=iak6a90olmyeu1qfyzi8xpbbc&st=0r2blexu&raw=1`}
+        // src={`https://www.dropbox.com/scl/fi/higgz0izzkd3ah8swuyh1/Showreel_20240726.mp4?rlkey=iak6a90olmyeu1qfyzi8xpbbc&st=0r2blexu&raw=1`}
+        src={`${process.env.PUBLIC_URL}/assets/videos/IntroClip.mp4`}
         autoPlay
         muted
         loop

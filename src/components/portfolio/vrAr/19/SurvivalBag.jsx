@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -6,6 +6,7 @@ import TextCenter from '../../common/TextCenter';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
 import CustomText from '../../common/CustomText';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const SurvivalBagBox = styled.div`
   .PortfolioTitleBox {
@@ -14,6 +15,7 @@ const SurvivalBagBox = styled.div`
     justify-content: center;
   }
   .mainTitle {
+    z-index: 1;
     position: absolute;
     color: #ffffff;
     font-size: 40px;
@@ -43,6 +45,7 @@ const SurvivalBagBox = styled.div`
 `;
 
 const SurvivalBag = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <SurvivalBagBox>
       <Breadcrumb />
@@ -55,11 +58,19 @@ const SurvivalBag = () => {
 
       <div className="fullScreen relative">
         <p className="mainTitle NanumSquareEB">지진 발생! 올바른 대피 방법은 무엇일까?</p>
-        <img
+        <HeroImg
+          pcHeight={'900px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}
+        />
+        {/* <img
           className="mainImg"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/19_SurvivalBag/main.png`}
           alt=""
-        />
+        /> */}
       </div>
       <div className="fullScreen backImgContainer">
         <ProjectImg

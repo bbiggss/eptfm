@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import TextCenter from '../../common/TextCenter';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ProjectImg from '../../common/ProjectImg';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const TyphoonEvacuationBox = styled.div`
   .mainImgTexts {
@@ -34,6 +35,7 @@ const TyphoonEvacuationBox = styled.div`
 `;
 
 const TyphoonEvacuation = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <TyphoonEvacuationBox>
       <Breadcrumb />
@@ -53,9 +55,13 @@ const TyphoonEvacuation = () => {
               }
             />
           </div>
-          <img
+          <HeroImg
+            pcHeight={'1080px'}
+            tabletHeight={''}
+            mobileHeight={''}
+            isLoaded={isLoaded}
+            setIsLoaded={setIsLoaded}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/main.png`}
-            alt=""
           />
         </div>
       </div>

@@ -9,12 +9,9 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
 import CustomText from '../../common/CustomText';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const StyledClassroomRevolutionLessonPlans = styled.div`
-  .heroImg {
-    width: 100%;
-  }
-
   .twoImgWrapper {
     margin-bottom: 160px;
   }
@@ -96,10 +93,13 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </PortfolioTitleWrap>
 
-        <img
-          className="heroImg"
+        <HeroImg
+          pcHeight={'1000px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          // isLoaded={isLoaded}
+          // setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/hero.png`}
-          alt=""
         />
       </div>
       <div className="fullScreen introductionArea">

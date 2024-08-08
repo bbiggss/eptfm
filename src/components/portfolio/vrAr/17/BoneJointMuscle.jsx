@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -8,6 +8,7 @@ import TextCenter from '../../common/TextCenter';
 import ZigZagImgTexts from '../../common/ZigZagImgTexts';
 import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const BoneJointMuscleBox = styled.div`
   .PortfolioTitleBox {
@@ -71,6 +72,7 @@ const BoneJointMuscleBox = styled.div`
 `;
 
 const BoneJointMuscle = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <BoneJointMuscleBox>
       <Breadcrumb />
@@ -81,6 +83,14 @@ const BoneJointMuscle = () => {
         title={'뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
       />
       <div className="fullScreen mainContainer">
+        {/* <HeroImg
+          pcHeight={'760px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/main1.png`}
+        /> */}
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/main1.png`}
           alt=""

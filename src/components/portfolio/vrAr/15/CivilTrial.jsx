@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
@@ -7,6 +7,7 @@ import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widt
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const CivilTrialBox = styled.div`
   .PortfolioTitleBox {
@@ -22,6 +23,7 @@ const CivilTrialBox = styled.div`
     height: 800px;
 
     .mainTexts {
+      z-index: 1;
       position: absolute;
       width: 780px;
       height: -webkit-fill-available;
@@ -53,6 +55,7 @@ const CivilTrialBox = styled.div`
 `;
 
 const CivilTrial = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <CivilTrialBox>
       <Breadcrumb />
@@ -73,9 +76,13 @@ const CivilTrial = () => {
               }
             />
           </div>
-          <img
+          <HeroImg
+            pcHeight={'800px'}
+            tabletHeight={''}
+            mobileHeight={''}
+            isLoaded={isLoaded}
+            setIsLoaded={setIsLoaded}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/main1.png`}
-            alt=""
           />
         </div>
         <div className="container2">

@@ -9,6 +9,7 @@ import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import Img from '../../common/Img';
 import ProjectDescription from '../../common/ProjectDescription';
 import CustomText from '../../common/CustomText';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const StyledEnvironmentalLabelingCertification = styled.div`
   .heroImg {
@@ -95,11 +96,19 @@ const EnvironmentalLabelingCertification = () => {
             title={'친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은 선택'}
           />
         </PortfolioTitleWrap>
-        <img
+        <HeroImg
+          pcHeight={'1080px'}
+          tabletHeight={''}
+          mobileHeight={''}
+          // isLoaded={isLoaded}
+          // setIsLoaded={setIsLoaded}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/hero.png`}
+        />
+        {/* <img
           className="heroImg"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/hero.png`}
           alt=""
-        />
+        /> */}
       </div>
       <div className="fullScreen F5F5F7">
         <div className="FFFFFF">
