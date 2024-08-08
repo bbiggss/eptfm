@@ -2,7 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
 const StyledHeroVideo = styled.video`
-  height: 1080px;
+  width: 100%;
+  height: auto;
+  max-height: 1080px;
   transition: opacity 1s ease-in-out;
   opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
 `;

@@ -11,7 +11,6 @@ import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle
 
 const StyledEarthRotationChangingSeasons = styled.div`
   max-width: 1920px;
-  width: 100%;
   /* background-color: beige; */
   margin: auto;
   overflow: hidden; // 추후 삭제 예정

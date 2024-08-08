@@ -90,6 +90,9 @@ const EcosystemRestoration = () => {
           />
 
           <HeroImg
+            pcHeight={'760px'}
+            tabletHeight={''}
+            mobileHeight={''}
             isLoaded={isLoaded}
             setIsLoaded={setIsLoaded}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/1.png`}

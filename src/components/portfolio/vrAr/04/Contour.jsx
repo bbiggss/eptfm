@@ -12,10 +12,6 @@ import CustomWrapImg from '../../common/CustomWrapImg';
 import HeroVideo from '../../common/Hero/HeroVideo';
 
 const StyledContour = styled.div`
-  .heroArea video {
-    width: 100%;
-  }
-
   .introductionArea {
     text-align: center;
     margin-top: 200px;

@@ -223,6 +223,9 @@ const MudFlat = () => {
         </div>
 
         <HeroImg
+          pcHeight={'1080px'}
+          tabletHeight={''}
+          mobileHeight={'450px'}
           isLoaded={isLoaded}
           setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
