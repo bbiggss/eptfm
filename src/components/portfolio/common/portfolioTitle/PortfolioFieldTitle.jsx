@@ -12,8 +12,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const StyledPortfolioFieldTitle = styled.p`
   font-family: 'NanumSquareEB';
-  line-height: auto;
-  letter-spacing: -2px;
+  letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
     font-size: 64px;

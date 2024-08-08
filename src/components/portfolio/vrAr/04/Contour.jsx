@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
@@ -9,6 +9,7 @@ import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import ProjectDescription from '../../common/ProjectDescription';
 import Img from '../../common/Img';
 import CustomWrapImg from '../../common/CustomWrapImg';
+import HeroVideo from '../../common/Hero/HeroVideo';
 
 const StyledContour = styled.div`
   .heroArea video {
@@ -29,12 +30,14 @@ const StyledContour = styled.div`
 `;
 
 const Contour = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <StyledContour>
       <Breadcrumb />
 
       <div className="fullScreen heroArea">
         <PortfolioTitleWrap
+          $isLoaded={isLoaded}
           style={{
             position: 'absolute',
             left: '50%',
@@ -50,14 +53,11 @@ const Contour = () => {
           />
         </PortfolioTitleWrap>
 
-        <video
+        <HeroVideo
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/videos/contour.mp4`}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="mainVideo"
-        ></video>
+        />
       </div>
 
       <div className="introductionArea">

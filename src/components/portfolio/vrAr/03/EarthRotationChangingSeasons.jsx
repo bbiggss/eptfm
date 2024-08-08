@@ -1,10 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import ProjectImg from '../../common/ProjectImg';
 import ProjectDescription from '../../common/ProjectDescription';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
-import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
+import HeroVideo from '../../common/Hero/HeroVideo';
+import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
+import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
+import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 
 const StyledEarthRotationChangingSeasons = styled.div`
   max-width: 1920px;
@@ -20,9 +23,6 @@ const StyledEarthRotationChangingSeasons = styled.div`
 
     left: 50%;
     transform: translateX(-50%);
-
-    transition: opacity 2s ease-in-out;
-    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
 
     .orgainzation {
       text-align: center;
@@ -121,33 +121,10 @@ const StyledEarthRotationChangingSeasons = styled.div`
       width: 100px;
     }
   }
-
-  .heroVideo {
-    height: 1080px;
-
-    background-color: #f0f0f0; /* 이미지 로드 전 배경색 */
-    transition: opacity 1s ease-in-out;
-    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
-  }
 `;
 
 const EarthRotationChangingSeasons = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (video) {
-      const handleLoadedData = () => {
-        setIsLoaded(true);
-      };
-      video.addEventListener('loadeddata', handleLoadedData);
-
-      return () => {
-        video.removeEventListener('loadeddata', handleLoadedData);
-      };
-    }
-  }, []);
 
   return (
     <>
@@ -155,21 +132,30 @@ const EarthRotationChangingSeasons = () => {
       <StyledEarthRotationChangingSeasons $isLoaded={isLoaded}>
         <div className="fullScreen">
           <div className="portfolioTitle">
-            <PortfolioTitle
-              organization={'한국교육학술정보원'}
-              field={'AR'}
-              title={'지구의 공전과 계절의 변화'}
-            />
+            <PortfolioTitleWrap
+              $isLoaded={isLoaded}
+              style={{
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+              }}
+            >
+              <PortfolioOrganization
+                style={{ color: 'rgba(255, 255, 255, 0.9)', fontFamily: 'NanumSquareB' }}
+                organization={'한국교육학술정보원'}
+              />
+              <PortfolioFieldTitle
+                style={{ color: 'rgba(255, 255, 255, 0.9)', whiteSpace: 'nowrap' }}
+                field={'AR'}
+                title={'지구의 공전과 계절의 변화'}
+              />
+            </PortfolioTitleWrap>
           </div>
-          <video
-            className="heroVideo"
-            ref={videoRef}
+          <HeroVideo
+            isLoaded={isLoaded}
+            setIsLoaded={setIsLoaded}
             src={`${process.env.PUBLIC_URL}/assets/videos/EarthRevolution.mp4`}
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+          />
         </div>
         <div className="container">
           <div className="mainImg">

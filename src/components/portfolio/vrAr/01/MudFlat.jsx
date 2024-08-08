@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
@@ -10,14 +10,10 @@ import CustomText from '../../common/CustomText';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const MudFlatBox = styled.div`
   @media (min-width: 1025px) {
-    .mainImg {
-      width: 100%;
-      height: auto;
-      margin-bottom: 160px;
-    }
     .subTexts {
       font-size: 24px;
       margin-top: 60px;
@@ -97,7 +93,6 @@ const MudFlatBox = styled.div`
       height: 350px;
       margin-bottom: 82px;
       /* overflow: hidden; */
-      width: 100%;
       /* position: relative; */
       /* right: 117px; */
       /* z-index: -1; */
@@ -191,33 +186,12 @@ const MudFlatBox = styled.div`
     /* max-width: 767px; */
     /* overflow: hidden; */
   }
-
-  .mainImg {
-    opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
-    transition: opacity 1s ease-in-out;
-  }
 `;
 
 const MudFlat = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const imgRef = useRef(null);
-
-  useEffect(() => {
-    const img = imgRef.current;
-    if (img) {
-      const handleLoad = () => {
-        setIsLoaded(true);
-      };
-      img.addEventListener('load', handleLoad);
-
-      return () => {
-        img.removeEventListener('load', handleLoad);
-      };
-    }
-  }, []);
-
   return (
-    <MudFlatBox $isLoaded={isLoaded}>
+    <MudFlatBox>
       <Breadcrumb />
       <div className="fullScreen">
         <div className="portfolioTitle">
@@ -247,11 +221,11 @@ const MudFlat = () => {
             title={'갯벌은 어떤 곳일까?'}
           /> */}
         </div>
-        <img
-          className="mainImg"
-          ref={imgRef}
+
+        <HeroImg
+          isLoaded={isLoaded}
+          setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
-          alt=""
         />
       </div>
       <div className="smallScreen">

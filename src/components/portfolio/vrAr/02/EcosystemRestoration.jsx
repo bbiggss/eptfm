@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
 import styled from 'styled-components';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
+import HeroImg from '../../common/Hero/HeroImg';
 
 export const EcosystemRestorationBox = styled.div`
   max-width: 1920px;
@@ -75,6 +76,7 @@ export const EcosystemRestorationBox = styled.div`
 `;
 
 const EcosystemRestoration = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   return (
     <>
       <Breadcrumb />
@@ -87,9 +89,10 @@ const EcosystemRestoration = () => {
             title={'미션! 생태계를 복원하라'}
           />
 
-          <img
+          <HeroImg
+            isLoaded={isLoaded}
+            setIsLoaded={setIsLoaded}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/1.png`}
-            alt=""
           />
 
           <div className="animationBox">

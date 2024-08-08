@@ -1,19 +1,28 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 
 const StyledHeroImg = styled.img`
+  width: 100%;
   opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 1s ease-in-out;
+
+  @media (min-width: 1025px) {
+    height: auto;
+    margin-bottom: 160px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+  }
+  @media (max-width: 767px) {
+  }
 `;
 
 const HeroImg = (data) => {
-  const [isLoaded, setIsLoaded] = useState(false);
   const imgRef = useRef(null);
   useEffect(() => {
     const img = imgRef.current;
     if (img) {
       const handleLoad = () => {
-        setIsLoaded(true);
+        data.setIsLoaded(true);
       };
       img.addEventListener('load', handleLoad);
 
@@ -21,9 +30,17 @@ const HeroImg = (data) => {
         img.removeEventListener('load', handleLoad);
       };
     }
-  }, []);
+  }, [data]);
 
-  return <StyledHeroImg ref={imgRef} src={data.src} alt="" />;
+  return (
+    <StyledHeroImg
+      style={data.style}
+      $isLoaded={data.isLoaded}
+      ref={imgRef}
+      src={data.src}
+      alt=""
+    />
+  );
 };
 
 export default HeroImg;
