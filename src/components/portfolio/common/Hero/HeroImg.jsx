@@ -1,26 +1,25 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import useMobile from '../../../hooks/useMobile';
 
 const StyledHeroImg = styled.img`
   width: 100%;
-
   /* opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 1s ease-in-out; */
 
-  @media (min-width: 1025px) {
-    height: ${(props) => props.$pcHeight};
+  @media (min-width: 768px) {
+    aspect-ratio: ${(props) => props.$pcHeight};
     /* margin-bottom: 160px; */
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: ${(props) => props.$tabletHeight};
-  }
   @media (max-width: 767px) {
-    height: ${(props) => props.$mobileHeight};
+    aspect-ratio: ${(props) => props.$mobileHeight};
   }
 `;
 
 const HeroImg = (data) => {
   const imgRef = useRef(null);
+  const isMobile = useMobile();
+
   // useEffect(() => {
   //   const img = imgRef.current;
   //   if (img) {
@@ -43,7 +42,7 @@ const HeroImg = (data) => {
       $mobileHeight={data.mobileHeight}
       $isLoaded={data.isLoaded}
       ref={imgRef}
-      src={data.src}
+      src={isMobile ? data.mobileSrc : data.src}
       alt=""
     />
   );

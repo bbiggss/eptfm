@@ -153,6 +153,9 @@ export const ContactUsModalBox = styled.div`
           position: absolute;
           top: 0;
           right: 0;
+          margin-top: 20px;
+          margin-right: 30px;
+          width: 25px;
         }
         img {
           float: right;

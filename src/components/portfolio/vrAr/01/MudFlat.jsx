@@ -214,21 +214,16 @@ const MudFlat = () => {
               title={'갯벌은 어떤 곳일까?'}
             />
           </PortfolioTitleWrap>
-
-          {/* <PortfolioTitle
-            organization={'한국교육학술정보원'}
-            field={'AR'}
-            title={'갯벌은 어떤 곳일까?'}
-          /> */}
         </div>
 
         <HeroImg
-          pcHeight={'1080px'}
-          tabletHeight={''}
-          mobileHeight={'450px'}
+          pcHeight={'1920 / 1080'}
+          // tabletHeight={''}
+          mobileHeight={'375 / 450'}
           isLoaded={isLoaded}
           setIsLoaded={setIsLoaded}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
+          mobileSrc={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1_mobile.png`}
         />
       </div>
       <div className="smallScreen">
