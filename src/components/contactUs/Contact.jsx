@@ -2,6 +2,7 @@ import React from 'react';
 import { ContactUsBox } from '../../assets/styles/contactUs/contactUs.styled';
 import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
+import Transportation from './Transportation';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
   return (
@@ -29,6 +30,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         <ContactTextsLinkBox
           mainText={'문의하기'}
           subText={'문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
+          mobile_subText={'문의사항이나 의견이 있으시면 언제든지 연락\n주세요.'}
           popupText={'메일 보내기'}
           clickOption={'mail'}
           modalStatus={modalStatus}
@@ -38,7 +40,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         <ul className="inquiryImg">
           <li>
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/image 12.png`} alt="" />
-            <p className="NanumSquareB">e-Learning 콘텐츠 개발</p>
+            <p className="NanumSquareB">e-Learning 솔루션 개발</p>
           </li>
           <li>
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/image 15.png`} alt="" />
@@ -54,11 +56,12 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         <ContactTextsLinkBox
           mainText={'오시는 길'}
           subText={'서울시 영등포구 선유로 130, 에이스 하이테크시티3차 409호'}
+          mobile_subText={'서울시 영등포구 선유로 130,\n 에이스 하이테크시티3차 409호'}
           popupText={'지도 보기'}
           clickOption={'map'}
         />
 
-        <div>
+        <div className="mapWrap">
           <a
             href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh"
             target="_blank"
@@ -68,18 +71,18 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           </a>
         </div>
         <div className="transportation NanumSquareB">
-          <div className="subway">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`} alt="" />
-            <p>
-              <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역
-            </p>
-          </div>
-          <div className="bus">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} alt="" />
-            <p>
-              <span>버스</span> : 영등포 02, 영등포 05, 7612번
-            </p>
-          </div>
+          <Transportation
+            $mobileMargin
+            src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`}
+            mot={'지하철'}
+            location={' : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역'}
+          />
+          <Transportation
+            src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`}
+            mot={'버스'}
+            location={' : 영등포 02, 영등포 05, 7612번'}
+          />
+          {/* mot: means of transportation 교통수단 */}
         </div>
       </div>
     </ContactUsBox>

@@ -38,8 +38,9 @@ const InquiryModal = ({ setModalStatus }) => {
       <div className="modalBackground"></div>
       <div className="modalContainer">
         <div className="inquiryContainer">
-          <p className="NanumSquareEB">문의하기</p>
+          <p className="inquiryTitle NanumSquareEB">문의하기</p>
           <img
+            className="xBtn"
             onClick={() => setModalStatus(false)}
             src={`${process.env.PUBLIC_URL}/assets/images/contact/x.png`}
             alt=""
