@@ -1,4 +1,5 @@
 import React from 'react';
+import useMobile from '../hooks/useMobile';
 
 const BusinessItems = (data) => {
   const renderTextWithLineBreaks = (text) => {
@@ -9,6 +10,7 @@ const BusinessItems = (data) => {
       </React.Fragment>
     ));
   };
+  const isMobile = useMobile();
   return (
     <li>
       <div className="noHoverBox">
@@ -17,7 +19,7 @@ const BusinessItems = (data) => {
       </div>
 
       <div className="hoverBox">
-        <img src={data && data.hoverImg} alt="" />
+        <img src={isMobile ? data && data.mobile_hoverImg : data && data.hoverImg} alt="" />
         <div>
           <p>{data && data.text}</p>
           <p>{renderTextWithLineBreaks(data && data.hoverText)}</p>

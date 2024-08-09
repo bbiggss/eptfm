@@ -30,7 +30,7 @@ const PortfolioListButton = ({ portfolioListModalStatus, setPortfolioListModalSt
     <StyledPortfolioListButton>
       <img
         onClick={listBtn}
-        src={`${process.env.PUBLIC_URL}/assets/images/common/btn_p_list.png`}
+        src={`${process.env.PUBLIC_URL}/assets/images/common/portfolioListButton.png`}
         alt=""
       />
     </StyledPortfolioListButton>

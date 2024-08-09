@@ -5,6 +5,9 @@ export const WidthOneContent = styled.div`
   text-align: center;
 
   @media (min-width: 1025px) {
+    img {
+      margin-bottom: 60px;
+    }
     padding-top: ${(props) => {
       if (props.$first) return '160px';
       return '0px';
@@ -18,14 +21,20 @@ export const WidthOneContent = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {
   }
   @media (max-width: 767px) {
+    padding-top: ${(props) => {
+      if (props.$first) return '80px';
+      return '0px';
+    }};
     padding-bottom: ${(props) => {
-      if (props.$last) return '112px';
-      if (props.$customPaddingBottom) return '116px';
-      return '100px';
+      if (props.$last) return '142px';
+      // if (props.$customPaddingBottom) return '?px';
+      return '80px';
     }};
 
-    .projectImg {
+    margin: 0 30px;
+    img {
       width: 100%;
+      margin-bottom: 24px;
     }
   }
 

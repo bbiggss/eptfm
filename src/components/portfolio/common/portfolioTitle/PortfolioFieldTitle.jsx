@@ -11,7 +11,6 @@ const renderTextWithLineBreaks = (text) => {
 };
 
 const StyledPortfolioFieldTitle = styled.p`
-  font-family: 'NanumSquareEB';
   letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
@@ -21,6 +20,7 @@ const StyledPortfolioFieldTitle = styled.p`
   }
   @media (max-width: 767px) {
     font-size: 25px;
+    /* font-size: calc(25px + 0.5vw); */
   }
 `;
 

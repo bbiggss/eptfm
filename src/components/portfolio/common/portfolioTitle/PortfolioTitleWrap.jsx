@@ -23,7 +23,7 @@ const PortfolioTitleWrap = ({ style, children, pcMarginTop, mobileMarginTop, $is
       style={style}
       $isLoaded={$isLoaded}
     >
-      <div>{children}</div>
+      {children}
     </StyledPortfolioTitleWrap>
   );
 };

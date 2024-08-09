@@ -121,7 +121,7 @@ const InformationDisclosure = () => {
           />
           <ProjectDescription
             textPosition={'right'}
-            text={`뿐만 아니라 학교의 전반적인 운영 상황,\n교육 성과, 학생의 학업 성취도 등을\n투명하게 공개하고, 이를 통해 교육의\n질을 높이는 데 목적을 두고 있음을\n뚜렷하게 확인할 수 있답니다!`}
+            text={`해당 정보공시를 입력하는 분들을 위해\n세세한 주의사항들도 설명해준답니다!`}
           />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>

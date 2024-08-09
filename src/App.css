@@ -24,7 +24,7 @@
 }
 @media (max-width: 767px) {
   .fullScreen {
-    /* max-width: 375px; */
+    min-width: 315px;
     margin: 0 auto;
     width: 100%;
   }
@@ -102,12 +102,6 @@
 }
 .TextColor191919 {
   color: #191919;
-}
-
-/* COLOR */
-.EDFAFF {
-  background-color: #edfaff;
-  background-color: rgba(237, 250, 255, 0.8);
 }
 
 .test {

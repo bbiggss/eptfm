@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledPortfolioOrganization = styled.p`
-  font-family: 'NanumSquareEB';
   letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
@@ -13,7 +12,9 @@ const StyledPortfolioOrganization = styled.p`
   }
   @media (max-width: 767px) {
     font-size: 12px;
-    margin-bottom: 11px;
+    /* font-size: calc(12px + 0.5vw); */
+
+    margin-bottom: 10px;
   }
 `;
 

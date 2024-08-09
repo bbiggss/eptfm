@@ -1,6 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const renderTextWithLineBreaks = (text) => {
+  return text.split('\n').map((line, index) => (
+    <React.Fragment key={index}>
+      {line}
+      <br />
+    </React.Fragment>
+  ));
+};
+
+// 추후삭제예정-------------------------
+
 const PortfolioIntroductionBox = styled.div`
   .title {
     color: #292929;
@@ -16,23 +27,11 @@ const PortfolioIntroductionBox = styled.div`
     white-space: nowrap;
   }
 `;
-
-const renderTextWithLineBreaks = (text) => {
-  return text.split('\n').map((line, index) => (
-    <React.Fragment key={index}>
-      {line}
-      <br />
-    </React.Fragment>
-  ));
-};
-
 const PortfolioIntroduction = (data) => {
   return (
     <PortfolioIntroductionBox style={data && data.style} className="PortfolioIntroductionBox">
       <p className="title NanumSquareEB">{renderTextWithLineBreaks(data.title)}</p>
-      <div className="subTexts NanumSquareB">
-        <p>{renderTextWithLineBreaks(data.description)}</p>
-      </div>
+      <p className="subTexts NanumSquareB">{renderTextWithLineBreaks(data.description)}</p>
     </PortfolioIntroductionBox>
   );
 };
