@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 const renderTextWithLineBreaks = (text) => {
   return text.split('\n').map((line, index) => (
     <React.Fragment key={index}>
@@ -10,27 +9,33 @@ const renderTextWithLineBreaks = (text) => {
   ));
 };
 
-const StyledPortfolioIntroductionTitle = styled.p`
-  color: #292929;
-  font-size: 40px;
-  letter-spacing: -0.02em;
-  /* NanumSquareEB */
-`;
 const StyledPortfolioIntroductionDescription = styled.p`
-  margin-top: 34px;
-  color: #767676;
-  font-size: 26px;
-  line-height: 40px;
+  font-family: 'NanumSquareB';
+  color: #333333;
   letter-spacing: -0.02em;
-  white-space: nowrap;
+
+  @media (min-width: 1025px) {
+    margin-top: 60px;
+
+    font-size: 24px;
+    line-height: 38px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 80px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
-const PortfolioIntroductionTitle = (data) => {
-  return (
-    <StyledPortfolioIntroductionTitle style={data && data.style}>
-      {renderTextWithLineBreaks(data.title)}
-    </StyledPortfolioIntroductionTitle>
-  );
-};
+
 const PortfolioIntroductionDescription = (data) => {
   return (
     <StyledPortfolioIntroductionDescription style={data && data.style}>
@@ -39,4 +44,4 @@ const PortfolioIntroductionDescription = (data) => {
   );
 };
 
-export { PortfolioIntroductionTitle, PortfolioIntroductionDescription };
+export default PortfolioIntroductionDescription;

@@ -131,6 +131,7 @@ function App() {
       <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
       {/* <Header headerClass={headerClass} /> */}
       {location.pathname === '/' ? <Video /> : ''}
+
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />

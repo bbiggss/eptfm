@@ -9,6 +9,7 @@ const StyledPortfolioOrganization = styled.p`
     margin-bottom: 24px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    margin-bottom: 20px; // custom
   }
   @media (max-width: 767px) {
     font-size: 12px;

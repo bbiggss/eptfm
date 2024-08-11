@@ -89,18 +89,18 @@ const ReservoirDam = () => {
     <ReservoirDamBox>
       <Breadcrumb />
 
-      <PortfolioTitleWrap
-        style={{ marginBottom: '80px', display: 'flex', justifyContent: 'center' }}
-      >
-        <PortfolioOrganization
-          style={{ color: '#999999', fontFamily: 'NanumSquareB' }}
-          organization={'농식품공무원교육원'}
-        />
-        <PortfolioFieldTitle
-          style={{ color: '#48C2C5', whiteSpace: 'nowrap' }}
-          title={'저수지·댐 안전관리 및 재해예방'}
-        />
-      </PortfolioTitleWrap>
+      <div className="flexCenter">
+        <PortfolioTitleWrap style={{ marginBottom: '80px' }}>
+          <PortfolioOrganization
+            style={{ color: '#999999', fontFamily: 'NanumSquareB' }}
+            organization={'농식품공무원교육원'}
+          />
+          <PortfolioFieldTitle
+            style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }}
+            title={'저수지·댐 안전관리 및 재해예방'}
+          />
+        </PortfolioTitleWrap>
+      </div>
 
       <div className="fullScreen heroArea">
         <PortfolioIntroduction

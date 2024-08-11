@@ -17,6 +17,7 @@ const StyledPortfolioFieldTitle = styled.p`
     font-size: 64px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 45px; // custom
   }
   @media (max-width: 767px) {
     font-size: 25px;

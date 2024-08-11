@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import styled from 'styled-components';
-import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import CustomText from '../../common/CustomText';
@@ -9,17 +8,22 @@ import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import HeroImg from '../../common/Hero/HeroImg';
-import {
-  PortfolioIntroductionDescription,
-  PortfolioIntroductionTitle,
-} from '../../common/portfolioIntroduction/PortfolioIntroduction';
 import useMobile from '../../../hooks/useMobile';
 import Img from '../../common/Img';
+import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
+import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 
 const MudFlatBox = styled.div`
   .gridContainer,
   .watchContainer {
     background-color: rgba(237, 250, 255, 0.8);
+  }
+  .introductionWrap {
+    display: flex;
+    align-items: center;
+  }
+  .mainContainer {
+    text-align: center;
   }
   @media (min-width: 1025px) {
     .subTexts {
@@ -46,11 +50,8 @@ const MudFlatBox = styled.div`
     .mainContainer {
       margin-top: 171px;
       display: flex;
-      text-align: center;
 
       .introductionWrap {
-        display: flex;
-        align-items: center;
         margin-left: 67px;
       }
     }
@@ -59,9 +60,19 @@ const MudFlatBox = styled.div`
 
       margin-top: 160px;
       margin-bottom: 160px;
-      .centerAlignment img {
+      /* .centerAlignment img {
         margin: 80px 0;
+      } */
+      .centerAlignment {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        justify-content: center;
+        margin-bottom: 34px;
+        img {
+          /* margin: 80px 0; */
+        }
       }
+
       .watchTitle {
         color: #000000;
         font-size: 50px;
@@ -92,23 +103,72 @@ const MudFlatBox = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-  }
-  @media (max-width: 767px) {
-    .mainImg {
-      height: 350px;
-      margin-bottom: 82px;
-      /* overflow: hidden; */
-      /* position: relative; */
-      /* right: 117px; */
-      /* z-index: -1; */
+    .introductionWrap {
+      margin-top: 20px;
+      justify-content: center;
     }
 
     .mainContainer {
       margin-top: 80px;
-      text-align: center;
-
-      .womanWrap {
+      .woman {
+        width: 300px; // custom
+        aspect-ratio: 300 / 265;
       }
+    }
+
+    .watchContainer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+      margin-bottom: 80px;
+      .watchTitle {
+        color: #000000;
+        font-size: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        text-align: center;
+
+        margin-bottom: 25px;
+      }
+      .centerAlignment {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        margin-bottom: 34px;
+        img {
+          width: 170px;
+        }
+      }
+    }
+    .gridContainer {
+      padding-top: 80px;
+      padding-bottom: 80px;
+
+      ul {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 200px);
+        gap: 7px 7.5px;
+        margin-bottom: 24px;
+
+        li {
+          list-style: none;
+          img {
+            width: 200px;
+          }
+        }
+      }
+      .customText {
+        color: #191919;
+        text-align: center;
+      }
+    }
+    .man {
+      width: 200px;
+    }
+  }
+  @media (max-width: 767px) {
+    .mainContainer {
+      margin-top: 80px;
 
       .woman {
         width: 158px;
@@ -117,12 +177,9 @@ const MudFlatBox = styled.div`
 
       .introductionWrap {
         margin-top: 20px;
-        display: flex;
-        align-items: center;
-        text-align: center;
         justify-content: center;
 
-        .title {
+        /* .title {
           color: #000000;
           font-size: 22px;
         }
@@ -132,7 +189,7 @@ const MudFlatBox = styled.div`
           line-height: 24px;
           margin-top: 20px;
           margin-bottom: 80px;
-        }
+        } */
       }
     }
     .watchContainer {
@@ -142,6 +199,9 @@ const MudFlatBox = styled.div`
       margin-bottom: 80px;
 
       .centerAlignment {
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
         margin-bottom: 34px;
         img {
           width: 105px;
@@ -238,18 +298,14 @@ const MudFlat = () => {
             />
           </div>
           <div className="introductionWrap">
-            {/* <PortfolioIntroductionTitle title={'갯벌 생물 채집 달인에 도전!'} />
-            <PortfolioIntroductionDescription
-              description={
-                "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
-              }
-            /> */}
-            <PortfolioIntroduction
-              title={'갯벌 생물 채집 달인에 도전!'}
-              description={
-                "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
-              }
-            />
+            <div>
+              <PortfolioIntroductionTitle title={'갯벌 생물 채집 달인에 도전!'} />
+              <PortfolioIntroductionDescription
+                description={
+                  "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
+                }
+              />
+            </div>
           </div>
         </div>
       </div>

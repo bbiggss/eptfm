@@ -19,7 +19,7 @@
     max-width: 960px;
     width: 90%;
     margin: 0 auto;
-    background-color: black;
+    /* background-color: black; */
   }
 }
 @media (max-width: 767px) {

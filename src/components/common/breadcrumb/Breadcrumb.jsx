@@ -33,6 +33,7 @@ const StyledBreadcrumbBox = styled.div`
     margin-bottom: 73px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    display: none;
   }
   @media (max-width: 767px) {
     display: none;

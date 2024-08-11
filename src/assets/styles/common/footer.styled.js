@@ -45,7 +45,7 @@ export const FooterBox = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    background-color: yellow;
+    /* background-color: yellow; */
     .footerContainer {
       position: relative;
       width: 80%;

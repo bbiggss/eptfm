@@ -144,7 +144,11 @@ const EarthRotationChangingSeasons = () => {
                 organization={'한국교육학술정보원'}
               />
               <PortfolioFieldTitle
-                style={{ color: 'rgba(255, 255, 255, 0.9)', whiteSpace: 'nowrap' }}
+                style={{
+                  color: 'rgba(255, 255, 255, 0.9)',
+                  fontFamily: 'NanumSquareEB',
+                  whiteSpace: 'nowrap',
+                }}
                 field={'AR'}
                 title={'지구의 공전과 계절의 변화'}
               />

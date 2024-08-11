@@ -18,9 +18,13 @@ export const WidthOneContent = styled.div`
       return '160px';
     }};
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-  }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
+    margin: 0 30px;
+    img {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
     padding-top: ${(props) => {
       if (props.$first) return '80px';
       return '0px';
@@ -30,12 +34,6 @@ export const WidthOneContent = styled.div`
       // if (props.$customPaddingBottom) return '?px';
       return '80px';
     }};
-
-    margin: 0 30px;
-    img {
-      width: 100%;
-      margin-bottom: 24px;
-    }
   }
 
   &.firstChild {

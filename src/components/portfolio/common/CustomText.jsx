@@ -7,10 +7,12 @@ const CustomTextBox = styled.p`
   letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
-    line-height: 38px;
     font-size: 24px;
+    line-height: 38px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 20px; // custom
+    line-height: 30px; // custom
   }
   @media (max-width: 767px) {
     font-size: 16px;
