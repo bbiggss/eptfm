@@ -85,13 +85,13 @@ export const EcosystemRestorationBox = styled.div`
 
   @media (max-width: 767px) {
     .animationBox {
-      display: flex;
+      /* display: flex; */
       background-color: aqua;
       margin-bottom: 80px;
       position: relative;
 
       .left {
-        position: absolute;
+        position: relative;
         /* left: -123px; */
         top: -30px;
         .eagle {
@@ -101,16 +101,14 @@ export const EcosystemRestorationBox = styled.div`
           width: 22px;
           position: absolute;
           top: 73px;
-          right: 0;
+          /* right: 0; */
         }
       }
       .introduction {
         text-align: left;
-        width: 586px;
         p:first-child {
           color: #292929;
           font-size: 40px;
-          margin-top: 320px;
           margin-bottom: 34px;
         }
         p:last-child {

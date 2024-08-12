@@ -15,12 +15,14 @@ const StyledPortfolioFieldTitle = styled.p`
 
   @media (min-width: 1025px) {
     font-size: 64px;
+    /* 64px / 1440px * 100 = 4.44vw */
+
+    /* font-size: calc(64px + 0.5vw); */
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 45px; // custom
-  }
-  @media (max-width: 767px) {
-    font-size: 25px;
+  @media (max-width: 1024px) {
+    font-size: 6.67vw;
+    /* 25px / 375px * 100 = 6.67vw */
+
     /* font-size: calc(25px + 0.5vw); */
   }
 `;

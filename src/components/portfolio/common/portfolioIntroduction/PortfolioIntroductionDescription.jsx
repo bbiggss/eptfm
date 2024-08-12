@@ -20,19 +20,17 @@ const StyledPortfolioIntroductionDescription = styled.p`
     font-size: 24px;
     line-height: 38px;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-top: 20px;
-    margin-bottom: 80px;
+  @media (max-width: 1024px) {
+    /* margin-top: 20px;
+    margin-bottom: 80px; */
 
-    font-size: 16px;
-    line-height: 24px;
-  }
-  @media (max-width: 767px) {
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 5.33vw;
+    margin-bottom: 21.33vw;
 
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 4.27vw;
+    /* 16px / 375px * 100 = 4.27vw */
+    /* line-height: 24px; */
+    line-height: 6.4vw;
   }
 `;
 

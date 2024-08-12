@@ -16,12 +16,12 @@ const StyledPortfolioIntroductionTitle = styled.p`
   letter-spacing: -0.02em;
   @media (min-width: 1025px) {
     font-size: 50px;
+    /* font-size: 3.47vw; */
+    /* 1440px 기준 50px */
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 33px; // custom
-  }
-  @media (max-width: 767px) {
-    font-size: 22px;
+  @media (max-width: 1024px) {
+    font-size: 5.87vw;
+    /* 22px / 375px * 100 = 5.87vw */
   }
 `;
 

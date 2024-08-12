@@ -5,7 +5,10 @@ export const WidthOneContent = styled.div`
   text-align: center;
 
   @media (min-width: 1025px) {
+    margin: 0 30px;
     img {
+      width: 100%;
+      max-width: 1100px;
       margin-bottom: 60px;
     }
     padding-top: ${(props) => {
