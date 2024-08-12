@@ -62,14 +62,6 @@ export const FooterBox = styled.div`
       #info {
         .telFaxMail {
           font-size: 10px;
-
-          .mail {
-            /* display: block; */
-            /* margin-top: 3px; */
-          }
-        }
-        .customSpan {
-          /* display: table-column; */
         }
         .address {
           font-size: 10px;

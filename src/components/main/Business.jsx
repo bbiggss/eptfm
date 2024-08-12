@@ -2,16 +2,7 @@ import React from 'react';
 import BusinessItems from './BusinessItems';
 import { BusinessBox } from '../../assets/styles/main/business.styled';
 
-const Business = ({ data }) => {
-  // const businessImg1 = data.businessImg1;
-  // const businessHoverImg1 = data.businessHoverImg1;
-
-  // const businessImg2 = data.businessImg2;
-  // const businessHoverImg2 = data.businessHoverImg2;
-
-  // const businessImg3 = data.businessImg3;
-  // const businessHoverImg3 = data.businessHoverImg3;
-
+const Business = () => {
   return (
     <BusinessBox id="business">
       <div id="container">

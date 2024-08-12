@@ -5,6 +5,7 @@ export const BusinessBox = styled.div`
   font-family: 'Roboto-Medium';
   background-image: url(${process.env.PUBLIC_URL}/assets/images/main/business_bg.png);
   background-repeat: no-repeat;
+  width: 100%;
   /* background-size: cover; */
 
   margin-top: 18px;
@@ -15,8 +16,10 @@ export const BusinessBox = styled.div`
 
   @media (min-width: 1025px) {
     /* background-size: cover; */
-    height: 1180px;
+    /* height: 1180px; */
+    height: auto;
     margin-top: 240px;
+    padding-bottom: 200px;
 
     #container {
       /* padding: 100px 0; */
@@ -34,183 +37,24 @@ export const BusinessBox = styled.div`
       padding-top: 200px;
     }
 
-    & #contentsWrap {
-      display: flex;
-      justify-content: center;
-      max-height: 600px;
-    }
-    & #contentsWrap ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    & li {
-      position: relative;
-      margin: 0;
-      padding: 0;
-    }
-    & li:nth-child(2) {
-      margin: 0 28px;
-    }
-
-    & li img {
-      width: 500px;
-      height: 600px;
-    }
-
-    & li .noHoverBox p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #ffffff;
-      font-size: 42px;
-      margin: 0;
-      padding: 0;
-      /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-      filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
-    }
-
-    & .noHoverBox {
-      display: block;
-    }
-
-    & li:hover .noHoverBox {
-      display: none;
-    }
-
-    & li:hover .hoverBox {
-      display: block;
-    }
-
-    & .hoverBox {
-      display: none;
-
-      & div {
-        position: absolute;
-        width: 500px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        p {
-          margin: 0;
-        }
-      }
-
-      & p:first-child {
-        color: #ffffff;
-        font-size: 42px;
-        text-align: center;
-        font-family: 'Roboto-Medium';
-        filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
-        margin-bottom: 60px;
-      }
-
-      & p:last-child {
-        color: white;
-        font-size: 26px;
-        text-align: center;
-        font-family: 'NanumSquareB';
-        filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
-        line-height: 40px;
-      }
-    }
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    background-size: cover;
-    .noHoverBox {
-      display: none;
-    }
-    width: 100%;
-    #container {
-      padding-bottom: 63px;
-      & #businessTitleBox {
-        & #businessTitle {
-          color: #fff6f6;
-          margin: 0;
-          padding-top: 64px;
-          padding-left: 68px;
-          padding-bottom: 64px;
-
-          font-size: 32px;
-          font-weight: 700;
-          line-height: 38.73px;
-          text-align: left;
-        }
-      }
-
-      & #contentsWrap {
-        display: flex;
+    #contentsWrap {
+      margin: 0 30px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 28px;
+        list-style: none;
         justify-content: center;
       }
-      & #contentsWrap ul {
-        margin: 0;
-        padding: 0;
-      }
-      & #contentsWrap ul li {
-        overflow: hidden;
-        width: 550px;
-        height: 500px;
-        position: relative;
-
-        .hoverBox {
-          & img {
-            width: 550px;
-            height: 500px;
-          }
-          & div {
-            position: absolute;
-            width: 458px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-
-          & p {
-            margin: 0;
-          }
-
-          & p:first-child {
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 38.73px;
-            text-align: center;
-
-            color: #ffffff;
-            font-family: 'Roboto-Medium';
-            filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
-          }
-
-          & p:last-child {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 29.05px;
-            text-align: center;
-
-            color: white;
-            font-family: 'NanumSquareB';
-            filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
-          }
-        }
-      }
-      & #contentsWrap ul li:nth-child(2) {
-        margin: 58px 0;
-      }
     }
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     background-size: cover;
-    .noHoverBox {
-      display: none;
-    }
     width: 100%;
     #container {
-      & #businessTitleBox {
+      #businessTitleBox {
+        margin: 0 8vw;
         & #businessTitle {
-          padding-left: 30px;
           padding-top: 80px;
           padding-bottom: 40px;
 
@@ -222,54 +66,9 @@ export const BusinessBox = styled.div`
       }
 
       & #contentsWrap {
-        display: flex;
-        justify-content: center;
-      }
-      & #contentsWrap ul {
-        margin: 0;
-        padding: 0;
-      }
-      & #contentsWrap ul li {
-        overflow: hidden;
-        /* width: 315px;
-        height: 315px; */
-        position: relative;
-
-        .hoverBox {
-          & img {
-            width: 315px;
-            height: 315px;
-          }
-          & div {
-            position: absolute;
-            width: 300px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-          p {
-            color: #ffffff;
-            letter-spacing: -0.02em;
-            text-align: center;
-            line-height: 24px;
-            /* filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6)); */
-          }
-
-          & p:first-child {
-            font-family: 'NanumSquareEB';
-
-            font-size: 22px;
-            font-weight: 800;
-            margin-bottom: 10px;
-          }
-
-          & p:last-child {
-            font-family: 'NanumSquareB';
-
-            font-size: 16px;
-            font-weight: 700;
-          }
-        }
+        /* display: flex;
+        justify-content: center; */
+        margin: 0 8vw;
       }
       & #contentsWrap ul li:nth-child(2) {
         margin: 24px 0;
