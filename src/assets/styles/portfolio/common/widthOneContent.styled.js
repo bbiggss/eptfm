@@ -5,7 +5,7 @@ export const WidthOneContent = styled.div`
   text-align: center;
 
   @media (min-width: 1025px) {
-    margin: 0 30px;
+    margin: 0 50px;
     img {
       width: 100%;
       max-width: 1100px;
@@ -21,21 +21,26 @@ export const WidthOneContent = styled.div`
       return '160px';
     }};
   }
+
   @media (max-width: 1024px) {
     margin: 0 30px;
     img {
       width: 100%;
-      margin-bottom: 24px;
+      /* margin-bottom: 24px; */
+      margin-bottom: 6.4vw;
     }
 
     padding-top: ${(props) => {
-      if (props.$first) return '80px';
+      // if (props.$first) return '80px';
+      if (props.$first) return '21.33vw';
       return '0px';
     }};
     padding-bottom: ${(props) => {
-      if (props.$last) return '142px';
+      // if (props.$last) return '142px';
+      if (props.$last) return '37.87vw';
       // if (props.$customPaddingBottom) return '?px';
-      return '80px';
+      // return '80px';
+      return '21.33vw';
     }};
   }
 

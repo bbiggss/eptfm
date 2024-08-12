@@ -83,15 +83,21 @@ const MudFlatBox = styled.div`
       }
     }
     .gridContainer {
-      /* padding: 0 8vw; */
       padding-top: 160px;
       padding-bottom: 160px;
+      width: 100%;
+      .testWrap {
+        /* width: 1000px;
+        max-width: 1260px;
+        display: flex; */
+      }
       ul {
         display: grid;
         justify-content: center;
         /* grid-template-columns: repeat(3, 400px); */
         grid-template-columns: repeat(3, auto);
         gap: 0px 30px;
+        margin: 0 50px;
 
         li {
           list-style: none;
@@ -337,6 +343,7 @@ const MudFlat = () => {
           }
         />
       </WidthOneContent>
+
       <div className="fullScreen gridContainer">
         <ul>
           <li>
@@ -384,6 +391,7 @@ const MudFlat = () => {
           }
         />
       </div>
+
       <WidthOneContent $first>
         <Img
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_4.png`}
