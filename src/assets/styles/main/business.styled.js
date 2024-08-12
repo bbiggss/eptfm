@@ -55,13 +55,16 @@ export const BusinessBox = styled.div`
       #businessTitleBox {
         margin: 0 8vw;
         & #businessTitle {
-          padding-top: 80px;
+          /* padding-top: 80px;
           padding-bottom: 40px;
+          font-size: 36px; */
 
           color: #fff6f6;
-          font-size: 36px;
-          font-weight: 500;
-          text-align: left;
+
+          padding-top: 20vw; /* 80px를 vw로 변환 */
+          padding-bottom: 10vw; /* 40px를 vw로 변환 */
+
+          font-size: 9vw;
         }
       }
 
@@ -69,13 +72,17 @@ export const BusinessBox = styled.div`
         /* display: flex;
         justify-content: center; */
         margin: 0 8vw;
+
+        padding-bottom: 20vw;
+        //80px
       }
       & #contentsWrap ul li:nth-child(2) {
-        margin: 24px 0;
+        /* margin: 24px 0; */
+        margin: 6vw 0; /* 24px를 vw로 변환 */
       }
-      & #contentsWrap ul li:nth-child(3) {
+      /* & #contentsWrap ul li:nth-child(3) {
         margin-bottom: 80px;
-      }
+      } */
     }
   }
 `;

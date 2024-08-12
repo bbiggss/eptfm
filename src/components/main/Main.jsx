@@ -26,7 +26,7 @@ const Main = () => {
       <div id="mainContainer">
         <About />
         <Business />
-        {/* <Portfolio /> */}
+        <Portfolio />
       </div>
     </MainBox>
   );
