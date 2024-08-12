@@ -141,6 +141,10 @@ a {
   font-family: 'Roboto-Light';
 }
 
+.tempWrap {
+  display: none;
+}
+
 /* 한글 */
 @font-face {
   font-family: 'NanumSquareL';

@@ -16,6 +16,8 @@ const StyledUpButton = styled.div`
     margin-bottom: 60px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
   @media (max-width: 767px) {
     margin-right: 30px;

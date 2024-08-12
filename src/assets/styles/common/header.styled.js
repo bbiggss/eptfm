@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const headerHeightDesktop = '100px';
-const headerHeightTablet = '147px';
+const headerHeightTablet = '60px';
 const headerHeightMobile = '60px';
 
 export const HeaderSpacer = styled.div`
@@ -64,23 +64,24 @@ export const HeaderBox = styled.div`
       display: none;
     }
 
-    & ul {
+    ul {
       display: flex;
       margin: 0;
-    }
-    & ul li {
-      margin-right: 92px;
 
-      /* 헤더 nav 텍스트 */
-      & a {
-        text-decoration: none;
-        color: #292929;
-        font-size: 18px;
-        letter-spacing: 0px;
-        scroll-behavior: smooth;
+      li {
+        margin-right: 92px;
 
-        &:hover {
-          color: #4ac2c5;
+        /* 헤더 nav 텍스트 */
+        & a {
+          text-decoration: none;
+          color: #292929;
+          font-size: 18px;
+          letter-spacing: 0px;
+          scroll-behavior: smooth;
+
+          &:hover {
+            color: #4ac2c5;
+          }
         }
       }
     }
@@ -155,14 +156,16 @@ export const HeaderBox = styled.div`
       margin-bottom: 48px;
 
       #logoImg {
-        width: 166px;
-        height: 22px;
+        width: 98px;
+        height: 12px;
       }
-      #dropDownImg {
-        /* position: absolute; */
-        /* right: 0; */
-        width: 47px;
-        height: 47px;
+      #dropDownImg,
+      #xBtn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 30px;
       }
       ul {
         display: none;

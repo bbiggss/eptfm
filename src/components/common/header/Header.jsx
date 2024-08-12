@@ -5,8 +5,39 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledDropDown = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     display: none;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: ${(props) => (props.$show ? 'block' : 'none')};
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    li * {
+      color: #292929;
+      font-family: 'Roboto-Medium';
+      font-size: 20px;
+    }
+    li {
+      margin-bottom: 30px;
+    }
+    li:first-child {
+      margin-top: 30px;
+    }
+    .portfolioLi a {
+      display: block;
+      /* width: 200px; */
+      height: 36px;
+      line-height: 36px;
+
+      color: #767676;
+      font-size: 16px;
+    }
+    .portfolioLi a:nth-child(2) {
+      margin-top: 4px;
+    }
   }
   @media (max-width: 767px) {
     display: ${(props) => (props.$show ? 'block' : 'none')};
