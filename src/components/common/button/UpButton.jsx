@@ -24,7 +24,8 @@ const StyledUpButton = styled.div`
     margin-bottom: 183px;
 
     img {
-      width: 32px;
+      /* width: 32px; */
+      width: 8.53vw;
     }
   }
 `;

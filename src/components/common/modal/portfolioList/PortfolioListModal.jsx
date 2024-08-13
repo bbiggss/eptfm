@@ -104,8 +104,8 @@ const StyledPortfolioListModal = styled.div`
 
   @media (min-width: 1025px) and (max-width: 1556px) {
     .modalContainer {
-      /* background-color: yellow; */
-      height: -webkit-fill-available;
+      height: 80%;
+      max-height: 751px;
       overflow-y: scroll;
     }
     .gridWrapper {
