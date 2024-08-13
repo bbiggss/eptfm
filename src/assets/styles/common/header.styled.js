@@ -39,12 +39,26 @@ export const HeaderBox = styled.div`
 
   #headerContainer {
     /* background-color: yellow; */
+    width: 100%;
+    margin: 0 182px;
   }
   ul {
     list-style: none;
   }
 
   /* 데스크탑 */
+
+  @media (min-width: 1301px) {
+    li {
+      margin-right: 92px;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1300px) {
+    li {
+      margin-right: 30px;
+    }
+  }
+
   @media (min-width: 1025px) {
     height: ${headerHeightDesktop};
     /* background-color: white; */
@@ -54,9 +68,7 @@ export const HeaderBox = styled.div`
 
     #headerContainer {
       position: relative;
-      margin: auto;
       max-width: 1920px;
-      width: 80%;
     }
     #logoImg {
       width: 122px;
@@ -71,8 +83,6 @@ export const HeaderBox = styled.div`
       margin: 0;
 
       li {
-        margin-right: 92px;
-
         /* 헤더 nav 텍스트 */
         & a {
           text-decoration: none;
@@ -136,6 +146,7 @@ export const HeaderBox = styled.div`
     }
     &.colored {
       background-color: rgba(255, 255, 255, 0.9);
+      /* background-color: yellow; */
 
       backdrop-filter: blur(5px);
       transition: background-color 0.5s ease, transform 0.5s ease;
@@ -148,7 +159,6 @@ export const HeaderBox = styled.div`
     background-color: white;
     #headerContainer {
       position: relative;
-      width: 100%;
       /* border: 1px solid black; */
       display: flex;
       align-items: center;
@@ -181,10 +191,6 @@ export const HeaderBox = styled.div`
     height: ${headerHeightMobile};
     min-height: 60px;
     #headerContainer {
-      /* background-color: yellow; */
-      /* position: relative; */
-      width: 100%;
-
       margin-left: 30px;
 
       #logoImg {

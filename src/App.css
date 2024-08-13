@@ -14,15 +14,8 @@
     margin: 0 auto;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .smallScreen {
-    max-width: 960px;
-    width: 90%;
-    margin: 0 auto;
-    /* background-color: black; */
-  }
-}
-@media (max-width: 767px) {
+
+@media (max-width: 1024px) {
   .fullScreen {
     /* min-width: 315px;
     margin: 0 auto;

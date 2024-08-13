@@ -84,6 +84,14 @@ export const StyledEcosystemRestoration = styled.div`
     }
   }
 
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    .left {
+      display: inline;
+      left: 30%;
+      overflow: hidden;
+    }
+  }
+
   @media (max-width: 1600px) {
     .animationBox {
       /* background-color: aqua; */

@@ -32,6 +32,7 @@ const StyledWidthImgOneTextsOne = styled.div`
 
   @media (max-width: 1600px) {
     display: grid;
+    margin: 0 30px;
     img {
       width: 100%;
       order: 1;

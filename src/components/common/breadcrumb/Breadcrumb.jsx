@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const StyledBreadcrumbBox = styled.div`
   font-family: 'Roboto-Medium';
   position: relative;
+  margin: 0 182px;
 
   ul {
     display: flex;
@@ -27,7 +28,7 @@ const StyledBreadcrumbBox = styled.div`
 
   @media (min-width: 1025px) {
     ul {
-      margin-left: 192px;
+      /* margin-left: 192px; */
     }
     margin-top: 88px;
     margin-bottom: 73px;
