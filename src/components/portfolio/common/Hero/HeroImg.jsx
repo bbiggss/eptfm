@@ -6,6 +6,7 @@ const StyledHeroImg = styled.img`
   width: 100%;
   /* opacity: ${(props) => (props.$isLoaded ? 1 : 0)};
   transition: opacity 1s ease-in-out; */
+  max-width: ${(props) => props.$maxwidth};
 
   @media (min-width: 768px) {
     aspect-ratio: ${(props) => props.$pcHeight};
@@ -40,6 +41,7 @@ const HeroImg = (data) => {
       $pcHeight={data.pcHeight}
       $tabletHeight={data.tabletHeight}
       $mobileHeight={data.mobileHeight}
+      $maxwidth={data.maxwidth}
       $isLoaded={data.isLoaded}
       ref={imgRef}
       src={isMobile ? data.mobileSrc : data.src}

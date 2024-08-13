@@ -7,10 +7,11 @@ const StyledPortfolioTitleWrap = styled.div`
   transition: opacity 2s ease-in-out; */
   @media (min-width: 1025px) {
     margin-top: ${(props) => props.$pcMarginTop};
+    margin-bottom: ${(props) => props.$pcMarginBottom};
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-  }
-  @media (max-width: 767px) {
+  /* @media (min-width: 768px) and (max-width: 1024px) {
+  } */
+  @media (max-width: 1024px) {
     margin-top: ${(props) => props.$mobileMarginTop};
     margin-bottom: ${(props) => props.$mobileMarginBottom};
   }
@@ -20,6 +21,7 @@ const PortfolioTitleWrap = ({
   style,
   children,
   pcMarginTop,
+  pcMarginBottom,
   mobileMarginTop,
   mobileMarginBottom,
   $isLoaded,
@@ -27,6 +29,7 @@ const PortfolioTitleWrap = ({
   return (
     <StyledPortfolioTitleWrap
       $pcMarginTop={pcMarginTop}
+      $pcMarginBottom={pcMarginBottom}
       $mobileMarginTop={mobileMarginTop}
       $mobileMarginBottom={mobileMarginBottom}
       style={style}

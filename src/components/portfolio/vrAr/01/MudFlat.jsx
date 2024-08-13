@@ -25,6 +25,13 @@ const MudFlatBox = styled.div`
   .mainContainer {
     text-align: center;
   }
+
+  @media (min-width: 1341px) {
+    .introductionWrap {
+      margin-left: 67px;
+    }
+  }
+
   @media (min-width: 1025px) {
     .subTexts {
       font-size: 24px;
@@ -50,10 +57,6 @@ const MudFlatBox = styled.div`
     .mainContainer {
       margin-top: 171px;
       display: flex;
-
-      .introductionWrap {
-        margin-left: 67px;
-      }
     }
     .watchContainer {
       padding: 100px 0;
@@ -124,6 +127,16 @@ const MudFlatBox = styled.div`
       width: 311px;
     }
   }
+  @media (min-width: 1025px) and (max-width: 1340px) {
+    .mainContainer {
+      margin-left: 50px;
+    }
+    .introductionWrap {
+      /* margin-left: 20px; */
+      transform: scale(0.9);
+    }
+  }
+
   @media (max-width: 1024px) {
     .mainContainer {
       /* margin-top: 80px; */

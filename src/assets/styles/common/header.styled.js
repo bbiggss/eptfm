@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 const headerHeightDesktop = '100px';
-const headerHeightTablet = '60px';
-const headerHeightMobile = '60px';
+const headerHeightTablet = '10vw';
+// const headerHeightMobile = '60px';
+const headerHeightMobile = '10vw';
 
 export const HeaderSpacer = styled.div`
   @media (min-width: 1025px) {
@@ -13,6 +14,7 @@ export const HeaderSpacer = styled.div`
   }
   @media (max-width: 767px) {
     height: ${headerHeightMobile};
+    min-height: 60px;
   }
 `;
 
@@ -177,6 +179,7 @@ export const HeaderBox = styled.div`
   @media (max-width: 767px) {
     background-color: white;
     height: ${headerHeightMobile};
+    min-height: 60px;
     #headerContainer {
       /* background-color: yellow; */
       /* position: relative; */

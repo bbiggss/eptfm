@@ -3,25 +3,25 @@ import styled from 'styled-components';
 
 const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
-  display: flex;
   text-align: left;
 
-  .texts {
-    width: 50%;
+  @media (min-width: 1601px) {
     display: flex;
-    align-items: center;
-    line-height: 38px;
-    letter-spacing: -0.02em;
+    .texts {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      line-height: 38px;
+      letter-spacing: -0.02em;
 
-    color: #767676;
-    font-size: 24px;
-    white-space: nowrap;
+      color: #767676;
+      font-size: 24px;
+      white-space: nowrap;
 
-    &.positionRight {
-      margin-left: 100px;
+      &.positionRight {
+        margin-left: 100px;
+      }
     }
-  }
-  @media (min-width: 1025px) {
     padding-top: ${(props) => props.$pcPaddingTop};
 
     padding-bottom: ${(props) => {
@@ -29,7 +29,34 @@ const StyledWidthImgOneTextsOne = styled.div`
       return '160px';
     }};
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+
+  @media (max-width: 1600px) {
+    display: grid;
+    img {
+      width: 100%;
+      order: 1;
+      margin-bottom: 24px;
+    }
+    .texts {
+      order: 2;
+      width: 100%;
+
+      color: #767676;
+      text-align: center;
+      /* font-size: 16px; */
+      font-size: 3vw;
+      /* line-height: 24px; */
+      line-height: 5vw;
+      white-space: nowrap;
+    }
+
+    padding-bottom: ${(props) => {
+      if (props.$mobilePaddingBottom) return props.$mobilePaddingBottom;
+      return '80px';
+    }};
+  }
+
+  /* @media (min-width: 768px) and (max-width: 1024px) {
     padding-top: ${(props) => props.$tabletPaddingTop};
 
     .projectImg {
@@ -38,7 +65,7 @@ const StyledWidthImgOneTextsOne = styled.div`
   }
   @media (max-width: 767px) {
     padding-top: ${(props) => props.$mobilePaddingTop};
-  }
+  } */
 `;
 
 const WidthImgOneTextsOne = ({
