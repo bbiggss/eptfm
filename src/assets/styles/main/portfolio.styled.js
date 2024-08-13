@@ -27,7 +27,7 @@ export const PortfolioBox = styled.div`
     font-family: 'NanumSquareR';
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1901px) {
     width: 100%;
     overflow: hidden;
 
@@ -111,6 +111,121 @@ export const PortfolioBox = styled.div`
           display: flex;
           position: relative;
           padding-top: 26px;
+          .pfImgLeftBox {
+            margin-top: 15px;
+            img {
+              width: 631px;
+              position: relative;
+              right: -200px;
+              top: -469px;
+            }
+          }
+          .pfImgRightBox {
+            /* margin-bottom: 200px; */
+            /* overflow: hidden; */
+            img:nth-of-type(1) {
+              width: 705px;
+              position: relative;
+              right: -200px;
+              top: -469px;
+            }
+            img:nth-of-type(2) {
+              width: 487px;
+              position: relative;
+              right: -200px;
+              top: -469px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1900px) {
+    width: 100%;
+    overflow: hidden;
+
+    #container {
+      width: 100%;
+      height: 1700px;
+
+      #portfolioTexts {
+        padding-left: 182px;
+        padding-top: 306px;
+        & #portfolioTitle {
+          margin: 0;
+          /* padding-top: 42px; */
+
+          font-family: 'Roboto-Medium';
+          font-size: 100px;
+          letter-spacing: 0;
+          color: #191919;
+          padding-bottom: 50px;
+        }
+
+        & #portfolioText1 {
+          margin: 0;
+          font-size: 40px;
+          color: #292929;
+          font-weight: 500;
+          text-align: left;
+          padding-bottom: 46px;
+        }
+
+        & #portfolioText2 {
+          display: none;
+        }
+
+        & #pc_portfolioText2 {
+          font-family: 'NanumSquareR';
+          font-size: 35px;
+        }
+      }
+
+      #portfolioLinkImg {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        #portfolioLink {
+          padding-left: 182px;
+          .pfFieldTag {
+            height: 90px;
+            line-height: 90px;
+
+            margin-bottom: 26px;
+            display: block;
+            width: ${pc_pfFieldWidth};
+            border: 1px solid #767676;
+            border-radius: 45px;
+            text-align: center;
+            color: #767676;
+
+            font-size: 26px;
+
+            .arrow {
+              position: absolute;
+              right: 40px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          .pfFieldTag:hover {
+            background-color: #48c2c5;
+            color: #ffffff;
+            border: 1px solid #48c2c5;
+          }
+          a {
+            display: block;
+            width: ${pc_pfFieldWidth};
+            text-decoration: none;
+          }
+        }
+
+        #portfolioImgs {
+          display: flex;
+          position: relative;
+          padding-top: 26px;
+          display: none;
           .pfImgLeftBox {
             margin-top: 15px;
             img {
@@ -237,6 +352,14 @@ export const PortfolioBox = styled.div`
           }
         }
       }
+    }
+
+    .arrow {
+      width: 6px;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   @media (max-width: 767px) {

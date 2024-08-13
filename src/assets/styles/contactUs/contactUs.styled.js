@@ -19,6 +19,12 @@ export const ContactUsBox = styled.div`
     border-width: 1px 0 0 0;
     height: 0px;
   }
+  .mapWrap {
+    img {
+      width: 100%;
+    }
+  }
+
   @media (min-width: 1025px) {
     .title {
       font-size: 100px;
@@ -45,7 +51,8 @@ export const ContactUsBox = styled.div`
     #ContactTextsLinkBoxWrap {
       display: flex;
       justify-content: space-between;
-      width: 1260px;
+      max-width: 1260px;
+      width: 100%;
       text-align: left;
       margin-bottom: 80px;
 
@@ -83,7 +90,9 @@ export const ContactUsBox = styled.div`
         }
       }
     }
+  }
 
+  @media (min-width: 1401px) {
     .inquiryImg {
       display: grid;
       justify-content: center;
@@ -104,9 +113,42 @@ export const ContactUsBox = styled.div`
       }
     }
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    /* background-color: yellow; */
+    .smallScreen {
+      width: 90%;
+      margin: auto;
+    }
+    hr {
+      width: 100%;
+    }
+
+    .inquiryImg {
+      display: grid;
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 60px;
+
+      /* 앞: 상하간격 뒤: 좌우간격 */
+      /* padding: 0;
+      padding-bottom: 200px; */
+
+      li {
+        list-style: none;
+        img {
+          width: 100%;
+        }
+        p {
+          margin-top: 24px;
+          color: #292929;
+          font-size: 22px;
+        }
+      }
+    }
   }
-  @media (max-width: 767px) {
+
+  @media (max-width: 1024px) {
     .ellipse1 {
       width: 375px;
     }
@@ -125,6 +167,7 @@ export const ContactUsBox = styled.div`
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.02em;
+      white-space: nowrap;
     }
     hr {
       width: 100%;
@@ -200,6 +243,7 @@ export const ContactUsBox = styled.div`
         p {
           margin: auto 0px;
           margin-left: 14px;
+          min-width: 129px;
 
           color: #292929;
           font-size: 16px;
@@ -209,11 +253,6 @@ export const ContactUsBox = styled.div`
       }
     }
 
-    .mapWrap {
-      img {
-        width: 100%;
-      }
-    }
     .transportation {
       margin-top: 24px;
       margin-bottom: 142px;

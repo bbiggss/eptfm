@@ -2,7 +2,7 @@ import React from 'react';
 import { PortfolioBox } from '../../assets/styles/main/portfolio.styled';
 import PfFieldButton from './PfFieldButton';
 
-const Portfolio = ({ data }) => {
+const Portfolio = () => {
   return (
     <PortfolioBox id="portfolio">
       <div id="container">

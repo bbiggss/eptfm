@@ -3,8 +3,10 @@ import { ContactUsBox } from '../../assets/styles/contactUs/contactUs.styled';
 import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import Transportation from './Transportation';
+import useMobile from '../hooks/useMobile';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
+  const isMobile = useMobile();
   return (
     <ContactUsBox>
       <div className="fullScreen ellipseArea">
@@ -23,14 +25,22 @@ const Contact = ({ modalStatus, setModalStatus }) => {
       <div className="smallScreen textCenter">
         <p className="title robotoMedium">CONTACT US</p>
         <p className="subTitle NanumSquareB">
-          EPLATFORM의 혁신적인 교육 콘텐츠와 함께 교육의 새로운 지평을 열어보세요!
+          {isMobile ? (
+            <>
+              EPLATFORM의 혁신적인 교육 콘텐츠와 함께
+              <br />
+              교육의 새로운 지평을 열어보세요!
+            </>
+          ) : (
+            'EPLATFORM의 혁신적인 교육 콘텐츠와 함께 교육의 새로운 지평을 열어보세요!'
+          )}
         </p>
         <hr />
 
         <ContactTextsLinkBox
           mainText={'문의하기'}
           subText={'문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
-          mobile_subText={'문의사항이나 의견이 있으시면 언제든지 연락\n주세요.'}
+          mobile_subText={'문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
           popupText={'메일 보내기'}
           clickOption={'mail'}
           modalStatus={modalStatus}

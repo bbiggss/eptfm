@@ -44,8 +44,9 @@ export const FooterBox = styled.div`
       margin-top: 60px;
     }
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: 137px;
+  @media (max-width: 1024px) {
+    /* height: 153px; */
+    height: 40.8vw;
 
     .footerContainer {
       position: relative;
@@ -53,91 +54,68 @@ export const FooterBox = styled.div`
       margin: 0 auto;
 
       #footerImg {
-        width: 67px;
+        /* width: 67px;
         height: 9px;
         margin-top: 30px;
-        margin-bottom: 18px;
+        margin-bottom: 18px; */
+
+        width: 17.87vw;
+        height: 2.4vw;
+        margin-top: 8vw;
+        margin-bottom: 4.8vw;
       }
 
       #info {
         .telFaxMail {
-          font-size: 10px;
-        }
-        .address {
-          font-size: 10px;
-          margin-top: 6px;
-          margin-bottom: 12px;
-        }
-      }
-      .copyright {
-        font-size: 9px;
-      }
-      .socialMediaLinkWrapper {
-        display: inline;
-        position: absolute;
-        right: 0;
-        top: 0;
-        margin-top: 20px;
-
-        img {
-          width: 28px;
-        }
-        img:first-child {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-  @media (max-width: 767px) {
-    height: 153px;
-
-    .footerContainer {
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
-
-      #footerImg {
-        width: 67px;
-        height: 9px;
-        margin-top: 30px;
-        margin-bottom: 18px;
-      }
-
-      #info {
-        .telFaxMail {
-          font-size: 10px;
+          /* font-size: 10px; */
+          font-size: 2.67vw;
 
           .mail {
             display: block;
-            margin-top: 3px;
+            /* margin-top: 3px; */
+            margin-top: 0.8vw;
           }
         }
         .customSpan {
           display: table-column;
         }
         .address {
-          font-size: 10px;
+          /* font-size: 10px;
           margin-top: 3px;
-          margin-bottom: 12px;
+          margin-bottom: 12px; */
+
+          font-size: 2.67vw;
+          margin-top: 0.8vw;
+          margin-bottom: 3.2vw;
         }
       }
       .copyright {
-        font-size: 9px;
+        /* font-size: 9px; */
+        font-size: 2.4vw;
       }
       .socialMediaLinkWrapper {
         display: inline;
         position: absolute;
         right: 0;
         top: 0;
-        margin-top: 20px;
+        /* margin-top: 20px; */
+        margin-top: 5.33vw;
 
         img {
-          width: 28px;
+          /* width: 28px; */
+          width: 7.47vw;
         }
         img:first-child {
-          margin-right: 10px;
+          /* margin-right: 10px; */
+          margin-right: 2.67vw;
         }
       }
+    }
+  }
+  @media (max-width: 767px) {
+    .mail {
+      display: block;
+      margin-top: 0.8vw;
     }
   }
 `;

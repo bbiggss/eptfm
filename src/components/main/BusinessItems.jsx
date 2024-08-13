@@ -97,19 +97,23 @@ const StyledBusinessItems = styled.li`
         /* filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6)); */
       }
 
-      & p:first-child {
-        font-family: 'NanumSquareEB';
+      div {
+        p:first-child {
+          font-family: 'NanumSquareEB';
 
-        font-size: 22px;
-        font-weight: 800;
-        margin-bottom: 10px;
-      }
+          font-size: 22px;
+          font-weight: 800;
+          margin-bottom: 10px;
+        }
 
-      & p:last-child {
-        font-family: 'NanumSquareB';
+        p:last-child {
+          font-family: 'NanumSquareB';
 
-        font-size: 16px;
-        font-weight: 700;
+          color: #ffffff;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.02em;
+        }
       }
     }
   }

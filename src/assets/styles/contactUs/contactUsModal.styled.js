@@ -127,7 +127,7 @@ export const ContactUsModalBox = styled.div`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     position: fixed;
     z-index: 2;
     width: 100%;

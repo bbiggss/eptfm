@@ -19,9 +19,13 @@ const StyledTransportation = styled.div`
       if (props.$mobileMargin) return '120px';
     }};
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    margin-right: ${(props) => {
+      if (props.$mobileMargin) return '50px';
+    }};
   }
-  @media (max-width: 767px) {
+
+  @media (max-width: 1025px) {
     position: relative;
     display: flex;
     /* align-items: center; */
