@@ -38,7 +38,7 @@ export const PortfolioListBox = styled.div`
       display: grid;
       justify-content: center;
       /* grid-template-columns: auto auto auto; */
-      grid-template-columns: repeat(3, ${portfolioImgWidth});
+      grid-template-columns: repeat(auto-fit, ${portfolioImgWidth});
       gap: 80px 58px;
       /* 앞: 상하간격 뒤: 좌우간격 */
       padding: 0;

@@ -16,7 +16,9 @@ export const ContactUsModalBox = styled.div`
       z-index: 3;
       max-width: 1260px;
       width: 80%;
-      height: 800px;
+      max-height: 800px;
+      height: 90%;
+      overflow-y: scroll;
       background-color: white;
       left: 50%;
       top: 50%;
@@ -28,6 +30,7 @@ export const ContactUsModalBox = styled.div`
       .inquiryContainer {
         max-width: 1140px;
         width: 80%;
+        height: 80%;
         /* background-color: beige; */
         p {
           display: inline;
@@ -106,6 +109,7 @@ export const ContactUsModalBox = styled.div`
         }
         .inquiryBtn {
           text-align: center;
+          padding-bottom: 30px;
           button {
             background-color: white;
             width: 240px;
@@ -127,7 +131,7 @@ export const ContactUsModalBox = styled.div`
   }
   @media (min-width: 768px) and (max-width: 1024px) {
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1025px) {
     position: fixed;
     z-index: 2;
     width: 100%;
