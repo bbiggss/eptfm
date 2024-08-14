@@ -6,12 +6,13 @@ import styled from 'styled-components';
 const StyledBreadcrumbBox = styled.div`
   font-family: 'Roboto-Medium';
   position: relative;
-  margin: 0 182px;
+  max-width: 1920px;
+  margin: auto;
 
   ul {
     display: flex;
+    margin: 0 182px;
     list-style: none;
-    max-width: 1920px;
     width: max-content;
     /* background-color: blue; */
     li {

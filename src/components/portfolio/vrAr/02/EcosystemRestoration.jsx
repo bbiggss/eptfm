@@ -72,23 +72,23 @@ const EcosystemRestoration = () => {
                 src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_cloud.png`}
                 alt=""
               />
-            </div>
-            <div className="introduction">
-              <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
-              <p className="NanumSquareB">
-                {isMobile ? (
-                  <>
-                    옐로스톤 국립공원에서 펼쳐지는
-                    <br /> 생태계 복원의 대서사시
-                    <br /> 자연의 아름다움을 다시 꽃피우세요!
-                  </>
-                ) : (
-                  <>
-                    옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
-                    <br /> 자연의 아름다움을 다시 꽃피우세요!
-                  </>
-                )}
-              </p>
+              <div className="introduction">
+                <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
+                <p className="introduction_texts NanumSquareB">
+                  {isMobile ? (
+                    <>
+                      옐로스톤 국립공원에서 펼쳐지는
+                      <br /> 생태계 복원의 대서사시
+                      <br /> 자연의 아름다움을 다시 꽃피우세요!
+                    </>
+                  ) : (
+                    <>
+                      옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
+                      <br /> 자연의 아름다움을 다시 꽃피우세요!
+                    </>
+                  )}
+                </p>
+              </div>
             </div>
             <div className="right">
               <img

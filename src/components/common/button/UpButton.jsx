@@ -40,7 +40,7 @@ const UpButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const windowHeight = window.innerHeight;
 
       const documentHeight = document.documentElement.scrollHeight;

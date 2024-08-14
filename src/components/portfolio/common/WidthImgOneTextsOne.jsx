@@ -5,22 +5,42 @@ const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
   text-align: left;
 
-  @media (min-width: 1601px) {
+  @media (min-width: 1501px) {
+    .positionRight {
+      margin-left: 100px;
+    }
+    .texts {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1500px) {
+    width: 100%;
+    img {
+      width: 50%;
+    }
+    .positionRight {
+      margin-left: 50px;
+    }
+    .texts {
+      width: 50%;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    /* margin: 0 60px; */
     display: flex;
     .texts {
       width: 50%;
       display: flex;
       align-items: center;
-      line-height: 38px;
       letter-spacing: -0.02em;
 
       color: #767676;
-      font-size: 24px;
       white-space: nowrap;
-
-      &.positionRight {
-        margin-left: 100px;
-      }
     }
     padding-top: ${(props) => props.$pcPaddingTop};
 
@@ -30,9 +50,10 @@ const StyledWidthImgOneTextsOne = styled.div`
     }};
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1024px) {
+    /* margin: 0 30px; */
+    margin: 0 5vw;
     display: grid;
-    margin: 0 30px;
     img {
       width: 100%;
       order: 1;
@@ -45,9 +66,11 @@ const StyledWidthImgOneTextsOne = styled.div`
       color: #767676;
       text-align: center;
       /* font-size: 16px; */
-      font-size: 3vw;
+      font-size: clamp(16px, 4vw, 24px);
+      /* font-size: 3vw; */
       /* line-height: 24px; */
-      line-height: 5vw;
+      line-height: clamp(24px, 6vw, 32px);
+      /* line-height: 5vw; */
       white-space: nowrap;
     }
 

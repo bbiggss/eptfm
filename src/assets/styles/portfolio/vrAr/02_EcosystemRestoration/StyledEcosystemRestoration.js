@@ -6,9 +6,30 @@ export const StyledEcosystemRestoration = styled.div`
     justify-content: center;
   }
 
-  @media (min-width: 1601px) {
+  @media (min-width: 1401px) {
+    .animationBox {
+      height: 639px;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    .animationBox {
+      height: 439px;
+      top: -45px;
+    }
+    .left {
+      transform: scale(0.7);
+    }
+    .right {
+      top: 190px !important;
+      transform: scale(0.6);
+    }
+  }
+
+  @media (min-width: 1025px) {
     max-width: 1920px;
     width: 80%;
+    /* background-color: yellow; */
 
     margin: auto;
 
@@ -19,13 +40,15 @@ export const StyledEcosystemRestoration = styled.div`
       position: relative;
 
       .left {
+        /* background-color: yellow; */
         position: absolute;
-        left: -123px;
+        width: 50%;
         top: -80px;
+        /* left: -50px; */
         .cloud {
           position: absolute;
           top: 177px;
-          right: 0;
+          left: 316px;
         }
       }
       .introduction {
@@ -34,21 +57,22 @@ export const StyledEcosystemRestoration = styled.div`
         p:first-child {
           color: #292929;
           font-size: 40px;
-          margin-top: 320px;
+          margin-top: 49px;
           margin-bottom: 34px;
         }
         p:last-child {
           color: #767676;
           font-size: 26px;
           line-height: 40px;
-          letter-spacing: -2px;
+          letter-spacing: -0.02em;
         }
       }
       .right {
-        margin-left: 47px;
-        margin-top: 152px;
-        width: 621px;
-        height: 421px;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        top: 155px;
+        background-color: red;
         .animals {
           /* display: none; */
         }
@@ -84,22 +108,17 @@ export const StyledEcosystemRestoration = styled.div`
     }
   }
 
-  @media (min-width: 1025px) and (max-width: 1600px) {
-    .left {
-      display: inline;
-      left: 30%;
-      overflow: hidden;
-    }
-  }
-
-  @media (max-width: 1600px) {
+  @media (max-width: 1024px) {
     .animationBox {
       /* background-color: aqua; */
       margin-bottom: 80px;
       position: relative;
 
       .left {
+        display: inline-block;
         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         top: -30px;
         .eagle {
           width: 148px;
@@ -111,13 +130,14 @@ export const StyledEcosystemRestoration = styled.div`
         }
       }
       .introduction {
-        text-align: center;
         p:first-child {
           color: #292929;
           font-size: 22px;
+          margin-top: 20px;
           margin-bottom: 20px;
         }
-        p:last-child {
+        .introduction_texts {
+          text-align: center;
           color: #767676;
           font-size: 16px;
           line-height: 24px;
