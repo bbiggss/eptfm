@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHomeVideo = styled.div`
-  video {
-    width: 100%;
-  }
   @media (min-width: 1025px) {
     video {
+      width: 100%;
       height: 100vh;
       object-fit: cover;
+    }
+  }
+  @media (max-width: 1024px) {
+    video {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 375 / 200;
     }
   }
 `;

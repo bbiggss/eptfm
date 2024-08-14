@@ -3,22 +3,46 @@ import styled from 'styled-components';
 import useMobile from '../hooks/useMobile';
 
 const StyledAboutDescription = styled.div`
-  @media (min-width: 1901px) {
+  @media (min-width: 1701px) {
+    img {
+      width: 247px;
+      height: 286px;
+      position: absolute;
+      right: 0;
+
+      margin-right: 213px;
+      margin-top: -35px;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1700px) {
+    width: 50%;
+    position: relative;
+
+    min-width: 512px;
+    min-height: 533px;
+
+    transform: scale(0.6);
+    left: -100px;
+    top: -170px;
+
+    img {
+      position: absolute;
+      right: -214px;
+    }
+
+    .textsTitle,
+    .textsSubTitle,
+    .textsContents {
+      white-space: nowrap;
+    }
+  }
+  @media (min-width: 1025px) {
     position: relative;
     aspect-ratio: 960 / 1000;
     width: 50%;
     max-width: 960px;
     /* background-color: skyblue; */
-
-    & img {
-      width: 247px;
-      height: 286px;
-      position: absolute;
-      right: 0;
-      /* margin-right: 186px; */
-      margin-right: 213px;
-      margin-top: -35px;
-    }
+    /* transform: scale(0.5); */
     & .textsBoxContainer {
       margin-top: 260px;
       margin-left: 106px;
@@ -26,7 +50,8 @@ const StyledAboutDescription = styled.div`
 
       &.marginLeft182 {
         /* background-color: yellowgreen; */
-        margin-left: 182px;
+        /* margin-left: 182px; */
+        margin-left: clamp(10px, 9.48vw, 182px);
       }
 
       & .textsTitle {
@@ -42,61 +67,6 @@ const StyledAboutDescription = styled.div`
         margin: 0;
       }
       & .textsContents {
-        color: #767676;
-        font-size: 36px;
-        margin: 0;
-        margin-top: 74px;
-        line-height: 50px;
-      }
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1900px) {
-    transform: scale(0.5);
-    /* 컴포넌트를 절반 크기로 축소 */
-    transform-origin: top left;
-
-    width: 50%;
-    max-width: 960px;
-    /* background-color: skyblue; */
-
-    & img {
-      width: 247px;
-      height: 286px;
-      position: absolute;
-      left: 466px;
-      top: -79px;
-      /* margin-right: 186px; */
-      margin-right: 213px;
-      margin-top: -35px;
-    }
-    & .textsBoxContainer {
-      /* margin-top: 260px;
-      margin-left: 106px; */
-
-      margin-top: 13.54vw;
-      margin-left: 15.52vw;
-      /* background-color: aqua; */
-
-      &.marginLeft182 {
-        /* background-color: yellowgreen; */
-        margin-left: 182px;
-      }
-
-      & .textsTitle {
-        font-size: 180px;
-        color: #48c2c5;
-        margin: 0;
-      }
-
-      & .textsSubTitle {
-        font-size: 70px;
-        color: #48c2c5;
-        letter-spacing: -4px;
-        margin: 0;
-        white-space: nowrap;
-      }
-      & .textsContents {
-        white-space: nowrap;
         color: #767676;
         font-size: 36px;
         margin: 0;
@@ -176,11 +146,7 @@ const AboutDescription = (data) => {
       <div className={`textsBoxContainer ${valueBox}`}>
         <p className="textsTitle">{data && data.textsTitle}</p>
         <p className="textsSubTitle">{data && data.textsSubTitle}</p>
-        <p className="textsContents">
-          {renderTextWithLineBreaks(
-            isMobile ? data.mobile_textsContents : data && data.textsContents
-          )}
-        </p>
+        <p className="textsContents">{renderTextWithLineBreaks(data && data.textsContents)}</p>
       </div>
     </StyledAboutDescription>
   );

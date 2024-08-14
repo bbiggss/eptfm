@@ -49,8 +49,8 @@ export const AboutBox = styled.div`
         padding-top: 80px;
         padding-bottom: 40px;
 
-        font-size: 36px;
-        font-weight: 500;
+        /* font-size: 36px; */
+        font-size: 9.6vw;
       }
     }
     .aboutContents {

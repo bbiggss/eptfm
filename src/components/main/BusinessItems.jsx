@@ -101,7 +101,8 @@ const StyledBusinessItems = styled.li`
         p:first-child {
           font-family: 'NanumSquareEB';
 
-          font-size: 22px;
+          /* font-size: 22px; */
+          font-size: 5.87vw;
           font-weight: 800;
           margin-bottom: 10px;
         }
@@ -110,8 +111,10 @@ const StyledBusinessItems = styled.li`
           font-family: 'NanumSquareB';
 
           color: #ffffff;
-          font-size: 16px;
-          line-height: 24px;
+          /* font-size: 16px; */
+          font-size: 4.27vw;
+          /* line-height: 24px; */
+          line-height: 6.4vw;
           letter-spacing: -0.02em;
         }
       }
