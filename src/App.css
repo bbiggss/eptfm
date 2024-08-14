@@ -16,11 +16,6 @@
 }
 
 @media (max-width: 1024px) {
-  .fullScreen {
-    /* min-width: 315px;
-    margin: 0 auto;
-    width: 100%; */
-  }
   .smallScreen {
     max-width: 100%;
     margin: 0 auto;

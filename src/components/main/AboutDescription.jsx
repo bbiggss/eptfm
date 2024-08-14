@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import useMobile from '../hooks/useMobile';
+// import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const StyledAboutDescription = styled.div`
   @media (min-width: 1701px) {
@@ -121,7 +121,7 @@ const StyledAboutDescription = styled.div`
 `;
 
 const AboutDescription = (data) => {
-  const isMobile = useMobile();
+  // const isMobile = useResponsiveMax1024();
   const [valueBox, setValueBox] = useState('');
 
   const renderTextWithLineBreaks = (text) => {

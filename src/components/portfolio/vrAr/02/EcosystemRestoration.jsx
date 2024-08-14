@@ -7,12 +7,12 @@ import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import { StyledEcosystemRestoration } from '../../../../assets/styles/portfolio/vrAr/02_EcosystemRestoration/StyledEcosystemRestoration';
-import useMobile from '../../../hooks/useMobile';
 import Img from '../../common/Img';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const EcosystemRestoration = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const isMobile = useMobile();
+  const isMobile = useResponsiveMax1024();
   return (
     <>
       <Breadcrumb />

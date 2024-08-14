@@ -1,6 +1,6 @@
 import React from 'react';
-import useMobile from '../hooks/useMobile';
 import styled from 'styled-components';
+import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const StyledBusinessItems = styled.li`
   position: relative;
@@ -131,7 +131,7 @@ const BusinessItems = (data) => {
       </React.Fragment>
     ));
   };
-  const isMobile = useMobile();
+  const isMobile = useResponsiveMax1024();
   return (
     <StyledBusinessItems>
       <div className="hoverOff">

@@ -3,10 +3,10 @@ import { ContactUsBox } from '../../assets/styles/contactUs/contactUs.styled';
 import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import Transportation from './Transportation';
-import useMobile from '../hooks/useMobile';
+import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
-  const isMobile = useMobile();
+  const isMobile = useResponsiveMax1024();
   return (
     <ContactUsBox>
       <div className="fullScreen ellipseArea">

@@ -73,6 +73,7 @@ const StyledWidthImgOneTextsOne = styled.div`
       /* line-height: 5vw; */
       white-space: nowrap;
     }
+    padding-top: ${(props) => props.$mobilePaddingTop};
 
     padding-bottom: ${(props) => {
       if (props.$mobilePaddingBottom) return props.$mobilePaddingBottom;

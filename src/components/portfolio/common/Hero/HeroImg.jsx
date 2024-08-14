@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
-import useMobile from '../../../hooks/useMobile';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const StyledHeroImg = styled.img`
   width: 100%;
@@ -8,18 +8,18 @@ const StyledHeroImg = styled.img`
   transition: opacity 1s ease-in-out; */
   max-width: ${(props) => props.$maxwidth};
 
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     aspect-ratio: ${(props) => props.$pcHeight};
     /* margin-bottom: 160px; */
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     aspect-ratio: ${(props) => props.$mobileHeight};
   }
 `;
 
 const HeroImg = (data) => {
   const imgRef = useRef(null);
-  const isMobile = useMobile();
+  const isMobile = useResponsiveMax1024();
 
   // useEffect(() => {
   //   const img = imgRef.current;

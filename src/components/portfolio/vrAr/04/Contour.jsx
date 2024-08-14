@@ -10,6 +10,7 @@ import ProjectDescription from '../../common/ProjectDescription';
 import Img from '../../common/Img';
 import CustomWrapImg from '../../common/CustomWrapImg';
 import HeroVideo from '../../common/Hero/HeroVideo';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const StyledContour = styled.div`
   .introductionArea {
@@ -27,6 +28,7 @@ const StyledContour = styled.div`
 
 const Contour = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const isMobile = useResponsiveMax1024();
   return (
     <StyledContour>
       <Breadcrumb />
@@ -52,7 +54,11 @@ const Contour = () => {
         <HeroVideo
           isLoaded={isLoaded}
           setIsLoaded={setIsLoaded}
-          src={`${process.env.PUBLIC_URL}/assets/videos/contour.mp4`}
+          src={
+            isMobile
+              ? `${process.env.PUBLIC_URL}/assets/videos/M_contour.mp4`
+              : `${process.env.PUBLIC_URL}/assets/videos/contour.mp4`
+          }
         />
       </div>
 

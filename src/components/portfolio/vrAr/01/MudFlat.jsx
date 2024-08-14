@@ -8,10 +8,10 @@ import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import HeroImg from '../../common/Hero/HeroImg';
-import useMobile from '../../../hooks/useMobile';
 import Img from '../../common/Img';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const MudFlatBox = styled.div`
   .gridContainer,
@@ -218,7 +218,7 @@ const MudFlatBox = styled.div`
 
 const MudFlat = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const isMobile = useMobile();
+  const isMobile = useResponsiveMax1024();
   return (
     <MudFlatBox>
       <Breadcrumb />
