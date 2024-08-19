@@ -99,8 +99,11 @@ export const StyledEarthRotationChangingSeasons = styled.div`
     .mainDescription {
       text-align: center;
       .globe {
-        width: 95px;
-        margin-top: 80px;
+        /* width: 95px;
+        margin-top: 80px; */
+
+        width: clamp(95px, 20vw, 150px); /* 해상도가 커지면서 150px까지 증가 */
+        margin-top: clamp(80px, 15vw, 120px);
       }
       .mainDescriptionTextBox {
         margin-top: 30px;
