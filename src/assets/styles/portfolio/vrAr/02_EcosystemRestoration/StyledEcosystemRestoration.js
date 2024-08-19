@@ -61,6 +61,7 @@ export const StyledEcosystemRestoration = styled.div`
           font-size: clamp(20px, 3vw, 40px);
           margin-top: 49px;
           margin-bottom: 34px;
+          white-space: nowrap;
         }
         p:last-child {
           color: #767676;
