@@ -46,19 +46,22 @@ export const StyledEarthRotationChangingSeasons = styled.div`
         margin-top: 30px;
         margin-left: 79px;
         /* background-color: aqua; */
+        letter-spacing: -0.02em;
 
         .title {
           color: #292929;
-          font-size: 40px;
-          line-height: auto;
-          letter-spacing: -2%;
+          /* font-size: 40px; */
+          font-size: clamp(20px, 3vw, 40px);
         }
         .subTexts {
           margin-top: 34px;
           color: #767676;
-          font-size: 25px;
-          line-height: 40px;
-          letter-spacing: -2%;
+
+          /* font-size: 25px;
+          line-height: 40px; */
+
+          font-size: clamp(14px, 1.7vw, 26px);
+          line-height: clamp(20px, 2vw, 40px);
         }
       }
     }

@@ -6,9 +6,6 @@ const StyledWidthImgOneTextsOne = styled.div`
   text-align: left;
 
   @media (min-width: 1501px) {
-    .positionRight {
-      margin-left: 100px;
-    }
     .texts {
       font-size: 24px;
       line-height: 38px;
@@ -20,9 +17,6 @@ const StyledWidthImgOneTextsOne = styled.div`
     img {
       width: 50%;
     }
-    .positionRight {
-      margin-left: 50px;
-    }
     .texts {
       width: 50%;
       font-size: 18px;
@@ -33,6 +27,9 @@ const StyledWidthImgOneTextsOne = styled.div`
   @media (min-width: 1025px) {
     /* margin: 0 60px; */
     display: flex;
+    .positionRight {
+      margin-left: 100px;
+    }
     .texts {
       width: 50%;
       display: flex;
