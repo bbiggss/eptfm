@@ -46,10 +46,10 @@ const EarthRotationChangingSeasons = () => {
             />
           </PortfolioTitleWrap>
           <HeroVideo
-            pcHeight={'1920 / 1080'}
-            mobileHeight={'376 / 450'}
             // isLoaded={isLoaded}
             // setIsLoaded={setIsLoaded}
+            pcHeight={'1920 / 1080'}
+            mobileHeight={'375 / 450'}
             src={
               isMobTab
                 ? `${process.env.PUBLIC_URL}/assets/videos/M_EarthRevolution.mp4`

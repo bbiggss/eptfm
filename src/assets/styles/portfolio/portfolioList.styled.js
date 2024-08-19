@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 const portfolioImgWidth = '480px';
-const mobile_PortfolioImgWidth = '315px';
+// const mobile_PortfolioImgWidth = '315px';
+const mobile_PortfolioImgWidth = 'clamp(315px, 55vw, 600px)';
 export const PortfolioListBox = styled.div`
   .pageTitle,
   .fieldTitle {
@@ -107,7 +108,7 @@ export const PortfolioListBox = styled.div`
 
         & .thumbnail img {
           width: ${mobile_PortfolioImgWidth};
-          height: 177px;
+          /* height: 177px; */
         }
         & .thumbnailTexts {
           & p:first-child {
