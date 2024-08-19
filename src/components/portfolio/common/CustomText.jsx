@@ -16,8 +16,8 @@ const CustomTextBox = styled.p`
     /* font-size: 16px;
     line-height: 24px; */
 
-    font-size: 4.27vw;
-    line-height: 6.4vw;
+    font-size: clamp(16px, 4vw, 24px);
+    line-height: clamp(24px, 6vw, 32px);
   }
 `;
 

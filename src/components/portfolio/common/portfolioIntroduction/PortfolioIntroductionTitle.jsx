@@ -20,7 +20,8 @@ const StyledPortfolioIntroductionTitle = styled.p`
     /* 1440px 기준 50px */
   }
   @media (max-width: 1024px) {
-    font-size: 5.87vw;
+    /* font-size: 5.87vw; */
+    font-size: clamp(22px, 5.87vw, 50px);
     /* 22px / 375px * 100 = 5.87vw */
   }
 `;

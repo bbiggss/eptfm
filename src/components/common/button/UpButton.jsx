@@ -11,8 +11,12 @@ const StyledUpButton = styled.div`
     border-radius: 100%;
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1465px) {
     margin-right: 80px;
+    margin-bottom: 60px;
+  }
+  @media (min-width: 1025px) and (max-width: 1465px) {
+    margin-right: 35px;
     margin-bottom: 60px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {

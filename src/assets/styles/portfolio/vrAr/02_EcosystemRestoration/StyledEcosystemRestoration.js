@@ -28,8 +28,7 @@ export const StyledEcosystemRestoration = styled.div`
 
   @media (min-width: 1025px) {
     max-width: 1920px;
-    width: 80%;
-    /* background-color: yellow; */
+    background-color: yellow;
 
     margin: auto;
 

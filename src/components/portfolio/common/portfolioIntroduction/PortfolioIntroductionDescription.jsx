@@ -31,10 +31,11 @@ const StyledPortfolioIntroductionDescription = styled.p`
     margin-top: 5.33vw;
     margin-bottom: 21.33vw;
 
-    font-size: 4.27vw;
+    font-size: clamp(16px, 4vw, 24px);
+    line-height: clamp(24px, 6vw, 32px);
+
     /* 16px / 375px * 100 = 4.27vw */
     /* line-height: 24px; */
-    line-height: 6.4vw;
   }
 `;
 
