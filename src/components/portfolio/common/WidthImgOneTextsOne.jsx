@@ -69,7 +69,7 @@ const StyledWidthImgOneTextsOne = styled.div`
       /* line-height: 24px; */
       line-height: clamp(24px, 6vw, 32px);
       /* line-height: 5vw; */
-      white-space: nowrap;
+      /* white-space: nowrap; */
     }
     padding-top: ${(props) => props.$mobilePaddingTop};
 
