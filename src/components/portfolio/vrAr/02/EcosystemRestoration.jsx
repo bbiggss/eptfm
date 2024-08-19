@@ -46,7 +46,7 @@ const EcosystemRestoration = () => {
             />
           </PortfolioTitleWrap>
         </div>
-        <div className="textCenter">
+        <div className="heroWrapper">
           <HeroImg
             pcHeight={'1260 / 760'}
             tabletHeight={''}
@@ -60,69 +60,72 @@ const EcosystemRestoration = () => {
         </div>
 
         <div className="smallScreen">
-          <div className="tempWrap">
-            <div className="animationBox">
-              <div className="left">
-                <img
-                  className="eagle"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_eagle.png`}
-                  alt=""
-                />
-                <img
-                  className="cloud"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_cloud.png`}
-                  alt=""
-                />
-                <div className="introduction">
-                  <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
-                  <p className="introduction_texts NanumSquareB">
-                    {isMobile ? (
-                      <>
-                        옐로스톤 국립공원에서 펼쳐지는
-                        <br /> 생태계 복원의 대서사시
-                        <br /> 자연의 아름다움을 다시 꽃피우세요!
-                      </>
-                    ) : (
-                      <>
-                        옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
-                        <br /> 자연의 아름다움을 다시 꽃피우세요!
-                      </>
-                    )}
-                  </p>
-                </div>
+          <div className="animationBox">
+            <div className="left">
+              <img
+                className="eagleCloud"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/eagleCloud.png`}
+                alt=""
+              />
+              <img
+                className="eagle"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_eagle.png`}
+                alt=""
+              />
+              <img
+                className="cloud"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/1_cloud.png`}
+                alt=""
+              />
+              <div className="introduction">
+                <p className="NanumSquareEB">늑대의 귀환, 자연의 균형을 되찾다</p>
+                <p className="introduction_texts NanumSquareB">
+                  {isMobile ? (
+                    <>
+                      옐로스톤 국립공원에서 펼쳐지는
+                      <br /> 생태계 복원의 대서사시
+                      <br /> 자연의 아름다움을 다시 꽃피우세요!
+                    </>
+                  ) : (
+                    <>
+                      옐로스톤 국립공원에서 펼쳐지는 생태계 복원의 대서사시
+                      <br /> 자연의 아름다움을 다시 꽃피우세요!
+                    </>
+                  )}
+                </p>
               </div>
-              <div className="right">
-                <img
-                  className="animals"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/animals.png`}
-                  alt=""
-                />
-                <img
-                  className="wolf"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_wolf.png`}
-                  alt=""
-                />
-                <img
-                  className="fox"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_fox.png`}
-                  alt=""
-                />
-                <img
-                  className="beaver"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_beaver.png`}
-                  alt=""
-                />
-                <img
-                  className="tree1"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree1.png`}
-                  alt=""
-                />
-                <img
-                  className="tree2"
-                  src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree2.png`}
-                  alt=""
-                />
-              </div>
+            </div>
+            <div className="right">
+              <img
+                className="animals"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/animals.png`}
+                alt=""
+              />
+              <img
+                className="wolf"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_wolf.png`}
+                alt=""
+              />
+              <img
+                className="fox"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_fox.png`}
+                alt=""
+              />
+              <img
+                className="beaver"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_beaver.png`}
+                alt=""
+              />
+              <img
+                className="tree1"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree1.png`}
+                alt=""
+              />
+              <img
+                className="tree2"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/group/2_tree2.png`}
+                alt=""
+              />
             </div>
           </div>
 

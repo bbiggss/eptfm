@@ -11,8 +11,11 @@ const StyledPortfolioListButton = styled.div`
     border-radius: 100%;
   }
 
-  @media (min-width: 1025px) {
+  @media (min-width: 1465px) {
     margin-right: 80px;
+  }
+  @media (min-width: 1025px) and (max-width: 1465px) {
+    margin-right: 35px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     display: none;

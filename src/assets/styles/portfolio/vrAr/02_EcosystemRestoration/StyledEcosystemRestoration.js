@@ -5,32 +5,38 @@ export const StyledEcosystemRestoration = styled.div`
     display: flex;
     justify-content: center;
   }
-
-  @media (min-width: 1401px) {
-    .animationBox {
-      height: 639px;
-    }
+  .eagle,
+  .cloud,
+  .wolf,
+  .fox,
+  .beaver,
+  .tree1,
+  .tree2 {
+    display: none;
   }
 
-  @media (min-width: 1025px) and (max-width: 1400px) {
-    .animationBox {
-      height: 439px;
-      top: -45px;
+  @media (min-width: 1801px) {
+    .eagleCloud {
+      position: relative;
+      left: -148px;
     }
-    .left {
-      transform: scale(0.7);
-    }
-    .right {
-      top: 190px !important;
-      transform: scale(0.6);
+  }
+  @media (min-width: 1025px) and (max-width: 1800px) {
+    .eagleCloud {
+      max-width: clamp(200px, 20vw, 389px);
     }
   }
 
   @media (min-width: 1025px) {
     max-width: 1920px;
-    background-color: yellow;
-
     margin: auto;
+    /* background-color: yellow; */
+
+    .heroWrapper {
+      max-width: 1260px;
+      width: 80%;
+      margin: auto;
+    }
 
     .animationBox {
       display: flex;
@@ -40,29 +46,28 @@ export const StyledEcosystemRestoration = styled.div`
 
       .left {
         /* background-color: yellow; */
-        position: absolute;
+        /* position: absolute; */
         width: 50%;
+        position: relative;
         top: -80px;
-        /* left: -50px; */
-        .cloud {
-          position: absolute;
-          top: 177px;
-          left: 316px;
-        }
       }
       .introduction {
         text-align: left;
-        width: 586px;
+        max-width: 586px;
+        /* white-space: nowrap; */
         p:first-child {
           color: #292929;
-          font-size: 40px;
+          /* font-size: 40px; */
+          font-size: clamp(20px, 3vw, 40px);
           margin-top: 49px;
           margin-bottom: 34px;
         }
         p:last-child {
           color: #767676;
-          font-size: 26px;
-          line-height: 40px;
+          /* font-size: 26px; */
+          font-size: clamp(14px, 1.7vw, 26px);
+          /* line-height: 40px; */
+          line-height: clamp(20px, 2vw, 40px);
           letter-spacing: -0.02em;
         }
       }
@@ -70,20 +75,10 @@ export const StyledEcosystemRestoration = styled.div`
         width: 50%;
         position: absolute;
         right: 0;
-        top: 155px;
-        background-color: red;
+        bottom: 0;
         .animals {
           /* display: none; */
-        }
-        .wolf,
-        .fox,
-        .beaver,
-        .tree1,
-        .tree2 {
-          display: none;
-        }
-        img {
-          position: absolute;
+          width: 100%;
         }
         .wolf {
           margin-left: 170px;
@@ -108,6 +103,11 @@ export const StyledEcosystemRestoration = styled.div`
   }
 
   @media (max-width: 1024px) {
+    .eagleCloud {
+      /* max-width: clamp(148px, 20vw, 389px); */
+      /* width: clamp(148px, 18vw, 300px); */
+      width: clamp(148px, 40vw, 389px);
+    }
     .animationBox {
       /* background-color: aqua; */
       margin-bottom: 80px;
@@ -131,15 +131,18 @@ export const StyledEcosystemRestoration = styled.div`
       .introduction {
         p:first-child {
           color: #292929;
-          font-size: 22px;
+          /* font-size: 22px; */
+          font-size: clamp(22px, 5.87vw, 50px);
           margin-top: 20px;
           margin-bottom: 20px;
         }
         .introduction_texts {
           text-align: center;
           color: #767676;
-          font-size: 16px;
-          line-height: 24px;
+          /* font-size: 16px;
+          line-height: 24px; */
+          font-size: clamp(16px, 4vw, 24px);
+          line-height: clamp(24px, 6vw, 32px);
 
           margin-bottom: 30px;
         }
@@ -147,13 +150,7 @@ export const StyledEcosystemRestoration = styled.div`
       .right {
         margin: 0 40px;
         text-align: center;
-        .wolf,
-        .fox,
-        .beaver,
-        .tree1,
-        .tree2 {
-          display: none;
-        }
+
         .animals {
           width: 100%;
           max-width: 621px;

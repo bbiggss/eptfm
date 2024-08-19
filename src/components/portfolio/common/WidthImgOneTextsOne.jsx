@@ -57,7 +57,8 @@ const StyledWidthImgOneTextsOne = styled.div`
     img {
       width: 100%;
       order: 1;
-      margin-bottom: 24px;
+      /* margin-bottom: 24px; */
+      margin-bottom: clamp(24px, 6vw, 48px);
     }
     .texts {
       order: 2;
