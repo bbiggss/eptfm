@@ -5,33 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
+      .centerAlignment {
+        width: 500px;
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* justify-content: center; */
+        margin-bottom: 34px;
       }
-
-      @media (min-width: 1025px) {
-        p {
-          font-size: 4vw; /* 화면 너비의 4%에 해당하는 크기로 설정 */
-        }
-      }
-
-      @media (min-width: 768px) and (max-width: 1024px) {
-        p {
-          font-size: 6vw; /* 화면 너비의 6%에 해당하는 크기로 설정 */
-        }
-      }
-
-      @media (max-width: 767px) {
-        p {
-          font-size: 8vw; /* 화면 너비의 8%에 해당하는 크기로 설정 */
-        }
+      img {
+        width: 100%;
+        max-width: 259px;
       }
     </style>
   </head>
   <body>
-    <div class="yellow">
-      <p>갯벌은 어떤 곳일까?</p>
+    <div class="centerAlignment">
+      <img src="./public/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png" alt="" />
+      <img src="./public/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png" alt="" />
+      <img src="./public/assets/images/portfolio/VrAr/detail/01_MudFlat/01_mulsigye.png" alt="" />
     </div>
   </body>
 </html>

@@ -13,12 +13,16 @@ const StyledPortfolioIntroductionDescription = styled.p`
   font-family: 'NanumSquareB';
   color: #333333;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 
   @media (min-width: 1025px) {
     margin-top: 60px;
 
-    font-size: 24px;
-    line-height: 38px;
+    /* font-size: 24px; */
+    font-size: clamp(20px, 1.25vw, 24px);
+
+    /* line-height: 38px; */
+    line-height: clamp(30px, 2vw, 38px);
   }
   @media (max-width: 1024px) {
     /* margin-top: 20px;

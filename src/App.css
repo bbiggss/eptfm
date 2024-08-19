@@ -10,7 +10,8 @@
   }
   .smallScreen {
     max-width: 1260px;
-    width: 100%;
+    width: 80%;
+    /* background-color: yellow; */
     margin: 0 auto;
   }
 }

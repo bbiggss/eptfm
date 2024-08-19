@@ -15,8 +15,8 @@ const StyledPortfolioIntroductionTitle = styled.p`
   color: #000000;
   letter-spacing: -0.02em;
   @media (min-width: 1025px) {
-    font-size: 50px;
-    /* font-size: 3.47vw; */
+    /* font-size: 50px; */
+    font-size: clamp(30px, 2.6vw, 50px);
     /* 1440px 기준 50px */
   }
   @media (max-width: 1024px) {

@@ -5,7 +5,9 @@ export const WidthOneContent = styled.div`
   text-align: center;
 
   @media (min-width: 1025px) {
-    margin: 0 50px;
+    /* margin: 0 50px; */
+    width: 80%;
+    margin: 0 auto;
     img {
       width: 100%;
       max-width: 1100px;

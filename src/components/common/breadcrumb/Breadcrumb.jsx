@@ -7,14 +7,15 @@ const StyledBreadcrumbBox = styled.div`
   font-family: 'Roboto-Medium';
   position: relative;
   max-width: 1920px;
+  width: 100%;
   margin: auto;
 
   ul {
     display: flex;
-    margin: 0 182px;
+    width: 80%;
+    margin: auto;
+
     list-style: none;
-    width: max-content;
-    /* background-color: blue; */
     li {
       margin-right: 13px;
       color: #767676;
@@ -80,53 +81,51 @@ const Breadcrumb = ({ style, font }) => {
   // console.log(mainCategory, subCategory, contentTitle);
   return (
     <StyledBreadcrumbBox style={style}>
-      <div className="fullScreen">
-        <ul>
-          <li>
-            <Link to={'/'} style={font}>
-              HOME
-            </Link>
-          </li>
-          <li style={font}>{'>'}</li>
-          <li style={font}>{mainCategory}</li>
+      <ul>
+        <li>
+          <Link to={'/'} style={font}>
+            HOME
+          </Link>
+        </li>
+        <li style={font}>{'>'}</li>
+        <li style={font}>{mainCategory}</li>
 
-          {subCategory === undefined ? (
-            ''
-          ) : (
-            <>
-              <li style={font}>{'>'}</li>
-              <li>
-                <Link
-                  style={font}
-                  to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}
-                >
-                  {subCategory}
-                </Link>
-              </li>
-            </>
-          )}
+        {subCategory === undefined ? (
+          ''
+        ) : (
+          <>
+            <li style={font}>{'>'}</li>
+            <li>
+              <Link
+                style={font}
+                to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}
+              >
+                {subCategory}
+              </Link>
+            </li>
+          </>
+        )}
 
-          {contentTitle === undefined || contentTitle === 'undefined' ? (
-            ''
-          ) : (
-            <>
-              <li style={font}>{'>'}</li>
+        {contentTitle === undefined || contentTitle === 'undefined' ? (
+          ''
+        ) : (
+          <>
+            <li style={font}>{'>'}</li>
 
-              <li className="NanumSquareB" style={font}>
-                {contentTitle.includes('I') ? (
-                  <>
-                    {contentTitleEnglish}
-                    <span className="NanumSquareR">|</span>
-                    {contentTitleKorean}
-                  </>
-                ) : (
-                  <>{contentTitle}</>
-                )}
-              </li>
-            </>
-          )}
-        </ul>
-      </div>
+            <li className="NanumSquareB" style={font}>
+              {contentTitle.includes('I') ? (
+                <>
+                  {contentTitleEnglish}
+                  <span className="NanumSquareR">|</span>
+                  {contentTitleKorean}
+                </>
+              ) : (
+                <>{contentTitle}</>
+              )}
+            </li>
+          </>
+        )}
+      </ul>
 
       {/* <ol class="breadcrumb breadcrumb-style2 mb-0">
         <li class="breadcrumb-item">

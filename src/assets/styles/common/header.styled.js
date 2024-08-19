@@ -39,8 +39,10 @@ export const HeaderBox = styled.div`
 
   #headerContainer {
     /* background-color: yellow; */
-    width: 100%;
-    margin: 0 182px;
+    width: 80%;
+    margin: auto;
+    /* margin: 0 182px; */
+    /* margin: 0 9.5vw; */
   }
   ul {
     list-style: none;
