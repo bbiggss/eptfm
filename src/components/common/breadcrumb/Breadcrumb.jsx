@@ -32,7 +32,7 @@ const StyledBreadcrumbBox = styled.div`
     ul {
       /* margin-left: 192px; */
     }
-    margin-top: 88px;
+    padding-top: 88px;
     margin-bottom: 73px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -96,10 +96,7 @@ const Breadcrumb = ({ style, font }) => {
           <>
             <li style={font}>{'>'}</li>
             <li>
-              <Link
-                style={font}
-                to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}
-              >
+              <Link style={font} to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}>
                 {subCategory}
               </Link>
             </li>

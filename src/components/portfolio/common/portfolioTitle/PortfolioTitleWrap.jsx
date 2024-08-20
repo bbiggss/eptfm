@@ -14,6 +14,7 @@ const StyledPortfolioTitleWrap = styled.div`
   @media (max-width: 1024px) {
     margin-top: ${(props) => props.$mobileMarginTop};
     margin-bottom: ${(props) => props.$mobileMarginBottom};
+    padding-top: ${(props) => props.$mobilePaddingTop};
   }
 `;
 
@@ -25,6 +26,7 @@ const PortfolioTitleWrap = ({
   mobileMarginTop,
   mobileMarginBottom,
   $isLoaded,
+  mobilePaddingTop,
 }) => {
   return (
     <StyledPortfolioTitleWrap
@@ -32,6 +34,7 @@ const PortfolioTitleWrap = ({
       $pcMarginBottom={pcMarginBottom}
       $mobileMarginTop={mobileMarginTop}
       $mobileMarginBottom={mobileMarginBottom}
+      $mobilePaddingTop={mobilePaddingTop}
       style={style}
       $isLoaded={$isLoaded}
     >

@@ -6,7 +6,7 @@ const StyledPortfolioOrganization = styled.p`
 
   @media (min-width: 1025px) {
     /* font-size: 1.53vw; */
-    font-size: 22px;
+    font-size: var(--pc-font-size-22px);
     /* 22px / 1440px * 100 = 1.53vw */
     margin-bottom: 24px;
   }

@@ -14,13 +14,16 @@ const StyledPortfolioFieldTitle = styled.p`
   letter-spacing: -0.02em;
 
   @media (min-width: 1025px) {
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: var(--pc-font-size-64px);
+
     /* 64px / 1440px * 100 = 4.44vw */
 
     /* font-size: calc(64px + 0.5vw); */
   }
   @media (max-width: 1024px) {
     font-size: 6.67vw;
+    text-align: center;
     /* 25px / 375px * 100 = 6.67vw */
 
     /* font-size: calc(25px + 0.5vw); */

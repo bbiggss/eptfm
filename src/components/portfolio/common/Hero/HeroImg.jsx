@@ -42,7 +42,7 @@ const HeroImg = (data) => {
       $tabletHeight={data.tabletHeight}
       $mobileHeight={data.mobileHeight}
       $maxwidth={data.maxwidth}
-      $isLoaded={data.isLoaded}
+      // $isLoaded={data.isLoaded}
       ref={imgRef}
       src={isMobile ? data.mobileSrc : data.src}
       alt=""
