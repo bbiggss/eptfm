@@ -52,7 +52,7 @@ const StyledWidthImgOneTextsOne = styled.div`
 
   @media (max-width: 1024px) {
     /* margin: 0 30px; */
-    margin: 0 5vw;
+    margin: 0 var(--mobile-margin);
     display: grid;
     img {
       width: 100%;
@@ -63,6 +63,7 @@ const StyledWidthImgOneTextsOne = styled.div`
     .texts {
       order: 2;
       width: 100%;
+      white-space: nowrap;
 
       color: #767676;
       text-align: center;

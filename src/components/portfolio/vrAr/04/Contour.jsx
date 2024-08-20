@@ -3,7 +3,6 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
-import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import ProjectDescription from '../../common/ProjectDescription';
 import Img from '../../common/Img';

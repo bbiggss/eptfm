@@ -8,6 +8,7 @@ export const StyledContour = styled.div`
   @media (min-width: 1025px) {
     max-width: 1920px;
     .introductionArea {
+      margin: 0 50px;
       margin-top: 200px;
       margin-bottom: 160px;
       img {
@@ -24,7 +25,7 @@ export const StyledContour = styled.div`
   }
   @media (max-width: 1024px) {
     .introductionArea {
-      margin: 0 30px;
+      margin: 0 var(--mobile-margin);
       margin-top: 80px;
       margin-bottom: 30px;
       /* overflow: hidden; */

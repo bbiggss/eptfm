@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --mobile-margin: clamp(30px, 8vw, 80px);
+  /* margin 30px */
+}
+
 @media (min-width: 1025px) {
   .fullScreen {
     max-width: 1920px;
