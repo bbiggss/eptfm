@@ -10,10 +10,7 @@ const StyledPortfolioOrganization = styled.p`
     /* 22px / 1440px * 100 = 1.53vw */
     margin-bottom: 24px;
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    margin-bottom: 20px; // custom
-  }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     font-size: 3.2vw;
     /* 12px / 375px * 100 = 3.2vw */
 
@@ -24,11 +21,7 @@ const StyledPortfolioOrganization = styled.p`
 `;
 
 const PortfolioOrganization = (data) => {
-  return (
-    <StyledPortfolioOrganization style={data && data.style}>
-      {data.organization}
-    </StyledPortfolioOrganization>
-  );
+  return <StyledPortfolioOrganization style={data && data.style}>{data.organization}</StyledPortfolioOrganization>;
 };
 
 export default PortfolioOrganization;

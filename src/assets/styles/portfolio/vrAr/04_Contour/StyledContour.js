@@ -8,7 +8,9 @@ export const StyledContour = styled.div`
   @media (min-width: 1025px) {
     max-width: 1920px;
     .introductionArea {
-      margin: 0 50px;
+      /* margin: 0 50px; */
+      width: 80%;
+      margin: auto;
       margin-top: 200px;
       margin-bottom: 160px;
       img {

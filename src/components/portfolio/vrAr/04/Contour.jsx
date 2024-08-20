@@ -64,10 +64,7 @@ const Contour = () => {
         />
       </div>
       <div className="introductionArea">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourModel.png`}
-          alt=""
-        />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourModel.png`} alt="" />
         {/* <PortfolioIntroduction
           style={{ marginTop: '60px', marginBottom: '160px' }}
           title={'등고선을 통해 배우는 높낮이의 비밀!'}
@@ -75,7 +72,11 @@ const Contour = () => {
             '높이별 색 구분, 높낮이, 경사를 생생하게 경험하며 등고선의 원리를 이해할 수 있습니다.'
           }
         /> */}
-        <PortfolioIntroductionTitle title={'등고선을 통해 배우는 높낮이의 비밀!'} />
+        <PortfolioIntroductionTitle
+          pcMarginTop={'60px'}
+          mobileMarginBottom={'clamp(20px, 5vw, 60px)'}
+          title={'등고선을 통해 배우는 높낮이의 비밀!'}
+        />
         <PortfolioIntroductionDescription
           style={{ color: '#767676' }}
           description={
@@ -88,9 +89,7 @@ const Contour = () => {
 
       <div className="smallScreen">
         <WidthImgOneTextsOne>
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/1.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/1.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
@@ -112,9 +111,7 @@ const Contour = () => {
                 : `학습자는 평면 지도에 선을 긋는 간단한 \n작업으로 등고선의 개념을 배울 수 있어요.\n등고선의 신비한 세계를 같이 시작해볼까요?`
             }
           />
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/2.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/2.png`} />
         </WidthImgOneTextsOne>
       </div>
       <div className="fullScreen relative">
@@ -127,9 +124,7 @@ const Contour = () => {
 
       <div className="smallScreen">
         <WidthImgOneTextsOne>
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/3.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/3.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
@@ -151,14 +146,10 @@ const Contour = () => {
                 : `학습자는 높이에 맞춰 등고선 색을 넣어 지형의\n 높낮이를 직관적으로 이해할 수 있어요.\n낮으면 낮을 수록 어떤 색을 칠해야 할까요?`
             }
           />
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/4.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/4.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/5.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/5.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
@@ -180,15 +171,11 @@ const Contour = () => {
                 : `마지막으로, 재미있는 문제 풀이 시간!\n계곡과 능선, 고점과 저점, 완만함과 가파름을\n분별하는 여섯가지 문제를 통해 학습을\n복습하고 확인할 수 있어요!`
             }
           />
-          <Img
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/6.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/group1/6.png`} />
         </WidthImgOneTextsOne>
       </div>
 
-      <CustomWrapImg
-        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png`}
-      />
+      <CustomWrapImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourMap.png`} />
     </StyledContour>
   );
 };
