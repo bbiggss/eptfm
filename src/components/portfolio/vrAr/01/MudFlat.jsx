@@ -66,6 +66,8 @@ const MudFlat = () => {
             <div>
               <PortfolioIntroductionTitle title={'갯벌 생물 채집 달인에 도전!'} />
               <PortfolioIntroductionDescription
+                pcMarginTop={'60px'}
+                mobileMarginTop={'5.33vw'}
                 description={
                   "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
                 }
@@ -114,9 +116,7 @@ const MudFlat = () => {
       </div>
 
       <WidthOneContent>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_1.png`} />
         <CustomText
           style={{ whiteSpace: 'nowrap' }}
           text={
@@ -127,9 +127,7 @@ const MudFlat = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_2.png`} />
         <CustomText
           text={
             isMobile
@@ -139,9 +137,7 @@ const MudFlat = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_3.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_3.png`} />
         <CustomText
           text={
             isMobile
@@ -154,10 +150,7 @@ const MudFlat = () => {
       <div className="fullScreen gridContainer">
         <ul>
           <li>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_reed.png`}
-              alt=""
-            />
+            <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/01_reed.png`} alt="" />
           </li>
           <li>
             <img
@@ -200,9 +193,7 @@ const MudFlat = () => {
       </div>
 
       <WidthOneContent $first>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_4.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_4.png`} />
         <CustomText
           text={
             isMobile
@@ -212,9 +203,7 @@ const MudFlat = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_5.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_5.png`} />
         <CustomText
           text={
             isMobile
@@ -224,9 +213,7 @@ const MudFlat = () => {
         />
       </WidthOneContent>
       <WidthOneContent $customPaddingBottom>
-        <Img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`}
-        />
+        <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`} />
         <CustomText
           text={
             isMobile

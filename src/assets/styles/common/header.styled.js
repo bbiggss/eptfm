@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const headerHeightDesktop = '100px';
-const headerHeightTablet = '10vw';
 // const headerHeightMobile = '60px';
 const headerHeightMobile = '10vw';
 
@@ -9,10 +8,7 @@ export const HeaderSpacer = styled.div`
   @media (min-width: 1025px) {
     height: ${headerHeightDesktop};
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: ${headerHeightTablet};
-  }
-  @media (max-width: 767px) {
+  @media (max-width: 1025px) {
     height: ${headerHeightMobile};
     min-height: 60px;
   }
@@ -37,13 +33,6 @@ export const HeaderBox = styled.div`
     transition: background-color 0.5s ease, transform 0.5s ease;
   }
 
-  #headerContainer {
-    /* background-color: yellow; */
-    width: 80%;
-    margin: auto;
-    /* margin: 0 182px; */
-    /* margin: 0 9.5vw; */
-  }
   ul {
     list-style: none;
   }
@@ -71,6 +60,8 @@ export const HeaderBox = styled.div`
     #headerContainer {
       position: relative;
       max-width: 1920px;
+      width: 80%;
+      margin: auto;
     }
     #logoImg {
       width: 122px;
@@ -103,6 +94,7 @@ export const HeaderBox = styled.div`
       position: relative;
       p {
         font-size: 18px;
+        color: #292929;
         padding-top: 0;
         padding-bottom: 39px;
         &:hover {
@@ -155,45 +147,16 @@ export const HeaderBox = styled.div`
     }
   }
 
-  /* 태블릿 (768px ~ 1024px) */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    height: ${headerHeightTablet};
-    background-color: white;
-    #headerContainer {
-      position: relative;
-      /* border: 1px solid black; */
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 0 68px;
-      margin-top: 48px;
-      margin-bottom: 48px;
-
-      #logoImg {
-        width: 98px;
-        height: 12px;
-      }
-      #dropDownImg,
-      #xBtn {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-right: 30px;
-      }
-      ul {
-        display: none;
-      }
-    }
-  }
-
   /* 모바일 (0 ~ 767px) */
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) {
     background-color: white;
     height: ${headerHeightMobile};
     min-height: 60px;
     #headerContainer {
-      margin-left: 30px;
+      /* background-color: yellow; */
+      position: relative;
+      width: 100%;
+      margin: 0 30px;
 
       #logoImg {
         width: 82px;
@@ -207,7 +170,6 @@ export const HeaderBox = styled.div`
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        margin-right: 30px;
       }
       #dropDownImg {
         width: 18px;

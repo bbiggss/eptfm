@@ -3,6 +3,7 @@ import { HeaderBox } from '../../../assets/styles/common/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 
 const StyledDropDown = styled.div`
   @media (min-width: 1025px) {
@@ -73,6 +74,7 @@ const StyledDropDown = styled.div`
 `;
 
 const Header = (data) => {
+  const isMobTab = useResponsiveMax1024();
   const [showDropDown, setShowDropDown] = useState(false);
 
   const dropDownClick = () => {
@@ -87,14 +89,10 @@ const Header = (data) => {
       <HeaderBox id="header" className={`robotoMedium ${data.headerClass}`}>
         <div id="headerContainer">
           <Link to={'/'}>
-            <img
-              id="logoImg"
-              src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`}
-              alt=""
-            />
+            <img id="logoImg" src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`} alt="" />
           </Link>
           <span>
-            {showDropDown ? (
+            {isMobTab && showDropDown ? (
               <img
                 id="xBtn"
                 onClick={() => dropDownClose()}

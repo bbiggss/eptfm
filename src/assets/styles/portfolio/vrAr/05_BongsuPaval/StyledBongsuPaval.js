@@ -10,7 +10,6 @@ export const BongsuPavalBox = styled.div`
   @media (min-width: 1025px) {
     .introudctionWrapper {
       white-space: nowrap;
-      overflow: hidden;
       .intro_title {
         font-family: 'NanumSquareEB';
         color: #000000;
