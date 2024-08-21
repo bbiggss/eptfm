@@ -20,6 +20,7 @@ const StyledPortfolioIntroductionTitle = styled.p`
 
     /* margin-top: 60px; */
     margin-top: ${(props) => props.$pcMarginTop};
+    padding-top: ${(props) => props.$pcPaddingTop};
 
     /* 1440px 기준 50px */
   }
@@ -38,6 +39,7 @@ const PortfolioIntroductionTitle = (data) => {
     <StyledPortfolioIntroductionTitle
       style={data && data.style}
       $pcMarginTop={data.pcMarginTop}
+      $pcPaddingTop={data.pcPaddingTop}
       $mobileMarginBottom={data.mobileMarginBottom}
     >
       {renderTextWithLineBreaks(data.title)}

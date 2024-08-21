@@ -5,8 +5,12 @@
 
 :root {
   --mobile-margin: clamp(30px, 8vw, 80px);
-  --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
   /* margin: var(--mobile-margin) */
+  --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
+
+  /* mobileMarginTop={'5.33vw'} */
+  --mobile-introduction-description-margin-20px: 5.33vw;
+
   --pc-font-size-64px: clamp(32px, 3.33vw, 64px);
   --pc-font-size-22px: clamp(16px, 1.15vw, 22px);
 

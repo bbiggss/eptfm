@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styled from 'styled-components';
-import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
+// import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const StyledHeroImg = styled.img`
   width: 100%;
@@ -10,16 +10,18 @@ const StyledHeroImg = styled.img`
 
   @media (min-width: 1025px) {
     aspect-ratio: ${(props) => props.$pcHeight};
+    aspect-ratio: ${(props) => props.$pcAspectRatio};
     /* margin-bottom: 160px; */
   }
   @media (max-width: 1024px) {
     aspect-ratio: ${(props) => props.$mobileHeight};
+    aspect-ratio: ${(props) => props.$mobileAspectRatio};
   }
 `;
 
 const HeroImg = (data) => {
   const imgRef = useRef(null);
-  const isMobile = useResponsiveMax1024();
+  // const isMobile = useResponsiveMax1024();
 
   // useEffect(() => {
   //   const img = imgRef.current;
@@ -42,9 +44,11 @@ const HeroImg = (data) => {
       $tabletHeight={data.tabletHeight}
       $mobileHeight={data.mobileHeight}
       $maxwidth={data.maxwidth}
+      $pcAspectRatio={data.pcAspectRatio}
+      $mobileAspectRatio={data.mobileAspectRatio}
       // $isLoaded={data.isLoaded}
       ref={imgRef}
-      src={isMobile ? data.mobileSrc : data.src}
+      src={data.src}
       alt=""
     />
   );
