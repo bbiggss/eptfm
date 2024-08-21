@@ -5,9 +5,6 @@ export const StyledForensicScientist = styled.div`
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
-    .textCenter {
-      margin-bottom: 80px;
-    }
     .mainBackgroundImg {
       /* position: relative; */
       background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main2.png);
@@ -54,11 +51,6 @@ export const StyledForensicScientist = styled.div`
             }
           }
         }
-      }
-
-      .projectImg {
-        /* background-color: red; */
-        margin-bottom: 60px;
       }
     }
     .introduction_text2_Wrapper {

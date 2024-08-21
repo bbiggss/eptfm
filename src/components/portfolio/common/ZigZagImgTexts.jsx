@@ -13,7 +13,7 @@ const ZigZagImgTextsBox = styled.div`
 
 const ZigZagImgTexts = (data) => {
   return (
-    <ZigZagImgTextsBox>
+    <ZigZagImgTextsBox style={data.style}>
       <img src={data.src} alt="" />
 
       <CustomText style={data.style} text={data.text} />
