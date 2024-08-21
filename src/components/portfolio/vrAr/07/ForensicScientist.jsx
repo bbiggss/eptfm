@@ -83,10 +83,9 @@ const ForensicScientist = () => {
               </>
             ) : (
               <>
-                '과학수사요원이 되어 범인을 찾아라!' 콘텐츠를
-                <br /> 제작하면서, 우리 팀은 CSI 요원이 된 듯한
-                <br /> 기분이었어요. 잉크를 분리하는
-                <br /> 크로마토그래피 실험 중에는 누가 내 커피를
+                '과학수사요원이 되어 범인을 찾아라!' 콘텐츠를 제작하면서,
+                <br /> 우리 팀은 CSI 요원이 된 듯한 기분이었어요.
+                <br /> 잉크를 분리하는 크로마토그래피 실험 중에는 누가 내 커피를
                 <br /> 훔쳐 마셨는지까지 알아낼 뻔 했어요.
               </>
             )}
@@ -145,7 +144,7 @@ const ForensicScientist = () => {
             }
           />
         </WidthOneContent>
-        <div className="relative">
+        <div className="footsWrapper">
           <img
             className="foots"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/${isMobileTablet ? 'foots_m' : 'foots'}.png`}

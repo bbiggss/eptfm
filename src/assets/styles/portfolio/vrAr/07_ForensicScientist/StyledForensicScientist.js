@@ -99,6 +99,9 @@ export const StyledForensicScientist = styled.div`
       position: absolute;
       bottom: -200px;
     }
+    .footsWrapper {
+      position: relative;
+    }
     .foots {
       position: absolute;
       /* right: -69px; */
@@ -148,20 +151,35 @@ export const StyledForensicScientist = styled.div`
         /* display: none; */
       }
     }
+    .relative {
+      /* overflow: hidden; */
+    }
     .book {
-      width: 112px;
+      /* width: 112px; */
+      width: clamp(112px, 29.87vw, 306px);
       position: absolute;
       bottom: 10px;
     }
+    .footsWrapper {
+      position: relative;
+      width: 100%;
+    }
     .foots {
       position: absolute;
-      /* right: -69px; */
       right: 0;
       top: 91px;
+      width: clamp(105px, 28vw, 287px);
+
+      /* right: -69px; */
+
+      /* transform: translateX(240px); */
+      /* clip-path: inset(0 240px 0 0);  */
+      /* top, right, bottom, left */
     }
     .blood {
       position: absolute;
       top: -147px;
+      width: clamp(132px, 35.2vw, 360px);
     }
   }
 `;

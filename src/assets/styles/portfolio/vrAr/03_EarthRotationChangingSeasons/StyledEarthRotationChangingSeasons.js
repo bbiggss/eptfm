@@ -123,7 +123,7 @@ export const StyledEarthRotationChangingSeasons = styled.div`
           line-height: 24px; */
 
           font-size: clamp(16px, 4vw, 24px);
-          line-height: clamp(30px, 5vw, 60px);
+          line-height: clamp(24px, 6vw, 32px);
           /* line-height: clamp(30px, 1.5em, 60px); */
           /* line-height: clamp(24px, 6vw, 32px); */
         }
