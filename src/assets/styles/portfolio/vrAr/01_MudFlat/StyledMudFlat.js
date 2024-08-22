@@ -18,6 +18,11 @@ export const StyledMudFlat = styled.div`
       margin-left: 67px;
     }
   } */
+  .maxWidth1100Wrapper {
+    img {
+      max-width: 1100px;
+    }
+  }
 
   @media (min-width: 1025px) {
     .subTexts {

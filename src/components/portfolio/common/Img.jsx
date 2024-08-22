@@ -11,14 +11,7 @@ const StyledImg = styled.img`
 `;
 
 const Img = (data) => {
-  return (
-    <StyledImg
-      $whiteImgBackgroundBorder={data.$whiteImgBackgroundBorder}
-      style={data && data.style}
-      src={data && data.src}
-      alt=""
-    />
-  );
+  return <StyledImg $whiteImgBackgroundBorder={data.$whiteImgBackgroundBorder} style={data && data.style} src={data && data.src} alt="" />;
 };
 
 export default Img;

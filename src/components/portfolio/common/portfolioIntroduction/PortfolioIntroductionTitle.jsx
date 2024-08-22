@@ -29,7 +29,8 @@ const StyledPortfolioIntroductionTitle = styled.p`
     font-size: clamp(22px, 5.87vw, 50px);
     white-space: nowrap;
 
-    margin-top: ${(props) => props.$mobileMarginBottom};
+    margin-top: ${(props) => props.$mobileMarginTop};
+    margin-bottom: ${(props) => props.$mobileMarginBottom};
     /* 22px / 375px * 100 = 5.87vw */
   }
 `;
@@ -40,6 +41,7 @@ const PortfolioIntroductionTitle = (data) => {
       style={data && data.style}
       $pcMarginTop={data.pcMarginTop}
       $pcPaddingTop={data.pcPaddingTop}
+      $mobileMarginTop={data.mobileMarginTop}
       $mobileMarginBottom={data.mobileMarginBottom}
     >
       {renderTextWithLineBreaks(data.title)}

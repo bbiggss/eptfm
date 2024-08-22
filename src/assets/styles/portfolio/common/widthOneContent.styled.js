@@ -9,6 +9,7 @@ export const WidthOneContent = styled.div`
     width: 80%;
     margin: 0 auto;
     img {
+      width: 100%;
       margin-bottom: 60px;
     }
     padding-top: ${(props) => {
@@ -57,9 +58,6 @@ export const WidthOneContent = styled.div`
 
   &.firstChild {
     padding-top: 160px;
-  }
-  &.lastChild {
-    padding-bottom: 200px;
   }
   .projectImg {
     padding-bottom: 60px;
