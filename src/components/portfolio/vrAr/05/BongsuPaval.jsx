@@ -23,10 +23,7 @@ const BongsuPaval = () => {
             justifyContent: 'center',
           }}
         >
-          <PortfolioOrganization
-            style={{ color: '#999999', fontFamily: 'NanumSquareB' }}
-            organization={'한국교육학술정보원'}
-          />
+          <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
           <PortfolioFieldTitle
             style={{
               color: '#48C2C5',
@@ -34,19 +31,13 @@ const BongsuPaval = () => {
               whiteSpace: 'nowrap',
             }}
             field={'AR'}
-            title={
-              isMobTab ? '옛 사람들의 통신수단,\n 봉수제도와 파발제도' : '옛 사람들의 통신수단, 봉수제도와 파발제도'
-            }
+            title={isMobTab ? '옛 사람들의 통신수단,\n 봉수제도와 파발제도' : '옛 사람들의 통신수단, 봉수제도와 파발제도'}
           />
         </PortfolioTitleWrap>
 
         <div className="smallScreen beaconWrapper">
           <div className="top-row">
-            <img
-              className="beacon"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/left.png`}
-              alt=""
-            />
+            <img className="beacon" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/left.png`} alt="" />
             <div className="introudctionWrapper">
               <p className="intro_title">
                 {isMobTab ? (
@@ -93,44 +84,10 @@ const BongsuPaval = () => {
                     : '증강현실로 5개의 봉수대를 설치하고, 상황에 맞게 연기와 횃불을 올려보세요.\n봉수제도와 파발제도를 통해 옛 사람들의 통신 방법과 지혜를 체험할 수 있습니다.'
                 }
               /> */}
-              <img
-                className="pc_beaconCount"
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`}
-                alt=""
-              />
+              <img className="pc_beaconCount" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`} alt="" />
             </div>
           </div>
-          <img
-            className="mobile_beaconCount"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`}
-            alt=""
-          />
-        </div>
-
-        <div className="smallScreen tempWrap">
-          <div className=" imgTexts">
-            <div className="left">
-              <img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/left.png`}
-                alt=""
-              />
-            </div>
-            <div className="right">
-              <div className="mainDescriptionTextBox">
-                <p className="title NanumSquareEB">불과 연기로 전하는 고대의 지혜!</p>
-                <div className="subTexts NanumSquareB">
-                  <p>증강현실로 5개의 봉수대를 설치하고, 상황에 맞게 연기와 횃불을 올려보세요.</p>
-                  <p>봉수제도와 파발제도를 통해 옛 사람들의 통신 방법과 지혜를 체험할 수 있습니다.</p>
-                </div>
-                <div>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`}
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <img className="mobile_beaconCount" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/right.png`} alt="" />
         </div>
       </div>
 

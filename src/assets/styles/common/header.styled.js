@@ -156,7 +156,7 @@ export const HeaderBox = styled.div`
       /* background-color: yellow; */
       position: relative;
       width: 100%;
-      margin: 0 30px;
+      margin: 0 var(--mobile-margin);
 
       #logoImg {
         width: 82px;
