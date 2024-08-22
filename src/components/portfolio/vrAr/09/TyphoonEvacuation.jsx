@@ -2,7 +2,7 @@ import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import HeroImg from '../../common/Hero/HeroImg';
-import { StyledTyphoonEvacuation } from '../../../../assets/styles/portfolio/vrAr/09/StyledTyphoonEvacuation';
+import { StyledTyphoonEvacuation } from '../../../../assets/styles/portfolio/vrAr/09_TyphoonEvacuation/StyledTyphoonEvacuation';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';

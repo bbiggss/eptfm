@@ -3,7 +3,7 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import ZigZagImgTexts from '../../common/ZigZagImgTexts';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
-import { StyledExploreFreiburg } from '../../../../assets/styles/portfolio/vrAr/08/StyledExploreFreiburg';
+import { StyledExploreFreiburg } from '../../../../assets/styles/portfolio/vrAr/08_ExploreFreiburg/StyledExploreFreiburg';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
