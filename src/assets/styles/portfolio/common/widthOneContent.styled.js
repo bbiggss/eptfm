@@ -34,7 +34,7 @@ export const WidthOneContent = styled.div`
   }
 
   @media (max-width: 1024px) {
-    margin: 0 30px;
+    margin: 0 var(--mobile-margin);
     img {
       width: 100%;
       /* margin-bottom: 24px; */
@@ -61,22 +61,6 @@ export const WidthOneContent = styled.div`
   &.lastChild {
     padding-bottom: 200px;
   }
-  .left2 {
-    position: absolute;
-    left: 79px;
-    bottom: -135px;
-  }
-  .left3 {
-    position: absolute;
-    left: 79px;
-    bottom: 88px;
-  }
-  .right2 {
-    position: absolute;
-    right: 0;
-    top: 101px;
-  }
-
   .projectImg {
     padding-bottom: 60px;
   }
