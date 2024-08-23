@@ -10,16 +10,8 @@ const Contact = ({ modalStatus, setModalStatus }) => {
   return (
     <ContactUsBox>
       <div className="fullScreen ellipseArea">
-        <img
-          className="ellipse1"
-          src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse1.png`}
-          alt=""
-        />
-        <img
-          className="ellipse2"
-          src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse2.png`}
-          alt=""
-        />
+        <img className="ellipse1" src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse1.png`} alt="" />
+        <img className="ellipse2" src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse2.png`} alt="" />
       </div>
       <Breadcrumb />
       <div className="smallScreen textCenter">
@@ -72,11 +64,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         />
 
         <div className="mapWrap">
-          <a
-            href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh" target="_blank" rel="noreferrer">
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/map.png`} alt="" />
           </a>
         </div>
@@ -87,11 +75,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
             mot={'지하철'}
             location={' : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역'}
           />
-          <Transportation
-            src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`}
-            mot={'버스'}
-            location={' : 영등포 02, 영등포 05, 7612번'}
-          />
+          <Transportation src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} mot={'버스'} location={' : 영등포 02, 영등포 05, 7612번'} />
           {/* mot: means of transportation 교통수단 */}
         </div>
       </div>

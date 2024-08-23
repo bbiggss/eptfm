@@ -219,12 +219,7 @@ const PortfolioList = (data) => {
           <p className="fieldTitle RobotoLight">{listTitle}</p>
         </div>
 
-        <ul>
-          {Array.isArray(portfolioItems) &&
-            portfolioItems.map((item, index) => (
-              <PortfolioLists data={item} key={index} index={index} />
-            ))}
-        </ul>
+        <ul>{Array.isArray(portfolioItems) && portfolioItems.map((item, index) => <PortfolioLists data={item} key={index} index={index} />)}</ul>
       </PortfolioListBox>
     </>
   );

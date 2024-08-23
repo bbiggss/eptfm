@@ -9,7 +9,6 @@ import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
 import React, { useEffect, useState } from 'react';
 import InquiryModal from './components/contactUs/InquiryModal';
-import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import BlankPage from './components/common/blankPage/BlankPage';
 import UpButton from './components/common/button/UpButton';
 import PortfolioListModal from './components/common/modal/portfolioList/PortfolioListModal';
@@ -50,6 +49,9 @@ import EnvironmentalLabelingCertification from './components/portfolio/RnD/01/En
 import ClassroomRevolutionLessonPlans from './components/portfolio/RnD/02/ClassroomRevolutionLessonPlans';
 
 import PortfolioListButton from './components/common/button/PortfolioListButton';
+
+// import ScrollToTop from './components/common/scrollTop/ScrollTop';
+import ScrollToTopOrRestore from './components/common/scrollTop/ScrollToTopOrRestore';
 
 function App() {
   const location = useLocation();
@@ -118,7 +120,7 @@ function App() {
   return (
     <div className="App">
       {/* {isLoading ? <Loading /> : <></>} */}
-      <ScrollToTop />
+      <ScrollToTopOrRestore />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
       {portfolioListModalStatus && <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />}
