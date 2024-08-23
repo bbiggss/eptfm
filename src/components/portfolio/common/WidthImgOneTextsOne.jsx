@@ -95,16 +95,7 @@ const StyledWidthImgOneTextsOne = styled.div`
   } */
 `;
 
-const WidthImgOneTextsOne = ({
-  children,
-  style,
-  pcPaddingTop,
-  tabletPaddingTop,
-  mobilePaddingTop,
-  pcPaddingBottom,
-  tabletPaddingBottom,
-  mobilePaddingBottom,
-}) => {
+const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, pcPaddingBottom, mobilePaddingBottom }) => {
   return (
     <StyledWidthImgOneTextsOne
       style={style}
@@ -112,7 +103,6 @@ const WidthImgOneTextsOne = ({
       $tabletPaddingTop={tabletPaddingTop}
       $mobilePaddingTop={mobilePaddingTop}
       $pcPaddingBottom={pcPaddingBottom}
-      $tabletPaddingBottom={tabletPaddingBottom}
       $mobilePaddingBottom={mobilePaddingBottom}
     >
       {children}

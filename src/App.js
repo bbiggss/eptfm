@@ -65,10 +65,16 @@ function App() {
   // const [isLoading, setIsLoading] = useState(true);
   // let initialPageName = location.pathname.split('/')[1];
   const [activeLink, setActiveLink] = useState('');
+  // const [scrollStatus, setScrollStatus] = useState(false);
 
   useEffect(() => {
     // setIsLoading(true);
     const pageName = location.pathname.split('/');
+    // if (pageName[3] == null) {
+    //   setScrollStatus(true);
+    // } else {
+    //   setScrollStatus(false);
+    // }
     if (pageName[1] === '') {
       setActiveLink('');
       if (location.hash === '#about') {
@@ -120,7 +126,10 @@ function App() {
   return (
     <div className="App">
       {/* {isLoading ? <Loading /> : <></>} */}
+
       <ScrollToTopOrRestore />
+      {/* {scrollStatus === false && <ScrollToTopOrRestore />} */}
+
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
       {portfolioListModalStatus && <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />}

@@ -14,28 +14,8 @@ export const StyledWaterTemperatureSalinityExploration = styled.div`
         bottom: -19px;
         /* margin-right: 259px; */
         margin-right: clamp(100px, 13vw, 259px);
-
-        .PortfolioIntroductionBox {
-          .title,
-          .subTexts {
-            color: #1e4f91;
-          }
-        }
       }
     }
-    .right {
-      position: ab;
-      right: 0;
-    }
-
-    .title,
-    .subTexts {
-      color: white;
-    }
-    .fullScreen img {
-      width: 100%;
-    }
-
     .dolphin {
       max-width: 905px;
     }
