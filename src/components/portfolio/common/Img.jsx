@@ -5,9 +5,16 @@ const StyledImg = styled.img`
   border: ${(props) => {
     if (props.$whiteImgBackgroundBorder) return '1px solid #EDEDED';
   }};
-  border-radius: ${(props) => {
-    if (props.$whiteImgBackgroundBorder) return '30px';
-  }};
+  @media (min-width: 1025px) {
+    border-radius: ${(props) => {
+      if (props.$whiteImgBackgroundBorder) return '30px';
+    }};
+  }
+  @media (max-width: 1024px) {
+    border-radius: ${(props) => {
+      if (props.$whiteImgBackgroundBorder) return '10px';
+    }};
+  }
 `;
 
 const Img = (data) => {
