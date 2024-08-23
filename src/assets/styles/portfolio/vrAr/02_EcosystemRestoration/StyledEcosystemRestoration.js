@@ -19,6 +19,7 @@ export const StyledEcosystemRestoration = styled.div`
     .eagleCloud {
       position: relative;
       left: -148px;
+      aspect-ratio: 387 / 349;
     }
   }
   @media (min-width: 1025px) and (max-width: 1800px) {
@@ -108,6 +109,7 @@ export const StyledEcosystemRestoration = styled.div`
       /* max-width: clamp(148px, 20vw, 389px); */
       /* width: clamp(148px, 18vw, 300px); */
       width: clamp(148px, 40vw, 389px);
+      aspect-ratio: 389 / 349;
     }
     .animationBox {
       /* background-color: aqua; */
@@ -130,6 +132,7 @@ export const StyledEcosystemRestoration = styled.div`
         }
       }
       .introduction {
+        aspect-ratio: 315 / 117;
         p:first-child {
           color: #292929;
           /* font-size: 22px; */

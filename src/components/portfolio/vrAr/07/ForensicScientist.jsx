@@ -51,9 +51,8 @@ const ForensicScientist = () => {
         <div className="mainBackgroundImg">
           <PortfolioIntroductionTitle
             style={{ color: '#292929', textAlign: 'center' }}
-            // pcMarginTop={'60px'}
             pcPaddingTop={'200px'}
-            pcPaddingBottom={''}
+            mobileMarginTop={'80px'}
             mobileMarginBottom={'80px'}
             title={isMobileTablet ? '크로마토그래피로\n 범인을 찾는 과학수사 체험!' : '크로마토그래피로 범인을 찾는 과학수사 체험!'}
           />
