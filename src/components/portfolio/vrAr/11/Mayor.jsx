@@ -22,14 +22,14 @@ const Mayor = () => {
         <img
           className="ellipse_left"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/ellipse/${
-            isMobileTablet ? 'Ellipse_left_m' : 'Ellipse_left'
+            isMobileTablet ? 'ellipse_left_m' : 'ellipse_left'
           }.png`}
           alt=""
         />
         <img
           className="ellipse_right"
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/ellipse/${
-            isMobileTablet ? 'Ellipse_right_m' : 'Ellipse_right'
+            isMobileTablet ? 'ellipse_right_m' : 'ellipse_right'
           }.png`}
           alt=""
         />
