@@ -118,6 +118,9 @@
 a {
   text-decoration: none;
 }
+.maxWidth1260Wrapper img {
+  max-width: 1260px;
+}
 
 /* 영어 */
 @font-face {

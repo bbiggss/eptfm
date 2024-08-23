@@ -57,9 +57,7 @@ function App() {
   const [modalStatus, setModalStatus] = useState(false);
   const [portfolioListModalStatus, setPortfolioListModalStatus] = useState(false);
 
-  const [isDesktopScreen, setIsDesktopScreen] = useState(
-    window.matchMedia('(min-width: 1025px)').matches
-  );
+  const [isDesktopScreen, setIsDesktopScreen] = useState(window.matchMedia('(min-width: 1025px)').matches);
 
   const [headerClass, setHeaderClass] = useState('transparent');
   // const [isLoading, setIsLoading] = useState(true);
@@ -123,9 +121,7 @@ function App() {
       <ScrollToTop />
       {/* 모달 */}
       {modalStatus && <InquiryModal setModalStatus={setModalStatus} />}
-      {portfolioListModalStatus && (
-        <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />
-      )}
+      {portfolioListModalStatus && <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />}
       {/* PC해상도&홈화면일때 */}
       {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
       <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
@@ -141,117 +137,48 @@ function App() {
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}
         <Route path="/portfolio/VrAr/AR I 갯벌은 어떤 곳일까?" element={<MudFlat />} />
-        <Route
-          path="/portfolio/VrAr/AR I 미션! 생태계를 복원하라"
-          element={<EcosystemRestoration />}
-        />
-        <Route
-          path="/portfolio/VrAr/AR I 지구의 공전과 계절의 변화"
-          element={<EarthRotationChangingSeasons />}
-        />
+        <Route path="/portfolio/VrAr/AR I 미션! 생태계를 복원하라" element={<EcosystemRestoration />} />
+        <Route path="/portfolio/VrAr/AR I 지구의 공전과 계절의 변화" element={<EarthRotationChangingSeasons />} />
         <Route path="/portfolio/VrAr/AR I 땅의 높낮이를 나타내는 등고선" element={<Contour />} />
-        <Route
-          path="/portfolio/VrAr/AR I 옛 사람들의 통신수단, 봉수제도와 파발제도"
-          element={<BongsuPaval />}
-        />
+        <Route path="/portfolio/VrAr/AR I 옛 사람들의 통신수단, 봉수제도와 파발제도" element={<BongsuPaval />} />
         <Route path="/portfolio/VrAr/VR I 우리 땅, 독도 탐험하기" element={<ExploreDokdo />} />
-        <Route
-          path="/portfolio/VrAr/VR I 과학수사요원이 되어 범인을 찾아라!"
-          element={<ForensicScientist />}
-        />
-        <Route
-          path="/portfolio/VrAr/VR I 세계의 환경 수도 프라이부르크 구경하기"
-          element={<ExploreFreiburg />}
-        />
+        <Route path="/portfolio/VrAr/VR I 과학수사요원이 되어 범인을 찾아라!" element={<ForensicScientist />} />
+        <Route path="/portfolio/VrAr/VR I 세계의 환경 수도 프라이부르크 구경하기" element={<ExploreFreiburg />} />
         <Route path="/portfolio/VrAr/VR I 태풍 대피요령 알아보기" element={<TyphoonEvacuation />} />
-        <Route
-          path="/portfolio/VrAr/VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활"
-          element={<FrenchClimateLifestyle />}
-        />
-        <Route
-          path="/portfolio/VrAr/VR I 직접 만드는 민주적인 선거! 시장 출마하기"
-          element={<Mayor />}
-        />
-        <Route
-          path="/portfolio/VrAr/VR I 바닷속 생물 채집과 수온, 염분 탐사"
-          element={<WaterTemperatureSalinityExploration />}
-        />
+        <Route path="/portfolio/VrAr/VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활" element={<FrenchClimateLifestyle />} />
+        <Route path="/portfolio/VrAr/VR I 직접 만드는 민주적인 선거! 시장 출마하기" element={<Mayor />} />
+        <Route path="/portfolio/VrAr/VR I 바닷속 생물 채집과 수온, 염분 탐사" element={<WaterTemperatureSalinityExploration />} />
         <Route path="/portfolio/VrAr/AR I 열팽창 활용하여 바이메탈 만들기" element={<Bimetal />} />
-        <Route
-          path="/portfolio/VrAr/AR I 별의 색과 밝기를 이용한 별의 특성 알아보기"
-          element={<StarsCharacteristics />}
-        />
+        <Route path="/portfolio/VrAr/AR I 별의 색과 밝기를 이용한 별의 특성 알아보기" element={<StarsCharacteristics />} />
         <Route path="/portfolio/VrAr/AR I 나도 할 수 있다, 민사 재판" element={<CivilTrial />} />
-        <Route
-          path="/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기"
-          element={<BuildingGreatCity />}
-        />
-        <Route
-          path="/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자"
-          element={<BoneJointMuscle />}
-        />
-        <Route
-          path="/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사"
-          element={<MapExpert />}
-        />
+        <Route path="/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기" element={<BuildingGreatCity />} />
+        <Route path="/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자" element={<BoneJointMuscle />} />
+        <Route path="/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사" element={<MapExpert />} />
         <Route path="/portfolio/VrAr/VR I 나만의 생존가방 준비하기" element={<SurvivalBag />} />
-        <Route
-          path="/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁"
-          element={<KoreanWar />}
-        />
+        <Route path="/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁" element={<KoreanWar />} />
 
         {/* e-Learning */}
-        <Route
-          path="/portfolio/e-Learning/저수지·댐 안전관리 및 재해예방"
-          element={<ReservoirDam />}
-        />
-        <Route
-          path="/portfolio/e-Learning/교사가 이끄는 교실혁명"
-          element={<ClassroomRevolution />}
-        />
-        <Route
-          path="/portfolio/e-Learning/사이버어울림(기술·가정, 진로와 직업, 한문)"
-          element={<CyberSocializingOne />}
-        />
-        <Route
-          path="/portfolio/e-Learning/사이버어울림(영어, 체육)"
-          element={<CyberSocializingTwo />}
-        />
-        <Route
-          path="/portfolio/e-Learning/정보공시 입력 지침 안내와 시스템매뉴얼"
-          element={<InformationDisclosure />}
-        />
+        <Route path="/portfolio/e-Learning/저수지·댐 안전관리 및 재해예방" element={<ReservoirDam />} />
+        <Route path="/portfolio/e-Learning/교사가 이끄는 교실혁명" element={<ClassroomRevolution />} />
+        <Route path="/portfolio/e-Learning/사이버어울림(기술·가정, 진로와 직업, 한문)" element={<CyberSocializingOne />} />
+        <Route path="/portfolio/e-Learning/사이버어울림(영어, 체육)" element={<CyberSocializingTwo />} />
+        <Route path="/portfolio/e-Learning/정보공시 입력 지침 안내와 시스템매뉴얼" element={<InformationDisclosure />} />
         <Route path="/portfolio/e-Learning/화학물질안전에 대하여" element={<ChemicalSafety />} />
         <Route path="/portfolio/e-Learning/처음 만나는 동아시아사" element={<EastAsia />} />
-        <Route
-          path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이"
-          element={<ParentingGuide />}
-        />
+        <Route path="/portfolio/e-Learning/위탁모를 위한 양육 길잡이" element={<ParentingGuide />} />
 
         {/* R&D */}
         {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
-        <Route
-          path="/portfolio/R&D/환경표지인증"
-          element={<EnvironmentalLabelingCertification />}
-        />
-        <Route
-          path="/portfolio/R&D/교실혁명 강의교안"
-          element={<ClassroomRevolutionLessonPlans />}
-        />
+        <Route path="/portfolio/R&D/환경표지인증" element={<EnvironmentalLabelingCertification />} />
+        <Route path="/portfolio/R&D/교실혁명 강의교안" element={<ClassroomRevolutionLessonPlans />} />
 
-        <Route
-          path="/contactUs"
-          element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />}
-        />
+        <Route path="/contactUs" element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />} />
 
         <Route path="*" element={<BlankPage />} />
       </Routes>
 
       {activeLink === 'portfolio' && (
-        <PortfolioListButton
-          portfolioListModalStatus={portfolioListModalStatus}
-          setPortfolioListModalStatus={setPortfolioListModalStatus}
-        />
+        <PortfolioListButton portfolioListModalStatus={portfolioListModalStatus} setPortfolioListModalStatus={setPortfolioListModalStatus} />
       )}
 
       <UpButton />

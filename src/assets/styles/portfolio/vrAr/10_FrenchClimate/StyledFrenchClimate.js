@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledFrenchClimateLifestyle = styled.div`
-  .maxWidth1260Wrapper img {
-    max-width: 1260px;
-  }
   @media (min-width: 1025px) {
     .textsImgswrapper {
       max-width: 1920px;

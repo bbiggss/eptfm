@@ -17,12 +17,6 @@ export const StyledTyphoonEvacuation = styled.div`
     text-align: center;
   }
 
-  .maxWidth1260Wrapper {
-    img {
-      max-width: 1260px;
-    }
-  }
-
   @media (min-width: 1025px) {
     .textWrapper {
       padding-top: 160px;
