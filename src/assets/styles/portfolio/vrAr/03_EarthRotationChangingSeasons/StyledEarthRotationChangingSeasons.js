@@ -40,6 +40,7 @@ export const StyledEarthRotationChangingSeasons = styled.div`
 
       .globe {
         max-width: 182px;
+        aspect-ratio: 182 / 220;
       }
 
       .mainDescriptionTextBox {
@@ -101,6 +102,7 @@ export const StyledEarthRotationChangingSeasons = styled.div`
       .globe {
         /* width: 95px;
         margin-top: 80px; */
+        aspect-ratio: 95 / 115;
 
         width: clamp(95px, 20vw, 150px); /* 해상도가 커지면서 150px까지 증가 */
         margin-top: clamp(80px, 15vw, 120px);

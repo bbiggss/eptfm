@@ -31,6 +31,7 @@ export const StyledExploreDokdo = styled.div`
     .introductionWrapper {
       text-align: center;
       margin-top: 107px;
+      margin-bottom: 80px;
     }
   }
 `;

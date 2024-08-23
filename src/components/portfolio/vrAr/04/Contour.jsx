@@ -14,12 +14,13 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';
+import HeroImg from '../../common/Hero/HeroImg';
 
 const Contour = () => {
   // const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useMobile();
   const isTablet = useTablet();
-  const isMobTab = useResponsiveMax1024();
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledContour>
       <Breadcrumb />
@@ -35,10 +36,7 @@ const Contour = () => {
             transform: 'translate(-50%,-50%)',
           }}
         >
-          <PortfolioOrganization
-            style={{ color: '#FFFFFF', fontFamily: 'NanumSquareEB' }}
-            organization={'한국교육학술정보원'}
-          />
+          <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareEB' }} organization={'한국교육학술정보원'} />
           <PortfolioFieldTitle
             style={{
               color: '#FFFFFF',
@@ -47,7 +45,7 @@ const Contour = () => {
               textAlign: 'center',
             }}
             field={'AR'}
-            title={isMobTab ? '땅의 높낮이를 나타내는\n 등고선' : '땅의 높낮이를 나타내는 등고선'}
+            title={isMobileTablet ? '땅의 높낮이를 나타내는\n 등고선' : '땅의 높낮이를 나타내는 등고선'}
           />
         </PortfolioTitleWrap>
 
@@ -56,15 +54,16 @@ const Contour = () => {
           // setIsLoaded={setIsLoaded}
           pcHeight={'1920 / 1080'}
           mobileHeight={'375 / 450'}
-          src={
-            isMobTab
-              ? `${process.env.PUBLIC_URL}/assets/videos/M_contour.mp4`
-              : `${process.env.PUBLIC_URL}/assets/videos/contour.mp4`
-          }
+          src={isMobileTablet ? `${process.env.PUBLIC_URL}/assets/videos/M_contour.mp4` : `${process.env.PUBLIC_URL}/assets/videos/contour.mp4`}
         />
       </div>
       <div className="introductionArea">
-        <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourModel.png`} alt="" />
+        <HeroImg
+          pcAspectRatio={'1200 / 277'}
+          mobileAspectRatio={'315 / 73'}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/${isMobileTablet ? 'contourModel_m' : 'contourModel'}.png`}
+        />
+        {/* <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/contourModel.png`} alt="" /> */}
         {/* <PortfolioIntroduction
           style={{ marginTop: '60px', marginBottom: '160px' }}
           title={'등고선을 통해 배우는 높낮이의 비밀!'}
@@ -74,13 +73,14 @@ const Contour = () => {
         /> */}
         <PortfolioIntroductionTitle
           pcMarginTop={'60px'}
+          mobileMarginTop={'30px'}
           mobileMarginBottom={'clamp(20px, 5vw, 60px)'}
           title={'등고선을 통해 배우는 높낮이의 비밀!'}
         />
         <PortfolioIntroductionDescription
           style={{ color: '#767676' }}
           description={
-            isMobTab
+            isMobileTablet
               ? '높이별 색 구분, 높낮이, 경사를 생생하게\n 경험하며 등고선의 원리를 이해할 수 있습니다.'
               : '높이별 색 구분, 높낮이, 경사를 생생하게 경험하며 등고선의 원리를 이해할 수 있습니다.'
           }
@@ -115,11 +115,7 @@ const Contour = () => {
         </WidthImgOneTextsOne>
       </div>
       <div className="fullScreen relative">
-        <img
-          className="backImg"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/back.png`}
-          alt=""
-        />
+        <img className="backImg" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/04_Contour/back.png`} alt="" />
       </div>
 
       <div className="smallScreen">
