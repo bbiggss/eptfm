@@ -111,20 +111,25 @@ export const StyledMayor = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    .ellipse_left {
-      position: absolute;
-      z-index: -1;
+    .ellipseWrapper {
+      position: relative;
+      .ellipse_left {
+        position: absolute;
+        z-index: -1;
+      }
+      .ellipse_right {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+      }
     }
-    .ellipse_right {
-      position: absolute;
-      right: 0;
-      z-index: -1;
-    }
+
     .heroAreaWrapper {
       display: grid;
       .heroTexts {
         order: 2;
         text-align: center;
+        margin-bottom: 80px;
       }
       .heroImg {
         order: 1;
