@@ -40,7 +40,7 @@ export const StyledBuildingGreatCity = styled.div`
       position: relative;
       text-align: center;
       .introductionWrapper {
-        margin-top: 86px;
+        margin-top: clamp(86px, 7vh, 200px);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
