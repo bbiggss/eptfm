@@ -107,7 +107,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/2.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/2.png`} />
           <CustomText
             text={
               isMobile
@@ -119,7 +119,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/3.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/3.png`} />
           <CustomText
             text={
               isMobile
@@ -131,7 +131,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/4.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/4.png`} />
           <CustomText
             text={
               isMobile
@@ -143,7 +143,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/5.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/5.png`} />
           <CustomText
             text={
               isMobile
@@ -155,7 +155,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/6.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/6.png`} />
           <CustomText
             text={
               isMobile
@@ -167,7 +167,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/7.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/7.png`} />
           <CustomText
             text={
               isMobile
@@ -179,7 +179,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent $last>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/8.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/8.png`} />
           <CustomText
             text={
               isMobile
