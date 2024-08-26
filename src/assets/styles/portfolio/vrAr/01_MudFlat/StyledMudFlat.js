@@ -139,6 +139,7 @@ export const StyledMudFlat = styled.div`
 
       .introductionWrap {
         margin-top: 20px;
+        margin-bottom: 80px;
         justify-content: center;
       }
     }

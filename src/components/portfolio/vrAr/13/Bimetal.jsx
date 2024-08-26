@@ -76,7 +76,7 @@ const Bimetal = () => {
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/2.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/3.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/3.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
@@ -94,10 +94,10 @@ const Bimetal = () => {
                 : `텅스텐, 철, 구리 중에서 올바른 \n건축자제를 선택하지 않으면\n건물이 와장창 무너질 수 있으니 \n조심해야 해요!`
             }
           />
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/4.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/4.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/5.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/5.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
@@ -115,10 +115,10 @@ const Bimetal = () => {
                 : `온도 감지 역할을 하는 바이메탈의\n원리를 잘 이해하고 직접 구성할 수 \n있어요. 빵이 타지 않게 조심하세요!`
             }
           />
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/6.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/6.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne pcPaddingBottom="200px" mobilePaddingBottom="142px">
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/7.png`} />
+          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/13_Bimetal/7.png`} />
           <ProjectDescription
             textPosition={'right'}
             text={
