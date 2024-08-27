@@ -7,6 +7,10 @@ const ZigZagImgTextsBox = styled.div`
     margin-bottom: 0px;
   } */
 
+  p {
+    text-align: center;
+  }
+
   @media (min-width: 1025px) {
     img {
       margin-bottom: 60px;
@@ -28,7 +32,7 @@ const ZigZagImgTexts = (data) => {
     <ZigZagImgTextsBox style={data.style} $pcMarginTop={data.pcMarginTop} $pcMarginBottom={data.pcMarginBottom}>
       <img src={data.src} alt="" />
 
-      <CustomText style={{ textAlign: 'center' }} text={data.text} />
+      <CustomText style={data.style} text={data.text} />
     </ZigZagImgTextsBox>
   );
 };

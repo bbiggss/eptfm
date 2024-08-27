@@ -15,7 +15,7 @@ export const StyledBoneJointMuscle = styled.div`
       position: relative;
       max-width: 1920px;
       width: 100%;
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       margin-top: 80px;
       text-align: right;
 
@@ -37,28 +37,11 @@ export const StyledBoneJointMuscle = styled.div`
           text-align: left;
           /* margin-top: 187px; */
           margin-top: clamp(50px, 5vw, 187px);
-          margin-left: clamp(100px, 17vw, 330px);
+          margin-left: clamp(100px, 13vw, 330px);
           /* position: absolute; */
         }
       }
     }
-    /* .common {
-      display: flex;
-      text-align: center;
-      padding-bottom: 200px;
-      .left + .right {
-        margin-left: 60px;
-      }
-      .right {
-        position: relative;
-        margin-top: 130px;
-        .sideImg1 {
-          top: -453px;
-          right: -173px;
-          position: absolute;
-        }
-      }
-    } */
   }
   @media (max-width: 1024px) {
     .heroWrapper {
@@ -68,15 +51,20 @@ export const StyledBoneJointMuscle = styled.div`
       order: 2;
       position: relative;
       background-color: rgba(234, 181, 102, 0.9);
-      width: 345px;
-      height: 270px;
-      transform: translateY(-48px);
+      width: clamp(345px, 92vw, 1000px);
+      aspect-ratio: 345 / 270;
+      /* transform: translateY(-48px); */
+      margin-top: -48px;
       .introductionWrapper {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
+    }
+    .fff6df {
+      background-color: #fff6df;
+      margin-bottom: 80px;
     }
   }
 `;
