@@ -24,7 +24,7 @@ export const StyledMapExpert = styled.div`
         margin-bottom: 100px;
       }
       .introductionImg {
-        margin-bottom: 160px;
+        /* margin-bottom: 160px; */
         max-width: 1098px;
         width: 90%;
         aspect-ratio: 315 / 172;
@@ -42,7 +42,9 @@ export const StyledMapExpert = styled.div`
     .heroTexts {
       position: absolute;
       text-align: center;
-      margin-top: 48px;
+      /* margin-top: 48px; */
+      margin-top: clamp(48px, 10vh, 96px);
+
 
       color: #292929;
       font-family: 'NanumSquareEB';
