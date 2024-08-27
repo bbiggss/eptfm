@@ -2,11 +2,6 @@ import styled from 'styled-components';
 
 export const StyledBoneJointMuscle = styled.div`
   @media (min-width: 1025px) {
-    .PortfolioTitleBox {
-      margin-bottom: 80px;
-      display: flex;
-      justify-content: center;
-    }
     .fff6df {
       background-color: #fff6df;
       margin-bottom: 160px;
