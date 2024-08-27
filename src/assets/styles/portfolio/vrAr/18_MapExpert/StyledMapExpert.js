@@ -45,14 +45,13 @@ export const StyledMapExpert = styled.div`
       /* margin-top: 48px; */
       margin-top: clamp(48px, 10vh, 96px);
 
-
       color: #292929;
       font-family: 'NanumSquareEB';
       /* font-size: clamp(20px,); */
-      font-size: clamp(20px, 4.8vw, 58px);
-      font-size: clamp(20px, 5.8vw, 89px)
+      /* font-size: clamp(20px, 4.8vw, 58px); */
+      font-size: clamp(20px, 5.8vw, 89px);
 
-      line-height: (28px, 5vw, 50px);
+      line-height: clamp(28px, 5vw, 50px);
       letter-spacing: -0.02em;
     }
     .gridWrapper {
