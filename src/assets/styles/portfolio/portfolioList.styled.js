@@ -15,6 +15,48 @@ export const PortfolioListBox = styled.div`
     color: #292929;
   }
 
+  @media (min-width: 1556px) {
+    /* background-color: yellow; */
+    /* height: 3688px; */
+  }
+  @media (min-width: 1025px) and (max-width: 1555px) {
+    /* background-color: aqua; */
+    /* height: 5050px; */
+  }
+  @media (max-width: 1024px) {
+    /* background-color: aqua; */
+    /* height: 2662px; */
+    /* height: ${({ $listTitle }) => {
+      switch ($listTitle) {
+        case 'e-Learning':
+          return '2624px';
+        case 'R&D':
+          return '885px';
+        default:
+          return '0px'; // 기본값
+      }
+    }}; */
+    ul {
+      /* console.log(11, $listTitle); */
+      /* height: ${({ $listTitle }) => {
+        switch ($listTitle) {
+          case 'e-Learning':
+            return '2624px';
+          case 'R&D':
+            return '706px';
+          default:
+            return '0px'; // 기본값
+        }
+      }}; */
+      /* min-height: 2624px; */
+      /* min-height: 2624px; */
+    }
+    /* height: 706px; */
+
+    /* height: 100%; */
+    /* height: 8929px; */
+  }
+
   @media (min-width: 1025px) {
     max-width: 1920px;
     width: 100%;
@@ -79,6 +121,7 @@ export const PortfolioListBox = styled.div`
       }
     }
   }
+
   @media (max-width: 1024px) {
     .topTitleBox {
       height: 180px;
@@ -101,7 +144,8 @@ export const PortfolioListBox = styled.div`
       grid-template-columns: repeat(1, ${mobile_PortfolioImgWidth});
       gap: 50px 0px;
       /* 앞: 상하간격 뒤: 좌우간격 */
-      margin-bottom: 142px;
+      padding-bottom: 142px;
+      /* margin-bottom: 142px; */
 
       li {
         list-style: none;
