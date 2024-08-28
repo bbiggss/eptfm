@@ -221,6 +221,18 @@ const PortfolioList = (data) => {
 
         <ul>{Array.isArray(portfolioItems) && portfolioItems.map((item, index) => <PortfolioLists data={item} key={index} index={index} />)}</ul>
       </PortfolioListBox>
+
+      {/* {listTitle && (
+        <PortfolioListBox $list={listTitle}>
+        <PortfolioListBox>
+          <div className="topTitleBox">
+            <p className="pageTitle robotoMedium">PORTFOLIO</p>
+            <p className="fieldTitle RobotoLight">{listTitle}</p>
+          </div>
+
+          <ul>{Array.isArray(portfolioItems) && portfolioItems.map((item, index) => <PortfolioLists data={item} key={index} index={index} />)}</ul>
+        </PortfolioListBox>
+      )} */}
     </>
   );
 };

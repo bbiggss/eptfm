@@ -26,16 +26,19 @@ export const PortfolioListBox = styled.div`
   @media (max-width: 1024px) {
     /* background-color: aqua; */
     /* height: 2662px; */
-    /* height: ${({ $listTitle }) => {
-      switch ($listTitle) {
+
+    /* height: ${({ $list }) => {
+      console.log($list);
+      switch ($list) {
         case 'e-Learning':
-          return '2624px';
+          return '2662px';
         case 'R&D':
           return '885px';
         default:
           return '0px'; // 기본값
       }
     }}; */
+    /* height: 2662px; */
     ul {
       /* console.log(11, $listTitle); */
       /* height: ${({ $listTitle }) => {

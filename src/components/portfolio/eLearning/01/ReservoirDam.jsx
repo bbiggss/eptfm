@@ -40,7 +40,7 @@ const ReservoirDam = () => {
       {/* <div className="fullScreen heroArea"></div> */}
       <div className="gridWrapper">
         <HeroImg
-          pcAspectRatio={'1920 / 900'}
+          pcAspectRatio={'1920 / 1080'}
           mobileAspectRatio={'1024 / 1080'}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
         />
