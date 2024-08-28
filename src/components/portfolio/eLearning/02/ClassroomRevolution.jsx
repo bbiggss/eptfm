@@ -24,20 +24,22 @@ const ClassroomRevolution = () => {
   return (
     <StyledClassroomRevolution>
       <div className="fullScreen heroArea">
-        <img
-          className="ellipse1"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
-            isMobileTablet ? 'ellipse1_m' : 'ellipse1'
-          }.png`}
-          alt=""
-        />
-        <img
-          className="ellipse2"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
-            isMobileTablet ? 'ellipse2_m' : 'ellipse2'
-          }.png`}
-          alt=""
-        />
+        <div className="ellipseWrapper">
+          <img
+            className="ellipse1"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
+              isMobileTablet ? 'ellipse1_m' : 'ellipse1'
+            }.png`}
+            alt=""
+          />
+          <img
+            className="ellipse2"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
+              isMobileTablet ? 'ellipse2_m' : 'ellipse2'
+            }.png`}
+            alt=""
+          />
+        </div>
 
         <Breadcrumb style={{ position: 'absolute' }} />
 

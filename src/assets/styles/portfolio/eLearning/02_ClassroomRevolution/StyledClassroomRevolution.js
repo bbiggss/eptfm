@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledClassroomRevolution = styled.div`
+  .ellipseWrapper {
+    position: relative;
+  }
   @media (min-width: 1501px) {
     .intro_imgs_Wrapper {
       padding-top: 500px;
@@ -18,22 +21,17 @@ export const StyledClassroomRevolution = styled.div`
     .heroArea {
       max-width: 1920px;
       position: relative;
-      overflow: hidden;
       .ellipse1,
       .ellipse2 {
         position: absolute;
         z-index: -1;
+        width: 100%;
       }
       .ellipse2 {
         right: 0;
       }
 
-      .ellipseContainer {
-        /* width: 1400px;
-    height: 1400px; */
-
-        /* position: absolute; */
-        /* overflow: hidden; */
+      /* .ellipseContainer {
         z-index: -1;
         .ellipse {
           position: absolute;
@@ -41,13 +39,15 @@ export const StyledClassroomRevolution = styled.div`
           height: 1400px;
 
           background-image: radial-gradient(circle, #50dfff, #68e9f9, #9effec);
-          filter: blur(10px); /* 블러 효과 */
-          border-radius: 50%; /* 원형 또는 타원형으로 설정 */
+          filter: blur(10px); 
+          블러 효과
+          border-radius: 50%; 
+          원형 또는 타원형으로 설정
           opacity: 0.5;
           top: -50%;
           left: -50%;
         }
-      }
+      } */
     }
 
     .area2 {
@@ -123,13 +123,16 @@ export const StyledClassroomRevolution = styled.div`
       .ellipse1,
       .ellipse2 {
         position: absolute;
+        width: 100vw;
+      }
+      .ellipse1 {
       }
       .ellipse2 {
         right: 0;
+        /* height: 100%; */
       }
 
       .intro_imgs_Wrapper {
-        padding-top: 152px;
         padding-bottom: 189px;
         position: relative;
         .introductionWrapper {
@@ -180,6 +183,17 @@ export const StyledClassroomRevolution = styled.div`
         margin-top: 24px;
         margin-bottom: 21px;
       }
+    }
+  }
+
+  @media (min-width: 551px) and (max-width: 1024px) {
+    .intro_imgs_Wrapper {
+      padding-top: 206px;
+    }
+  }
+  @media (max-width: 550px) {
+    .intro_imgs_Wrapper {
+      padding-top: 152px;
     }
   }
 `;
