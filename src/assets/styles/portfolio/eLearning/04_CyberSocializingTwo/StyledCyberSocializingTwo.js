@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledCyberSocializingTwo = styled.div`
+  .books {
+    display: none;
+  }
   @media (min-width: 1025px) {
+    /* max-width: 1920px;
+    margin: auto; */
+    .gridWrapper {
+      max-width: 1920px;
+      margin: auto;
+    }
     .PortfolioTitleBox {
       margin-bottom: 41px;
     }
@@ -48,7 +57,8 @@ export const StyledCyberSocializingTwo = styled.div`
       .introductionWrapper {
         position: absolute;
         margin-top: 194px;
-        margin-left: 459px;
+        /* margin-left: 459px; */
+        margin-left: clamp(10px, 23vw, 459px);
       }
     }
   }

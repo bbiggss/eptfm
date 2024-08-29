@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import styled from 'styled-components';
 import ProjectImg from '../../common/ProjectImg';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -11,45 +10,14 @@ import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';
 import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
-
-const InformationDisclosureBox = styled.div`
-  .area1 {
-    .backImg {
-      position: absolute;
-    }
-    .mainImg {
-      margin-top: 79px;
-    }
-
-    .PortfolioTitleBox {
-      position: absolute;
-      margin-left: 148px;
-      margin-top: 130px;
-
-      .orgainzation {
-        color: #292929;
-      }
-    }
-
-    .PortfolioIntroductionBox {
-      margin-top: 100px;
-      text-align: center;
-    }
-  }
-
-  .area2 {
-    .WidthOneContent {
-      margin-top: 100px;
-    }
-  }
-`;
+import { StyledInformationDisclosure } from '../../../../assets/styles/portfolio/eLearning/05_InformationDisclosure/StyledInformationDisclosure';
 
 const InformationDisclosure = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
   return (
-    <InformationDisclosureBox>
+    <StyledInformationDisclosure>
       <Breadcrumb style={{ paddingBottom: '31px' }} />
 
       <div className="largeScreen area1">
@@ -122,7 +90,7 @@ const InformationDisclosure = () => {
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/05_InformationDisclosure/group2_8.png`} />
         </WidthImgOneTextsOne>
       </div>
-    </InformationDisclosureBox>
+    </StyledInformationDisclosure>
   );
 };
 
