@@ -9,6 +9,12 @@ import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';
 import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import { StyledCyberSocializingTwo } from '../../../../assets/styles/portfolio/eLearning/04_CyberSocializingTwo/StyledCyberSocializingTwo';
+import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
+import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
+import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
+import HeroImg from '../../common/Hero/HeroImg';
+import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
+import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 
 const CyberSocializingTwo = () => {
   const isMobile = useMobile();
@@ -18,23 +24,60 @@ const CyberSocializingTwo = () => {
     <StyledCyberSocializingTwo>
       <Breadcrumb />
 
-      <PortfolioTitle
-        className="centeredContentWithMarginBottom"
-        organization={'한국교육학술정보원'}
-        // field={'VR'}
-        title={'사이버어울림(영어, 체육)'}
-      />
+      <PortfolioTitleWrap
+        style={{
+          position: isMobileTablet ? 'absolute' : 'relative',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          display: 'grid',
+          justifyContent: 'center',
+          zIndex: '1',
+        }}
+        pcMarginBottom={'80px'}
+        mobileMarginTop={'50px'}
+        mobileMarginBottom={'40px'}
+      >
+        <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'한국교육학술정보원'} />
+        <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'사이버어울림(영어, 체육)'} />
+      </PortfolioTitleWrap>
 
-      <div className="fullScreen heroArea">
-        <PortfolioIntroduction
-          title={'영어와 체육 교과 연계, 사이좋게 지내요!'}
-          description={'사이버 폭력 예방을 위해 영어와 체육 교과와 \n연계해 학습해보아요!\n긍정적인 언어 사용, 안전한 사이버 만들기!'}
+      <div className="gridWrapper">
+        <div className="introductionWrapper">
+          <PortfolioIntroductionTitle
+            mobileMarginTop={'80px'}
+            style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : '40px' }}
+            title={isMobileTablet ? '영어와 체육 교과 연계, 사이좋게 지내요!' : '영어와 체육 교과 연계, 사이좋게 지내요!'}
+          />
+          <PortfolioIntroductionDescription
+            style={{ color: '#767676' }}
+            pcMarginTop={'34px'}
+            mobileMarginTop={'5.33vw'}
+            pcMarginBottom={'200px'}
+            mobileMarginBottom={'80px'}
+            description={
+              isMobileTablet
+                ? '사이버 폭력 예방을 위해 영어와\n 체육 교과와 연계해 학습해보아요!\n긍정적인 언어 사용, 안전한 사이버 만들기!'
+                : '사이버 폭력 예방을 위해 영어와 체육 교과와 \n연계해 학습해보아요!\n긍정적인 언어 사용, 안전한 사이버 만들기!'
+            }
+          />
+        </div>
+        <HeroImg
+          pcAspectRatio={'1920 / 1080'}
+          mobileAspectRatio={'1024 / 1602'}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
         />
-        <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/hero.png`} alt="" />
+      </div>
+
+      <div className="relative">
+        <img
+          className="cloud"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/cloud.png`}
+          alt=""
+        />
       </div>
 
       <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingTop="200px">
+        <WidthImgOneTextsOne pcPaddingTop="200px" mobilePaddingTop={'150px'}>
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/1.png`} />
           <ProjectDescription
             textPosition={'right'}
@@ -44,11 +87,6 @@ const CyberSocializingTwo = () => {
             className="book"
             // src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/1.png`}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/book.png`}
-            alt=""
-          />
-          <img
-            className="cloud"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/cloud.png`}
             alt=""
           />
         </WidthImgOneTextsOne>
@@ -64,7 +102,13 @@ const CyberSocializingTwo = () => {
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <ProjectDescription
-            text={`정리하기를 통해 학습한 내용을 한번 더 \n복습하며, 건강한 사이버 환경의 중요성에\n대해 한번 더 재고할 수 있답니다!`}
+            text={
+              isMobile
+                ? '정리하기를 통해 학습한 내용을 한번 더 복습하며,\n 건강한 사이버 환경의 중요성에 대해\n 한번 더 재고할 수 있답니다!'
+                : isTablet
+                ? '정리하기를 통해 학습한 내용을 한번 더 복습하며,\n 건강한 사이버 환경의 중요성에 대해\n 한번 더 재고할 수 있답니다!'
+                : `정리하기를 통해 학습한 내용을 한번 더 \n복습하며, 건강한 사이버 환경의 중요성에\n대해 한번 더 재고할 수 있답니다!`
+            }
           />
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/4.png`} />
         </WidthImgOneTextsOne>
@@ -72,7 +116,13 @@ const CyberSocializingTwo = () => {
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/5.png`} />
           <ProjectDescription
             textPosition={'right'}
-            text={`이 콘텐츠는 체육 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방 하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`}
+            text={
+              isMobile
+                ? '이 콘텐츠는 체육 교과와 연계되어 사이버 폭력의\n 문제를 인식하고, 이를 예방하고\n 대처하는 방법에 대해 학습자들이 배울 수 있어요.'
+                : isTablet
+                ? '이 콘텐츠는 체육 교과와 연계되어 사이버 폭력의\n 문제를 인식하고, 이를 예방하고\n 대처하는 방법에 대해 학습자들이 배울 수 있어요.'
+                : `이 콘텐츠는 체육 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.`
+            }
           />
           <img
             className="books"
@@ -91,13 +141,21 @@ const CyberSocializingTwo = () => {
             text={`다양한 교육 전문가분들과 협력하여\n제작되었어요. 실감 나는 시나리오와 \n사례가 콘텐츠에 포함되었답니다!`}
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="200px">
+        <WidthImgOneTextsOne pcPaddingBottom="200px" mobilePaddingBottom={'142px'}>
           <img
             className="cloudPaperPlane"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/side/cloudPaperPlane.png`}
             alt=""
           />
-          <ProjectDescription text={`이 콘텐츠를 통해 학습자들은 건강한\n사이버 생활을 영위할 수 있는 능력을\n가질 수 있답니다!`} />
+          <ProjectDescription
+            text={
+              isMobile
+                ? '이 콘텐츠를 통해 학습자들은 건강한 사이버\n 생활을 영위할 수 있는 능력을 가질 수 있답니다!'
+                : isTablet
+                ? '이 콘텐츠를 통해 학습자들은 건강한 사이버\n 생활을 영위할 수 있는 능력을 가질 수 있답니다!'
+                : `이 콘텐츠를 통해 학습자들은 건강한\n사이버 생활을 영위할 수 있는 능력을\n가질 수 있답니다!`
+            }
+          />
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/8.png`} />
         </WidthImgOneTextsOne>
       </div>
