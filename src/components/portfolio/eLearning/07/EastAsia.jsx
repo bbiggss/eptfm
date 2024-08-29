@@ -8,6 +8,9 @@ import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
 import ImageTextBlock from '../../common/ImageTextBlock';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const EastAsiaBox = styled.div`
   .heroArea {
@@ -91,6 +94,9 @@ const EastAsiaBox = styled.div`
 `;
 
 const EastAsia = () => {
+  const isMobile = useMobile();
+  const isTablet = useTablet();
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <EastAsiaBox>
       <Breadcrumb />
@@ -103,17 +109,12 @@ const EastAsia = () => {
           title={'처음 만나는 동아시아사'}
         />
 
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/hero.png`}
-          alt=""
-        />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/hero.png`} alt="" />
       </div>
 
       <PortfolioIntroduction
         title={'과거로의 여행에서 배운 역사, 동아시아의 문화를 살펴봐요!'}
-        description={
-          '한국, 중국, 일본의 역사를 통해 동아시아 지역의 문화와\n상호작용을 탐구하여 깊이 있는 역사적 이해를 도모해볼까요?'
-        }
+        description={'한국, 중국, 일본의 역사를 통해 동아시아 지역의 문화와\n상호작용을 탐구하여 깊이 있는 역사적 이해를 도모해볼까요?'}
       />
 
       <div className="fullScreen">
@@ -128,14 +129,10 @@ const EastAsia = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_02.png`}
             alt=""
           />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/1.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/1.png`} />
           <TextCenter
             className="customText"
-            text={
-              '학습자는 동아시아 원격연수를 통해 동아시아 지역의 역사적 흐름과 \n상호작용을 이해할 수 있어요. '
-            }
+            text={'학습자는 동아시아 원격연수를 통해 동아시아 지역의 역사적 흐름과 \n상호작용을 이해할 수 있어요. '}
           />
         </ImageTextBlock>
         <ImageTextBlock>
@@ -144,9 +141,7 @@ const EastAsia = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_03.png`}
             alt=""
           />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/2.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/2.png`} />
           <TextCenter
             className="customText"
             text={
@@ -160,9 +155,7 @@ const EastAsia = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/side/figure_04.png`}
             alt=""
           />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/3.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/3.png`} />
           <TextCenter
             className="customText"
             text={
@@ -178,9 +171,7 @@ const EastAsia = () => {
         />
         <TextCenter
           className="customText customText2"
-          text={
-            '동아시아의 주요 역사적 사건과 인물을 다룬 강의와 애니메이션을 통해\n시청각적으로 학습할 수 있어요.'
-          }
+          text={'동아시아의 주요 역사적 사건과 인물을 다룬 강의와 애니메이션을 통해\n시청각적으로 학습할 수 있어요.'}
         />
 
         <div className="fullScreen relative">
@@ -196,9 +187,7 @@ const EastAsia = () => {
           />
           <TextCenter
             className="customText customText2"
-            text={
-              '고대 문헌, 지도, 유물 사진 등 다양한 디지털 자료를 활용하여\n구체적인 역사적 사실과 맥락을 시각적으로 이해할 수 있답니다!'
-            }
+            text={'고대 문헌, 지도, 유물 사진 등 다양한 디지털 자료를 활용하여\n구체적인 역사적 사실과 맥락을 시각적으로 이해할 수 있답니다!'}
           />
         </div>
         <EqualWidthTwoImages
@@ -208,19 +197,13 @@ const EastAsia = () => {
         />
         <TextCenter
           className="customText customText2"
-          text={
-            '각 테마별로 퀴즈와 과제를 통해 학습 내용을 복습하고\n학습자 스스로의 이해도를 점검할 수 있어요.'
-          }
+          text={'각 테마별로 퀴즈와 과제를 통해 학습 내용을 복습하고\n학습자 스스로의 이해도를 점검할 수 있어요.'}
         />
 
         <ImageTextBlock style={{ marginBottom: '200px' }}>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/4.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group1/4.png`} />
           <TextCenter
-            text={
-              '‘동아시아 원격연수’ 콘텐츠를 통해 동아시아의 역사를 깊이 이해하고\n현재와 미래의 동아시아 관계를 고찰하는 능력을 함양해보아요!'
-            }
+            text={'‘동아시아 원격연수’ 콘텐츠를 통해 동아시아의 역사를 깊이 이해하고\n현재와 미래의 동아시아 관계를 고찰하는 능력을 함양해보아요!'}
           />
         </ImageTextBlock>
 

@@ -10,6 +10,9 @@ import Img from '../../common/Img';
 import ProjectDescription from '../../common/ProjectDescription';
 import CustomText from '../../common/CustomText';
 import HeroImg from '../../common/Hero/HeroImg';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const StyledEnvironmentalLabelingCertification = styled.div`
   .heroImg {
@@ -72,6 +75,9 @@ const StyledEnvironmentalLabelingCertification = styled.div`
 `;
 
 const EnvironmentalLabelingCertification = () => {
+  const isMobile = useMobile();
+  const isTablet = useTablet();
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledEnvironmentalLabelingCertification>
       <Breadcrumb />
@@ -86,10 +92,7 @@ const EnvironmentalLabelingCertification = () => {
             textAlign: 'center',
           }}
         >
-          <PortfolioOrganization
-            style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }}
-            organization={'환경산업기술원'}
-          />
+          <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }} organization={'환경산업기술원'} />
           <PortfolioFieldTitle
             style={{ color: '#FFFFFF', whiteSpace: 'nowrap' }}
             // field={'VR'}
@@ -126,9 +129,7 @@ const EnvironmentalLabelingCertification = () => {
           />
           <div className="customLeftTemp">
             <WidthImgOneTextsOne>
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/introduction2.png`}
-              />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/introduction2.png`} />
               <ProjectDescription
                 textPosition={'right'}
                 text={`다양한 인증 사례와 데이터를 조사하고 분석하여,\n복잡한 절차를 쉽게 이해할 수 있는 상호작용 학습\n컨텐츠를 만들었어요. \n이제 여러분도 친환경 인증의 중요성을 이해하고\n실천할 수 있어요!\n\n인증 받은 제품을 사용할 때마다 지구가 살짝 미소\n짓는 것 같지 않나요?`}
@@ -137,15 +138,9 @@ const EnvironmentalLabelingCertification = () => {
           </div>
           <div className="customRight">
             <div className="threeImgs">
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/1.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/2.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/3.png`}
-              />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/1.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/2.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/3.png`} />
             </div>
             <CustomText
               style={{ textAlign: 'left', marginTop: '60px' }}
@@ -156,15 +151,9 @@ const EnvironmentalLabelingCertification = () => {
           </div>
           <div className="customLeft">
             <div className="threeImgs">
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/1.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/2.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/3.png`}
-              />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/1.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/2.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/3.png`} />
             </div>
             <CustomText
               style={{ textAlign: 'right', marginTop: '60px' }}
@@ -175,15 +164,9 @@ const EnvironmentalLabelingCertification = () => {
           </div>
           <div className="customRight">
             <div className="threeImgs">
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/1.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/2.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/3.png`}
-              />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/1.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/2.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/3.png`} />
             </div>
             <CustomText
               style={{ textAlign: 'left', marginTop: '60px' }}
@@ -194,15 +177,9 @@ const EnvironmentalLabelingCertification = () => {
           </div>
           <div className="customLeft">
             <div className="threeImgs">
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/1.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/2.png`}
-              />
-              <Img
-                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/3.png`}
-              />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/1.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/2.png`} />
+              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/3.png`} />
             </div>
             <CustomText
               style={{ textAlign: 'right', marginTop: '60px' }}

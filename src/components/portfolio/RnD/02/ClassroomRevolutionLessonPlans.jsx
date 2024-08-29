@@ -10,6 +10,9 @@ import TextCenter from '../../common/TextCenter';
 import EqualWidthTwoImages from '../../common/EqualWidthTwoImages';
 import CustomText from '../../common/CustomText';
 import HeroImg from '../../common/Hero/HeroImg';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const StyledClassroomRevolutionLessonPlans = styled.div`
   .twoImgWrapper {
@@ -71,6 +74,9 @@ const StyledClassroomRevolutionLessonPlans = styled.div`
 `;
 
 const ClassroomRevolutionLessonPlans = () => {
+  const isMobile = useMobile();
+  const isTablet = useTablet();
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledClassroomRevolutionLessonPlans>
       <Breadcrumb />
@@ -83,14 +89,8 @@ const ClassroomRevolutionLessonPlans = () => {
             marginTop: '440px',
           }}
         >
-          <PortfolioOrganization
-            style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }}
-            organization={'한국교육학술정보원'}
-          />
-          <PortfolioFieldTitle
-            style={{ color: '#FFFFFF', whiteSpace: 'nowrap' }}
-            title={'교실혁명 강의교안'}
-          />
+          <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
+          <PortfolioFieldTitle style={{ color: '#FFFFFF', whiteSpace: 'nowrap' }} title={'교실혁명 강의교안'} />
         </PortfolioTitleWrap>
 
         <HeroImg
@@ -143,9 +143,7 @@ const ClassroomRevolutionLessonPlans = () => {
       </div>
       <div className="smallScreen">
         <WidthOneContent>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group1/1.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group1/1.png`} />
           <TextCenter
             text={
               '이론적 내용을 학습한 후, 교사들이 직접 수업 계획을 세우고 실습해볼 수 있는 기회를 제공해요.\n피드백을 통해 개선할 점을 발견하고 성장할 수 있도록 돕는답니다!'

@@ -18,7 +18,7 @@ const StyledPortfolioIntroductionDescription = styled.p`
   @media (min-width: 1025px) {
     /* margin-top: 60px; */
     margin-top: ${(props) => props.$pcMarginTop};
-
+    margin-bottom: ${(props) => props.$pcMarginBottom};
     /* font-size: 24px; */
     font-size: clamp(20px, 1.25vw, 24px);
     /* line-height: 38px; */
@@ -30,6 +30,7 @@ const StyledPortfolioIntroductionDescription = styled.p`
 
     /* margin-top: 5.33vw; */
     margin-top: ${(props) => props.$mobileMarginTop};
+    margin-bottom: ${(props) => props.$mobileMarginBottom};
     /* margin-bottom: 21.33vw; */
 
     font-size: clamp(16px, 4vw, 24px);
@@ -45,6 +46,7 @@ const PortfolioIntroductionDescription = (data) => {
     <StyledPortfolioIntroductionDescription
       style={data && data.style}
       $pcMarginTop={data.pcMarginTop}
+      $pcMarginBottom={data.pcMarginBottom}
       $mobileMarginTop={data.mobileMarginTop}
       $mobileMarginBottom={data.mobileMarginBottom}
     >

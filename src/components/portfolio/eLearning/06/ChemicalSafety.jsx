@@ -7,6 +7,9 @@ import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widt
 import ProjectImg from '../../common/ProjectImg';
 import TextCenter from '../../common/TextCenter';
 import CustomWrapImg from '../../common/CustomWrapImg';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
+import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 
 const ChemicalSafetyBox = styled.div`
   .heroArea {
@@ -94,34 +97,24 @@ const ChemicalSafetyBox = styled.div`
 `;
 
 const ChemicalSafety = () => {
+  const isMobile = useMobile();
+  const isTablet = useTablet();
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <ChemicalSafetyBox>
       <div className="fullScreen heroArea">
         <Breadcrumb style={{ position: 'absolute' }} />
-        <PortfolioTitle
-          className="centeredContentWithMarginBottom"
-          organization={'화학물질안전원'}
-          title={'화학물질안전에 대하여'}
-        />
+        <PortfolioTitle className="centeredContentWithMarginBottom" organization={'화학물질안전원'} title={'화학물질안전에 대하여'} />
         <PortfolioIntroduction
-          title={
-            '화학물질의 특성과 위험성, 안전한 사용방법을 학습하며\n실질적인 안전 관리 지식을 쌓아보세요!'
-          }
-          description={
-            '이 콘텐츠는 화학물질의 특성과 위험성, \n안전한 사용 방법을 학습할 수 있도록 설계되었어요.'
-          }
+          title={'화학물질의 특성과 위험성, 안전한 사용방법을 학습하며\n실질적인 안전 관리 지식을 쌓아보세요!'}
+          description={'이 콘텐츠는 화학물질의 특성과 위험성, \n안전한 사용 방법을 학습할 수 있도록 설계되었어요.'}
         />
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/hero.png`}
-          alt=""
-        />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/hero.png`} alt="" />
       </div>
 
       <div className="fullScreen">
         <WidthOneContent className="firstChild">
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/1.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/1.png`} />
           <TextCenter
             text={
               '우리팀은 학습자가 산업 현장에서나 일상생활에서 화학물질을\n안전하게 다룰 수 있는 지식과 기술을 이해하고\n사고 예방과 안전 관리를 위한 실질적인 정보를 습득할 수 있도록 설계했어요.'
@@ -129,9 +122,7 @@ const ChemicalSafety = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/2.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/2.png`} />
           <TextCenter
             text={
               '학습자의 이해를 돕기 위해 적절한 이미지와 그래픽을 풍부하게 사용했어요.\n화학물질의 위험성 표기를 설명할 때는 아이콘으로 시각적으로 보여주고,\n응급처치 방법을 설명할 때는 단계별로 사진과 일러스트를 활용했답니다!'
@@ -144,9 +135,7 @@ const ChemicalSafety = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side1.png`}
             alt=""
           />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/3.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/3.png`} />
           <TextCenter
             text={
               '학습 내용은 다양한 형태로 구성되어 학습자의 지루함을 줄여줘요.\n텍스트 설명 외에도 사진, 애니메이션, 인터랙티브 시뮬레이션 등을 포함하여\n학습자가 몰입할 수 있는 환경을 제공해요.'
@@ -157,36 +146,18 @@ const ChemicalSafety = () => {
 
       <div className="fullScreen group2Area">
         <div className="nationFlag">
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/korea.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/nepal.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/vietnam.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/indonesia.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/cambodia.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/korea.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/nepal.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/vietnam.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/indonesia.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/cambodia.png`} />
         </div>
 
         <div className="smallScreen grid">
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/1.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/2.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/3.png`}
-          />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/4.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/1.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/2.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/3.png`} />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/4.png`} />
         </div>
         <TextCenter
           className="customPadding"
@@ -198,9 +169,7 @@ const ChemicalSafety = () => {
 
       <div className="fullScreen">
         <WidthOneContent className="firstChild2">
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/4.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/4.png`} />
           <TextCenter
             text={
               '위험성 분류와 표기법, 응급처치 방법 등의 실용적인 내용은\n현장에서 바로 적용할 수 있도록 구체적으로 설명하고,\n시청각 자료를 풍부하게 활용하여 이해를 도울 수 있도록 설계했어요.'
@@ -213,9 +182,7 @@ const ChemicalSafety = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side2.png`}
             alt=""
           />
-          <ProjectImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/5.png`}
-          />
+          <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/5.png`} />
           <TextCenter
             text={
               '‘화학물질 안전’ 콘텐츠는 단순한 교육을 넘어, 안전한 미래를 만들어 가는 첫걸음이에요.\n이 콘텐츠를 통해 자신의 주변과 산업 현장에서의 안전을 지켜볼까요?'
@@ -224,9 +191,7 @@ const ChemicalSafety = () => {
         </WidthOneContent>
       </div>
 
-      <CustomWrapImg
-        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/footer.png`}
-      />
+      <CustomWrapImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/footer.png`} />
     </ChemicalSafetyBox>
   );
 };
