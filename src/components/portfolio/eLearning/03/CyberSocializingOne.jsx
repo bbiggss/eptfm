@@ -107,7 +107,7 @@ const CyberSocializingOne = () => {
             }
           />
           <Img
-            style={{ border: '1px solid #ededed', borderRadius: '30px' }}
+            $whiteImgBackgroundBorder
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/2.png`}
           />
         </WidthImgOneTextsOne>
@@ -181,7 +181,7 @@ const CyberSocializingOne = () => {
             }
           />
           <Img
-            style={{ border: '1px solid #ededed', borderRadius: '30px' }}
+            $whiteImgBackgroundBorder
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/6.png`}
           />
         </WidthImgOneTextsOne>
@@ -209,7 +209,7 @@ const CyberSocializingOne = () => {
             }
           />
           <Img
-            style={{ border: '1px solid #ededed', borderRadius: '30px' }}
+            $whiteImgBackgroundBorder
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/8.png`}
           />
         </WidthImgOneTextsOne>
