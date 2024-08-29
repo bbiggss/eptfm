@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitle from '../../common/portfolioTitle/PortfolioTitle';
-import styled from 'styled-components';
 import PortfolioIntroduction from '../../common/PortfolioIntroduction';
 import ProjectDescription from '../../common/ProjectDescription';
 import ProjectImg from '../../common/ProjectImg';
@@ -9,60 +8,14 @@ import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';
 import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
-
-const CyberSocializingBox = styled.div`
-  .PortfolioTitleBox {
-    margin-bottom: 41px;
-  }
-  .heroArea {
-    img {
-      width: 100%;
-    }
-
-    .PortfolioIntroductionBox {
-      position: absolute;
-      margin-left: 459px;
-      margin-top: 194px;
-      text-align: center;
-
-      .title {
-        color: #4f4f4f;
-      }
-    }
-  }
-
-  .book {
-    position: absolute;
-    left: -337px;
-    bottom: -135px;
-  }
-
-  .cloud {
-    position: absolute;
-    right: -249px;
-    bottom: 391px;
-  }
-
-  .books {
-    position: absolute;
-    right: -231px;
-    top: -273px;
-    z-index: -1;
-  }
-  .cloudPaperPlane {
-    position: absolute;
-    left: -330px;
-    top: -241px;
-    z-index: -1;
-  }
-`;
+import { StyledCyberSocializingTwo } from '../../../../assets/styles/portfolio/eLearning/04_CyberSocializingTwo/StyledCyberSocializingTwo';
 
 const CyberSocializingTwo = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
   return (
-    <CyberSocializingBox>
+    <StyledCyberSocializingTwo>
       <Breadcrumb />
 
       <PortfolioTitle
@@ -148,7 +101,7 @@ const CyberSocializingTwo = () => {
           <ProjectImg src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/8.png`} />
         </WidthImgOneTextsOne>
       </div>
-    </CyberSocializingBox>
+    </StyledCyberSocializingTwo>
   );
 };
 

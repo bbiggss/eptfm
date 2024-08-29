@@ -41,7 +41,8 @@ export const StyledCyberSocializingOne = styled.div`
       top: 178px;
     }
     .circle3 {
-      right: -330px;
+      /* right: -330px; */
+      right: 0;
       top: 411px;
     }
     .heart {
