@@ -32,6 +32,8 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
       display: grid;
       grid-template-columns: repeat(3, auto);
       gap: 48px;
+
+      margin-bottom: 60px;
       img {
         max-width: 416px;
         width: 21vw;
@@ -109,6 +111,8 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          margin-bottom: 24px;
           img {
             border: 1px solid #ededed;
             box-sizing: border-box;
