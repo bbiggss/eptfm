@@ -104,7 +104,7 @@ const BongsuPaval = () => {
         </div>
 
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/1.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/2.png`} />
           </WidthImgTwo>
@@ -118,7 +118,7 @@ const BongsuPaval = () => {
           />
         </div>
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/3.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/4.png`} />
           </WidthImgTwo>
@@ -132,7 +132,7 @@ const BongsuPaval = () => {
           />
         </div>
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/5.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/6.png`} />
           </WidthImgTwo>
@@ -146,7 +146,7 @@ const BongsuPaval = () => {
           />
         </div>
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/7.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/8.png`} />
           </WidthImgTwo>
@@ -160,7 +160,7 @@ const BongsuPaval = () => {
           />
         </div>
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/9.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/10.png`} />
           </WidthImgTwo>
@@ -174,7 +174,7 @@ const BongsuPaval = () => {
           />
         </div>
         <div className="projectDescriptions">
-          <WidthImgTwo>
+          <WidthImgTwo gap={'40px'}>
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/11.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/12.png`} />
           </WidthImgTwo>
