@@ -5,6 +5,7 @@ export const StyledCyberSocializingOne = styled.div`
     width: 100%;
   }
   @media (min-width: 1025px) {
+    overflow-x: hidden;
     .cloud,
     .circle1,
     .circle2,
@@ -41,8 +42,8 @@ export const StyledCyberSocializingOne = styled.div`
       top: 178px;
     }
     .circle3 {
-      /* right: -330px; */
-      right: 0;
+      right: -330px;
+      /* right: 0; */
       top: 411px;
     }
     .heart {
@@ -51,6 +52,7 @@ export const StyledCyberSocializingOne = styled.div`
     }
   }
   @media (max-width: 1024px) {
+    overflow-x: hidden;
     .introductionWrapper {
       text-align: center;
     }
@@ -70,28 +72,36 @@ export const StyledCyberSocializingOne = styled.div`
       top: -29px;
     }
     .circle1 {
-      width: 200px;
-      left: -55px;
+      min-width: 200px;
+      width: 53vw;
+      /* left: -55px; */
+      left: -14vw;
       top: 213px;
     }
     .circle2 {
-      width: 211px;
-      right: 0;
-      /* transform: translateX(100px); */
+      min-width: 211px;
+      width: 56vw;
+      /* right: -55px; */
+      right: -14vw;
       top: 167px;
     }
     .yellowWordBalloon {
-      width: 169px;
-      left: -41px;
+      min-width: 169px;
+      width: 45vw;
+      /* left: -41px; */
+      left: -10vw;
       top: 97px;
     }
     .circle3 {
-      width: 241px;
-      right: 0;
+      min-width: 241px;
+      width: 64vw;
+      /* right: -75px; */
+      right: -20vw;
       top: 176px;
     }
     .heart {
-      width: 119px;
+      min-width: 119px;
+      width: 31vw;
       top: -87px;
     }
   }

@@ -75,7 +75,7 @@ const CyberSocializingOne = () => {
         />
       </div>
 
-      <div className="smallScreen ">
+      <div className="smallScreen">
         <div className="relative">
           <img
             className="circle1"
@@ -111,6 +111,13 @@ const CyberSocializingOne = () => {
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/2.png`}
           />
         </WidthImgOneTextsOne>
+        <div className="relative">
+          <img
+            className="circle2"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/circle2.png`}
+            alt=""
+          />
+        </div>
         <WidthImgOneTextsOne>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/3.png`} />
           <ProjectDescription
@@ -123,13 +130,6 @@ const CyberSocializingOne = () => {
                 : `말이 사람들에게 미치는 긍정적, 부정적\n영향을 사례를 통해 알아볼 수 있어요.`
             }
           />
-          <div className="relative">
-            <img
-              className="circle2"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/circle2.png`}
-              alt=""
-            />
-          </div>
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <ProjectDescription
@@ -143,14 +143,14 @@ const CyberSocializingOne = () => {
           />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/4.png`} />
         </WidthImgOneTextsOne>
+        <div className="relative">
+          <img
+            className="yellowWordBalloon"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/yellowWordBalloon.png`}
+            alt=""
+          />
+        </div>
         <WidthImgOneTextsOne>
-          <div className="relative">
-            <img
-              className="yellowWordBalloon"
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/side/yellowWordBalloon.png`}
-              alt=""
-            />
-          </div>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/5.png`} />
           <ProjectDescription
             textPosition={'right'}

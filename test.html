@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .divc {
+      }
+      .div1 {
+        width: 100%;
+        overflow-x: hidden;
+        height: 300px;
+        background-color: aqua;
+        position: relative;
+      }
+      .test1 {
+        position: absolute;
+        right: -100px; /* 이미지가 부모 요소의 오른쪽 경계에서 100픽셀 바깥으로 이동 */
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="divc">
+      <div class="div1">
+        <img class="test1" src="./public/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/1.png" alt="" />
+      </div>
+    </div>
+  </body>
 </html>
