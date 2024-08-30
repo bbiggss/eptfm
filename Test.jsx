@@ -72,9 +72,6 @@ const Bimetal = () => {
 
 export default Bimetal;
 
-{
-  /* <ImageTextBlock style={{ marginBottom: '200px' }}></ImageTextBlock> */
-}
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
