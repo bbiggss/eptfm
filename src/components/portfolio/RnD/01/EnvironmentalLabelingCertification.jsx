@@ -171,8 +171,6 @@ const EnvironmentalLabelingCertification = () => {
               }
             />
           </div>
-
-          <div className="tempWrap"></div>
         </div>
       </div>
     </StyledEnvironmentalLabelingCertification>

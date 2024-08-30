@@ -234,8 +234,6 @@ const CyberSocializingOne = () => {
           />
         </WidthImgOneTextsOne>
       </div>
-
-      <div className="tempWrap smallScreen centerAlignment relative"></div>
     </StyledCyberSocializingOne>
   );
 };
