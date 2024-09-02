@@ -6,6 +6,15 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       font-size: 15px;
       line-height: 2vw;
     }
+    .robotImg1 {
+      margin-left: -21px;
+    }
+  }
+
+  @media (min-width: 1301px) {
+    .robotImg1 {
+      margin-left: -88px;
+    }
   }
 
   @media (min-width: 1025px) {
@@ -46,8 +55,11 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         z-index: -1;
         max-width: 281px;
         width: 14vw;
-        bottom: -62px;
-        margin-left: clamp(100px, 20.7vw, 322px);
+        bottom: -37px;
+        /* margin-left: -21px; */
+        /* margin-left: clamp(-21px, calc(-21px + (-0.08vw * 100)), -93px); */
+
+        /* margin-left: clamp(-9px, 20.7vw, -83px); */
       }
     }
     .introductionArea2 {
@@ -92,7 +104,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       text-align: center;
       span {
         color: #292929;
-        font-size: 22px;
+        font-size: clamp(22px, 5.8vw, 100px);
         letter-spacing: -0.02em;
         font-family: 'NanumSquareEB';
       }
@@ -104,7 +116,8 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         z-index: -1;
         width: 112px;
         bottom: -33px;
-        margin-left: 68px;
+        margin-left: -30px;
+        /* margin-left: clamp(68px, 18vw, 100px); */
       }
     }
     .customTextWrapper {

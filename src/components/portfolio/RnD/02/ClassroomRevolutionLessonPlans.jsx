@@ -44,12 +44,12 @@ const ClassroomRevolutionLessonPlans = () => {
 
       <div className="fullScreen introductionArea">
         <div>
+          <span className="leftSpan">AI가 이끄는</span>
           <img
             className="robotImg1"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/introduction/1.png`}
             alt=""
           />
-          <span className="leftSpan">AI가 이끄는</span>
           <span className="rightSpan">새로운 학습 시대</span>
         </div>
       </div>
