@@ -15,12 +15,6 @@ export const StyledCyberSocializingOne = styled.div`
       position: absolute;
       z-index: -1;
     }
-
-    .PortfolioIntroductionBox {
-      .title {
-        line-height: 56px;
-      }
-    }
     /* - */
     .introductionWrapper {
       text-align: center;

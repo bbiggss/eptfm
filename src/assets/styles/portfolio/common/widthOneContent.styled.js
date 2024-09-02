@@ -59,7 +59,4 @@ export const WidthOneContent = styled.div`
   &.firstChild {
     padding-top: 160px;
   }
-  .projectImg {
-    padding-bottom: 60px;
-  }
 `;

@@ -14,18 +14,6 @@ export const StyledCyberSocializingTwo = styled.div`
     .PortfolioTitleBox {
       margin-bottom: 41px;
     }
-    .heroArea {
-      .PortfolioIntroductionBox {
-        position: absolute;
-        margin-left: 459px;
-        margin-top: 194px;
-        text-align: center;
-
-        .title {
-          color: #4f4f4f;
-        }
-      }
-    }
 
     .book {
       position: absolute;

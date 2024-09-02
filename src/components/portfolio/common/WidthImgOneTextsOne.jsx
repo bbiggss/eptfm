@@ -86,9 +86,6 @@ const StyledWidthImgOneTextsOne = styled.div`
   /* @media (min-width: 768px) and (max-width: 1024px) {
     padding-top: ${(props) => props.$tabletPaddingTop};
 
-    .projectImg {
-      width: 50%;
-    }
   }
   @media (max-width: 767px) {
     padding-top: ${(props) => props.$mobilePaddingTop};
