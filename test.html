@@ -7,28 +7,23 @@
     <style>
       * {
         margin: 0;
-        padding: 0;
       }
-      .divc {
+      .imgWrapper {
+        display: grid;
+        background-color: yellow;
       }
-      .div1 {
+      img {
         width: 100%;
-        overflow-x: hidden;
-        height: 300px;
-        background-color: aqua;
-        position: relative;
       }
-      .test1 {
-        position: absolute;
-        right: -100px; /* 이미지가 부모 요소의 오른쪽 경계에서 100픽셀 바깥으로 이동 */
+      .div2 {
+        background-color: aqua;
       }
     </style>
   </head>
   <body>
-    <div class="divc">
-      <div class="div1">
-        <img class="test1" src="./public/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/1.png" alt="" />
-      </div>
+    <div class="imgWrapper">
+      <img src="./public/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/hero.png" alt="" />
     </div>
+    <div class="div2">123123</div>
   </body>
 </html>

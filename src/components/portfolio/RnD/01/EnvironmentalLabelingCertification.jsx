@@ -104,7 +104,7 @@ const EnvironmentalLabelingCertification = () => {
             </WidthImgOneTextsOne>
           </div>
           <div className="customRight">
-            <div className="threeImgs">
+            <div className="threeImgs start">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/3.png`} />
@@ -121,7 +121,7 @@ const EnvironmentalLabelingCertification = () => {
             />
           </div>
           <div className="customLeft">
-            <div className="threeImgs">
+            <div className="threeImgs end">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/3.png`} />
@@ -138,7 +138,7 @@ const EnvironmentalLabelingCertification = () => {
             />
           </div>
           <div className="customRight">
-            <div className="threeImgs">
+            <div className="threeImgs start">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/3.png`} />
@@ -155,7 +155,7 @@ const EnvironmentalLabelingCertification = () => {
             />
           </div>
           <div className="customLeft last">
-            <div className="threeImgs">
+            <div className="threeImgs end">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/3.png`} />

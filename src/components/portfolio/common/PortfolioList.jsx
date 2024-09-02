@@ -197,7 +197,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img1.png`,
           pfItemBigTitle: '환경산업기술원',
-          pfItemSmallTitle: '환경표지인증',
+          pfItemSmallTitle: '친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택',
           mobile_pfItemSmallTitle: '친환경 소비의 첫걸음, 환경표지인증을 통한\n 더 나은 선택',
         },
         {

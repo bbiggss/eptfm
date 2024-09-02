@@ -180,7 +180,7 @@ function App() {
 
         {/* R&D */}
         {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
-        <Route path="/portfolio/R&D/환경표지인증" element={<EnvironmentalLabelingCertification />} />
+        <Route path="/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택" element={<EnvironmentalLabelingCertification />} />
         <Route path="/portfolio/R&D/교실혁명 강의교안" element={<ClassroomRevolutionLessonPlans />} />
 
         <Route path="/contactUs" element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />} />

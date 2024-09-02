@@ -24,7 +24,7 @@ const CyberSocializingOne = () => {
 
       <PortfolioTitleWrap
         style={{ display: 'grid', justifyContent: 'center' }}
-        pcMarginBottom={'78px'}
+        pcMarginBottom={'80px'}
         mobileMarginTop={'50px'}
         mobileMarginBottom={'40px'}
       >

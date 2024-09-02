@@ -84,6 +84,7 @@ export const StyledClassroomRevolution = styled.div`
     /* ------ */
     .intro_imgs_Wrapper {
       position: relative;
+      z-index: -1;
       .introductionWrapper {
         /* margin-left: 830px; */
         display: grid;

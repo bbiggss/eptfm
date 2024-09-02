@@ -28,7 +28,6 @@ export const PortfolioListBox = styled.div`
     /* height: 2662px; */
 
     /* height: ${({ $list }) => {
-      console.log($list);
       switch ($list) {
         case 'e-Learning':
           return '2662px';
@@ -66,17 +65,18 @@ export const PortfolioListBox = styled.div`
     margin: auto;
 
     .topTitleBox {
-      height: 390px; // 490 - 헤더(100) = 390
+      /* height: 390px; // 490 - 헤더(100) = 390 */
 
       .pageTitle {
         font-size: 100px;
 
-        padding-top: 80px;
+        /* padding-top: 80px; */
         padding-bottom: 20px;
       }
 
       .fieldTitle {
         font-size: 46px;
+        margin-bottom: 128px;
       }
     }
 

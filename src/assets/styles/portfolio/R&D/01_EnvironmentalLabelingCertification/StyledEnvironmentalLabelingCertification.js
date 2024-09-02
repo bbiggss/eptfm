@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledEnvironmentalLabelingCertification = styled.div`
+  .heroImgWrapper {
+    display: grid;
+  }
   @media (min-width: 1025px) and (max-width: 1500px) {
     .customRight p,
     .customLeft p {
@@ -39,6 +42,12 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
         width: 21vw;
         border: 1px solid #ededed;
       }
+    }
+    .start {
+      justify-content: start;
+    }
+    .end {
+      justify-content: end;
     }
 
     .heroImgWrapper {

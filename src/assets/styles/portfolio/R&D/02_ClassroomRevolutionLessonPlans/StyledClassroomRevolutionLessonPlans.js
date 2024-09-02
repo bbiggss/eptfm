@@ -9,11 +9,17 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     .robotImg1 {
       margin-left: -21px;
     }
+    .robot2 {
+      right: 0px;
+    }
   }
 
   @media (min-width: 1301px) {
     .robotImg1 {
       margin-left: -88px;
+    }
+    .robot2 {
+      right: -39px;
     }
   }
 
@@ -85,8 +91,10 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       }
       .robot2 {
         position: absolute;
-        right: -39px;
         top: -50px;
+
+        max-width: 183px;
+        width: 9.5vw;
       }
     }
   }

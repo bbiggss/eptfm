@@ -81,7 +81,7 @@ export const ContactUsBox = styled.div`
           height: 90px;
           color: #767676;
           cursor: pointer;
-          background-color: white;
+          background-color: transparent;
           .popupText {
             width: 240px;
             height: 30px;
@@ -202,7 +202,7 @@ export const ContactUsBox = styled.div`
           aspect-ratio: 315 / 60;
           color: #767676;
           cursor: pointer;
-          background-color: white;
+          background-color: transparent;
           margin-top: 30px;
           margin-bottom: 50px;
 
