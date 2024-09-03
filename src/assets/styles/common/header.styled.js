@@ -8,7 +8,7 @@ export const HeaderSpacer = styled.div`
   @media (min-width: 1025px) {
     height: ${headerHeightDesktop};
   }
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     height: ${headerHeightMobile};
     min-height: 60px;
   }

@@ -4,9 +4,14 @@ import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import Transportation from './Transportation';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
+import useMobile from '../hooks/useMobile';
+import useTablet from '../hooks/useTablet';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
-  const isMobile = useResponsiveMax1024();
+  const isMobile = useMobile();
+  const isTablet = useTablet();
+  const isMobileTablet = useResponsiveMax1024();
+
   return (
     <ContactUsBox>
       <div className="fullScreen ellipseArea">
@@ -14,10 +19,10 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         <img className="ellipse2" src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse2.png`} alt="" />
       </div>
       <Breadcrumb />
-      <div className="smallScreen textCenter">
+      <div className="smallScreen Wrapper">
         <p className="title robotoMedium">CONTACT US</p>
         <p className="subTitle NanumSquareB">
-          {isMobile ? (
+          {isMobileTablet ? (
             <>
               EPLATFORM의 혁신적인 교육 콘텐츠와 함께
               <br />
@@ -31,8 +36,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
 
         <ContactTextsLinkBox
           mainText={'문의하기'}
-          subText={'문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
-          mobile_subText={'문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
+          subText={isMobile ? '문의사항이나 의견이 있으시면 언제든지 연락\n주세요.' : '문의사항이나 의견이 있으시면 언제든지 연락주세요.'}
           popupText={'메일 보내기'}
           clickOption={'mail'}
           modalStatus={modalStatus}

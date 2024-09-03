@@ -25,7 +25,7 @@ const StyledTransportation = styled.div`
     }};
   }
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     position: relative;
     display: flex;
     /* align-items: center; */
@@ -42,17 +42,17 @@ const StyledTransportation = styled.div`
       }
     }
     .transportationTexts {
-      width: 241px;
+      /* width: 241px; */
       margin-left: 5px;
 
       color: #767676;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: clamp(16px, 4vw, 100px);
+      /* line-height: 24px; */
       letter-spacing: -0.02em;
     }
     span {
       color: #292929;
-      font-size: 16px;
+      font-size: clamp(16px, 4vw, 100px);
       line-height: 24px;
       letter-spacing: -0.02em;
     }

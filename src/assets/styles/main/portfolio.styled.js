@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 // import { portfolioBg2, portfolioBg3 } from '../../images';
-const pc_pfFieldWidth = '380px';
-const pfFieldMobileWidth = '100%';
 
 export const PortfolioBox = styled.div`
   .englishFont,

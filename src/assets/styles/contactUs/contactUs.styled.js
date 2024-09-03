@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactUsBox = styled.div`
-  overflow: hidden;
+  overflow-x: hidden;
   .ellipseArea {
     position: relative;
     z-index: -1;
@@ -27,11 +27,13 @@ export const ContactUsBox = styled.div`
 
   @media (min-width: 1025px) {
     .title {
+      text-align: center;
       font-size: 100px;
       color: #191919;
       margin-bottom: 42px;
     }
     .subTitle {
+      text-align: center;
       font-size: 26px;
       color: #767676;
     }
@@ -89,6 +91,9 @@ export const ContactUsBox = styled.div`
           }
         }
       }
+    }
+    .inquiryImg {
+      text-align: center;
     }
   }
 
@@ -155,17 +160,22 @@ export const ContactUsBox = styled.div`
     .ellipse2 {
       display: none;
     }
+    .Wrapper {
+      margin: 0 var(--mobile-margin);
+    }
     .title {
+      text-align: center;
       color: #191919;
-      font-size: 36px;
+      font-size: clamp(36px, 9.6vw, 100px);
 
-      margin-top: 50px;
+      padding-top: 50px;
       margin-bottom: 20px;
     }
     .subTitle {
+      text-align: center;
       color: #767676;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: clamp(16px, 4vw, 100px);
+      /* line-height: 24px; */
       letter-spacing: -0.02em;
       white-space: nowrap;
     }
@@ -180,15 +190,15 @@ export const ContactUsBox = styled.div`
       .c1 {
         p:first-child {
           color: #292929;
-          font-size: 22px;
+          font-size: clamp(22px, 5.8vw, 100px);
           letter-spacing: -0.02em;
 
           margin-bottom: 10px;
         }
         p:last-child {
           color: #767676;
-          font-size: 16px;
-          line-height: 24px;
+          font-size: clamp(16px, 4vw, 100px);
+          /* line-height: 24px; */
           letter-spacing: -0.02em;
           max-width: 500px;
         }
@@ -213,7 +223,7 @@ export const ContactUsBox = styled.div`
             width: 100%;
             color: #767676;
             text-align: center;
-            font-size: 18px;
+            font-size: clamp(18px, 4.8vw, 100px);
             letter-spacing: -0.02em;
           }
 
@@ -237,8 +247,9 @@ export const ContactUsBox = styled.div`
         list-style: none;
         display: flex;
         img {
-          width: 150px;
-          height: 110px;
+          min-width: 150px;
+          width: 40vw;
+          /* height: 110px; */
         }
         p {
           margin: auto 0px;
@@ -246,7 +257,7 @@ export const ContactUsBox = styled.div`
           min-width: 129px;
 
           color: #292929;
-          font-size: 16px;
+          font-size: clamp(16px, 4vw, 100px);
           line-height: 24px;
           letter-spacing: -0.02em;
         }
