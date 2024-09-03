@@ -3,6 +3,12 @@ const portfolioImgWidth = '480px';
 // const mobile_PortfolioImgWidth = '315px';
 const mobile_PortfolioImgWidth = 'clamp(315px, 55vw, 600px)';
 export const PortfolioListBox = styled.div`
+  .div1 {
+    width: 100%;
+    background-color: gold;
+    height: 1000px;
+  }
+
   .pageTitle,
   .fieldTitle {
     text-align: center;
@@ -25,10 +31,11 @@ export const PortfolioListBox = styled.div`
   }
   @media (max-width: 1024px) {
     /* background-color: aqua; */
-    /* height: 2662px; */
 
     /* height: ${({ $list }) => {
       switch ($list) {
+        case 'VR/AR':
+          return '6342px';
         case 'e-Learning':
           return '2662px';
         case 'R&D':
@@ -37,6 +44,7 @@ export const PortfolioListBox = styled.div`
           return '0px'; // 기본값
       }
     }}; */
+    /* height: 6342px; */
     /* height: 2662px; */
     ul {
       /* console.log(11, $listTitle); */
@@ -94,8 +102,6 @@ export const PortfolioListBox = styled.div`
         list-style: none;
         /* width: 400px;
       height: 382px; */
-        /* background-color: yellow; */
-        /* overflow: hidden; //추후수정 */
 
         & .thumbnail img {
           /* height: 100%; */

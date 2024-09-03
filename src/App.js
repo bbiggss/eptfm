@@ -123,6 +123,15 @@ function App() {
     };
   }, [location]);
 
+  useEffect(() => {
+    if (portfolioListModalStatus || modalStatus) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+      // console.log('닫힘');
+    }
+  }, [portfolioListModalStatus, modalStatus]);
+
   return (
     <div className="App">
       {/* {isLoading ? <Loading /> : <></>} */}
@@ -135,7 +144,13 @@ function App() {
       {portfolioListModalStatus && <PortfolioListModal setPortfolioListModalStatus={setPortfolioListModalStatus} />}
       {/* PC해상도&홈화면일때 */}
       {isDesktopScreen === true && location.pathname === '/' ? '' : <HeaderSpacer />}
-      <Header headerClass={headerClass} activeLink={activeLink} setActiveLink={setActiveLink} />
+      <Header
+        headerClass={headerClass}
+        activeLink={activeLink}
+        setActiveLink={setActiveLink}
+        portfolioListModalStatus={portfolioListModalStatus}
+        setPortfolioListModalStatus={setPortfolioListModalStatus}
+      />
       {/* <Header headerClass={headerClass} /> */}
       {location.pathname === '/' ? <Video /> : ''}
 

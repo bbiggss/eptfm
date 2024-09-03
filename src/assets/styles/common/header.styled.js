@@ -152,6 +152,7 @@ export const HeaderBox = styled.div`
     background-color: white;
     height: ${headerHeightMobile};
     min-height: 60px;
+    /* background-color: beige; */
     #headerContainer {
       /* background-color: yellow; */
       position: relative;
@@ -166,6 +167,7 @@ export const HeaderBox = styled.div`
       }
       #dropDownImg,
       #xBtn {
+        cursor: pointer;
         position: absolute;
         right: 0;
         top: 50%;
@@ -174,6 +176,14 @@ export const HeaderBox = styled.div`
       #dropDownImg {
         width: 18px;
         height: 14px;
+      }
+      .mobileListButton {
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+        top: 2px;
+
+        width: 23px;
       }
 
       ul {

@@ -52,6 +52,14 @@ const Header = (data) => {
   const dropDownClose = () => {
     setShowDropDown(false);
   };
+  const mobileListButtonClick = () => {
+    // portfolioListModalStatus={portfolioListModalStatus}
+    // setPortfolioListModalStatus={setPortfolioListModalStatus}
+    if (data.portfolioListModalStatus === false) {
+      data.setPortfolioListModalStatus(true);
+    }
+    // alert(data.portfolioListModalStatus);
+  };
 
   return (
     <>
@@ -60,21 +68,21 @@ const Header = (data) => {
           <Link to={'/'}>
             <img id="logoImg" src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`} alt="" />
           </Link>
+          {isMobTab && (
+            <span>
+              <img
+                className="mobileListButton"
+                onClick={() => mobileListButtonClick()}
+                src={`${process.env.PUBLIC_URL}/assets/images/common/portfolioListButton_m.png`}
+                alt=""
+              />
+            </span>
+          )}
           <span>
             {isMobTab && showDropDown ? (
-              <img
-                id="xBtn"
-                onClick={() => dropDownClose()}
-                src={`${process.env.PUBLIC_URL}/assets/images/common/xBtn.png`}
-                alt=""
-              />
+              <img id="xBtn" onClick={() => dropDownClose()} src={`${process.env.PUBLIC_URL}/assets/images/common/xBtn.png`} alt="" />
             ) : (
-              <img
-                id="dropDownImg"
-                onClick={() => dropDownClick()}
-                src={`${process.env.PUBLIC_URL}/assets/images/common/dropdown.png`}
-                alt=""
-              />
+              <img id="dropDownImg" onClick={() => dropDownClick()} src={`${process.env.PUBLIC_URL}/assets/images/common/dropdown.png`} alt="" />
             )}
 
             <ul>
@@ -112,12 +120,7 @@ const Header = (data) => {
               R&D
             </Link>
           </li>
-          <NavBox
-            setShowDropDown={setShowDropDown}
-            title={'CONTACT US'}
-            link={'contactUs'}
-            activeLink={data.activeLink}
-          />
+          <NavBox setShowDropDown={setShowDropDown} title={'CONTACT US'} link={'contactUs'} activeLink={data.activeLink} />
         </ul>
       </StyledDropDown>
     </>
