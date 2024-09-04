@@ -11,6 +11,15 @@ export const StyledPortfolioListModal = styled.div`
   }
 
   @media (min-width: 1557px) {
+    .modalContainer {
+      position: fixed;
+      z-index: 3;
+      height: auto;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
     .xBtn {
       position: absolute;
       z-index: 10;
@@ -29,39 +38,18 @@ export const StyledPortfolioListModal = styled.div`
 
       margin-bottom: 48px;
     }
-    .modalContainer {
-      position: fixed;
-      z-index: 3;
-      /* max-width: 1556px; */
-      /* width: 80%; */
-      height: auto;
-
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
     .gridWrapper {
       display: grid;
       grid-template-columns: repeat(3, 460px);
       padding: 0;
-      gap: 8px 88px;
+      gap: 88px;
       .section {
         width: 100%;
         max-width: 460px;
         a {
           text-decoration: none;
         }
-
-        .category {
-          color: #ffffff;
-          text-align: left;
-          font-family: 'Roboto-Regular';
-          font-size: 36px;
-          position: relative;
-
-          margin-bottom: 26px;
-        }
-        .item {
+        /* .item {
           position: relative;
           color: #ffffff;
           text-align: left;
@@ -69,7 +57,6 @@ export const StyledPortfolioListModal = styled.div`
           font-size: 18px;
           letter-spacing: -0.02em;
           height: 25px;
-          /* border: 1px solid white; */
           list-style: none;
 
           margin-bottom: 10px;
@@ -91,7 +78,7 @@ export const StyledPortfolioListModal = styled.div`
           .move {
             display: inline;
           }
-        }
+        } */
       }
       .section:nth-child(2) {
         padding-top: 68px;
@@ -132,55 +119,14 @@ export const StyledPortfolioListModal = styled.div`
     }
     .gridWrapper {
       display: grid;
-      grid-template-columns: repeat(3, 300px);
+      grid-template-columns: repeat(2, 460px);
       padding: 0;
       gap: 8px 20px;
       .section {
         width: 100%;
-        max-width: 300px;
+        /* max-width: 300px; */
         a {
           text-decoration: none;
-        }
-
-        .category {
-          color: #ffffff;
-          text-align: left;
-          font-family: 'Roboto-Regular';
-          font-size: 26px;
-          position: relative;
-
-          margin-bottom: 26px;
-        }
-        .item {
-          position: relative;
-          color: #ffffff;
-          text-align: left;
-          font-family: 'NanumSquareB';
-          font-size: 13px;
-          letter-spacing: -0.02em;
-          height: 25px;
-          /* border: 1px solid white; */
-          list-style: none;
-
-          /* margin-bottom: 10px; */
-
-          .move {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: -6px;
-          }
-        }
-        .item:hover {
-          background: rgba(255, 255, 255, 0);
-          border-style: solid;
-          border-color: #48c2c5;
-          color: #48c2c5;
-          border-width: 0px 0px 1px 0px;
-          box-sizing: border-box;
-          .move {
-            display: inline;
-          }
         }
       }
       .section:nth-child(2) {
@@ -189,8 +135,6 @@ export const StyledPortfolioListModal = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    /* padding: 0 var(--mobile-margin); */
-
     .modalContainer {
       height: 100vh;
       width: 100%;
@@ -202,6 +146,24 @@ export const StyledPortfolioListModal = styled.div`
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      /* background-color: yellow; */
+
+      display: grid;
+      justify-content: center;
+    }
+    .title {
+      color: #ffffff;
+      text-align: left;
+      font-family: 'Roboto-Medium', sans-serif;
+      font-size: clamp(36px, 9.6vw, 100px);
+
+      position: relative;
+      display: inline-block;
+
+      margin-top: 80px;
+
+      max-width: 315px;
+      width: 100%;
     }
     .xBtn {
       /* position: absolute; */
@@ -215,18 +177,6 @@ export const StyledPortfolioListModal = styled.div`
       min-width: 20px;
       width: 5.3vw;
     }
-    .title {
-      color: #ffffff;
-      text-align: left;
-      font-family: 'Roboto-Medium', sans-serif;
-      font-size: 36px;
-
-      position: relative;
-      display: inline-block;
-
-      margin-top: 80px;
-      margin-bottom: 48px;
-    }
     .gridWrapper {
       display: grid;
       justify-content: center;
@@ -235,54 +185,17 @@ export const StyledPortfolioListModal = styled.div`
       gap: 8px 20px;
       .section {
         width: 100%;
-        max-width: 315px;
+        /* max-width: 315px; */
         a {
           text-decoration: none;
-        }
-
-        .category {
-          color: #ffffff;
-          text-align: left;
-          font-family: 'Roboto-Regular';
-          font-size: 26px;
-          position: relative;
-
-          margin-bottom: 26px;
-        }
-        .item {
-          position: relative;
-          color: #ffffff;
-          text-align: left;
-          font-family: 'NanumSquareB';
-          font-size: 13px;
-          letter-spacing: -0.02em;
-          height: 25px;
-          /* border: 1px solid white; */
-          list-style: none;
-
-          /* margin-bottom: 10px; */
-
-          .move {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: -6px;
-          }
-        }
-        .item:hover {
-          background: rgba(255, 255, 255, 0);
-          border-style: solid;
-          border-color: #48c2c5;
-          color: #48c2c5;
-          border-width: 0px 0px 1px 0px;
-          box-sizing: border-box;
-          .move {
-            display: inline;
-          }
         }
       }
       .section:nth-child(2) {
         padding-top: 0;
+      }
+
+      .section:last-child {
+        margin-bottom: 160px;
       }
     }
   }

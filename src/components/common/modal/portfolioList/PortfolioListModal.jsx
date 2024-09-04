@@ -2,17 +2,19 @@ import React from 'react';
 import Category from './Category';
 import Item from './Item';
 import { StyledPortfolioListModal } from '../../../../assets/styles/common/portfolioListModal';
+import useResponsiveMax1024 from './../../../hooks/useResponsiveMax1024';
 
 const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
+  const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledPortfolioListModal>
       <div className="modalBackground"></div>
       <div className="modalContainer">
-        <p className="title">Portfolio</p>
+        <p className="title">PORTFOLIO</p>
         <img
           className="xBtn"
           onClick={() => setPortfolioListModalStatus(false)}
-          src={`${process.env.PUBLIC_URL}/assets/images/common/x.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/common/${isMobileTablet ? 'portfolioListXBtn_m' : 'portfolioListXBtn'}.png`}
           alt=""
         />
 
@@ -40,7 +42,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/VrAr/AR I 땅의 높낮이를 나타내는 등고선'}
             />
             <Item
-              name={'AR I 옛 사람들의 통신수단, 봉수제도와 파발제도'}
+              name={`AR I 옛 사람들의 통신수단, 봉수제도와 ${isMobileTablet ? '\n' : ''} 파발제도`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/AR I 옛 사람들의 통신수단, 봉수제도와 파발제도'}
             />
@@ -55,7 +57,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/VrAr/VR I 과학수사요원이 되어 범인을 찾아라!'}
             />
             <Item
-              name={'VR I 세계의 환경 수도 프라이부르크 구경하기'}
+              name={`VR I 세계의 환경 수도 프라이부르크 ${isMobileTablet ? '\n' : ''} 구경하기`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/VR I 세계의 환경 수도 프라이부르크 구경하기'}
             />
@@ -65,12 +67,12 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/VrAr/VR I 태풍 대피요령 알아보기'}
             />
             <Item
-              name={'VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활'}
+              name={`VR I 모네의 작품으로 알아보는 프랑스 ${isMobileTablet ? '\n' : ''} 기후와 주민생활`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/VR I 모네의 작품으로 알아보는 프랑스 기후와 주민생활'}
             />
             <Item
-              name={'VR I 직접 만드는 민주적인 선거! 시장 출마하기'}
+              name={`VR I 직접 만드는 민주적인 선거! 시장 ${isMobileTablet ? '\n' : ''} 출마하기`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/VR I 직접 만드는 민주적인 선거! 시장 출마하기'}
             />
@@ -85,7 +87,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/VrAr/AR I 열팽창 활용하여 바이메탈 만들기'}
             />
             <Item
-              name={'AR I 별의 색과 밝기를 이용한 별의 특성 알아보기'}
+              name={`AR I 별의 색과 밝기를 이용한 별의 특성 ${isMobileTablet ? '\n' : ''} 알아보기`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/AR I 별의 색과 밝기를 이용한 별의 특성 알아보기'}
             />
@@ -99,29 +101,58 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기'}
             />
+
+            {isMobileTablet && (
+              <>
+                <Item
+                  name={`AR I 뼈, 관절, 근육! 우리 몸을 움직이는 ${isMobileTablet ? '\n' : ''} 세박자`}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
+                />
+                <Item
+                  name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
+                />
+                <Item
+                  name={'VR I 나만의 생존가방 준비하기'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
+                />
+                <Item
+                  name={`VR I 이중섭 작품을 통해 알아보는 6·25 ${isMobileTablet ? '\n' : ''} 전쟁`}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+                />
+              </>
+            )}
           </ul>
           <ul className="section">
-            <Item
-              name={'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-              setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-            />
-            <Item
-              name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
-              setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
-            />
-            <Item
-              name={'VR I 나만의 생존가방 준비하기'}
-              setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
-            />
-            <Item
-              name={'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
-              setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
-            />
-            <Category category={'e-Learning'} style={{ marginTop: '82px' }} />
+            {!isMobileTablet && (
+              <>
+                <Item
+                  name={'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
+                />
+                <Item
+                  name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
+                />
+                <Item
+                  name={'VR I 나만의 생존가방 준비하기'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
+                />
+                <Item
+                  name={'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+                />
+              </>
+            )}
+            <Category category={'e-Learning'} PC_eLearningMarginTop />
             <Item
               name={'저수지·댐 안전관리 및 재해예방'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
@@ -133,7 +164,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/e-Learning/교사가 이끄는 교실혁명'}
             />
             <Item
-              name={'사이버어울림(기술·가정, 진로와 직업, 한문)'}
+              name={`사이버어울림(기술·가정, 진로와 직업, ${isMobileTablet ? '\n' : ''} 한문)`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/e-Learning/사이버어울림(기술·가정, 진로와 직업, 한문)'}
             />
@@ -166,9 +197,9 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
           <ul className="section">
             <Category category={'R&D'} />
             <Item
-              name={'친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
+              name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobileTablet ? '\n' : ''} 통한 더 나은 선택`}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/R&D/환경표지인증'}
+              link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
             />
             <Item name={'교실혁명 강의교안'} setPortfolioListModalStatus={setPortfolioListModalStatus} link={'/portfolio/R&D/교실혁명 강의교안'} />
           </ul>
