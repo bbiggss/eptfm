@@ -27,7 +27,7 @@ export const StyledBuildingGreatCity = styled.div`
 
     .customTag {
       background-color: rgba(115, 243, 236, 0.3);
-      padding-top: 160px;
+      /* padding-top: 160px; */
       margin-bottom: 160px;
 
       img {
@@ -53,14 +53,14 @@ export const StyledBuildingGreatCity = styled.div`
       }
     }
     .customTextWrapper {
-      margin: 80px 0;
+      margin: 21.33vw 0;
       text-align: center;
     }
 
     .customTag {
       background-color: rgba(115, 243, 236, 0.3);
       padding-top: 0px;
-      margin-bottom: 80px;
+      margin-bottom: 21.33vw;
     }
   }
 `;

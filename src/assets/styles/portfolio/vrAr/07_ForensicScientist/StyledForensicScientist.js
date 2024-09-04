@@ -104,6 +104,9 @@ export const StyledForensicScientist = styled.div`
       position: absolute;
       top: -147px;
     }
+    .customMaxWidth790 img {
+      max-width: 790px;
+    }
   }
   @media (max-width: 1024px) {
     .mainBackgroundImg {

@@ -29,7 +29,6 @@ const CyberSocializingTwo = () => {
           transform: 'translateX(-50%)',
           display: 'grid',
           justifyContent: 'center',
-          zIndex: '1',
         }}
         pcMarginBottom={'80px'}
         mobileMarginTop={'50px'}
@@ -44,10 +43,10 @@ const CyberSocializingTwo = () => {
           <PortfolioIntroductionTitle
             mobileMarginTop={'80px'}
             style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : '40px' }}
-            title={isMobileTablet ? '영어와 체육 교과 연계, 사이좋게 지내요!' : '영어와 체육 교과 연계, 사이좋게 지내요!'}
+            title={isMobileTablet ? '영어와 체육 교과 연계,\n 사이좋게 지내요!' : '영어와 체육 교과 연계, 사이좋게 지내요!'}
           />
           <PortfolioIntroductionDescription
-            style={{ color: '#767676' }}
+            style={{ color: '#767676', textAlign: 'center' }}
             pcMarginTop={'34px'}
             mobileMarginTop={'5.33vw'}
             pcMarginBottom={'200px'}
@@ -60,6 +59,7 @@ const CyberSocializingTwo = () => {
           />
         </div>
         <HeroImg
+          style={{ zIndex: '-1' }}
           pcAspectRatio={'1920 / 1080'}
           mobileAspectRatio={'1024 / 1602'}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/${isMobileTablet ? 'hero_m' : 'hero'}.png`}

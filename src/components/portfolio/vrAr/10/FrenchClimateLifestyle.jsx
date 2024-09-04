@@ -48,7 +48,7 @@ const FrenchClimateLifestyle = () => {
         <div className="right">
           <div className="monetImg">
             <HeroImg
-              pcAspectRatio={'960 / 900'}
+              pcAspectRatio={'312 / 379'}
               mobileAspectRatio={'174 / 212'}
               src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/10_FrenchClimateLifestyle/${
                 isMobileTablet ? 'main2_m' : 'main2'
@@ -57,14 +57,12 @@ const FrenchClimateLifestyle = () => {
           </div>
           <div className="introductionWrapper">
             <PortfolioIntroductionTitle
-              pcMarginTop={'118px'}
               mobileMarginTop={'60px'}
               style={{ color: '#292929' }}
-              title={isMobileTablet ? '모네의 그림 속에서 만나는\n 프랑스의 기후와 생활!' : '모네의 그림 속에서 만나는 프랑스의\n기후와 생활!'}
+              title={isMobileTablet ? '모네의 그림 속에서 만나는\n 프랑스의 기후와 생활!' : '모네의 그림 속에서 만나는\n 프랑스의 기후와 생활!'}
             />
             <PortfolioIntroductionDescription
               style={{ color: '#767676' }}
-              pcMarginTop={'34px'}
               mobileMarginTop={'5.33vw'}
               description={
                 isMobileTablet

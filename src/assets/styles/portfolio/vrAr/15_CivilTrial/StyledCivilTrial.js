@@ -20,6 +20,11 @@ export const StyledCivilTrial = styled.div`
           padding-left: clamp(10px, 10vw, 130px);
           padding-right: clamp(10px, 10vw, 261px);
           background: rgba(34, 20, 14, 0.7);
+          p:first-child {
+            /* color: yellow; */
+            /* line-height: 56px; */
+            line-height: clamp(10px, 2.9vw, 56px);
+          }
         }
         .heroImg {
           max-width: 1660px;

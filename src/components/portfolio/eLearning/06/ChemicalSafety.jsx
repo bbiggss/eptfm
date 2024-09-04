@@ -117,11 +117,12 @@ const ChemicalSafety = () => {
       </div>
       <div className="fullScreen group2Area">
         <div className="nationFlag">
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/korea.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/nationalFlag.png`} />
+          {/* <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/korea.png`} />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/nepal.png`} />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/vietnam.png`} />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/indonesia.png`} />
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/cambodia.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group2/cambodia.png`} /> */}
         </div>
 
         <div className="smallScreen grid">

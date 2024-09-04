@@ -25,10 +25,7 @@ const ExploreDokdo = () => {
             transform: 'translateX(-50%)',
           }}
         >
-          <PortfolioOrganization
-            style={{ color: '#999999', fontFamily: 'NanumSquareB' }}
-            organization={'한국교육학술정보원'}
-          />
+          <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
           <PortfolioFieldTitle
             style={{
               color: '#48C2C5',
@@ -39,11 +36,7 @@ const ExploreDokdo = () => {
             title={'우리 땅, 독도 탐험하기'}
           />
         </PortfolioTitleWrap>
-        <img
-          className="manOnEarth"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main2.png`}
-          alt=""
-        />
+        <img className="manOnEarth" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main2.png`} alt="" />
         <HeroImg
           pcHeight={'1920 / 900'}
           mobileHeight={'375 / 450'}
@@ -146,7 +139,7 @@ const ExploreDokdo = () => {
             text={
               isMobTab
                 ? `드론을 조종하여 3D로 정밀하게 모델링된\n 독도를 자유롭게 탐험하며 살펴보세요!\n“독도를 이렇게 생생하게 느끼다니,\n 마치 독도로 휴가를 다녀온 기분이에요!” 라는\n 말을 할 수 있게 된답니다!`
-                : `드론을 조종하여 3D로 정밀하게 모델링된 독\n도를 자유롭게 탐험하며 살펴보세요!\n“독도를 이렇게 생생하게 느끼다니, 마치 독도\n로 휴가를 다녀온 기분이에요!” 라는 말을\n 할 수 있게 된답니다!`
+                : `드론을 조종하여 3D로 정밀하게 모델링된\n 독도를 자유롭게 탐험하며 살펴보세요!\n“독도를 이렇게 생생하게 느끼다니, 마치\n 독도로 휴가를 다녀온 기분이에요!” 라는\n 말을 할 수 있게 된답니다!`
             }
           />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/8.png`} />

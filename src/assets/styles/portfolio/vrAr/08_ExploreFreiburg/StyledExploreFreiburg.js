@@ -76,6 +76,10 @@ export const StyledExploreFreiburg = styled.div`
         max-width: 313px;
       }
     }
+
+    .customMaxWidth785 img {
+      max-width: 785px;
+    }
   }
   @media (max-width: 1024px) {
     .heroWrapper {
@@ -94,7 +98,8 @@ export const StyledExploreFreiburg = styled.div`
     .fff6df {
       text-align: center;
       .bicycleGirl {
-        width: 153px;
+        min-width: 153px;
+        width: 40vw;
         margin: 0 auto;
         margin-top: 80px;
         margin-bottom: 24px;

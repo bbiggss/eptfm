@@ -14,6 +14,13 @@ export const StyledWaterTemperatureSalinityExploration = styled.div`
         bottom: -19px;
         /* margin-right: 259px; */
         margin-right: clamp(100px, 13vw, 259px);
+
+        p:first-child {
+          font-size: clamp(10px, 2vw, 40px);
+        }
+        p:last-child {
+          font-size: clamp(10px, 1.3vw, 26px);
+        }
       }
     }
     .dolphin {

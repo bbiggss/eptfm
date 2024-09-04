@@ -68,7 +68,7 @@ const Header = (data) => {
           <Link to={'/'}>
             <img id="logoImg" src={`${process.env.PUBLIC_URL}/assets/images/common/logo.png`} alt="" />
           </Link>
-          {isMobTab && (
+          {isMobTab && data.activeLink === 'portfolio' && (
             <span>
               <img
                 className="mobileListButton"

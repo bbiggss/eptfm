@@ -48,10 +48,10 @@ export const BongsuPavalBox = styled.div`
       margin-top: 80px;
       /* overflow: hidden; */
       .beacon {
-        aspect-ratio: 102 / 258;
-        /* width: 102px; */
-        width: clamp(102px, 27.2vw, 280px);
-        /* margin-right: 26px; */
+        aspect-ratio: 338 / 858;
+        max-width: 338px;
+        width: 17vw;
+        /* width: clamp(102px, 27.2vw, 280px); */
         margin-right: var(--mobile-margin-right-26px);
       }
       .introudctionWrapper {

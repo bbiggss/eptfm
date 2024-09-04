@@ -18,7 +18,7 @@ const Bimetal = () => {
   return (
     <StyledBimetal>
       <Breadcrumb />
-      <PortfolioTitleWrap style={{ display: 'grid', justifyContent: 'center' }} pcMarginTop={'180px'} mobileMarginTop={'50px'}>
+      <PortfolioTitleWrap style={{ display: 'grid', justifyContent: 'center' }} mobileMarginTop={'50px'}>
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
         <PortfolioFieldTitle
           style={{ color: '#48C2C5', whiteSpace: 'nowrap', fontFamily: 'NanumSquareEB' }}
