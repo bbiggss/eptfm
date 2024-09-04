@@ -1,6 +1,31 @@
 import styled from 'styled-components';
 
 export const StyledFrenchClimateLifestyle = styled.div`
+  @media (min-width: 1301px) {
+    .introductionWrapper {
+      order: 1;
+      margin-left: clamp(10px, 5.2vw, 100px);
+      p:first-child {
+        margin-top: 63px;
+      }
+      p:last-child {
+        margin-top: 34px;
+      }
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1300px) {
+    .introductionWrapper {
+      order: 1;
+      margin-left: clamp(10px, 5.2vw, 100px);
+      p:first-child {
+        margin-top: 33px;
+      }
+      p:last-child {
+        margin-top: 15px;
+      }
+    }
+  }
+
   @media (min-width: 1025px) {
     .textsImgswrapper {
       max-width: 1920px;
@@ -38,17 +63,14 @@ export const StyledFrenchClimateLifestyle = styled.div`
       }
       .right {
         display: grid;
-        justify-content: center;
+        /* justify-content: center; */
         /* background-color: yellow; */
-        .introductionWrapper {
-          order: 1;
-        }
         .monetImg {
           order: 2;
           /* width: 312px; */
           max-width: 312px;
           width: 16vw;
-          margin-left: 114px;
+          margin-left: clamp(100px, 11vw, 214px);
         }
       }
     }

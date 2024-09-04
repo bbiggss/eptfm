@@ -78,6 +78,7 @@ const Contour = () => {
           title={'등고선을 통해 배우는 높낮이의 비밀!'}
         />
         <PortfolioIntroductionDescription
+          pcMarginTop={'34px'}
           style={{ color: '#767676' }}
           description={
             isMobileTablet

@@ -79,7 +79,8 @@ const StyledWidthImgOneTextsOne = styled.div`
 
     padding-bottom: ${(props) => {
       if (props.$mobilePaddingBottom) return props.$mobilePaddingBottom;
-      return '80px';
+      // return '80px';
+      return '21.33vw';
     }};
   }
 

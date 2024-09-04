@@ -75,7 +75,7 @@ const Mayor = () => {
         </div>
         <div className="heroImg">
           <HeroImg
-            pcAspectRatio={'960 / 900'}
+            pcAspectRatio={'442 / 560'}
             mobileAspectRatio={'204 / 259'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/${isMobileTablet ? 'main1_m' : 'main1'}.png`}
           />

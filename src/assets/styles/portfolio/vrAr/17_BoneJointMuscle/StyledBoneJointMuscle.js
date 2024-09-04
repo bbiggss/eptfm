@@ -27,13 +27,22 @@ export const StyledBoneJointMuscle = styled.div`
         width: clamp(500px, 49vw, 950px);
         /* height: 680px; */
         /* height: clamp(300px, 62vh, 680px); */
+        display: grid;
+        align-items: center;
 
         .introductionWrapper {
           text-align: left;
           /* margin-top: 187px; */
-          margin-top: clamp(50px, 5vw, 187px);
-          margin-left: clamp(100px, 13vw, 330px);
+          margin-left: clamp(100px, 18vw, 330px);
           /* position: absolute; */
+
+          p:first-child {
+            font-size: clamp(10px, 2vw, 40px);
+            line-height: clamp(10px, 2.9vw, 56px);
+          }
+          p:last-child {
+            font-size: clamp(10px, 1.3vw, 26px);
+          }
         }
       }
     }

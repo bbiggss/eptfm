@@ -43,22 +43,19 @@ const BoneJointMuscle = () => {
       <div className="fullScreen heroWrapper">
         <div className="rectangle">
           <div className="introductionWrapper">
-            <PortfolioIntroductionTitle
-              pcMarginTop={'clamp(10px,6vw,)118px'}
-              mobileMarginTop={''}
-              style={{ color: '#FFFFFF' }}
-              title={'관절의 움직임을 따라 춤추는\n뼈의 하모니를 경험해보세요!'}
-            />
-            <PortfolioIntroductionDescription
-              style={{ color: '#FFFFFF' }}
-              pcMarginTop={'34px'}
-              mobileMarginTop={'5.33vw'}
-              description={
-                isMobileTablet
-                  ? "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
-                  : "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
-              }
-            />
+            <div>
+              <PortfolioIntroductionTitle style={{ color: '#FFFFFF' }} title={'관절의 움직임을 따라 춤추는\n뼈의 하모니를 경험해보세요!'} />
+              <PortfolioIntroductionDescription
+                style={{ color: '#FFFFFF' }}
+                pcMarginTop={'34px'}
+                mobileMarginTop={'5.33vw'}
+                description={
+                  isMobileTablet
+                    ? "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
+                    : "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
+                }
+              />
+            </div>
           </div>
         </div>
         <HeroImg

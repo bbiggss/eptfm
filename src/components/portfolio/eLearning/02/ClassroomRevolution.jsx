@@ -41,7 +41,7 @@ const ClassroomRevolution = () => {
           />
         </div>
 
-        <Breadcrumb style={{ position: 'absolute' }} />
+        <Breadcrumb style={{ position: 'absolute', zIndex: '1' }} />
 
         <PortfolioTitleWrap
           pcMarginTop={'180px'}

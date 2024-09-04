@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const StyledClassroomRevolution = styled.div`
   .ellipseWrapper {
     position: relative;
+    z-index: -1;
   }
   @media (min-width: 1501px) {
     .intro_imgs_Wrapper {
-      padding-top: 500px;
+      padding-top: 350px;
       padding-bottom: 465px;
     }
   }
@@ -84,12 +85,21 @@ export const StyledClassroomRevolution = styled.div`
     /* ------ */
     .intro_imgs_Wrapper {
       position: relative;
-      z-index: -1;
+      /* z-index: -1; */
       .introductionWrapper {
         /* margin-left: 830px; */
         display: grid;
         justify-content: end;
         margin-right: clamp(100px, 11vw, 218px);
+
+        p:first-child {
+          font-size: clamp(10px, 2vw, 40px);
+          /* line-height: clamp(10px, 2.9vw, 56px); */
+        }
+        p:last-child {
+          font-size: clamp(10px, 1.3vw, 26px);
+          line-height: clamp(10px, 2vw, 40px);
+        }
       }
 
       .hero1,

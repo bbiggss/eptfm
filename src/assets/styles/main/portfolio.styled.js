@@ -58,8 +58,8 @@ export const PortfolioBox = styled.div`
   }
 
   @media (min-width: 1025px) {
-    /* background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg3.png);
-    background-repeat: no-repeat; */
+    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg3.png);
+    background-repeat: no-repeat;
     width: 100%;
     max-width: 1920px;
     position: relative;
@@ -79,18 +79,20 @@ export const PortfolioBox = styled.div`
       & #portfolioText1 {
         font-size: 40px;
         text-align: left;
-
         margin-bottom: 36px;
       }
 
       & #portfolioText2 {
+        line-height: 36px;
         font-size: 26px;
         text-align: left;
       }
     }
     /* - */
     .marginWrapper {
-      padding: 0 var(--mobile-margin);
+      width: 80%;
+      max-width: 1920px;
+      margin: auto;
     }
     #portfolioImgs {
       display: flex;
@@ -152,6 +154,9 @@ export const PortfolioBox = styled.div`
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
+    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     #portfolioTitle {
       padding-top: 160px;
       margin-bottom: 100px;
@@ -171,6 +176,9 @@ export const PortfolioBox = styled.div`
     }
   }
   @media (max-width: 767px) {
+    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
+    background-repeat: no-repeat;
+    background-size: contain;
     #portfolioTitle {
       padding-top: 80px;
       margin-bottom: 30px;

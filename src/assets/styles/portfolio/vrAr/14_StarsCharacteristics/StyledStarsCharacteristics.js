@@ -49,6 +49,14 @@ export const StyledStarsCharacteristics = styled.div`
         position: absolute;
         top: 50%;
         right: clamp(100px, 10vw, 186px);
+
+        p:first-child {
+          font-size: clamp(10px, 2vw, 40px);
+        }
+        p:last-child {
+          font-size: clamp(10px, 1.3vw, 26px);
+          line-height: clamp(10px, 2vw, 40px);
+        }
       }
       .heroImgWrapper {
         margin-top: 80px;
