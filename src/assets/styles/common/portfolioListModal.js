@@ -160,7 +160,8 @@ export const StyledPortfolioListModal = styled.div`
       position: relative;
       display: inline-block;
 
-      margin-top: 80px;
+      /* margin-top: 80px; */
+      margin-top: 130px;
 
       max-width: 315px;
       width: 100%;
@@ -172,7 +173,8 @@ export const StyledPortfolioListModal = styled.div`
       top: 0;
       right: 0;
       cursor: pointer;
-      margin-top: 20px;
+      /* margin-top: 20px; */
+      margin-top: 70px;
       margin-right: 30px;
       min-width: 20px;
       width: 5.3vw;

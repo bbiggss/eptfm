@@ -147,7 +147,6 @@ export const HeaderBox = styled.div`
     }
   }
 
-  /* 모바일 (0 ~ 767px) */
   @media (max-width: 1024px) {
     background-color: white;
     height: ${headerHeightMobile};
@@ -160,8 +159,9 @@ export const HeaderBox = styled.div`
       margin: 0 var(--mobile-margin);
 
       #logoImg {
-        width: 82px;
-        height: 11px;
+        min-width: 98px;
+        width: 26vw;
+        /* height: 11px; */
         position: relative;
         z-index: 10;
       }
@@ -172,18 +172,24 @@ export const HeaderBox = styled.div`
         right: 0;
         top: 50%;
         transform: translateY(-50%);
+
+        min-width: 18px;
+        width: 4.8vw;
       }
-      #dropDownImg {
+      /* #dropDownImg {
         width: 18px;
         height: 14px;
-      }
+      } */
       .mobileListButton {
         cursor: pointer;
         position: absolute;
-        right: 50px;
+        /* right: 50px; */
+        right: 13.3vw;
         top: 2px;
 
-        width: 23px;
+        /* min-width: 23px; */
+        min-width: 20.8px;
+        width: 5.5vw;
       }
 
       ul {
