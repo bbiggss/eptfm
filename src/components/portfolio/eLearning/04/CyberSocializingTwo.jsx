@@ -58,12 +58,23 @@ const CyberSocializingTwo = () => {
             }
           />
         </div>
-        <HeroImg
-          style={{ zIndex: '-1' }}
-          pcAspectRatio={'1920 / 1080'}
-          mobileAspectRatio={'1024 / 1602'}
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
-        />
+        {isMobileTablet && (
+          <img
+            className="topCloud"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/hero_m_cloud.png`}
+            alt=""
+          />
+        )}
+        <div className="heroWrapper">
+          <HeroImg
+            style={{ zIndex: '-1' }}
+            pcAspectRatio={'1920 / 1080'}
+            mobileAspectRatio={'1024 / 1602'}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/${
+              isMobileTablet ? 'hero_m' : 'hero'
+            }.png`}
+          />
+        </div>
       </div>
 
       <div className="relative">

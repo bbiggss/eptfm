@@ -47,8 +47,7 @@ const MudFlat = () => {
           mobileHeight={'375 / 450'}
           isLoaded={isLoaded}
           setIsLoaded={setIsLoaded}
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1.png`}
-          mobileSrc={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/main1_mobile.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/${isMobile ? 'main1_mobile' : 'main1'}.png`}
         />
       </div>
 

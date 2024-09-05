@@ -13,9 +13,13 @@ import PortfolioIntroductionDescription from '../../common/portfolioIntroduction
 import HeroImg from '../../common/Hero/HeroImg';
 import CustomText from './../../common/CustomText';
 import Img from './../../common/Img';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
 
 const Mayor = () => {
   const isMobileTablet = useResponsiveMax1024();
+  const isMobile = useMobile();
+  const isTablet = useTablet();
   return (
     <StyledMayor>
       <div className="fullScreen ellipseWrapper">
@@ -139,7 +143,9 @@ const Mayor = () => {
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_3.png`} />
           <CustomText
             text={
-              isMobileTablet
+              isMobile
+                ? '학습자들은 시장 후보로서 지킬 공약을\n 선택하고, 이를 통해 유권자들에게 지지를 호소할 수 있어요. 공약은 단순한 약속이 아닙니다.\n 유권자들의 꿈을 현실로 만드는 설계도 입니다.\n꿈이 큰 만큼 공약도 멋지게 선택해보세요!'
+                : isTablet
                 ? '학습자들은 시장 후보로서 지킬 공약을 선택하고,\n 이를 통해 유권자들에게 지지를 호소할 수 있어요.\n공약은 단순한 약속이 아닙니다.\n 유권자들의 꿈을 현실로 만드는 설계도 입니다.\n꿈이 큰 만큼 공약도 멋지게 선택해보세요!'
                 : '학습자들은 시장 후보로서 지킬 공약을 선택하고, 이를 통해 유권자들에게 지지를 호소할 수 있어요.\n공약은 단순한 약속이 아닙니다. 유권자들의 꿈을 현실로 만드는 설계도 입니다.\n꿈이 큰 만큼 공약도 멋지게 선택해보세요!'
             }

@@ -13,9 +13,13 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import Img from '../../common/Img';
 import CustomText from '../../common/CustomText';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
 
 const ExploreFreiburg = () => {
   const isMobileTablet = useResponsiveMax1024();
+  const isMobile = useMobile();
+  const isTablet = useTablet();
 
   return (
     <StyledExploreFreiburg>
@@ -37,8 +41,7 @@ const ExploreFreiburg = () => {
           maxwidth={'837px'}
           pcAspectRatio={'837 / 328'}
           mobileAspectRatio={'327 / 129'}
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/main1.png`}
-          mobileSrc={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/main1_m.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/${isMobileTablet ? 'main1_m' : 'main1'}.png`}
         />
       </div>
 
@@ -83,7 +86,11 @@ const ExploreFreiburg = () => {
         <Zigzag>
           <ZigZagImgTexts
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_1.png`}
-            text={'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를 재현했어요!'}
+            text={
+              isMobile
+                ? 'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를\n 재현했어요!'
+                : 'VR 기술을 활용하여 학습자가 실제로\n 프라이부르크를 방문한 것처럼 생생한\n체험을 할 수 있도록 세밀하게 도시를 재현했어요!'
+            }
           />
           <ZigZagImgTexts
             pcMarginTop={'130px'}
@@ -93,7 +100,11 @@ const ExploreFreiburg = () => {
           />
           <ZigZagImgTexts
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_3.png`}
-            text={'학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔 부분이에요.'}
+            text={
+              isMobile
+                ? '학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔\n 부분이에요.'
+                : '학습자가 프라이부르크의 친환경 정책을\n직접 경험하고 이해할 수 있도록 하는 것이\n콘텐츠 개발 과정에서 가장 중점을 둔 부분이에요.'
+            }
           />
           <ZigZagImgTexts
             pcMarginTop={'100px'}

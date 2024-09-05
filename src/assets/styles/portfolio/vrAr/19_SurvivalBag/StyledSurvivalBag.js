@@ -53,7 +53,9 @@ export const StyledSurvivalBag = styled.div`
       white-space: nowrap;
       /* font-size: 20px; */
       font-size: clamp(20px, 5.8vw, 89px);
+      line-height: clamp(26px, 7vw, 90px);
       letter-spacing: -0.02em;
+      text-align: center;
     }
 
     .backImgContainer {

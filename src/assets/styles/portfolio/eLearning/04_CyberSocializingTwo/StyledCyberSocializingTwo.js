@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledCyberSocializingTwo = styled.div`
-  .books {
-    display: none;
-  }
   @media (min-width: 1025px) {
     /* max-width: 1920px;
     margin: auto; */
@@ -17,21 +14,31 @@ export const StyledCyberSocializingTwo = styled.div`
 
     .book {
       position: absolute;
-      left: -337px;
+      left: -282px;
+      right: 337px;
       bottom: -135px;
+
+      max-width: 475px;
+      width: 24.7vw;
     }
 
     .cloud {
       position: absolute;
       right: 81px;
-      bottom: -395px;
+      bottom: clamp(-395px, -20vw, -100px);
+
+      max-width: 580px;
+      width: 30vw;
     }
 
     .books {
       position: absolute;
-      right: -231px;
+      right: clamp(-231px, -12vw, -100px);
       top: -273px;
       z-index: -1;
+
+      max-width: 400px;
+      width: 20vw;
     }
     .cloudPaperPlane {
       position: absolute;
@@ -70,13 +77,26 @@ export const StyledCyberSocializingTwo = styled.div`
       position: absolute;
       width: 141px;
       right: 0;
-      bottom: -162px;
+      bottom: -123px;
       z-index: -1;
     }
     .book,
     .books,
     .cloudPaperPlane {
       display: none;
+    }
+
+    .topCloud {
+      /* display: grid; */
+      position: absolute;
+      right: 0;
+
+      width: 117px;
+      top: -52px;
+      z-index: -1;
+    }
+    .heroWrapper {
+      margin-top: 93px;
     }
   }
 `;

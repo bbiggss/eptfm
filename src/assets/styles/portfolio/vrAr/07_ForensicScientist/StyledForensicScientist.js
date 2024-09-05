@@ -117,6 +117,7 @@ export const StyledForensicScientist = styled.div`
     }
     .powder {
       width: 100%;
+      margin-top: clamp(30px, 8vw, 100px);
     }
     .introduction_text2 {
       color: #767676;

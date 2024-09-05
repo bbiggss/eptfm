@@ -9,6 +9,7 @@ const ZigZagImgTextsBox = styled.div`
 
   p {
     text-align: center;
+    /* white-space: nowrap; */
   }
 
   @media (min-width: 1025px) {

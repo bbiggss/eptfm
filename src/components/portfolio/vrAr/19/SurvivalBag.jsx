@@ -32,7 +32,16 @@ const SurvivalBag = () => {
       </PortfolioTitleWrap>
 
       <div className="fullScreen relative">
-        <p className="mainTitle NanumSquareEB">지진 발생! 올바른 대피 방법은 무엇일까?</p>
+        <p className="mainTitle NanumSquareEB">
+          {isMobileTablet ? (
+            <>
+              지진 발생!
+              <br /> 올바른 대피 방법은 무엇일까?
+            </>
+          ) : (
+            '지진 발생! 올바른 대피 방법은 무엇일까?'
+          )}
+        </p>
         <HeroImg
           pcAspectRatio={'1920 / 900'}
           mobileAspectRatio={'1024 / 1224'}

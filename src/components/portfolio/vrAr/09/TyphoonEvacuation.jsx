@@ -11,10 +11,14 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import CustomText from '../../common/CustomText';
 import Img from '../../common/Img';
+import useMobile from '../../../hooks/useMobile';
+import useTablet from '../../../hooks/useTablet';
 
 const TyphoonEvacuation = () => {
   // const [isLoaded, setIsLoaded] = useState(false);
   const isMobileTablet = useResponsiveMax1024();
+  const isMobile = useMobile();
+  const isTablet = useTablet();
   return (
     <StyledTyphoonEvacuation>
       <Breadcrumb />
@@ -79,7 +83,9 @@ const TyphoonEvacuation = () => {
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/1.png`} />
           <CustomText
             text={
-              isMobileTablet
+              isMobile
+                ? '“태풍 대피요령 알아보기” 콘텐츠 제작을 하며\n 우리는 태풍의 강도와 그에 따른 피해 상황을\n 생생하게 재현하려고 많은 노력을 쏟아\n 부었어요.\n가상의 태풍 상황 속에서 실제 대피 요령을\n 배우며, 안전한 대피 방법을 체험할 수 있도록\n 구성했답니다!'
+                : isTablet
                 ? '“태풍 대피요령 알아보기” 콘텐츠 제작을 하며\n 우리는 태풍의 강도와 그에 따른 피해 상황을\n 생생하게 재현하려고 많은 노력을 쏟아 부었어요.\n가상의 태풍 상황 속에서 실제 대피 요령을\n 배우며, 안전한 대피 방법을 체험할 수 있도록\n 구성했답니다!'
                 : '“태풍 대피요령 알아보기” 콘텐츠 제작을 하며 우리는 태풍의 강도와\n그에 따른 피해 상황을 생생하게 재현하려고 많은 노력을 쏟아 부었어요.\n가상의 태풍 상황 속에서 실제 대피 요령을 배우며, 안전한 대피 방법을 체험할 수 있도록 구성했답니다!'
             }
@@ -99,7 +105,9 @@ const TyphoonEvacuation = () => {
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/3.png`} />
           <CustomText
             text={
-              isMobileTablet
+              isMobile
+                ? '곤파스는 정말 강력한 태풍이었어요.\n 너무 강력해서 전봇대가 쓰러질 정도였어요.\n매미는 그야말로 초강력! 도시 전체가\n 휘청거렸죠.'
+                : isTablet
                 ? '곤파스는 정말 강력한 태풍이었어요.\n 너무 강력해서 전봇대가 쓰러질 정도였어요.\n매미는 그야말로 초강력! 도시 전체가 휘청거렸죠.'
                 : '곤파스는 정말 강력한 태풍이었어요. 너무 강력해서 전봇대가 쓰러질 정도였어요.\n매미는 그야말로 초강력! 도시 전체가 휘청거렸죠.'
             }
@@ -119,7 +127,9 @@ const TyphoonEvacuation = () => {
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/09_TyphoonEvacuation/5.png`} />
           <CustomText
             text={
-              isMobileTablet
+              isMobile
+                ? '자전거나 입간판 처럼 날아갈 수 있는 물건을\n 단단히 묶어 고정하고 쓰러진 전봇대,\n 전깃줄 등 감전의 위험이 있는 사물들 만지지\n 않기 그리고 낙하물이 있는 아래로 걷지 않기 등\n 외부 대피 방안에 대해 자연스럽게 학습할 수 \n있어요.'
+                : isTablet
                 ? '자전거나 입간판 처럼 날아갈 수 있는 물건을\n 단단히 묶어 고정하고 쓰러진 전봇대,\n 전깃줄 등 감전의 위험이 있는 사물들 만지지 않기\n그리고 낙하물이 있는 아래로 걷지 않기 등 외부\n 대피 방안에 대해 자연스럽게 학습할 수 있어요.'
                 : '자전거나 입간판 처럼 날아갈 수 있는 물건을 단단히 묶어 고정하고\n쓰러진 전봇대, 전깃줄 등 감전의 위험이 있는 사물들 만지지 않기\n그리고 낙하물이 있는 아래로 걷지 않기 등 외부 대피 방안에 대해 자연스럽게 학습할 수 있어요.'
             }

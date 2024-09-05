@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
@@ -13,7 +13,7 @@ import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import Img from '../../common/Img';
 
 const KoreanWar = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
@@ -119,7 +119,7 @@ const KoreanWar = () => {
           <CustomText
             text={
               isMobile
-                ? '‘환상의 방’은 이중섭의 작품 중에서도 특히나\n 독특한 분위기를 자아내는 작품이에요.\n작품 속의 몽환적인 분위기를 디지털 공간에서도\n 그대로 재현했어요. 전쟁과 현실의 고통에서\n 잠시 벗어나고 싶은 사람들의 마음을 살펴보세요.'
+                ? '‘환상의 방’은 이중섭의 작품 중에서도 특히나\n 독특한 분위기를 자아내는 작품이에요.\n작품 속의 몽환적인 분위기를 디지털 공간에서도\n 그대로 재현했어요. 전쟁과 현실의 고통에서\n 잠시 벗어나고 싶은 사람들의 마음을\n 살펴보세요.'
                 : isTablet
                 ? '‘환상의 방’은 이중섭의 작품 중에서도 특히나\n 독특한 분위기를 자아내는 작품이에요.\n작품 속의 몽환적인 분위기를 디지털 공간에서도\n 그대로 재현했어요. 전쟁과 현실의 고통에서\n 잠시 벗어나고 싶은 사람들의 마음을 살펴보세요.'
                 : '‘환상의 방’은 이중섭의 작품 중에서도 특히나 독특한 분위기를 자아내는 작품이에요.\n작품 속의 몽환적인 분위기를 디지털 공간에서도 그대로 재현했어요.\n전쟁과 현실의 고통에서 잠시 벗어나고 싶은 사람들의 마음을 살펴보세요.'
@@ -131,7 +131,7 @@ const KoreanWar = () => {
           <CustomText
             text={
               isMobile
-                ? '아이들의 순수한 모습과 밝은 분위기를\n 표현하기 위해 작품의 색채와 질감을 세심하게\n 재현했어요. 가장 중요한 포인트 중 하나는,\n 학습자들이 이 방에서 느낄 수 있는 감정적 교감을\n극대화 하는 것이었어요. 그 시대의 아이들이\n 지금도 이곳에서 놀고 있는 것 같은\n 느낌을 주고자 노력했답니다!'
+                ? '아이들의 순수한 모습과 밝은 분위기를\n 표현하기 위해 작품의 색채와 질감을 세심하게\n 재현했어요. 가장 중요한 포인트 중 하나는,\n 학습자들이 이 방에서 느낄 수 있는 감정적\n 교감을 극대화 하는 것이었어요.\n 그 시대의 아이들이  지금도 이곳에서\n 놀고 있는 것 같은 느낌을 주고자 노력했답니다!'
                 : isTablet
                 ? '아이들의 순수한 모습과 밝은 분위기를 표현하기 위해\n 작품의 색채와 질감을 세심하게 재현했어요.\n 가장 중요한 포인트 중 하나는, 학습자들이 이 방에서\n 느낄 수 있는 감정적 교감을 극대화 하는 것이었어요.\n 그 시대의 아이들이 지금도 이곳에서 놀고 있는 것 같은\n 느낌을 주고자 노력했답니다!'
                 : '아이들의 순수한 모습과 밝은 분위기를 표현하기 위해 작품의 색채와 질감을 세심하게 재현했어요.\n가장 중요한 포인트 중 하나는, 학습자들이 이 방에서 느낄 수 있는 감정적 교감을\n극대화 하는 것이었어요. 그 시대의 아이들이 지금도 이곳에서 놀고 있는 것 같은 느낌을 주고자 노력했답니다!'

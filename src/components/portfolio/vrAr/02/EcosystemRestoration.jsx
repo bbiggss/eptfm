@@ -25,16 +25,8 @@ const EcosystemRestoration = () => {
             title={'미션! 생태계를 복원하라'}
           /> */}
 
-          <PortfolioTitleWrap
-            $isLoaded={isLoaded}
-            pcMarginBottom={'80px'}
-            mobileMarginTop={'50px'}
-            mobileMarginBottom={'40px'}
-          >
-            <PortfolioOrganization
-              style={{ color: '#999999', fontFamily: 'NanumSquareB' }}
-              organization={'한국교육학술정보원'}
-            />
+          <PortfolioTitleWrap $isLoaded={isLoaded} pcMarginBottom={'80px'} mobileMarginTop={'50px'} mobileMarginBottom={'40px'}>
+            <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
             <PortfolioFieldTitle
               style={{
                 color: '#48c2c5',
@@ -54,8 +46,7 @@ const EcosystemRestoration = () => {
             maxwidth={'1260px'}
             isLoaded={isLoaded}
             setIsLoaded={setIsLoaded}
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/1.png`}
-            mobileSrc={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/1_mobile.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/${isMobile ? '1_mobile' : '1'}.png`}
           />
         </div>
 
@@ -130,9 +121,7 @@ const EcosystemRestoration = () => {
           </div>
 
           <WidthImgOneTextsOne>
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/2.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/2.png`} />
             <ProjectDescription
               textPosition={'right'}
               text={
@@ -150,14 +139,10 @@ const EcosystemRestoration = () => {
                   : `책상 위에 펼쳐진 옐로스톤 국립공원과 호주 생태계를\n 증강현실(AR)로 만날 수 있어요. 다양한 생물을 풀어놓고,\n토끼 수를 조절하며 생태계 평형을 회복시켜 보세요.\n자연을 사랑하는 우리, 오늘은 가상 현실로도 그 사랑을\n실천해 보아요!`
               }
             />
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/3.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/3.png`} />
           </WidthImgOneTextsOne>
           <WidthImgOneTextsOne>
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/4.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/4.png`} />
             <ProjectDescription
               textPosition={'right'}
               text={
@@ -175,14 +160,10 @@ const EcosystemRestoration = () => {
                   : `‘미션! 생태계를 복원하라’ 콘텐츠를 개발하면서 우리팀은\n실제 옐로스톤 프로젝트의 방대한 데이터를 분석하고 \n적용하는 데 많은 노력을 기울였어요. \n제작 과정은 도전적이었지만, 이를 통해 진정성 있는 교육\n 콘텐츠를 제공할 수 있게 되었죠. 열정과 헌신이 담긴 AR\n 교육 콘텐츠를 통해 자연의 복잡함과 아름다움을 이해해\n보세요.`
               }
             />
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/5.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/5.png`} />
           </WidthImgOneTextsOne>
           <WidthImgOneTextsOne>
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/6.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/6.png`} />
             <ProjectDescription
               textPosition={'right'}
               text={
@@ -200,9 +181,7 @@ const EcosystemRestoration = () => {
                   : `생태계 평행에 영향을 주는 자연적인 요인과 인위적인 \n요인을 분류하는 퀴즈로 자연 환경 파괴, 산업 발달에 따른\n 오염, 과도한 사냥 등으로 생물 다양성이 감소되어 환경 \n변화가 생태계의 평형에 영향을 주게 된다는 결론을 통해\n 더 깊이 있는 이해를 도모해요. `
               }
             />
-            <Img
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/7.png`}
-            />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/02_EcosystemRestoration/7.png`} />
           </WidthImgOneTextsOne>
         </div>
       </StyledEcosystemRestoration>

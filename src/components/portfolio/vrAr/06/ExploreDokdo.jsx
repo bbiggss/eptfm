@@ -40,8 +40,7 @@ const ExploreDokdo = () => {
         <HeroImg
           pcHeight={'1920 / 900'}
           mobileHeight={'375 / 450'}
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main.png`}
-          mobileSrc={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/main_m.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/06_ExploreDokdo/${isMobTab ? 'main_m' : 'main'}.png`}
         />
       </div>
 

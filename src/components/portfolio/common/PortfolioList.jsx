@@ -173,7 +173,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img3.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '사이버어울림(기술·가정, 진로와 직업, 한문)',
+          pfItemSmallTitle: `사이버어울림(기술·가정, 진로와 직업, ${isMobile ? '\n' : ''} 한문)`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/List/list2_img4.png`,
