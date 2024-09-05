@@ -172,13 +172,6 @@ const ExploreFreiburg = () => {
             }
           />
         </WidthOneContent>
-        <div className="sideImgWrapper">
-          <img
-            className="skyblueCharacter"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/skyblueCharacter.png`}
-            alt=""
-          />
-        </div>
         <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_3.png`} />
           <CustomText
@@ -189,6 +182,13 @@ const ExploreFreiburg = () => {
             }
           />
         </WidthOneContent>
+        <div className="sideImgWrapper">
+          <img
+            className="skyblueCharacter"
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/skyblueCharacter.png`}
+            alt=""
+          />
+        </div>
         <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_4.png`} />
           <CustomText

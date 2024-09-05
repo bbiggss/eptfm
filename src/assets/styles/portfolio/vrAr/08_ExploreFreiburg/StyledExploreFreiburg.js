@@ -43,6 +43,40 @@ export const StyledExploreFreiburg = styled.div`
     }
   }
 
+  @media (min-width: 1500px) {
+    .skyblueCharacter {
+      position: absolute;
+      right: clamp(1px, 5vw, 100px);
+      bottom: 300px;
+      width: 20vw;
+      max-width: 313px !important;
+    }
+    .greenCharacter {
+      position: absolute;
+      left: 79px;
+      bottom: 255px;
+      width: 20vw;
+      max-width: 313px !important;
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1499px) {
+    .skyblueCharacter {
+      position: absolute;
+      right: clamp(1px, 5vw, 100px);
+      bottom: 0px;
+      width: 20vw;
+      max-width: 313px !important;
+    }
+    .greenCharacter {
+      position: absolute;
+      left: 79px;
+      bottom: 0;
+      width: 20vw;
+      max-width: 313px !important;
+    }
+  }
+
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: auto;
@@ -61,26 +95,13 @@ export const StyledExploreFreiburg = styled.div`
         width: 20vw;
         max-width: 280px;
       }
-      .skyblueCharacter {
-        position: absolute;
-        right: 0;
-        top: 101px;
-        width: 20vw;
-        max-width: 313px;
-      }
-      .greenCharacter {
-        position: absolute;
-        left: 79px;
-        bottom: 255px;
-        width: 20vw;
-        max-width: 313px;
-      }
     }
 
     .customMaxWidth785 img {
       max-width: 785px;
     }
   }
+
   @media (max-width: 1024px) {
     .heroWrapper {
       margin: 0 var(--mobile-margin);
@@ -90,8 +111,9 @@ export const StyledExploreFreiburg = styled.div`
     .topText {
       color: #292929;
       text-align: center;
-      font-size: 18px;
-      line-height: 26px;
+      font-size: clamp(18px, 4.8vw, 100px);
+      /* line-height: 26px; */
+      line-height: clamp(26px, 7vw, 90px);
 
       padding-bottom: 80px;
     }
@@ -118,7 +140,8 @@ export const StyledExploreFreiburg = styled.div`
       .skyblueCharacter {
         position: absolute;
         right: 14px;
-        top: 293px;
+        /* top: 293px; */
+        bottom: 0;
         width: 30vw;
         max-width: 313px;
       }

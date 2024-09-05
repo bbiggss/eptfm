@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // import { portfolioBg2, portfolioBg3 } from '../../images';
 
-export const PortfolioBox = styled.div`
+export const StyledMainPortfolio = styled.div`
   .englishFont,
   #portfolioText1 span {
     font-family: 'NanumSquareEB';

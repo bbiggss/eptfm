@@ -108,7 +108,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     .introductionArea {
       position: relative;
       margin-top: 165px;
-      margin-bottom: 32px;
+      margin-bottom: 56px;
       text-align: center;
       span {
         color: #292929;
@@ -124,7 +124,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         z-index: -1;
         width: 112px;
         bottom: -33px;
-        margin-left: -30px;
+        margin-left: -36px;
         /* margin-left: clamp(68px, 18vw, 100px); */
       }
     }

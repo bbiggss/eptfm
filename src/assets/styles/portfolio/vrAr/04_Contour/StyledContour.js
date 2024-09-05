@@ -29,7 +29,7 @@ export const StyledContour = styled.div`
     .introductionArea {
       margin: 0 var(--mobile-margin);
       margin-top: 80px;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
       /* overflow: hidden; */
       img {
         width: 100%;

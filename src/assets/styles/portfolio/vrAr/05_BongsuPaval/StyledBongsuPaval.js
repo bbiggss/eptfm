@@ -96,6 +96,7 @@ export const BongsuPavalBox = styled.div`
       }
     }
   }
+
   @media (max-width: 1024px) {
     .introudctionWrapper {
       white-space: nowrap;
@@ -127,8 +128,9 @@ export const BongsuPavalBox = styled.div`
     .heroWrapper {
       background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/main_m.png);
       background-size: cover; /* 또는 contain */
-      aspect-ratio: 375 / 746;
+      /* aspect-ratio: 375 / 746; */
       width: 100%;
+      padding-bottom: 80px;
     }
 
     .beaconWrapper {

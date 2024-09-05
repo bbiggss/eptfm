@@ -160,7 +160,7 @@ export const HeaderBox = styled.div`
 
       #logoImg {
         min-width: 98px;
-        width: 22vw;
+        width: 20vw;
         /* height: 11px; */
         position: relative;
         z-index: 10;
@@ -174,7 +174,7 @@ export const HeaderBox = styled.div`
         transform: translateY(-50%);
 
         min-width: 18px;
-        width: 4vw;
+        width: 3.5vw;
       }
       /* #dropDownImg {
         width: 18px;
@@ -189,7 +189,7 @@ export const HeaderBox = styled.div`
 
         /* min-width: 23px; */
         min-width: 20.8px;
-        width: 4.7vw;
+        width: 4.2vw;
       }
 
       ul {

@@ -58,7 +58,7 @@ const StarsCharacteristics = () => {
         <div className="heroImgWrapper">
           <HeroImg
             pcAspectRatio={'1920 / 980'}
-            mobileAspectRatio={'375 / 710'}
+            mobileAspectRatio={'1024 / 1779'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
           />
         </div>

@@ -1,12 +1,12 @@
 import React from 'react';
-import { PortfolioBox } from '../../assets/styles/main/portfolio.styled';
+import { StyledMainPortfolio } from '../../assets/styles/main/portfolio.styled';
 import PfFieldButton from './PfFieldButton';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const Portfolio = () => {
   const isMobileTablet = useResponsiveMax1024();
   return (
-    <PortfolioBox id="portfolio">
+    <StyledMainPortfolio id="portfolio">
       <div id="portfolioImgs">
         <img
           className="dinosaur"
@@ -38,7 +38,7 @@ const Portfolio = () => {
           <PfFieldButton title={'R&D'} link={'portfolio/R&D'} />
         </div>
       </div>
-    </PortfolioBox>
+    </StyledMainPortfolio>
   );
 };
 
