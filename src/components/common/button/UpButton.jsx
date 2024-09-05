@@ -52,7 +52,7 @@ const UpButton = () => {
 
       if (window.innerWidth <= 767) {
         // 모바일 환경일 때
-        if (scrollTop + windowHeight >= documentHeight) {
+        if (scrollTop + windowHeight >= documentHeight - 50) {
           setTopBtnView('');
         } else {
           setTopBtnView('displayNone');

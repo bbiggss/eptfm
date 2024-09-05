@@ -56,9 +56,14 @@ export const StyledChemicalSafety = styled.div`
 
         /* display: grid; */
         /* grid-template-columns: repeat(5, auto); */
-        gap: 0 20px;
-
+        /* gap: 0 20px; */
+        text-align: center;
         margin: 0 auto;
+
+        img {
+          max-width: 610px;
+          width: 31vw;
+        }
       }
 
       .grid {
@@ -114,23 +119,25 @@ export const StyledChemicalSafety = styled.div`
         padding-top: 80px;
         padding-bottom: 60px;
 
-        width: 315px;
-
         /* display: grid; */
-        justify-content: center;
+        /* justify-content: center; */
         /* grid-template-columns: repeat(5, auto); */
-        gap: 0 10px;
+        /* gap: 0 10px; */
 
-        margin: 0 auto;
+        /* margin: 0 auto; */
+        text-align: center;
         img {
-          width: 100%;
+          /* width: 100%; */
+          width: 84vw;
+          min-width: 315px;
         }
       }
 
       .grid {
         display: grid;
         grid-template-columns: repeat(1, auto);
-        gap: 24px;
+        /* gap: 24px; */
+        gap: 6.4vw;
         width: 80%;
         img {
           width: 100%;

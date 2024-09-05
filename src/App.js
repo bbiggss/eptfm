@@ -123,6 +123,7 @@ function App() {
     };
   }, [location]);
 
+  // 이중스크롤 막기
   useEffect(() => {
     if (portfolioListModalStatus || modalStatus) {
       document.body.style.overflow = 'hidden';

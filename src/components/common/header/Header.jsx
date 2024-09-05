@@ -1,46 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HeaderBox } from '../../../assets/styles/common/header.styled';
 import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
-
-const StyledDropDown = styled.div`
-  @media (min-width: 1025px) {
-    display: none;
-  }
-  @media (max-width: 1024px) {
-    display: ${(props) => (props.$show ? 'block' : 'none')};
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-    li * {
-      color: #292929;
-      font-family: 'Roboto-Medium';
-      font-size: 20px;
-    }
-    li {
-      margin-bottom: 30px;
-    }
-    li:first-child {
-      margin-top: 30px;
-    }
-    .portfolioLi a {
-      display: block;
-      /* width: 200px; */
-      height: 36px;
-      line-height: 36px;
-
-      color: #767676;
-      font-size: 16px;
-    }
-    .portfolioLi a:nth-child(2) {
-      margin-top: 8px;
-    }
-  }
-`;
+import { StyledDropDown } from '../../../assets/styles/common/dropdown.styled';
 
 const Header = (data) => {
   const isMobTab = useResponsiveMax1024();
@@ -60,6 +23,14 @@ const Header = (data) => {
     }
     // alert(data.portfolioListModalStatus);
   };
+
+  useEffect(() => {
+    if (showDropDown) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [showDropDown]);
 
   return (
     <>
@@ -122,6 +93,7 @@ const Header = (data) => {
           </li>
           <NavBox setShowDropDown={setShowDropDown} title={'CONTACT US'} link={'contactUs'} activeLink={data.activeLink} />
         </ul>
+        <div className="dim"></div>
       </StyledDropDown>
     </>
   );

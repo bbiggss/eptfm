@@ -125,12 +125,14 @@ export const PortfolioBox = styled.div`
 
       & #portfolioText2 {
         font-size: clamp(16px, 4.2vw, 100px);
-        font-weight: 400;
+        line-height: clamp(24px, 6.4vw, 50vw);
         text-align: left;
       }
     }
 
     #portfolioLinkImg {
+      /* margin-top: 60px; */
+      margin-top: 16vw;
       margin-bottom: 134px;
       width: 100%;
     }
@@ -165,7 +167,7 @@ export const PortfolioBox = styled.div`
       margin-bottom: 30px;
     }
     #portfolioLinkImg {
-      margin-top: 200px;
+      /* margin-top: 200px; */
     }
     #portfolioLinkImg {
       .pfFieldTag {
@@ -178,7 +180,7 @@ export const PortfolioBox = styled.div`
   @media (max-width: 767px) {
     background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     #portfolioTitle {
       padding-top: 80px;
       margin-bottom: 30px;
@@ -187,7 +189,7 @@ export const PortfolioBox = styled.div`
       margin-bottom: 10px;
     }
     #portfolioLinkImg {
-      margin-top: 150px;
+      /* margin-top: 150px; */
     }
   }
 `;
