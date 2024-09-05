@@ -157,7 +157,7 @@ export const BongsuPavalBox = styled.div`
       margin: 80px 30px;
     }
     .projectDescriptions {
-      margin: 0 30px;
+      /* margin: 0 30px; */
       margin-bottom: 80px;
       &:last-child {
         margin-bottom: 141px;

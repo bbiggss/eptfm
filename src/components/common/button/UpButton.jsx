@@ -50,7 +50,7 @@ const UpButton = () => {
 
       const documentHeight = document.documentElement.scrollHeight;
 
-      const fixedHeaderHeight = 200;
+      const fixedHeaderHeight = 100;
 
       if (window.innerWidth <= 767) {
         // 모바일 환경일 때
