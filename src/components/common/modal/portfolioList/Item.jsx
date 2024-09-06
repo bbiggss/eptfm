@@ -25,6 +25,9 @@ const StyledItem = styled.li`
     list-style: none;
 
     margin-bottom: 10px;
+    a {
+      color: #ffffff;
+    }
 
     p {
       font-size: 15px;
@@ -54,24 +57,22 @@ const StyledItem = styled.li`
     }
   }
   @media (min-width: 1025px) and (max-width: 1556px) {
-    width: 460px;
-    /* width: 23.9vw; */
     position: relative;
-
+    width: 460px;
     color: #ffffff;
-    text-align: left;
     font-family: 'NanumSquareB';
     border-bottom: 1px solid transparent;
-
     list-style: none;
-
     margin-bottom: 10px;
 
+    a {
+      color: #ffffff;
+    }
+
     p {
-      font-size: 15px;
+      font-size: 18px;
       letter-spacing: -0.02em;
       width: 420px;
-      /* width: 21.8vw; */
       margin: 5px 0;
       white-space: nowrap;
     }
@@ -89,6 +90,9 @@ const StyledItem = styled.li`
       border-color: #48c2c5;
       border-width: 0px 0px 1px 0px;
       color: #48c2c5;
+      p {
+        color: #48c2c5;
+      }
       .move {
         display: inline;
       }
@@ -98,15 +102,16 @@ const StyledItem = styled.li`
     min-width: 315px;
     width: 84vw;
     position: relative;
-
-    color: #ffffff;
     text-align: left;
     font-family: 'NanumSquareB';
     border-bottom: 1px solid transparent;
-
     list-style: none;
 
     margin-bottom: 16px;
+
+    a {
+      color: #ffffff;
+    }
 
     p {
       font-size: clamp(16px, 4.2vw, 100px);
@@ -129,6 +134,9 @@ const StyledItem = styled.li`
       border-color: #48c2c5;
       color: #48c2c5;
       border-width: 0px 0px 1px 0px;
+      p {
+        color: #48c2c5;
+      }
       .move {
         display: inline;
       }
@@ -138,12 +146,12 @@ const StyledItem = styled.li`
 
 const Item = ({ name, setPortfolioListModalStatus, link }) => {
   return (
-    <Link onClick={() => setPortfolioListModalStatus(false)} to={link}>
-      <StyledItem>
+    <StyledItem>
+      <Link onClick={() => setPortfolioListModalStatus(false)} to={link}>
         <p>{renderTextWithLineBreaks(name)}</p>
         <img className="move" src={`${process.env.PUBLIC_URL}/assets/images/common/move.png`} alt="" />
-      </StyledItem>
-    </Link>
+      </Link>
+    </StyledItem>
   );
 };
 

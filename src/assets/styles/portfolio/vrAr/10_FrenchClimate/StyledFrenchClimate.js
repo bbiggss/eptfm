@@ -21,7 +21,9 @@ export const StyledFrenchClimateLifestyle = styled.div`
         margin-top: 33px;
       }
       p:last-child {
-        margin-top: 15px;
+        margin-top: 20px;
+        font-size: clamp(16px, 1.25vw, 26px);
+        line-height: clamp(10px, 2vw, 40px);
       }
     }
   }

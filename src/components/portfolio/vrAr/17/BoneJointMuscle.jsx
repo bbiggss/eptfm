@@ -16,11 +16,13 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import Img from './../../common/Img';
 import CustomText from '../../common/CustomText';
+import useLongTablet from './../../../hooks/useTabletMax1300';
 
 const BoneJointMuscle = () => {
   // const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useMobile();
   const isTablet = useTablet();
+  const isLongTablet = useLongTablet();
   const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledBoneJointMuscle>
@@ -144,6 +146,8 @@ const BoneJointMuscle = () => {
                 ? 'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을\n 배워볼까요?'
                 : isTablet
                 ? 'AR로 배우는 관절 건강 비법! 관절을 보호하고\n 건강하게 유지하는 방법을 배워볼까요?'
+                : isLongTablet
+                ? 'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을\n 배워볼까요?'
                 : 'AR로 배우는 관절 건강 비법!\n관절을 보호하고 건강하게 유지하는 방법을 배워볼까요?'
             }
           />

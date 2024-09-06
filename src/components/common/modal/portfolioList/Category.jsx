@@ -10,7 +10,7 @@ const StyledCategory = styled.p`
     position: relative;
 
     margin-top: ${(props) => {
-      if (props.$PC_eLearningMarginTop) return '67px';
+      if (props.$PC_eLearningMarginTop) return '102px';
       return '0px';
     }};
     margin-bottom: 26px;
@@ -22,8 +22,7 @@ const StyledCategory = styled.p`
     font-size: 26px;
     position: relative;
 
-    margin-top: 26px;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
   @media (max-width: 1024px) {
     color: #ffffff;
@@ -33,7 +32,6 @@ const StyledCategory = styled.p`
     font-size: clamp(26px, 6.9vw, 100px);
     position: relative;
 
-    margin-top: 80px;
     margin-bottom: 30px;
   }
 `;

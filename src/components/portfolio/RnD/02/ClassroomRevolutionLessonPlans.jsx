@@ -12,10 +12,12 @@ import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import { StyledClassroomRevolutionLessonPlans } from '../../../../assets/styles/portfolio/R&D/02_ClassroomRevolutionLessonPlans/StyledClassroomRevolutionLessonPlans';
 import Img from '../../common/Img';
 import WidthImgTwo from './../../common/WidthImgTwo';
+import useLongTablet from '../../../hooks/useTabletMax1300';
 
 const ClassroomRevolutionLessonPlans = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
+  const isLongTablet = useLongTablet();
   const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledClassroomRevolutionLessonPlans>
@@ -61,6 +63,8 @@ const ClassroomRevolutionLessonPlans = () => {
               ? "우리 팀은 '교사가 이끄는 교실혁명'이라는\n 주제의 강의교안을 개발하였습니다.\n 이 강의교안은 AI 기술을 활용하여 학생들에게\n 맞춤형 교육을 제공하며, 교사들이\n 더욱 효과적으로 가르칠 수 있도록 지원합니다."
               : isTablet
               ? "우리 팀은 '교사가 이끄는 교실혁명'이라는\n 주제의 강의교안을 개발하였습니다.\n 이 강의교안은 AI 기술을 활용하여 학생들에게\n 맞춤형 교육을 제공하며, 교사들이\n 더욱 효과적으로 가르칠 수 있도록 지원합니다."
+              : isLongTablet
+              ? "우리 팀은 '교사가 이끄는 교실혁명'이라는 주제의 강의교안을 개발하였습니다.\n 이 강의교안은 AI 기술을 활용하여 학생들에게 맞춤형 교육을 제공하며,\n 교사들이 더욱 효과적으로 가르칠 수 있도록 지원합니다."
               : "우리 팀은 '교사가 이끄는 교실혁명'이라는 주제의 강의교안을 개발하였습니다. 이 강의교안은\nAI 기술을 활용하여 학생들에게 맞춤형 교육을 제공하며, 교사들이 더욱 효과적으로 가르칠 수 있도록 지원합니다."
           }
         />
@@ -90,6 +94,8 @@ const ClassroomRevolutionLessonPlans = () => {
               ? '이 강의교안을 만들기 위해 우리 팀은\n AI 알고리즘을 통해 수많은 학습 데이터를\n 분석하고, 이를 바탕으로 최적화된 학습 경로를\n 제시하는 데 많은 시간을 투자했습니다. \n\n우리의 목표는 학생들이 단순히 지식을\n 습득하는 것을 넘어서, 문제 해결과\n 창의적 사고를 촉진하는 데에 있습니다.'
               : isTablet
               ? '이 강의교안을 만들기 위해 우리 팀은\n AI 알고리즘을 통해 수많은 학습 데이터를\n 분석하고, 이를 바탕으로 최적화된 학습 경로를\n 제시하는 데 많은 시간을 투자했습니다. \n\n우리의 목표는 학생들이 단순히 지식을\n 습득하는 것을 넘어서, 문제 해결과\n 창의적 사고를 촉진하는 데에 있습니다.'
+              : isLongTablet
+              ? '이 강의교안을 만들기 위해 우리 팀은\n AI 알고리즘을 통해 수많은 학습 데이터를\n 분석하고, 이를 바탕으로 최적화된 학습 경로를\n 제시하는 데 많은 시간을 투자했습니다. \n\n우리의 목표는 학생들이 단순히 지식을 습득하는\n 것을 넘어서, 문제 해결과 창의적 사고를\n 촉진하는 데에 있습니다.'
               : '이 강의교안을 만들기 위해 우리 팀은 AI 알고리즘을 통해 \n수많은 학습 데이터를 분석하고, 이를 바탕으로 최적화된 \n학습 경로를 제시하는 데 많은 시간을 투자했습니다. \n\n우리의 목표는 학생들이 단순히 지식을 습득하는 것을 \n넘어서, 문제 해결과 창의적 사고를 촉진하는 데에 있습니다.'
           }
         />

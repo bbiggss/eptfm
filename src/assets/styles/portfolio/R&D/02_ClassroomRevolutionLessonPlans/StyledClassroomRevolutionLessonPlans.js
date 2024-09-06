@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledClassroomRevolutionLessonPlans = styled.div`
   @media (min-width: 1025px) and (max-width: 1300px) {
     .introductionArea2 p {
-      font-size: 15px;
+      font-size: 20px;
       line-height: 2vw;
     }
     .robotImg1 {

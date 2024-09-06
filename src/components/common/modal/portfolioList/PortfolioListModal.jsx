@@ -1,11 +1,14 @@
 import React from 'react';
+import CategoryUl from './CategoryUl';
 import Category from './Category';
 import Item from './Item';
 import { StyledPortfolioListModal } from '../../../../assets/styles/common/portfolioListModal';
 import useResponsiveMax1024 from './../../../hooks/useResponsiveMax1024';
+import useLongTablet from '../../../hooks/useTabletMax1300';
 
 const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
   const isMobileTablet = useResponsiveMax1024();
+  const isLongTablet = useLongTablet();
   return (
     <StyledPortfolioListModal>
       <div className="modalBackground"></div>
@@ -19,7 +22,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
         />
 
         <div className="gridWrapper">
-          <ul className="section">
+          <CategoryUl>
             <Category category={'VR/AR'} />
             <Item
               name={'AR I 갯벌은 어떤 곳일까?'}
@@ -102,7 +105,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기'}
             />
 
-            {isMobileTablet && (
+            {(isMobileTablet || isLongTablet) && (
               <>
                 <Item
                   name={`AR I 뼈, 관절, 근육! 우리 몸을 움직이는 ${isMobileTablet ? '\n' : ''} 세박자`}
@@ -126,10 +129,12 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
                 />
               </>
             )}
-          </ul>
-          <ul className="section">
-            {!isMobileTablet && (
+          </CategoryUl>
+          <CategoryUl>
+            {/* pc 해상도 */}
+            {!(isMobileTablet || isLongTablet) && (
               <>
+                <div className="customMarginTop"></div>
                 <Item
                   name={'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
                   setPortfolioListModalStatus={setPortfolioListModalStatus}
@@ -193,16 +198,43 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/e-Learning/위탁모를 위한 양육 길잡이'}
             />
-          </ul>
-          <ul className="section">
-            <Category category={'R&D'} />
-            <Item
-              name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobileTablet ? '\n' : ''} 통한 더 나은 선택`}
-              setPortfolioListModalStatus={setPortfolioListModalStatus}
-              link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
-            />
-            <Item name={'교실혁명 강의교안'} setPortfolioListModalStatus={setPortfolioListModalStatus} link={'/portfolio/R&D/교실혁명 강의교안'} />
-          </ul>
+
+            {/* 가로 태블릿 */}
+            {isLongTablet && (
+              <>
+                <Category style={{ marginTop: '80px' }} category={'R&D'} />
+                <Item
+                  name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobileTablet ? '\n' : ''} 통한 더 나은 선택`}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
+                />
+                <Item
+                  name={'교실혁명 강의교안'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/R&D/교실혁명 강의교안'}
+                />
+              </>
+            )}
+          </CategoryUl>
+
+          {/* pc해상도 */}
+          {!isLongTablet && (
+            <>
+              <CategoryUl last>
+                <Category category={'R&D'} />
+                <Item
+                  name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobileTablet ? '\n' : ''} 통한 더 나은 선택`}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
+                />
+                <Item
+                  name={'교실혁명 강의교안'}
+                  setPortfolioListModalStatus={setPortfolioListModalStatus}
+                  link={'/portfolio/R&D/교실혁명 강의교안'}
+                />
+              </CategoryUl>
+            </>
+          )}
         </div>
       </div>
     </StyledPortfolioListModal>

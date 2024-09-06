@@ -22,22 +22,24 @@ const KoreanWar = () => {
       <div className="fullScreen heroArea relative">
         <Breadcrumb style={{ position: 'absolute' }} />
 
-        <PortfolioTitleWrap
-          pcMarginTop={'180px'}
-          mobileMarginTop={'50px'}
-          style={{
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
-          }}
-        >
-          <PortfolioOrganization style={{ color: '#292929', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
-          <PortfolioFieldTitle
-            style={{ color: '#292929', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }}
-            field={'VR'}
-            title={isMobileTablet ? '이중섭 작품을 통해\n 알아보는 6·25 전쟁' : '이중섭 작품을 통해 알아보는 6·25 전쟁'}
-          />
-        </PortfolioTitleWrap>
+        <div className="titleWrapper">
+          <PortfolioTitleWrap
+            // pcMarginTop={'180px'}
+            mobileMarginTop={'50px'}
+            style={{
+              position: 'absolute',
+              left: '50%',
+              transform: 'translateX(-50%)',
+            }}
+          >
+            <PortfolioOrganization style={{ color: '#292929', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
+            <PortfolioFieldTitle
+              style={{ color: '#292929', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }}
+              field={'VR'}
+              title={isMobileTablet ? '이중섭 작품을 통해\n 알아보는 6·25 전쟁' : '이중섭 작품을 통해 알아보는 6·25 전쟁'}
+            />
+          </PortfolioTitleWrap>
+        </div>
 
         <div className="gridWrapper">
           <div className="customTextWrapper">

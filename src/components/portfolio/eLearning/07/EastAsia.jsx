@@ -35,7 +35,7 @@ const EastAsia = () => {
             <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'처음 만나는 동아시아사'} />
           </PortfolioTitleWrap>
         ) : (
-          <PortfolioTitleWrap style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }} pcMarginTop={'95px'}>
+          <PortfolioTitleWrap style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }} pcMarginTop={'4.6vw'}>
             <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareEB' }} organization={'동북아역사재단'} />
             <PortfolioFieldTitle style={{ color: '#FFFFFF', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'처음 만나는 동아시아사'} />
           </PortfolioTitleWrap>

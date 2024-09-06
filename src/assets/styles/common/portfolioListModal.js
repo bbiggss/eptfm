@@ -43,46 +43,6 @@ export const StyledPortfolioListModal = styled.div`
       grid-template-columns: repeat(3, 460px);
       padding: 0;
       gap: 88px;
-      .section {
-        width: 100%;
-        max-width: 460px;
-        a {
-          text-decoration: none;
-        }
-        /* .item {
-          position: relative;
-          color: #ffffff;
-          text-align: left;
-          font-family: 'NanumSquareB';
-          font-size: 18px;
-          letter-spacing: -0.02em;
-          height: 25px;
-          list-style: none;
-
-          margin-bottom: 10px;
-
-          .move {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: -6px;
-          }
-        }
-        .item:hover {
-          background: rgba(255, 255, 255, 0);
-          border-style: solid;
-          border-color: #48c2c5;
-          color: #48c2c5;
-          border-width: 0px 0px 1px 0px;
-          box-sizing: border-box;
-          .move {
-            display: inline;
-          }
-        } */
-      }
-      .section:nth-child(2) {
-        padding-top: 68px;
-      }
     }
   }
 
@@ -98,12 +58,11 @@ export const StyledPortfolioListModal = styled.div`
       text-align: left;
       font-family: 'Roboto-Medium', sans-serif;
       font-size: 70px;
-      font-weight: 500;
-      text-transform: uppercase;
+
       position: relative;
       display: inline-block;
 
-      margin-bottom: 48px;
+      margin-bottom: 40px;
     }
     .modalContainer {
       height: 80%;
@@ -121,17 +80,7 @@ export const StyledPortfolioListModal = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 460px);
       padding: 0;
-      gap: 8px 20px;
-      .section {
-        width: 100%;
-        /* max-width: 300px; */
-        a {
-          text-decoration: none;
-        }
-      }
-      .section:nth-child(2) {
-        padding-top: 68px;
-      }
+      gap: 65px;
     }
   }
   @media (max-width: 1024px) {
@@ -162,9 +111,7 @@ export const StyledPortfolioListModal = styled.div`
 
       /* margin-top: 80px; */
       margin-top: 130px;
-
-      max-width: 315px;
-      width: 100%;
+      margin-bottom: 80px;
     }
     .xBtn {
       /* position: absolute; */
@@ -175,30 +122,16 @@ export const StyledPortfolioListModal = styled.div`
       cursor: pointer;
       /* margin-top: 20px; */
       margin-top: 70px;
-      margin-right: 30px;
+      /* margin-right: 30px; */
+      margin-right: 8vw;
       min-width: 20px;
       width: 5.3vw;
     }
     .gridWrapper {
       display: grid;
       justify-content: center;
-      /* grid-template-columns: repeat(1, 315px); */
       padding: 0;
       gap: 8px 20px;
-      .section {
-        width: 100%;
-        /* max-width: 315px; */
-        a {
-          text-decoration: none;
-        }
-      }
-      .section:nth-child(2) {
-        padding-top: 0;
-      }
-
-      .section:last-child {
-        margin-bottom: 160px;
-      }
     }
   }
 `;

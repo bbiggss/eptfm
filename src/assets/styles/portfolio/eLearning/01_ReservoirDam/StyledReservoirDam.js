@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
 export const StyledReservoirDam = styled.div`
+  @media (min-width: 1025px) and (max-width: 1550px) {
+    .introductionWrapper {
+      margin-top: clamp(10px, 2.8vw, 112px);
+    }
+  }
+  @media (min-width: 1551px) {
+    .introductionWrapper {
+      margin-top: 112px;
+    }
+  }
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: auto;
@@ -12,7 +22,7 @@ export const StyledReservoirDam = styled.div`
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: 112px;
+        /* margin-top: clamp(10px, 2.8vw, 112px); */
         text-align: center;
       }
       img {

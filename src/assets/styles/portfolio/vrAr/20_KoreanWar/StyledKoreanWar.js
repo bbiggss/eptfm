@@ -47,11 +47,16 @@ export const StyledKoreanWar = styled.div`
     }
 
     /* -- */
+    .titleWrapper {
+      div:first-child {
+        margin-top: clamp(10px, 13.3vw, 180px);
+      }
+    }
     .customTextWrapper p {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      margin-top: 460px;
+      margin-top: clamp(100px, 24.9vw, 460px);
 
       font-size: 28px;
       line-height: 42px;

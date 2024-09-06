@@ -13,11 +13,13 @@ import HeroImg from '../../common/Hero/HeroImg';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import Img from './../../common/Img';
+import useLongTablet from '../../../hooks/useTabletMax1300';
 
 const CyberSocializingTwo = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
+  const isLongTablet = useLongTablet();
   return (
     <StyledCyberSocializingTwo>
       <Breadcrumb />
@@ -43,7 +45,13 @@ const CyberSocializingTwo = () => {
           <PortfolioIntroductionTitle
             mobileMarginTop={'80px'}
             style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : '40px' }}
-            title={isMobileTablet ? '영어와 체육 교과 연계,\n 사이좋게 지내요!' : '영어와 체육 교과 연계, 사이좋게 지내요!'}
+            title={
+              isMobileTablet
+                ? '영어와 체육 교과 연계,\n 사이좋게 지내요!'
+                : isLongTablet
+                ? '영어와 체육 교과 연계,\n 사이좋게 지내요!'
+                : '영어와 체육 교과 연계, 사이좋게 지내요!'
+            }
           />
           <PortfolioIntroductionDescription
             style={{ color: '#767676', textAlign: 'center' }}
