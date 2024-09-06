@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
@@ -24,39 +23,28 @@ const EnvironmentalLabelingCertification = () => {
       <Breadcrumb />
 
       <div className="fullScreen">
-        <PortfolioTitleWrap
-          pcMarginTop={'300px'}
-          mobileMarginTop={'50px'}
-          style={{
-            position: 'absolute',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            textAlign: 'center',
-          }}
-        >
-          <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }} organization={'환경산업기술원'} />
-          <PortfolioFieldTitle
-            style={{ color: '#FFFFFF', whiteSpace: 'nowrap', fontFamily: 'NanumSquareEB' }}
-            // field={'VR'}
-            title={
-              isMobileTablet ? '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은\n 선택' : '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은 선택'
-            }
-          />
-        </PortfolioTitleWrap>
+        <div className="heroWrapper">
+          <div className="portfolioTitleWrapper">
+            <PortfolioOrganization style={{ color: '#FFFFFF', fontFamily: 'NanumSquareB' }} organization={'환경산업기술원'} />
+            <PortfolioFieldTitle
+              style={{ color: '#FFFFFF', whiteSpace: 'nowrap', fontFamily: 'NanumSquareEB' }}
+              title={
+                isMobileTablet
+                  ? '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은\n 선택'
+                  : '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은 선택'
+              }
+            />
+          </div>
 
-        <div className="heroImgWrapper">
-          <HeroImg
-            pcAspectRatio={'1920 / 1080'}
-            mobileAspectRatio={'375 / 450'}
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/${
-              isMobileTablet ? 'hero_m' : 'hero'
-            }.png`}
-          />
-          {/* <CustomWrapImg
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/${
-              isMobileTablet ? 'hero_m' : 'hero'
-            }.png`}
-          /> */}
+          <div className="heroImgWrapper">
+            <HeroImg
+              pcAspectRatio={'1920 / 1080'}
+              mobileAspectRatio={'375 / 450'}
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/${
+                isMobileTablet ? 'hero_m' : 'hero'
+              }.png`}
+            />
+          </div>
         </div>
       </div>
 

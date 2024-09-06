@@ -40,7 +40,8 @@ export const StyledBuildingGreatCity = styled.div`
       position: relative;
       text-align: center;
       .introductionWrapper {
-        margin-top: clamp(86px, 7vh, 200px);
+        /* margin-top: clamp(86px, 7vh, 200px); */
+        margin-top: 22vw;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -48,8 +49,10 @@ export const StyledBuildingGreatCity = styled.div`
       .satellite {
         position: absolute;
         right: 0;
-        top: -7px;
+        /* top: -7px; */
+        top: -1.8vw;
         width: 26vw;
+        aspect-ratio: 99 / 69;
       }
     }
     .customTextWrapper {

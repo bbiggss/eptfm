@@ -14,6 +14,17 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
   }
 
   @media (min-width: 1025px) {
+    .heroWrapper {
+      position: relative;
+    }
+    .portfolioTitleWrapper {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -30%);
+    }
+
     .customLeftTemp {
       position: relative;
       left: -78px;
@@ -80,6 +91,16 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     }
   }
   @media (max-width: 1024px) {
+    .heroWrapper {
+      position: relative;
+    }
+    .portfolioTitleWrapper {
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
     .heroImgWrapper {
       aspect-ratio: 375 / 450;
     }

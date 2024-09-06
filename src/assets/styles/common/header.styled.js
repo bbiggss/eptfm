@@ -160,7 +160,9 @@ export const HeaderBox = styled.div`
 
       #logoImg {
         min-width: 98px;
-        width: 20vw;
+        width: 17vw;
+
+        /* width: 82px; */
         /* height: 11px; */
         position: relative;
         z-index: 10;
@@ -172,24 +174,23 @@ export const HeaderBox = styled.div`
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-
-        min-width: 18px;
-        width: 3.5vw;
       }
-      /* #dropDownImg {
+      #dropDownImg {
         width: 18px;
         height: 14px;
-      } */
+      }
       .mobileListButton {
         cursor: pointer;
         position: absolute;
-        /* right: 50px; */
-        right: 13.3vw;
-        top: 2px;
+        right: 50px;
+        /* right: 13.3vw; */
+        /* top: 2px; */
+        top: 50%;
+        transform: translateY(-40%);
 
-        /* min-width: 23px; */
-        min-width: 20.8px;
-        width: 4.2vw;
+        width: 23px;
+        /* min-width: 20.8px;
+        width: 4.2vw; */
       }
 
       ul {

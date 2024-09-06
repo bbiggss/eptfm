@@ -67,7 +67,8 @@ export const StyledSurvivalBag = styled.div`
         position: absolute;
       }
       .exitImg {
-        width: 80px;
+        min-width: 80px;
+        width: 21.3vw;
       }
     }
   }

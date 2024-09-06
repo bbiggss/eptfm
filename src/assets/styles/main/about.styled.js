@@ -24,7 +24,8 @@ export const AboutBox = styled.div`
         letter-spacing: 0;
         color: #191919;
         padding-top: 200px;
-        padding-left: 182px;
+        /* padding-left: 182px; */
+        padding-left: clamp(10px, 9.47vw, 182px);
       }
     }
     .aboutContents {

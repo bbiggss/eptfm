@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const StyledForensicScientist = styled.div`
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    .magnifier {
+      top: -36vw;
+    }
+    .introduction_text2_Wrapper {
+      margin-top: 150px !important;
+      margin-bottom: 200px !important;
+    }
+  }
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: 0 auto;
@@ -22,37 +31,6 @@ export const StyledForensicScientist = styled.div`
       margin-left: 800px;
       text-align: left;
     }
-    .detailedDescription {
-      position: relative;
-      text-align: center;
-      margin-bottom: 160px;
-      /* background-color: yellow; */
-      &:last-child {
-        margin-bottom: 200px;
-      }
-      .left {
-        position: absolute;
-        left: 0;
-        bottom: 510px;
-      }
-      .right {
-        position: absolute;
-        right: 0;
-        top: -209px;
-
-        .foot {
-          img {
-            display: block;
-
-            &:last-child {
-              position: absolute;
-              right: 0;
-              top: 409px;
-            }
-          }
-        }
-      }
-    }
     .introduction_text2_Wrapper {
       position: relative;
       aspect-ratio: 1920 / 160;
@@ -62,26 +40,27 @@ export const StyledForensicScientist = styled.div`
     }
     .introduction_text2 {
       position: absolute;
-      /* left: 41.67vw; */
-      left: 45%;
+      left: clamp(100px, 41.67vw, 800px);
+      /* left: 45%; */
 
       color: #767676;
-      font-size: clamp(16px, 4vw, 24px);
-      line-height: clamp(24px, 6vw, 32px);
+      font-size: clamp(10px, 1.3vw, 26px);
+      line-height: clamp(10px, 2vw, 40px);
     }
     .sideImgsWrapper {
       position: relative;
 
-      .left {
+      .magnifier {
         position: absolute;
-        top: -700px;
+        /* top: -700px; */
+        top: -36vw;
         /* width: 892px; */
-        width: clamp(475px, 40.46vw, 712px);
+        width: clamp(300px, 37vw, 712px);
       }
       .right {
         position: absolute;
         right: 0;
-        top: -250px;
+        /* top: -250px; */
         /* width: 138px; */
         width: clamp(226px, 21.98vw, 422px);
       }
@@ -133,7 +112,7 @@ export const StyledForensicScientist = styled.div`
       position: relative;
       margin-top: 35px;
 
-      .left {
+      .magnifier {
         width: 294px;
         /* position: absolute; */
         /* left: 0; */

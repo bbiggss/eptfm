@@ -92,7 +92,7 @@ const ForensicScientist = () => {
         </div>
 
         <div className="sideImgsWrapper">
-          <img className="left" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side1.png`} alt="" />
+          <img className="magnifier" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side1.png`} alt="" />
           <img className="right" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/side2.png`} alt="" />
         </div>
 

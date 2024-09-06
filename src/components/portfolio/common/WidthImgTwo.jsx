@@ -22,7 +22,9 @@ const StyledWidthImgTwo = styled.div`
     img {
       display: block;
       width: 100%;
-      border-radius: 10px;
+      /* border-radius: 50px; */
+      /* border-radius: clamp(10px, calc(10px + (27.3 - 10) * ((100vw - 375px) / (1024 - 375))), 27.3px); */
+      border-radius: clamp(10px, 2.7vw, 27.3px);
     }
     img:first-child {
       /* margin-bottom: 20px; */

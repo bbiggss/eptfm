@@ -134,23 +134,23 @@ export const StyledExploreFreiburg = styled.div`
         position: absolute;
         left: 32px;
         bottom: 8px;
+        min-width: 77px;
         width: 20vw;
-        max-width: 280px;
       }
       .skyblueCharacter {
         position: absolute;
         right: 14px;
         /* top: 293px; */
         bottom: 0;
-        width: 30vw;
-        max-width: 313px;
+        min-width: 101px;
+        width: 26.9vw;
       }
       .greenCharacter {
         position: absolute;
         left: -6px;
         bottom: 0;
-        width: 30vw;
-        max-width: 313px;
+        min-width: 101px;
+        width: 26.9vw;
       }
     }
   }

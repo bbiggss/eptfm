@@ -40,7 +40,6 @@ const ChemicalSafety = () => {
 
         <div className="introductionWrapper">
           <PortfolioIntroductionTitle
-            mobileMarginTop={'80px'}
             style={{ color: '#ffffff' }}
             title={
               isMobileTablet
@@ -52,7 +51,6 @@ const ChemicalSafety = () => {
             style={{ color: '#ffffff' }}
             pcMarginTop={'34px'}
             mobileMarginTop={'5.33vw'}
-            mobileMarginBottom={'80px'}
             description={
               isMobile
                 ? '이 콘텐츠는 화학물질의 특성과 위험성, 안전한\n 사용 방법을 학습할 수 있도록 설계되었어요.'
