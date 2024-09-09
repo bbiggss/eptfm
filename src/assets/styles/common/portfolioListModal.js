@@ -50,7 +50,7 @@ export const StyledPortfolioListModal = styled.div`
     .xBtn {
       position: absolute;
       z-index: 10;
-      right: 0;
+      right: 50px;
       cursor: pointer;
     }
     .title {
