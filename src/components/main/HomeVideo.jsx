@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import useMobile from './../hooks/useMobile';
 
 const StyledHomeVideo = styled.div`
   @media (min-width: 1025px) {
@@ -19,6 +20,7 @@ const StyledHomeVideo = styled.div`
 `;
 
 const HomeVideo = () => {
+  const isMobile = useMobile();
   return (
     <StyledHomeVideo>
       <video
@@ -28,6 +30,7 @@ const HomeVideo = () => {
         muted
         loop
         playsInline
+        controls={isMobile}
       ></video>
     </StyledHomeVideo>
   );

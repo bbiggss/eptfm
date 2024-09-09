@@ -16,7 +16,7 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import Img from './../../common/Img';
 import CustomText from '../../common/CustomText';
-import useLongTablet from './../../../hooks/useTabletMax1300';
+import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const BoneJointMuscle = () => {
   // const [isLoaded, setIsLoaded] = useState(false);

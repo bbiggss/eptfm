@@ -13,7 +13,7 @@ import HeroImg from '../../common/Hero/HeroImg';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import Img from './../../common/Img';
-import useLongTablet from '../../../hooks/useTabletMax1300';
+import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const CyberSocializingTwo = () => {
   const isMobile = useMobile();

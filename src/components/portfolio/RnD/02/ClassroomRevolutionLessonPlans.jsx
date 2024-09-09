@@ -12,7 +12,7 @@ import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import { StyledClassroomRevolutionLessonPlans } from '../../../../assets/styles/portfolio/R&D/02_ClassroomRevolutionLessonPlans/StyledClassroomRevolutionLessonPlans';
 import Img from '../../common/Img';
 import WidthImgTwo from './../../common/WidthImgTwo';
-import useLongTablet from '../../../hooks/useTabletMax1300';
+import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const ClassroomRevolutionLessonPlans = () => {
   const isMobile = useMobile();

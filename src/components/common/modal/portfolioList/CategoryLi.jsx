@@ -11,7 +11,7 @@ const renderTextWithLineBreaks = (text) => {
   ));
 };
 
-const StyledItem = styled.li`
+const StyledCategoryLi = styled.li`
   @media (min-width: 1557px) {
     max-width: 460px;
     width: 23.9vw;
@@ -107,7 +107,8 @@ const StyledItem = styled.li`
     border-bottom: 1px solid transparent;
     list-style: none;
 
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin-bottom: clamp(16px, 4.2vw, 100px);
 
     a {
       color: #ffffff;
@@ -144,15 +145,15 @@ const StyledItem = styled.li`
   }
 `;
 
-const Item = ({ name, setPortfolioListModalStatus, link }) => {
+const CategoryLi = ({ name, setPortfolioListModalStatus, link }) => {
   return (
-    <StyledItem>
+    <StyledCategoryLi>
       <Link onClick={() => setPortfolioListModalStatus(false)} to={link}>
         <p>{renderTextWithLineBreaks(name)}</p>
         <img className="move" src={`${process.env.PUBLIC_URL}/assets/images/common/move.png`} alt="" />
       </Link>
-    </StyledItem>
+    </StyledCategoryLi>
   );
 };
 
-export default Item;
+export default CategoryLi;

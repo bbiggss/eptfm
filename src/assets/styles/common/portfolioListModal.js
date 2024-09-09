@@ -66,7 +66,7 @@ export const StyledPortfolioListModal = styled.div`
     }
     .modalContainer {
       height: 80%;
-      max-height: 751px;
+      max-height: 960px;
       overflow-y: scroll;
 
       position: fixed;
