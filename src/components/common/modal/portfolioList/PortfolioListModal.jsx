@@ -2,7 +2,7 @@ import React from 'react';
 import CategoryUl from './CategoryUl';
 import Category from './Category';
 import CategoryLi from './CategoryLi';
-import { StyledPortfolioListModal } from '../../../../assets/styles/common/portfolioListModal';
+import { StyledPortfolioListModal } from '../../../../assets/styles/common/portfolioListModal/portfolioListModal';
 import useResponsiveMax1024 from './../../../hooks/useResponsiveMax1024';
 import useLongTablet from '../../../hooks/useTabletMax1556';
 

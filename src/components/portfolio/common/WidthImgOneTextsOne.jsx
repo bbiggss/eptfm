@@ -5,32 +5,11 @@ const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
   text-align: left;
 
-  @media (min-width: 1501px) {
-    .positionRight {
-      margin-left: 100px;
-    }
-    .texts {
-      font-size: 24px;
-      line-height: 38px;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1500px) {
-    width: 100%;
-    .positionRight {
-      margin-left: 60px;
-    }
-    img {
-      width: 50%;
-    }
-    .texts {
-      width: 50%;
-      font-size: 18px;
-      line-height: 26px;
-    }
-  }
-
   @media (min-width: 1025px) {
+    .positionRight {
+      margin-left: clamp(50px, 5.2vw, 100px);
+    }
+
     /* margin: 0 60px; */
     display: flex;
     .texts {
@@ -38,9 +17,11 @@ const StyledWidthImgOneTextsOne = styled.div`
       display: flex;
       align-items: center;
       letter-spacing: -0.02em;
-
       color: #767676;
       white-space: nowrap;
+
+      font-size: var(--pc-font-size-24px);
+      line-height: var(--pc-line-height-38px);
     }
     padding-top: ${(props) => props.$pcPaddingTop};
 

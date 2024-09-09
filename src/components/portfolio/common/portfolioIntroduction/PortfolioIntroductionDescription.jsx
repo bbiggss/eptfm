@@ -16,13 +16,13 @@ const StyledPortfolioIntroductionDescription = styled.p`
   white-space: nowrap;
 
   @media (min-width: 1025px) {
-    /* margin-top: 60px; */
     margin-top: ${(props) => props.$pcMarginTop};
     margin-bottom: ${(props) => props.$pcMarginBottom};
     /* font-size: 24px; */
-    font-size: clamp(20px, 1.25vw, 24px);
     /* line-height: 38px; */
-    line-height: clamp(30px, 2vw, 38px);
+
+    font-size: var(--pc-font-size-26px);
+    line-height: var(--pc-line-height-40px);
   }
   @media (max-width: 1024px) {
     /* margin-top: 20px;

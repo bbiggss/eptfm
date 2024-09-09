@@ -8,8 +8,11 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     .customRight p,
     .customLeft p {
       /* color: yellow; */
-      font-size: 13px;
-      line-height: 20px;
+      /* font-size: 13px;
+      line-height: 20px; */
+
+      /* font-size: var(--pc-font-size-24px);
+      line-height: var(--pc-line-height-38px); */
     }
   }
 
@@ -28,6 +31,11 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     .customLeftTemp {
       position: relative;
       left: -78px;
+
+      .introductionImg {
+        max-width: 800px;
+        width: 41vw;
+      }
     }
     .customRight,
     .customLeft {
@@ -35,11 +43,17 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     }
     .customLeft {
       position: relative;
-      left: -78px;
+      /* left: -78px; */
     }
     .customRight {
       position: relative;
       left: 120px;
+    }
+
+    .customRight p,
+    .customLeft p {
+      font-size: var(--pc-font-size-24px);
+      line-height: var(--pc-line-height-38px);
     }
 
     .threeImgs {
@@ -57,9 +71,9 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     .start {
       justify-content: start;
     }
-    .end {
+    /* .end {
       justify-content: end;
-    }
+    } */
 
     .heroImgWrapper {
       aspect-ratio: 1920 / 1080;

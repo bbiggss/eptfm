@@ -52,7 +52,7 @@ const EnvironmentalLabelingCertification = () => {
         <div className="FFFFFF">
           <div className="introductionWrapper">
             <PortfolioIntroductionTitle
-              style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : 'clamp(24px, 2vw + 20px, 40px)' }}
+              style={{ color: '#4F4F4F' }}
               title={isMobileTablet ? '지속 가능한 미래를 위한\n 친환경 인증' : '지속 가능한 미래를 위한 친환경 인증'}
             />
             <PortfolioIntroductionDescription
@@ -78,7 +78,11 @@ const EnvironmentalLabelingCertification = () => {
           />
           <div className="customLeftTemp">
             <WidthImgOneTextsOne>
-              <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/introduction2.png`} />
+              <img
+                className="introductionImg"
+                src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/introduction2.png`}
+                alt=""
+              />
               <ProjectDescription
                 textPosition={'right'}
                 text={
@@ -109,7 +113,7 @@ const EnvironmentalLabelingCertification = () => {
             />
           </div>
           <div className="customLeft">
-            <div className="threeImgs end">
+            <div className="threeImgs">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/3.png`} />
@@ -125,7 +129,7 @@ const EnvironmentalLabelingCertification = () => {
               }
             />
           </div>
-          <div className="customRight">
+          {/* <div className="customRight">
             <div className="threeImgs start">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/2.png`} />
@@ -158,7 +162,7 @@ const EnvironmentalLabelingCertification = () => {
                   : '환경표지와 관련된 이미지, 인증 과정의 다양한 사례들을 활용하여 시청각적으로 이해를 도와요.\n환경표지인증 제도의 중요성을 인식하고, 일상생활에서 환경 보호에 기여하는 방법을 배워보세요.\n환경 문제에 대한 관심을 높이고, 미래 세대가 환경을 생각하며 책임감 있는 소비 습관을 형성할 수 있을 때까지!'
               }
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </StyledEnvironmentalLabelingCertification>

@@ -6,14 +6,15 @@ const StyledCategory = styled.p`
     color: #ffffff;
     text-align: left;
     font-family: 'Roboto-Regular';
-    font-size: 36px;
+    font-size: clamp(10px, 1.8vw, 36px);
     position: relative;
 
     margin-top: ${(props) => {
-      if (props.$PC_eLearningMarginTop) return '102px';
+      // if (props.$PC_eLearningMarginTop) return '102px';
+      if (props.$PC_eLearningMarginTop) return 'clamp(50px,5.3vw,102px)';
       return '0px';
     }};
-    margin-bottom: 26px;
+    margin-bottom: clamp(10px, 1.3vw, 26px);
   }
   @media (min-width: 1025px) and (max-width: 1556px) {
     color: #ffffff;

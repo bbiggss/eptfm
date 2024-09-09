@@ -42,7 +42,8 @@ export const StyledPortfolioListModal = styled.div`
       display: grid;
       grid-template-columns: repeat(3, 460px);
       padding: 0;
-      gap: 88px;
+      /* gap: 88px; */
+      gap: clamp(50px, 4.5vw, 88px);
     }
   }
 

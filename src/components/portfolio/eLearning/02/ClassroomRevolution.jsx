@@ -24,7 +24,7 @@ const ClassroomRevolution = () => {
   return (
     <StyledClassroomRevolution>
       <div className="fullScreen heroArea">
-        <div className="ellipseWrapper">
+        <div className="ellipseWrapper" style={{ zIndex: '-1' }}>
           <img
             className="ellipse1"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
@@ -41,7 +41,7 @@ const ClassroomRevolution = () => {
           />
         </div>
 
-        <Breadcrumb style={{ position: 'absolute', zIndex: '1' }} />
+        <Breadcrumb style={{ position: 'absolute' }} />
 
         <PortfolioTitleWrap
           pcMarginTop={'180px'}

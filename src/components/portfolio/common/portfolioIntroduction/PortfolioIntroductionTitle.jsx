@@ -16,7 +16,7 @@ const StyledPortfolioIntroductionTitle = styled.p`
   letter-spacing: -0.02em;
   @media (min-width: 1025px) {
     /* font-size: 50px; */
-    font-size: clamp(30px, 2.6vw, 50px);
+    font-size: var(--pc-font-size-40px);
 
     /* margin-top: 60px; */
     margin-top: ${(props) => props.$pcMarginTop};
