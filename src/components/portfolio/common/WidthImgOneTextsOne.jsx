@@ -27,7 +27,7 @@ const StyledWidthImgOneTextsOne = styled.div`
 
     padding-bottom: ${(props) => {
       if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
-      return '160px';
+      return 'var(--pc-margin-160px)';
     }};
   }
 
@@ -48,13 +48,9 @@ const StyledWidthImgOneTextsOne = styled.div`
 
       color: #767676;
       text-align: center;
-      /* font-size: 16px; */
-      font-size: clamp(16px, 4vw, 24px);
-      /* font-size: 3vw; */
-      /* line-height: 24px; */
-      line-height: clamp(24px, 6vw, 32px);
-      /* line-height: 5vw; */
-      /* white-space: nowrap; */
+
+      font-size: var(--mobile-font-size-16px);
+      line-height: var(--mobile-line-height-24px);
     }
     padding-top: ${(props) => props.$mobilePaddingTop};
 

@@ -13,6 +13,7 @@ import { StyledEnvironmentalLabelingCertification } from '../../../../assets/sty
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import HeroImg from './../../common/Hero/HeroImg';
+import ThreeImgTextsWrapper from './ThreeImgTextsWrapper';
 
 const EnvironmentalLabelingCertification = () => {
   const isMobile = useMobile();
@@ -52,30 +53,31 @@ const EnvironmentalLabelingCertification = () => {
         <div className="FFFFFF">
           <div className="introductionWrapper">
             <PortfolioIntroductionTitle
-              style={{ color: '#4F4F4F' }}
+              style={{ color: '#292929' }}
               title={isMobileTablet ? '지속 가능한 미래를 위한\n 친환경 인증' : '지속 가능한 미래를 위한 친환경 인증'}
             />
             <PortfolioIntroductionDescription
-              style={{ color: '#4F4F4F' }}
-              pcMarginTop={'34px'}
-              mobileMarginTop={'5.33vw'}
-              pcMarginBottom={'60px'}
-              mobileMarginBottom={'40px'}
+              style={{ color: '#767676' }}
+              // pcMarginTop={'34px'}
+              pcMarginBottom={'var(--pc-margin-60px)'}
+              // mobileMarginTop={'5.33vw'}
+              mobileMarginBottom={'var(--mobile-margin-40px)'}
               description={
                 isMobileTablet
                   ? '친환경 인증의 개념부터 절차, 혜택까지\n 심층적으로 탐구하세요! 인터랙티브 학습을 통해\n환경표지인증의 중요성을 체험하고,\n 지속 가능한 소비를 실천해 볼 수 있어요.'
                   : '친환경 인증의 개념부터 절차, 혜택까지 심층적으로 탐구하세요! 인터랙티브 학습을 통해\n환경표지인증의 중요성을 체험하고, 지속 가능한 소비를 실천해 볼 수 있어요.'
               }
             />
+
+            <img
+              className="introductionImgs"
+              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/${
+                isMobileTablet ? 'introductionImgs_m' : 'introductionImgs'
+              }.png`}
+              alt=""
+            />
           </div>
 
-          <img
-            className="introductionImgs"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/${
-              isMobileTablet ? 'introductionImgs_m' : 'introductionImgs'
-            }.png`}
-            alt=""
-          />
           <div className="customLeftTemp">
             <WidthImgOneTextsOne>
               <img
@@ -95,8 +97,9 @@ const EnvironmentalLabelingCertification = () => {
               />
             </WidthImgOneTextsOne>
           </div>
-          <div className="customRight">
-            <div className="threeImgs start">
+
+          <ThreeImgTextsWrapper right>
+            <div className="threeImgWrapper">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group1/3.png`} />
@@ -111,9 +114,9 @@ const EnvironmentalLabelingCertification = () => {
                   : '환경표지인증 제도는 우리가 일상에서 사용하는 제품들이 환경에 미치는 영향을 줄이고,\n환경 보호에 기여할 수 있도록 하는 인증 시스템이에요.\n이 콘텐츠를 통해 학습자들은 이 제도의 의미와 중요성을 이해하고, 환경을 보호하는 소비 습관을 기를 수 있도록 도와요.'
               }
             />
-          </div>
-          <div className="customLeft">
-            <div className="threeImgs">
+          </ThreeImgTextsWrapper>
+          <ThreeImgTextsWrapper left>
+            <div className="threeImgWrapper">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group2/3.png`} />
@@ -128,9 +131,9 @@ const EnvironmentalLabelingCertification = () => {
                   : '환경표지가 붙은 제품이 무엇을 의미하는지 설명하고, 환경표지가 소비자에게 제공하는 정보와 신뢰성에 대해 설명해요.\n환경표지가 붙은 제품을 왜 사용해야 할까요?\n환경표지가 붙은 제품을 선택할 때의 이점과 그 제품이 환경에 미치는 긍정적인 영향을 확인해보세요!'
               }
             />
-          </div>
-          {/* <div className="customRight">
-            <div className="threeImgs start">
+          </ThreeImgTextsWrapper>
+          <ThreeImgTextsWrapper right>
+            <div className="threeImgWrapper">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group3/3.png`} />
@@ -145,9 +148,9 @@ const EnvironmentalLabelingCertification = () => {
                   : '생태적 발자국, 에너지 효율성, 유해물질 감소 등 주요 기준을 소개해요.\n일상 생활에서 쉽게 접할 수 있는 환경표지인증 제품들을 예로 들어 설명한답니다!\n우리 주변에 환경표지인증을 받은 제품이 있는지 둘러봐보세요!'
               }
             />
-          </div>
-          <div className="customLeft last">
-            <div className="threeImgs end">
+          </ThreeImgTextsWrapper>
+          <ThreeImgTextsWrapper left last>
+            <div className="threeImgWrapper">
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/2.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/group6/3.png`} />
@@ -162,7 +165,7 @@ const EnvironmentalLabelingCertification = () => {
                   : '환경표지와 관련된 이미지, 인증 과정의 다양한 사례들을 활용하여 시청각적으로 이해를 도와요.\n환경표지인증 제도의 중요성을 인식하고, 일상생활에서 환경 보호에 기여하는 방법을 배워보세요.\n환경 문제에 대한 관심을 높이고, 미래 세대가 환경을 생각하며 책임감 있는 소비 습관을 형성할 수 있을 때까지!'
               }
             />
-          </div> */}
+          </ThreeImgTextsWrapper>
         </div>
       </div>
     </StyledEnvironmentalLabelingCertification>

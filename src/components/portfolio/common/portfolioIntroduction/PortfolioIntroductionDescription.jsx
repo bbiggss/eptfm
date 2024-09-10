@@ -16,10 +16,10 @@ const StyledPortfolioIntroductionDescription = styled.p`
   white-space: nowrap;
 
   @media (min-width: 1025px) {
-    margin-top: ${(props) => props.$pcMarginTop};
+    /* margin-top: ${(props) => props.$pcMarginTop}; */
+
+    margin-top: var(--pc-margin-34px);
     margin-bottom: ${(props) => props.$pcMarginBottom};
-    /* font-size: 24px; */
-    /* line-height: 38px; */
 
     font-size: var(--pc-font-size-26px);
     line-height: var(--pc-line-height-40px);
@@ -28,13 +28,16 @@ const StyledPortfolioIntroductionDescription = styled.p`
     /* margin-top: 20px;
     margin-bottom: 80px; */
 
-    /* margin-top: 5.33vw; */
-    margin-top: ${(props) => props.$mobileMarginTop};
+    /* margin-top: ${(props) => props.$mobileMarginTop}; */
+    margin-top: var(--mobile-margin-20px);
+
     margin-bottom: ${(props) => props.$mobileMarginBottom};
     /* margin-bottom: 21.33vw; */
 
-    font-size: clamp(16px, 4vw, 24px);
-    line-height: clamp(24px, 6vw, 32px);
+    /* font-size: clamp(16px, 4vw, 24px);
+    line-height: clamp(24px, 6vw, 32px); */
+    font-size: var(--mobile-font-size-16px);
+    line-height: var(--mobile-line-height-24px);
 
     /* 16px / 375px * 100 = 4.27vw */
     /* line-height: 24px; */

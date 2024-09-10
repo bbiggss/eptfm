@@ -4,17 +4,6 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
   .heroImgWrapper {
     display: grid;
   }
-  @media (min-width: 1025px) and (max-width: 1500px) {
-    .customRight p,
-    .customLeft p {
-      /* color: yellow; */
-      /* font-size: 13px;
-      line-height: 20px; */
-
-      /* font-size: var(--pc-font-size-24px);
-      line-height: var(--pc-line-height-38px); */
-    }
-  }
 
   @media (min-width: 1025px) {
     .heroWrapper {
@@ -56,25 +45,6 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
       line-height: var(--pc-line-height-38px);
     }
 
-    .threeImgs {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      gap: 48px;
-
-      margin-bottom: 60px;
-      img {
-        max-width: 416px;
-        width: 21vw;
-        border: 1px solid #ededed;
-      }
-    }
-    .start {
-      justify-content: start;
-    }
-    /* .end {
-      justify-content: end;
-    } */
-
     .heroImgWrapper {
       aspect-ratio: 1920 / 1080;
     }
@@ -83,24 +53,28 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
     }
     .F5F5F7 {
       background-color: #f5f5f7;
-      padding-bottom: 110px;
+      padding-bottom: clamp(55px, 5.7vw, 110px);
     }
 
     .FFFFFF {
       background-color: #ffffff;
-      text-align: center;
-      padding-top: 160px;
+      padding-top: var(--pc-margin-160px);
 
       max-width: 1400px;
       width: 72vw;
 
       margin: 0 auto;
-      transform: translateY(-90px);
+      /* transform: translateY(-90px); */
+      transform: translateY(clamp(-90px, -4.6vw, -45px));
+
+      .introductionWrapper {
+        text-align: center;
+      }
 
       .introductionImgs {
         max-width: 960px;
         width: 80%;
-        margin-bottom: 160px;
+        margin-bottom: var(--pc-margin-160px);
       }
     }
   }
@@ -133,13 +107,14 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
 
         .introductionWrapper {
           text-align: center;
-          padding-top: 80px;
+          /* padding-top: 80px; */
+          padding-top: var(--mobile-margin-80px);
         }
         .introductionImgs {
           min-width: 315px;
           width: 84vw;
 
-          margin-bottom: 80px;
+          margin-bottom: var(--mobile-margin-80px);
         }
         .customLeftTemp {
           div:first-child {
@@ -150,30 +125,6 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
             width: 92vw;
             transform: translateX(-2.6vw);
           }
-        }
-        .threeImgs {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          margin-bottom: 24px;
-          img {
-            border: 1px solid #ededed;
-            box-sizing: border-box;
-            min-width: 200px;
-            width: 53vw;
-          }
-          img:nth-child(2) {
-            /* margin: 10px; */
-            margin: 24px 0;
-          }
-        }
-        .customRight,
-        .customLeft {
-          margin-bottom: 80px;
-        }
-        .last {
-          padding-bottom: 80px;
         }
       }
     }

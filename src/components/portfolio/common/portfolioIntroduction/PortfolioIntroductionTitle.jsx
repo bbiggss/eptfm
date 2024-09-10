@@ -26,7 +26,10 @@ const StyledPortfolioIntroductionTitle = styled.p`
   }
   @media (max-width: 1024px) {
     /* font-size: 5.87vw; */
-    font-size: clamp(22px, 5.87vw, 50px);
+    /* font-size: clamp(22px, 5.87vw, 50px); */
+    font-size: var(--mobile-font-size-22px);
+    line-height: var(--mobile-line-height-30px);
+
     white-space: nowrap;
 
     margin-top: ${(props) => props.$mobileMarginTop};

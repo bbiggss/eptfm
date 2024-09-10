@@ -9,15 +9,14 @@ const CustomTextBox = styled.p`
   @media (min-width: 1025px) {
     /* font-size: 24px; */
     /* line-height: 38px; */
-    font-size: clamp(20px, 1.25vw, 24px);
-    line-height: clamp(30px, 2vw, 38px);
+    font-size: var(--pc-font-size-24px);
+    line-height: var(--pc-line-height-38px);
   }
   @media (max-width: 1024px) {
     /* font-size: 16px;
     line-height: 24px; */
-
-    font-size: clamp(16px, 4vw, 24px);
-    line-height: clamp(24px, 6vw, 32px);
+    font-size: var(--mobile-font-size-16px);
+    line-height: var(--mobile-line-height-24px);
   }
 `;
 
