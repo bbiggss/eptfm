@@ -95,13 +95,13 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
 
     .F5F5F7 {
       background-color: #f5f5f7;
-      padding-bottom: 92px;
+      padding-bottom: clamp(92px, 24.5vw, 184px);
       /* 122-30 */
 
       .FFFFFF {
         background-color: #ffffff;
         /* background-color: beige; */
-        transform: translateY(-30px);
+        transform: translateY(var(--mobile-Y-30px));
         text-align: center;
         margin: 0 2.6vw;
 
