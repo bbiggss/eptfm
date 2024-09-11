@@ -23,7 +23,7 @@ const StyledPortfolioFieldTitle = styled.p`
   }
   @media (max-width: 1024px) {
     font-size: clamp(25px, 6.67vw, 37.5px);
-    line-height: (33px, 8.8vw, 50px);
+    line-height: clamp(33px, 8.8vw, 50px);
 
     text-align: center;
   }
