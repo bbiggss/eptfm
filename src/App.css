@@ -47,6 +47,9 @@
 
   --mobile-Y-30px: clamp(-90px, -8vw, -30px);
   /* --mobile-Y-30px: clamp(-30px, -8vw, -90px); */
+
+  --mobile-content-common-font-size: clamp(16px, 4.2vw, 19.2px);
+  --mobile-content-common-line-height: clamp(24px, 6.4vw, 28.8px);
 }
 
 @media (min-width: 1025px) {

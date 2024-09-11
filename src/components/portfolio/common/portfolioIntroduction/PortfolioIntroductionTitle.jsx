@@ -25,8 +25,8 @@ const StyledPortfolioIntroductionTitle = styled.p`
     /* 1440px 기준 50px */
   }
   @media (max-width: 1024px) {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: clamp(22px, 5.8vw, 26.4px);
+    line-height: clamp(30px, 8vw, 36px);
     /* font-size: var(--mobile-font-size-22px);
     line-height: var(--mobile-line-height-30px); */
 
