@@ -4,28 +4,19 @@
 }
 
 :root {
-  --mobile-margin: clamp(30px, 8vw, 80px);
-  /* margin: var(--mobile-margin) */
-  --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
-
-  /* mobileMarginTop={'5.33vw'} */
-  --mobile-introduction-description-margin-20px: 5.33vw;
-
   --pc-font-size-64px: clamp(32px, 3.33vw, 64px);
   --pc-line-height-76px: clamp(47px, 3.9vw, 76px);
 
   --pc-font-size-22px: clamp(18px, 1.15vw, 22px);
 
   --pc-font-size-40px: clamp(20px, 2vw, 40px);
-  /* font-size: var(--pc-font-size-40px); */
 
   --pc-font-size-26px: clamp(16px, 1.3vw, 26px);
   --pc-line-height-40px: clamp(20px, 2vw, 40px);
 
   --pc-font-size-24px: clamp(14px, 1.25vw, 24px);
   --pc-line-height-38px: clamp(18px, 1.9vw, 38px);
-  /* font-size: var(--pc-font-size-24px); */
-  /* line-height: var(--pc-line-height-38px); */
+
   --pc-margin-160px: clamp(80px, 8.3vw, 160px);
   --pc-margin-60px: clamp(30px, 3.1vw, 60px);
   --pc-margin-34px: clamp(17px, 1.7vw, 34px);
@@ -34,11 +25,17 @@
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
 
   /* mobile */
+  --mobile-margin: clamp(30px, 8vw, 80px);
+  /* margin: var(--mobile-margin) */
+  --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
+  /* mobileMarginTop={'5.33vw'} */
+  --mobile-introduction-description-margin-20px: 5.33vw;
+
   --mobile-font-size-16px: clamp(16px, 4vw, 24px);
   --mobile-line-height-24px: clamp(24px, 6vw, 32px);
 
   --mobile-margin-80px: clamp(80px, 21vw, 160px);
-  --mobile-font-size-22px: clamp(22px, 5.8vw, 33px);
+  --mobile-font-size-22px: clamp(22px, 5.8vw, 26.4px);
   --mobile-line-height-30px: clamp(30px, 8vw, 45px);
 
   --mobile-margin-20px: clamp(20px, 5.33vw, 40px);
@@ -48,7 +45,6 @@
   --mobile-line-height-24px: clamp(24px, 6.4vw, 36px);
 
   --mobile-Y-30px: clamp(-90px, -8vw, -30px);
-  /* --mobile-Y-30px: clamp(-30px, -8vw, -90px); */
 
   --mobile-content-common-font-size: clamp(16px, 4.2vw, 19.2px);
   --mobile-content-common-line-height: clamp(24px, 6.4vw, 28.8px);

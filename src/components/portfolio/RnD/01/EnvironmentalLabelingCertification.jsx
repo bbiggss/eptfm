@@ -30,8 +30,10 @@ const EnvironmentalLabelingCertification = () => {
             <PortfolioFieldTitle
               style={{ color: '#FFFFFF', whiteSpace: 'nowrap', fontFamily: 'NanumSquareEB' }}
               title={
-                isMobileTablet
+                isMobile
                   ? '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은\n 선택'
+                  : isTablet
+                  ? '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은 선택'
                   : '친환경 소비의 첫걸음,\n환경표지인증을 통한 더 나은 선택'
               }
             />

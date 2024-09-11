@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 export const StyledClassroomRevolutionLessonPlans = styled.div`
   @media (min-width: 1025px) and (max-width: 1300px) {
-    .introductionArea2 p {
-      font-size: 20px;
-      line-height: 2vw;
-    }
     .robotImg1 {
       margin-left: -21px;
     }
@@ -41,11 +37,15 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .customTextWrapper {
       text-align: center;
+      p {
+        font-size: var(--pc-font-size-26px);
+        line-height: var(--pc-line-height-40px);
+      }
     }
     .introductionArea {
       position: relative;
-      margin-top: 357px;
-      margin-bottom: 100px;
+      margin-top: clamp(178px, 18vw, 357px);
+      margin-bottom: clamp(50px, 5.2vw, 100px);
       text-align: center;
       span {
         color: #292929;
@@ -107,12 +107,12 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .introductionArea {
       position: relative;
-      margin-top: 165px;
-      margin-bottom: 56px;
+      margin-top: clamp(165px, 44vw, 230px);
+      margin-bottom: clamp(56px, 14.9vw, 112px);
       text-align: center;
       span {
         color: #292929;
-        font-size: clamp(22px, 5.8vw, 100px);
+        font-size: var(--mobile-font-size-22px);
         letter-spacing: -0.02em;
         font-family: 'NanumSquareEB';
       }
@@ -130,7 +130,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .customTextWrapper {
       text-align: center;
-      margin-bottom: 100px;
+      margin-bottom: clamp(100px, 26vw, 200px);
     }
 
     .introductionArea2 {
@@ -169,7 +169,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       }
 
       p {
-        margin-top: 24px;
+        margin-top: clamp(40px, 10.6vw, 80px);
         text-align: center;
       }
     }
@@ -197,7 +197,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         text-align: center;
       }
       &:last-child {
-        margin-bottom: 142px;
+        margin-bottom: clamp(142px, 37.8vw, 284px);
       }
     }
   }

@@ -53,17 +53,9 @@ const StyledThreeImgTextsWrapper = styled.div`
         /* margin-bottom: 24px; */
         margin-bottom: 6.4vw;
       }
-      img:nth-child(2) {
-        /* margin: 24px 0; */
-        /* margin: 6.4vw 0; */
-      }
     }
 
     margin-bottom: clamp(80px, 21vw, 160px);
-
-    /* .last {
-      padding-bottom: 80px;
-    } */
   }
 `;
 
