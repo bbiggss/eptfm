@@ -7,7 +7,7 @@ export const FooterBox = styled.div`
   color: #767676;
 
   @media (min-width: 1025px) {
-    height: 360px;
+    height: clamp(137px, 18vw, 360px);
     max-width: 1920px;
 
     .footerContainer {
@@ -16,27 +16,31 @@ export const FooterBox = styled.div`
       margin: 0 auto;
     }
     #footerImg {
-      width: 133px;
-      height: 18px;
-      margin-top: 80px;
-      margin-bottom: 36px;
+      max-width: 133px;
+      width: 6.9vw;
+      margin-top: clamp(30px, 4.1vw, 80px);
+      margin-bottom: clamp(18px, 1.8vw, 36px);
     }
     #info {
       span {
-        font-size: 20px;
+        font-size: var(--pc-font-size-20px);
         letter-spacing: -0.02em; // 자간
-        line-height: 36px; // 줄간
+        line-height: var(--pc-line-height-36px); // 줄간
       }
       .address {
-        margin-bottom: 36px;
+        margin-bottom: clamp(18px, 1.8vw, 36px);
       }
     }
     .copyright {
-      font-size: 20px;
+      font-size: var(--pc-font-size-20px);
     }
     .socialMediaLinkWrapper {
       a:first-child {
         margin-right: 18px;
+      }
+      img {
+        max-width: 60px;
+        width: 3.1vw;
       }
       position: absolute;
       right: 0;
