@@ -112,7 +112,7 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
         }
         .introductionImgs {
           min-width: 315px;
-          width: 84vw;
+          width: 60vw;
 
           margin-bottom: var(--mobile-margin-80px);
         }

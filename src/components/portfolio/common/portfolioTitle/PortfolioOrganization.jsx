@@ -11,10 +11,7 @@ const StyledPortfolioOrganization = styled.p`
     margin-bottom: 24px;
   }
   @media (max-width: 1024px) {
-    font-size: clamp(12px, 3.2vw, 14.4px);
-    /* 12px / 375px * 100 = 3.2vw */
-
-    /* font-size: calc(12px + 0.5vw); */
+    font-size: clamp(12px, 3.2vw, 18px);
 
     /* margin-bottom: 10px; */
     margin-bottom: 2.66vw;

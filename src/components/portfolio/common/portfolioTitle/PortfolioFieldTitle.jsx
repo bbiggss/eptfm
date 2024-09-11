@@ -22,12 +22,10 @@ const StyledPortfolioFieldTitle = styled.p`
     /* font-size: calc(64px + 0.5vw); */
   }
   @media (max-width: 1024px) {
-    font-size: clamp(25px, 6.67vw, 30px);
-    line-height: (33px, 8.8vw, 39.6px);
-    text-align: center;
-    /* 25px / 375px * 100 = 6.67vw */
+    font-size: clamp(25px, 6.67vw, 37.5px);
+    line-height: (33px, 8.8vw, 50px);
 
-    /* font-size: calc(25px + 0.5vw); */
+    text-align: center;
   }
 `;
 
