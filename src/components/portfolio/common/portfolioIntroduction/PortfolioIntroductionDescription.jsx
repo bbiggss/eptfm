@@ -34,10 +34,10 @@ const StyledPortfolioIntroductionDescription = styled.p`
     margin-bottom: ${(props) => props.$mobileMarginBottom};
     /* margin-bottom: 21.33vw; */
 
-    /* font-size: clamp(16px, 4vw, 24px);
-    line-height: clamp(24px, 6vw, 32px); */
-    font-size: var(--mobile-font-size-16px);
-    line-height: var(--mobile-line-height-24px);
+    font-size: 16px;
+    line-height: 24px;
+    /* font-size: var(--mobile-font-size-16px);
+    line-height: var(--mobile-line-height-24px); */
 
     /* 16px / 375px * 100 = 4.27vw */
     /* line-height: 24px; */

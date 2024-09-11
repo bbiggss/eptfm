@@ -15,8 +15,10 @@ const CustomTextBox = styled.p`
   @media (max-width: 1024px) {
     /* font-size: 16px;
     line-height: 24px; */
-    font-size: var(--mobile-font-size-16px);
-    line-height: var(--mobile-line-height-24px);
+    /* font-size: var(--mobile-font-size-16px);
+    line-height: var(--mobile-line-height-24px); */
+    font-size: 16px;
+    line-height: 24px;
   }
 `;
 
