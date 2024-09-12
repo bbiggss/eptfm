@@ -31,7 +31,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       grid-template-columns: repeat(3, auto);
 
       margin-top: clamp(178px, 18vw, 357px);
-      margin-bottom: clamp(50px, 5.2vw, 100px);
+      margin-bottom: clamp(80px, 5.2vw, 100px);
       text-align: center;
       span {
         color: #292929;
@@ -47,7 +47,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         max-width: 281px;
         width: 14.6vw;
         position: absolute;
-        left: clamp(100px, 36.4vw, 700px);
+        left: clamp(100px, 37.4vw, 700px);
         bottom: -60px;
         z-index: -1;
         /* transform: translate(-30px, -199px); */
