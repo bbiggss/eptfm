@@ -15,20 +15,14 @@ const StyledWidthImgTwo = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    /* margin-bottom: 24px; */
     margin: 0 var(--mobile-margin);
-    margin-bottom: clamp(24px, 6vw, 64px);
 
     img {
       display: block;
       width: 100%;
-      /* border-radius: 50px; */
-      /* border-radius: clamp(10px, calc(10px + (27.3 - 10) * ((100vw - 375px) / (1024 - 375))), 27.3px); */
       border-radius: clamp(10px, 2.7vw, 27.3px);
-    }
-    img:first-child {
-      /* margin-bottom: 20px; */
-      margin-bottom: clamp(20px, 5vw, 48px);
+
+      margin-bottom: var(--mobile-margin-24px);
     }
   }
 `;

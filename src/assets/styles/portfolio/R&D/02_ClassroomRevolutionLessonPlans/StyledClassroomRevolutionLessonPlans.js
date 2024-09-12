@@ -1,24 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledClassroomRevolutionLessonPlans = styled.div`
-  @media (min-width: 1025px) and (max-width: 1300px) {
-    .robotImg1 {
-      margin-left: -21px;
-    }
-    .robot2 {
-      right: 0px;
-    }
-  }
-
-  @media (min-width: 1301px) {
-    .robotImg1 {
-      margin-left: -88px;
-    }
-    .robot2 {
-      right: -39px;
-    }
-  }
-
   @media (min-width: 1025px) {
     .twoImgWrapper {
       margin-bottom: 160px;
@@ -44,6 +26,10 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .introductionArea {
       position: relative;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, auto);
+
       margin-top: clamp(178px, 18vw, 357px);
       margin-bottom: clamp(50px, 5.2vw, 100px);
       text-align: center;
@@ -55,44 +41,46 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       }
       .rightSpan {
         margin-left: 133px;
+        /* transform: translateX(clamp(-133px, -6.9vw, 0px)); */
       }
       .robotImg1 {
-        position: absolute;
-        z-index: -1;
         max-width: 281px;
-        width: 14vw;
-        bottom: -37px;
-        /* margin-left: -21px; */
-        /* margin-left: clamp(-21px, calc(-21px + (-0.08vw * 100)), -93px); */
-
-        /* margin-left: clamp(-9px, 20.7vw, -83px); */
+        width: 14.6vw;
+        position: absolute;
+        left: clamp(100px, 36.4vw, 700px);
+        bottom: -60px;
+        z-index: -1;
+        /* transform: translate(-30px, -199px); */
+        /* transform: translate(-30px, clamp(-199px, -10.3vw, -0px)); */
+        /* transform: translate(clamp(-90px, -4.7vw, 0px), clamp(-199px, -10.3vw, -0px)); */
       }
     }
     .introductionArea2 {
-      margin-top: 160px;
-      margin-bottom: 160px;
-      display: flex;
+      margin-top: var(--pc-margin-160px);
+      margin-bottom: var(--pc-margin-160px);
+      display: grid;
+      grid-template-columns: repeat(3, auto);
       position: relative;
-
-      /* background-color: yellow; */
-
+      justify-content: center;
+      .aiBook {
+        position: relative;
+      }
       .ai {
-        margin-right: 100px;
+        margin-right: clamp(50px, 5.2vw, 100px);
         max-width: 468px;
         width: 24vw;
       }
 
       .book {
         position: absolute;
-        left: clamp(100px, 20vw, 396px);
-        bottom: -37px;
+        right: clamp(-60px, -3.1vw, -30px);
+        bottom: clamp(-37px, -1.9vw, -18px);
         max-width: 229px;
-        width: 11vw;
+        width: 11.9vw;
       }
       .robot2 {
-        position: absolute;
-        top: -50px;
-
+        margin-left: clamp(7.5px, 0.7vw, 15px);
+        transform: translateY(clamp(-50px, -2.6vw, -25px));
         max-width: 183px;
         width: 9.5vw;
       }
@@ -130,13 +118,12 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
     .customTextWrapper {
       text-align: center;
-      margin-bottom: clamp(100px, 26vw, 200px);
+      margin-bottom: var(--mobile-margin-100px);
     }
 
     .introductionArea2 {
       margin: 0 var(--mobile-margin);
-      margin-top: 100px;
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-margin-80px);
 
       position: relative;
 
@@ -153,15 +140,16 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
 
       .book {
         position: absolute;
-        right: -69px;
-        bottom: -11px;
+        /* right: clamp(-69px, -18.4vw, -34px); */
+        left: clamp(171px, 45.6vw, 500px);
+        top: clamp(99px, 26.4vw, 1000px);
 
         min-width: 98px;
         width: 26vw;
       }
       .robot2 {
         position: absolute;
-        right: -16px;
+        left: clamp(235px, 62.6vw, 1000px);
         top: -50px;
 
         min-width: 92px;
@@ -169,7 +157,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       }
 
       p {
-        margin-top: clamp(40px, 10.6vw, 80px);
+        margin-top: var(--mobile-margin-40px);
         text-align: center;
       }
     }
@@ -192,12 +180,12 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
     }
 
     .twoImgWrapper {
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-margin-80px);
       p {
         text-align: center;
       }
       &:last-child {
-        margin-bottom: clamp(142px, 37.8vw, 284px);
+        margin-bottom: var(--mobile-margin-142px);
       }
     }
   }

@@ -28,18 +28,17 @@
   --mobile-margin: clamp(30px, 8vw, 80px);
   /* margin: var(--mobile-margin) */
   --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
-  /* mobileMarginTop={'5.33vw'} */
   --mobile-introduction-description-margin-20px: 5.33vw;
 
-  --mobile-font-size-16px: clamp(16px, 4vw, 24px);
-  --mobile-line-height-24px: clamp(24px, 6vw, 32px);
-
+  --mobile-margin-20px: clamp(20px, 5.33vw, 40px);
+  --mobile-margin-24px: clamp(24px, 6.4vw, 100px);
+  --mobile-margin-40px: clamp(40px, 10.6vw, 80px);
   --mobile-margin-80px: clamp(80px, 21vw, 160px);
+  --mobile-margin-100px: clamp(100px, 26.6vw, 1000px);
+  --mobile-margin-142px: clamp(142px, 37.8vw, 1000px);
+
   --mobile-font-size-22px: clamp(22px, 5.8vw, 26.4px);
   --mobile-line-height-30px: clamp(30px, 8vw, 45px);
-
-  --mobile-margin-20px: clamp(20px, 5.33vw, 40px);
-  --mobile-margin-40px: clamp(40px, 10.6vw, 80px);
 
   --mobile-font-size-16px: clamp(16px, 4.2vw, 24px);
   --mobile-line-height-24px: clamp(24px, 6.4vw, 36px);

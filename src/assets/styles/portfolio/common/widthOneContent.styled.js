@@ -38,8 +38,7 @@ export const WidthOneContent = styled.div`
     margin: 0 var(--mobile-margin);
     img {
       width: 100%;
-      /* margin-bottom: 24px; */
-      margin-bottom: 6.4vw;
+      margin-bottom: var(--mobile-margin-24px);
     }
 
     padding-top: ${(props) => {
@@ -54,9 +53,5 @@ export const WidthOneContent = styled.div`
       // return '80px';
       return '21.33vw';
     }};
-  }
-
-  &.firstChild {
-    padding-top: 160px;
   }
 `;
