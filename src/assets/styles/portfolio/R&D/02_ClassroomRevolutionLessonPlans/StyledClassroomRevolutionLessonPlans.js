@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const StyledClassroomRevolutionLessonPlans = styled.div`
   @media (min-width: 1025px) {
     .twoImgWrapper {
-      margin-bottom: 160px;
+      margin-bottom: var(--pc-margin-160px);
       p {
         text-align: center;
       }
       &:last-child {
-        margin-bottom: 200px;
+        margin-bottom: var(--pc-margin-200px);
       }
     }
     .heroWrapper {
@@ -83,6 +83,9 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
         transform: translateY(clamp(-50px, -2.6vw, -25px));
         max-width: 183px;
         width: 9.5vw;
+      }
+      p {
+        white-space: nowrap;
       }
     }
   }

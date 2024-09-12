@@ -129,15 +129,9 @@ const ClassroomRevolutionLessonPlans = () => {
 
       <div className="smallScreen">
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="100px">
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_1.png`}
-            />
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_2.png`}
-            />
+          <WidthImgTwo gap="var(--pc-margin-100px)">
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_1.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_2.png`} />
           </WidthImgTwo>
           <CustomText
             className="customText customText2"
@@ -151,15 +145,9 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="100px">
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_3.png`}
-            />
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_4.png`}
-            />
+          <WidthImgTwo gap="var(--pc-margin-100px)">
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_3.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_4.png`} />
           </WidthImgTwo>
 
           <CustomText
@@ -174,11 +162,8 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="100px">
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_5.png`}
-            />
+          <WidthImgTwo gap="var(--pc-margin-100px)">
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_5.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_6.png`} />
           </WidthImgTwo>
           <CustomText
@@ -193,15 +178,9 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="100px">
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_7.png`}
-            />
-            <Img
-              $whiteImgBackgroundBorder
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_8.png`}
-            />
+          <WidthImgTwo gap="var(--pc-margin-100px)">
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_7.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_8.png`} />
           </WidthImgTwo>
           <CustomText
             className="customText customText2"

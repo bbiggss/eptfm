@@ -17,7 +17,9 @@
   --pc-font-size-24px: clamp(14px, 1.25vw, 24px);
   --pc-line-height-38px: clamp(18px, 1.9vw, 38px);
 
+  --pc-margin-200px: clamp(100px, 10.4vw, 200px);
   --pc-margin-160px: clamp(80px, 8.3vw, 160px);
+  --pc-margin-100px: clamp(0px, 5.2vw, 100px);
   --pc-margin-60px: clamp(30px, 3.1vw, 60px);
   --pc-margin-34px: clamp(17px, 1.7vw, 34px);
 
