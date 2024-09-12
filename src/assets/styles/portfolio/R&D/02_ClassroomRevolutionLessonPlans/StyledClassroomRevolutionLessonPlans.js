@@ -103,7 +103,7 @@ export const StyledClassroomRevolutionLessonPlans = styled.div`
       text-align: center;
       span {
         color: #292929;
-        font-size: var(--mobile-font-size-22px);
+        font-size: clamp(22px, 6vw, 50px);
         letter-spacing: -0.02em;
         font-family: 'NanumSquareEB';
       }
