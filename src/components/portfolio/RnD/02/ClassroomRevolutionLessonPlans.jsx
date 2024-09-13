@@ -129,7 +129,7 @@ const ClassroomRevolutionLessonPlans = () => {
 
       <div className="smallScreen">
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="var(--pc-margin-100px)">
+          <WidthImgTwo gap="var(--pc-100px)">
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_1.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_2.png`} />
           </WidthImgTwo>
@@ -145,7 +145,7 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="var(--pc-margin-100px)">
+          <WidthImgTwo gap="var(--pc-100px)">
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_3.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_4.png`} />
           </WidthImgTwo>
@@ -162,7 +162,7 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="var(--pc-margin-100px)">
+          <WidthImgTwo gap="var(--pc-100px)">
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_5.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_6.png`} />
           </WidthImgTwo>
@@ -178,7 +178,7 @@ const ClassroomRevolutionLessonPlans = () => {
           />
         </div>
         <div className="twoImgWrapper">
-          <WidthImgTwo gap="var(--pc-margin-100px)">
+          <WidthImgTwo gap="var(--pc-100px)">
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_7.png`} />
             <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/02_ClassroomRevolutionLessonPlans/group2/group2_8.png`} />
           </WidthImgTwo>

@@ -10,16 +10,16 @@ export const WidthOneContent = styled.div`
     margin: 0 auto;
     img {
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: var(--pc-60px);
     }
     padding-top: ${(props) => {
-      if (props.$first) return '160px';
+      if (props.$first) return 'var(--pc-160px)';
       return '0px';
     }};
     padding-bottom: ${(props) => {
-      if (props.$last) return '200px';
+      if (props.$last) return 'var(--pc-200px)';
       if (props.$customPaddingBottom) return '190px';
-      return '160px';
+      return 'var(--pc-160px)';
     }};
 
     .left {
@@ -38,7 +38,7 @@ export const WidthOneContent = styled.div`
     margin: 0 var(--mobile-margin);
     img {
       width: 100%;
-      margin-bottom: var(--mobile-margin-24px);
+      margin-bottom: var(--mobile-24px);
     }
 
     padding-top: ${(props) => {

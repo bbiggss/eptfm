@@ -25,9 +25,8 @@ const ParentingGuide = () => {
       <div className="fullScreen heroArea">
         <PortfolioTitleWrap
           style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
-          pcMarginTop={'90px'}
-          mobileMarginTop={'50px'}
-          mobileMarginBottom={'40px'}
+          pcMarginTop={'var(--pc-90px)'}
+          mobileMarginTop={'var(--mobile-50px)'}
         >
           <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'아동권리보장원'} />
           <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'위탁모를 위한 양육 길잡이'} />
@@ -52,7 +51,7 @@ const ParentingGuide = () => {
           alt=""
         />
         <PortfolioIntroductionTitle
-          style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : 'clamp(24px, 2vw + 20px, 40px)' }}
+          style={{ color: '#4F4F4F' }}
           title={
             isMobileTablet
               ? '위탁모와 입양 부모를 위한\n 실질적이고 따뜻한 양육 가이드,\n아이와 함께하는 새로운 여정의 길잡이'
@@ -61,10 +60,8 @@ const ParentingGuide = () => {
         />
         <PortfolioIntroductionDescription
           style={{ color: '#4F4F4F' }}
-          pcMarginTop={'34px'}
-          mobileMarginTop={'5.33vw'}
-          pcMarginBottom={'200px'}
-          mobileMarginBottom={'80px'}
+          pcMarginBottom={'var(--pc-200px)'}
+          mobileMarginBottom={'var(--mobile-80px)'}
           description={
             isMobileTablet
               ? '우리 팀은 입양과 위탁 보호의 중요한 역할을\n 사회에 알리고, 이를 지원하는 실질적인 정보를\n 제공하기 위해 많은 노력을 했어요.'

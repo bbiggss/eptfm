@@ -52,7 +52,7 @@ export const BongsuPavalBox = styled.div`
         max-width: 338px;
         width: 17vw;
         /* width: clamp(102px, 27.2vw, 280px); */
-        margin-right: var(--mobile-margin-right-26px);
+        margin-right: var(--mobile-26px);
       }
       .introudctionWrapper {
         display: flex;
@@ -141,7 +141,7 @@ export const BongsuPavalBox = styled.div`
         /* width: 102px; */
         width: clamp(102px, 27.2vw, 280px);
         /* margin-right: 26px; */
-        margin-right: var(--mobile-margin-right-26px);
+        margin-right: var(--mobile-26px);
       }
       .introudctionWrapper {
         display: flex;

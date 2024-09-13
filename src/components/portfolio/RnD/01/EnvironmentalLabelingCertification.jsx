@@ -67,9 +67,9 @@ const EnvironmentalLabelingCertification = () => {
             <PortfolioIntroductionDescription
               style={{ color: '#767676' }}
               // pcMarginTop={'34px'}
-              pcMarginBottom={'var(--pc-margin-60px)'}
+              pcMarginBottom={'var(--pc-60px)'}
               // mobileMarginTop={'5.33vw'}
-              mobileMarginBottom={'var(--mobile-margin-40px)'}
+              mobileMarginBottom={'var(--mobile-40px)'}
               description={
                 isMobileTablet
                   ? '친환경 인증의 개념부터 절차, 혜택까지\n 심층적으로 탐구하세요! 인터랙티브 학습을 통해\n환경표지인증의 중요성을 체험하고,\n 지속 가능한 소비를 실천해 볼 수 있어요.'

@@ -10,6 +10,7 @@
   --pc-font-size-22px: clamp(18px, 1.15vw, 22px);
 
   --pc-font-size-40px: clamp(20px, 2vw, 40px);
+  --pc-line-height-56px: clamp(0px, 2.9vw, 56px);
 
   --pc-font-size-26px: clamp(16px, 1.3vw, 26px);
   --pc-line-height-40px: clamp(20px, 2vw, 40px);
@@ -17,33 +18,43 @@
   --pc-font-size-24px: clamp(14px, 1.25vw, 24px);
   --pc-line-height-38px: clamp(18px, 1.9vw, 38px);
 
-  --pc-margin-200px: clamp(100px, 10.4vw, 200px);
-  --pc-margin-160px: clamp(80px, 8.3vw, 160px);
-  --pc-margin-100px: clamp(0px, 5.2vw, 100px);
-  --pc-margin-60px: clamp(30px, 3.1vw, 60px);
-  --pc-margin-34px: clamp(17px, 1.7vw, 34px);
-
   --pc-font-size-20px: clamp(10px, 1.04vw, 20px);
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
+
+  --pc-200px: clamp(0px, 10.4vw, 200px);
+  --pc-160px: clamp(0px, 8.3vw, 160px);
+  --pc-100px: clamp(0px, 5.2vw, 100px);
+  --pc-90px: clamp(0px, 4.68vw, 90px);
+  --pc-60px: clamp(30px, 3.1vw, 60px);
+  --pc-34px: clamp(17px, 1.7vw, 34px);
+  --pc-24px: clamp(10px, 1.25vw, 24px);
 
   /* mobile */
   --mobile-margin: clamp(30px, 8vw, 80px);
   /* margin: var(--mobile-margin) */
-  --mobile-margin-right-26px: clamp(26px, 5vw, 60px);
   --mobile-introduction-description-margin-20px: 5.33vw;
+  --mobile-26px: clamp(26px, 5vw, 60px);
 
-  --mobile-margin-20px: clamp(20px, 5.33vw, 40px);
-  --mobile-margin-24px: clamp(24px, 6.4vw, 100px);
-  --mobile-margin-40px: clamp(40px, 10.6vw, 80px);
-  --mobile-margin-80px: clamp(80px, 21vw, 160px);
-  --mobile-margin-100px: clamp(100px, 26.6vw, 1000px);
-  --mobile-margin-142px: clamp(142px, 37.8vw, 1000px);
+  --mobile-10px: clamp(10px, 2.6vw, 100px);
+  --mobile-20px: clamp(20px, 5.33vw, 40px);
+  --mobile-22px: clamp(22px, 5.87vw, 100px);
+  --mobile-24px: clamp(24px, 6.4vw, 100px);
+  --mobile-30px: clamp(30px, 8vw, 1000px);
+  --mobile-40px: clamp(40px, 10.6vw, 80px);
+  --mobile-50px: clamp(50px, 13.3vw, 1000px);
+  --mobile-80px: clamp(80px, 21vw, 160px);
+  --mobile-100px: clamp(100px, 26.6vw, 1000px);
+  --mobile-142px: clamp(142px, 37.8vw, 1000px);
+
+  --mobile-font-size-12px: clamp(12px, 3.2vw, 18px);
 
   --mobile-font-size-22px: clamp(22px, 5.8vw, 26.4px);
-  --mobile-line-height-30px: clamp(30px, 8vw, 45px);
+  --mobile-line-height-30px: clamp(30px, 7vw, 36px);
 
   --mobile-font-size-16px: clamp(16px, 4.2vw, 24px);
   --mobile-line-height-24px: clamp(24px, 6.4vw, 36px);
+
+  --mobile-font-size-25px: clamp(25px, 6.67vw, 100px);
 
   --mobile-Y-30px: clamp(-90px, -8vw, -30px);
 

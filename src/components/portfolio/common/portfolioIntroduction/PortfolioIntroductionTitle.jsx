@@ -15,14 +15,11 @@ const StyledPortfolioIntroductionTitle = styled.p`
   color: #000000;
   letter-spacing: -0.02em;
   @media (min-width: 1025px) {
-    /* font-size: 50px; */
     font-size: var(--pc-font-size-40px);
+    line-height: var(--pc-line-height-56px);
 
-    /* margin-top: 60px; */
     margin-top: ${(props) => props.$pcMarginTop};
     padding-top: ${(props) => props.$pcPaddingTop};
-
-    /* 1440px 기준 50px */
   }
   @media (max-width: 1024px) {
     font-size: var(--mobile-font-size-22px);
@@ -32,7 +29,6 @@ const StyledPortfolioIntroductionTitle = styled.p`
 
     margin-top: ${(props) => props.$mobileMarginTop};
     margin-bottom: ${(props) => props.$mobileMarginBottom};
-    /* 22px / 375px * 100 = 5.87vw */
   }
 `;
 

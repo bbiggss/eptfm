@@ -58,7 +58,7 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
 
     .FFFFFF {
       background-color: #ffffff;
-      padding-top: var(--pc-margin-160px);
+      padding-top: var(--pc-160px);
 
       max-width: 1400px;
       width: 72vw;
@@ -74,7 +74,7 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
       .introductionImgs {
         max-width: 960px;
         width: 80%;
-        margin-bottom: var(--pc-margin-160px);
+        margin-bottom: var(--pc-160px);
       }
     }
   }
@@ -108,13 +108,13 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
         .introductionWrapper {
           text-align: center;
           /* padding-top: 80px; */
-          padding-top: var(--mobile-margin-80px);
+          padding-top: var(--mobile-80px);
         }
         .introductionImgs {
           min-width: 315px;
           width: 60vw;
 
-          margin-bottom: var(--mobile-margin-80px);
+          margin-bottom: var(--mobile-80px);
         }
         .customLeftTemp {
           div:first-child {

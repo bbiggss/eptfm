@@ -17,19 +17,15 @@ const StyledPortfolioIntroductionDescription = styled.p`
 
   @media (min-width: 1025px) {
     /* margin-top: ${(props) => props.$pcMarginTop}; */
-
-    margin-top: var(--pc-margin-34px);
+    margin-top: var(--pc-34px);
     margin-bottom: ${(props) => props.$pcMarginBottom};
 
     font-size: var(--pc-font-size-26px);
     line-height: var(--pc-line-height-40px);
   }
   @media (max-width: 1024px) {
-    /* margin-top: 20px;
-    margin-bottom: 80px; */
-
     /* margin-top: ${(props) => props.$mobileMarginTop}; */
-    margin-top: var(--mobile-margin-20px);
+    margin-top: var(--mobile-20px);
 
     margin-bottom: ${(props) => props.$mobileMarginBottom};
     /* margin-bottom: 21.33vw; */

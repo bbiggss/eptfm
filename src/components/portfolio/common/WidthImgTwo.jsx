@@ -7,7 +7,7 @@ const StyledWidthImgTwo = styled.div`
     grid-template-columns: repeat(2, auto);
     gap: ${(props) => props.$gap};
 
-    margin-bottom: var(--pc-margin-60px);
+    margin-bottom: var(--pc-60px);
     img {
       width: 100%;
       /* width: calc(50% - (40px / 2)); */
@@ -22,7 +22,7 @@ const StyledWidthImgTwo = styled.div`
       width: 100%;
       /* border-radius: clamp(10px, 2.7vw, 27.3px); */
 
-      margin-bottom: var(--mobile-margin-24px);
+      margin-bottom: var(--mobile-24px);
     }
   }
 `;

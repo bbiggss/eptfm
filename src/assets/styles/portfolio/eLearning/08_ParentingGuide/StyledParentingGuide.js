@@ -20,7 +20,7 @@ export const StyledParentingGuide = styled.div`
     .introductionWrapper {
       text-align: center;
       .babyHeart {
-        margin-top: 178px;
+        margin-top: clamp(0px, 9.27vw, 178px);
         max-width: 250px;
         width: 13vw;
       }
@@ -51,7 +51,7 @@ export const StyledParentingGuide = styled.div`
     .introductionWrapper {
       text-align: center;
       .babyHeart {
-        margin-top: 56px;
+        margin-top: clamp(56px, 14.93vw, 1000px);
         min-width: 125px;
         width: 33vw;
       }

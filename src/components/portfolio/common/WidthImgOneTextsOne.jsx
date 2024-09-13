@@ -27,7 +27,7 @@ const StyledWidthImgOneTextsOne = styled.div`
 
     padding-bottom: ${(props) => {
       if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
-      return 'var(--pc-margin-160px)';
+      return 'var(--pc-160px)';
     }};
   }
 
