@@ -75,9 +75,6 @@ export const StyledChemicalSafety = styled.div`
         padding-bottom: var(--pc-160px);
         p {
           color: #292929;
-          font-size: 26px;
-          line-height: 40px;
-          letter-spacing: -0.02em;
         }
       }
     }
