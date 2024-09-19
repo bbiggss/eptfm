@@ -16,7 +16,7 @@ export const StyledEastAsia = styled.div`
   }
   @media (min-width: 1025px) and (max-width: 1900px) {
     .figure_02 {
-      top: 378px;
+      top: clamp(210px, 18vw, 347px);
       right: clamp(-90px, -7vw, -74px);
     }
   }
@@ -124,7 +124,7 @@ export const StyledEastAsia = styled.div`
       min-width: 390px;
       width: 104vw;
       left: clamp(-1000px, -29.6vw, -111px);
-      bottom: clamp(-1000px, -38.6vw, -145px);
+      bottom: clamp(406px, 101vw, 948px);
     }
 
     .imgTwoWrapper {
