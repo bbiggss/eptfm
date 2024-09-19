@@ -105,7 +105,8 @@ export const StyledCategoryLi = styled.li`
     }
 
     p {
-      font-size: clamp(16px, 4.2vw, 100px);
+      font-size: clamp(16px, 3.2vw, 100px);
+      line-height: 5vw;
       letter-spacing: -0.02em;
       min-width: 275px;
       width: 73vw;

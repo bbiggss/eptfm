@@ -8,6 +8,19 @@ export const StyledEastAsia = styled.div`
   }
   overflow-x: hidden;
 
+  @media (min-width: 1901px) {
+    .figure_02 {
+      right: 0;
+      top: 347px;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1900px) {
+    .figure_02 {
+      top: 378px;
+      right: clamp(-90px, -7vw, -74px);
+    }
+  }
+
   @media (min-width: 1025px) {
     .heroArea {
       position: relative;
@@ -28,37 +41,50 @@ export const StyledEastAsia = styled.div`
 
     .introductionWrapper {
       text-align: center;
-      margin: 200px 0;
+      margin: var(--pc-200px) 0;
     }
     .figure_01 {
       left: 0;
       /* top: -520px; */
+
+      max-width: 500px;
+      width: 26vw;
     }
     .figure_02 {
-      right: 0;
-      top: 347px;
+      max-width: 500px;
+      width: 26vw;
     }
     .figure_03 {
+      max-width: 500px;
+      width: 26vw;
+
       left: 0;
-      bottom: -70px;
+      bottom: clamp(-70px, -16px + 5vw, -16px);
     }
     .figure_04 {
+      max-width: 500px;
+      width: 26vw;
+
       right: 0;
-      bottom: -125px;
+      bottom: clamp(-125px, 6vw, -78px);
     }
     .figure_05 {
-      bottom: 42px;
-      left: -195px;
+      max-width: 500px;
+      width: 26vw;
+
+      /* bottom: clamp(42px, 10vw, 87px); */
+      bottom: clamp(18px, 2vw, 42px);
+      left: clamp(-195px, -10vw, -115px);
     }
     .imgTwoWrapper {
-      margin-bottom: 160px;
+      margin-bottom: var(--pc-160px);
     }
   }
   @media (max-width: 1024px) {
     .introductionWrapper {
       text-align: center;
-      margin-top: 90px;
-      margin-bottom: 80px;
+      margin-top: var(--mobile-90px);
+      margin-bottom: var(--mobile-80px);
     }
     .figure_01,
     .figure_02,
@@ -79,30 +105,30 @@ export const StyledEastAsia = styled.div`
       min-width: 213px;
       width: 56vw;
 
-      right: -59px;
-      top: 128px;
+      right: clamp(-1000px, -15.7vw, -59px);
+      top: clamp(128px, 30vw, 1000px);
     }
     .figure_03 {
       min-width: 197px;
       width: 52vw;
-      bottom: -93px;
+      bottom: clamp(-1000px, -24.8vw, -93px);
       left: -19px;
     }
     .figure_04 {
       min-width: 173px;
       width: 46vw;
       right: 0;
-      bottom: -55px;
+      bottom: clamp(-1000px, -14.6vw, -55px);
     }
     .figure_05 {
       min-width: 390px;
       width: 104vw;
-      left: -111px;
-      bottom: -145px;
+      left: clamp(-1000px, -29.6vw, -111px);
+      bottom: clamp(-1000px, -38.6vw, -145px);
     }
 
     .imgTwoWrapper {
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-80px);
     }
   }
 `;

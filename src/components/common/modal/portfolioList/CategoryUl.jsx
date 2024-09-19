@@ -19,7 +19,9 @@ const StyledCategoryUl = styled.ul`
 
   @media (max-width: 1024px) {
     margin-bottom: ${(props) => {
-      if (props.$last) return '160px';
+      // if (props.$last) return '160px';
+      // 160 + 180 = 340
+      if (props.$last) return 'calc(160px + 28vw)';
       return '80px';
     }};
 

@@ -93,7 +93,7 @@ const Header = (data) => {
           </li>
           <NavBox setShowDropDown={setShowDropDown} title={'CONTACT US'} link={'contactUs'} activeLink={data.activeLink} />
         </ul>
-        <div className="dim"></div>
+        <div className="dim" onClick={() => dropDownClose()}></div>
       </StyledDropDown>
     </>
   );

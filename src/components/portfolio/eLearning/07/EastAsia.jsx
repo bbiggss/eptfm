@@ -61,7 +61,7 @@ const EastAsia = () => {
       </div>
       <div className="introductionWrapper">
         <PortfolioIntroductionTitle
-          style={{ color: '#4F4F4F', fontSize: isMobileTablet ? '' : 'clamp(24px, 2vw + 20px, 40px)' }}
+          style={{ color: '#4F4F4F' }}
           title={
             isMobileTablet ? '과거로의 여행에서 배운 역사,\n 동아시아의 문화를 살펴봐요!' : '과거로의 여행에서 배운 역사, 동아시아의 문화를 살펴봐요!'
           }
@@ -70,8 +70,6 @@ const EastAsia = () => {
           style={{ color: '#4F4F4F' }}
           pcMarginTop={'34px'}
           mobileMarginTop={'5.33vw'}
-          pcMarginBottom={'200px'}
-          mobileMarginBottom={'80px'}
           description={
             isMobileTablet
               ? '한국, 중국, 일본의 역사를 통해 동아시아 지역의\n 문화와 상호작용을 탐구하여 깊이 있는\n 역사적 이해를 도모해볼까요?'
@@ -137,7 +135,7 @@ const EastAsia = () => {
 
         <div className="smallScreen">
           <div className="imgTwoWrapper">
-            <WidthImgTwo gap={'60px'}>
+            <WidthImgTwo gap={'var(--pc-60px)'}>
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/1.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/2.png`} />
             </WidthImgTwo>
@@ -153,7 +151,7 @@ const EastAsia = () => {
             />
           </div>
           <div className="imgTwoWrapper">
-            <WidthImgTwo gap={'60px'}>
+            <WidthImgTwo gap={'var(--pc-60px)'}>
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/3.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/4.png`} />
             </WidthImgTwo>
@@ -176,7 +174,7 @@ const EastAsia = () => {
             />
           </div>
           <div className="imgTwoWrapper">
-            <WidthImgTwo gap={'60px'}>
+            <WidthImgTwo gap={'var(--pc-60px)'}>
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/5.png`} />
               <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/07_EastAsia/group2/6.png`} />
             </WidthImgTwo>

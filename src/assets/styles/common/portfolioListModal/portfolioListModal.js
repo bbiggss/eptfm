@@ -84,6 +84,11 @@ export const StyledPortfolioListModal = styled.div`
       gap: 65px;
     }
   }
+  @media (min-width: 1025px) {
+    .titleXbtn {
+      display: none;
+    }
+  }
   @media (max-width: 1024px) {
     .modalContainer {
       height: 100vh;
@@ -100,19 +105,22 @@ export const StyledPortfolioListModal = styled.div`
 
       display: grid;
       justify-content: center;
+
+      /* margin-top: clamp(200px, 53vw, 1000px); */
+      margin-top: clamp(180px, 28vw, 1000px);
     }
     .title {
       color: #ffffff;
       text-align: left;
       font-family: 'Roboto-Medium', sans-serif;
-      font-size: clamp(36px, 9.6vw, 100px);
+      font-size: clamp(36px, 8.6vw, 100px);
 
       position: relative;
       display: inline-block;
 
-      /* margin-top: 80px; */
-      margin-top: 130px;
-      margin-bottom: 80px;
+      margin-top: 80px;
+      /* margin-bottom: 80px; */
+      margin-left: clamp(30px, 8vw, 1000px);
     }
     .xBtn {
       /* position: absolute; */
@@ -133,6 +141,16 @@ export const StyledPortfolioListModal = styled.div`
       justify-content: center;
       padding: 0;
       gap: 8px 20px;
+    }
+
+    .titleXbtn {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .titleXbtnPc {
+      display: none;
     }
   }
 `;
