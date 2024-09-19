@@ -22,14 +22,6 @@ export const StyledChemicalSafety = styled.div`
         transform: translateX(-50%);
         text-align: center;
         bottom: 0;
-        p:first-child {
-          font-size: clamp(10px, 2vw, 40px);
-          line-height: clamp(10px, 2.9vw, 56px);
-        }
-        p:last-child {
-          font-size: clamp(10px, 1.3vw, 26px);
-          line-height: clamp(10px, 2vw, 40px);
-        }
       }
     }
     .side1 {
@@ -38,21 +30,23 @@ export const StyledChemicalSafety = styled.div`
       width: 41vw;
       z-index: -1;
 
-      bottom: -267px;
+      bottom: clamp(-267px, -13vw, -159px);
     }
     .side2 {
+      max-width: 377px;
+      width: 19.6vw;
+
       position: absolute;
-      right: clamp(10px, 4vw, 78px);
-      /* margin-right: clamp(10px, 4vw, 78px); */
-      top: -168px;
+      right: clamp(-0px, 4vw, 78px);
+      top: clamp(-218px, -11vw, -132px);
     }
     .group2Area {
       background-color: rgba(131, 148, 188, 0.3);
 
       .nationFlag {
         width: 610px;
-        padding-top: 160px;
-        padding-bottom: 100px;
+        padding-top: var(--pc-160px);
+        padding-bottom: var(--pc-100px);
 
         /* display: grid; */
         /* grid-template-columns: repeat(5, auto); */
@@ -69,7 +63,7 @@ export const StyledChemicalSafety = styled.div`
       .grid {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        gap: 60px 60px;
+        gap: var(--pc-60px) var(--pc-60px);
         width: 80%;
         img {
           width: 100%;
@@ -77,8 +71,8 @@ export const StyledChemicalSafety = styled.div`
       }
 
       .customPadding {
-        padding-top: 60px;
-        padding-bottom: 160px;
+        padding-top: var(--pc-60px);
+        padding-bottom: var(--pc-160px);
         p {
           color: #292929;
           font-size: 26px;
@@ -101,23 +95,24 @@ export const StyledChemicalSafety = styled.div`
     }
     .side1 {
       position: absolute;
-      width: 269px;
-      top: -158px;
-      left: -38px;
+      min-width: 228px;
+      width: 60.8vw;
+
+      /* top: clamp(-302px, ,158px); */
+      /* top: -158px; */
+      bottom: clamp(-181px, -25vw, -93px);
+      z-index: -1;
     }
     .side2 {
       display: none;
-      /* position: absolute;
-      right: 0;
-      top: -100px; */
     }
 
     .group2Area {
       background-color: rgba(131, 148, 188, 0.3);
 
       .nationFlag {
-        padding-top: 80px;
-        padding-bottom: 60px;
+        padding-top: var(--mobile-80px);
+        padding-bottom: var(--mobile-60px);
 
         /* display: grid; */
         /* justify-content: center; */
@@ -145,8 +140,8 @@ export const StyledChemicalSafety = styled.div`
       }
 
       .customPadding {
-        padding-top: 24px;
-        padding-bottom: 80px;
+        padding-top: var(--mobile-24px);
+        padding-bottom: var(--mobile-80px);
         p {
           color: #292929;
         }

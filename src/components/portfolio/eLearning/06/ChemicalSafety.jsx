@@ -31,8 +31,7 @@ const ChemicalSafety = () => {
             transform: 'translateX(-50%)',
           }}
           pcMarginTop={'180px'}
-          mobileMarginTop={'50px'}
-          mobileMarginBottom={'8px'}
+          mobileMarginTop={'var(--mobile-50px)'}
         >
           <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'화학물질안전원'} />
           <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'화학물질안전에 대하여'} />
@@ -96,7 +95,9 @@ const ChemicalSafety = () => {
         <div className="relative">
           <img
             className="side1"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side1.png`}
+            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/${
+              isMobileTablet ? 'side1' : 'side1_pc'
+            }.png`}
             alt=""
           />
         </div>

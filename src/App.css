@@ -42,6 +42,7 @@
   --mobile-30px: clamp(30px, 8vw, 1000px);
   --mobile-40px: clamp(40px, 10.6vw, 80px);
   --mobile-50px: clamp(50px, 13.3vw, 1000px);
+  --mobile-60px: clamp(60px, 16vw, 1000px);
   --mobile-80px: clamp(80px, 21vw, 160px);
   --mobile-90px: clamp(90px, 24vw, 1000px);
   --mobile-100px: clamp(100px, 26.6vw, 1000px);
