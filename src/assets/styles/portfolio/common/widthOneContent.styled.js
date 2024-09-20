@@ -9,7 +9,7 @@ export const WidthOneContent = styled.div`
     /* width: 80%; */
     margin: 0 auto;
     img {
-      width: 100%;
+      /* width: 100%; */
       margin-bottom: var(--pc-60px);
     }
     padding-top: ${(props) => {
@@ -42,15 +42,12 @@ export const WidthOneContent = styled.div`
     }
 
     padding-top: ${(props) => {
-      // if (props.$first) return '80px';
-      if (props.$first) return '21.33vw';
+      if (props.$first) return 'var(--mobile-80px)';
       return '0px';
     }};
     padding-bottom: ${(props) => {
-      // if (props.$last) return '142px';
-      if (props.$last) return '37.87vw';
+      if (props.$last) return 'var(--mobile-142px)';
       // if (props.$customPaddingBottom) return '?px';
-      // return '80px';
       return 'var(--mobile-80px)';
     }};
   }

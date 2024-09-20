@@ -27,13 +27,14 @@ export const StyledParentingGuide = styled.div`
     }
     .customMaxWidth1060 img {
       max-width: 1060px;
+      width: 55.21vw;
     }
     .backImgTwo {
       position: relative;
       img {
         max-width: 1920px;
         width: 100%;
-        top: -412px;
+        top: -21.46vw;
         position: absolute;
         z-index: -1;
       }

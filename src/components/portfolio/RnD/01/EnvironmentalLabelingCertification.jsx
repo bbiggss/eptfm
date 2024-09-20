@@ -93,8 +93,7 @@ const EnvironmentalLabelingCertification = () => {
                 src={`${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/introduction2.png`}
                 alt=""
               />
-              <ProjectDescription
-                textPosition={'right'}
+              <CustomText
                 text={
                   isMobile
                     ? '다양한 인증 사례와 데이터를 조사하고\n 분석하여, 복잡한 절차를 쉽게 이해할 수 있는\n 상호작용 학습 컨텐츠를 만들었어요. \n이제 여러분도 친환경 인증의 중요성을\n 이해하고 실천할 수 있어요!\n\n인증 받은 제품을 사용할 때마다\n 지구가 살짝 미소 짓는 것 같지 않나요?'

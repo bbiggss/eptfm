@@ -12,10 +12,10 @@ const StyledImg = styled.img`
     }};
 
     max-width: ${(props) => {
-      if (props.$maxWidth) return props.$maxWidth + 'px';
+      if (props.$pcMaxWidth) return props.$pcMaxWidth + 'px';
     }};
     width: ${(props) => {
-      if (props.$maxWidth) return (props.$maxWidth / 1920) * 100 + 'vw';
+      if (props.$pcMaxWidth) return (props.$pcMaxWidth / 1920) * 100 + 'vw';
     }};
   }
   @media (max-width: 1024px) {
@@ -29,7 +29,7 @@ const Img = (data) => {
   return (
     <StyledImg
       $whiteImgBackgroundBorder={data.$whiteImgBackgroundBorder}
-      $maxWidth={data.maxWidth}
+      $pcMaxWidth={data.pcMaxWidth}
       style={data && data.style}
       src={data && data.src}
       alt=""

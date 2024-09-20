@@ -12,30 +12,11 @@ export const StyledChemicalSafety = styled.div`
     }
   }
 
-  @media (min-width: 1601px) {
-    .side2 {
-      max-width: 377px;
-      width: 19.6vw;
-
-      position: absolute;
-      right: clamp(-0px, 4vw, 78px);
-      top: clamp(-218px, -11vw, -132px);
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1600px) {
-    .side2 {
-      max-width: 377px;
-      width: 19.6vw;
-
-      position: absolute;
-      right: 0;
-      top: clamp(-218px, -11vw, -132px);
-    }
-  }
-
   @media (min-width: 1025px) {
     .heroArea {
       position: relative;
+      max-width: 1920px;
+      margin: auto;
       .introductionWrapper {
         white-space: nowrap;
         position: absolute;
@@ -77,7 +58,9 @@ export const StyledChemicalSafety = styled.div`
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: var(--pc-60px) var(--pc-60px);
-        width: 80%;
+        max-width: 1260px;
+        width: 65.63vw;
+        margin: auto;
         img {
           width: 100%;
         }
@@ -90,6 +73,15 @@ export const StyledChemicalSafety = styled.div`
           color: #292929;
         }
       }
+    }
+
+    .side2 {
+      max-width: 377px;
+      width: 19.6vw;
+
+      position: absolute;
+      right: clamp(-0px, 4vw, 78px);
+      top: clamp(-218px, -11vw, -132px);
     }
   }
   @media (max-width: 1024px) {
@@ -141,8 +133,8 @@ export const StyledChemicalSafety = styled.div`
       .grid {
         display: grid;
         grid-template-columns: repeat(1, auto);
-        /* gap: 24px; */
-        gap: 6.4vw;
+        gap: var(--mobile-24px);
+        margin: auto;
         width: 80%;
         img {
           width: 100%;

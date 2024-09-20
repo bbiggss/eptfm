@@ -8,19 +8,6 @@ export const StyledEastAsia = styled.div`
   }
   overflow-x: hidden;
 
-  @media (min-width: 1901px) {
-    .figure_02 {
-      right: 0;
-      top: 347px;
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1900px) {
-    .figure_02 {
-      top: clamp(210px, 18vw, 347px);
-      right: clamp(-90px, -7vw, -74px);
-    }
-  }
-
   @media (min-width: 1025px) {
     .heroArea {
       position: relative;
@@ -53,6 +40,9 @@ export const StyledEastAsia = styled.div`
     .figure_02 {
       max-width: 500px;
       width: 26vw;
+
+      top: clamp(0px, 18.44vw, 354px);
+      right: 0;
     }
     .figure_03 {
       max-width: 500px;
@@ -74,9 +64,13 @@ export const StyledEastAsia = styled.div`
 
       /* bottom: clamp(42px, 10vw, 87px); */
       bottom: clamp(18px, 2vw, 42px);
-      left: clamp(-195px, -10vw, -115px);
+      /* left: clamp(-195px, -10vw, -115px); */
+      left: clamp(0px, 6.56vw, 126px);
     }
     .imgTwoWrapper {
+      max-width: 1260px;
+      width: 65.63vw;
+      margin: 0 auto;
       margin-bottom: var(--pc-160px);
     }
   }

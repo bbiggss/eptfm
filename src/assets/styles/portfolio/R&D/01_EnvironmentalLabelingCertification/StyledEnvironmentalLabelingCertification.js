@@ -125,6 +125,9 @@ export const StyledEnvironmentalLabelingCertification = styled.div`
             width: 92vw;
             transform: translateX(-2.6vw);
           }
+          p {
+            margin-bottom: var(--mobile-80px);
+          }
         }
       }
     }

@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const StyledClassroomRevolutionLessonPlans = styled.div`
   @media (min-width: 1025px) {
     .twoImgWrapper {
+      margin: auto;
       margin-bottom: var(--pc-160px);
+      max-width: 1260px;
+      width: var(--pc-1260px);
       p {
         text-align: center;
       }

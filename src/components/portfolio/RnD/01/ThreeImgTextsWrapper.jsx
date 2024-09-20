@@ -51,7 +51,7 @@ const StyledThreeImgTextsWrapper = styled.div`
         width: 53vw;
 
         /* margin-bottom: 24px; */
-        margin-bottom: 6.4vw;
+        margin-bottom: var(--mobile-24px);
       }
     }
 

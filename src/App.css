@@ -21,6 +21,7 @@
   --pc-font-size-20px: clamp(10px, 1.04vw, 20px);
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
 
+  --pc-1260px: clamp(0px, 65.63vw, 1260px);
   --pc-200px: clamp(0px, 10.4vw, 200px);
   --pc-160px: clamp(0px, 8.3vw, 160px);
   --pc-100px: clamp(0px, 5.2vw, 100px);
@@ -158,6 +159,7 @@ a {
 }
 .maxWidth1260Wrapper img {
   max-width: 1260px;
+  width: 65.63vw;
 }
 
 /* 영어 */
