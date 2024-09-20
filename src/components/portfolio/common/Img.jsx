@@ -10,6 +10,13 @@ const StyledImg = styled.img`
     border-radius: ${(props) => {
       if (props.$whiteImgBackgroundBorder) return '30px';
     }};
+
+    max-width: ${(props) => {
+      if (props.$maxWidth) return props.$maxWidth + 'px';
+    }};
+    width: ${(props) => {
+      if (props.$maxWidth) return (props.$maxWidth / 1920) * 100 + 'vw';
+    }};
   }
   @media (max-width: 1024px) {
     border-radius: ${(props) => {
@@ -19,7 +26,15 @@ const StyledImg = styled.img`
 `;
 
 const Img = (data) => {
-  return <StyledImg $whiteImgBackgroundBorder={data.$whiteImgBackgroundBorder} style={data && data.style} src={data && data.src} alt="" />;
+  return (
+    <StyledImg
+      $whiteImgBackgroundBorder={data.$whiteImgBackgroundBorder}
+      $maxWidth={data.maxWidth}
+      style={data && data.style}
+      src={data && data.src}
+      alt=""
+    />
+  );
 };
 
 export default Img;

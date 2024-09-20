@@ -18,16 +18,19 @@ export const StyledInformationDisclosure = styled.div`
     }
 
     .introductionWrapper {
-      margin: 200px 0;
+      margin: var(--pc-200px) 0;
       text-align: center;
     }
-    .customMaxWidth1257 img {
+
+    .customMaxWidth1257 {
       max-width: 1257px;
+      width: 65.47vw;
+      margin: auto;
     }
   }
   @media (max-width: 1024px) {
     .introductionWrapper {
-      margin: 80px 0;
+      margin: var(--mobile-80px) 0;
       text-align: center;
     }
   }

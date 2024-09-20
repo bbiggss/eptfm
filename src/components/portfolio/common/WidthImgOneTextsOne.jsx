@@ -6,12 +6,13 @@ const StyledWidthImgOneTextsOne = styled.div`
   text-align: left;
 
   @media (min-width: 1025px) {
+    /* 삭제예정 */
     .positionRight {
       margin-left: clamp(50px, 5.2vw, 100px);
     }
 
     /* margin: 0 60px; */
-    display: flex;
+    /* display: flex;
     .texts {
       width: 50%;
       display: flex;
@@ -28,6 +29,29 @@ const StyledWidthImgOneTextsOne = styled.div`
     padding-bottom: ${(props) => {
       if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
       return 'var(--pc-160px)';
+    }}; */
+
+    /* --- */
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: ${(props) => {
+      if (props.$imgRight) return 'space-between';
+      return 'start';
+    }};
+    gap: var(--pc-100px);
+
+    /* img {
+      max-width: 700px;
+      width: 36.4vw;
+    } */
+    p {
+      display: grid;
+      align-items: center;
+    }
+
+    margin-bottom: ${(props) => {
+      if (props.$last) return 'var(--pc-200px)';
+      return 'var(--pc-160px)';
     }};
   }
 
@@ -39,8 +63,10 @@ const StyledWidthImgOneTextsOne = styled.div`
       width: 100%;
       order: 1;
       /* margin-bottom: 24px; */
-      margin-bottom: clamp(24px, 6vw, 48px);
+      margin-bottom: var(--mobile-24px);
     }
+
+    /* 삭제예정 */
     .texts {
       order: 2;
       width: 100%;
@@ -52,33 +78,29 @@ const StyledWidthImgOneTextsOne = styled.div`
       font-size: var(--mobile-content-common-font-size);
       line-height: var(--mobile-content-common-line-height);
     }
+
+    p {
+      order: 2;
+      text-align: center;
+    }
     padding-top: ${(props) => props.$mobilePaddingTop};
 
-    padding-bottom: ${(props) => {
-      if (props.$mobilePaddingBottom) return props.$mobilePaddingBottom;
-      // return '80px';
-      return '21.33vw';
+    margin-bottom: ${(props) => {
+      if (props.$last) return 'var(--mobile-142px)';
+      return 'var(--mobile-80px)';
     }};
   }
-
-  /* @media (min-width: 768px) and (max-width: 1024px) {
-    padding-top: ${(props) => props.$tabletPaddingTop};
-
-  }
-  @media (max-width: 767px) {
-    padding-top: ${(props) => props.$mobilePaddingTop};
-  } */
 `;
 
-const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, pcPaddingBottom, mobilePaddingBottom }) => {
+const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, imgRight, last }) => {
   return (
     <StyledWidthImgOneTextsOne
       style={style}
       $pcPaddingTop={pcPaddingTop}
       $tabletPaddingTop={tabletPaddingTop}
       $mobilePaddingTop={mobilePaddingTop}
-      $pcPaddingBottom={pcPaddingBottom}
-      $mobilePaddingBottom={mobilePaddingBottom}
+      $imgRight={imgRight}
+      $last={last}
     >
       {children}
     </StyledWidthImgOneTextsOne>

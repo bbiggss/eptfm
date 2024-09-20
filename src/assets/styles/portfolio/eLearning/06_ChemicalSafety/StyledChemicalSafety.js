@@ -12,6 +12,27 @@ export const StyledChemicalSafety = styled.div`
     }
   }
 
+  @media (min-width: 1601px) {
+    .side2 {
+      max-width: 377px;
+      width: 19.6vw;
+
+      position: absolute;
+      right: clamp(-0px, 4vw, 78px);
+      top: clamp(-218px, -11vw, -132px);
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    .side2 {
+      max-width: 377px;
+      width: 19.6vw;
+
+      position: absolute;
+      right: 0;
+      top: clamp(-218px, -11vw, -132px);
+    }
+  }
+
   @media (min-width: 1025px) {
     .heroArea {
       position: relative;
@@ -31,14 +52,6 @@ export const StyledChemicalSafety = styled.div`
       z-index: -1;
 
       bottom: clamp(-267px, -13vw, -159px);
-    }
-    .side2 {
-      max-width: 377px;
-      width: 19.6vw;
-
-      position: absolute;
-      right: clamp(-0px, 4vw, 78px);
-      top: clamp(-218px, -11vw, -132px);
     }
     .group2Area {
       background-color: rgba(131, 148, 188, 0.3);

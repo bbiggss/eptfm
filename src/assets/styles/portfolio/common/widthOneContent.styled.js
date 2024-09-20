@@ -6,7 +6,7 @@ export const WidthOneContent = styled.div`
 
   @media (min-width: 1025px) {
     /* margin: 0 50px; */
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     img {
       width: 100%;
@@ -51,7 +51,7 @@ export const WidthOneContent = styled.div`
       if (props.$last) return '37.87vw';
       // if (props.$customPaddingBottom) return '?px';
       // return '80px';
-      return '21.33vw';
+      return 'var(--mobile-80px)';
     }};
   }
 `;

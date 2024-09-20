@@ -16,7 +16,6 @@ const StyledPortfolioIntroductionDescription = styled.p`
   white-space: nowrap;
 
   @media (min-width: 1025px) {
-    /* margin-top: ${(props) => props.$pcMarginTop}; */
     margin-top: var(--pc-34px);
     margin-bottom: ${(props) => props.$pcMarginBottom};
 
@@ -24,7 +23,6 @@ const StyledPortfolioIntroductionDescription = styled.p`
     line-height: var(--pc-line-height-40px);
   }
   @media (max-width: 1024px) {
-    /* margin-top: ${(props) => props.$mobileMarginTop}; */
     margin-top: var(--mobile-20px);
 
     margin-bottom: ${(props) => props.$mobileMarginBottom};
@@ -44,9 +42,7 @@ const PortfolioIntroductionDescription = (data) => {
   return (
     <StyledPortfolioIntroductionDescription
       style={data && data.style}
-      $pcMarginTop={data.pcMarginTop}
       $pcMarginBottom={data.pcMarginBottom}
-      $mobileMarginTop={data.mobileMarginTop}
       $mobileMarginBottom={data.mobileMarginBottom}
     >
       {renderTextWithLineBreaks(data.description)}
