@@ -24,8 +24,6 @@ const StyledWidthImgOneTextsOne = styled.div`
       font-size: var(--pc-font-size-24px);
       line-height: var(--pc-line-height-38px);
     }
-    padding-top: ${(props) => props.$pcPaddingTop};
-
     padding-bottom: ${(props) => {
       if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
       return 'var(--pc-160px)';
@@ -48,10 +46,18 @@ const StyledWidthImgOneTextsOne = styled.div`
       display: grid;
       align-items: center;
     }
-
+    padding-top: ${(props) => props.$pcPaddingTop};
+    margin: auto;
     margin-bottom: ${(props) => {
       if (props.$last) return 'var(--pc-200px)';
       return 'var(--pc-160px)';
+    }};
+
+    max-width: ${(props) => {
+      if (props.$pcMaxWidth) return '1260px';
+    }};
+    width: ${(props) => {
+      if (props.$pcMaxWidth) return (props.$pcMaxWidth / 1920) * 100 + 'vw';
     }};
   }
 
@@ -92,7 +98,7 @@ const StyledWidthImgOneTextsOne = styled.div`
   }
 `;
 
-const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, imgRight, last }) => {
+const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, imgRight, last, pcMaxWidth }) => {
   return (
     <StyledWidthImgOneTextsOne
       style={style}
@@ -101,6 +107,8 @@ const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, 
       $mobilePaddingTop={mobilePaddingTop}
       $imgRight={imgRight}
       $last={last}
+      $pcMaxWidth={pcMaxWidth}
+      $
     >
       {children}
     </StyledWidthImgOneTextsOne>

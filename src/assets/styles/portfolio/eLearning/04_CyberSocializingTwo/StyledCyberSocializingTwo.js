@@ -14,9 +14,8 @@ export const StyledCyberSocializingTwo = styled.div`
 
     .book {
       position: absolute;
-      left: -282px;
-      right: 337px;
-      bottom: -135px;
+      left: 50px;
+      bottom: clamp(-135px, -7vw, -80px);
 
       max-width: 475px;
       width: 24.7vw;
@@ -33,8 +32,8 @@ export const StyledCyberSocializingTwo = styled.div`
 
     .books {
       position: absolute;
-      right: clamp(-231px, -12vw, -100px);
-      top: -273px;
+      right: 0;
+      /* top: -273px; */
       z-index: -1;
 
       max-width: 400px;
@@ -54,6 +53,13 @@ export const StyledCyberSocializingTwo = styled.div`
         margin-top: 194px;
         /* margin-left: 459px; */
         margin-left: clamp(10px, 23vw, 459px);
+      }
+    }
+    .contentsWrapper {
+      position: relative;
+      div {
+        max-width: 1260px;
+        width: var(--pc-1260px);
       }
     }
   }
