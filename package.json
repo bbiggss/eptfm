@@ -27,8 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -c eptfm.com"
+    // "predeploy": "npm run build",
+    "predeploy": "echo 'eptfm.com' > build/CNAME",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
