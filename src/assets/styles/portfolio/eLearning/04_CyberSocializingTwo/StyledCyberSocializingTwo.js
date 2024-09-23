@@ -2,16 +2,6 @@ import styled from 'styled-components';
 
 export const StyledCyberSocializingTwo = styled.div`
   @media (min-width: 1025px) {
-    /* max-width: 1920px;
-    margin: auto; */
-    .gridWrapper {
-      max-width: 1920px;
-      margin: auto;
-    }
-    .PortfolioTitleBox {
-      margin-bottom: 41px;
-    }
-
     .book {
       position: absolute;
       left: 50px;
@@ -32,35 +22,36 @@ export const StyledCyberSocializingTwo = styled.div`
 
     .books {
       position: absolute;
-      right: 0;
-      /* top: -273px; */
+      right: clamp(0px, 5.73vw, 110px);
       z-index: -1;
+      bottom: clamp(-125px, -6vw, 0px);
 
       max-width: 400px;
       width: 20vw;
     }
     .cloudPaperPlane {
+      width: 27.24vw;
+      max-width: 523px;
+
       position: absolute;
-      left: -330px;
-      top: -241px;
+      left: 0px;
+      top: clamp(-242px, -12.6vw, 0px);
       z-index: -1;
     }
-    /* -- */
     .gridWrapper {
+      max-width: 1920px;
+      margin: auto;
       position: relative;
       .introductionWrapper {
         position: absolute;
-        margin-top: 194px;
+        margin-top: clamp(0px, 10vw, 194px);
         /* margin-left: 459px; */
         margin-left: clamp(10px, 23vw, 459px);
       }
     }
-    .contentsWrapper {
-      position: relative;
-      div {
-        max-width: 1260px;
-        width: var(--pc-1260px);
-      }
+    .relative {
+      max-width: 1920px;
+      margin: auto;
     }
   }
   @media (max-width: 1024px) {
@@ -76,33 +67,51 @@ export const StyledCyberSocializingTwo = styled.div`
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        bottom: -150px;
+        bottom: clamp(-150px, -33vw, -75px);
       }
     }
     .cloud {
       position: absolute;
-      width: 141px;
+      min-width: 141px;
+      width: 37.6vw;
       right: 0;
-      bottom: -123px;
+      bottom: clamp(-250px, -25vw, -123px);
       z-index: -1;
     }
-    .book,
-    .books,
+    .book {
+      position: absolute;
+      min-width: 202px;
+      width: 53vw;
+      top: clamp(-1000px, -20vw, -59px);
+      left: clamp(-1000px, -6.67vw, -25px);
+    }
+    .books {
+      position: absolute;
+
+      min-width: 115px;
+      width: 30vw;
+      right: 0;
+      bottom: clamp(-11px, -2.93vw, 0px);
+    }
     .cloudPaperPlane {
-      display: none;
+      position: absolute;
+      z-index: -1;
+      bottom: clamp(-1000px, -17.3vw, -65px);
+
+      min-width: 144px;
+      width: 38.4vw;
     }
 
     .topCloud {
-      /* display: grid; */
       position: absolute;
       right: 0;
+      top: clamp(-1000px, -13vw, -52px);
 
-      width: 117px;
-      top: -52px;
+      width: clamp(120px, 32vw, 1000px);
       z-index: -1;
     }
     .heroWrapper {
-      margin-top: 93px;
+      margin-top: clamp(93px, 24.8vw, 1000px);
     }
   }
 `;
