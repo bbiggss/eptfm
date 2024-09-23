@@ -111,10 +111,7 @@ const ClassroomRevolution = () => {
 
       <div className="contentsWrapper">
         <WidthOneContent $first>
-          <Img
-            $whiteImgBackgroundBorder
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/1.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/1.png`} />
           <CustomText
             text={
               isMobile
@@ -126,10 +123,7 @@ const ClassroomRevolution = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img
-            $whiteImgBackgroundBorder
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/2.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/2.png`} />
           <CustomText
             text={
               isMobile
@@ -141,10 +135,7 @@ const ClassroomRevolution = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img
-            $whiteImgBackgroundBorder
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/3.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/3.png`} />
           <CustomText
             text={
               isMobile
@@ -156,10 +147,7 @@ const ClassroomRevolution = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img
-            $whiteImgBackgroundBorder
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/4.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/4.png`} />
           <CustomText
             text={
               isMobile
@@ -171,10 +159,7 @@ const ClassroomRevolution = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img
-            $whiteImgBackgroundBorder
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/5.png`}
-          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group2/5.png`} />
           <CustomText
             text={
               isMobile
