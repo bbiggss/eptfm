@@ -29,11 +29,8 @@ const StyledBreadcrumbBox = styled.div`
   }
 
   @media (min-width: 1025px) {
-    ul {
-      /* margin-left: 192px; */
-    }
-    padding-top: 88px;
-    margin-bottom: 73px;
+    padding-top: var(--pc-88px);
+    margin-bottom: var(--pc-73px);
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     display: none;

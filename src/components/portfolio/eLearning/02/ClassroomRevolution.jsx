@@ -13,10 +13,6 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import CustomText from '../../common/CustomText';
 
-// PortfolioTitleWrap
-// PortfolioOrganization
-// PortfolioFieldTitle
-
 const ClassroomRevolution = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
@@ -24,7 +20,7 @@ const ClassroomRevolution = () => {
   return (
     <StyledClassroomRevolution>
       <div className="fullScreen heroArea">
-        <div className="ellipseWrapper" style={{ zIndex: '-1' }}>
+        <div className="ellipseWrapper">
           <img
             className="ellipse1"
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/${
@@ -41,14 +37,12 @@ const ClassroomRevolution = () => {
           />
         </div>
 
-        <Breadcrumb style={{ position: 'absolute' }} />
+        <Breadcrumb style={{ position: 'absolute', zIndex: '0' }} />
 
         <PortfolioTitleWrap
-          pcMarginTop={'180px'}
-          style={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}
-          mobileMarginTop={'50px'}
-          pcMarginBottom={'80px'}
-          mobileMarginBottom={'40px'}
+          pcMarginTop={'var(--pc-180px)'}
+          style={{ position: 'absolute', left: '50%', zIndex: '1', transform: 'translateX(-50%)' }}
+          mobileMarginTop={'var(--mobile-50px)'}
         >
           <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'한국교육학술정보원'} />
           <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB', whiteSpace: 'nowrap' }} title={'교사가 이끄는 교실혁명'} />
@@ -57,8 +51,6 @@ const ClassroomRevolution = () => {
         <div className="intro_imgs_Wrapper">
           <div className="introductionWrapper">
             <PortfolioIntroductionTitle
-              pcMarginTop={'clamp(10px,6vw,118px)'}
-              mobileMarginTop={''}
               style={{ color: '#292929' }}
               title={isMobileTablet ? 'AI 디지털교과서의\n 새로운 시대가 열립니다!' : 'AI 디지털교과서의 새로운 시대가 열립니다!'}
             />
@@ -89,7 +81,7 @@ const ClassroomRevolution = () => {
         </div>
       </div>
       <div className="fullScreen area2">
-        <div className="customTextWrapper">
+        <div className="customTextWrapperOne">
           <CustomText
             text={
               isMobile
@@ -100,11 +92,11 @@ const ClassroomRevolution = () => {
             }
           />
         </div>
-        <div className="smallScreen doubleImgWrapper">
+        <div className="doubleImgWrapper">
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group1/1.png`} />
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/02_ClassroomRevolution/group1/2.png`} />
         </div>
-        <div className="customTextWrapper customPaddingTop21">
+        <div className="customTextWrapperTwo">
           <CustomText
             text={
               isMobile
@@ -117,7 +109,7 @@ const ClassroomRevolution = () => {
         </div>
       </div>
 
-      <div className="customMaxHeight1080">
+      <div className="contentsWrapper">
         <WidthOneContent $first>
           <Img
             $whiteImgBackgroundBorder

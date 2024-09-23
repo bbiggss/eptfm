@@ -5,19 +5,6 @@ export const StyledClassroomRevolution = styled.div`
     position: relative;
     z-index: -1;
   }
-  @media (min-width: 1501px) {
-    .intro_imgs_Wrapper {
-      padding-top: 350px;
-      padding-bottom: 465px;
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1500px) {
-    .intro_imgs_Wrapper {
-      padding-top: 300px;
-      padding-bottom: 265px;
-    }
-  }
-
   @media (min-width: 1025px) {
     .heroArea {
       max-width: 1920px;
@@ -53,53 +40,51 @@ export const StyledClassroomRevolution = styled.div`
 
     .area2 {
       background-color: #30bbc7;
+      position: relative;
+      z-index: -2;
 
-      .customTextWrapper {
-        padding-top: 200px;
-        padding-bottom: 160px;
+      .customTextWrapperOne {
+        padding-top: var(--pc-200px);
+        padding-bottom: var(--pc-160px);
         p {
           text-align: center;
           color: #ffffff;
         }
       }
-      .customPaddingTop21 {
-        padding-top: 60px;
+      .customTextWrapperTwo {
+        padding-top: var(--pc-60px);
+        padding-bottom: var(--pc-200px);
+        p {
+          text-align: center;
+          color: #ffffff;
+        }
       }
     }
 
     .doubleImgWrapper {
       max-width: 1260px;
-      width: 90%;
-      /* background-color: yellow; */
-      /* display: flex; */
-      margin-bottom: 60px;
+      width: var(--pc-1260px);
+      margin: auto;
       img {
         width: calc(50% - 20px);
       }
 
       img + img {
-        margin-left: 40px;
+        margin-left: var(--pc-40px);
       }
     }
 
     /* ------ */
     .intro_imgs_Wrapper {
       position: relative;
-      /* z-index: -1; */
+      padding-top: var(--pc-500px);
+      padding-bottom: var(--pc-465px);
+      z-index: -1;
+
       .introductionWrapper {
-        /* margin-left: 830px; */
         display: grid;
         justify-content: end;
         margin-right: clamp(100px, 11vw, 218px);
-
-        p:first-child {
-          font-size: clamp(10px, 2vw, 40px);
-          /* line-height: clamp(10px, 2.9vw, 56px); */
-        }
-        p:last-child {
-          font-size: clamp(10px, 1.3vw, 26px);
-          line-height: clamp(10px, 2vw, 40px);
-        }
       }
 
       .hero1,
@@ -122,8 +107,9 @@ export const StyledClassroomRevolution = styled.div`
         transform: translateY(47px);
       }
     }
-    .customMaxHeight1080 img {
+    .contentsWrapper img {
       max-width: 1080px;
+      width: 56.25vw;
     }
   }
   @media (max-width: 1024px) {
@@ -144,12 +130,13 @@ export const StyledClassroomRevolution = styled.div`
       }
 
       .intro_imgs_Wrapper {
-        padding-bottom: 189px;
+        padding-top: var(--mobile-152px);
+        padding-bottom: var(--mobile-189px);
         position: relative;
         .introductionWrapper {
           display: grid;
           justify-content: end;
-          margin-right: 31px;
+          margin-right: var(--mobile-30px);
         }
 
         .hero1,
@@ -159,21 +146,21 @@ export const StyledClassroomRevolution = styled.div`
         }
         .hero1 {
           min-width: 216px;
-          width: 40vw;
-          transform: translateY(26px);
+          width: 57.6vw;
+          transform: translateY(clamp(27px, 7.2vw, 1000px));
         }
         .hero2 {
           min-width: 167px;
-          width: 30vw;
+          width: 44.53vw;
           right: 0;
-          transform: translateY(11px);
+          transform: translateY(var(--mobile-10px));
         }
       }
     }
     .area2 {
       background-color: #30bbc7;
 
-      .customTextWrapper {
+      .customTextWrapperOne {
         padding-top: 90px;
         padding-bottom: 80px;
         p {
@@ -181,8 +168,12 @@ export const StyledClassroomRevolution = styled.div`
           color: #ffffff;
         }
       }
-      .customPaddingTop21 {
-        padding-top: 21px;
+      .customTextWrapperTwo {
+        padding-bottom: 80px;
+        p {
+          text-align: center;
+          color: #ffffff;
+        }
       }
     }
     .doubleImgWrapper {
@@ -191,20 +182,9 @@ export const StyledClassroomRevolution = styled.div`
         width: 100%;
       }
       img:last-child {
-        margin-top: 24px;
-        margin-bottom: 21px;
+        margin-top: var(--mobile-24px);
+        margin-bottom: var(--mobile-20px);
       }
-    }
-  }
-
-  @media (min-width: 551px) and (max-width: 1024px) {
-    .intro_imgs_Wrapper {
-      padding-top: 206px;
-    }
-  }
-  @media (max-width: 550px) {
-    .intro_imgs_Wrapper {
-      padding-top: 152px;
     }
   }
 `;

@@ -20,7 +20,7 @@ const StyledImg = styled.img`
   }
   @media (max-width: 1024px) {
     border-radius: ${(props) => {
-      if (props.$whiteImgBackgroundBorder) return '14px';
+      if (props.$whiteImgBackgroundBorder) return '10px';
     }};
   }
 `;
