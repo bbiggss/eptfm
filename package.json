@@ -27,7 +27,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    // "predeploy": "npm run build",
     "predeploy": "echo 'eptfm.com' > build/CNAME",
     "deploy": "gh-pages -d build"
   },
