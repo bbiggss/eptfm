@@ -20,29 +20,47 @@ export const StyledCyberSocializingOne = styled.div`
       text-align: center;
     }
     .cloud {
-      left: clamp(100px, 14vw, 280px);
+      left: clamp(0px, 17.19vw, 330px);
+
+      max-width: 392px;
+      width: 20.42vw;
     }
     .circle1 {
-      left: -330px;
-      top: 229px;
+      bottom: clamp(-177px, -9.22vw, 0px);
+
+      width: 26vw;
+      max-width: 500px;
     }
     .circle2 {
-      right: -236px;
-      top: -100px;
+      max-width: 500px;
+      width: 26vw;
+
+      right: clamp(0px, 4.64vw, 89px);
+      top: clamp(-105px, -5.47vw, 0px);
     }
     .yellowWordBalloon {
-      left: -295px;
-      /* left: 0; */
-      top: 178px;
+      max-width: 500px;
+      width: 26vw;
+
+      left: clamp(0px, 1.82vw, 35px);
+      top: clamp(0px, 9.27vw, 178px);
     }
     .circle3 {
-      right: -330px;
-      /* right: 0; */
-      top: 411px;
+      width: 26vw;
+      max-width: 500px;
+
+      right: 0;
+      top: clamp(0px, 21.4vw, 411px);
     }
     .heart {
-      left: -330px;
-      top: -310px;
+      max-width: 500px;
+      width: 26vw;
+
+      top: clamp(-310px, -16.15vw, 0px);
+    }
+    .relative {
+      max-width: 1920px;
+      margin: auto;
     }
   }
   @media (max-width: 1024px) {
@@ -61,42 +79,43 @@ export const StyledCyberSocializingOne = styled.div`
     }
 
     .cloud {
-      width: 224px;
-      left: -84px;
+      min-width: 136px;
+      width: 36.27vw;
       top: -29px;
     }
     .circle1 {
       min-width: 200px;
       width: 53vw;
-      /* left: -55px; */
-      left: -14vw;
-      top: 213px;
+
+      bottom: clamp(-1000px, -10.93vw, -41px);
+      left: clamp(-1000px, -14vw, -53px);
     }
     .circle2 {
       min-width: 211px;
       width: 56vw;
-      /* right: -55px; */
-      right: -14vw;
-      top: 167px;
+
+      right: -16vw;
+      top: clamp(167px, 40vw, 1000px);
     }
     .yellowWordBalloon {
       min-width: 169px;
       width: 45vw;
-      /* left: -41px; */
-      left: -10vw;
-      top: 97px;
+
+      left: clamp(-10px, -2.67vw, 0px);
+      top: clamp(97px, 25.87vw, 1000px);
     }
     .circle3 {
       min-width: 241px;
       width: 64vw;
       /* right: -75px; */
       right: -20vw;
-      top: 176px;
+      top: clamp(176px, 40vw, 1000px);
     }
     .heart {
       min-width: 119px;
       width: 31vw;
-      top: -87px;
+
+      bottom: clamp(-1000px, -8.53vw, -32px);
     }
   }
 `;
