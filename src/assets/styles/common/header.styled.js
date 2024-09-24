@@ -64,8 +64,10 @@ export const HeaderBox = styled.div`
       margin: auto;
     }
     #logoImg {
-      width: 122px;
-      height: 18px;
+      max-width: 122px;
+      width: clamp(0px, 9vw, 122px);
+      /* width: 122px;
+      height: 18px; */
     }
     #dropDownImg {
       display: none;
@@ -95,7 +97,7 @@ export const HeaderBox = styled.div`
       p {
         font-size: var(--pc-18px);
         color: #292929;
-        padding-top: 5px;
+        /* padding-top: 5px; */
         padding-bottom: var(--pc-39px);
         &:hover {
           color: #4ac2c5;

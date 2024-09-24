@@ -4,7 +4,7 @@
 }
 
 :root {
-  --font-display: 'block';
+  --font-display: block;
   --pc-fixedButton: 3.5vw;
   --mobile-fixedButton: 8.53vw;
 
@@ -13,20 +13,18 @@
 
   --pc-font-size-22px: clamp(18px, 1.15vw, 22px);
 
-  --pc-font-size-40px: clamp(20px, 2.29vw, 40px);
-  /* vw를 44px으로 맞춤 */
-  --pc-line-height-56px: clamp(0px, 3.1vw, 56px);
-  /* vw를 60px으로 맞춤 */
+  --pc-font-size-40px: clamp(20px, 2.4vw, 40px);
+  /* vw를 46px으로 맞춤 */
+  --pc-line-height-56px: clamp(0px, 3.23vw, 56px);
+  /* vw를 62px으로 맞춤 */
 
-  --pc-font-size-26px: clamp(16px, 1.56vw, 26px);
-  /* 30px으로 맞춤 */
-  --pc-line-height-40px: clamp(20px, 2.2vw, 40px);
-  /* 0.2 올림 */
+  --pc-font-size-26px: clamp(16px, 1.67vw, 26px);
+  /* vw 32px으로 맞춤 */
+  --pc-line-height-40px: clamp(20px, 2.3vw, 40px);
 
-  --pc-font-size-24px: clamp(14px, 1.46vw, 24px);
-  /* vw 27px로 맞춤 */
-  --pc-line-height-38px: clamp(18px, 2.3vw, 38px);
-  /* 0.2 올림 */
+  --pc-font-size-24px: clamp(14px, 1.56vw, 24px);
+  /* vw 30px로 맞춤 */
+  --pc-line-height-38px: clamp(18px, 2.2vw, 38px);
 
   --pc-font-size-20px: clamp(10px, 1.04vw, 20px);
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
@@ -47,8 +45,9 @@
   --pc-39px: clamp(0px, 2.03vw, 39px);
   --pc-34px: clamp(17px, 1.7vw, 34px);
   --pc-24px: clamp(10px, 1.25vw, 24px);
-  --pc-18px: clamp(10px, 0.94vw, 18px);
-  --pc-16px: clamp(10px, 0.83vw, 16px);
+
+  --pc-header-Font: clamp(12px, 1vw, 18px);
+  --pc-breadCrumb-font: clamp(13px, 0.94vw, 16px);
 
   /* mobile */
   --mobile-margin: clamp(30px, 8vw, 80px);

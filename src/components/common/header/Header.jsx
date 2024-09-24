@@ -69,8 +69,7 @@ const Header = (data) => {
               <NavBox title={'BUSINESS'} link={'business'} activeLink={data.activeLink} /> */}
               <NavBox title={'ABOUT US'} link={'/#about'} />
               <NavBox title={'BUSINESS'} link={'/#business'} />
-              <NavBox title={'PORTFOLIO'} link={''} />
-
+              <NavBox title={'PORTFOLIO'} link={'portfolio/e-Learning'} />
               {/* <li className={`dropdown`}>
                 <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
