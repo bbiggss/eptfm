@@ -5,11 +5,9 @@ import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import Transportation from './Transportation';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 import useMobile from '../hooks/useMobile';
-import useTablet from '../hooks/useTablet';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
   const isMobile = useMobile();
-  const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
 
   return (

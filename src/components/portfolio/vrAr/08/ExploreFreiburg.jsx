@@ -14,12 +14,10 @@ import PortfolioIntroductionDescription from '../../common/portfolioIntroduction
 import Img from '../../common/Img';
 import CustomText from '../../common/CustomText';
 import useMobile from '../../../hooks/useMobile';
-import useTablet from '../../../hooks/useTablet';
 
 const ExploreFreiburg = () => {
   const isMobileTablet = useResponsiveMax1024();
   const isMobile = useMobile();
-  const isTablet = useTablet();
 
   return (
     <StyledExploreFreiburg>

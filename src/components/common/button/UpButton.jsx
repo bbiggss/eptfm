@@ -27,9 +27,17 @@ const StyledUpButton = styled.div`
     margin-right: 30px;
     margin-bottom: calc(40.8vw + 30px);
     /* margin-bottom: 183px; */
+  }
 
+  @media (min-width: 1025px) {
     img {
-      /* width: 32px; */
+      max-width: 56px;
+      width: 2.92vw;
+    }
+  }
+  @media (max-width: 1024px) {
+    img {
+      min-width: 32px;
       width: 8.53vw;
     }
   }

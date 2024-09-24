@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import CustomText from '../../common/CustomText';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -16,7 +16,7 @@ import CustomWrapImg from './../../common/CustomWrapImg';
 import Img from '../../common/Img';
 
 const CivilTrial = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();

@@ -9,6 +9,9 @@ const StyledPortfolioListButton = styled.div`
   img {
     cursor: pointer;
     border-radius: 100%;
+
+    max-width: 56px;
+    width: 2.92vw;
   }
 
   @media (min-width: 1465px) {
@@ -31,11 +34,7 @@ const PortfolioListButton = ({ portfolioListModalStatus, setPortfolioListModalSt
   };
   return (
     <StyledPortfolioListButton>
-      <img
-        onClick={listBtn}
-        src={`${process.env.PUBLIC_URL}/assets/images/common/portfolioListButton.png`}
-        alt=""
-      />
+      <img onClick={listBtn} src={`${process.env.PUBLIC_URL}/assets/images/common/portfolioListButton.png`} alt="" />
     </StyledPortfolioListButton>
   );
 };

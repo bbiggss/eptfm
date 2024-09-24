@@ -4,7 +4,6 @@ import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganiza
 import PortfolioFieldTitle from '../../common/portfolioTitle/PortfolioFieldTitle';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import Img from '../../common/Img';
-import ProjectDescription from '../../common/ProjectDescription';
 import CustomText from '../../common/CustomText';
 import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import ProjectDescription from '../../common/ProjectDescription';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
@@ -17,7 +17,7 @@ import PortfolioIntroductionDescription from '../../common/portfolioIntroduction
 import Img from '../../common/Img';
 
 const BuildingGreatCity = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
