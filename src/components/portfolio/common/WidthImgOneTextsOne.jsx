@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
+import usePc from './../../hooks/usePc';
 
 const StyledWidthImgOneTextsOne = styled.div`
   position: relative;
@@ -32,16 +33,8 @@ const StyledWidthImgOneTextsOne = styled.div`
     /* --- */
     display: grid;
     grid-template-columns: repeat(2, auto);
-    justify-content: ${(props) => {
-      if (props.$imgRight) return 'space-between';
-      return 'start';
-    }};
     gap: var(--pc-100px);
 
-    /* img {
-      max-width: 700px;
-      width: 36.4vw;
-    } */
     p {
       display: grid;
       align-items: center;
@@ -68,7 +61,6 @@ const StyledWidthImgOneTextsOne = styled.div`
     img {
       width: 100%;
       order: 1;
-      /* margin-bottom: 24px; */
       margin-bottom: var(--mobile-24px);
     }
 
@@ -98,17 +90,35 @@ const StyledWidthImgOneTextsOne = styled.div`
   }
 `;
 
-const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, imgRight, last, pcMaxWidth }) => {
+const WidthImgOneTextsOne = ({ children, style, pcPaddingTop, tabletPaddingTop, mobilePaddingTop, last, pcMaxWidth }) => {
+  const wrapperRef = useRef(null);
+  const pcResolution = usePc();
+
+  useEffect(() => {
+    if (pcResolution) {
+      const children = wrapperRef.current.children;
+      const firstElementTag = children[0].tagName.toLowerCase();
+      const secondElementTag = children[1].tagName.toLowerCase();
+
+      if (firstElementTag === 'p' && secondElementTag === 'img') {
+        wrapperRef.current.style.justifyContent = 'space-between';
+      } else if (firstElementTag === 'img' && secondElementTag === 'p') {
+        wrapperRef.current.style.justifyContent = 'start';
+      }
+      // console.log('안뇽');
+    } else {
+      wrapperRef.current.style.justifyContent = '';
+    }
+  }, [pcResolution]);
   return (
     <StyledWidthImgOneTextsOne
       style={style}
       $pcPaddingTop={pcPaddingTop}
       $tabletPaddingTop={tabletPaddingTop}
       $mobilePaddingTop={mobilePaddingTop}
-      $imgRight={imgRight}
       $last={last}
       $pcMaxWidth={pcMaxWidth}
-      $
+      ref={wrapperRef}
     >
       {children}
     </StyledWidthImgOneTextsOne>

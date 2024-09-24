@@ -97,7 +97,7 @@ const InformationDisclosure = () => {
             }
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne imgRight>
+        <WidthImgOneTextsOne>
           <CustomText
             text={
               isMobile
@@ -122,7 +122,7 @@ const InformationDisclosure = () => {
             }
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne imgRight>
+        <WidthImgOneTextsOne>
           <CustomText
             text={
               isMobile
@@ -146,7 +146,7 @@ const InformationDisclosure = () => {
             }
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne imgRight>
+        <WidthImgOneTextsOne>
           <CustomText
             text={
               isMobile
@@ -170,7 +170,7 @@ const InformationDisclosure = () => {
             }
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne last imgRight>
+        <WidthImgOneTextsOne last>
           <CustomText
             text={
               isMobile

@@ -1,16 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledReservoirDam = styled.div`
-  @media (min-width: 1025px) and (max-width: 1550px) {
-    .introductionWrapper {
-      margin-top: clamp(10px, 2.8vw, 112px);
-    }
-  }
-  @media (min-width: 1551px) {
-    .introductionWrapper {
-      margin-top: 112px;
-    }
-  }
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: auto;
@@ -22,7 +12,7 @@ export const StyledReservoirDam = styled.div`
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        /* margin-top: clamp(10px, 2.8vw, 112px); */
+        margin-top: clamp(0px, 5.83vw, 112px);
         text-align: center;
       }
       img {
@@ -31,7 +21,7 @@ export const StyledReservoirDam = styled.div`
     }
     .backgroundImg {
       position: absolute;
-      margin-top: 160px;
+      margin-top: var(--pc-160px);
 
       max-width: 1384px;
       width: 72vw;
@@ -41,11 +31,20 @@ export const StyledReservoirDam = styled.div`
 
       img {
         max-width: 1021px;
+        width: 53.18vw;
       }
 
       p {
         color: #040404;
       }
+    }
+    .contentsWrapper > div {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+    }
+    .contentsWrapper div img {
+      max-width: 630px;
+      width: 32.8vw;
     }
   }
   @media (max-width: 1024px) {
@@ -59,13 +58,13 @@ export const StyledReservoirDam = styled.div`
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
-      margin-top: 80px;
+      margin-top: var(--mobile-80px);
     }
 
     .backgroundImg {
       width: 100%;
-      margin-top: 20px;
-      margin-bottom: 11px;
+      margin-top: var(--mobile-20px);
+      margin-bottom: var(--mobile-10px);
     }
 
     .background90ebff {

@@ -1,6 +1,5 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
-import ProjectDescription from '../../common/ProjectDescription';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import Img from '../../common/Img';
@@ -26,9 +25,9 @@ const ReservoirDam = () => {
 
       <PortfolioTitleWrap
         style={{ display: 'grid', justifyContent: 'center' }}
-        mobileMarginTop={'50px'}
-        pcMarginBottom={'80px'}
-        mobileMarginBottom={'40px'}
+        pcMarginBottom={'var(--pc-80px)'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'농식품공무원교육원'} />
         <PortfolioFieldTitle
@@ -37,7 +36,6 @@ const ReservoirDam = () => {
         />
       </PortfolioTitleWrap>
 
-      {/* <div className="fullScreen heroArea"></div> */}
       <div className="gridWrapper">
         <HeroImg
           pcAspectRatio={'1920 / 1080'}
@@ -45,16 +43,9 @@ const ReservoirDam = () => {
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
         />
         <div className="introductionWrapper">
-          <PortfolioIntroductionTitle
-            pcMarginTop={'clamp(10px,6vw,)118px'}
-            mobileMarginTop={''}
-            style={{ color: '#292929' }}
-            title={'물의 힘을 안전하게!'}
-          />
+          <PortfolioIntroductionTitle style={{ color: '#292929' }} title={'물의 힘을 안전하게!'} />
           <PortfolioIntroductionDescription
             style={{ color: 'rgba(41, 41, 41, 0.8)' }}
-            pcMarginTop={'34px'}
-            mobileMarginTop={'5.33vw'}
             description={
               isMobileTablet
                 ? '저수지·댐의 구조와 기능을 이해하고,\n 안전 관리와 재해 예방을 위한 지식을 습득하세요!\n실제 사례와 함께 배우며, 안전한 댐 관리를\n 이해할 수 있어요.'
@@ -68,9 +59,9 @@ const ReservoirDam = () => {
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/background.png`}
         alt=""
       />
-      <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingTop="200px">
-          <ProjectDescription
+      <div className="contentsWrapper">
+        <WidthImgOneTextsOne pcPaddingTop="var(--pc-200px)">
+          <CustomText
             text={
               isMobile
                 ? '우리 팀은 저수지·댐 안전관리 및 재해예방\n e-Learning 컨텐츠를 개발하면서\n 다양한 저수지·댐 전문가들과 협력하여\n 심층적인 자료를 수집하고 분석했어요.'
@@ -83,7 +74,7 @@ const ReservoirDam = () => {
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/2.png`} />
-          <ProjectDescription
+          <CustomText
             textPosition={'right'}
             text={
               isMobile
@@ -95,7 +86,7 @@ const ReservoirDam = () => {
           />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <ProjectDescription
+          <CustomText
             text={
               isMobile
                 ? '저수지·댐의 구조와 기능에 대한\n 기본적인 이해를 바탕으로, 수자원 관리와\n 재해 예방의 중요성을 인식할 수 있어요.'
@@ -104,11 +95,11 @@ const ReservoirDam = () => {
                 : `저수지·댐의 구조와 기능에 대한 기본적인 이해를\n바탕으로, 수자원 관리와 재해 예방의 중요성을\n인식할 수 있어요.`
             }
           />
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/3.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/4.png`} />
-          <ProjectDescription
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/4.png`} />
+          <CustomText
             textPosition={'right'}
             text={
               isMobile
@@ -120,7 +111,7 @@ const ReservoirDam = () => {
           />
         </WidthImgOneTextsOne>
       </div>
-      <div className="fullScreen background90ebff">
+      <div className="background90ebff">
         <WidthOneContent $first>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group2/1.png`} />
           <CustomText
@@ -159,10 +150,10 @@ const ReservoirDam = () => {
         </WidthOneContent>
       </div>
 
-      <div className="smallScreen">
-        <WidthImgOneTextsOne pcPaddingTop="160px" mobilePaddingTop={'80px'}>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/5.png`} />
-          <ProjectDescription
+      <div className="contentsWrapper">
+        <WidthImgOneTextsOne pcPaddingTop="var(--pc-160px)" mobilePaddingTop={'var(--mobile-80px)'}>
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/5.png`} />
+          <CustomText
             textPosition={'right'}
             text={
               isMobile
@@ -174,7 +165,7 @@ const ReservoirDam = () => {
           />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <ProjectDescription
+          <CustomText
             text={
               isMobile
                 ? '다양한 내용을 인포그래픽화하기 위해\n 전문가들의 많은 피드백을 반영하여 최적의\n 학습 경험을 제공할 수 있도록 노력한답니다!'
@@ -183,11 +174,11 @@ const ReservoirDam = () => {
                 : `다양한 내용을 인포그래픽화하기 위해 전문가들의\n많은 피드백을 반영하여 최적의 학습 경험을 제공할 수\n있도록 노력한답니다!`
             }
           />
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/6.png`} />
         </WidthImgOneTextsOne>
         <WidthImgOneTextsOne>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/7.png`} />
-          <ProjectDescription
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/7.png`} />
+          <CustomText
             textPosition={'right'}
             text={
               isMobile
@@ -198,8 +189,8 @@ const ReservoirDam = () => {
             }
           />
         </WidthImgOneTextsOne>
-        <WidthImgOneTextsOne pcPaddingBottom="200px" mobilePaddingBottom={'142px'}>
-          <ProjectDescription
+        <WidthImgOneTextsOne last>
+          <CustomText
             text={
               isMobile
                 ? '다양한 학습 내용의 구성을 통해 지루함을\n 방지해요! 저수지 댐의 구조와 기능부터\n 안전 관리와 재해 예방까지, 인터랙티브한\n e-Learning으로 배워보세요!'
@@ -208,7 +199,7 @@ const ReservoirDam = () => {
                 : `다양한 학습 내용의 구성을 통해 지루함을 방지해요!\n저수지 댐의 구조와 기능부터 안전 관리와 재해 \n예방까지, 인터랙티브한 e-Learning으로 배워보세요!`
             }
           />
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/8.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/8.png`} />
         </WidthImgOneTextsOne>
       </div>
     </StyledReservoirDam>

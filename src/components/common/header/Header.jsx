@@ -4,9 +4,11 @@ import NavBox from './NavBox';
 import { Link } from 'react-router-dom';
 import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 import { StyledDropDown } from '../../../assets/styles/common/dropdown.styled';
+import usePc from '../../hooks/usePc';
 
 const Header = (data) => {
   const isMobTab = useResponsiveMax1024();
+  const isUsePc = usePc();
   const [showDropDown, setShowDropDown] = useState(false);
 
   const dropDownClick = () => {
@@ -31,6 +33,12 @@ const Header = (data) => {
       document.body.style.overflow = 'auto';
     }
   }, [showDropDown]);
+
+  useEffect(() => {
+    if (isUsePc) {
+      setShowDropDown(false);
+    }
+  }, [isUsePc]);
 
   return (
     <>

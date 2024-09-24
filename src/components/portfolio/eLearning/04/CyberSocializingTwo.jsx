@@ -98,7 +98,7 @@ const CyberSocializingTwo = () => {
           alt=""
         />
       </div>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText text={`채팅 매너, 댓글 작성 시 주의사항 등을\n배우며, 존중과 배려를 바탕으로 한 소통의\n중요성에 대해 학습할 수 있어요.`} />
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/2.png`} />
       </WidthImgOneTextsOne>
@@ -106,7 +106,7 @@ const CyberSocializingTwo = () => {
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/3.png`} />
         <CustomText text={`말이 사람들에게 미치는 긍정적, 부정적\n영향을 사례를 통해 알아볼 수 있어요.`} />
       </WidthImgOneTextsOne>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText
           text={
             isMobile
@@ -137,7 +137,7 @@ const CyberSocializingTwo = () => {
           }
         />
       </WidthImgOneTextsOne>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText text={`다양한 시뮬레이션과 롤플레잉 상황을 통해\n학습자들이 직접 상황을 체험하고\n대처방법을 연습할 수 있어요.`} />
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/04_CyberSocializingTwo/group1/6.png`} />
       </WidthImgOneTextsOne>
@@ -154,7 +154,7 @@ const CyberSocializingTwo = () => {
           alt=""
         />
       </div>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} last imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'} last>
         <CustomText
           text={
             isMobile

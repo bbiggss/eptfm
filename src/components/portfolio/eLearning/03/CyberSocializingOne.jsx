@@ -96,7 +96,7 @@ const CyberSocializingOne = () => {
           alt=""
         />
       </div>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText
           text={
             isMobile
@@ -132,7 +132,7 @@ const CyberSocializingOne = () => {
           }
         />
       </WidthImgOneTextsOne>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText
           text={
             isMobile
@@ -171,7 +171,7 @@ const CyberSocializingOne = () => {
           alt=""
         />
       </div>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText
           text={
             isMobile
@@ -200,7 +200,7 @@ const CyberSocializingOne = () => {
           }
         />
       </WidthImgOneTextsOne>
-      <WidthImgOneTextsOne pcMaxWidth={'1260'} imgRight>
+      <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <CustomText
           text={
             isMobile
