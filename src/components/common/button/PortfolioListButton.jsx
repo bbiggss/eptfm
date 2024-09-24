@@ -9,22 +9,21 @@ const StyledPortfolioListButton = styled.div`
   img {
     cursor: pointer;
     border-radius: 100%;
-
-    max-width: 56px;
-    width: 2.92vw;
   }
 
-  @media (min-width: 1465px) {
-    margin-right: 80px;
+  @media (min-width: 1025px) {
+    margin-right: var(--pc-80px);
+    img {
+      max-width: 56px;
+      width: var(--pc-fixedButton);
+    }
   }
-  @media (min-width: 1025px) and (max-width: 1465px) {
-    margin-right: 35px;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     display: none;
-  }
-  @media (max-width: 767px) {
-    display: none;
+    img {
+      min-width: 32px;
+      width: var(--mobile-fixedButton);
+    }
   }
 `;
 

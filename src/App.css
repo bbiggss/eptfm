@@ -4,22 +4,28 @@
 }
 
 :root {
+  --font-display: 'block';
+  --pc-fixedButton: 3.5vw;
+  --mobile-fixedButton: 8.53vw;
+
   --pc-font-size-64px: clamp(32px, 3.33vw, 64px);
   --pc-line-height-76px: clamp(47px, 3.9vw, 76px);
 
   --pc-font-size-22px: clamp(18px, 1.15vw, 22px);
 
-  --pc-font-size-40px: clamp(20px, 2vw, 40px);
-  --pc-line-height-56px: clamp(0px, 2.9vw, 56px);
+  --pc-font-size-40px: clamp(20px, 2.29vw, 40px);
+  /* vw를 44px으로 맞춤 */
+  --pc-line-height-56px: clamp(0px, 3.1vw, 56px);
+  /* vw를 60px으로 맞춤 */
 
   --pc-font-size-26px: clamp(16px, 1.56vw, 26px);
   /* 30px으로 맞춤 */
   --pc-line-height-40px: clamp(20px, 2.2vw, 40px);
   /* 0.2 올림 */
 
-  --pc-font-size-24px: clamp(14px, 1.41vw, 24px);
+  --pc-font-size-24px: clamp(14px, 1.46vw, 24px);
   /* vw 27px로 맞춤 */
-  --pc-line-height-38px: clamp(18px, 2.1vw, 38px);
+  --pc-line-height-38px: clamp(18px, 2.3vw, 38px);
   /* 0.2 올림 */
 
   --pc-font-size-20px: clamp(10px, 1.04vw, 20px);
@@ -37,9 +43,12 @@
   --pc-80px: clamp(0px, 4.17vw, 80px);
   --pc-73px: clamp(0px, 3.8vw, 73px);
   --pc-60px: clamp(0px, 3.1vw, 60px);
-  --pc-40px: clamp(0px, 2vw, 40px);
+  --pc-40px: clamp(0px, 2.08vw, 40px);
+  --pc-39px: clamp(0px, 2.03vw, 39px);
   --pc-34px: clamp(17px, 1.7vw, 34px);
   --pc-24px: clamp(10px, 1.25vw, 24px);
+  --pc-18px: clamp(10px, 0.94vw, 18px);
+  --pc-16px: clamp(10px, 0.83vw, 16px);
 
   /* mobile */
   --mobile-margin: clamp(30px, 8vw, 80px);
@@ -179,23 +188,29 @@ a {
 @font-face {
   font-family: 'Roboto-Medium';
   src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
+  font-display: var(--font-display);
 }
 @font-face {
   font-family: 'Roboto-Regular';
   src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-display: var(--font-display);
 }
 @font-face {
   font-family: 'Roboto-Light';
   src: url('./assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-display: var(--font-display);
 }
 .robotoMedium {
   font-family: 'Roboto-Medium';
+  font-display: var(--font-display);
 }
 .robotoRegular {
   font-family: 'Roboto-Regular';
+  font-display: var(--font-display);
 }
 .RobotoLight {
   font-family: 'Roboto-Light';
+  font-display: var(--font-display);
 }
 
 .tempWrap {
@@ -206,28 +221,36 @@ a {
 @font-face {
   font-family: 'NanumSquareL';
   src: url('./assets/fonts/NanumSquareL.otf') format('opentype');
+  font-display: var(--font-display);
 }
 @font-face {
   font-family: 'NanumSquareR';
   src: url('./assets/fonts/NanumSquareR.otf') format('opentype');
+  font-display: var(--font-display);
 }
 @font-face {
   font-family: 'NanumSquareB';
   src: url('./assets/fonts/NanumSquareB.otf') format('opentype');
+  font-display: var(--font-display);
 }
 @font-face {
   font-family: 'NanumSquareEB';
   src: url('./assets/fonts/NanumSquareEB.otf') format('opentype');
+  font-display: var(--font-display);
 }
 .NanumSquareL {
   font-family: 'NanumSquareL';
+  font-display: var(--font-display);
 }
 .NanumSquareR {
   font-family: 'NanumSquareR';
+  font-display: var(--font-display);
 }
 .NanumSquareB {
   font-family: 'NanumSquareB';
+  font-display: var(--font-display);
 }
 .NanumSquareEB {
   font-family: 'NanumSquareEB';
+  font-display: var(--font-display);
 }

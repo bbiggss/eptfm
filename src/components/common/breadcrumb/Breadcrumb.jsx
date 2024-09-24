@@ -20,6 +20,7 @@ const StyledBreadcrumbBox = styled.div`
       margin-right: 13px;
       color: #767676;
       height: 18.75px;
+      font-size: var(--pc-16px);
 
       a {
         text-decoration: none;

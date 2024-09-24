@@ -32,13 +32,13 @@ const StyledUpButton = styled.div`
   @media (min-width: 1025px) {
     img {
       max-width: 56px;
-      width: 2.92vw;
+      width: var(--pc-fixedButton);
     }
   }
   @media (max-width: 1024px) {
     img {
       min-width: 32px;
-      width: 8.53vw;
+      width: var(--mobile-fixedButton);
     }
   }
 `;

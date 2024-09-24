@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const headerHeightDesktop = '100px';
+const headerHeightDesktop = 'var(--pc-100px)';
 // const headerHeightMobile = '60px';
 const headerHeightMobile = '10vw';
 
@@ -80,7 +80,7 @@ export const HeaderBox = styled.div`
         & a {
           text-decoration: none;
           color: #292929;
-          font-size: 18px;
+          font-size: var(--pc-18px);
           letter-spacing: 0px;
           scroll-behavior: smooth;
 
@@ -93,10 +93,10 @@ export const HeaderBox = styled.div`
     .dropdown {
       position: relative;
       p {
-        font-size: 18px;
+        font-size: var(--pc-18px);
         color: #292929;
-        padding-top: 0;
-        padding-bottom: 39px;
+        padding-top: 5px;
+        padding-bottom: var(--pc-39px);
         &:hover {
           color: #4ac2c5;
         }
