@@ -14,10 +14,13 @@ import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import CustomText from '../../common/CustomText';
+import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const ReservoirDam = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
+  const isLongTablet = useLongTablet();
+
   const isMobileTablet = useResponsiveMax1024();
   return (
     <StyledReservoirDam>
@@ -67,6 +70,8 @@ const ReservoirDam = () => {
                 ? '우리 팀은 저수지·댐 안전관리 및 재해예방\n e-Learning 컨텐츠를 개발하면서\n 다양한 저수지·댐 전문가들과 협력하여\n 심층적인 자료를 수집하고 분석했어요.'
                 : isTablet
                 ? '우리 팀은 저수지·댐 안전관리 및 재해예방\n e-Learning 컨텐츠를 개발하면서\n 다양한 저수지·댐 전문가들과 협력하여\n 심층적인 자료를 수집하고 분석했어요.'
+                : isLongTablet
+                ? '우리 팀은 저수지·댐 안전관리 및 재해예방\n e-Learning 컨텐츠를 개발하면서 다양한\n 저수지·댐 전문가들과 협력하여\n 심층적인 자료를 수집하고 분석했어요.'
                 : `우리 팀은 저수지·댐 안전관리 및 재해예방\n e-Learning 컨텐츠를 개발하면서 다양한 저수지·댐\n 전문가들과 협력하여 심층적인 자료를 수집하고 \n분석했어요.`
             }
           />
@@ -75,11 +80,12 @@ const ReservoirDam = () => {
         <WidthImgOneTextsOne>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/2.png`} />
           <CustomText
-            textPosition={'right'}
             text={
               isMobile
                 ? '콘텐츠의 시각적 요소는 학습자들이 쉽게\n 이해하고 흥미를 느낄 수 있도록 3D 모델링과\n 애니메이션을 활용하여 제작되었답니다!'
                 : isTablet
+                ? '콘텐츠의 시각적 요소는 학습자들이 쉽게\n 이해하고 흥미를 느낄 수 있도록 3D 모델링과\n 애니메이션을 활용하여 제작되었답니다!'
+                : isLongTablet
                 ? '콘텐츠의 시각적 요소는 학습자들이 쉽게\n 이해하고 흥미를 느낄 수 있도록 3D 모델링과\n 애니메이션을 활용하여 제작되었답니다!'
                 : `콘텐츠의 시각적 요소는 학습자들이 쉽게 이해하고\n흥미를 느낄 수 있도록 3D 모델링과 애니메이션을\n활용하여 제작되었답니다!`
             }
@@ -100,11 +106,12 @@ const ReservoirDam = () => {
         <WidthImgOneTextsOne>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/4.png`} />
           <CustomText
-            textPosition={'right'}
             text={
               isMobile
                 ? '댐 붕괴나 유출 사고와 같은 비상 상황에서의\n 대처 방법을 익히고, 비상 대응 계획 수립과\n 주민 대피 절차를 학습할 수 있어요.'
                 : isTablet
+                ? '댐 붕괴나 유출 사고와 같은 비상 상황에서의\n 대처 방법을 익히고, 비상 대응 계획 수립과\n 주민 대피 절차를 학습할 수 있어요.'
+                : isLongTablet
                 ? '댐 붕괴나 유출 사고와 같은 비상 상황에서의\n 대처 방법을 익히고, 비상 대응 계획 수립과\n 주민 대피 절차를 학습할 수 있어요.'
                 : `댐 붕괴나 유출 사고와 같은 비상 상황에서의 대처 \n방법을 익히고, 비상 대응 계획 수립과 주민 대피 절차를\n 학습할 수 있어요.`
             }
@@ -154,11 +161,12 @@ const ReservoirDam = () => {
         <WidthImgOneTextsOne pcPaddingTop="var(--pc-160px)" mobilePaddingTop={'var(--mobile-80px)'}>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/5.png`} />
           <CustomText
-            textPosition={'right'}
             text={
               isMobile
                 ? '적절한 이미지와 한눈에 보이는 텍스트 구성으로\n학습자의 이해를 최선으로 고려하여\n 화면 디자인을 구성해요.'
                 : isTablet
+                ? '적절한 이미지와 한눈에 보이는 텍스트 구성으로\n학습자의 이해를 최선으로 고려하여\n 화면 디자인을 구성해요.'
+                : isLongTablet
                 ? '적절한 이미지와 한눈에 보이는 텍스트 구성으로\n학습자의 이해를 최선으로 고려하여\n 화면 디자인을 구성해요.'
                 : `적절한 이미지와 한눈에 보이는 텍스트 구성으로\n학습자의 이해를 최선으로 고려하여 화면 디자인을 \n구성해요.`
             }
@@ -171,6 +179,8 @@ const ReservoirDam = () => {
                 ? '다양한 내용을 인포그래픽화하기 위해\n 전문가들의 많은 피드백을 반영하여 최적의\n 학습 경험을 제공할 수 있도록 노력한답니다!'
                 : isTablet
                 ? '다양한 내용을 인포그래픽화하기 위해\n 전문가들의 많은 피드백을 반영하여 최적의\n 학습 경험을 제공할 수 있도록 노력한답니다!'
+                : isLongTablet
+                ? '다양한 내용을 인포그래픽화하기 위해\n 전문가들의 많은 피드백을 반영하여 최적의\n 학습 경험을 제공할 수 있도록 노력한답니다!'
                 : `다양한 내용을 인포그래픽화하기 위해 전문가들의\n많은 피드백을 반영하여 최적의 학습 경험을 제공할 수\n있도록 노력한답니다!`
             }
           />
@@ -179,12 +189,13 @@ const ReservoirDam = () => {
         <WidthImgOneTextsOne>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/01_ReservoirDam/group1/7.png`} />
           <CustomText
-            textPosition={'right'}
             text={
               isMobile
                 ? '저수지 댐의 구조를 설명할 때는\n 각 구성 요소를 시각적으로 보여주는\n 다이어그램 및 이미지를 제공하여\n학습자가 쉽게 구조를 파악할 수 있게 해요.'
                 : isTablet
                 ? '저수지 댐의 구조를 설명할 때는 각 구성 요소를\n 시각적으로 보여주는 다이어그램 및 이미지를 제공하여\n학습자가 쉽게 구조를 파악할 수 있게 해요.'
+                : isLongTablet
+                ? '저수지 댐의 구조를 설명할 때는 각 구성 요소를 \n시각적으로 보여주는 다이어그램 및 이미지를\n 제공하여 학습자가 쉽게 구조를 파악할 수\n 있게 해요.'
                 : `저수지 댐의 구조를 설명할 때는 각 구성 요소를 \n시각적으로 보여주는 다이어그램 및 이미지를 제공하여\n학습자가 쉽게 구조를 파악할 수 있게 해요.`
             }
           />
@@ -196,6 +207,8 @@ const ReservoirDam = () => {
                 ? '다양한 학습 내용의 구성을 통해 지루함을\n 방지해요! 저수지 댐의 구조와 기능부터\n 안전 관리와 재해 예방까지, 인터랙티브한\n e-Learning으로 배워보세요!'
                 : isTablet
                 ? '다양한 학습 내용의 구성을 통해 지루함을 방지해요!\n 저수지 댐의 구조와 기능부터 안전 관리와 재해 예방까지,\n 인터랙티브한 e-Learning으로 배워보세요!'
+                : isLongTablet
+                ? '다양한 학습 내용의 구성을 통해 지루함을\n 방지해요! 저수지 댐의 구조와 기능부터\n 안전 관리와 재해 예방까지,\n 인터랙티브한 e-Learning으로 배워보세요!'
                 : `다양한 학습 내용의 구성을 통해 지루함을 방지해요!\n저수지 댐의 구조와 기능부터 안전 관리와 재해 \n예방까지, 인터랙티브한 e-Learning으로 배워보세요!`
             }
           />

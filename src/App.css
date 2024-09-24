@@ -12,11 +12,15 @@
   --pc-font-size-40px: clamp(20px, 2vw, 40px);
   --pc-line-height-56px: clamp(0px, 2.9vw, 56px);
 
-  --pc-font-size-26px: clamp(16px, 1.3vw, 26px);
-  --pc-line-height-40px: clamp(20px, 2vw, 40px);
+  --pc-font-size-26px: clamp(16px, 1.56vw, 26px);
+  /* 30px으로 맞춤 */
+  --pc-line-height-40px: clamp(20px, 2.2vw, 40px);
+  /* 0.2 올림 */
 
-  --pc-font-size-24px: clamp(14px, 1.25vw, 24px);
-  --pc-line-height-38px: clamp(18px, 1.9vw, 38px);
+  --pc-font-size-24px: clamp(14px, 1.41vw, 24px);
+  /* vw 27px로 맞춤 */
+  --pc-line-height-38px: clamp(18px, 2.1vw, 38px);
+  /* 0.2 올림 */
 
   --pc-font-size-20px: clamp(10px, 1.04vw, 20px);
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
