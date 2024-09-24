@@ -5,6 +5,7 @@ const CustomTextBox = styled.p`
   color: #767676;
   font-family: 'NanumSquareB';
   letter-spacing: -0.02em;
+  word-break: keep-all;
 
   @media (min-width: 1025px) {
     /* font-size: 24px; */

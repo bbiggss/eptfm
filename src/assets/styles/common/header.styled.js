@@ -95,7 +95,6 @@ export const HeaderBox = styled.div`
     .dropdown {
       position: relative;
       p {
-        font-size: var(--pc-18px);
         color: #292929;
         /* padding-top: 5px; */
         padding-bottom: var(--pc-39px);
