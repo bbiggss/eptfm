@@ -11,31 +11,28 @@ const StyledUpButton = styled.div`
     border-radius: 100%;
   }
 
-  @media (min-width: 1465px) {
-    margin-right: 80px;
-    margin-bottom: 60px;
-  }
-  @media (min-width: 1025px) and (max-width: 1465px) {
-    margin-right: 35px;
-    margin-bottom: 60px;
-  }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  /* @media (min-width: 768px) and (max-width: 1024px) {
     margin-right: 20px;
     margin-bottom: 30px;
   }
   @media (max-width: 767px) {
     margin-right: 30px;
     margin-bottom: calc(40.8vw + 30px);
-    /* margin-bottom: 183px; */
-  }
+    margin-bottom: 183px;
+  } */
 
   @media (min-width: 1025px) {
+    margin-right: var(--pc-80px);
+    margin-bottom: 60px;
     img {
       max-width: 56px;
       width: var(--pc-fixedButton);
     }
   }
   @media (max-width: 1024px) {
+    margin-right: var(--mobile-30px);
+    margin-bottom: calc(40.8vw + var(--mobile-30px));
+
     img {
       min-width: 32px;
       width: var(--mobile-fixedButton);
