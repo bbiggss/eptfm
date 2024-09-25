@@ -24,6 +24,14 @@ export const StyledContour = styled.div`
       top: -383px;
       z-index: -1;
     }
+    .contentsWrapper div {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+      img {
+        max-width: 700px;
+        width: var(--pc-700px);
+      }
+    }
   }
   @media (max-width: 1024px) {
     .introductionArea {
@@ -32,14 +40,14 @@ export const StyledContour = styled.div`
       margin-bottom: 80px;
       /* overflow: hidden; */
       img {
-        width: 100%;
+        /* width: 100%; */
       }
     }
     .backImg {
       position: absolute;
-      top: -187px;
       width: 100%;
       z-index: -1;
+      bottom: 0;
     }
   }
 `;

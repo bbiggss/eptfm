@@ -1,42 +1,25 @@
 import styled from 'styled-components';
 
-export const BongsuPavalBox = styled.div`
+export const StyledBongsuPaval = styled.div`
   max-width: 1920px;
   margin: auto;
   .top-row {
     display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 1025px) {
     .introudctionWrapper {
       white-space: nowrap;
-      .intro_title {
-        font-family: 'NanumSquareEB';
-        color: #000000;
-        letter-spacing: -0.02em;
-        /* font-size: clamp(22px, 5.87vw, 50px); */
-        font-size: clamp(22px, 2.87vw, 50px);
-        margin-bottom: 34px;
-      }
-      .intro_description {
-        font-family: 'NanumSquareB';
-        color: #767676;
-        letter-spacing: -0.02em;
-
-        /* font-size: clamp(16px, 4vw, 24px); */
-        font-size: clamp(16px, 1.6vw, 24px);
-        line-height: clamp(24px, 6vw, 32px);
-
-        margin-bottom: 100px;
-      }
     }
 
     .mobile_beaconCount {
       display: none;
     }
     .pc_beaconCount {
-      display: block;
-      width: 100%;
+      /* display: block; */
+      max-width: 816px;
+      width: 42.5vw;
     }
     .heroWrapper {
       background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/05_BongsuPaval/main.png);
@@ -46,19 +29,17 @@ export const BongsuPavalBox = styled.div`
     }
     .beaconWrapper {
       margin-top: 80px;
+
       /* overflow: hidden; */
       .beacon {
         aspect-ratio: 338 / 858;
         max-width: 338px;
         width: 17vw;
         /* width: clamp(102px, 27.2vw, 280px); */
-        margin-right: var(--mobile-26px);
+        margin-right: var(--pc-90px);
       }
       .introudctionWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* background-color: yellow; */
+        margin-top: var(--pc-40px);
       }
       .beaconCount {
         margin-top: 50px;
@@ -66,7 +47,7 @@ export const BongsuPavalBox = styled.div`
       }
     }
     .textWrapper {
-      margin: 160px 0;
+      margin: var(--pc-160px) 0;
     }
 
     .heroWrapper {
@@ -90,7 +71,13 @@ export const BongsuPavalBox = styled.div`
     }
 
     .projectDescriptions {
-      margin-bottom: 160px;
+      div {
+        max-width: 1260px;
+        width: var(--pc-1260px);
+        margin: auto;
+        margin-bottom: var(--pc-60px);
+      }
+      margin-bottom: var(--pc-160px);
       &:last-child {
         margin-bottom: 200px;
       }
@@ -100,21 +87,6 @@ export const BongsuPavalBox = styled.div`
   @media (max-width: 1024px) {
     .introudctionWrapper {
       white-space: nowrap;
-      .intro_title {
-        font-family: 'NanumSquareEB';
-        color: #000000;
-        letter-spacing: -0.02em;
-        font-size: clamp(22px, 5.87vw, 50px);
-        margin-bottom: 20px;
-      }
-      .intro_description {
-        font-family: 'NanumSquareB';
-        color: #767676;
-        letter-spacing: -0.02em;
-
-        font-size: clamp(16px, 4vw, 24px);
-        line-height: clamp(24px, 6vw, 32px);
-      }
     }
 
     .mobile_beaconCount {
@@ -139,7 +111,7 @@ export const BongsuPavalBox = styled.div`
       .beacon {
         aspect-ratio: 102 / 258;
         /* width: 102px; */
-        width: clamp(102px, 27.2vw, 280px);
+        width: clamp(102px, 27.2vw, 1000px);
         /* margin-right: 26px; */
         margin-right: var(--mobile-26px);
       }
@@ -159,9 +131,9 @@ export const BongsuPavalBox = styled.div`
       margin: 80px 30px;
     }
     .projectDescriptions {
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-80px);
       &:last-child {
-        margin-bottom: 141px;
+        margin-bottom: var(--mobile-142px);
       }
     }
   }

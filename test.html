@@ -30,6 +30,7 @@
         const pc_val = document.querySelector('#myNum').value;
         const res = (pc_val / 1920) * 100;
         console.log('pc 입력값:', pc_val, '답:', res.toFixed(2));
+        document.querySelector('.value1').innerText = '입력값: ' + pc_val + '\n변환값: ' + res.toFixed(2);
       }
       function calc_mobile() {
         console.clear();
@@ -37,6 +38,7 @@
         const mobile_val = document.querySelector('#myNum').value;
         const res = (mobile_val / 375) * 100;
         console.log('mo 입력값:', mobile_val, '답:', res.toFixed(2));
+        document.querySelector('.value1').innerText = '입력값: ' + mobile_val + '\n변환값: ' + res.toFixed(2);
       }
     </script>
   </head>
@@ -47,5 +49,6 @@
     <input type="number" id="myNum" />
     <button onclick="calc_pc()">pc</button>
     <button onclick="calc_mobile()">mobile</button>
+    <p class="value1"></p>
   </body>
 </html>

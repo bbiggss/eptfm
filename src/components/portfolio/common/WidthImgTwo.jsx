@@ -10,8 +10,6 @@ const StyledWidthImgTwo = styled.div`
     margin-bottom: var(--pc-60px);
     img {
       width: 100%;
-      /* width: calc(50% - (40px / 2)); */
-      /* border-radius: 30px; */
     }
   }
   @media (max-width: 1024px) {
@@ -20,7 +18,6 @@ const StyledWidthImgTwo = styled.div`
     img {
       display: block;
       width: 100%;
-      /* border-radius: clamp(10px, 2.7vw, 27.3px); */
 
       margin-bottom: var(--mobile-24px);
     }

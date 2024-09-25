@@ -6,14 +6,19 @@ export const StyledExploreDokdo = styled.div`
       position: relative;
       .manOnEarth {
         position: absolute;
-        /* width: 606px; */
-        width: clamp(320px, 31.5vw, 606px);
-        bottom: -237px;
-        right: 0;
+        max-width: 606px;
+        width: 31.56vw;
+        bottom: clamp(-237px, -12.34vw, 0px);
+        right: clamp(0px, 5.73vw, 110px);
       }
     }
     .introductionWrapper {
-      margin-bottom: 160px;
+      margin-top: var(--pc-200px);
+      margin-bottom: var(--pc-160px);
+    }
+    .contentsWrapper img {
+      max-width: 720px;
+      width: var(--pc-720px);
     }
   }
   @media (max-width: 1024px) {
@@ -22,9 +27,9 @@ export const StyledExploreDokdo = styled.div`
       margin-top: 50px;
       .manOnEarth {
         position: absolute;
-        /* width: 192px; */
-        width: clamp(192px, 50vw, 320px);
-        bottom: -91px;
+        min-width: 192px;
+        width: 51vw;
+        bottom: clamp(-91px, -24.27vw, 0px);
         right: 0;
       }
     }

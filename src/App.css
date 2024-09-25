@@ -30,7 +30,9 @@
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
 
   --pc-1260px: clamp(0px, 65.63vw, 1260px);
+  --pc-720px: clamp(0px, 37.5vw, 720px);
   --pc-710px: clamp(0px, 36.98vw, 710px);
+  --pc-700px: clamp(0px, 36.46vw, 700px);
   --pc-500px: clamp(0px, 26vw, 500px);
   --pc-465px: clamp(0px, 24.22vw, 465px);
   --pc-200px: clamp(0px, 10.4vw, 200px);
@@ -99,6 +101,16 @@
     /* width: 80%; */
     /* background-color: yellow; */
     margin: 0 auto;
+  }
+  .maxWidth1260Wrapper img {
+    max-width: 1260px;
+    width: 65.63vw;
+  }
+
+  .pcMaxWidth1260Wrapper {
+    max-width: 1260px;
+    width: var(--pc-1260px);
+    margin: auto;
   }
 }
 
@@ -178,10 +190,6 @@
 
 a {
   text-decoration: none;
-}
-.maxWidth1260Wrapper img {
-  max-width: 1260px;
-  width: 65.63vw;
 }
 
 /* 영어 */
