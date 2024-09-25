@@ -59,6 +59,10 @@ export const StyledReservoirDam = styled.div`
       transform: translateX(-50%);
       text-align: center;
       margin-top: var(--mobile-80px);
+
+      p:last-child {
+        white-space: nowrap;
+      }
     }
 
     .backgroundImg {

@@ -68,6 +68,7 @@ export const StyledCyberSocializingTwo = styled.div`
         transform: translateX(-50%);
         text-align: center;
         bottom: clamp(-150px, -33vw, -75px);
+        white-space: nowrap;
       }
     }
     .cloud {

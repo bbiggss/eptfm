@@ -94,6 +94,7 @@ export const StyledChemicalSafety = styled.div`
       transform: translateX(-50%);
       text-align: center;
       bottom: clamp(80px, 21vw, 300px);
+      white-space: nowrap;
     }
     .side1 {
       position: absolute;

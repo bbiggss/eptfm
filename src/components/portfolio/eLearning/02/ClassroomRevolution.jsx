@@ -41,7 +41,7 @@ const ClassroomRevolution = () => {
 
         <PortfolioTitleWrap
           pcMarginTop={'var(--pc-180px)'}
-          style={{ position: 'absolute', left: '50%', zIndex: '1', transform: 'translateX(-50%)' }}
+          style={{ position: 'absolute', left: '50%', zIndex: '0', transform: 'translateX(-50%)' }}
           mobileMarginTop={'var(--mobile-50px)'}
         >
           <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'한국교육학술정보원'} />
