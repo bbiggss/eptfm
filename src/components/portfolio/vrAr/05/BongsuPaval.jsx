@@ -12,11 +12,13 @@ import useMobile from '../../../hooks/useMobile';
 import useTablet from '../../../hooks/useTablet';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
+import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const BongsuPaval = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
   const isMobileTablet = useResponsiveMax1024();
+  const isLongTablet = useLongTablet();
   return (
     <StyledBongsuPaval>
       <div className="heroWrapper">
@@ -156,6 +158,8 @@ const BongsuPaval = () => {
           text={
             isMobileTablet
               ? '‘옛 사람들의 통신 수단, 봉수제도와 파발제도’\n 콘텐츠는 단순한 학습을 넘어, 사용자에게\n 몰입감을 주는 VR 체험을 제공해요.\n긴급한 상황에서 봉수대 신호를 보내고,\n 빠른 시간 내에 파발을 통해 문서를 전달하는\n 미션을 통해 옛 통신 방식을 재미있게\n 배울 수 있답니다! 이 콘텐츠와 함께\n 옛 통신 수단의 신비를 체험해보세요!'
+              : isLongTablet
+              ? '‘옛 사람들의 통신 수단, 봉수제도와 파발제도’ 콘텐츠는 단순한 학습을 넘어, 사용자에게\n 몰입감을 주는 VR 체험을 제공해요. 긴급한 상황에서 봉수대 신호를 보내고,\n 빠른 시간 내에 파발을 통해 문서를 전달하는 미션을 통해 옛 통신 방식을 재미있게\n 배울 수 있답니다! 이 콘텐츠와 함께 옛 통신 수단의 신비를 체험해보세요!'
               : '‘옛 사람들의 통신 수단, 봉수제도와 파발제도’ 콘텐츠는 단순한 학습을 넘어, 사용자에게 몰입감을 주는 VR 체험을 제공해요.\n긴급한 상황에서 봉수대 신호를 보내고, 빠른 시간 내에 파발을 통해 문서를 전달하는 미션을 통해\n옛 통신 방식을 재미있게 배울 수 있답니다! 이 콘텐츠와 함께 옛 통신 수단의 신비를 체험해보세요!'
           }
         />

@@ -4,7 +4,6 @@
 }
 
 :root {
-  --font-display: block;
   --pc-fixedButton: 3.5vw;
   --mobile-fixedButton: 8.53vw;
 
@@ -196,29 +195,26 @@ a {
 @font-face {
   font-family: 'Roboto-Medium';
   src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 @font-face {
   font-family: 'Roboto-Regular';
   src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 @font-face {
   font-family: 'Roboto-Light';
   src: url('./assets/fonts/Roboto-Light.ttf') format('truetype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 .robotoMedium {
   font-family: 'Roboto-Medium';
-  font-display: var(--font-display);
 }
 .robotoRegular {
   font-family: 'Roboto-Regular';
-  font-display: var(--font-display);
 }
 .RobotoLight {
   font-family: 'Roboto-Light';
-  font-display: var(--font-display);
 }
 
 .tempWrap {
@@ -229,36 +225,32 @@ a {
 @font-face {
   font-family: 'NanumSquareL';
   src: url('./assets/fonts/NanumSquareL.otf') format('opentype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 @font-face {
   font-family: 'NanumSquareR';
   src: url('./assets/fonts/NanumSquareR.otf') format('opentype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 @font-face {
   font-family: 'NanumSquareB';
   src: url('./assets/fonts/NanumSquareB.otf') format('opentype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 @font-face {
   font-family: 'NanumSquareEB';
   src: url('./assets/fonts/NanumSquareEB.otf') format('opentype');
-  font-display: var(--font-display);
+  font-display: block;
 }
 .NanumSquareL {
   font-family: 'NanumSquareL';
-  font-display: var(--font-display);
 }
 .NanumSquareR {
   font-family: 'NanumSquareR';
-  font-display: var(--font-display);
 }
 .NanumSquareB {
   font-family: 'NanumSquareB';
-  font-display: var(--font-display);
 }
 .NanumSquareEB {
   font-family: 'NanumSquareEB';
-  font-display: var(--font-display);
 }

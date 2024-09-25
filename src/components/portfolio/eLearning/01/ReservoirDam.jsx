@@ -14,12 +14,12 @@ import useResponsiveMax1024 from '../../../hooks/useResponsiveMax1024';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 import CustomText from '../../common/CustomText';
-import useLongTablet from '../../../hooks/useTabletMax1556';
+// import useLongTablet from '../../../hooks/useTabletMax1556';
 
 const ReservoirDam = () => {
   const isMobile = useMobile();
   const isTablet = useTablet();
-  const isLongTablet = useLongTablet();
+  // const isLongTablet = useLongTablet();
 
   const isMobileTablet = useResponsiveMax1024();
   return (
