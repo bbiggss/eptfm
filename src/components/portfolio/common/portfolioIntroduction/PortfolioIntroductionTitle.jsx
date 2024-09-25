@@ -14,6 +14,7 @@ const StyledPortfolioIntroductionTitle = styled.p`
   font-family: 'NanumSquareEB';
   color: #000000;
   letter-spacing: -0.02em;
+  word-break: keep-all;
   @media (min-width: 1025px) {
     font-size: var(--pc-font-size-40px);
     line-height: var(--pc-line-height-56px);
@@ -24,8 +25,6 @@ const StyledPortfolioIntroductionTitle = styled.p`
   @media (max-width: 1024px) {
     font-size: var(--mobile-font-size-22px);
     line-height: var(--mobile-line-height-30px);
-
-    white-space: nowrap;
 
     margin-top: ${(props) => props.$mobileMarginTop};
     margin-bottom: ${(props) => props.$mobileMarginBottom};

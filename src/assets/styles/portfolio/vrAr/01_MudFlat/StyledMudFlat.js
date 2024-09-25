@@ -13,22 +13,7 @@ export const StyledMudFlat = styled.div`
     text-align: center;
   }
 
-  /* @media (min-width: 1341px) {
-    .introductionWrap {
-      margin-left: 67px;
-    }
-  } */
-  .maxWidth1100Wrapper {
-    img {
-      max-width: 1100px;
-    }
-  }
-
   @media (min-width: 1025px) {
-    .subTexts {
-      font-size: 24px;
-      margin-top: 60px;
-    }
     .portfolioTitle {
       position: absolute;
       margin-top: 425px;
@@ -47,19 +32,20 @@ export const StyledMudFlat = styled.div`
     }
 
     .mainContainer {
-      margin-top: 171px;
+      margin-top: clamp(0px, 8.91vw, 171px);
       display: flex;
+      justify-content: center;
 
       .woman {
         margin-right: 20px;
       }
     }
     .watchContainer {
-      padding: 100px 0;
+      padding: var(--pc-100px) 0;
       width: 100%;
 
-      margin-top: 160px;
-      margin-bottom: 160px;
+      margin-top: var(--pc-160px);
+      margin-bottom: var(--pc-160px);
       .centerAlignment {
         display: grid;
         grid-template-columns: repeat(6, auto);
@@ -82,12 +68,12 @@ export const StyledMudFlat = styled.div`
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         text-align: center;
 
-        margin-bottom: 60px;
+        margin-bottom: var(--pc-60px);
       }
     }
     .gridContainer {
-      padding-top: 160px;
-      padding-bottom: 160px;
+      padding-top: var(--pc-160px);
+      padding-bottom: var(--pc-160px);
       width: 100%;
       ul {
         display: grid;
@@ -101,7 +87,7 @@ export const StyledMudFlat = styled.div`
 
         li {
           list-style: none;
-          padding-bottom: 60px;
+          padding-bottom: var(--pc-60px);
 
           img {
             width: 100%;
@@ -122,7 +108,14 @@ export const StyledMudFlat = styled.div`
     }
     .man {
       /* width: 311px; */
-      width: clamp(200px, 20vw, 311px);
+      width: clamp(0px, 16.2vw, 311px);
+    }
+
+    .maxWidth1100Wrapper {
+      img {
+        max-width: 1100px;
+        width: 57.29vw;
+      }
     }
   }
 
@@ -138,16 +131,16 @@ export const StyledMudFlat = styled.div`
       }
 
       .introductionWrap {
-        margin-top: 20px;
-        margin-bottom: 80px;
+        margin-top: var(--mobile-20px);
+        margin-bottom: var(--mobile-80px);
         justify-content: center;
       }
     }
     .watchContainer {
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: var(--mobile-80px);
+      padding-bottom: var(--mobile-80px);
 
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-80px);
 
       .centerAlignment {
         display: grid;
@@ -176,8 +169,8 @@ export const StyledMudFlat = styled.div`
       padding: 0 30px;
       /* padding: 0 8vw; */
 
-      padding-top: 80px;
-      padding-bottom: 80px;
+      padding-top: var(--mobile-80px);
+      padding-bottom: var(--mobile-80px);
 
       ul {
         display: grid;
@@ -185,7 +178,7 @@ export const StyledMudFlat = styled.div`
         grid-template-columns: repeat(3, auto);
         /* gap: 7px 7.5px; */
         gap: 1.87vw 2vw;
-        margin-bottom: 24px;
+        margin-bottom: var(--mobile-24px);
 
         li {
           list-style: none;

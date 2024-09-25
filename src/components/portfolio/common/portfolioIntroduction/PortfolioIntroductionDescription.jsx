@@ -13,7 +13,8 @@ const StyledPortfolioIntroductionDescription = styled.p`
   font-family: 'NanumSquareB';
   color: #333333;
   letter-spacing: -0.02em;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  word-break: keep-all;
 
   @media (min-width: 1025px) {
     margin-top: var(--pc-34px);
@@ -26,15 +27,11 @@ const StyledPortfolioIntroductionDescription = styled.p`
     margin-top: var(--mobile-20px);
 
     margin-bottom: ${(props) => props.$mobileMarginBottom};
-    /* margin-bottom: 21.33vw; */
 
     font-size: var(--mobile-content-common-font-size);
     line-height: var(--mobile-content-common-line-height);
     /* font-size: var(--mobile-font-size-16px);
     line-height: var(--mobile-line-height-24px); */
-
-    /* 16px / 375px * 100 = 4.27vw */
-    /* line-height: 24px; */
   }
 `;
 

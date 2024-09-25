@@ -30,6 +30,7 @@
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
 
   --pc-1260px: clamp(0px, 65.63vw, 1260px);
+  --pc-710px: clamp(0px, 36.98vw, 710px);
   --pc-500px: clamp(0px, 26vw, 500px);
   --pc-465px: clamp(0px, 24.22vw, 465px);
   --pc-200px: clamp(0px, 10.4vw, 200px);

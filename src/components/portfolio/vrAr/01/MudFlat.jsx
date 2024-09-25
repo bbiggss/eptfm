@@ -51,20 +51,18 @@ const MudFlat = () => {
         />
       </div>
 
-      <div className="smallScreen">
-        <div className="mainContainer">
-          <img className="woman" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/woman.png`} alt="" />
-          <div className="introductionWrap">
-            <div>
-              <PortfolioIntroductionTitle title={'갯벌 생물 채집 달인에 도전!'} />
-              <PortfolioIntroductionDescription
-                pcMarginTop={'60px'}
-                mobileMarginTop={'5.33vw'}
-                description={
-                  "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
-                }
-              />
-            </div>
+      <div className="mainContainer">
+        <img className="woman" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/woman.png`} alt="" />
+        <div className="introductionWrap">
+          <div>
+            <PortfolioIntroductionTitle title={'갯벌 생물 채집 달인에 도전!'} />
+            <PortfolioIntroductionDescription
+              pcMarginTop={'60px'}
+              mobileMarginTop={'5.33vw'}
+              description={
+                "'갯벌은 어떤 곳일까?' 콘텐츠는 갯벌의 중요성을\n체험적으로 학습할 수 있도록 설계되었어요. \n갯벌 탐방을 통해 얻은 생생한 데이터를 바탕으로\n시나리오를 구성하고, 갯벌 생물들을 실감나게 \n재현하기 위해 전문가의 자문을 받았답니다!"
+              }
+            />
           </div>
         </div>
       </div>
@@ -174,7 +172,7 @@ const MudFlat = () => {
             }
           />
         </WidthOneContent>
-        <WidthOneContent $customPaddingBottom>
+        <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/group1_6.png`} />
           <CustomText
             text={
@@ -184,17 +182,17 @@ const MudFlat = () => {
             }
           />
         </WidthOneContent>
-        <WidthOneContent $last>
-          <img className="man" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`} alt="" />
-          <CustomText
-            text={
-              isMobile
-                ? '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의\n 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
-                : '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
-            }
-          />
-        </WidthOneContent>
       </div>
+      <WidthOneContent $last>
+        <img className="man" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/01_MudFlat/man.png`} alt="" />
+        <CustomText
+          text={
+            isMobile
+              ? '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의\n 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
+              : '갯벌의 생태적 중요성을 자연스럽게 배우고,\n갯벌 환경을 체험하며 환경 보존의 필요성을 느낄 수 있어요.\n갯벌의 비밀을 탐험하며 환경 보호를 배워보세요!'
+          }
+        />
+      </WidthOneContent>
     </StyledMudFlat>
   );
 };

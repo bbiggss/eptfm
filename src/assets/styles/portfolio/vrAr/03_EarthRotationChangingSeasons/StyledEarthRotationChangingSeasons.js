@@ -33,6 +33,9 @@ export const StyledEarthRotationChangingSeasons = styled.div`
     } */
 
     .mainDescription {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+      margin: auto;
       display: flex;
       /* background-color: beige; */
       margin-top: 171px;
@@ -95,39 +98,31 @@ export const StyledEarthRotationChangingSeasons = styled.div`
         margin-top: 152px;
       }
     }
+
+    .contentsWrapper div {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+      img {
+        max-width: 710px;
+        width: var(--pc-710px);
+      }
+    }
   }
   @media (max-width: 1024px) {
     .mainDescription {
       text-align: center;
+      margin: 0 var(--mobile-margin);
       .globe {
-        /* width: 95px;
-        margin-top: 80px; */
         aspect-ratio: 95 / 115;
 
-        width: clamp(95px, 20vw, 150px); /* 해상도가 커지면서 150px까지 증가 */
+        min-width: 95px;
+        width: 25.3vw;
         margin-top: clamp(80px, 15vw, 120px);
       }
       .mainDescriptionTextBox {
-        margin-top: 30px;
-
-        .title {
-          color: #292929;
-          /* font-size: 22px; */
-          font-size: clamp(22px, 5.87vw, 50px);
-
-          /* line-height: 30px; */
-          line-height: clamp(30px, 1.5em, 60px);
-        }
-        .subTexts {
-          margin-top: 34px;
+        margin-top: var(--mobile-30px);
+        p:last-child {
           color: #767676;
-          /* font-size: 16px;
-          line-height: 24px; */
-
-          font-size: clamp(16px, 4vw, 24px);
-          line-height: clamp(24px, 6vw, 32px);
-          /* line-height: clamp(30px, 1.5em, 60px); */
-          /* line-height: clamp(24px, 6vw, 32px); */
         }
       }
     }

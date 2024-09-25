@@ -15,19 +15,6 @@ export const StyledEcosystemRestoration = styled.div`
     display: none;
   }
 
-  @media (min-width: 1801px) {
-    .eagleCloud {
-      position: relative;
-      left: -148px;
-      aspect-ratio: 387 / 349;
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1800px) {
-    .eagleCloud {
-      max-width: clamp(200px, 20vw, 389px);
-    }
-  }
-
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: auto;
@@ -35,52 +22,54 @@ export const StyledEcosystemRestoration = styled.div`
 
     .heroWrapper {
       max-width: 1260px;
-      width: 80%;
+      width: var(--pc-1260px);
       margin: auto;
     }
 
-    .animationBox {
-      display: flex;
+    .eagleCloud {
+      position: absolute;
+      margin-top: clamp(-78px, -4vw, 0px);
+      margin-left: var(--pc-180px);
+
+      max-width: 387px;
+      width: 20vw;
+    }
+
+    .introductionArea {
       /* background-color: aqua; */
-      margin-bottom: 66px;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1260px;
+      width: var(--pc-1260px);
+      margin: auto;
+
+      margin-top: clamp(0px, 7.9vw, 152px);
+      margin-bottom: var(--pc-60px);
       position: relative;
 
       .left {
-        /* background-color: yellow; */
-        /* position: absolute; */
-        width: 50%;
-        position: relative;
-        top: -80px;
+        margin-top: clamp(0px, 8.75vw, 168px);
       }
       .introduction {
         text-align: left;
         max-width: 586px;
-        /* white-space: nowrap; */
         p:first-child {
-          color: #292929;
-          /* font-size: 40px; */
-          font-size: clamp(20px, 3vw, 40px);
-          margin-top: 49px;
-          margin-bottom: 34px;
           white-space: nowrap;
+          color: #292929;
         }
         p:last-child {
           color: #767676;
-          /* font-size: 26px; */
-          font-size: clamp(14px, 1.7vw, 26px);
-          /* line-height: 40px; */
-          line-height: clamp(20px, 2vw, 40px);
-          letter-spacing: -0.02em;
         }
       }
       .right {
         width: 50%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
+        /* position: absolute; */
+        /* right: 0; */
+        /* bottom: 0; */
         .animals {
           /* display: none; */
-          width: 100%;
+          max-width: 621px;
+          width: 32.34vw;
         }
         .wolf {
           margin-left: 170px;
@@ -102,18 +91,27 @@ export const StyledEcosystemRestoration = styled.div`
         }
       }
     }
+    .contentsWrapper div {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+      img {
+        max-width: 630px;
+        width: 32.81vw;
+      }
+    }
   }
 
   @media (max-width: 1024px) {
     .eagleCloud {
-      /* max-width: clamp(148px, 20vw, 389px); */
-      /* width: clamp(148px, 18vw, 300px); */
-      width: clamp(148px, 40vw, 389px);
-      aspect-ratio: 389 / 349;
+      width: clamp(148px, 39.47vw, 1000px);
+      aspect-ratio: 148 / 133;
+      margin-left: var(--mobile-20px);
+      transform: translateY(-28px);
+      /* margin-bottom: var(--mobile-20px); */
     }
-    .animationBox {
+    .introductionArea {
       /* background-color: aqua; */
-      margin-bottom: 80px;
+      margin-bottom: var(--mobile-80px);
       position: relative;
 
       .left {
@@ -121,7 +119,6 @@ export const StyledEcosystemRestoration = styled.div`
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        top: -30px;
         .eagle {
           width: 148px;
         }
@@ -133,31 +130,16 @@ export const StyledEcosystemRestoration = styled.div`
       }
       .introduction {
         aspect-ratio: 315 / 117;
-        p:first-child {
-          color: #292929;
-          /* font-size: 22px; */
-          font-size: clamp(22px, 5.87vw, 50px);
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-        .introduction_texts {
-          text-align: center;
+        p:last-child {
           color: #767676;
-          /* font-size: 16px;
-          line-height: 24px; */
-          font-size: clamp(16px, 4vw, 24px);
-          line-height: clamp(24px, 6vw, 32px);
-
-          margin-bottom: 30px;
         }
       }
       .right {
-        margin: 0 40px;
         text-align: center;
-
         .animals {
-          width: 100%;
-          max-width: 621px;
+          margin-top: var(--mobile-30px);
+          min-width: 236px;
+          width: 62.93vw;
         }
       }
     }
