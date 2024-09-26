@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-const portfolioImgWidth = '480px';
+// const portfolioImgWidth = 'var(--pc-480px)';
 // const mobile_PortfolioImgWidth = '315px';
 const mobile_PortfolioImgWidth = 'clamp(315px, 55vw, 600px)';
 export const PortfolioListBox = styled.div`
@@ -24,10 +24,17 @@ export const PortfolioListBox = styled.div`
   @media (min-width: 1556px) {
     /* background-color: yellow; */
     /* height: 3688px; */
+    ul {
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
   }
   @media (min-width: 1025px) and (max-width: 1555px) {
     /* background-color: aqua; */
     /* height: 5050px; */
+
+    ul {
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
   }
   @media (max-width: 1024px) {
     /* background-color: aqua; */
@@ -73,12 +80,8 @@ export const PortfolioListBox = styled.div`
     margin: auto;
 
     .topTitleBox {
-      /* height: 390px; // 490 - 헤더(100) = 390 */
-
       .pageTitle {
         font-size: 100px;
-
-        /* padding-top: 80px; */
         padding-bottom: 20px;
       }
 
@@ -89,13 +92,14 @@ export const PortfolioListBox = styled.div`
     }
 
     ul {
+      width: 80%;
+      margin: auto;
+
       display: grid;
       justify-content: center;
       /* grid-template-columns: auto auto auto; */
-      grid-template-columns: repeat(auto-fit, ${portfolioImgWidth});
       gap: 80px 58px;
       /* 앞: 상하간격 뒤: 좌우간격 */
-      padding: 0;
       padding-bottom: 200px;
 
       li {
@@ -104,9 +108,7 @@ export const PortfolioListBox = styled.div`
       height: 382px; */
 
         & .thumbnail img {
-          /* height: 100%; */
-          width: ${portfolioImgWidth};
-          height: 270px;
+          width: 100%;
         }
         & .thumbnailTexts {
           height: 100px;
@@ -125,6 +127,7 @@ export const PortfolioListBox = styled.div`
             letter-spacing: -2%;
             line-height: 34px;
             color: #292929;
+            word-break: keep-all;
           }
         }
       }

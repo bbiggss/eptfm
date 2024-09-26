@@ -42,13 +42,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img5.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'AR I 옛 사람들의 통신수단, 봉수제도와\n 파발제도'
-              : isTablet
-              ? 'AR I 옛 사람들의 통신수단, 봉수제도와 파발제도'
-              : 'AR I 옛 사람들의 통신수단, 봉수제도와\n 파발제도'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'AR I 옛 사람들의 통신수단, 봉수제도와\n 파발제도' : 'AR I 옛 사람들의 통신수단, 봉수제도와 파발제도'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img6.png`,
@@ -58,18 +52,12 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img7.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${isMobileTablet ? 'VR I 과학수사요원이 되어 범인을 찾아라!' : 'VR I 과학수사요원이 되어 범인을\n 찾아라!'}`,
+          pfItemSmallTitle: `${isMobileTablet ? 'VR I 과학수사요원이 되어 범인을 찾아라!' : 'VR I 과학수사요원이 되어 범인을 찾아라!'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img8.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'VR I 세계의 환경 수도 프라이부르크\n 구경하기'
-              : isTablet
-              ? 'VR I 세계의 환경 수도 프라이부르크 구경하기'
-              : 'VR I 세계의 환경 수도 프라이부르크\n 구경하기'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'VR I 세계의 환경 수도 프라이부르크\n 구경하기' : 'VR I 세계의 환경 수도 프라이부르크 구경하기'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img9.png`,
@@ -84,18 +72,12 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img11.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'VR I 직접 만드는 민주적인 선거! 시장\n 출마하기'
-              : isTablet
-              ? 'VR I 직접 만드는 민주적인 선거! 시장 출마하기'
-              : 'VR I 직접 만드는 민주적인 선거! 시장\n 출마하기'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'VR I 직접 만드는 민주적인 선거! 시장\n 출마하기' : 'VR I 직접 만드는 민주적인 선거! 시장 출마하기'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img12.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${isMobileTablet ? 'VR I 바닷속 생물 채집과 수온, 염분 탐사' : 'VR I 바닷속 생물 채집과 수온, 염분\n 탐사'}`,
+          pfItemSmallTitle: `${isMobileTablet ? 'VR I 바닷속 생물 채집과 수온, 염분 탐사' : 'VR I 바닷속 생물 채집과 수온, 염분 탐사'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img13.png`,
@@ -105,13 +87,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img14.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'AR I 별의 색과 밝기를 이용한 별의 특성\n 알아보기'
-              : isTablet
-              ? 'AR I 별의 색과 밝기를 이용한 별의 특성 알아보기'
-              : 'AR I 별의 색과 밝기를 이용한 별의\n 특성 알아보기'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'AR I 별의 색과 밝기를 이용한 별의 특성\n 알아보기' : 'AR I 별의 색과 밝기를 이용한 별의 특성 알아보기'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img15.png`,
@@ -126,13 +102,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img17.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는\n 세박자'
-              : isTablet
-              ? 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'
-              : 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는\n 세박자' : 'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}`,
         },
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img18.png`,
@@ -147,13 +117,7 @@ const PortfolioList = (data) => {
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/List/list1_img20.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: `${
-            isMobile
-              ? 'VR I 이중섭 작품을 통해 알아보는 6·25\n 전쟁'
-              : isTablet
-              ? 'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'
-              : 'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'
-          }`,
+          pfItemSmallTitle: `${isMobile ? 'VR I 이중섭 작품을 통해 알아보는 6·25\n 전쟁' : 'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}`,
         },
       ];
       updatePortfolioItems(portfolioItems2);
@@ -209,11 +173,7 @@ const PortfolioList = (data) => {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img1.png`,
           pfItemBigTitle: '환경산업기술원',
           pfItemSmallTitle: `${
-            isMobile
-              ? '친환경 소비의 첫걸음, 환경표지인증을 통한\n 더 나은 선택'
-              : isTablet
-              ? '친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은\n 선택'
-              : '친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'
+            isMobile ? '친환경 소비의 첫걸음, 환경표지인증을 통한\n 더 나은 선택' : '친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'
           }`,
         },
         {

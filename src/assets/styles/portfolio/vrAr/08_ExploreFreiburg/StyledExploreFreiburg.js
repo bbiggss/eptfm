@@ -7,75 +7,6 @@ export const StyledExploreFreiburg = styled.div`
   .wrapper {
     display: flex;
   }
-  .main2 {
-    max-width: 1260px;
-    width: 100%;
-  }
-
-  @media (min-width: 1900px) {
-    .bicycleGirl {
-      position: absolute;
-      right: 152px;
-      top: -27px;
-      /* width: 20vw; */
-    }
-    .topText {
-      text-align: center;
-      color: #292929;
-      font-size: 28px;
-      padding-top: 160px;
-      padding-bottom: 100px;
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1900px) {
-    .bicycleGirl {
-      position: absolute;
-      right: 20px;
-      top: -27px;
-      width: 20vw;
-    }
-    .topText {
-      text-align: center;
-      color: #292929;
-      font-size: 18px;
-      padding-top: 100px;
-      padding-bottom: 100px;
-    }
-  }
-
-  @media (min-width: 1500px) {
-    .skyblueCharacter {
-      position: absolute;
-      right: clamp(1px, 5vw, 100px);
-      bottom: 300px;
-      width: 20vw;
-      max-width: 313px !important;
-    }
-    .greenCharacter {
-      position: absolute;
-      left: 79px;
-      bottom: 255px;
-      width: 20vw;
-      max-width: 313px !important;
-    }
-  }
-
-  @media (min-width: 1025px) and (max-width: 1499px) {
-    .skyblueCharacter {
-      position: absolute;
-      right: clamp(1px, 5vw, 100px);
-      bottom: 0px;
-      width: 20vw;
-      max-width: 313px !important;
-    }
-    .greenCharacter {
-      position: absolute;
-      left: 79px;
-      bottom: 0;
-      width: 20vw;
-      max-width: 313px !important;
-    }
-  }
 
   @media (min-width: 1025px) {
     max-width: 1920px;
@@ -84,21 +15,62 @@ export const StyledExploreFreiburg = styled.div`
       text-align: center;
       margin-top: 88px;
       margin-bottom: 52px;
+      img {
+        max-width: 837px;
+        width: var(--pc-837px);
+      }
     }
     .sideImgWrapper {
       position: relative;
-      z-index: -1;
       .yellowCharacter {
         position: absolute;
-        left: 79px;
-        bottom: 50px;
+        left: clamp(0px, 7.14vw, 137px);
+        bottom: clamp(0px, 3.65vw, 70px);
+
         width: 20vw;
         max-width: 280px;
+      }
+      .skyblueCharacter {
+        position: absolute;
+        right: clamp(0px, 6.09vw, 117px);
+        bottom: var(--pc-300px);
+
+        width: 20vw;
+        max-width: 313px;
+      }
+      .greenCharacter {
+        position: absolute;
+        left: 79px;
+        bottom: clamp(0px, 14.06vw, 270px);
+
+        width: 20vw;
+        max-width: 313px;
       }
     }
 
     .customMaxWidth785 img {
       max-width: 785px;
+    }
+    .main2 {
+      max-width: 1260px;
+      width: var(--pc-1260px);
+    }
+
+    .bicycleGirl {
+      position: absolute;
+      right: var(--pc-150px);
+      top: -27px;
+
+      max-width: 353px;
+      width: 20vw;
+    }
+    .topText {
+      text-align: center;
+      color: #292929;
+      font-size: clamp(0px, 1.46vw, 28px);
+      line-height: clamp(0px, 1.98vw, 38px);
+      padding-top: var(--pc-160px);
+      padding-bottom: var(--pc-100px);
     }
   }
 
@@ -124,7 +96,7 @@ export const StyledExploreFreiburg = styled.div`
         width: 40vw;
         margin: 0 auto;
         margin-top: 80px;
-        margin-bottom: 24px;
+        margin-bottom: var(--mobile-24px);
       }
     }
     .sideImgWrapper {

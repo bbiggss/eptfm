@@ -24,9 +24,9 @@ const TyphoonEvacuation = () => {
       <Breadcrumb />
 
       <PortfolioTitleWrap
-        pcMarginBottom={'80px'}
-        mobileMarginTop={'50px'}
-        mobileMarginBottom={'40px'}
+        pcMarginBottom={'var(--pc-80px)'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
         style={{ display: 'grid', justifyContent: 'center' }}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
@@ -44,14 +44,13 @@ const TyphoonEvacuation = () => {
       <div className="relative">
         <div className="introductionWrapper">
           <PortfolioIntroductionTitle
-            pcMarginTop={'118px'}
-            mobileMarginTop={'60px'}
+            pcMarginTop={'clamp(0px, 6.15vw, 118px)'}
+            mobileMarginTop={'var(--mobile-60px)'}
             style={{ color: '#FFFFFF' }}
             title={'태풍을 대비하는 생존 가이드!'}
           />
           <PortfolioIntroductionDescription
             style={{ color: '#FFFFFF' }}
-            pcMarginTop={'34px'}
             mobileMarginTop={'5.33vw'}
             description={
               isMobileTablet

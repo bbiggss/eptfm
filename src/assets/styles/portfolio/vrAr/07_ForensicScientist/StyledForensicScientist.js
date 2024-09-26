@@ -1,136 +1,122 @@
 import styled from 'styled-components';
 
 export const StyledForensicScientist = styled.div`
-  @media (min-width: 1025px) and (max-width: 1200px) {
-    .magnifier {
-      top: -36vw;
-    }
-    .introduction_text2_Wrapper {
-      margin-top: 150px !important;
-      margin-bottom: 200px !important;
-    }
-  }
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: 0 auto;
     width: 100%;
+    .heroWrapper {
+      font-size: 0;
+    }
     .mainBackgroundImg {
-      /* position: relative; */
       background-image: url(${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/07_ForensicScientist/main2.png);
       background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
       aspect-ratio: 1920 / 850;
+      text-align: center;
       .powder {
-        margin-top: 100px;
+        margin-top: var(--pc-100px);
+
+        max-width: 600px;
+        width: var(--pc-600px);
       }
     }
-    .margin200 {
-      margin-top: 200px;
-      margin-bottom: 200px;
-      margin-left: 800px;
-      text-align: left;
-    }
-    .introduction_text2_Wrapper {
-      position: relative;
-      aspect-ratio: 1920 / 160;
-      margin-top: 298px;
-      margin-bottom: 300px;
-      /* background-color: yellow; */
-    }
-    .introduction_text2 {
-      position: absolute;
-      left: clamp(100px, 41.67vw, 800px);
-      /* left: 45%; */
+    .orderWrapper {
+      display: grid;
+      .introduction_text2_Wrapper {
+        order: 2;
+        margin-top: var(--pc-150px);
+        margin-bottom: var(--pc-300px);
 
-      color: #767676;
-      font-size: clamp(10px, 1.3vw, 26px);
-      line-height: clamp(10px, 2vw, 40px);
-    }
-    .sideImgsWrapper {
-      position: relative;
-
-      .magnifier {
-        position: absolute;
-        /* top: -700px; */
-        top: -36vw;
-        /* width: 892px; */
-        width: clamp(300px, 37vw, 712px);
+        position: relative;
+        left: var(--pc-800px);
+        width: clamp(0px, 32.66vw, 627px);
       }
-      .right {
-        position: absolute;
-        right: 0;
-        /* top: -250px; */
-        /* width: 138px; */
-        width: clamp(226px, 21.98vw, 422px);
+      .sideImgsWrapper {
+        order: 1;
+        position: relative;
+        .magnifier {
+          position: absolute;
+          width: clamp(0px, 37vw, 712px);
+        }
+        .blood_1 {
+          position: absolute;
+          right: 0;
+          top: clamp(0px, 19.9vw, 382px);
+          width: clamp(0px, 21.98vw, 422px);
+        }
       }
     }
 
     .book {
       position: absolute;
-      bottom: -200px;
+      max-width: 410px;
+      width: var(--pc-410px);
+      top: clamp(-180px, -9.38vw, 0px);
     }
     .footsWrapper {
       position: relative;
     }
     .foots {
       position: absolute;
-      /* right: -69px; */
       right: 0;
-      top: -100px;
+      top: clamp(-150px, -7.81vw, 0px);
+
+      width: clamp(0px, 32.08vw, 616px);
     }
-    .blood {
+    .blood_2 {
       position: absolute;
-      top: -147px;
+      bottom: clamp(0px, 8.85vw, 170px);
+
+      max-width: 493px;
+      width: 25.68vw;
     }
-    .customMaxWidth790 img {
-      max-width: 790px;
+    .customMaxWidth790 div {
+      display: grid;
+      justify-items: center;
+      img {
+        max-width: 790px;
+        width: var(--pc-790px);
+      }
     }
   }
   @media (max-width: 1024px) {
     .mainBackgroundImg {
       margin: 0 var(--mobile-margin);
-    }
-    .backgroundImg {
-      display: none;
+      text-align: center;
     }
     .powder {
-      width: 100%;
-      margin-top: clamp(30px, 8vw, 100px);
-    }
-    .introduction_text2 {
-      color: #767676;
-      text-align: center;
-      font-size: clamp(16px, 4vw, 24px);
-      line-height: clamp(24px, 6vw, 32px);
-      /* letter-spacing: -0.02em; */
+      margin-top: var(--mobile-30px);
 
-      margin-top: 80px;
+      min-width: 236px;
+      width: 62.93vw;
+    }
+
+    .introduction_text2_Wrapper {
+      margin: 0 var(--mobile-margin);
+      margin-top: var(--mobile-80px);
+      text-align: center;
     }
 
     .sideImgsWrapper {
       position: relative;
-      margin-top: 35px;
+      margin-top: var(--mobile-35px);
 
       .magnifier {
-        width: 294px;
-        /* position: absolute; */
-        /* left: 0; */
-        /* bottom: 510px; */
+        min-width: 246px;
+        width: 65.6vw;
       }
-      .right {
+      .blood_1 {
         position: absolute;
         right: 0;
-        bottom: -25px;
-        width: 138px;
-        /* display: none; */
+        top: var(--mobile-130px);
+
+        min-width: 138px;
+        width: 36.8vw;
       }
     }
-    .relative {
-      /* overflow: hidden; */
-    }
     .book {
-      /* width: 112px; */
       width: clamp(112px, 29.87vw, 306px);
       position: absolute;
       bottom: 10px;
@@ -142,18 +128,13 @@ export const StyledForensicScientist = styled.div`
     .foots {
       position: absolute;
       right: 0;
-      top: 91px;
+      top: clamp(91px, 24.27vw, 1000px);
       width: clamp(105px, 28vw, 287px);
-
-      /* right: -69px; */
-
-      /* transform: translateX(240px); */
-      /* clip-path: inset(0 240px 0 0);  */
-      /* top, right, bottom, left */
     }
-    .blood {
+    .blood_2 {
       position: absolute;
-      top: -147px;
+
+      bottom: clamp(-1000px, -16vw, -60px);
       width: clamp(132px, 35.2vw, 360px);
     }
   }

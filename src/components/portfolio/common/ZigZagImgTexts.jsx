@@ -2,19 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import CustomText from './CustomText';
 const ZigZagImgTextsBox = styled.div`
-  /* margin-bottom: 160px; */
-  /* &:last-child {
-    margin-bottom: 0px;
-  } */
-
   p {
     text-align: center;
-    /* white-space: nowrap; */
   }
 
   @media (min-width: 1025px) {
     img {
-      margin-bottom: 60px;
+      margin-bottom: var(--pc-60px);
       width: 100%;
     }
     margin-top: ${(props) => props.$pcMarginTop};
@@ -22,9 +16,9 @@ const ZigZagImgTextsBox = styled.div`
   }
   @media (max-width: 1024px) {
     img {
-      margin-bottom: 24px;
+      margin-bottom: var(--mobile-24px);
     }
-    padding-bottom: 80px;
+    padding-bottom: var(--mobile-80px);
   }
 `;
 

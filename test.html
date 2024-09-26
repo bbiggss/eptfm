@@ -23,6 +23,9 @@
       .div2 {
         background-color: aqua;
       }
+      .grid {
+        font-size: 0;
+      }
     </style>
     <script>
       function calc_pc() {
@@ -30,7 +33,7 @@
         const pc_val = document.querySelector('#myNum').value;
         const res = (pc_val / 1920) * 100;
         console.log('pc 입력값:', pc_val, '답:', res.toFixed(2));
-        document.querySelector('.value1').innerText = '입력값: ' + pc_val + '\n변환값: ' + res.toFixed(2);
+        document.querySelector('.value1').innerText = 'pc\n 입력값: ' + pc_val + '\n변환값: clamp(0px, ' + res.toFixed(2) + 'vw, ' + pc_val + 'px)';
       }
       function calc_mobile() {
         console.clear();
@@ -38,17 +41,21 @@
         const mobile_val = document.querySelector('#myNum').value;
         const res = (mobile_val / 375) * 100;
         console.log('mo 입력값:', mobile_val, '답:', res.toFixed(2));
-        document.querySelector('.value1').innerText = '입력값: ' + mobile_val + '\n변환값: ' + res.toFixed(2);
+        document.querySelector('.value1').innerText = 'mo\n 입력값: ' + mobile_val + '\n변환값: ' + res.toFixed(2);
       }
     </script>
   </head>
   <body>
     <!-- <div class="imgWrapper"> -->
-    <!-- <img src="./public/assets/images/portfolio/R&D/detail/01_EnvironmentalLabelingCertification/hero.png" alt="" /> -->
     <!-- </div> -->
     <input type="number" id="myNum" />
     <button onclick="calc_pc()">pc</button>
     <button onclick="calc_mobile()">mobile</button>
     <p class="value1"></p>
+
+    <!-- <div class="grid">
+      <img className="backgroundImg" src="./public/assets/images/portfolio/VrAr/detail/07_ForensicScientist/hero.png" alt="" />
+    </div>
+    <img className="backgroundImg" src="./public/assets/images/portfolio/VrAr/detail/07_ForensicScientist/hero.png" alt="" /> -->
   </body>
 </html>

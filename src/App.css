@@ -29,14 +29,25 @@
   --pc-line-height-36px: clamp(18px, 1.8vw, 36px);
 
   --pc-1260px: clamp(0px, 65.63vw, 1260px);
+  --pc-1200px: clamp(0px, 62.5vw, 1200px);
+  --pc-837px: clamp(0px, 43.59vw, 837px);
+  --pc-800px: clamp(0px, 41.67vw, 800px);
+  --pc-790px: clamp(0px, 41.15vw, 790px);
   --pc-720px: clamp(0px, 37.5vw, 720px);
   --pc-710px: clamp(0px, 36.98vw, 710px);
   --pc-700px: clamp(0px, 36.46vw, 700px);
+  --pc-600px: clamp(0px, 31.25vw, 600px);
   --pc-500px: clamp(0px, 26vw, 500px);
+  --pc-480px: clamp(0px, 25vw, 480px);
   --pc-465px: clamp(0px, 24.22vw, 465px);
+  --pc-410px: clamp(0px, 21.35vw, 410px);
+  --pc-300px: clamp(0px, 15.63vw, 300px);
   --pc-200px: clamp(0px, 10.4vw, 200px);
   --pc-180px: clamp(0px, 9.38vw, 180px);
   --pc-160px: clamp(0px, 8.3vw, 160px);
+  --pc-150px: clamp(0px, 7.81vw, 150px);
+  --pc-150px: clamp(0px, 7.81vw, 150px);
+  --pc-130px: clamp(0px, 6.77vw, 130px);
   --pc-100px: clamp(0px, 5.2vw, 100px);
   --pc-90px: clamp(0px, 4.68vw, 90px);
   --pc-88px: clamp(0px, 4.58vw, 88px);
@@ -47,6 +58,9 @@
   --pc-39px: clamp(0px, 2.03vw, 39px);
   --pc-34px: clamp(17px, 1.7vw, 34px);
   --pc-24px: clamp(10px, 1.25vw, 24px);
+  /*  
+  var(--pc-0px)
+  */
 
   --pc-header-Font: clamp(12px, 1vw, 18px);
   --pc-breadCrumb-font: clamp(13px, 0.94vw, 16px);
@@ -63,15 +77,20 @@
   --mobile-22px: clamp(22px, 5.87vw, 100px);
   --mobile-24px: clamp(24px, 6.4vw, 100px);
   --mobile-30px: clamp(30px, 8vw, 1000px);
+  --mobile-35px: clamp(35px, 9.3vw, 1000px);
   --mobile-40px: clamp(40px, 10.6vw, 80px);
   --mobile-50px: clamp(50px, 13.3vw, 1000px);
   --mobile-60px: clamp(60px, 16vw, 1000px);
   --mobile-80px: clamp(80px, 21.3vw, 1000px);
   --mobile-90px: clamp(90px, 24vw, 1000px);
   --mobile-100px: clamp(100px, 26.6vw, 1000px);
+  --mobile-130px: clamp(130px, 34.67vw, 1000px);
   --mobile-142px: clamp(142px, 37.8vw, 1000px);
   --mobile-152px: clamp(152px, 40.53vw, 1000px);
   --mobile-189px: clamp(189px, 50.4vw, 1000px);
+  /*  
+  var(--mobile-0px)
+  */
 
   --mobile-font-size-12px: clamp(12px, 3.2vw, 18px);
 
@@ -97,8 +116,6 @@
   }
   .smallScreen {
     max-width: 1260px;
-    /* width: 80%; */
-    /* background-color: yellow; */
     margin: 0 auto;
   }
   .maxWidth1260Wrapper img {
@@ -146,9 +163,6 @@
 
 /* 텍스트 정렬 */
 .centerAlignment {
-  text-align: center;
-}
-.textCenter {
   text-align: center;
 }
 

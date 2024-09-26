@@ -22,7 +22,7 @@ const ExploreFreiburg = () => {
   return (
     <StyledExploreFreiburg>
       <Breadcrumb />
-      <PortfolioTitleWrap mobileMarginTop={'50px'} style={{ display: 'grid', justifyContent: 'center' }}>
+      <PortfolioTitleWrap mobileMarginTop={'var(--mobile-50px)'} style={{ display: 'grid', justifyContent: 'center' }}>
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
         <PortfolioFieldTitle
           style={{
@@ -36,7 +36,6 @@ const ExploreFreiburg = () => {
       </PortfolioTitleWrap>
       <div className="heroWrapper">
         <HeroImg
-          maxwidth={'837px'}
           pcAspectRatio={'837 / 328'}
           mobileAspectRatio={'327 / 129'}
           src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/${isMobileTablet ? 'main1_m' : 'main1'}.png`}
@@ -48,8 +47,6 @@ const ExploreFreiburg = () => {
         title={isMobileTablet ? '독일의 환경 수도, 생태도시\n 프라이부르크로 떠나는 여행!' : '독일의 환경 수도, 생태도시 프라이부르크로 떠나는 여행!'}
       />
       <PortfolioIntroductionDescription
-        pcMarginTop={'34px'}
-        mobileMarginTop={'5.33vw'}
         style={{ color: '#767676', textAlign: 'center' }}
         description={
           isMobileTablet
@@ -91,8 +88,7 @@ const ExploreFreiburg = () => {
             }
           />
           <ZigZagImgTexts
-            pcMarginTop={'130px'}
-            // pcMarginBottom={'50px'}
+            pcMarginTop={'var(--pc-130px)'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_2.png`}
             text={'여러차례의 테스트를 통해\n사용자 경험을 최적화 했답니다!'}
           />
@@ -105,8 +101,8 @@ const ExploreFreiburg = () => {
             }
           />
           <ZigZagImgTexts
-            pcMarginTop={'100px'}
-            pcMarginBottom={'160px'}
+            pcMarginTop={'var(--pc-100px)'}
+            pcMarginBottom={'var(--pc-160px)'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_4.png`}
             text={
               isMobileTablet
@@ -142,95 +138,92 @@ const ExploreFreiburg = () => {
         </Zigzag>
       </div>
 
-      <div className="customMaxWidth785">
-        <WidthOneContent $first>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_1.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '자전거와 트램을 이용한\n 친환경 교통정책을 체험할 수 있어요.\n여기는 자전거와 트램 천국!'
-                : '자전거와 트램을 이용한 친환경 교통정책을 체험할 수 있어요.\n여기는 자전거와 트램 천국!'
-            }
-          />
-        </WidthOneContent>
-        <div className="sideImgWrapper">
-          <img
-            className="yellowCharacter"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/yellowCharacter.png`}
-            alt=""
-          />
-        </div>
-        <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_2.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '자동차가 다닐 수 없는 보행자 전용 구역을\n 걸으며, 걷기 좋은 도시의 매력을\n만끽할 수 있어요. 차 없는 거리,\n 여유로운 보행의 즐거움을 느껴보세요!'
-                : '자동차가 다닐 수 없는 보행자 전용 구역을 걸으며, 걷기 좋은 도시의 매력을\n만끽할 수 있어요. 차 없는 거리, 여유로운 보행의 즐거움을 느껴보세요!'
-            }
-          />
-        </WidthOneContent>
-        <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_3.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '도심의 기온을 조절하고 시민들의\n 쉼터가 되어주는 수로를 통해 자연이 주는\n 혜택을 체험할 수 있어요.\n 도심 속 오아시스, 베힐레 수로!'
-                : '도심의 기온을 조절하고 시민들의 쉼터가 되어주는 수로를 통해\n자연이 주는 혜택을 체험할 수 있어요. 도심 속 오아시스, 베힐레 수로!'
-            }
-          />
-        </WidthOneContent>
-        <div className="sideImgWrapper">
-          <img
-            className="skyblueCharacter"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/skyblueCharacter.png`}
-            alt=""
-          />
-        </div>
-        <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_4.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '에너지 자립마을 보방에 위치한 패시브 하우스\n 단지와 솔라 주차장을 방문해서\n지속 가능한 에너지 사용을 경험할 수 있어요.\n 태양이 만드는 에너지 자립으로 자동차도\n 포기한 재미있는 주민들의 이야기도 들어보세요!'
-                : '에너지 자립마을 보방에 위치한 패시브 하우스 단지와 솔라 주차장을 방문해서\n지속 가능한 에너지 사용을 경험할 수 있어요. 태양이 만드는 에너지 자립으로\n자동차도 포기한 재미있는 주민들의 이야기도 들어보세요!'
-            }
-          />
-        </WidthOneContent>
-        <WidthOneContent>
-          {/* <img className="left3" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side4.png`} alt="" /> */}
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_5.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '세계 최초 회전형 태양광 주택을 탐험하며\n 에너지 생산의 혁신을 학습해보세요.\n돌아가는 태양광 주택, 헬리오트롭!'
-                : '세계 최초 회전형 태양광 주택을 탐험하며 에너지 생산의 혁신을 학습해보세요.\n돌아가는 태양광 주택, 헬리오트롭!'
-            }
-          />
-        </WidthOneContent>
-        <div className="sideImgWrapper">
-          <img
-            className="greenCharacter"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/greenCharacter.png`}
-            alt=""
-          />
-        </div>
-        <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_6.png`} />
-          <CustomText
-            text={
-              isMobileTablet
-                ? '탄소제로 축구장과 축구장에 설치된\n 태양광 발전소를 통해 스포츠와\n 환경의 만남을 체험할 수 있어요.\n 탄소제로 축구의 미래를 확인해보세요!'
-                : '탄소제로 축구장과 축구장에 설치된 태양광 발전소를 통해 스포츠와 환경의\n만남을 체험할 수 있어요. 탄소제로 축구의 미래를 확인해보세요!'
-            }
-          />
-        </WidthOneContent>
+      <WidthOneContent $first>
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_1.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '자전거와 트램을 이용한\n 친환경 교통정책을 체험할 수 있어요.\n여기는 자전거와 트램 천국!'
+              : '자전거와 트램을 이용한 친환경 교통정책을 체험할 수 있어요.\n여기는 자전거와 트램 천국!'
+          }
+        />
+      </WidthOneContent>
+      <div className="sideImgWrapper">
+        <img
+          className="yellowCharacter"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/yellowCharacter.png`}
+          alt=""
+        />
       </div>
+      <WidthOneContent>
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_2.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '자동차가 다닐 수 없는 보행자 전용 구역을\n 걸으며, 걷기 좋은 도시의 매력을\n만끽할 수 있어요. 차 없는 거리,\n 여유로운 보행의 즐거움을 느껴보세요!'
+              : '자동차가 다닐 수 없는 보행자 전용 구역을 걸으며, 걷기 좋은 도시의 매력을\n만끽할 수 있어요. 차 없는 거리, 여유로운 보행의 즐거움을 느껴보세요!'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_3.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '도심의 기온을 조절하고 시민들의\n 쉼터가 되어주는 수로를 통해 자연이 주는\n 혜택을 체험할 수 있어요.\n 도심 속 오아시스, 베힐레 수로!'
+              : '도심의 기온을 조절하고 시민들의 쉼터가 되어주는 수로를 통해\n자연이 주는 혜택을 체험할 수 있어요. 도심 속 오아시스, 베힐레 수로!'
+          }
+        />
+      </WidthOneContent>
+      <div className="sideImgWrapper">
+        <img
+          className="skyblueCharacter"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/skyblueCharacter.png`}
+          alt=""
+        />
+      </div>
+      <WidthOneContent>
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_4.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '에너지 자립마을 보방에 위치한 패시브 하우스\n 단지와 솔라 주차장을 방문해서\n지속 가능한 에너지 사용을 경험할 수 있어요.\n 태양이 만드는 에너지 자립으로 자동차도\n 포기한 재미있는 주민들의 이야기도 들어보세요!'
+              : '에너지 자립마을 보방에 위치한 패시브 하우스 단지와 솔라 주차장을 방문해서\n지속 가능한 에너지 사용을 경험할 수 있어요. 태양이 만드는 에너지 자립으로\n자동차도 포기한 재미있는 주민들의 이야기도 들어보세요!'
+          }
+        />
+      </WidthOneContent>
+      <WidthOneContent>
+        {/* <img className="left3" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side4.png`} alt="" /> */}
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_5.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '세계 최초 회전형 태양광 주택을 탐험하며\n 에너지 생산의 혁신을 학습해보세요.\n돌아가는 태양광 주택, 헬리오트롭!'
+              : '세계 최초 회전형 태양광 주택을 탐험하며 에너지 생산의 혁신을 학습해보세요.\n돌아가는 태양광 주택, 헬리오트롭!'
+          }
+        />
+      </WidthOneContent>
+      <div className="sideImgWrapper">
+        <img
+          className="greenCharacter"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/side/greenCharacter.png`}
+          alt=""
+        />
+      </div>
+      <WidthOneContent>
+        <Img pcMaxWidth={'785'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group2_6.png`} />
+        <CustomText
+          text={
+            isMobileTablet
+              ? '탄소제로 축구장과 축구장에 설치된\n 태양광 발전소를 통해 스포츠와\n 환경의 만남을 체험할 수 있어요.\n 탄소제로 축구의 미래를 확인해보세요!'
+              : '탄소제로 축구장과 축구장에 설치된 태양광 발전소를 통해 스포츠와 환경의\n만남을 체험할 수 있어요. 탄소제로 축구의 미래를 확인해보세요!'
+          }
+        />
+      </WidthOneContent>
 
       <div className="fullScreen fff6df relative">
-        <Zigzag $pcPaddingTop={'160px'} $mobilePaddingTop={'80px'}>
+        <Zigzag $pcPaddingTop={'var(--pc-160px)'} $mobilePaddingTop={'var(--mobile-80px)'}>
           <ZigZagImgTexts
-            // pcMarginTop={'130px'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_5.png`}
             text={
               isMobileTablet
@@ -239,8 +232,7 @@ const ExploreFreiburg = () => {
             }
           />
           <ZigZagImgTexts
-            pcMarginTop={'130px'}
-            // pcMarginBottom={'50px'}
+            pcMarginTop={'var(--pc-130px)'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_6.png`}
             text={'빵집에서 프레첼을 구매해서\n숨어있는 퀘스트를 해결해보세요!'}
           />
@@ -249,36 +241,13 @@ const ExploreFreiburg = () => {
             text={'검은 숲의 비밀을 찾아서\n미션을 해결하고, 검은 숲을 탐험해보세요.'}
           />
           <ZigZagImgTexts
-            pcMarginTop={'100px'}
-            pcMarginBottom={'160px'}
+            pcMarginTop={'var(--pc-100px)'}
+            pcMarginBottom={'var(--pc-160px)'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_8.png`}
             text={'편리한 퀘스트 확인 창으로\n학습자들의 편의성도 도모했답니다!'}
           />
         </Zigzag>
       </div>
-
-      {/* <Zigzag className="paddingTop160">
-        <div className="left">
-          <ZigZagImgTexts
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_5.png`}
-            text={'프라이부르크 콘텐츠에 등장하는 귀여운 솔라의\n미션을 해결하면서 마을을 돌아다닐 수 있어요.'}
-          />
-          <ZigZagImgTexts
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_7.png`}
-            text={'검은 숲의 비밀을 찾아서\n미션을 해결하고, 검은 숲을 탐험해보세요.'}
-          />
-        </div>
-        <div className="right">
-          <ZigZagImgTexts
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_6.png`}
-            text={'빵집에서 프레첼을 구매해서\n숨어있는 퀘스트를 해결해보세요!'}
-          />
-          <ZigZagImgTexts
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/08_ExploreFreiburg/group1_8.png`}
-            text={'편리한 퀘스트 확인 창으로\n학습자들의 편의성도 도모했답니다!'}
-          />
-        </div>
-      </Zigzag> */}
     </StyledExploreFreiburg>
   );
 };

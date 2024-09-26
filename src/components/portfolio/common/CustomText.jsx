@@ -12,6 +12,7 @@ const CustomTextBox = styled.p`
     /* line-height: 38px; */
     font-size: var(--pc-font-size-24px);
     line-height: var(--pc-line-height-38px);
+    font-display: block;
   }
   @media (max-width: 1024px) {
     /* font-size: 16px;

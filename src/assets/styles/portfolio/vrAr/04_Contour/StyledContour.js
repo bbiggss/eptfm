@@ -14,8 +14,8 @@ export const StyledContour = styled.div`
       margin-top: 200px;
       margin-bottom: 160px;
       img {
-        width: 100%;
         max-width: 1200px;
+        width: var(--pc-1200px);
       }
     }
     .backImg {
