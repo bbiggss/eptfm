@@ -81,12 +81,12 @@ export const PortfolioListBox = styled.div`
 
     .topTitleBox {
       .pageTitle {
-        font-size: 100px;
+        font-size: var(--pc-100px);
         padding-bottom: 20px;
       }
 
       .fieldTitle {
-        font-size: 46px;
+        font-size: var(--pc-46px);
         margin-bottom: 128px;
       }
     }
@@ -116,16 +116,15 @@ export const PortfolioListBox = styled.div`
           padding-left: 30px;
 
           & p:first-child {
-            font-size: 18px;
+            font-size: clamp(0px, 0.94vw, 18px);
             letter-spacing: 0;
             color: #999999;
-            padding-top: 26px;
-            padding-bottom: 20px;
+            padding-top: clamp(0px, 1.35vw, 26px);
+            padding-bottom: clamp(0px, 1.04vw, 20px);
           }
           & p:last-child {
-            font-size: 28px;
-            letter-spacing: -2%;
-            line-height: 34px;
+            font-size: clamp(0px, 1.46vw, 28px);
+            /* line-height: 34px; */
             color: #292929;
             word-break: keep-all;
           }
