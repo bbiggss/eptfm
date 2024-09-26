@@ -19,8 +19,8 @@ const FrenchClimateLifestyle = () => {
       <Breadcrumb />
       <PortfolioTitleWrap
         pcMarginBottom={'80px'}
-        mobileMarginTop={'50px'}
-        mobileMarginBottom={'40px'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
         style={{ display: 'grid', justifyContent: 'center' }}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
@@ -57,7 +57,7 @@ const FrenchClimateLifestyle = () => {
           </div>
           <div className="introductionWrapper">
             <PortfolioIntroductionTitle
-              mobileMarginTop={'60px'}
+              mobileMarginTop={'var(--mobile-60px)'}
               style={{ color: '#292929' }}
               title={isMobileTablet ? '모네의 그림 속에서 만나는\n 프랑스의 기후와 생활!' : '모네의 그림 속에서 만나는\n 프랑스의 기후와 생활!'}
             />
