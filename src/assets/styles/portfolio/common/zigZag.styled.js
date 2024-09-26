@@ -22,8 +22,8 @@ export const Zigzag = styled.div`
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
-    gap: 60px;
-    width: 80%;
+    gap: var(--pc-60px);
+    width: var(--pc-1260px);
     margin: auto;
 
     padding-top: ${(props) => props.$pcPaddingTop};

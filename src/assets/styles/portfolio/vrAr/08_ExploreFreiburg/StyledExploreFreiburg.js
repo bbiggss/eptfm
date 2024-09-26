@@ -83,9 +83,10 @@ export const StyledExploreFreiburg = styled.div`
     .topText {
       color: #292929;
       text-align: center;
-      font-size: clamp(18px, 4.8vw, 100px);
-      /* line-height: 26px; */
-      line-height: clamp(26px, 7vw, 90px);
+      /* font-size: clamp(18px, 4.8vw, 100px);
+      line-height: clamp(26px, 7vw, 90px); */
+      font-size: var(--mobile-font-size-22px);
+      line-height: var(--mobile-line-height-30px);
 
       padding-bottom: 80px;
     }
@@ -93,7 +94,7 @@ export const StyledExploreFreiburg = styled.div`
       text-align: center;
       .bicycleGirl {
         min-width: 153px;
-        width: 40vw;
+        width: 30vw;
         margin: 0 auto;
         margin-top: 80px;
         margin-bottom: var(--mobile-24px);
