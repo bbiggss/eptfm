@@ -43,5 +43,12 @@ export const StyledBimetal = styled.div`
         text-align: center;
       }
     }
+    .first_contentsWrapper div {
+      img {
+        width: clamp(259px, 69.07vw, 1000px);
+        margin: auto;
+        margin-bottom: var(--mobile-30px);
+      }
+    }
   }
 `;

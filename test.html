@@ -41,7 +41,8 @@
         const mobile_val = document.querySelector('#myNum').value;
         const res = (mobile_val / 375) * 100;
         console.log('mo 입력값:', mobile_val, '답:', res.toFixed(2));
-        document.querySelector('.value1').innerText = 'mo\n 입력값: ' + mobile_val + '\n변환값: ' + res.toFixed(2);
+        document.querySelector('.value1').innerText =
+          'mo\n 입력값: ' + mobile_val + '\n변환값: clamp(' + mobile_val + 'px, ' + res.toFixed(2) + 'vw, 1000px)';
       }
     </script>
   </head>
