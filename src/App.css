@@ -33,6 +33,7 @@
   --pc-837px: clamp(0px, 43.59vw, 837px);
   --pc-800px: clamp(0px, 41.67vw, 800px);
   --pc-790px: clamp(0px, 41.15vw, 790px);
+  --pc-730px: clamp(0px, 38.02vw, 730px);
   --pc-720px: clamp(0px, 37.5vw, 720px);
   --pc-710px: clamp(0px, 36.98vw, 710px);
   --pc-700px: clamp(0px, 36.46vw, 700px);
@@ -48,6 +49,7 @@
   --pc-150px: clamp(0px, 7.81vw, 150px);
   --pc-150px: clamp(0px, 7.81vw, 150px);
   --pc-130px: clamp(0px, 6.77vw, 130px);
+  --pc-122px: clamp(0px, 6.35vw, 122px);
   --pc-100px: clamp(0px, 5.2vw, 100px);
   --pc-90px: clamp(0px, 4.68vw, 90px);
   --pc-88px: clamp(0px, 4.58vw, 88px);
@@ -120,8 +122,7 @@
     margin: 0 auto;
   }
   .maxWidth1260Wrapper img {
-    max-width: 1260px;
-    width: 65.63vw;
+    width: var(--pc-1260px);
   }
 
   .pcMaxWidth1260Wrapper {

@@ -1,7 +1,6 @@
 import React from 'react';
 import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
-import ProjectDescription from '../../common/ProjectDescription';
 import WidthImgOneTextsOne from '../../common/WidthImgOneTextsOne';
 import { StyledMayor } from '../../../../assets/styles/portfolio/vrAr/11_Mayor/StyledMayor';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
@@ -41,7 +40,7 @@ const Mayor = () => {
       <Breadcrumb />
 
       <PortfolioTitleWrap
-        pcMarginBottom={'80px'}
+        pcMarginBottom={'var(--pc-80px)'}
         mobilePaddingTop={'50px'}
         mobileMarginBottom={'40px'}
         style={{ display: 'grid', justifyContent: 'center' }}
@@ -162,47 +161,43 @@ const Mayor = () => {
           />
         </WidthOneContent>
       </div>
-      <div className="fullScreen AC9EFF">
-        <div className="smallScreen">
-          <WidthImgOneTextsOne pcPaddingTop="160px">
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_1.png`} />
-            <ProjectDescription
-              style={{ color: '#292929' }}
-              textPosition={'right'}
-              text={`잠깐! 잘 생각하고 선택해야해요!\n학습자들의 선택에 따라서\n유권자 박탈 여부도 결정된답니다.`}
-            />
-          </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne>
-            <ProjectDescription
-              style={{ color: '#292929' }}
-              text={
-                isMobileTablet
-                  ? `학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며\n 자신의 공약을 어필해보세요!`
-                  : `학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며 자신의 공약을\n어필해보세요!`
-              }
-            />
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_2.png`} />
-          </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne>
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_3.png`} />
-            <ProjectDescription
-              style={{ color: '#292929' }}
-              textPosition={'right'}
-              text={
-                isMobileTablet
-                  ? `거리로 나가서 지지자들과 함께 현란한\n 선거운동도 할 수 있답니다! \n나의 공약을 외치며 유권자들의\n 마음을 사로잡아보세요.`
-                  : `거리로 나가서 지지자들과 함께\n현란한 선거운동도 할 수 있답니다! \n나의 공약을 외치며 유권자들의 마음을\n사로잡아보세요.`
-              }
-            />
-          </WidthImgOneTextsOne>
-          <WidthImgOneTextsOne>
-            <ProjectDescription
-              style={{ color: '#292929' }}
-              text={`간혹 엉뚱한 선거 운동을 선택하게 되면\n지지율이 떨어질 수 있으니 유의해야해요!\n어떤 선거 운동이 지지율 상승에 도움이 될지\n많은 고민을 해야한답니다!`}
-            />
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_4.png`} />
-          </WidthImgOneTextsOne>
-        </div>
+      <div className="AC9EFF">
+        <WidthImgOneTextsOne>
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_1.png`} />
+          <CustomText
+            style={{ color: '#292929' }}
+            text={`잠깐! 잘 생각하고 선택해야해요!\n학습자들의 선택에 따라서\n유권자 박탈 여부도 결정된답니다.`}
+          />
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
+          <CustomText
+            style={{ color: '#292929' }}
+            text={
+              isMobileTablet
+                ? `학습자들이 어떤 공약을 선택하느냐에 따라\n NPC들의 반응이 달라요.\n다양한 유권자들을 만나며\n 자신의 공약을 어필해보세요!`
+                : `학습자들이 어떤 공약을 선택하느냐에 따라 NPC들의 반응이 달라요. 다양한 유권자들을 만나며 자신의 공약을 어필해보세요!`
+            }
+          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_2.png`} />
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_3.png`} />
+          <CustomText
+            style={{ color: '#292929' }}
+            text={
+              isMobileTablet
+                ? `거리로 나가서 지지자들과 함께 현란한\n 선거운동도 할 수 있답니다! \n나의 공약을 외치며 유권자들의\n 마음을 사로잡아보세요.`
+                : `거리로 나가서 지지자들과 함께 현란한 선거운동도 할 수 있답니다! 나의 공약을 외치며 유권자들의 마음을 사로잡아보세요.`
+            }
+          />
+        </WidthImgOneTextsOne>
+        <WidthImgOneTextsOne>
+          <CustomText
+            style={{ color: '#292929' }}
+            text={`간혹 엉뚱한 선거 운동을 선택하게 되면 지지율이 떨어질 수 있으니 유의해야해요! 어떤 선거 운동이 지지율 상승에 도움이 될지 많은 고민을 해야한답니다!`}
+          />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group3_4.png`} />
+        </WidthImgOneTextsOne>
       </div>
 
       <div className="maxWidth1260Wrapper">

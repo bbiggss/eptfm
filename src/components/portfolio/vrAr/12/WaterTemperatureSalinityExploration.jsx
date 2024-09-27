@@ -26,8 +26,8 @@ const WaterTemperatureSalinityExploration = () => {
         <Breadcrumb font={{ color: '#FFFFFF' }} style={{ position: 'absolute' }} />
 
         <PortfolioTitleWrap
-          pcMarginTop={'180px'}
-          mobileMarginTop={'50px'}
+          pcMarginTop={'var(--pc-180px)'}
+          mobileMarginTop={'var(--mobile-50px)'}
           style={{
             position: 'absolute',
             left: '50%',
@@ -49,16 +49,9 @@ const WaterTemperatureSalinityExploration = () => {
           }.png`}
         />
         <div className="rectangular">
-          <PortfolioIntroductionTitle
-            pcMarginTop={'clamp(10px,6vw,118px)'}
-            mobileMarginTop={'50px'}
-            style={{ color: '#1E4F91' }}
-            title={'물고기와 함께 떠나는 바다 탐험!'}
-          />
+          <PortfolioIntroductionTitle mobileMarginTop={'var(--mobile-50px)'} style={{ color: '#1E4F91' }} title={'물고기와 함께 떠나는 바다 탐험!'} />
           <PortfolioIntroductionDescription
             style={{ color: '#1E4F91' }}
-            pcMarginTop={'34px'}
-            mobileMarginTop={'5.33vw'}
             description={
               isMobileTablet
                 ? '동해, 홍해, 북극해의 수온과 염분을 직접\n 측정하고, 다양한 해양 생물을 채집해보세요.\n과학적 발견의 즐거움을 만끽하며\n 바다의 비밀을  파헤쳐보세요!'

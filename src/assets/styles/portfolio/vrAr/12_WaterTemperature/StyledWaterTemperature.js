@@ -6,21 +6,12 @@ export const StyledWaterTemperatureSalinityExploration = styled.div`
     margin: auto;
 
     .mainImgContainer {
-      margin-bottom: 200px;
+      margin-bottom: var(--pc-200px);
       .rectangular {
         z-index: 1;
         position: absolute;
-        right: 0;
+        right: clamp(0px, 13.49vw, 259px);
         bottom: -19px;
-        /* margin-right: 259px; */
-        margin-right: clamp(100px, 13vw, 259px);
-
-        p:first-child {
-          font-size: clamp(10px, 2vw, 40px);
-        }
-        p:last-child {
-          font-size: clamp(10px, 1.3vw, 26px);
-        }
       }
     }
     .dolphin {
@@ -32,7 +23,7 @@ export const StyledWaterTemperatureSalinityExploration = styled.div`
       text-align: center;
     }
     .dolphin {
-      margin-top: 80px;
+      margin-top: var(--mobile-80px);
     }
   }
 `;

@@ -8,11 +8,25 @@ export const StyledBimetal = styled.div`
       margin-bottom: 100px;
 
       .introductionWrapper {
-        right: 0;
-        /* margin-right: 330px; */
-        margin-right: clamp(100px, 17vw, 330px);
         position: absolute;
+        right: clamp(0px, 10.19vw, 330px);
         text-align: right;
+      }
+    }
+
+    .first_contentsWrapper div {
+      width: var(--pc-1260px);
+      img {
+        width: var(--pc-600px);
+      }
+    }
+
+    .contentsWrapper {
+      div {
+        width: var(--pc-1260px);
+      }
+      img {
+        width: var(--pc-800px);
       }
     }
   }

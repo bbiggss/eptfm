@@ -79,7 +79,6 @@ const CyberSocializingOne = () => {
       <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/1.png`} />
         <CustomText
-          textPosition={'right'}
           text={
             isMobile
               ? '이 콘텐츠는 기술·가정 교과와 연계되어\n사이버 폭력의 문제를 인식하고, \n이를 예방하고 대처하는 방법에 대해\n학습자들이 배울 수 있어요.'
@@ -124,7 +123,6 @@ const CyberSocializingOne = () => {
       <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/3.png`} />
         <CustomText
-          textPosition={'right'}
           text={
             isMobile
               ? '말이 사람들에게 미치는 긍정적, 부정적영향을\n 사례를 통해 알아볼 수 있어요.'
@@ -158,7 +156,6 @@ const CyberSocializingOne = () => {
       <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/5.png`} />
         <CustomText
-          textPosition={'right'}
           text={
             isMobile
               ? '학생들이 자신의 미래를 계획하고, 적극적으로\n 진로를 탐색할 수 있는 계기를 제공해요.'
@@ -196,7 +193,6 @@ const CyberSocializingOne = () => {
       <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/7.png`} />
         <CustomText
-          textPosition={'right'}
           text={
             isMobile
               ? '이 콘텐츠는 한문 교과와 연계되어 사이버 폭력의\n 문제를 인식하고, 이를 예방 하고 대처하는\n 방법에 대해 학습자들이 배울 수 있어요.'
@@ -234,7 +230,6 @@ const CyberSocializingOne = () => {
       <WidthImgOneTextsOne pcMaxWidth={'1260'} last>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/9.png`} />
         <CustomText
-          textPosition={'right'}
           text={
             isMobile
               ? '고사성어, 명언, 역사적 일화 등을 통해 배운\n 전통적 가치를 현대 온라인 윤리와\n 연계하여 학습할 수 있어요.'

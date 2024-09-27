@@ -19,14 +19,13 @@ export const StyledMayor = styled.div`
       display: flex;
       justify-content: center;
       .heroTexts {
-        /* background-color: yellow; */
-        /* margin-right: 91px; */
+        margin-right: var(--pc-90px);
       }
       .heroImg {
         img {
           max-width: 442px;
           width: 23vw;
-          margin-bottom: 160px;
+          margin-bottom: var(--pc-160px);
         }
       }
     }
@@ -34,28 +33,20 @@ export const StyledMayor = styled.div`
     .introductionWrapper {
       background-color: #2c427a;
       width: 100%;
-      /* display: flex; */
-      /* justify-content: center; */
-      height: 350px;
+      height: clamp(0px, 18.23vw, 350px);
       position: relative;
 
       .megaphone {
-        margin-right: 54px;
         max-width: 544px;
         width: 28vw;
         position: absolute;
         bottom: 0;
-        /* margin-left: 294px; */
-
-        /* position: relative;
-        transform: translateY(-180px); */
+        left: clamp(0px, 15.31vw, 294px);
       }
 
       .introTextsWrapper {
         position: absolute;
-        right: 0;
-        /* margin-right: 330px; */
-        margin-right: clamp(10px, 15vw, 330px);
+        left: clamp(0px, 46.46vw, 892px);
         top: 50%;
         transform: translateY(-50%);
         p {
@@ -64,12 +55,12 @@ export const StyledMayor = styled.div`
       }
     }
     .fourElement {
-      width: 80%;
+      width: var(--pc-1260px);
       margin: 160px auto;
       display: grid;
       justify-content: center;
       grid-template-columns: repeat(4, auto);
-      gap: 122px;
+      gap: var(--pc-122px);
       /* width: 80%; */
 
       li {
@@ -92,22 +83,17 @@ export const StyledMayor = styled.div`
     }
     .AC9EFF {
       background-color: rgba(172, 158, 255, 0.2);
-      margin-bottom: 160px;
-    }
-  }
-  @media (min-width: 1401px) {
-    .megaphone {
-      margin-left: clamp(10px, 15vw, 294px);
-    }
-    .heroTexts {
-      /* background-color: yellow; */
-      margin-right: 91px;
-    }
-  }
-  @media (min-width: 1025px) and (max-width: 1400px) {
-    .megaphone {
-      /* margin-left: clamp(10px, 15vw, 294px); */
-      margin-left: 10px;
+      padding-top: var(--pc-160px);
+      div {
+        max-width: 1260px;
+        width: var(--pc-1260px);
+        img {
+          width: var(--pc-730px);
+        }
+      }
+      div:last-child {
+        padding-bottom: var(--pc-160px);
+      }
     }
   }
   @media (max-width: 1024px) {
@@ -171,8 +157,6 @@ export const StyledMayor = styled.div`
       grid-template-columns: repeat(2, auto);
       gap: 50px;
       width: 100%;
-      /* margin: 0 var(--mobile-margin); */
-      /* margin-bottom: 160px; */
 
       li {
         list-style: none;
@@ -186,7 +170,6 @@ export const StyledMayor = styled.div`
       p {
         font-family: 'NanumSquareB';
         color: #767676;
-        /* font-size: 16px; */
         font-size: clamp(16px, 4vw, 24px);
 
         line-height: 24px;
@@ -195,8 +178,10 @@ export const StyledMayor = styled.div`
     }
     .AC9EFF {
       background-color: rgba(172, 158, 255, 0.2);
-      padding-top: 100px;
-      margin-bottom: 80px;
+      padding-top: var(--mobile-80px);
+      div:last-child {
+        padding-bottom: var(--mobile-80px);
+      }
     }
   }
 `;
