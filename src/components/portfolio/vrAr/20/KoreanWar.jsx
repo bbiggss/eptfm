@@ -24,8 +24,7 @@ const KoreanWar = () => {
 
         <div className="titleWrapper">
           <PortfolioTitleWrap
-            // pcMarginTop={'180px'}
-            mobileMarginTop={'50px'}
+            mobileMarginTop={'var(--mobile-50px)'}
             style={{
               position: 'absolute',
               left: '50%',
@@ -64,7 +63,7 @@ const KoreanWar = () => {
         </div>
       </div>
 
-      <div className="introductionArea fullScreen">
+      <div className="introductionArea">
         <img className="introudctionImg1" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/group1/1.png`} alt="" />
         <img className="introudctionImg2" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/group1/2.png`} alt="" />
         <img className="introudctionImg3" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/group1/3.png`} alt="" />
@@ -80,7 +79,7 @@ const KoreanWar = () => {
       </div>
 
       <div className="maxWidth1260Wrapper">
-        <WidthOneContent $first>
+        <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/20_KoreanWar/group2/1.png`} />
           <CustomText
             text={

@@ -2,17 +2,12 @@ import styled from 'styled-components';
 
 export const StyledSurvivalBag = styled.div`
   @media (min-width: 1025px) {
-    .PortfolioTitleBox {
-      margin-bottom: 80px;
-      display: flex;
-      justify-content: center;
-    }
     .mainTitle {
       white-space: nowrap;
       position: absolute;
       color: #ffffff;
-      font-size: 40px;
-      line-height: 56px;
+      font-size: var(--pc-font-size-40px);
+      line-height: var(--pc-line-height-56px);
       letter-spacing: -0.02em;
 
       filter: drop-shadow(4px 4px 6px rgba(19, 31, 47, 0.6));
@@ -36,7 +31,7 @@ export const StyledSurvivalBag = styled.div`
         position: absolute;
       }
       .exitImg {
-        width: 144px;
+        width: clamp(0px, 7.5vw, 144px);
         aspect-ratio: 144 / 180;
       }
     }
@@ -51,9 +46,10 @@ export const StyledSurvivalBag = styled.div`
 
       color: #ffffff;
       white-space: nowrap;
-      /* font-size: 20px; */
-      font-size: clamp(20px, 5.8vw, 89px);
-      line-height: clamp(26px, 7vw, 90px);
+
+      font-size: var(--mobile-font-size-22px);
+      line-height: var(--mobile-line-height-30px);
+
       letter-spacing: -0.02em;
       text-align: center;
     }
@@ -67,8 +63,7 @@ export const StyledSurvivalBag = styled.div`
         position: absolute;
       }
       .exitImg {
-        min-width: 80px;
-        width: 21.3vw;
+        width: var(--mobile-80px);
       }
     }
   }

@@ -23,9 +23,9 @@ const SurvivalBag = () => {
 
       <PortfolioTitleWrap
         style={{ display: 'grid', justifyContent: 'center' }}
-        mobileMarginTop={'50px'}
-        pcMarginBottom={'80px'}
-        mobileMarginBottom={'40px'}
+        pcMarginBottom={'var(--pc-80px)'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
         <PortfolioFieldTitle style={{ color: '#48C2C5', fontFamily: 'NanumSquareEB' }} field={'VR'} title={'나만의 생존가방 준비하기'} />
