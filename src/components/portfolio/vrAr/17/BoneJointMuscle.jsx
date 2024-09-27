@@ -78,7 +78,7 @@ const BoneJointMuscle = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_2.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_2.png`} />
           <CustomText
             text={
               isMobile
@@ -90,7 +90,7 @@ const BoneJointMuscle = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_3.png`} />
           <CustomText
             text={
               isMobile
@@ -102,7 +102,7 @@ const BoneJointMuscle = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_4.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_4.png`} />
           <CustomText
             text={
               isMobile
@@ -177,7 +177,7 @@ const BoneJointMuscle = () => {
 
       <div className="maxWidth1260Wrapper">
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_5.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_5.png`} />
           <CustomText
             text={
               isMobile
@@ -189,7 +189,7 @@ const BoneJointMuscle = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_6.png`} />
           <CustomText
             text={
               isMobile
@@ -201,7 +201,7 @@ const BoneJointMuscle = () => {
           />
         </WidthOneContent>
         <WidthOneContent $last>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_7.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group1_7.png`} />
           <CustomText
             text={
               isMobile
