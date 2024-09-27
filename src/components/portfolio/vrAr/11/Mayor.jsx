@@ -119,7 +119,7 @@ const Mayor = () => {
 
       <div className="maxWidth1260Wrapper">
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_1.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/11_Mayor/group2_1.png`} />
           <CustomText
             text={
               isMobileTablet

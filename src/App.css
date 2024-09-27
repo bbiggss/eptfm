@@ -30,9 +30,11 @@
 
   --pc-1260px: clamp(0px, 65.63vw, 1260px);
   --pc-1200px: clamp(0px, 62.5vw, 1200px);
+  --pc-1100px: clamp(0px, 57.29vw, 1100px);
   --pc-837px: clamp(0px, 43.59vw, 837px);
   --pc-800px: clamp(0px, 41.67vw, 800px);
   --pc-790px: clamp(0px, 41.15vw, 790px);
+  --pc-780px: clamp(0px, 40.63vw, 780px);
   --pc-730px: clamp(0px, 38.02vw, 730px);
   --pc-720px: clamp(0px, 37.5vw, 720px);
   --pc-710px: clamp(0px, 36.98vw, 710px);

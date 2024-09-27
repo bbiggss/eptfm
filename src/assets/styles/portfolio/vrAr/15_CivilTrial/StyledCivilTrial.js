@@ -4,53 +4,9 @@ export const StyledCivilTrial = styled.div`
   @media (min-width: 1025px) {
     max-width: 1920px;
     margin: auto;
-    .heroWrapper {
-      margin-top: 80px;
-      position: relative;
-      width: 100%;
-      .heroImgWrapper {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-
-        .pc_introductionWrapper {
-          position: absolute;
-          height: 100%;
-
-          padding-left: clamp(10px, 10vw, 130px);
-          padding-right: clamp(10px, 10vw, 261px);
-          background: rgba(34, 20, 14, 0.7);
-          p:first-child {
-            /* color: yellow; */
-            /* line-height: 56px; */
-            line-height: clamp(10px, 2.9vw, 56px);
-          }
-        }
-        .heroImg {
-          max-width: 1660px;
-          width: 90%;
-          aspect-ratio: 1660 / 800;
-        }
-      }
-    }
-    .heroTextsWrapper img {
-      display: none;
-    }
-    .heroTextsWrapper {
-      position: absolute;
-      right: 0;
-      width: 780px;
-      /* height: 800px; */
-      background: rgba(34, 20, 14, 0.7);
-      .introductionWrapper {
-        display: none;
-      }
-    }
-
     .introductionWrapper2 {
       display: flex;
-      margin-top: 160px;
-      margin-bottom: 160px;
+      margin: var(--pc-160px) 0;
       /* background-color: aqua; */
 
       .introductionImg {
@@ -63,38 +19,54 @@ export const StyledCivilTrial = styled.div`
         margin-left: clamp(10px, 5vw, 100px);
       }
     }
-    .customMaxWidth img {
-      max-width: 1100px;
+    .heroWrapper {
+      display: grid;
+      justify-content: end;
+      position: relative;
+
+      margin-top: var(--pc-80px);
+      img {
+        width: clamp(0px, 86.46vw, 1660px);
+      }
+      .heroTextsWrapper {
+        position: absolute;
+        right: 0;
+
+        display: grid;
+        align-content: center;
+
+        width: var(--pc-780px);
+        height: 100%;
+        background: rgba(34, 20, 14, 0.7);
+        p {
+          margin-left: var(--pc-130px);
+        }
+      }
+    }
+    .mobileTextsImg img {
+      display: none;
+    }
+    .contentsWrapper img {
+      width: var(--pc-1100px);
     }
   }
   @media (max-width: 1024px) {
-    .heroTextsWrapper {
-      order: 2;
-      position: relative;
-      .introductionWrapper {
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    .pc_introductionWrapper {
-      display: none;
-    }
-
     .heroWrapper {
       display: grid;
-      width: 100%;
-      .heroImgWrapper {
-        order: 1;
-        width: 100%;
-        .heroImg {
-          width: 100%;
-          aspect-ratio: 1024 / 800;
-        }
+      /* font-size: 0; */
+      .mobileTextsImg {
+        order: 2;
+        position: relative;
       }
+    }
+    .heroTextsWrapper {
+      white-space: nowrap;
+      text-align: center;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     .introductionWrapper2 {

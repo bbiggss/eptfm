@@ -12,7 +12,6 @@ import useTablet from '../../../hooks/useTablet';
 import useMobile from '../../../hooks/useMobile';
 import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/PortfolioIntroductionTitle';
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
-import CustomWrapImg from './../../common/CustomWrapImg';
 import Img from '../../common/Img';
 
 const CivilTrial = () => {
@@ -30,18 +29,14 @@ const CivilTrial = () => {
       </PortfolioTitleWrap>
 
       <div className="heroWrapper">
-        <div className="heroTextsWrapper">
-          <div className="introductionWrapper">
+        <div className="mobileTextsImg">
+          <div className="heroTextsWrapper">
             <PortfolioIntroductionTitle
-              pcMarginTop={'clamp(10px,6vw,)118px'}
-              mobileMarginTop={''}
               style={{ color: '#FFFFFF' }}
               title={isMobileTablet ? '법정 드라마의 주인공이 되어\n 재판을 체험하자!' : '법정 드라마의 주인공이 \n되어 재판을 체험하자!'}
             />
             <PortfolioIntroductionDescription
               style={{ color: '#FFFFFF' }}
-              pcMarginTop={'34px'}
-              mobileMarginTop={'5.33vw'}
               description={
                 isMobileTablet
                   ? '원고 소송대리인이나 검사로서 재판에 참여하고,\n 증인을 신문하며 승소를 위한 전략을 세워보세요.\n 법정을 무대로 펼쳐지는 드라마틱한 \n재판의 세계로 뛰어들어보세요!'
@@ -50,37 +45,15 @@ const CivilTrial = () => {
             />
           </div>
           <HeroImg
-            mobileAspectRatio={'1024 / 660'}
+            mobileAspectRatio={'375 / 310'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/heroTexts.png`}
           />
         </div>
-
-        <div className="heroImgWrapper">
-          <div className="pc_introductionWrapper">
-            <PortfolioIntroductionTitle
-              pcMarginTop={'clamp(10px,13vw,227px)'}
-              mobileMarginTop={''}
-              style={{ color: '#FFFFFF' }}
-              title={isMobileTablet ? '법정 드라마의 주인공이 되어\n 재판을 체험하자!' : '법정 드라마의 주인공이 \n되어 재판을 체험하자!'}
-            />
-            <PortfolioIntroductionDescription
-              style={{ color: '#FFFFFF' }}
-              pcMarginTop={'34px'}
-              mobileMarginTop={'5.33vw'}
-              description={
-                isMobileTablet
-                  ? '원고 소송대리인이나 검사로서 재판에 참여하고,\n 증인을 신문하며 승소를 위한 전략을 세워보세요.\n 법정을 무대로 펼쳐지는 드라마틱한 \n재판의 세계로 뛰어들어보세요!'
-                  : '원고 소송대리인이나 검사로서 재판에\n참여하고, 증인을 신문하며 승소를\n 위한 전략을 세워보세요.\n 법정을 무대로 펼쳐지는 드라마틱한 \n재판의 세계로 뛰어들어보세요!'
-              }
-            />
-          </div>
-
-          <div className="heroImg">
-            <CustomWrapImg
-              src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
-            />
-          </div>
-        </div>
+        <HeroImg
+          pcAspectRatio={'1660 / 800'}
+          mobileAspectRatio={'375 / 250'}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
+        />
       </div>
 
       <div className="introductionWrapper2">
@@ -102,7 +75,7 @@ const CivilTrial = () => {
         </div>
       </div>
 
-      <div className="customMaxWidth">
+      <div className="contentsWrapper">
         <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/15_CivilTrial/1.png`} />
           <CustomText

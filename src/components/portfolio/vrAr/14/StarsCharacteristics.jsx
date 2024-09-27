@@ -26,7 +26,7 @@ const StarsCharacteristics = () => {
         <div className="portfolioTitleWrapper">
           <PortfolioTitleWrap
             style={{ position: isMobileTablet ? 'absolute' : '', display: 'grid', justifyContent: 'center' }}
-            mobileMarginTop={'50px'}
+            mobileMarginTop={'var(--mobile-50px)'}
           >
             <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareEB' }} organization={'한국교육학술정보원'} />
             <PortfolioFieldTitle
@@ -38,16 +38,9 @@ const StarsCharacteristics = () => {
         </div>
 
         <div className="introductionWrapper">
-          <PortfolioIntroductionTitle
-            pcMarginTop={'clamp(10px,6vw,)118px'}
-            mobileMarginTop={''}
-            style={{ color: isMobileTablet ? '#FFFFFF' : '#292929' }}
-            title={'별빛을 따라 떠나는 우주 여행!'}
-          />
+          <PortfolioIntroductionTitle style={{ color: isMobileTablet ? '#FFFFFF' : '#292929' }} title={'별빛을 따라 떠나는 우주 여행!'} />
           <PortfolioIntroductionDescription
             style={{ color: isMobileTablet ? '#FFFFFF' : '#767676' }}
-            pcMarginTop={'34px'}
-            mobileMarginTop={'5.33vw'}
             description={
               isMobileTablet
                 ? '별의 색과 밝기를 관찰하고, 스펙트럼을 통해 \n별의 표면 온도와 나이, 질량 등을 학습하세요. \n밤하늘의 수수께끼를 풀며 우주의 신비를 \n탐험해보세요!'
@@ -57,44 +50,15 @@ const StarsCharacteristics = () => {
         </div>
         <div className="heroImgWrapper">
           <HeroImg
-            pcAspectRatio={'1920 / 980'}
-            mobileAspectRatio={'1024 / 1779'}
+            pcAspectRatio={'1814 / 908'}
+            mobileAspectRatio={'450 / 722'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
           />
         </div>
       </div>
 
-      {/* <div className="fullScreen marginBottom111">
-        <div className="mediumScreen relative">
-          <div className="mainTexts">
-            <PortfolioIntroduction
-              title={'별빛을 따라 떠나는 우주 여행! '}
-              description={
-                '별의 색과 밝기를 관찰하고, 스펙트럼을 통해 \n별의 표면 온도와 나이, 질량 등을 학습하세요. \n밤하늘의 수수께끼를 풀며 우주의 신비를 \n탐험해보세요!'
-              }
-            />
-          </div>
-        </div>
-        <div className="heroContainer">
-          <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/01_Ellipse.png`} alt="" />
-          <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/02_Ellipse.png`} alt="" />
-          <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/03_Ellipse.png`} alt="" />
-          <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/04_Ellipse.png`} alt="" />
-          <img
-            className="rocket"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/rocket.png`}
-            alt=""
-          />
-          <img
-            className="astronaut"
-            src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/heroImg/astronaut.png`}
-            alt=""
-          />
-        </div>
-      </div> */}
-
-      <div className="smallScreen">
-        <WidthOneContent $first>
+      <div className="contentsWrapper maxWidth1260Wrapper">
+        <WidthOneContent>
           <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/1.png`} />
           <CustomText
             text={
@@ -107,7 +71,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/2.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/2.png`} />
           <CustomText
             text={
               isMobile
@@ -119,7 +83,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/3.png`} />
           <CustomText
             text={
               isMobile
@@ -131,7 +95,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/4.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/4.png`} />
           <CustomText
             text={
               isMobile
@@ -143,7 +107,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/5.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/5.png`} />
           <CustomText
             text={
               isMobile
@@ -155,7 +119,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/6.png`} />
           <CustomText
             text={
               isMobile
@@ -167,7 +131,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/7.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/7.png`} />
           <CustomText
             text={
               isMobile
@@ -179,7 +143,7 @@ const StarsCharacteristics = () => {
           />
         </WidthOneContent>
         <WidthOneContent $last>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/8.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/8.png`} />
           <CustomText
             text={
               isMobile

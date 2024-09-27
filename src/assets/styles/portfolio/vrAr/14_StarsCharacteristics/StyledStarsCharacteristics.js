@@ -49,18 +49,16 @@ export const StyledStarsCharacteristics = styled.div`
         position: absolute;
         top: 50%;
         right: clamp(100px, 10vw, 186px);
-
-        p:first-child {
-          font-size: clamp(10px, 2vw, 40px);
-        }
-        p:last-child {
-          font-size: clamp(10px, 1.3vw, 26px);
-          line-height: clamp(10px, 2vw, 40px);
-        }
       }
       .heroImgWrapper {
+        img {
+          width: clamp(0px, 94.48vw, 1814px);
+        }
         margin-top: 80px;
       }
+    }
+    .contentsWrapper {
+      margin-top: clamp(0px, 5.78vw, 111px);
     }
   }
   @media (max-width: 1024px) {
@@ -71,16 +69,18 @@ export const StyledStarsCharacteristics = styled.div`
         justify-content: center;
       }
       .introductionWrapper {
+        white-space: nowrap;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 1;
-        /* margin-top: clamp(238px, 10vw, 500px); */
-        margin-top: clamp(238px, 60vw, 552px);
+        margin-top: clamp(225px, 60vw, 1000px);
       }
     }
     .heroImgWrapper {
       margin-top: 12px;
+    }
+    .contentsWrapper {
+      margin-top: var(--mobile-30px);
     }
   }
 `;
