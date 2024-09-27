@@ -7,30 +7,6 @@ const StyledWidthImgOneTextsOne = styled.div`
   text-align: left;
 
   @media (min-width: 1025px) {
-    /* 삭제예정 */
-    .positionRight {
-      margin-left: clamp(50px, 5.2vw, 100px);
-    }
-
-    /* margin: 0 60px; */
-    /* display: flex;
-    .texts {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      letter-spacing: -0.02em;
-      color: #767676;
-      white-space: nowrap;
-
-      font-size: var(--pc-font-size-24px);
-      line-height: var(--pc-line-height-38px);
-    }
-    padding-bottom: ${(props) => {
-      if (props.$pcPaddingBottom) return props.$pcPaddingBottom;
-      return 'var(--pc-160px)';
-    }}; */
-
-    /* --- */
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: var(--pc-100px);

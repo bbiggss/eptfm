@@ -3,7 +3,6 @@ import Breadcrumb from '../../../common/breadcrumb/Breadcrumb';
 import { WidthOneContent } from '../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import ZigZagImgTexts from '../../common/ZigZagImgTexts';
 import { Zigzag } from '../../../../assets/styles/portfolio/common/zigZag.styled';
-// import HeroImg from '../../common/Hero/HeroImg';
 import { StyledBoneJointMuscle } from '../../../../assets/styles/portfolio/vrAr/17_BoneJointMuscle/StyledBoneJointMuscle';
 import PortfolioTitleWrap from '../../common/portfolioTitle/PortfolioTitleWrap';
 import PortfolioOrganization from '../../common/portfolioTitle/PortfolioOrganization';
@@ -30,9 +29,9 @@ const BoneJointMuscle = () => {
 
       <PortfolioTitleWrap
         style={{ display: 'grid', justifyContent: 'center' }}
-        mobileMarginTop={'50px'}
-        pcMarginBottom={'80px'}
-        mobileMarginBottom={'40px'}
+        pcMarginBottom={'var(--pc-80px)'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
         <PortfolioFieldTitle
@@ -49,8 +48,6 @@ const BoneJointMuscle = () => {
               <PortfolioIntroductionTitle style={{ color: '#FFFFFF' }} title={'관절의 움직임을 따라 춤추는\n뼈의 하모니를 경험해보세요!'} />
               <PortfolioIntroductionDescription
                 style={{ color: '#FFFFFF' }}
-                pcMarginTop={'34px'}
-                mobileMarginTop={'5.33vw'}
                 description={
                   isMobileTablet
                     ? "'뼈, 관절,근육! 우리 몸을 움직이는 세 박자' \n콘텐츠를 제작하면서, 우리 팀은 학습자들이 \n몸의 구조와 기능을 재미있고 흥미롭게 \n학습할 수 있도록 많은 고민을 했어요."
@@ -119,14 +116,14 @@ const BoneJointMuscle = () => {
       </div>
 
       <div className="fullScreen fff6df">
-        <Zigzag $pcPaddingTop={'160px'} $mobilePaddingTop={'80px'}>
+        <Zigzag $pcPaddingTop={'var(--pc-160px)'}>
           <ZigZagImgTexts
             style={{ color: '#040404' }}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_1.png`}
             text={'관절을 구성하는 연골, 인대, 활액 등의\n구조에 대해 학습할 수 있어요.'}
           />
           <ZigZagImgTexts
-            pcMarginTop={'130px'}
+            pcMarginTop={'var(--pc-130px)'}
             style={{ color: '#040404' }}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_2.png`}
             text={'AR을 통해 관절의 단면을 시각적으로 확인하고\n각 구성 요소의 역할을 배울 수도 있답니다!'}
@@ -137,8 +134,8 @@ const BoneJointMuscle = () => {
             text={'관절의 건강을 유지하고\n관절 질환을 예방하는 방법을 학습해요.'}
           />
           <ZigZagImgTexts
-            pcMarginTop={'100px'}
-            pcMarginBottom={'160px'}
+            pcMarginTop={'var(--pc-100px)'}
+            pcMarginBottom={'var(--pc-160px)'}
             style={{ color: '#040404' }}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/17_BoneJointMuscle/group2_4.png`}
             text={

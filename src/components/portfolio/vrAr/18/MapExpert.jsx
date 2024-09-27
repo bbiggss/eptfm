@@ -23,9 +23,9 @@ const MapExpert = () => {
 
       <PortfolioTitleWrap
         style={{ display: 'grid', justifyContent: 'center' }}
-        mobileMarginTop={'50px'}
-        pcMarginBottom={'80px'}
-        mobileMarginBottom={'40px'}
+        pcMarginBottom={'var(--pc-80px)'}
+        mobileMarginTop={'var(--mobile-50px)'}
+        mobileMarginBottom={'var(--mobile-40px)'}
       >
         <PortfolioOrganization style={{ color: '#999999', fontFamily: 'NanumSquareB' }} organization={'한국교육학술정보원'} />
         <PortfolioFieldTitle
@@ -75,7 +75,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/2.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/2.png`} />
           <CustomText
             text={
               isMobile
@@ -87,7 +87,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/3.png`} />
           <CustomText
             text={
               isMobile
@@ -99,7 +99,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/4.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/4.png`} />
           <CustomText
             text={
               isMobile
@@ -111,7 +111,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/5.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/5.png`} />
           <CustomText
             text={
               isMobile
@@ -123,7 +123,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/6.png`} />
           <CustomText
             text={
               isMobile
@@ -135,7 +135,7 @@ const MapExpert = () => {
           />
         </WidthOneContent>
         <WidthOneContent $last>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/7.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/18_MapExpert/7.png`} />
           <CustomText
             text={
               isMobile

@@ -21,17 +21,22 @@ export const StyledBuildingGreatCity = styled.div`
     }
 
     .customTextWrapper {
-      margin: 160px 0;
+      margin: var(--pc-160px) 0;
       text-align: center;
     }
 
     .customTag {
       background-color: rgba(115, 243, 236, 0.3);
-      /* padding-top: 160px; */
-      margin-bottom: 160px;
+      margin-bottom: var(--pc-160px);
 
       img {
-        max-width: 920px;
+        width: var(--pc-920px);
+      }
+    }
+    .contentsWrapper div {
+      width: var(--pc-1260px);
+      img {
+        width: var(--pc-720px);
       }
     }
   }
@@ -40,7 +45,7 @@ export const StyledBuildingGreatCity = styled.div`
       position: relative;
       text-align: center;
       .introductionWrapper {
-        /* margin-top: clamp(86px, 7vh, 200px); */
+        white-space: nowrap;
         margin-top: 22vw;
         position: absolute;
         left: 50%;
@@ -49,21 +54,20 @@ export const StyledBuildingGreatCity = styled.div`
       .satellite {
         position: absolute;
         right: 0;
-        /* top: -7px; */
         top: -1.8vw;
         width: 26vw;
         aspect-ratio: 99 / 69;
       }
     }
     .customTextWrapper {
-      margin: 21.33vw 0;
+      margin: var(--mobile-80px) 0;
       text-align: center;
     }
 
     .customTag {
       background-color: rgba(115, 243, 236, 0.3);
       padding-top: 0px;
-      margin-bottom: 21.33vw;
+      margin-bottom: var(--mobile-80px);
     }
   }
 `;

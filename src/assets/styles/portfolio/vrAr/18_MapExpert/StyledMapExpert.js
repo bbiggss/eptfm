@@ -6,11 +6,12 @@ export const StyledMapExpert = styled.div`
       position: relative;
       .heroTexts {
         position: absolute;
-        margin-left: clamp(100px, 17vw, 330px);
-        margin-top: 118px;
+        margin-left: var(--pc-330px);
+        margin-top: var(--pc-118px);
 
-        font-size: clamp(20px, 2.08vw, 40px);
-        line-height: clamp(32px, 2.92vw, 56px);
+        font-size: var(--pc-font-size-40px);
+        line-height: var(--pc-line-height-56px);
+
         letter-spacing: -0.02em;
         color: #292929;
         font-family: 'NanumSquareEB';
@@ -20,18 +21,16 @@ export const StyledMapExpert = styled.div`
     .gridWrapper {
       text-align: center;
       .customTextsWrapper {
-        padding-top: 160px;
-        margin-bottom: 100px;
+        padding-top: var(--pc-160px);
+        margin-bottom: var(--pc-100px);
       }
       .introductionImg {
-        /* margin-bottom: 160px; */
-        max-width: 1098px;
-        width: 90%;
+        width: var(--pc-1100px);
         aspect-ratio: 315 / 172;
       }
     }
     .customMaxWidthWrapper img {
-      max-width: 1150px;
+      width: var(--pc-1150px);
     }
   }
   @media (max-width: 1024px) {
@@ -42,13 +41,10 @@ export const StyledMapExpert = styled.div`
     .heroTexts {
       position: absolute;
       text-align: center;
-      /* margin-top: 48px; */
-      margin-top: clamp(48px, 12.8vw, 96px);
+      margin-top: clamp(48px, 12.8vw, 1000px);
 
       color: #292929;
       font-family: 'NanumSquareEB';
-      /* font-size: clamp(20px, 5.8vw, 89px);
-      line-height: clamp(28px, 5vw, 50px); */
 
       font-size: clamp(20px, 5.2vw, 54.6px);
       line-height: clamp(28px, 7.3vw, 76.5px);
@@ -63,8 +59,8 @@ export const StyledMapExpert = styled.div`
       .introductionImg {
         order: 1;
 
-        margin-top: 80px;
-        margin-bottom: 30px;
+        margin-top: var(--mobile-80px);
+        margin-bottom: var(--mobile-30px);
 
         width: 100%;
         aspect-ratio: 315 / 172;
