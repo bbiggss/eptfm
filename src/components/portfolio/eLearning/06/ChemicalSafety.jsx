@@ -80,11 +80,7 @@ const ChemicalSafety = () => {
         />
       </WidthOneContent>
       <WidthOneContent>
-        <Img
-          pcMaxWidth={'1260'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/2.png`}
-        />
+        <Img pcMaxWidth={'1260'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/2.png`} />
         <CustomText
           text={
             isMobile
@@ -105,11 +101,7 @@ const ChemicalSafety = () => {
         />
       </div>
       <WidthOneContent>
-        <Img
-          pcMaxWidth={'1260'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/3.png`}
-        />
+        <Img pcMaxWidth={'1260'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/3.png`} />
         <CustomText
           text={
             isMobile
@@ -150,11 +142,7 @@ const ChemicalSafety = () => {
         </div>
       </div>
       <WidthOneContent $first>
-        <Img
-          pcMaxWidth={'1260'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/4.png`}
-        />
+        <Img pcMaxWidth={'1260'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/4.png`} />
         <CustomText
           text={
             isMobile
@@ -169,11 +157,7 @@ const ChemicalSafety = () => {
         <img className="side2" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/side/side2.png`} alt="" />
       </div>
       <WidthOneContent $last>
-        <Img
-          pcMaxWidth={'1260'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/5.png`}
-        />
+        <Img pcMaxWidth={'1260'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/06_ChemicalSafety/group1/5.png`} />
         <CustomText
           text={
             isMobile

@@ -107,11 +107,7 @@ const CyberSocializingOne = () => {
             // : `자신의 가치와 소중함, 그리고 \n긍정적인 자아존중감을 자세히 이해하고\n그 중요성을 인식할 수 있어요.`
           }
         />
-        <Img
-          pcMaxWidth={'710'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/2.png`}
-        />
+        <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/2.png`} />
       </WidthImgOneTextsOne>
       <div className="relative">
         <img
@@ -184,11 +180,7 @@ const CyberSocializingOne = () => {
             // : `학생들이 스스로를 이해하고, 다양한 직업\n세계를 탐색할 수 있고 미래를 준비하는데\n실질적인 도움을 받을 수 있어요.`
           }
         />
-        <Img
-          pcMaxWidth={'710'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/6.png`}
-        />
+        <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/6.png`} />
       </WidthImgOneTextsOne>
       <WidthImgOneTextsOne pcMaxWidth={'1260'}>
         <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/7.png`} />
@@ -214,11 +206,7 @@ const CyberSocializingOne = () => {
             // : `한문 교과와 연계된 부분에서는 전통적인 도\n덕과 윤리적 가치에 배울 수 있어요.`
           }
         />
-        <Img
-          pcMaxWidth={'710'}
-          $whiteImgBackgroundBorder
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/8.png`}
-        />
+        <Img pcMaxWidth={'710'} src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/03_CyberSocializingOne/group1/8.png`} />
       </WidthImgOneTextsOne>
       <div className="relative">
         <img

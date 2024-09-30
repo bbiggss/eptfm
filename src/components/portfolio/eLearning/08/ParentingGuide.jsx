@@ -72,7 +72,7 @@ const ParentingGuide = () => {
 
       <div className="customMaxWidth1060">
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/1.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/1.png`} />
           <CustomText
             text={
               isMobile
@@ -84,7 +84,7 @@ const ParentingGuide = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/2.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/2.png`} />
           <CustomText
             text={
               isMobile
@@ -96,7 +96,7 @@ const ParentingGuide = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/3.png`} />
           <CustomText
             text={
               isMobile
@@ -117,7 +117,7 @@ const ParentingGuide = () => {
         </div>
 
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/4.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/4.png`} />
           <CustomText
             text={
               isMobile
@@ -129,7 +129,7 @@ const ParentingGuide = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/5.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/5.png`} />
           <CustomText
             text={
               isMobile
@@ -141,7 +141,7 @@ const ParentingGuide = () => {
           />
         </WidthOneContent>
         <WidthOneContent $last>
-          <Img $whiteImgBackgroundBorder src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/e-Learning/detail/08_ParentingGuide/group1/6.png`} />
           <CustomText
             text={
               isMobile
