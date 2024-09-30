@@ -20,24 +20,6 @@ export const StyledPortfolioListModal = styled.div`
       top: 50%;
       transform: translate(-50%, -50%);
     }
-    .xBtn {
-      position: absolute;
-      z-index: 10;
-      right: 0;
-      cursor: pointer;
-    }
-    .title {
-      color: #ffffff;
-      text-align: left;
-      font-family: 'Roboto-Medium', sans-serif;
-      font-size: 70px;
-      font-weight: 500;
-      text-transform: uppercase;
-      position: relative;
-      display: inline-block;
-
-      margin-bottom: 48px;
-    }
     .gridWrapper {
       display: grid;
       grid-template-columns: repeat(3, 460px);
@@ -48,23 +30,6 @@ export const StyledPortfolioListModal = styled.div`
   }
 
   @media (min-width: 1025px) and (max-width: 1556px) {
-    .xBtn {
-      position: absolute;
-      z-index: 10;
-      right: 50px;
-      cursor: pointer;
-    }
-    .title {
-      color: #ffffff;
-      text-align: left;
-      font-family: 'Roboto-Medium', sans-serif;
-      font-size: 70px;
-
-      position: relative;
-      display: inline-block;
-
-      margin-bottom: 40px;
-    }
     .modalContainer {
       height: 80%;
       max-height: 960px;
@@ -85,15 +50,29 @@ export const StyledPortfolioListModal = styled.div`
     }
   }
   @media (min-width: 1025px) {
-    .titleXbtn {
-      display: none;
+    .xBtn {
+      position: absolute;
+      z-index: 10;
+      right: 50px;
+      cursor: pointer;
+      width: var(--pc-60px);
+    }
+    .title {
+      color: #ffffff;
+      text-align: left;
+      font-family: 'Roboto-Medium', sans-serif;
+      font-size: 70px;
+
+      position: relative;
+      display: inline-block;
+
+      margin-bottom: 40px;
     }
   }
   @media (max-width: 1024px) {
     .modalContainer {
       height: 100vh;
       width: 100%;
-      overflow-y: scroll;
 
       position: fixed;
       z-index: 3;
@@ -104,10 +83,6 @@ export const StyledPortfolioListModal = styled.div`
       /* background-color: yellow; */
 
       display: grid;
-      justify-content: center;
-
-      /* margin-top: clamp(200px, 53vw, 1000px); */
-      margin-top: clamp(180px, 28vw, 1000px);
     }
     .title {
       color: #ffffff;
@@ -118,20 +93,18 @@ export const StyledPortfolioListModal = styled.div`
       position: relative;
       display: inline-block;
 
-      margin-top: 80px;
-      /* margin-bottom: 80px; */
-      margin-left: clamp(30px, 8vw, 1000px);
+      /* margin-top: 80px;
+      margin-bottom: 80px;
+      margin-left: 30px; */
+      margin: var(--mobile-80px) 0px var(--mobile-80px) var(--mobile-30px);
     }
     .xBtn {
-      /* position: absolute; */
       position: fixed;
       z-index: 10;
       top: 0;
       right: 0;
       cursor: pointer;
-      /* margin-top: 20px; */
       margin-top: 70px;
-      /* margin-right: 30px; */
       margin-right: 8vw;
       min-width: 20px;
       width: 5.3vw;
@@ -141,16 +114,7 @@ export const StyledPortfolioListModal = styled.div`
       justify-content: center;
       padding: 0;
       gap: 8px 20px;
-    }
-
-    .titleXbtn {
-      position: fixed;
-      z-index: 2;
-      width: 100%;
-    }
-
-    .titleXbtnPc {
-      display: none;
+      overflow-y: scroll;
     }
   }
 `;

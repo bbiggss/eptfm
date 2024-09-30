@@ -16,17 +16,8 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
   return (
     <StyledPortfolioListModal>
       <div className="modalBackground"></div>
-      <div className="titleXbtn">
-        <p className="title">PORTFOLIO</p>
-        <img
-          className="xBtn"
-          onClick={() => setPortfolioListModalStatus(false)}
-          src={`${process.env.PUBLIC_URL}/assets/images/common/${isMobileTablet ? 'portfolioListXBtn_m' : 'portfolioListXBtn'}.png`}
-          alt=""
-        />
-      </div>
       <div className="modalContainer">
-        <div className="titleXbtnPc">
+        <div className="titleXbtn">
           <p className="title">PORTFOLIO</p>
           <img
             className="xBtn"

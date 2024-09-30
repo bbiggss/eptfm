@@ -29,11 +29,10 @@ const StyledCategory = styled.p`
     color: #ffffff;
     text-align: left;
     font-family: 'Roboto-Regular';
-    /* font-size: 26px; */
     font-size: clamp(26px, 5.9vw, 100px);
     position: relative;
 
-    margin-bottom: 30px;
+    margin-bottom: var(--mobile-30px);
   }
 `;
 

@@ -98,6 +98,7 @@
   --mobile-130px: clamp(130px, 34.67vw, 1000px);
   --mobile-142px: clamp(142px, 37.8vw, 1000px);
   --mobile-152px: clamp(152px, 40.53vw, 1000px);
+  --mobile-160px: clamp(160px, 42.67vw, 1000px);
   --mobile-189px: clamp(189px, 50.4vw, 1000px);
   /*  
   var(--mobile-0px)

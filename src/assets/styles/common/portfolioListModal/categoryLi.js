@@ -106,11 +106,11 @@ export const StyledCategoryLi = styled.li`
 
     p {
       font-size: clamp(16px, 3.2vw, 100px);
-      line-height: 5vw;
+      line-height: 6vw;
       letter-spacing: -0.02em;
       min-width: 275px;
       width: 73vw;
-      margin: 5px 0;
+      /* padding: 5px 0; */
     }
 
     .move {
