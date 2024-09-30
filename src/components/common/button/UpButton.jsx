@@ -4,6 +4,7 @@ import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 
 const StyledUpButton = styled.div`
   position: fixed;
+  z-index: 1;
   bottom: 0;
   right: 0;
   img {
