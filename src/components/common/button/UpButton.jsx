@@ -10,16 +10,9 @@ const StyledUpButton = styled.div`
     cursor: pointer;
     border-radius: 100%;
   }
-
-  /* @media (min-width: 768px) and (max-width: 1024px) {
-    margin-right: 20px;
-    margin-bottom: 30px;
+  .displayNone {
+    display: none;
   }
-  @media (max-width: 767px) {
-    margin-right: 30px;
-    margin-bottom: calc(40.8vw + 30px);
-    margin-bottom: 183px;
-  } */
 
   @media (min-width: 1025px) {
     margin-right: var(--pc-80px);
@@ -85,7 +78,7 @@ const UpButton = () => {
   return (
     <StyledUpButton>
       <img
-        className={topBtnView}
+        // className={topBtnView}
         // onClick={() => nav(-1)}
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}

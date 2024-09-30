@@ -15,23 +15,6 @@ export const StyledEarthRotationChangingSeasons = styled.div`
     max-width: 1920px;
     margin: auto;
 
-    /* .portfolioTitle {
-      z-index: 1;
-      position: absolute;
-      margin-top: 380px;
-
-      left: 50%;
-      transform: translateX(-50%);
-
-      .orgainzation {
-        text-align: center;
-        font-family: 'NanumSquareEB';
-      }
-      .fieldTitle {
-        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-      }
-    } */
-
     .mainDescription {
       max-width: 1260px;
       width: var(--pc-1260px);

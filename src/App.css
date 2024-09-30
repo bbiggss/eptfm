@@ -100,12 +100,6 @@
   --mobile-152px: clamp(152px, 40.53vw, 1000px);
   --mobile-160px: clamp(160px, 42.67vw, 1000px);
   --mobile-189px: clamp(189px, 50.4vw, 1000px);
-  /*  
-  var(--mobile-0px)
-  var(--mobile-80px)
-  var(--mobile-50px)
-  var(--mobile-40px)
-  */
 
   --mobile-font-size-12px: clamp(12px, 3.2vw, 18px);
 
@@ -153,9 +147,6 @@
 .hidden {
   overflow: hidden;
 }
-.displayNone {
-  display: none;
-}
 .relative {
   position: relative;
 }
@@ -163,60 +154,21 @@
   position: absolute;
 }
 
-/* width screen 1920/1556/1399/1260 */
-.largeScreen {
-  max-width: 1556px;
-  width: 100%;
-  margin: 0 auto;
-}
-.mediumScreen {
-  max-width: 1399px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* 텍스트 정렬 */
 .centerAlignment {
   text-align: center;
 }
 
-.flexCenter {
-  display: flex;
-  justify-content: center;
-}
-
-.paddingTopBottom160 {
-  padding: 160px 0;
-}
-
-.marginTop80 {
-  margin-top: 80px;
-}
-.marginTop100 {
-  margin-top: 100px;
-}
-.marginBottom80 {
-  margin-bottom: 80px;
-}
-.marginBottom111 {
-  margin-bottom: 111px;
-}
-.paddingBottom160 {
-  padding-bottom: 160px;
-}
-.TextColor191919 {
-  color: #191919;
-}
-
 .test {
   background-color: gold;
-}
-.MarginBottom200 {
-  margin-bottom: 200px;
 }
 
 a {
   text-decoration: none;
+}
+
+.tempWrap {
+  display: none;
 }
 
 /* 영어 */
@@ -243,10 +195,6 @@ a {
 }
 .RobotoLight {
   font-family: 'Roboto-Light';
-}
-
-.tempWrap {
-  display: none;
 }
 
 /* 한글 */
