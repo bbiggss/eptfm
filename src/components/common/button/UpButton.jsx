@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 
 const StyledUpButton = styled.div`
   position: fixed;
@@ -9,9 +9,6 @@ const StyledUpButton = styled.div`
   img {
     cursor: pointer;
     border-radius: 100%;
-  }
-  .displayNone {
-    display: none;
   }
 
   @media (min-width: 1025px) {
@@ -34,39 +31,33 @@ const StyledUpButton = styled.div`
 `;
 
 const UpButton = () => {
-  const [topBtnView, setTopBtnView] = useState('');
-  const location = useLocation();
+  const [topBtnView, setTopBtnView] = useState(false);
+  const isMobileTablet = useResponsiveMax1024();
 
   useEffect(() => {
-    setTopBtnView('displayNone');
-  }, [location]);
+    const windowHeight = window.innerHeight;
+    // 모바일 해상도의 높이
+    const documentHeight = document.documentElement.scrollHeight;
+    // 전체 페이지 높이
 
-  useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const windowHeight = window.innerHeight;
-
-      const documentHeight = document.documentElement.scrollHeight;
-
       const fixedHeaderHeight = 80;
 
-      if (window.innerWidth <= 767) {
-        // 모바일 환경일 때
-        if (scrollTop + windowHeight >= documentHeight - fixedHeaderHeight) {
-          setTopBtnView('');
+      if (isMobileTablet) {
+        // console.log(window.scrollY, windowHeight, documentHeight, fixedHeaderHeight);
+        if (window.scrollY + windowHeight >= documentHeight - fixedHeaderHeight) {
+          setTopBtnView(true);
         } else {
-          setTopBtnView('displayNone');
+          setTopBtnView(false);
         }
       } else {
-        // PC 환경일 때
-        if (scrollTop > 500) {
-          setTopBtnView('');
+        if (window.scrollY > 500) {
+          setTopBtnView(true);
         } else {
-          setTopBtnView('displayNone');
+          setTopBtnView(false);
         }
       }
     };
-
     window.addEventListener('scroll', handleScroll);
 
     // Cleanup function to remove the event listener when the component unmounts
@@ -75,15 +66,20 @@ const UpButton = () => {
     };
   });
 
+  // useEffect(() => {
+  //   console.log('topBtnView: ', topBtnView);
+  // }, [topBtnView]);
+
   return (
     <StyledUpButton>
-      <img
-        className={topBtnView}
-        // onClick={() => nav(-1)}
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
-        alt=""
-      />
+      {topBtnView && (
+        <img
+          // onClick={() => nav(-1)}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
+          alt=""
+        />
+      )}
     </StyledUpButton>
   );
 };
