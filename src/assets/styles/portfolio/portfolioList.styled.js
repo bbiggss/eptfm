@@ -166,6 +166,7 @@ export const PortfolioListBox = styled.div`
           /* height: 177px; */
         }
         & .thumbnailTexts {
+          word-break: keep-all;
           & p:first-child {
             color: #999999;
             font-size: 12px;

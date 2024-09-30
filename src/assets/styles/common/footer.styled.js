@@ -5,6 +5,7 @@ export const FooterBox = styled.div`
   background-color: #f0f2f4;
   font-family: 'NanumSquareB';
   color: #767676;
+  position: relative;
 
   @media (min-width: 1025px) {
     height: clamp(137px, 18vw, 360px);
@@ -25,7 +26,6 @@ export const FooterBox = styled.div`
       span {
         font-size: var(--pc-font-size-20px);
         letter-spacing: -0.02em; // 자간
-        line-height: var(--pc-line-height-36px); // 줄간
       }
       .address {
         margin-bottom: clamp(18px, 1.8vw, 36px);
@@ -43,9 +43,8 @@ export const FooterBox = styled.div`
         width: 3.1vw;
       }
       position: absolute;
-      right: 0;
-      top: 0;
-      margin-top: 60px;
+      right: clamp(0px, 9.48vw, 182px);
+      top: var(--pc-60px);
     }
   }
   @media (max-width: 1024px) {
@@ -71,55 +70,40 @@ export const FooterBox = styled.div`
 
       #info {
         .telFaxMail {
-          /* font-size: 10px; */
-          font-size: 2.67vw;
+          font-size: var(--mobile-footer-font-size);
 
           .mail {
             display: block;
             /* margin-top: 3px; */
-            margin-top: 0.8vw;
+            margin-top: 1.6vw;
           }
         }
         .customSpan {
           display: table-column;
         }
         .address {
-          /* font-size: 10px;
-          margin-top: 3px;
-          margin-bottom: 12px; */
-
-          font-size: 2.67vw;
-          margin-top: 0.8vw;
-          margin-bottom: 3.2vw;
+          font-size: var(--mobile-footer-font-size);
+          margin-top: 1.6vw;
+          margin-bottom: 3.5vw;
         }
       }
       .copyright {
         /* font-size: 9px; */
         font-size: 2.4vw;
       }
-      .socialMediaLinkWrapper {
-        display: inline;
-        position: absolute;
-        right: 0;
-        top: 0;
-        /* margin-top: 20px; */
-        margin-top: 5.33vw;
-
-        img {
-          /* width: 28px; */
-          width: 7.47vw;
-        }
-        img:first-child {
-          /* margin-right: 10px; */
-          margin-right: 2.67vw;
-        }
-      }
     }
-  }
-  @media (max-width: 767px) {
-    .mail {
-      display: block;
-      margin-top: 0.8vw;
+    .socialMediaLinkWrapper {
+      position: absolute;
+      right: var(--mobile-30px);
+      top: 0;
+      margin-top: 5.33vw;
+
+      img {
+        width: var(--mobile-fixedButton);
+      }
+      a:first-child {
+        margin-right: 2.67vw;
+      }
     }
   }
 `;

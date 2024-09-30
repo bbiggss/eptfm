@@ -41,6 +41,9 @@ export const StyledCategoryLi = styled.li`
       border-color: #48c2c5;
       border-width: 0px 0px 1px 0px;
       color: #48c2c5;
+      p {
+        color: #48c2c5;
+      }
       .move {
         display: inline;
       }

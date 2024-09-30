@@ -12,12 +12,12 @@ const Contact = ({ modalStatus, setModalStatus }) => {
 
   return (
     <ContactUsBox>
-      <div className="fullScreen ellipseArea">
+      <div className="ellipseArea">
         <img className="ellipse1" src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse1.png`} alt="" />
         <img className="ellipse2" src={`${process.env.PUBLIC_URL}/assets/images/contact/ellipse2.png`} alt="" />
       </div>
       <Breadcrumb />
-      <div className="smallScreen Wrapper">
+      <div className="Wrapper">
         <p className="title robotoMedium">CONTACT US</p>
         <p className="subTitle NanumSquareB">
           {isMobileTablet ? (
@@ -67,7 +67,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
 
         <div className="mapWrap">
           <a href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh" target="_blank" rel="noreferrer">
-            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/map.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'map_m' : 'map'}.png`} alt="" />
           </a>
         </div>
         <div className="transportation NanumSquareB">

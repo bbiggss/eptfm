@@ -53,7 +53,7 @@ export const StyledMainPortfolio = styled.div`
       width: 21vw;
     }
     #portfolioLinkImg {
-      margin-bottom: 430px;
+      margin-bottom: 200px;
     }
   }
 

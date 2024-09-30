@@ -51,7 +51,7 @@ const StarsCharacteristics = () => {
         <div className="heroImgWrapper">
           <HeroImg
             pcAspectRatio={'1814 / 908'}
-            mobileAspectRatio={'450 / 722'}
+            mobileAspectRatio={'375 / 710'}
             src={`${process.env.PUBLIC_URL}/assets/images/portfolio/VrAr/detail/14_StarsCharacteristics/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
           />
         </div>
@@ -123,7 +123,7 @@ const StarsCharacteristics = () => {
           <CustomText
             text={
               isMobile
-                ? '학습자들이 직접 눈에 보이는 별의 밝기 순서대로\n 배치해보며 겉보기 등급을 나누어 볼 수 있어요.'
+                ? '학습자들이 직접 눈에 보이는 별의 밝기 순서대로 배치해보며 겉보기 등급을 나누어 볼 수 있어요.'
                 : isTablet
                 ? '학습자들이 직접 눈에 보이는 별의 밝기 순서대로\n 배치해보며 겉보기 등급을 나누어 볼 수 있어요.'
                 : '학습자들이 직접 눈에 보이는 별의 밝기 순서대로 배치해보며 \n겉보기 등급을 나누어 볼 수 있어요.'

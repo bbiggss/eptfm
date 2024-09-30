@@ -93,10 +93,10 @@ export const StyledPortfolioListModal = styled.div`
       position: relative;
       display: inline-block;
 
-      /* margin-top: 80px;
+      /* margin: var(--mobile-80px) 0px var(--mobile-80px) var(--mobile-30px); */
+      margin-top: 80px;
       margin-bottom: 80px;
-      margin-left: 30px; */
-      margin: var(--mobile-80px) 0px var(--mobile-80px) var(--mobile-30px);
+      margin-left: 30px;
     }
     .xBtn {
       position: fixed;
@@ -106,8 +106,9 @@ export const StyledPortfolioListModal = styled.div`
       cursor: pointer;
       margin-top: 70px;
       margin-right: 8vw;
-      min-width: 20px;
-      width: 5.3vw;
+      /* min-width: 20px; */
+      /* width: 5.3vw; */
+      width: clamp(20px, 5vw, 25px);
     }
     .gridWrapper {
       display: grid;

@@ -5,7 +5,8 @@
 
 :root {
   --pc-fixedButton: 3.5vw;
-  --mobile-fixedButton: 8.53vw;
+  --mobile-fixedButton: clamp(32px, 6.5vw, 60px);
+  --mobile-footer-font-size: clamp(10px, 2.2vw, 100px);
 
   --pc-font-size-64px: clamp(32px, 3.33vw, 64px);
   --pc-line-height-76px: clamp(47px, 3.9vw, 76px);
@@ -52,7 +53,6 @@
   --pc-180px: clamp(0px, 9.38vw, 180px);
   --pc-160px: clamp(0px, 8.3vw, 160px);
   --pc-150px: clamp(0px, 7.81vw, 150px);
-  --pc-150px: clamp(0px, 7.81vw, 150px);
   --pc-130px: clamp(0px, 6.77vw, 130px);
   --pc-122px: clamp(0px, 6.35vw, 122px);
   --pc-118px: clamp(0px, 6.15vw, 118px);
@@ -66,6 +66,7 @@
   --pc-40px: clamp(0px, 2.08vw, 40px);
   --pc-39px: clamp(0px, 2.03vw, 39px);
   --pc-34px: clamp(17px, 1.7vw, 34px);
+  --pc-32px: clamp(0px, 1.67vw, 32px);
   --pc-24px: clamp(10px, 1.25vw, 24px);
   /*  
   var(--pc-0px)

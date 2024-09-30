@@ -8,14 +8,13 @@ export const StyledWaterTemperatureSalinityExploration = styled.div`
     .mainImgContainer {
       margin-bottom: var(--pc-200px);
       .rectangular {
-        z-index: 1;
         position: absolute;
         right: clamp(0px, 13.49vw, 259px);
         bottom: -19px;
       }
     }
     .dolphin {
-      max-width: 905px;
+      width: clamp(0px, 47.14vw, 905px);
     }
   }
   @media (max-width: 1024px) {

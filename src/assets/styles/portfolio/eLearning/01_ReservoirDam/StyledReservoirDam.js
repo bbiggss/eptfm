@@ -12,7 +12,7 @@ export const StyledReservoirDam = styled.div`
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: clamp(0px, 5.83vw, 112px);
+        margin-top: clamp(0px, 4.83vw, 112px);
         text-align: center;
       }
       img {

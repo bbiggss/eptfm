@@ -73,7 +73,7 @@ export const StyledStarsCharacteristics = styled.div`
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: clamp(225px, 60vw, 1000px);
+        margin-top: clamp(278px, 74.13vw, 1000px);
       }
     }
     .heroImgWrapper {

@@ -2,26 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledTransportation = styled.div`
+  word-break: keep-all;
   @media (min-width: 1025px) {
     display: flex;
     align-items: center;
-    font-size: 22px;
-    letter-spacing: -2%;
-    line-height: auto;
     p {
       color: #767676;
       margin-left: 10px;
+      font-size: var(--pc-font-size-22px);
     }
     span {
       color: #292929;
     }
     margin-right: ${(props) => {
-      if (props.$mobileMargin) return '120px';
-    }};
-  }
-  @media (min-width: 1025px) and (max-width: 1400px) {
-    margin-right: ${(props) => {
-      if (props.$mobileMargin) return '50px';
+      if (props.$mobileMargin) return 'clamp(0px, 6.25vw, 120px)';
     }};
   }
 
@@ -30,8 +24,6 @@ const StyledTransportation = styled.div`
     display: flex;
     /* align-items: center; */
 
-    font-size: 22px;
-    letter-spacing: -2%;
     line-height: auto;
     .transportationImgWrap {
       width: 50px;
@@ -46,14 +38,14 @@ const StyledTransportation = styled.div`
       margin-left: 5px;
 
       color: #767676;
-      font-size: clamp(16px, 4vw, 100px);
-      /* line-height: 24px; */
+      font-size: var(--mobile-content-common-font-size);
+      line-height: var(--mobile-content-common-line-height);
       letter-spacing: -0.02em;
     }
     span {
       color: #292929;
-      font-size: clamp(16px, 4vw, 100px);
-      line-height: 24px;
+      font-size: var(--mobile-content-common-font-size);
+      line-height: var(--mobile-content-common-line-height);
       letter-spacing: -0.02em;
     }
     margin-bottom: ${(props) => {

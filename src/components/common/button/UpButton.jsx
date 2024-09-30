@@ -24,7 +24,6 @@ const StyledUpButton = styled.div`
     margin-bottom: calc(40.8vw + var(--mobile-30px));
 
     img {
-      min-width: 32px;
       width: var(--mobile-fixedButton);
     }
   }

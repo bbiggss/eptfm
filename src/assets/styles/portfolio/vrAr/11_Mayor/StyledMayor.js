@@ -37,8 +37,7 @@ export const StyledMayor = styled.div`
       position: relative;
 
       .megaphone {
-        max-width: 544px;
-        width: 28vw;
+        width: clamp(0px, 28.33vw, 544px);
         position: absolute;
         bottom: 0;
         left: clamp(0px, 15.31vw, 294px);
@@ -49,6 +48,7 @@ export const StyledMayor = styled.div`
         left: clamp(0px, 46.46vw, 892px);
         top: 50%;
         transform: translateY(-50%);
+        width: var(--pc-700px);
         p {
           color: #ffffff;
         }
