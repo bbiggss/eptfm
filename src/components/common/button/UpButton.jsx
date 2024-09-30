@@ -73,12 +73,12 @@ const UpButton = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  });
 
   return (
     <StyledUpButton>
       <img
-        // className={topBtnView}
+        className={topBtnView}
         // onClick={() => nav(-1)}
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         src={`${process.env.PUBLIC_URL}/assets/images/common/btn_up.png`}
