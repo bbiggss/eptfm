@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
+// import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 
 const StyledUpButton = styled.div`
   position: fixed;
@@ -32,43 +32,54 @@ const StyledUpButton = styled.div`
 
 const UpButton = () => {
   const [topBtnView, setTopBtnView] = useState(false);
-  const isMobileTablet = useResponsiveMax1024();
 
   useEffect(() => {
-    const windowHeight = window.innerHeight;
-    // 모바일 해상도의 높이
-    const documentHeight = document.documentElement.scrollHeight;
-    // 전체 페이지 높이
-
     const handleScroll = () => {
-      const fixedHeaderHeight = 80;
-
-      if (isMobileTablet) {
-        // console.log(window.scrollY, windowHeight, documentHeight, fixedHeaderHeight);
-        if (window.scrollY + windowHeight >= documentHeight - fixedHeaderHeight) {
-          setTopBtnView(true);
-        } else {
-          setTopBtnView(false);
-        }
+      if (window.scrollY > 500) {
+        setTopBtnView(true);
       } else {
-        if (window.scrollY > 500) {
-          setTopBtnView(true);
-        } else {
-          setTopBtnView(false);
-        }
+        setTopBtnView(false);
       }
     };
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup function to remove the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   });
 
+  // const isMobileTablet = useResponsiveMax1024();
+
   // useEffect(() => {
-  //   console.log('topBtnView: ', topBtnView);
-  // }, [topBtnView]);
+  //   const windowHeight = window.innerHeight;
+  //   // 모바일 해상도의 높이
+  //   const documentHeight = document.documentElement.scrollHeight;
+  //   // 전체 페이지 높이
+
+  //   const handleScroll = () => {
+  //     const fixedHeaderHeight = 80;
+
+  //     if (isMobileTablet) {
+  //       // console.log(window.scrollY, windowHeight, documentHeight, fixedHeaderHeight);
+  //       if (window.scrollY + windowHeight >= documentHeight - fixedHeaderHeight) {
+  //         setTopBtnView(true);
+  //       } else {
+  //         setTopBtnView(false);
+  //       }
+  //     } else {
+  //       if (window.scrollY > 500) {
+  //         setTopBtnView(true);
+  //       } else {
+  //         setTopBtnView(false);
+  //       }
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   // Cleanup function to remove the event listener when the component unmounts
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // });
 
   return (
     <StyledUpButton>

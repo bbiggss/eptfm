@@ -2,9 +2,9 @@ import React from 'react';
 import { ContactUsBox } from '../../assets/styles/contactUs/contactUs.styled';
 import ContactTextsLinkBox from './ContactTextsLinkBox';
 import Breadcrumb from '../common/breadcrumb/Breadcrumb';
-import Transportation from './Transportation';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 import useMobile from '../hooks/useMobile';
+import TransportationWrapper from './TransportationWrapper';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
   const isMobile = useMobile();
@@ -71,14 +71,22 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           </a>
         </div>
         <div className="transportation NanumSquareB">
-          <Transportation
-            $mobileMargin
-            src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`}
-            mot={'지하철'}
-            location={' : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역'}
-          />
-          <Transportation src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} mot={'버스'} location={' : 영등포 02, 영등포 05, 7612번'} />
-          {/* mot: means of transportation 교통수단 */}
+          <TransportationWrapper pcMarginRight>
+            <div className="imgWrapper">
+              <img className="subway" src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`} alt="" />
+            </div>
+            <p>
+              <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역
+            </p>
+          </TransportationWrapper>
+          <TransportationWrapper>
+            <div className="imgWrapper">
+              <img className="bus" src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} alt="" />
+            </div>
+            <p>
+              <span>버스</span> : 영등포 02, 영등포 05, 7612번
+            </p>
+          </TransportationWrapper>
         </div>
       </div>
     </ContactUsBox>
