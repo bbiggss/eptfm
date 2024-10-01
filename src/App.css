@@ -5,7 +5,7 @@
 
 :root {
   --pc-fixedButton: 3.5vw;
-  --mobile-fixedButton: clamp(35px, 9.33vw, 1000px);
+  --mobile-fixedButton: clamp(40px, 8vw, 1000px);
   --mobile-footer-font-size: clamp(10px, 2.2vw, 100px);
 
   --pc-font-size-64px: clamp(32px, 3.33vw, 64px);
