@@ -9,11 +9,11 @@ export const StyledFieldMoveButton = styled.div`
     font-family: 'Roboto-Medium';
   }
   @media (min-width: 1025px) {
-    width: 380px;
+    width: clamp(0px, 19.79vw, 380px);
     /* 150-16 */
     .pfFieldTag {
-      height: 90px;
-      line-height: 90px;
+      height: var(--pc-90px);
+      line-height: var(--pc-90px);
 
       margin-bottom: 24px;
       display: block;
@@ -22,7 +22,7 @@ export const StyledFieldMoveButton = styled.div`
       text-align: center;
 
       color: #767676;
-      font-size: 26px;
+      font-size: clamp(0px, 1.35vw, 26px);
     }
     a {
       display: block;
@@ -35,8 +35,8 @@ export const StyledFieldMoveButton = styled.div`
       top: 50%;
       transform: translateY(-50%);
 
-      width: 12px; /* Adjust the size as needed */
-      height: 20px; /* Adjust the size as needed */
+      width: clamp(0px, 0.47vw, 9px); /* Adjust the size as needed */
+      height: clamp(0px, 0.94vw, 18px); /* Adjust the size as needed */
       background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow.png);
       background-size: contain;
       background-repeat: no-repeat;
@@ -50,12 +50,12 @@ export const StyledFieldMoveButton = styled.div`
       }
       .arrow {
         position: absolute;
-        right: 25px;
+        right: 40px;
         top: 50%;
         transform: translateY(-50%);
 
-        width: 12px; /* Adjust the size as needed */
-        height: 20px; /* Adjust the size as needed */
+        width: clamp(0px, 0.47vw, 9px); /* Adjust the size as needed */
+        height: clamp(0px, 0.94vw, 18px); /* Adjust the size as needed */
         background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow_white.png);
         background-size: cover;
       }

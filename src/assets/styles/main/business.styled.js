@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { businessBg } from '../../images';
 
 export const BusinessBox = styled.div`
   font-family: 'Roboto-Medium';
@@ -15,14 +14,11 @@ export const BusinessBox = styled.div`
   }
 
   @media (min-width: 1025px) {
-    /* background-size: cover; */
-    /* height: 1180px; */
     height: auto;
     margin-top: 240px;
     padding-bottom: 200px;
 
     #container {
-      /* padding: 100px 0; */
       & #businessTitleBox {
         width: 100%;
         height: 380px;
@@ -38,7 +34,8 @@ export const BusinessBox = styled.div`
     }
 
     #contentsWrap {
-      margin: 0 30px;
+      width: 80%;
+      margin: auto;
       ul {
         display: grid;
         grid-template-columns: repeat(3, auto);
