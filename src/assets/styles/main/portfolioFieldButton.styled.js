@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const pfFieldMobileWidth = '100%';
+const pfFieldMobileWidth = 'clamp(315px, 84.00vw, 400px)';
 
 export const StyledFieldMoveButton = styled.div`
   /* 영어폰트 */
@@ -64,10 +64,8 @@ export const StyledFieldMoveButton = styled.div`
   @media (max-width: 1024px) {
     /* 150-16 */
     .pfFieldTag {
-      min-height: 60px;
-      height: 16vw;
-      /* line-height: 60px; */
-      line-height: 16vw;
+      height: var(--mobile-60px);
+      line-height: var(--mobile-60px);
 
       /* margin-bottom: 16px; */
       margin-bottom: 4.2vw;
@@ -78,7 +76,7 @@ export const StyledFieldMoveButton = styled.div`
       text-align: center;
 
       color: #767676;
-      font-size: clamp(18px, 4.8vw, 100px);
+      font-size: clamp(18px, 3.8vw, 100px);
     }
     a {
       display: block;

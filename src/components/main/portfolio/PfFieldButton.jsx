@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { StyledFieldMoveButton } from '../../assets/styles/main/portfolioFieldButton.styled';
+import { StyledFieldMoveButton } from '../../../assets/styles/main/portfolioFieldButton.styled';
 
 const PfFieldButton = (data) => {
   return (

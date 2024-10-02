@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// import { portfolioBg2, portfolioBg3 } from '../../images';
 
 export const StyledMainPortfolio = styled.div`
   .englishFont,
@@ -34,9 +33,6 @@ export const StyledMainPortfolio = styled.div`
       /* position: absolute; */
       /* display: none; */
     }
-    #portfolioLinkImg {
-      margin-bottom: 630px;
-    }
   }
   @media (min-width: 1025px) and (max-width: 1400px) {
     #portfolioImgs {
@@ -51,9 +47,6 @@ export const StyledMainPortfolio = styled.div`
     }
     .heightTablet {
       width: 21vw;
-    }
-    #portfolioLinkImg {
-      margin-bottom: 200px;
     }
   }
 
@@ -101,13 +94,12 @@ export const StyledMainPortfolio = styled.div`
       position: absolute;
       right: 0;
     }
-    #portfolioLinkImg {
-      display: inline-block;
-      margin-top: 98px;
-    }
   }
 
   @media (max-width: 1024px) {
+    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     #portfolioTexts {
       position: relative;
       & #portfolioTitle {
@@ -115,12 +107,16 @@ export const StyledMainPortfolio = styled.div`
         color: #191919;
         font-size: clamp(36px, 9.6vw, 100px);
         text-align: left;
+
+        padding-top: 80px;
+        margin-bottom: 30px;
       }
 
       & #portfolioText1 {
         font-size: clamp(20px, 5.3vw, 100px);
         font-weight: 400;
         text-align: left;
+        margin-bottom: 10px;
       }
 
       & #portfolioText2 {
@@ -128,13 +124,6 @@ export const StyledMainPortfolio = styled.div`
         line-height: clamp(24px, 6.4vw, 50vw);
         text-align: left;
       }
-    }
-
-    #portfolioLinkImg {
-      /* margin-top: 60px; */
-      margin-top: 16vw;
-      margin-bottom: 134px;
-      width: 100%;
     }
     /* - */
     .marginWrapper {
@@ -155,19 +144,17 @@ export const StyledMainPortfolio = styled.div`
     }
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  /* @media (min-width: 768px) and (max-width: 1024px) {
     background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
     background-repeat: no-repeat;
     background-size: contain;
+
     #portfolioTitle {
-      padding-top: 160px;
+      padding-top: 1600px;
       margin-bottom: 100px;
     }
     #portfolioText1 {
       margin-bottom: 30px;
-    }
-    #portfolioLinkImg {
-      /* margin-top: 200px; */
     }
     #portfolioLinkImg {
       .pfFieldTag {
@@ -188,8 +175,5 @@ export const StyledMainPortfolio = styled.div`
     #portfolioText1 {
       margin-bottom: 10px;
     }
-    #portfolioLinkImg {
-      /* margin-top: 150px; */
-    }
-  }
+  } */
 `;

@@ -152,7 +152,6 @@ function App() {
         portfolioListModalStatus={portfolioListModalStatus}
         setPortfolioListModalStatus={setPortfolioListModalStatus}
       />
-      {/* <Header headerClass={headerClass} /> */}
       {location.pathname === '/' ? <Video /> : ''}
 
       <Routes>

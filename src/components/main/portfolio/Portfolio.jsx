@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyledMainPortfolio } from '../../assets/styles/main/portfolio.styled';
+import { StyledMainPortfolio } from '../../../assets/styles/main/portfolio.styled';
 import PfFieldButton from './PfFieldButton';
-import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
+import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
+import ButtonWrapper from './ButtonWrapper';
 
 const Portfolio = () => {
   const isMobileTablet = useResponsiveMax1024();
@@ -32,11 +33,11 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div id="portfolioLinkImg">
+        <ButtonWrapper>
           <PfFieldButton title={'VR/AR'} link={'portfolio/VrAr'} />
           <PfFieldButton title={'e-Learning'} link={'portfolio/e-Learning'} />
           <PfFieldButton title={'R&D'} link={'portfolio/R&D'} />
-        </div>
+        </ButtonWrapper>
       </div>
     </StyledMainPortfolio>
   );
