@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Link } from 'react-router-dom';
 import { StyledFieldMoveButton } from '../../../assets/styles/main/portfolioFieldButton.styled';
 
-const PfFieldButton = (data) => {
+const PfFieldButton = forwardRef((props, ref) => {
   return (
     <StyledFieldMoveButton>
-      <Link to={data && data.link}>
-        <div className="pfFieldTag">
-          {data && data.title}
+      <Link to={props && props.link}>
+        <div className="pfFieldTag slideUp" ref={ref}>
+          {props && props.title}
           <div className="arrow"></div>
           {/* <span className="arrow">{'>'}</span> */}
           {/* <img className="arrow" src={imgSrc} alt="" /> */}
@@ -15,6 +15,6 @@ const PfFieldButton = (data) => {
       </Link>
     </StyledFieldMoveButton>
   );
-};
+});
 
 export default PfFieldButton;

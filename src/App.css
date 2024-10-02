@@ -236,3 +236,29 @@ a {
 .NanumSquareEB {
   font-family: 'NanumSquareEB';
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* animation-duration: 3s;
+animation-name: slidein; */
+
+.slideUp {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 2s ease, transform 2s ease;
+  /* ease는 시작할때 천천히, 중간에는 빠르게, 끝날 때는 다시 천천히 변화하도록 설정하는 기본적인 타이밍 함수 */
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

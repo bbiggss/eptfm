@@ -3,9 +3,10 @@ import { StyledMainPortfolio } from '../../../assets/styles/main/portfolio.style
 import PfFieldButton from './PfFieldButton';
 import useResponsiveMax1024 from '../../hooks/useResponsiveMax1024';
 import ButtonWrapper from './ButtonWrapper';
-
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 const Portfolio = () => {
   const isMobileTablet = useResponsiveMax1024();
+  const refs = useIntersectionObserver();
   return (
     <StyledMainPortfolio id="portfolio">
       <div id="portfolioImgs">
@@ -22,21 +23,23 @@ const Portfolio = () => {
       </div>
       <div className="marginWrapper">
         <div id="portfolioTexts">
-          <p id="portfolioTitle">PORTFOLIO</p>
-          <p id="portfolioText1">
+          <p id="portfolioTitle" className="slideUp" ref={(el) => (refs.current[0] = el)}>
+            PORTFOLIO
+          </p>
+          <p id="portfolioText1" className="slideUp" ref={(el) => (refs.current[1] = el)}>
             미래의 학습을 <span>설계하다</span>
           </p>
 
-          <div id="portfolioText2">
+          <div id="portfolioText2" className="slideUp" ref={(el) => (refs.current[2] = el)}>
             최첨단 교육 공학 <span className="englishFont">SOLUTION</span>으로
             <br /> 학습의 한계를 뛰어넘다.
           </div>
         </div>
 
         <ButtonWrapper>
-          <PfFieldButton title={'VR/AR'} link={'portfolio/VrAr'} />
-          <PfFieldButton title={'e-Learning'} link={'portfolio/e-Learning'} />
-          <PfFieldButton title={'R&D'} link={'portfolio/R&D'} />
+          <PfFieldButton ref={(el) => (refs.current[3] = el)} title={'VR/AR'} link={'portfolio/VrAr'} />
+          <PfFieldButton ref={(el) => (refs.current[4] = el)} title={'e-Learning'} link={'portfolio/e-Learning'} />
+          <PfFieldButton ref={(el) => (refs.current[5] = el)} title={'R&D'} link={'portfolio/R&D'} />
         </ButtonWrapper>
       </div>
     </StyledMainPortfolio>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 
 const StyledAboutImg = styled.div`
@@ -24,12 +24,13 @@ const StyledAboutImg = styled.div`
   }
 `;
 
-const AboutImg = (data) => {
+const AboutImg = forwardRef((props, ref) => {
   return (
     <StyledAboutImg>
-      <img src={data && data.img} alt="" />
+      {/* <img ref={ref} src={data && data.img} alt="" /> */}
+      <img className="slideUp" ref={ref} src={props.img} alt="" />
     </StyledAboutImg>
   );
-};
+});
 
 export default AboutImg;

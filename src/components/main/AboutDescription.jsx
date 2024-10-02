@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import styled from 'styled-components';
 // import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
@@ -120,7 +120,7 @@ const StyledAboutDescription = styled.div`
   }
 `;
 
-const AboutDescription = (data) => {
+const AboutDescription = forwardRef((props, ref) => {
   // const isMobile = useResponsiveMax1024();
   const [valueBox, setValueBox] = useState('');
 
@@ -134,22 +134,22 @@ const AboutDescription = (data) => {
   };
 
   useEffect(() => {
-    if (data.textsTitle === 'VALUE' && window.innerWidth > 1025) {
+    if (props.textsTitle === 'VALUE' && window.innerWidth > 1025) {
       setValueBox('marginLeft182');
     } else {
       setValueBox('');
     }
-  }, [data.textsTitle]);
+  }, [props.textsTitle]);
   return (
-    <StyledAboutDescription>
-      {data.img && <img src={data && data.img} alt="" />}
+    <StyledAboutDescription ref={ref} className="slideUp">
+      {props.img && <img src={props && props.img} alt="" />}
       <div className={`textsBoxContainer ${valueBox}`}>
-        <p className="textsTitle">{data && data.textsTitle}</p>
-        <p className="textsSubTitle">{data && data.textsSubTitle}</p>
-        <p className="textsContents">{renderTextWithLineBreaks(data && data.textsContents)}</p>
+        <p className="textsTitle">{props && props.textsTitle}</p>
+        <p className="textsSubTitle">{props && props.textsSubTitle}</p>
+        <p className="textsContents">{renderTextWithLineBreaks(props && props.textsContents)}</p>
       </div>
     </StyledAboutDescription>
   );
-};
+});
 
 export default AboutDescription;
