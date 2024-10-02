@@ -35,6 +35,7 @@ export const FooterBox = styled.div`
       font-size: var(--pc-font-size-20px);
     }
     .socialMediaLinkWrapper {
+      z-index: 10;
       a:first-child {
         margin-right: 18px;
       }
@@ -93,6 +94,7 @@ export const FooterBox = styled.div`
       }
     }
     .socialMediaLinkWrapper {
+      z-index: 10;
       position: absolute;
       right: var(--mobile-30px);
       top: 0;
