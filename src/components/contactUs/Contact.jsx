@@ -59,8 +59,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
 
         <ContactTextsLinkBox
           mainText={'오시는 길'}
-          subText={'서울시 영등포구 선유로 130, 에이스 하이테크시티3차 409호'}
-          mobile_subText={'서울시 영등포구 선유로 130,\n 에이스 하이테크시티3차 409호'}
+          subText={'경기도 고양시 덕양구 청초로 10 B동 1112호'}
           popupText={'지도 보기'}
           clickOption={'map'}
         />
@@ -76,7 +75,8 @@ const Contact = ({ modalStatus, setModalStatus }) => {
               <img className="subway" src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`} alt="" />
             </div>
             <p>
-              <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역
+              {/* <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역 */}
+              <span>지하철</span> : 6호선 디지털미디어시티
             </p>
           </TransportationWrapper>
           <TransportationWrapper>
@@ -84,7 +84,8 @@ const Contact = ({ modalStatus, setModalStatus }) => {
               <img className="bus" src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} alt="" />
             </div>
             <p>
-              <span>버스</span> : 영등포 02, 영등포 05, 7612번
+              {/* <span>버스</span> : 영등포 02, 영등포 05, 7612번 */}
+              <span>버스</span> : 지선 7726, 마을 022B
             </p>
           </TransportationWrapper>
         </div>

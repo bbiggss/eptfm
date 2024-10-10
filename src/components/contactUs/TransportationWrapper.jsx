@@ -5,7 +5,7 @@ const StyledTransportationWrapper = styled.div`
   @media (min-width: 1025px) {
     display: flex;
     margin-right: ${(props) => {
-      if (props.$pcMarginRight) return 'var(--pc-120px)';
+      if (props.$pcMarginRight) return 'clamp(0px, 17.29vw, 332px)';
     }};
     .imgWrapper {
       text-align: center;
