@@ -47,14 +47,23 @@ export const FooterBox = styled.div`
       right: clamp(0px, 9.48vw, 182px);
       top: var(--pc-60px);
     }
+
+    /* - */
+    .companyInfo {
+      margin-bottom: var(--pc-36px);
+      font-size: var(--pc-font-size-20px);
+    }
+    .pcDisplayFlex {
+      display: flex;
+      /* line-height: clamp(0px, 1.88vw, 36px); */
+      line-height: var(--pc-line-height-36px);
+    }
   }
   @media (max-width: 1024px) {
-    /* height: 153px; */
-    height: 40.8vw;
-
     .footerContainer {
       position: relative;
       width: 80%;
+      height: clamp(153px, 40.8vw, 1000px);
       margin: 0 auto;
 
       #footerImg {
@@ -91,6 +100,19 @@ export const FooterBox = styled.div`
       .copyright {
         /* font-size: 9px; */
         font-size: 2.4vw;
+      }
+    }
+
+    .companyInfo {
+      margin-bottom: clamp(12px, 3.2vw, 1000px);
+      p {
+        font-size: clamp(10px, 2.67vw, 1000px);
+      }
+      .mail {
+        margin: clamp(6px, 1.6vw, 1000px) 0;
+      }
+      .customSpan {
+        display: none;
       }
     }
     .socialMediaLinkWrapper {

@@ -30,6 +30,9 @@ export const ContactUsBox = styled.div`
       display: grid;
       grid-template-columns: repeat(3, minmax(200px, 1fr));
       gap: var(--pc-60px);
+      img {
+        aspect-ratio: 380 / 280;
+      }
       li {
         list-style: none;
         img {
@@ -124,6 +127,10 @@ export const ContactUsBox = styled.div`
       grid-template-columns: repeat(1, auto);
       gap: 24px 0px;
       word-break: keep-all;
+
+      img {
+        aspect-ratio: 150 / 110;
+      }
 
       li {
         list-style: none;

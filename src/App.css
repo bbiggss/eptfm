@@ -68,6 +68,7 @@
   --pc-46px: clamp(0px, 2.4vw, 46px);
   --pc-40px: clamp(0px, 2.08vw, 40px);
   --pc-39px: clamp(0px, 2.03vw, 39px);
+  --pc-36px: clamp(0px, 1.88vw, 36px);
   --pc-34px: clamp(17px, 1.7vw, 34px);
   --pc-32px: clamp(0px, 1.67vw, 32px);
   --pc-24px: clamp(10px, 1.25vw, 24px);

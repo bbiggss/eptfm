@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
       <div className="footerContainer">
         <img id="footerImg" src={`${process.env.PUBLIC_URL}/assets/images/common/bottom_logo.png`} alt="" />
-        <div id="info">
+        {/* <div id="info">
           <div className="telFaxMail">
             <span className="number">Tel : 02. 6949. 5622</span>
             <span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
@@ -20,8 +20,18 @@ const Footer = () => {
             <span className="mail">Mail : eplatform@naver.com</span>
           </div>
           <div className="address">
-            <span>Address : 서울시 영등포구 선유로130, 에이스 하이테크시티3차 409호</span>
+            <span>Address : 경기도 고양시 덕양구 청초로 10 B동 1112호</span>
           </div>
+        </div> */}
+        <div className="companyInfo">
+          <div className="pcDisplayFlex">
+            <p>
+              Tel : 02. 6949. 5622<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>Fax : 02. 6949. 5623
+            </p>
+            <span className="customSpan">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+            <p className="mail">Mail : eplatform@naver.com </p>
+          </div>
+          <p>Address : 경기도 고양시 덕양구 청초로 10 B동 1112호</p>
         </div>
         <div className="copyright">ⓒ EPLATFORM ALL RIGHTS RESERVED.</div>
       </div>
