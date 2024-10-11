@@ -10,16 +10,11 @@ const StyledAboutImg = styled.div`
       max-height: 1000px;
     }
   }
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     order: 1;
     img {
       width: 100%;
-    }
-  }
-  @media (max-width: 767px) {
-    order: 1;
-    img {
-      width: 100%;
+      aspect-ratio: 315 / 315;
     }
   }
 `;

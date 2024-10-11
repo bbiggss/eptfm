@@ -60,6 +60,18 @@ export const AboutBox = styled.div`
       display: flex;
       flex-direction: column;
       text-align: center;
+      img {
+        animation-delay: 8s;
+      }
+      div {
+        animation-delay: 10s;
+      }
+      /* :first-child {
+        animation-delay: 3s;
+      }
+      :last-child {
+        animation-delay: 5s;
+      } */
     }
   }
 `;

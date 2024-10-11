@@ -77,6 +77,9 @@ export const ContactUsBox = styled.div`
         width: 100%;
       }
     }
+    .mapWrap img {
+      aspect-ratio: 1260 / 480;
+    }
   }
 
   @media (max-width: 1024px) {

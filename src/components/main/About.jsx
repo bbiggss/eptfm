@@ -12,7 +12,6 @@ const About = () => {
         <p className="slideUp" ref={(el) => (refs.current[0] = el)}>
           ABOUT US
         </p>
-        {/* <img className="slideUp" ref={(el) => (refs.current[1] = el)} src={`${process.env.PUBLIC_URL}/assets/images/main/about_img1.png`} alt="" /> */}
       </div>
       <div className="aboutContents">
         <AboutImg ref={(el) => (refs.current[1] = el)} img={`${process.env.PUBLIC_URL}/assets/images/main/about_img1.png`} />

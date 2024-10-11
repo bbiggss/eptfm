@@ -252,6 +252,8 @@ a {
 /* animation-duration: 3s;
 animation-name: slidein; */
 
+@media (max-width: 1024px) {
+}
 .slideUp {
   opacity: 0;
   transform: translateY(100px);

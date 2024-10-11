@@ -11,14 +11,25 @@ const Portfolio = () => {
     <StyledMainPortfolio id="portfolio">
       <div id="portfolioImgs">
         <img
-          className="dinosaur"
+          className="dinosaur slideUp"
+          ref={(el) => (refs.current[6] = el)}
           src={`${process.env.PUBLIC_URL}/assets/images/main/${isMobileTablet ? 'dinosaur_m' : 'portfolio_img1'}.png`}
           alt=""
         />
         <div className="pfImgRightBox">
-          <img className="widthTablet" src={`${process.env.PUBLIC_URL}/assets/images/main/portfolio_img2.png`} alt="" />
+          <img
+            className="widthTablet slideUp"
+            ref={(el) => (refs.current[7] = el)}
+            src={`${process.env.PUBLIC_URL}/assets/images/main/portfolio_img2.png`}
+            alt=""
+          />
           <br />
-          <img className="heightTablet" src={`${process.env.PUBLIC_URL}/assets/images/main/portfolio_img3.png`} alt="" />
+          <img
+            className="heightTablet slideUp"
+            ref={(el) => (refs.current[8] = el)}
+            src={`${process.env.PUBLIC_URL}/assets/images/main/portfolio_img3.png`}
+            alt=""
+          />
         </div>
       </div>
       <div className="marginWrapper">

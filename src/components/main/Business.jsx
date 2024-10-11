@@ -17,6 +17,7 @@ const Business = () => {
             <BusinessItems
               ref={(el) => (refs.current[1] = el)}
               img={`${process.env.PUBLIC_URL}/assets/images/main/business_img1.png`}
+              first
               hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img1_over.png`}
               mobile_hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img1_over_mobile.png`}
               text={'VR/AR'}
@@ -33,6 +34,7 @@ const Business = () => {
             <BusinessItems
               ref={(el) => (refs.current[3] = el)}
               img={`${process.env.PUBLIC_URL}/assets/images/main/business_img3.png`}
+              last
               hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img3_over.png`}
               mobile_hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img3_over_mobile.png`}
               text={'R&D'}

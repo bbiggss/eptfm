@@ -11,7 +11,8 @@ const useIntersectionObserver = () => {
           entry.target.classList.add('animate');
         } else {
           // 텍스트가 화면에서 벗어나면 클래스 제거 (반복을 위해)
-          entry.target.classList.remove('animate');
+          // 이거 잠시 주석처리함.
+          // entry.target.classList.remove('animate');
         }
       });
     };
