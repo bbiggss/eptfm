@@ -64,8 +64,9 @@ export const StyledFieldMoveButton = styled.div`
   @media (max-width: 1024px) {
     /* 150-16 */
     .pfFieldTag {
-      height: var(--mobile-60px);
-      line-height: var(--mobile-60px);
+      /* height: var(--mobile-60px); */
+      /* line-height: var(--mobile-60px); */
+      padding: 15px 0;
 
       /* margin-bottom: 16px; */
       margin-bottom: 4.2vw;
