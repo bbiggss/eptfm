@@ -14,15 +14,16 @@ export const StyledMainPortfolio = styled.div`
     color: #292929;
   }
 
-  @media (min-width: 1401px) {
-    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg3.png);
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: 1025px) {
     width: 100%;
     max-width: 1920px;
     position: relative;
+
+    .backgroundImg {
+      position: absolute;
+      width: 100%;
+      aspect-ratio: 1920 / 1280;
+    }
 
     #portfolioTexts {
       position: relative;
@@ -59,7 +60,7 @@ export const StyledMainPortfolio = styled.div`
       align-items: flex-start;
 
       position: absolute;
-      top: 188px;
+      top: clamp(0px, 9.95vw, 191px);
       right: 0;
     }
     .dinosaur {
@@ -75,9 +76,12 @@ export const StyledMainPortfolio = styled.div`
   }
 
   @media (max-width: 1024px) {
-    background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_bg_m.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    .backgroundImg {
+      position: absolute;
+      width: 100%;
+      aspect-ratio: 375 / 445;
+    }
+
     #portfolioTexts {
       position: relative;
       & #portfolioTitle {
@@ -86,15 +90,15 @@ export const StyledMainPortfolio = styled.div`
         font-size: clamp(36px, 9.6vw, 100px);
         text-align: left;
 
-        padding-top: 80px;
-        margin-bottom: 30px;
+        padding-top: var(--mobile-80px);
+        margin-bottom: var(--mobile-30px);
       }
 
       & #portfolioText1 {
         font-size: clamp(20px, 5.3vw, 100px);
         font-weight: 400;
         text-align: left;
-        margin-bottom: 10px;
+        margin-bottom: var(--mobile-10px);
       }
 
       & #portfolioText2 {
@@ -112,9 +116,8 @@ export const StyledMainPortfolio = styled.div`
       .dinosaur {
         position: absolute;
         right: 0;
-        margin-top: 70px;
-        min-width: 125px;
-        width: 26vw;
+        margin-top: clamp(70px, 18.67vw, 1000px);
+        width: clamp(125px, 33.33vw, 1000px);
       }
       .pfImgRightBox {
         display: none;

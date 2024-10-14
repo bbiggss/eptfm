@@ -105,10 +105,12 @@ export const PortfolioListBox = styled.div`
       li {
         list-style: none;
         /* width: 400px;
-      height: 382px; */
+        height: 382px; */
+        /* aspect-ratio: 469 / 369; */
 
         & .thumbnail img {
           width: 100%;
+          aspect-ratio: 469 / 264;
         }
         & .thumbnailTexts {
           height: 100px;

@@ -66,6 +66,8 @@ export const ContactUsBox = styled.div`
     }
     .ellipseArea {
       position: relative;
+      max-width: 1920px;
+      margin: auto;
       z-index: -1;
       .ellipse1 {
         position: absolute;
@@ -90,15 +92,11 @@ export const ContactUsBox = styled.div`
         position: absolute;
       }
       .ellipse2 {
-        position: absolute;
-        right: 0;
+        display: none;
       }
     }
     .ellipse1 {
       width: 375px;
-    }
-    .ellipse2 {
-      display: none;
     }
     .Wrapper {
       margin: 0 var(--mobile-margin);

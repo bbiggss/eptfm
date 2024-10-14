@@ -9,6 +9,11 @@ const Portfolio = () => {
   const refs = useIntersectionObserver();
   return (
     <StyledMainPortfolio id="portfolio">
+      <img
+        className="backgroundImg"
+        src={`${process.env.PUBLIC_URL}/assets/images/main/${isMobileTablet ? 'portfolio_bg_m' : 'portfolio_bg'}.png`}
+        alt=""
+      />
       <div id="portfolioImgs">
         <img
           className="dinosaur slideUp"
