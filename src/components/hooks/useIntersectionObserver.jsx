@@ -6,8 +6,11 @@ const useIntersectionObserver = () => {
     // Intersection Observer 콜백 함수
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        const index = refs.current.indexOf(entry.target);
+        if (entry.isIntersecting && index !== -1) {
           // 텍스트가 화면에 들어올 때 애니메이션 클래스 추가
+          const delay = index * 0.2;
+          entry.target.style.transitionDelay = `${delay}s`;
           entry.target.classList.add('animate');
         } else {
           // 텍스트가 화면에서 벗어나면 클래스 제거 (반복을 위해)

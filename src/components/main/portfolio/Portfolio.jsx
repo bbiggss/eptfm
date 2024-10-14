@@ -10,7 +10,8 @@ const Portfolio = () => {
   return (
     <StyledMainPortfolio id="portfolio">
       <img
-        className="backgroundImg"
+        className="backgroundImg slideUp"
+        ref={(el) => (refs.current[9] = el)}
         src={`${process.env.PUBLIC_URL}/assets/images/main/${isMobileTablet ? 'portfolio_bg_m' : 'portfolio_bg'}.png`}
         alt=""
       />
