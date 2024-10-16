@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledAboutDescription = styled.div`
   @media (min-width: 1025px) {
     position: relative;
+    overflow: hidden;
     aspect-ratio: 960 / 1000;
     width: 50%;
     max-width: 960px;
@@ -38,6 +39,21 @@ export const StyledAboutDescription = styled.div`
         margin-top: var(--pc-73px);
         line-height: var(--pc-50px);
       }
+    }
+
+    .textsTitle,
+    .textsSubTitle,
+    .textsContents {
+      /* transform: translateX(300px); */
+      transform: ${(props) => {
+        if (props.$textsTitle === 'VISION') return 'translateX(300px)';
+        else return 'translateX(-300px)';
+      }};
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .opacity1translateY0 {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
   @media (max-width: 1024px) {

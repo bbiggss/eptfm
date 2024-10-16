@@ -252,8 +252,36 @@ a {
 /* animation-duration: 3s;
 animation-name: slidein; */
 
-@media (max-width: 1024px) {
+@media (min-width: 1025px) {
+  .imgCover {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    transform: translateY(0);
+    transition: transform 2s ease;
+  }
+  .topAnimate {
+    transform: translateY(-1000px);
+  }
+
+  .cube {
+    transform: translateY(-100px);
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  .topToBottomAnimate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .rightToLeftAnimate {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
 .slideUp {
   opacity: 0;
   transform: translateY(100px);
@@ -261,7 +289,17 @@ animation-name: slidein; */
   /* ease는 시작할때 천천히, 중간에는 빠르게, 끝날 때는 다시 천천히 변화하도록 설정하는 기본적인 타이밍 함수 */
 }
 
-.animate {
+.opacity0 {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.opacity1translateY0 {
   opacity: 1;
   transform: translateY(0);
+}
+
+.animate {
+  opacity: 1;
+  transform: translate(0);
 }

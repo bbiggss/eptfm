@@ -36,43 +36,6 @@ export const PortfolioListBox = styled.div`
       grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
   }
-  @media (max-width: 1024px) {
-    /* background-color: aqua; */
-
-    /* height: ${({ $list }) => {
-      switch ($list) {
-        case 'VR/AR':
-          return '6342px';
-        case 'e-Learning':
-          return '2662px';
-        case 'R&D':
-          return '885px';
-        default:
-          return '0px'; // 기본값
-      }
-    }}; */
-    /* height: 6342px; */
-    /* height: 2662px; */
-    ul {
-      /* console.log(11, $listTitle); */
-      /* height: ${({ $listTitle }) => {
-        switch ($listTitle) {
-          case 'e-Learning':
-            return '2624px';
-          case 'R&D':
-            return '706px';
-          default:
-            return '0px'; // 기본값
-        }
-      }}; */
-      /* min-height: 2624px; */
-      /* min-height: 2624px; */
-    }
-    /* height: 706px; */
-
-    /* height: 100%; */
-    /* height: 8929px; */
-  }
 
   @media (min-width: 1025px) {
     max-width: 1920px;
@@ -107,6 +70,7 @@ export const PortfolioListBox = styled.div`
         /* width: 400px;
         height: 382px; */
         /* aspect-ratio: 469 / 369; */
+        /* height: ${(props) => props.abc + 'px'}; */
 
         & .thumbnail img {
           width: 100%;

@@ -1,9 +1,13 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
+import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const StyledAboutImg = styled.div`
   @media (min-width: 1025px) {
+    position: relative;
+    overflow: hidden;
     width: 50%;
+    /* overflow: hidden; */
     & img {
       width: 100%;
       max-width: 960px;
@@ -20,10 +24,20 @@ const StyledAboutImg = styled.div`
 `;
 
 const AboutImg = forwardRef((props, ref) => {
+  const useMobileTablet = useResponsiveMax1024();
   return (
     <StyledAboutImg>
       {/* <img ref={ref} src={data && data.img} alt="" /> */}
-      <img className="slideUp" ref={ref} src={props.img} alt="" />
+      {useMobileTablet ? (
+        <>
+          <img className="slideUp" ref={ref} src={props.img} loading="lazy" alt="" />
+        </>
+      ) : (
+        <>
+          <div className="imgCover" ref={ref}></div>
+          <img src={props.img} loading="lazy" alt="" />
+        </>
+      )}
     </StyledAboutImg>
   );
 });

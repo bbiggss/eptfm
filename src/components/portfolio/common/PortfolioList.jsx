@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PortfolioListBox } from '../../../assets/styles/portfolio/portfolioList.styled';
 import PortfolioLists from './PortfolioLists';
@@ -185,16 +185,51 @@ const PortfolioList = (data) => {
       updatePortfolioItems(portfolioItems2);
     }
   }, [location.pathname, isMobile, isTablet, isMobileTablet]);
+
+  // 높이값 설정을 위해
+  const ulRef = useRef(null);
+  const [liHeight, setLiHeight] = useState(0);
+
+  // 각 li의 높이 계산
+  const calculateHeight = () => {
+    if (ulRef.current) {
+      // const ulHeight = ulRef.current.offsetHeight;
+      // console.log('전체 ul 높이:', ulHeight);
+      // setUlHeight(ulHeight);
+
+      const listItems = ulRef.current.children;
+      const heights = Array.from(listItems).map((li) => li.offsetHeight);
+      if (heights.length !== 0 && heights[0] !== 0) {
+        console.log('li 개별 높이:', heights);
+        console.log('li 개별 높이:', heights[0]);
+        console.log('갯수', heights.length);
+        setLiHeight(heights[0]);
+      }
+    }
+  };
+
+  useEffect(() => {
+    // 컴포넌트가 마운트되면 높이 계산
+    calculateHeight();
+
+    // 반응형을 위한 리사이즈 이벤트 리스너
+    window.addEventListener('resize', calculateHeight);
+    return () => window.removeEventListener('resize', calculateHeight);
+  }, [portfolioItems]);
+
   return (
     <>
       <Breadcrumb />
+      {/* <PortfolioListBox $liheight={liHeight}> */}
       <PortfolioListBox>
         <div className="topTitleBox">
           <p className="pageTitle robotoMedium">PORTFOLIO</p>
           <p className="fieldTitle RobotoLight">{listTitle}</p>
         </div>
 
-        <ul>{Array.isArray(portfolioItems) && portfolioItems.map((item, index) => <PortfolioLists data={item} key={index} index={index} />)}</ul>
+        <ul ref={ulRef}>
+          {Array.isArray(portfolioItems) && portfolioItems.map((item, index) => <PortfolioLists data={item} key={index} index={index} />)}
+        </ul>
       </PortfolioListBox>
 
       {/* {listTitle && (

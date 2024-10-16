@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import usePc from './usePc';
 
-const useIntersectionObserver = () => {
+const useFastIntersectionObserver = () => {
   const isPc = usePc();
   const refs = useRef([]);
   useEffect(() => {
@@ -14,28 +14,21 @@ const useIntersectionObserver = () => {
         // console.log(123, refs.current[0].name);
 
         if (entry.isIntersecting && isPc && index !== -1) {
-          const delay = index * 0.3;
+          const delay = index * 0.1;
           entry.target.style.transitionDelay = `${delay}s`;
 
           let arr = entry.target.classList.value.split(' ');
 
-          console.log('entry: ', entry.target.classList.value);
           if (entry.target.classList.value === 'slideUp') {
             entry.target.classList.add('animate');
           } else if (entry.target.classList.value === 'imgCover') {
             entry.target.classList.add('topAnimate');
           } else if (arr.includes('opacity0')) {
             entry.target.classList.add('opacity1translateY0');
+            // console.log('entry: ', entry.target.classList.value);
           } else {
             entry.target.classList.add('opacity1translateY0');
           }
-
-          // if (refs.current[1].name === 'img' && entry.target === refs.current[1].ref) {
-          //   entry.target.classList.add('topAnimate');
-          // } else {
-          //   // 텍스트가 화면에 들어올 때 애니메이션 클래스 추가
-          //   entry.target.classList.add('opacity1translateY0');
-          // }
         }
         // 모바일,태블릿일때
         else if (entry.isIntersecting && !isPc) {
@@ -74,4 +67,4 @@ const useIntersectionObserver = () => {
   return refs;
 };
 
-export default useIntersectionObserver;
+export default useFastIntersectionObserver;
