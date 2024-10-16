@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledAboutDescription = styled.div`
   @media (min-width: 1025px) {
     position: relative;
-    overflow: hidden;
+    overflow-x: clip;
     aspect-ratio: 960 / 1000;
     width: 50%;
     max-width: 960px;
