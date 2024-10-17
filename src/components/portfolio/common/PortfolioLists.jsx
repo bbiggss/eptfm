@@ -14,7 +14,7 @@ const renderTextWithLineBreaks = (text) => {
 
 const PortfolioLists = ({ data, index }) => {
   const location = useLocation();
-  const useIntersectionObserver = useIntersectionObserver();
+  // const useIntersectionObserver = useIntersectionObserver();
 
   return (
     <li>
