@@ -7,30 +7,28 @@ export const BusinessBox = styled.div`
   width: 100%;
   /* background-size: cover; */
 
-  margin-top: 18px;
-
   #businessTitle {
     font-family: 'Roboto-Regular';
   }
 
   @media (min-width: 1025px) {
     height: auto;
-    margin-top: 240px;
-    padding-bottom: 200px;
+    margin-top: clamp(0px, 12.5vw, 240px);
+    padding-bottom: var(--pc-200px);
 
     #container {
       & #businessTitleBox {
         width: 100%;
-        height: 380px;
+        height: clamp(0px, 19.79vw, 380px);
       }
     }
 
     & #businessTitle {
       text-align: center;
       color: #ffffff;
-      font-size: 100px;
+      font-size: var(--pc-100px);
       margin: 0;
-      padding-top: 200px;
+      padding-top: var(--pc-200px);
     }
 
     #contentsWrap {

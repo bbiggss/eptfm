@@ -10,7 +10,9 @@ export const StyledFieldMoveButton = styled.div`
   }
   @media (min-width: 1025px) {
     width: clamp(0px, 19.79vw, 380px);
-    /* 150-16 */
+    a {
+      /* width: 50px; */
+    }
     .pfFieldTag {
       height: var(--pc-90px);
       line-height: var(--pc-90px);
@@ -63,7 +65,6 @@ export const StyledFieldMoveButton = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    /* 150-16 */
     .pfFieldTag {
       /* height: var(--mobile-60px); */
       /* line-height: var(--mobile-60px); */

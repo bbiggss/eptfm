@@ -10,7 +10,7 @@ export const StyledDropDown = styled.div`
     background-color: white;
     width: 100%;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
     li * {
       color: #292929;
       font-family: 'Roboto-Medium';

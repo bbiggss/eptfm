@@ -9,7 +9,6 @@ const StyledButtonWrapper = styled.div`
   @media (max-width: 1024px) {
     margin-top: var(--mobile-60px);
     margin-bottom: var(--mobile-152px);
-    width: 100%;
   }
 `;
 

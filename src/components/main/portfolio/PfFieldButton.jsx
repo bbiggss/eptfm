@@ -6,12 +6,10 @@ const PfFieldButton = forwardRef((props, ref) => {
   return (
     <StyledFieldMoveButton className="slideUp" ref={ref}>
       <Link to={props && props.link}>
-        <div className="pfFieldTag">
+        <span className="pfFieldTag">
           {props && props.title}
           <div className="arrow"></div>
-          {/* <span className="arrow">{'>'}</span> */}
-          {/* <img className="arrow" src={imgSrc} alt="" /> */}
-        </div>
+        </span>
       </Link>
     </StyledFieldMoveButton>
   );

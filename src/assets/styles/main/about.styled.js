@@ -20,7 +20,7 @@ export const AboutBox = styled.div`
 
       p {
         margin: 0;
-        font-size: 100px;
+        font-size: var(--pc-100px);
         letter-spacing: 0;
         color: #191919;
         padding-top: 200px;
