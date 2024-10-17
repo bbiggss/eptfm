@@ -6,6 +6,7 @@ import Breadcrumb from '../../common/breadcrumb/Breadcrumb';
 import useResponsiveMax1024 from './../../hooks/useResponsiveMax1024';
 import useMobile from '../../hooks/useMobile';
 import useTablet from '../../hooks/useTablet';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 const PortfolioList = (data) => {
   const location = useLocation();
@@ -217,14 +218,20 @@ const PortfolioList = (data) => {
     return () => window.removeEventListener('resize', calculateHeight);
   }, [portfolioItems]);
 
+  const refs = useIntersectionObserver();
+
   return (
     <>
       <Breadcrumb />
       {/* <PortfolioListBox $liheight={liHeight}> */}
       <PortfolioListBox>
         <div className="topTitleBox">
-          <p className="pageTitle robotoMedium">PORTFOLIO</p>
-          <p className="fieldTitle RobotoLight">{listTitle}</p>
+          <p className="slideUp pageTitle robotoMedium" ref={(el) => (refs.current[0] = { ref: el })}>
+            PORTFOLIO
+          </p>
+          <p className="slideUp fieldTitle RobotoLight" ref={(el) => (refs.current[1] = { ref: el })}>
+            {listTitle}
+          </p>
         </div>
 
         <ul ref={ulRef}>

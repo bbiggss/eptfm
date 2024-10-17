@@ -45,6 +45,7 @@ export const StyledAboutDescription = styled.div`
     .textsSubTitle,
     .textsContents {
       /* transform: translateX(300px); */
+      opacity: 0;
       transform: ${(props) => {
         if (props.$textsTitle === 'VISION') return 'translateX(300px)';
         else return 'translateX(-300px)';

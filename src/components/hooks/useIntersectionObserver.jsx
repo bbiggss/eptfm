@@ -19,7 +19,7 @@ const useIntersectionObserver = () => {
 
           let arr = entry.target.classList.value.split(' ');
 
-          console.log('entry: ', entry.target.classList.value);
+          // console.log('entry: ', entry.target.classList.value);
           if (entry.target.classList.value === 'slideUp') {
             entry.target.classList.add('animate');
           } else if (entry.target.classList.value === 'imgCover') {
