@@ -99,5 +99,18 @@ export const StyledAboutDescription = styled.div`
         text-align: left;
       }
     }
+
+    .textsTitle,
+    .textsSubTitle,
+    .textsContents {
+      /* transform: translateX(300px); */
+      opacity: 0;
+      transform: translateY(100px);
+      transition: opacity 2s ease, transform 2s ease;
+    }
+    .opacity1translateY0 {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;

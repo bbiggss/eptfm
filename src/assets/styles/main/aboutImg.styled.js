@@ -19,7 +19,7 @@ export const StyledAboutImg = styled.div`
         if (props.$left) return 'top left';
         else return 'top right';
       }};
-      transition: transform 1s ease, opacity 1s ease;
+      transition: transform 1.5s ease, opacity 1.5s ease;
     }
     .magnifyDone {
       transform: scale(1) translate(0, 0);

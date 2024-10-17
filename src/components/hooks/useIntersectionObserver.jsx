@@ -15,7 +15,7 @@ const useIntersectionObserver = () => {
 
         if (entry.isIntersecting && isPc && index !== -1) {
           // const delay = index * 0.3;
-          const delay = index * 0.1;
+          const delay = index * 0.2;
           entry.target.style.transitionDelay = `${delay}s`;
 
           let arr = entry.target.classList.value.split(' ');
