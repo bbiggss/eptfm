@@ -23,6 +23,26 @@ export const StyledFieldMoveButton = styled.div`
 
       color: #767676;
       font-size: clamp(0px, 1.35vw, 26px);
+
+      transition: background-color 0.5s ease, border-radius 0.5s ease-in-out;
+    }
+    .pfFieldTag:hover {
+      /* background-color: yellow; */
+      background-color: #48c2c5;
+      border-color: #48c2c5;
+      border-radius: 999px;
+      color: #ffffff;
+      .arrow {
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: clamp(0px, 0.47vw, 9px); /* Adjust the size as needed */
+        height: clamp(0px, 0.94vw, 18px); /* Adjust the size as needed */
+        background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow_white.png);
+        background-size: contain;
+      }
     }
     a {
       display: block;
@@ -40,25 +60,6 @@ export const StyledFieldMoveButton = styled.div`
       background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow.png);
       background-size: contain;
       background-repeat: no-repeat;
-    }
-    :hover {
-      background-color: #48c2c5;
-      border-radius: 999px;
-      .pfFieldTag {
-        color: #ffffff;
-        border-color: transparent;
-      }
-      .arrow {
-        position: absolute;
-        right: 40px;
-        top: 50%;
-        transform: translateY(-50%);
-
-        width: clamp(0px, 0.47vw, 9px); /* Adjust the size as needed */
-        height: clamp(0px, 0.94vw, 18px); /* Adjust the size as needed */
-        background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow_white.png);
-        background-size: cover;
-      }
     }
   }
   @media (max-width: 1024px) {
@@ -78,6 +79,26 @@ export const StyledFieldMoveButton = styled.div`
 
       color: #767676;
       font-size: clamp(18px, 3.8vw, 100px);
+
+      transition: background-color 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    }
+    .pfFieldTag:hover {
+      background-color: #48c2c5;
+      border-color: #48c2c5;
+      border-radius: 999px;
+      color: #ffffff;
+      .arrow {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 8px; /* Adjust the size as needed */
+        height: 16px; /* Adjust the size as needed */
+        background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow_white.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
     }
     a {
       display: block;
@@ -95,26 +116,6 @@ export const StyledFieldMoveButton = styled.div`
       background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow.png);
       background-size: contain;
       background-repeat: no-repeat;
-    }
-    :hover {
-      background-color: #48c2c5;
-      border-radius: 999px;
-      .pfFieldTag {
-        color: #ffffff;
-        border-color: transparent;
-      }
-      .arrow {
-        position: absolute;
-        right: 25px;
-        top: 50%;
-        transform: translateY(-50%);
-
-        width: 8px; /* Adjust the size as needed */
-        height: 16px; /* Adjust the size as needed */
-        background-image: url(${process.env.PUBLIC_URL}/assets/images/main/portfolio_arrow_white.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-      }
     }
   }
 `;

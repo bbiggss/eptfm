@@ -4,9 +4,9 @@ import { StyledFieldMoveButton } from '../../../assets/styles/main/portfolioFiel
 
 const PfFieldButton = forwardRef((props, ref) => {
   return (
-    <StyledFieldMoveButton>
+    <StyledFieldMoveButton className="slideUp" ref={ref}>
       <Link to={props && props.link}>
-        <div className="pfFieldTag slideUp" ref={ref}>
+        <div className="pfFieldTag">
           {props && props.title}
           <div className="arrow"></div>
           {/* <span className="arrow">{'>'}</span> */}

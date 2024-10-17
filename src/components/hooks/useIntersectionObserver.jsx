@@ -14,7 +14,8 @@ const useIntersectionObserver = () => {
         // console.log(123, refs.current[0].name);
 
         if (entry.isIntersecting && isPc && index !== -1) {
-          const delay = index * 0.3;
+          // const delay = index * 0.3;
+          const delay = index * 0.1;
           entry.target.style.transitionDelay = `${delay}s`;
 
           let arr = entry.target.classList.value.split(' ');
@@ -26,6 +27,8 @@ const useIntersectionObserver = () => {
             entry.target.classList.add('topAnimate');
           } else if (arr.includes('opacity0')) {
             entry.target.classList.add('opacity1translateY0');
+          } else if (entry.target.classList.value === 'magnify') {
+            entry.target.classList.add('magnifyDone');
           } else {
             entry.target.classList.add('opacity1translateY0');
           }

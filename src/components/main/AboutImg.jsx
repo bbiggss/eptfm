@@ -1,32 +1,11 @@
 import React, { forwardRef } from 'react';
-import styled from 'styled-components';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
-
-const StyledAboutImg = styled.div`
-  @media (min-width: 1025px) {
-    position: relative;
-    overflow: hidden;
-    width: 50%;
-    /* overflow: hidden; */
-    & img {
-      width: 100%;
-      max-width: 960px;
-      max-height: 1000px;
-    }
-  }
-  @media (max-width: 1024px) {
-    order: 1;
-    img {
-      width: 100%;
-      aspect-ratio: 315 / 315;
-    }
-  }
-`;
+import { StyledAboutImg } from '../../assets/styles/main/aboutImg.styled';
 
 const AboutImg = forwardRef((props, ref) => {
   const useMobileTablet = useResponsiveMax1024();
   return (
-    <StyledAboutImg>
+    <StyledAboutImg $left={props.$left} $right={props.$right}>
       {/* <img ref={ref} src={data && data.img} alt="" /> */}
       {useMobileTablet ? (
         <>
@@ -34,8 +13,8 @@ const AboutImg = forwardRef((props, ref) => {
         </>
       ) : (
         <>
-          <div className="imgCover" ref={ref}></div>
-          <img src={props.img} loading="lazy" alt="" />
+          {/* <div className="imgCover" ref={ref}></div> */}
+          <img className="magnify" src={props.img} ref={ref} loading="lazy" alt="" />
         </>
       )}
     </StyledAboutImg>

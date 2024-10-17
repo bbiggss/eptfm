@@ -253,7 +253,7 @@ a {
 animation-name: slidein; */
 
 @media (min-width: 1025px) {
-  .imgCover {
+  /* .imgCover {
     position: absolute;
     left: 0;
     width: 100%;
@@ -262,7 +262,7 @@ animation-name: slidein; */
     z-index: 1;
     transform: translateY(0);
     transition: transform 2s ease;
-  }
+  } */
   .topAnimate {
     transform: translateY(-1000px);
   }
@@ -275,11 +275,11 @@ animation-name: slidein; */
     opacity: 1;
     transform: translateY(0);
   }
-
-  .rightToLeftAnimate {
-    opacity: 1;
-    transform: translateX(0);
-  }
+}
+.rightToLeftAnimate {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .slideUp {
@@ -291,7 +291,11 @@ animation-name: slidein; */
 
 .opacity0 {
   opacity: 0;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
+}
+.opacity_05s {
+  opacity: 0;
+  transition: opacity 5s ease;
 }
 
 .opacity1translateY0 {
@@ -302,4 +306,8 @@ animation-name: slidein; */
 .animate {
   opacity: 1;
   transform: translate(0);
+}
+
+.opacityOn {
+  opacity: 1;
 }

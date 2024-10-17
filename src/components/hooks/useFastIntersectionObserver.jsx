@@ -14,8 +14,9 @@ const useFastIntersectionObserver = () => {
         // console.log(123, refs.current[0].name);
 
         if (entry.isIntersecting && isPc && index !== -1) {
-          const delay = index * 0.1;
-          entry.target.style.transitionDelay = `${delay}s`;
+          // const delay = index * 0.1;
+          // entry.target.style.transitionDelay = `${delay}s`;
+          entry.target.style.transitionDelay = `0s`;
 
           let arr = entry.target.classList.value.split(' ');
 

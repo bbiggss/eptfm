@@ -18,6 +18,7 @@ export const StyledMainPortfolio = styled.div`
     width: 100%;
     max-width: 1920px;
     position: relative;
+    overflow: hidden;
 
     .backgroundImg {
       position: absolute;
