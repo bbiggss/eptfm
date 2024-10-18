@@ -1,59 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { AboutBox } from '../../assets/styles/main/about.styled';
 import AboutImg from './AboutImg';
 import AboutDescription from './AboutDescription';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 const About = () => {
-  // const [animateClass, setAnimateClass] = useState('');
-
-  //   const elements = document.querySelectorAll('.aboutTitle p, .aboutContents img');
-  //   let observer = new IntersectionObserver(
-  //     (entries, observer) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           const element = entry.target;
-
-  //           // console.log(element);
-  //           if (element.tagName === 'IMG') {
-  //             element.onload = () => applyAnimation(element);
-  //             if (element.complete) {
-  //               element.onload();
-  //             }
-  //           } else {
-  //             applyAnimation(element);
-  //           }
-  //           observer.unobserve(element);
-  //         }
-  //       });
-  //     },
-  //     { threshold: 0.2 }
-  //   );
-
-  //   elements.forEach((el) => {
-  //     observer.observe(el);
-  //   });
-
-  //   function applyAnimation(element) {
-  //     // const delay = Array.from(elements).indexOf(element) * 500; // 100ms 간격으로 적용
-  //     const index = Array.from(elements).indexOf(element);
-  //     const delay = index * 500;
-
-  //     setTimeout(() => {
-  //       setAnimateClass((preveState) => ({
-  //         ...preveState,
-  //         [index]: true,
-  //       }));
-  //       // if (element.className === 'pTag') {
-  //       //   console.log('ptag: ', element);
-  //       // } else if (element.className === 'ab') {
-  //       //   console.log('img:', element);
-  //       // }
-  //       // setAnimateClass('animate');
-  //     }, delay);
-  // }
   const refs = useIntersectionObserver();
   const isMobileTablet = useResponsiveMax1024();
+
   return (
     <AboutBox id="about">
       <div className="aboutTitle">

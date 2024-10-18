@@ -27,9 +27,10 @@ const useIntersectionObserver = () => {
             entry.target.classList.add('topAnimate');
           } else if (arr.includes('opacity0')) {
             entry.target.classList.add('opacity1translateY0');
-          } else if (entry.target.classList.value === 'magnify') {
+          } else if (arr.includes('magnify')) {
             entry.target.classList.add('magnifyDone');
           } else {
+            console.log(entry.target.classList.value);
             entry.target.classList.add('opacity1translateY0');
           }
 
