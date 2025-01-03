@@ -5,7 +5,7 @@ const StyledTransportationWrapper = styled.div`
   @media (min-width: 1025px) {
     display: flex;
     margin-right: ${(props) => {
-      if (props.$pcMarginRight) return 'clamp(0px, 17.29vw, 332px)';
+      if (props.$pcMarginRight) return 'clamp(0px, 17.29vw, 250px)';
     }};
     .imgWrapper {
       text-align: center;
@@ -23,7 +23,7 @@ const StyledTransportationWrapper = styled.div`
       font-size: clamp(0px, 1.15vw, 22px);
       word-break: keep-all;
 
-      margin-top: 5px;
+      margin-top: 8px;
       span {
         color: #292929;
       }
