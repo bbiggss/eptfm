@@ -31,7 +31,7 @@ const Footer = () => {
             <span className="customSpan">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
             <p className="mail">Mail : eplatform@naver.com </p>
           </div>
-          <p>Address : 경기도 고양시 덕양구 청초로 10 B동 1112호</p>
+          <p>Address : 경기도 고양시 덕양구 청초로 10 B동 1111호, 1112호</p>
         </div>
         <div className="copyright">ⓒ EPLATFORM ALL RIGHTS RESERVED.</div>
       </div>
