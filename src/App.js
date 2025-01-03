@@ -4,7 +4,6 @@ import Header from './components/common/header/Header';
 import Main from './components/main/Main';
 import Footer from './components/common/footer/Footer';
 import Video from './components/main/HomeVideo';
-import PortfolioList from './components/portfolio/common/PortfolioList';
 import { HeaderSpacer } from './assets/styles/common/header.styled';
 import Contact from './components/contactUs/Contact';
 import React, { useEffect, useState } from 'react';
@@ -52,6 +51,12 @@ import PortfolioListButton from './components/common/button/PortfolioListButton'
 
 // import ScrollToTop from './components/common/scrollTop/ScrollTop';
 import ScrollToTopOrRestore from './components/common/scrollTop/ScrollToTopOrRestore';
+
+import PortfolioList from './components/portfolio/common/PortfolioList';
+// import VrArPortfolioList from './components/portfolio/list/VrArPortfolioList';
+// import ELearningPortfolioList from './components/portfolio/list/ELearningPortfolioList';
+// import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
+// import Test from './components/contactUs/Test';
 
 function App() {
   const location = useLocation();
@@ -159,6 +164,10 @@ function App() {
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
         <Route path="/portfolio/R&D" element={<PortfolioList />} />
+
+        {/* <Route path="/portfolio/VrAr" element={<VrArPortfolioList />} />
+        <Route path="/portfolio/e-Learning" element={<ELearningPortfolioList />} />
+        <Route path="/portfolio/R&D" element={<RnDPortfolioList />} /> */}
 
         {/* vr/ar */}
         {/* <Route path="/portfolio/VrAr/:id" element={<VrAr />} /> */}

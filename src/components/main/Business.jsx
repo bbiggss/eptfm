@@ -3,7 +3,7 @@ import BusinessItems from './BusinessItems';
 import { BusinessBox } from '../../assets/styles/main/business.styled';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 const Business = () => {
-  const refs = useIntersectionObserver();
+  const refs = useIntersectionObserver(0.1);
   return (
     <BusinessBox id="business">
       <div id="container">

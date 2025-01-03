@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import usePc from './usePc';
 
-const useIntersectionObserver = () => {
+const useIntersectionObserver = (delaySecond) => {
   const isPc = usePc();
   const refs = useRef([]);
   useEffect(() => {
@@ -15,13 +15,14 @@ const useIntersectionObserver = () => {
 
         if (entry.isIntersecting && isPc && index !== -1) {
           // const delay = index * 0.3;
-          const delay = index * 0.1;
+          const delay = index * delaySecond;
           entry.target.style.transitionDelay = `${delay}s`;
 
           let arr = entry.target.classList.value.split(' ');
 
           // console.log('entry: ', entry.target.classList.value);
-          if (entry.target.classList.value === 'slideUp') {
+          // console.log('entry: ', entry.target);
+          if (arr.includes('slideUp')) {
             entry.target.classList.add('animate');
           } else if (entry.target.classList.value === 'imgCover') {
             entry.target.classList.add('topAnimate');
@@ -29,9 +30,10 @@ const useIntersectionObserver = () => {
             entry.target.classList.add('opacity1translateY0');
           } else if (arr.includes('magnify')) {
             entry.target.classList.add('magnifyDone');
+          } else if (arr.includes('hr')) {
+            entry.target.classList.add('hr_expand');
           } else {
-            console.log(entry.target.classList.value);
-            entry.target.classList.add('opacity1translateY0');
+            // entry.target.classList.add('opacity1translateY0');
           }
 
           // if (refs.current[1].name === 'img' && entry.target === refs.current[1].ref) {

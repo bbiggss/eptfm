@@ -14,7 +14,7 @@ const AboutImg = forwardRef((props, ref) => {
 
   useEffect(() => {
     if (isMobileTablet !== initialResolution) {
-      console.log('isMobileTablet', isMobileTablet);
+      // console.log('isMobileTablet', isMobileTablet);
       // console.log('initialResolution', initialResolution);
       if (isMobileTablet === false) {
         setMagnify(true);
@@ -24,9 +24,9 @@ const AboutImg = forwardRef((props, ref) => {
     }
   });
 
-  useEffect(() => {
-    console.log('magnify', magnify);
-  }, [magnify]);
+  // useEffect(() => {
+  //   console.log('magnify', magnify);
+  // }, [magnify]);
   return (
     <StyledAboutImg $left={props.$left} $right={props.$right}>
       {/* <img ref={ref} src={data && data.img} alt="" /> */}

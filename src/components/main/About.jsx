@@ -5,7 +5,7 @@ import AboutDescription from './AboutDescription';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 const About = () => {
-  const refs = useIntersectionObserver();
+  const refs = useIntersectionObserver(0.1);
   const isMobileTablet = useResponsiveMax1024();
 
   return (
