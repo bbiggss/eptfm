@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+// import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 const renderTextWithLineBreaks = (text) => {
   return text.split('\n').map((line, index) => (
@@ -12,13 +12,15 @@ const renderTextWithLineBreaks = (text) => {
   ));
 };
 
-const PortfolioLists = ({ data, index }) => {
+// const PortfolioLists = forwardRef(({ data }, ref) => {
+const PortfolioLists = ({ data }) => {
   const location = useLocation();
-  // const useIntersectionObserver = useIntersectionObserver();
+  // const refs = useIntersectionObserver(100);
+  // console.log('Ref', ref);
 
   return (
+    // <li className="slideUp" ref={(el) => (refs.current[0] = { ref: el })}>
     <li>
-      {/* <Link to={`/portfolio/${location.pathname.split('/')[2]}/${index + 1}`}> */}
       <Link to={`/portfolio/${location.pathname.split('/')[2]}/${data.pfItemSmallTitle}`}>
         <div className="thumbnail">
           <img src={`${data.pfItemImg}`} loading="lazy" alt="" />

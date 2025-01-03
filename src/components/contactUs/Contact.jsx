@@ -5,6 +5,7 @@ import Breadcrumb from '../common/breadcrumb/Breadcrumb';
 import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 import useMobile from '../hooks/useMobile';
 import TransportationWrapper from './TransportationWrapper';
+import { config } from '../../config';
 
 const Contact = ({ modalStatus, setModalStatus }) => {
   const isMobile = useMobile();
@@ -65,14 +66,14 @@ const Contact = ({ modalStatus, setModalStatus }) => {
         />
 
         <div className="mapWrap">
-          <a href="https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh" target="_blank" rel="noreferrer">
+          <a href={config.Naver_Map_URL} target="_blank" rel="noreferrer">
             <img src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'map_m' : 'map'}.png`} alt="" />
           </a>
         </div>
         <div className="transportation NanumSquareB">
           <TransportationWrapper pcMarginRight>
             <div className="imgWrapper">
-              <img className="subway" src={`${process.env.PUBLIC_URL}/assets/images/contact/subway.png`} alt="" />
+              <img className="subway" src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'subway_m' : 'subway'}.png`} alt="" />
             </div>
             <p>
               {/* <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역 */}
@@ -81,7 +82,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           </TransportationWrapper>
           <TransportationWrapper>
             <div className="imgWrapper">
-              <img className="bus" src={`${process.env.PUBLIC_URL}/assets/images/contact/bus.png`} alt="" />
+              <img className="bus" src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'bus_m' : 'bus'}.png`} alt="" />
             </div>
             <p>
               {/* <span>버스</span> : 영등포 02, 영등포 05, 7612번 */}

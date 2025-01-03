@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { config } from '../../config';
 
 const StyledContactTextsLinkWrapper = styled.div`
   @media (min-width: 1025px) {
@@ -126,7 +127,7 @@ const ContactTextsLinkBox = (data) => {
       // 모달 on
       data.setModalStatus(true);
     } else {
-      window.open('https://map.naver.com/p/entry/place/1597658006?c=15.15,0,0,0,dh', '_blank');
+      window.open(config.Naver_Map_URL, '_blank');
     }
   };
   return (

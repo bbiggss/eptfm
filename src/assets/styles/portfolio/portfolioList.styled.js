@@ -3,22 +3,36 @@ import styled from 'styled-components';
 // const mobile_PortfolioImgWidth = '315px';
 const mobile_PortfolioImgWidth = 'clamp(315px, 55vw, 600px)';
 export const PortfolioListBox = styled.div`
+  overflow: hidden;
   .div1 {
     width: 100%;
     background-color: gold;
     height: 1000px;
   }
 
-  .pageTitle,
-  .fieldTitle {
+  .pageTitle {
+    color: #191919;
+    font-family: 'Roboto-Medium';
     text-align: center;
   }
 
-  .pageTitle {
-    color: #191919;
-  }
   .fieldTitle {
     color: #292929;
+    font-family: 'Roboto-Light';
+    text-align: center;
+  }
+
+  .bigToOriginal {
+    animation: shrinkToOriginal 2s ease forwards;
+  }
+
+  @keyframes shrinkToOriginal {
+    from {
+      transform: scale(1.3);
+    }
+    to {
+      transform: scale(1);
+    }
   }
 
   @media (min-width: 1556px) {
@@ -26,6 +40,10 @@ export const PortfolioListBox = styled.div`
     /* height: 3688px; */
     ul {
       grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+    .thumbnail {
+      height: clamp(0px, 13.75vw, 264px);
+      overflow: hidden;
     }
   }
   @media (min-width: 1025px) and (max-width: 1555px) {
@@ -57,6 +75,7 @@ export const PortfolioListBox = styled.div`
     ul {
       width: 80%;
       margin: auto;
+      /* height: 2168px; */
 
       display: grid;
       justify-content: center;
@@ -64,6 +83,11 @@ export const PortfolioListBox = styled.div`
       gap: 80px 58px;
       /* 앞: 상하간격 뒤: 좌우간격 */
       padding-bottom: 200px;
+      /* height: ${(props) => {
+        if (props.$finalUlHeight !== 0 && props.$finalUlHeight !== false) {
+          return props.$finalUlHeight + 'px';
+        }
+      }}; */
 
       li {
         list-style: none;
@@ -72,9 +96,19 @@ export const PortfolioListBox = styled.div`
         /* aspect-ratio: 469 / 369; */
         /* height: ${(props) => props.abc + 'px'}; */
 
-        & .thumbnail img {
-          width: 100%;
+        .thumbnail {
+          overflow: hidden;
           aspect-ratio: 469 / 264;
+        }
+        .thumbnail img {
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 469 / 264;
+          transition: transform 1s ease;
+          transform: scale(1);
+          &:hover {
+            transform: scale(1.1);
+          }
         }
         & .thumbnailTexts {
           height: 100px;
@@ -129,6 +163,7 @@ export const PortfolioListBox = styled.div`
 
         & .thumbnail img {
           width: ${mobile_PortfolioImgWidth};
+          aspect-ratio: 315 / 177;
           /* height: 177px; */
         }
         & .thumbnailTexts {

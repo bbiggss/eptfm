@@ -245,12 +245,10 @@ const PortfolioList = (data) => {
       <PortfolioListBox>
         {/* <PortfolioListBox> */}
         <div className="topTitleBox">
-          <p className="slideUp pageTitle robotoMedium" ref={(el) => (refs.current[0] = { ref: el })}>
-            PORTFOLIO
-          </p>
-          <p className="slideUp fieldTitle RobotoLight" ref={(el) => (refs.current[1] = { ref: el })}>
-            {listTitle}
-          </p>
+          {/* <p className="slideUp pageTitle robotoMedium" ref={(el) => (refs.current[0] = { ref: el })}> */}
+          <p className="pageTitle robotoMedium">PORTFOLIO</p>
+          {/* <p className="slideUp fieldTitle RobotoLight" ref={(el) => (refs.current[1] = { ref: el })}> */}
+          <p className="fieldTitle RobotoLight">{listTitle}</p>
         </div>
 
         {/* <ul ref={ulRef}> */}

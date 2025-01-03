@@ -6,11 +6,22 @@ export const ContactUsBox = styled.div`
     border-color: rgba(118, 118, 118, 0.5);
     border-width: 1px 0 0 0;
     height: 0px;
+
+    /* width: 0; */
+    /* height: 2px; */
+    /* background-color: rgba(118, 118, 118, 0.5); */
+    /* border: none; */
+    /* margin: 100px auto; */
+    /* transition: width 1s ease-out; */
+    /* transform-origin: center; */
   }
   .mapWrap {
     img {
       width: 100%;
     }
+  }
+  .hr_expand {
+    width: 100%;
   }
 
   @media (min-width: 1025px) {
