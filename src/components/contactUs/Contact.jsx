@@ -59,7 +59,7 @@ const Contact = ({ modalStatus, setModalStatus }) => {
 
         <ContactTextsLinkBox
           mainText={'오시는 길'}
-          subText={'경기도 고양시 덕양구 청초로 10 B동 1112호'}
+          subText={'경기도 고양시 덕양구 청초로 10 B동 1111호, 1112호'}
           popupText={'지도 보기'}
           clickOption={'map'}
         />
