@@ -1,29 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
+import useResponsiveMax1024 from '../hooks/useResponsiveMax1024';
 
 const StyledTransportationWrapper = styled.div`
   @media (min-width: 1025px) {
-    display: flex;
-    margin-right: ${(props) => {
-      if (props.$pcMarginRight) return 'clamp(0px, 17.29vw, 250px)';
-    }};
-    .imgWrapper {
-      text-align: center;
-      flex-shrink: 0;
-      margin-right: 10px;
-      .subway {
-        width: clamp(0px, 1.88vw, 36px);
-      }
-      .bus {
-        width: var(--pc-50px);
-      }
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+
+    .subway {
+      width: clamp(0px, 1.88vw, 36px);
+      margin-right: 8px;
     }
+    .bus {
+      width: var(--pc-50px);
+      margin-right: 10px;
+    }
+
     p {
       color: #767676;
       font-size: clamp(0px, 1.15vw, 22px);
       word-break: keep-all;
 
-      margin-top: 8px;
       span {
         color: #292929;
       }
@@ -35,19 +33,15 @@ const StyledTransportationWrapper = styled.div`
   @media (max-width: 1024px) {
     display: flex;
     align-items: center;
-    .imgWrapper {
-      width: clamp(26px, 6.93vw, 1000px);
-      text-align: center;
-      flex-shrink: 0;
-      margin-right: var(--mobile-15px);
-      .subway {
-        margin-top: var(--mobile-5px);
-        width: var(--mobile-20px);
-      }
-      .bus {
-        margin-top: var(--mobile-5px);
-        width: clamp(26px, 6.93vw, 1000px);
-      }
+    .subway {
+      /* margin-right: clamp(11.67px, 3.11vw, 1000px); */
+      margin-right: calc(clamp(8.21px, 2.19vw, 1000px) + 7px);
+      margin-left: 3px;
+      width: clamp(20px, 5.33vw, 30px);
+    }
+    .bus {
+      margin-right: clamp(8.21px, 2.19vw, 1000px);
+      width: clamp(26px, 6.93vw, 40px);
     }
     p {
       color: #767676;
@@ -63,7 +57,19 @@ const StyledTransportationWrapper = styled.div`
 `;
 
 const TransportationWrapper = (data) => {
-  return <StyledTransportationWrapper $pcMarginRight={data.pcMarginRight}>{data.children}</StyledTransportationWrapper>;
+  const isMobileTablet = useResponsiveMax1024();
+  return (
+    <StyledTransportationWrapper>
+      <img
+        className={data.transit}
+        src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? data.transit + '_m' : data.transit}.png`}
+        alt=""
+      />
+      <p>
+        <span>{data.transitKorean}</span> : {data.transitInfo}
+      </p>
+    </StyledTransportationWrapper>
+  );
 };
 
 export default TransportationWrapper;

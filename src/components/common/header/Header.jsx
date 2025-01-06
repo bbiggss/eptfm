@@ -72,6 +72,7 @@ const Header = (data) => {
               <li className={`dropdown`}>
                 <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
+                  <Link to={'portfolio/INTERACTION'}>INTERACTION</Link>
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>
                   <Link to={'portfolio/e-Learning'}>e-Learning</Link>
                   <Link to={'portfolio/R&D'}>R&D</Link>

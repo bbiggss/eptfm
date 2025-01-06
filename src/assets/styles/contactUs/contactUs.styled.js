@@ -26,8 +26,9 @@ export const ContactUsBox = styled.div`
 
   @media (min-width: 1025px) {
     .transportation {
-      /* background-color: yellow; */
       display: flex;
+      justify-content: space-around;
+
       margin-top: 31px;
       margin-bottom: 202px;
     }

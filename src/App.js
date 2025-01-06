@@ -53,10 +53,9 @@ import PortfolioListButton from './components/common/button/PortfolioListButton'
 import ScrollToTopOrRestore from './components/common/scrollTop/ScrollToTopOrRestore';
 
 import PortfolioList from './components/portfolio/common/PortfolioList';
-// import VrArPortfolioList from './components/portfolio/list/VrArPortfolioList';
-// import ELearningPortfolioList from './components/portfolio/list/ELearningPortfolioList';
-// import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
-// import Test from './components/contactUs/Test';
+import VrArPortfolioList from './components/portfolio/list/VrArPortfolioList';
+import ELearningPortfolioList from './components/portfolio/list/ELearningPortfolioList';
+import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
 
 function App() {
   const location = useLocation();

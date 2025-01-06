@@ -71,24 +71,8 @@ const Contact = ({ modalStatus, setModalStatus }) => {
           </a>
         </div>
         <div className="transportation NanumSquareB">
-          <TransportationWrapper pcMarginRight>
-            <div className="imgWrapper">
-              <img className="subway" src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'subway_m' : 'subway'}.png`} alt="" />
-            </div>
-            <p>
-              {/* <span>지하철</span> : 2호선 영등포구청역 / 5호선 영등포구청역, 양평역 */}
-              <span>지하철</span> : 6호선 디지털미디어시티역, 경의중앙선 수색역
-            </p>
-          </TransportationWrapper>
-          <TransportationWrapper>
-            <div className="imgWrapper">
-              <img className="bus" src={`${process.env.PUBLIC_URL}/assets/images/contact/${isMobileTablet ? 'bus_m' : 'bus'}.png`} alt="" />
-            </div>
-            <p>
-              {/* <span>버스</span> : 영등포 02, 영등포 05, 7612번 */}
-              <span>버스</span> : 지선 7726, 마을 022B, 마을 054
-            </p>
-          </TransportationWrapper>
+          <TransportationWrapper transit={'subway'} transitKorean={'지하철'} transitInfo={'6호선 디지털미디어시티역, 경의중앙선 수색역'} />
+          <TransportationWrapper transit={'bus'} transitKorean={'버스'} transitInfo={'지선 7726, 마을 022B, 마을 054'} />
         </div>
       </div>
     </ContactUsBox>
