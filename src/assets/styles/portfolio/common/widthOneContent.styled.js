@@ -18,6 +18,7 @@ export const WidthOneContent = styled.div`
     }};
     padding-bottom: ${(props) => {
       if (props.$last) return 'var(--pc-200px)';
+      else if (props.$none) return '0px';
       return 'var(--pc-160px)';
     }};
 
@@ -46,6 +47,7 @@ export const WidthOneContent = styled.div`
     }};
     padding-bottom: ${(props) => {
       if (props.$last) return 'var(--mobile-142px)';
+      else if (props.$none) return '0px';
       return 'var(--mobile-80px)';
     }};
   }

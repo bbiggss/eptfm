@@ -167,7 +167,7 @@ const PortfolioList = (data) => {
         },
       ];
       updatePortfolioItems(portfolioItems2);
-    } else {
+    } else if (location.pathname.split('/')[2] === 'R&D') {
       updateListTitle('R&D');
       const portfolioItems2 = [
         {
@@ -181,6 +181,21 @@ const PortfolioList = (data) => {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img2.png`,
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교실혁명 강의교안',
+        },
+      ];
+      updatePortfolioItems(portfolioItems2);
+    } else {
+      updateListTitle('Interaction');
+      const portfolioItems2 = [
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/list/hero.png`,
+          pfItemBigTitle: '환경교육학술정보원',
+          pfItemSmallTitle: `${'나무 쌓기: 낱말 만들기 놀이'}`,
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img1.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: '2',
         },
       ];
       updatePortfolioItems(portfolioItems2);

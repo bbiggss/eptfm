@@ -72,7 +72,7 @@ const Header = (data) => {
               <li className={`dropdown`}>
                 <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
-                  <Link to={'portfolio/INTERACTION'}>INTERACTION</Link>
+                  <Link to={'portfolio/Interaction'}>Interaction</Link>
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>
                   <Link to={'portfolio/e-Learning'}>e-Learning</Link>
                   <Link to={'portfolio/R&D'}>R&D</Link>
@@ -90,6 +90,10 @@ const Header = (data) => {
           <NavBox setShowDropDown={setShowDropDown} title={'BUSINESS'} link={'/#business'} />
           <li className="portfolioLi">
             <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
+
+            <Link onClick={() => dropDownClose()} to={'portfolio/Interaction'}>
+              Interaction
+            </Link>
             <Link onClick={() => dropDownClose()} to={'portfolio/VrAr'}>
               VR/AR
             </Link>

@@ -56,6 +56,7 @@ import PortfolioList from './components/portfolio/common/PortfolioList';
 import VrArPortfolioList from './components/portfolio/list/VrArPortfolioList';
 import ELearningPortfolioList from './components/portfolio/list/ELearningPortfolioList';
 import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
+import WordBuildingGame from './components/portfolio/Interaction/01/WordBuildingGame';
 
 function App() {
   const location = useLocation();
@@ -163,6 +164,7 @@ function App() {
         <Route path="/portfolio/VrAr" element={<PortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<PortfolioList />} />
         <Route path="/portfolio/R&D" element={<PortfolioList />} />
+        <Route path="/portfolio/Interaction" element={<PortfolioList />} />
 
         {/* <Route path="/portfolio/VrAr" element={<VrArPortfolioList />} />
         <Route path="/portfolio/e-Learning" element={<ELearningPortfolioList />} />
@@ -205,6 +207,9 @@ function App() {
         {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
         <Route path="/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택" element={<EnvironmentalLabelingCertification />} />
         <Route path="/portfolio/R&D/교실혁명 강의교안" element={<ClassroomRevolutionLessonPlans />} />
+
+        {/* Interaction */}
+        <Route path="/portfolio/Interaction/나무 쌓기: 낱말 만들기 놀이" element={<WordBuildingGame />} />
 
         <Route path="/contactUs" element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />} />
 
