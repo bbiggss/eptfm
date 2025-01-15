@@ -95,7 +95,7 @@ const Breadcrumb = ({ style, font }) => {
             <li style={font}>{'>'}</li>
             <li>
               <Link style={font} to={`/portfolio/${subCategory === 'VR/AR' ? 'VrAr' : subCategory}`}>
-                {subCategory === 'Interaction' ? 'INTERACTION GAME' : subCategory}
+                {subCategory === 'InteractionGame' ? 'INTERACTION GAME' : subCategory}
               </Link>
             </li>
           </>

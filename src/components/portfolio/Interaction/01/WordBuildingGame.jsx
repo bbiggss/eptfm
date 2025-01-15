@@ -126,15 +126,19 @@ const WordBuildingGame = () => {
         pcHeight={'1920 / 1080'}
         // tabletHeight={''}
         mobileHeight={'375 / 450'}
-        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
       />
       <div className="imgWrapper">
         <img
           className="consonant"
-          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/consonant.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/consonant.png`}
           alt=""
         />
-        <img className="vowel" src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/vowel.png`} alt="" />
+        <img
+          className="vowel"
+          src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/vowel.png`}
+          alt=""
+        />
       </div>
       <div className="introductionWrapper">
         <PortfolioIntroductionTitle
@@ -158,7 +162,7 @@ const WordBuildingGame = () => {
 
       <div className="maxWidth1080Wrapper">
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/1.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/1.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -169,7 +173,7 @@ const WordBuildingGame = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/2.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/2.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -180,7 +184,7 @@ const WordBuildingGame = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/3.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/3.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -191,7 +195,7 @@ const WordBuildingGame = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/4.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/4.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -202,7 +206,7 @@ const WordBuildingGame = () => {
           />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/5.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/5.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -214,10 +218,10 @@ const WordBuildingGame = () => {
         </WidthOneContent>
 
         <WidthOneContent $none>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/6.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/6.png`} />
         </WidthOneContent>
         <WidthOneContent>
-          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group1/7.png`} />
+          <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group1/7.png`} />
           <CustomText
             style={{ whiteSpace: 'nowrap' }}
             text={
@@ -230,7 +234,7 @@ const WordBuildingGame = () => {
 
         <div className="colorWrapper">
           <WidthOneContent>
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group2/1.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group2/1.png`} />
             <CustomText
               style={{ whiteSpace: 'nowrap' }}
               text={
@@ -241,7 +245,7 @@ const WordBuildingGame = () => {
             />
           </WidthOneContent>
           <WidthOneContent>
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group2/2.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group2/2.png`} />
             <CustomText
               style={{ whiteSpace: 'nowrap' }}
               text={
@@ -252,10 +256,10 @@ const WordBuildingGame = () => {
             />
           </WidthOneContent>
           <WidthOneContent $none>
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group2/3.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group2/3.png`} />
           </WidthOneContent>
           <WidthOneContent $last>
-            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/detail/01_WordBuildingGame/group2/4.png`} />
+            <Img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/group2/4.png`} />
             <CustomText
               style={{ whiteSpace: 'nowrap' }}
               text={

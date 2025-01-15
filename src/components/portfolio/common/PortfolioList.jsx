@@ -7,6 +7,7 @@ import useResponsiveMax1024 from './../../hooks/useResponsiveMax1024';
 import useMobile from '../../hooks/useMobile';
 import useTablet from '../../hooks/useTablet';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { config } from '../../../config';
 
 const PortfolioList = (data) => {
   const location = useLocation();
@@ -185,17 +186,17 @@ const PortfolioList = (data) => {
       ];
       updatePortfolioItems(portfolioItems2);
     } else {
-      updateListTitle('Interaction');
+      updateListTitle('INTERACTION GAME');
       const portfolioItems2 = [
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/Interaction/list/hero.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img1.png`,
           pfItemBigTitle: '환경교육학술정보원',
-          pfItemSmallTitle: `${'나무 쌓기: 낱말 만들기 놀이'}`,
+          pfItemSmallTitle: config.interactionGame1,
         },
         {
-          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img1.png`,
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img2.png`,
           pfItemBigTitle: '한국교육학술정보원',
-          pfItemSmallTitle: '2',
+          pfItemSmallTitle: config.interactionGame2,
         },
       ];
       updatePortfolioItems(portfolioItems2);

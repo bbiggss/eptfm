@@ -72,7 +72,7 @@ const Header = (data) => {
               <li className={`dropdown`}>
                 <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
-                  <Link to={'portfolio/Interaction'}>Interaction</Link>
+                  <Link to={'portfolio/InteractionGame'}>INTERACTION GAME</Link>
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>
                   <Link to={'portfolio/e-Learning'}>e-Learning</Link>
                   <Link to={'portfolio/R&D'}>R&D</Link>
@@ -91,8 +91,8 @@ const Header = (data) => {
           <li className="portfolioLi">
             <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
 
-            <Link onClick={() => dropDownClose()} to={'portfolio/Interaction'}>
-              Interaction
+            <Link onClick={() => dropDownClose()} to={'portfolio/InteractionGame'}>
+              INTERACTION GAME
             </Link>
             <Link onClick={() => dropDownClose()} to={'portfolio/VrAr'}>
               VR/AR
