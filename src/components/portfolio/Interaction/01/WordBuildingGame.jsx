@@ -13,6 +13,9 @@ import Img from '../../common/Img';
 
 const StyledWordBuildingGame = styled.div`
   @media (min-width: 1025px) {
+    max-width: 1920px;
+    position: relative;
+    margin: auto;
     .maxWidth1080Wrapper img {
       max-width: 1080px;
       width: 56.25vw;
