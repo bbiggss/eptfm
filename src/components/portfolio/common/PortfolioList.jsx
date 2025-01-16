@@ -187,6 +187,7 @@ const PortfolioList = (data) => {
       updatePortfolioItems(portfolioItems2);
     } else {
       updateListTitle('INTERACTION GAME');
+
       const portfolioItems2 = [
         {
           pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img1.png`,
@@ -198,7 +199,33 @@ const PortfolioList = (data) => {
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: config.interactionGame2,
         },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img3.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: config.interactionGame3,
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img4.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: config.interactionGame4,
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img5.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: config.interactionGame5,
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img6.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: config.interactionGame6,
+        },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/list/list4_img7.png`,
+          pfItemBigTitle: '한국교육학술정보원',
+          pfItemSmallTitle: config.interactionGame7,
+        },
       ];
+
       updatePortfolioItems(portfolioItems2);
     }
   }, [location.pathname, isMobile, isTablet, isMobileTablet]);

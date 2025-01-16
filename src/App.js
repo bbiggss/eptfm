@@ -59,6 +59,11 @@ import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
 import WordBuildingGame from './components/portfolio/Interaction/01/WordBuildingGame';
 import SnakeLogGame from './components/portfolio/Interaction/02/SnakeLogGame';
 import { config } from './config';
+import SentenceTravelGame from './components/portfolio/Interaction/03/SentenceTravelGame';
+import HighHighUpToThe9thFloor from './components/portfolio/Interaction/04/HighHighUpToThe9thFloor';
+import WhoIsTheFastest from './components/portfolio/Interaction/05/WhoIsTheFastest';
+import ShapeDomino from './components/portfolio/Interaction/06/ShapeDomino';
+import BingoBingo from './components/portfolio/Interaction/07/BingoBingo';
 
 function App() {
   const location = useLocation();
@@ -213,6 +218,11 @@ function App() {
         {/* InteractionGame */}
         <Route path={`/portfolio/InteractionGame/${config.interactionGame1}`} element={<WordBuildingGame />} />
         <Route path={`/portfolio/InteractionGame/${config.interactionGame2}`} element={<SnakeLogGame />} />
+        <Route path={`/portfolio/InteractionGame/${config.interactionGame3}`} element={<SentenceTravelGame />} />
+        <Route path={`/portfolio/InteractionGame/${config.interactionGame4}`} element={<HighHighUpToThe9thFloor />} />
+        <Route path={`/portfolio/InteractionGame/${config.interactionGame5}`} element={<WhoIsTheFastest />} />
+        <Route path={`/portfolio/InteractionGame/${config.interactionGame6}`} element={<ShapeDomino />} />
+        <Route path={`/portfolio/InteractionGame/${config.interactionGame7}`} element={<BingoBingo />} />
 
         <Route path="/contactUs" element={<Contact modalStatus={modalStatus} setModalStatus={setModalStatus} />} />
 

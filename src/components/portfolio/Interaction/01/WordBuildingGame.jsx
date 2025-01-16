@@ -123,7 +123,7 @@ const WordBuildingGame = () => {
         </div>
       </div>
       <HeroImg
-        pcHeight={'1920 / 1080'}
+        pcHeight={'1920 / 1116'}
         // tabletHeight={''}
         mobileHeight={'375 / 450'}
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/01_WordBuildingGame/${isMobileTablet ? 'hero_m' : 'hero'}.png`}

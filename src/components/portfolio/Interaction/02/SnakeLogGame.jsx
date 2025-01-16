@@ -63,7 +63,7 @@ const SnakeLogGame = () => {
         <HeroOrganization />
       </div>
       <HeroImg
-        pcHeight={'1920 / 1080'}
+        pcHeight={'1920 / 1116'}
         // tabletHeight={''}
         mobileHeight={'375 / 450'}
         src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/02_SnakeLogGame/hero.png`}
