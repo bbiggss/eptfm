@@ -11,6 +11,24 @@ export const StyledPortfolioListModal = styled.div`
   }
 
   @media (min-width: 1557px) {
+    .xBtn {
+      position: absolute;
+      z-index: 10;
+      right: 50px;
+      cursor: pointer;
+      width: var(--pc-60px);
+    }
+    .title {
+      color: #ffffff;
+      text-align: left;
+      font-family: 'Roboto-Medium', sans-serif;
+      font-size: 70px;
+
+      position: relative;
+      display: inline-block;
+
+      margin-bottom: 40px;
+    }
     .modalContainer {
       position: fixed;
       z-index: 3;
@@ -32,35 +50,6 @@ export const StyledPortfolioListModal = styled.div`
   }
 
   @media (min-width: 1025px) and (max-width: 1556px) {
-    .modalContainer {
-      position: fixed;
-      z-index: 3;
-
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .gridWrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 460px);
-      padding: 0;
-      gap: 65px;
-
-      height: 500px;
-      overflow-y: scroll;
-    }
-    .gridWrapper ul:nth-child(1) {
-      order: 0;
-    }
-    .gridWrapper ul:nth-child(2) {
-      order: 2;
-      margin-top: -255px;
-    }
-    .gridWrapper ul:nth-child(3) {
-      order: 1;
-    }
-  }
-  @media (min-width: 1025px) {
     .xBtn {
       position: absolute;
       z-index: 10;
@@ -78,6 +67,35 @@ export const StyledPortfolioListModal = styled.div`
       display: inline-block;
 
       margin-bottom: 40px;
+    }
+
+    .modalContainer {
+      position: fixed;
+      z-index: 3;
+      height: 80%;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .gridWrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 460px);
+      padding: 0;
+      gap: 65px;
+
+      height: 55%;
+      overflow-y: scroll;
+    }
+    .gridWrapper ul:nth-child(1) {
+      order: 0;
+    }
+    .gridWrapper ul:nth-child(2) {
+      order: 2;
+      margin-top: -255px;
+    }
+    .gridWrapper ul:nth-child(3) {
+      order: 1;
     }
   }
   @media (max-width: 1024px) {
