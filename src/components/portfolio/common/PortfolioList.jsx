@@ -183,6 +183,11 @@ const PortfolioList = (data) => {
           pfItemBigTitle: '한국교육학술정보원',
           pfItemSmallTitle: '교실혁명 강의교안',
         },
+        {
+          pfItemImg: `${process.env.PUBLIC_URL}/assets/images/portfolio/R&D/list/list3_img3.png`,
+          pfItemBigTitle: '환경부',
+          pfItemSmallTitle: config.rnd3,
+        },
       ];
       updatePortfolioItems(portfolioItems2);
     } else {

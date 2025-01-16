@@ -11,6 +11,30 @@ import PortfolioIntroductionTitle from '../../common/portfolioIntroduction/Portf
 import PortfolioIntroductionDescription from '../../common/portfolioIntroduction/PortfolioIntroductionDescription';
 
 const StyledSnakeLogGame = styled.div`
+  @media (min-width: 1025px) {
+    .introductionWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 334px;
+        height: 228px;
+        margin-right: 100px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .introductionWrapper {
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 334px;
+        height: 228px;
+        margin-right: 100px;
+      }
+    }
+  }
   position: relative;
   max-width: 1920px;
   margin: auto;
@@ -18,16 +42,6 @@ const StyledSnakeLogGame = styled.div`
     position: absolute;
     left: 554px;
     top: 342px;
-  }
-  .introductionWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 334px;
-      height: 228px;
-      margin-right: 100px;
-    }
   }
 
   .sideWrapper {
@@ -66,7 +80,7 @@ const SnakeLogGame = () => {
         pcHeight={'1920 / 1116'}
         // tabletHeight={''}
         mobileHeight={'375 / 450'}
-        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/02_SnakeLogGame/hero.png`}
+        src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/02_SnakeLogGame/${isMobileTablet ? 'hero_m' : 'hero'}.png`}
       />
       <div className="introductionWrapper">
         <img src={`${process.env.PUBLIC_URL}/assets/images/portfolio/InteractionGame/detail/02_SnakeLogGame/1/snake.png`} alt="" />

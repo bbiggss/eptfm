@@ -64,6 +64,7 @@ import HighHighUpToThe9thFloor from './components/portfolio/Interaction/04/HighH
 import WhoIsTheFastest from './components/portfolio/Interaction/05/WhoIsTheFastest';
 import ShapeDomino from './components/portfolio/Interaction/06/ShapeDomino';
 import BingoBingo from './components/portfolio/Interaction/07/BingoBingo';
+import SurfaceTreatmentIndustryTextBook from './components/portfolio/RnD/03/SurfaceTreatmentIndustryTextBook';
 
 function App() {
   const location = useLocation();
@@ -214,6 +215,7 @@ function App() {
         {/* <Route path="/portfolio/R&D/:id" element={<></>} /> */}
         <Route path="/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택" element={<EnvironmentalLabelingCertification />} />
         <Route path="/portfolio/R&D/교실혁명 강의교안" element={<ClassroomRevolutionLessonPlans />} />
+        <Route path={`/portfolio/R&D/${config.rnd3}`} element={<SurfaceTreatmentIndustryTextBook />} />
 
         {/* InteractionGame */}
         <Route path={`/portfolio/InteractionGame/${config.interactionGame1}`} element={<WordBuildingGame />} />
