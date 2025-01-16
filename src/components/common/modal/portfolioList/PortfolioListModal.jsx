@@ -6,6 +6,7 @@ import { StyledPortfolioListModal } from '../../../../assets/styles/common/portf
 import useResponsiveMax1024 from './../../../hooks/useResponsiveMax1024';
 import useLongTablet from '../../../hooks/useTabletMax1556';
 import useMobile from '../../../hooks/useMobile';
+import { config } from '../../../../config';
 // import useTablet from '../../../hooks/useTablet';
 
 const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
@@ -27,6 +28,47 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
           />
         </div>
         <div className="gridWrapper">
+          {/* INTERACTION GAME */}
+          <CategoryUl>
+            <Category category={'INTERACTION GAME'} />
+            <CategoryLi
+              name={config.interactionGame1}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame1}
+            />
+            <CategoryLi
+              name={config.interactionGame2}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame2}
+            />
+            <CategoryLi
+              name={config.interactionGame3}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame3}
+            />
+            <CategoryLi
+              name={config.interactionGame4}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame4}
+            />
+            <CategoryLi
+              name={config.interactionGame5}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame5}
+            />
+            <CategoryLi
+              name={config.interactionGame6}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame6}
+            />
+            <CategoryLi
+              name={config.interactionGame7}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/InteractionGame/' + config.interactionGame7}
+            />
+          </CategoryUl>
+
+          {/* VR/AR */}
           <CategoryUl>
             <Category category={'VR/AR'} />
             <CategoryLi
@@ -109,60 +151,31 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/VrAr/AR I 나만의 살기 좋은 도시 만들기'}
             />
-
-            {(isMobileTablet || isLongTablet) && (
-              <>
-                <CategoryLi
-                  name={`AR I 뼈, 관절, 근육! 우리 몸을 움직이는 ${isMobile ? '\n' : ''} 세박자`}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-                />
-                <CategoryLi
-                  name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
-                />
-                <CategoryLi
-                  name={'VR I 나만의 생존가방 준비하기'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
-                />
-                <CategoryLi
-                  name={`VR I 이중섭 작품을 통해 알아보는 6·25 ${isMobile ? '\n' : ''} 전쟁`}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
-                />
-              </>
-            )}
+            <CategoryLi
+              name={`AR I 뼈, 관절, 근육! 우리 몸을 움직이는 ${isMobile ? '\n' : ''} 세박자`}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
+            />
+            <CategoryLi
+              name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
+            />
+            <CategoryLi
+              name={'VR I 나만의 생존가방 준비하기'}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
+            />
+            <CategoryLi
+              name={`VR I 이중섭 작품을 통해 알아보는 6·25 ${isMobile ? '\n' : ''} 전쟁`}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
+            />
           </CategoryUl>
+
+          {/* e-Learning & R&D */}
           <CategoryUl>
-            {/* pc 해상도 */}
-            {!(isMobileTablet || isLongTablet) && (
-              <>
-                <div className="customMarginTop"></div>
-                <CategoryLi
-                  name={'AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/AR I 뼈, 관절, 근육! 우리 몸을 움직이는 세박자'}
-                />
-                <CategoryLi
-                  name={'AR I 지도를 볼 줄 아는, 나는 지도박사'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/AR I 지도를 볼 줄 아는, 나는 지도박사'}
-                />
-                <CategoryLi
-                  name={'VR I 나만의 생존가방 준비하기'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/VR I 나만의 생존가방 준비하기'}
-                />
-                <CategoryLi
-                  name={'VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/VrAr/VR I 이중섭 작품을 통해 알아보는 6·25 전쟁'}
-                />
-              </>
-            )}
-            <Category category={'e-Learning'} PC_eLearningMarginTop />
+            <Category category={'e-Learning'} />
             <CategoryLi
               name={'저수지·댐 안전관리 및 재해예방'}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
@@ -204,42 +217,26 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               link={'/portfolio/e-Learning/위탁모를 위한 양육 길잡이'}
             />
 
-            {/* 가로 태블릿 */}
-            {isLongTablet && (
-              <>
-                <Category style={{ marginTop: '80px' }} category={'R&D'} />
-                <CategoryLi
-                  name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobile ? '\n' : ''} 통한 더 나은 선택`}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
-                />
-                <CategoryLi
-                  name={'교실혁명 강의교안'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/R&D/교실혁명 강의교안'}
-                />
-              </>
-            )}
+            <Category style={{ marginTop: '80px' }} category={'R&D'} />
+            <CategoryLi
+              name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobile ? '\n' : ''} 통한 더 나은 선택`}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
+            />
+            <CategoryLi
+              name={'교실혁명 강의교안'}
+              setPortfolioListModalStatus={setPortfolioListModalStatus}
+              link={'/portfolio/R&D/교실혁명 강의교안'}
+            />
+            <CategoryLi name={config.rnd3} setPortfolioListModalStatus={setPortfolioListModalStatus} link={'/portfolio/R&D/' + config.rnd3} />
           </CategoryUl>
 
           {/* pc해상도 */}
-          {!isLongTablet && (
-            <>
-              <CategoryUl last>
-                <Category category={'R&D'} />
-                <CategoryLi
-                  name={`친환경 소비의 첫걸음, 환경표지인증을 ${isMobile ? '\n' : ''} 통한 더 나은 선택`}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/R&D/친환경 소비의 첫걸음, 환경표지인증을 통한 더 나은 선택'}
-                />
-                <CategoryLi
-                  name={'교실혁명 강의교안'}
-                  setPortfolioListModalStatus={setPortfolioListModalStatus}
-                  link={'/portfolio/R&D/교실혁명 강의교안'}
-                />
-              </CategoryUl>
-            </>
-          )}
+          {/* {!isLongTablet && <></>} */}
+          {/* 가로태블릿 */}
+          {/* {isLongTablet && <>ddd</>} */}
+
+          {/* {!(isMobileTablet || isLongTablet) && <></>} */}
         </div>
       </div>
     </StyledPortfolioListModal>

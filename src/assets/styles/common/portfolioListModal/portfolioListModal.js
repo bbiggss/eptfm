@@ -26,15 +26,13 @@ export const StyledPortfolioListModal = styled.div`
       padding: 0;
       /* gap: 88px; */
       gap: clamp(50px, 4.5vw, 88px);
+      height: 710px;
+      overflow-y: scroll;
     }
   }
 
   @media (min-width: 1025px) and (max-width: 1556px) {
     .modalContainer {
-      height: 80%;
-      max-height: 960px;
-      overflow-y: scroll;
-
       position: fixed;
       z-index: 3;
 
@@ -47,6 +45,19 @@ export const StyledPortfolioListModal = styled.div`
       grid-template-columns: repeat(2, 460px);
       padding: 0;
       gap: 65px;
+
+      height: 500px;
+      overflow-y: scroll;
+    }
+    .gridWrapper ul:nth-child(1) {
+      order: 0;
+    }
+    .gridWrapper ul:nth-child(2) {
+      order: 2;
+      margin-top: -255px;
+    }
+    .gridWrapper ul:nth-child(3) {
+      order: 1;
     }
   }
   @media (min-width: 1025px) {

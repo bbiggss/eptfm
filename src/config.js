@@ -7,4 +7,6 @@ export const config = {
   interactionGame5: '누가누가 빠르나',
   interactionGame6: '도형 도미노',
   interactionGame7: '빙고 빙고',
+
+  rnd3: '표면처리 업종 교재',
 };
