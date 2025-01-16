@@ -17,6 +17,21 @@ const StyledHeroOrganization = styled.div`
       font-size: clamp(0px, 1.15vw, 22px);
     }
   }
+  @media (max-width: 1024px) {
+    background: rgba(0, 41, 79, 0.9);
+    border-radius: 100px;
+    width: clamp(140px, 37.33vw, 1000px);
+    height: clamp(24px, 6.4vw, 1000px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heroOrganization {
+      color: #ffffff;
+      font-size: clamp(12px, 3.2vw, 1000px);
+    }
+  }
 `;
 
 const HeroOrganization = () => {
