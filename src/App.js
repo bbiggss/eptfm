@@ -53,9 +53,6 @@ import PortfolioListButton from './components/common/button/PortfolioListButton'
 import ScrollToTopOrRestore from './components/common/scrollTop/ScrollToTopOrRestore';
 
 import PortfolioList from './components/portfolio/common/PortfolioList';
-import VrArPortfolioList from './components/portfolio/list/VrArPortfolioList';
-import ELearningPortfolioList from './components/portfolio/list/ELearningPortfolioList';
-import RnDPortfolioList from './components/portfolio/list/RnDPortfolioList';
 import WordBuildingGame from './components/portfolio/Interaction/01/WordBuildingGame';
 import SnakeLogGame from './components/portfolio/Interaction/02/SnakeLogGame';
 import { config } from './config';
@@ -75,19 +72,11 @@ function App() {
   const [isDesktopScreen, setIsDesktopScreen] = useState(window.matchMedia('(min-width: 1025px)').matches);
 
   const [headerClass, setHeaderClass] = useState('transparent');
-  // const [isLoading, setIsLoading] = useState(true);
-  // let initialPageName = location.pathname.split('/')[1];
   const [activeLink, setActiveLink] = useState('');
-  // const [scrollStatus, setScrollStatus] = useState(false);
 
   useEffect(() => {
-    // setIsLoading(true);
     const pageName = location.pathname.split('/');
-    // if (pageName[3] == null) {
-    //   setScrollStatus(true);
-    // } else {
-    //   setScrollStatus(false);
-    // }
+
     if (pageName[1] === '') {
       setActiveLink('');
       if (location.hash === '#about') {
