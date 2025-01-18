@@ -41,7 +41,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/InteractionGame/' + config.interactionGame2}
             />
-            <CategoryLi
+            {/* <CategoryLi
               name={config.interactionGame3}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/InteractionGame/' + config.interactionGame3}
@@ -65,7 +65,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               name={config.interactionGame7}
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/InteractionGame/' + config.interactionGame7}
-            />
+            /> */}
           </CategoryUl>
 
           {/* VR/AR */}
@@ -228,7 +228,7 @@ const PortfolioListModal = ({ setPortfolioListModalStatus }) => {
               setPortfolioListModalStatus={setPortfolioListModalStatus}
               link={'/portfolio/R&D/교실혁명 강의교안'}
             />
-            <CategoryLi name={config.rnd3} setPortfolioListModalStatus={setPortfolioListModalStatus} link={'/portfolio/R&D/' + config.rnd3} />
+            {/* <CategoryLi name={config.rnd3} setPortfolioListModalStatus={setPortfolioListModalStatus} link={'/portfolio/R&D/' + config.rnd3} /> */}
           </CategoryUl>
 
           {/* pc해상도 */}

@@ -10,6 +10,7 @@ import PortfolioIntroductionDescription from '../../common/portfolioIntroduction
 import { WidthOneContent } from './../../../../assets/styles/portfolio/common/widthOneContent.styled';
 import CustomText from '../../common/CustomText';
 import Img from '../../common/Img';
+import HeroOrganization from '../../common/Hero/HeroOrganization';
 
 const StyledWordBuildingGame = styled.div`
   @media (min-width: 1025px) {
@@ -20,27 +21,12 @@ const StyledWordBuildingGame = styled.div`
       max-width: 1080px;
       width: 56.25vw;
     }
-    .organizationWrap {
+    .organizationWrapper {
       position: absolute;
       left: clamp(0px, 35.05vw, 673px);
       margin-top: clamp(0px, 13vw, 260px);
-
-      .borderWrap {
-        background: rgba(0, 41, 79, 0.9);
-        border-radius: 100px;
-        width: clamp(0px, 11.98vw, 230px);
-        height: clamp(0px, 2.19vw, 42px);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .heroOrganization {
-        color: #ffffff;
-        font-size: clamp(0px, 1.15vw, 22px);
-      }
     }
+
     .imgWrapper {
       position: relative;
       .consonant {
@@ -65,27 +51,11 @@ const StyledWordBuildingGame = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    .organizationWrap {
+    .organizationWrapper {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       margin-top: clamp(68px, 18.13vw, 1000px);
-
-      .borderWrap {
-        background: rgba(0, 41, 79, 0.9);
-        border-radius: 100px;
-        width: clamp(140px, 37.33vw, 1000px);
-        height: clamp(24px, 6.4vw, 1000px);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .heroOrganization {
-        color: #ffffff;
-        font-size: clamp(12px, 3.2vw, 1000px);
-      }
     }
     .imgWrapper {
       position: relative;
@@ -120,9 +90,9 @@ const WordBuildingGame = () => {
   return (
     <StyledWordBuildingGame>
       <Breadcrumb font={{ color: '#292929' }} style={{ position: 'absolute', zIndex: '0' }} />
-      <div className="organizationWrap">
-        <div className="borderWrap">
-          <div className="heroOrganization NanumSquareB">한국교육학술정보원</div>
+      <div className="relative">
+        <div className="organizationWrapper">
+          <HeroOrganization />
         </div>
       </div>
       <HeroImg
