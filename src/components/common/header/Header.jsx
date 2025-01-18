@@ -70,7 +70,7 @@ const Header = (data) => {
               <NavBox title={'ABOUT US'} link={'/#about'} />
               <NavBox title={'BUSINESS'} link={'/#business'} />
               <li className={`dropdown`}>
-                <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO22</p>
+                <p className={data.activeLink === 'portfolio' ? 'active' : ''}>PORTFOLIO</p>
                 <div className="dropdown-content robotoRegular">
                   <Link to={'portfolio/InteractionGame'}>INTERACTION GAME</Link>
                   <Link to={'portfolio/VrAr'}>VR/AR</Link>

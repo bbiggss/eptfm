@@ -21,7 +21,7 @@ const Business = () => {
               hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img1_over.png`}
               mobile_hoverImg={`${process.env.PUBLIC_URL}/assets/images/main/business_img1_over_mobile.png`}
               text={'VR/AR'}
-              hoverText={'우리는 혁신적인 디지털 학습 솔루션을2\n 통해 누구나 어디서든 쉽게 배울 수 있는\n 환경을 제공합니다.'}
+              hoverText={'우리는 혁신적인 디지털 학습 솔루션을\n 통해 누구나 어디서든 쉽게 배울 수 있는\n 환경을 제공합니다.'}
             />
             <BusinessItems
               ref={(el) => (refs.current[2] = { ref: el })}
